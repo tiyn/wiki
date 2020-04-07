@@ -32,7 +32,7 @@ Now all partitions should be removed.
 
 ### Create new partitions:
 
-If you missclick during the progress of the following commands you can press ```CTRL+C``` to close the program.
+If you miss click during the progress of the following commands you can press ```CTRL+C``` to close the program.
 No changes will be made until the confirmation at the end.
 The swap partition will be created later under lvm.
 
@@ -167,7 +167,7 @@ en_US.UTF-8 UTF-8
 
 If the system is installed in a virtual environment or a system with deactivated UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 
-## 12. Activate Networkconnection
+## 12. Activate network connection
 
 - Log in as ```root``` user
 - `systemctl enable NetworkManager.service` - Activate NetworkManager
@@ -177,16 +177,16 @@ If the system is installed in a virtual environment or a system with deactivated
 The device should connect to the internet if it is connected via LAN.
 Using ```nmtui``` you can administer the wired and wireless connections
 
-## 13. Automatic timesettings
+## 13. Automatic time settings
 
 - `pacman -Syu ntp` - Installing time service
 - `ntpd -qg` - Get current time
-- `hwclock --systohc` - Synchronize hardwareclock
-- `systemctl enable ntpd.service` - enable timeservice
+- `hwclock --systohc` - Synchronize hardware clock
+- `systemctl enable ntpd.service` - enable time service
 
 ## 14. Create user
 
-- `vim /etc/sudoers` - Open suoders file
+- `vim /etc/sudoers` - Open sudoers file
 	-	uncomment the following lines
 		```
 		%whell All=(ALL) ALL
