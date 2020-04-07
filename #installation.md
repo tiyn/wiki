@@ -1,6 +1,6 @@
 # Arch installation with LUKS encryption and LVM
 
-This is the german version of the [installation guide on rvbg.eu](https://wiki.rvbg.eu/#arch/installation.md).
+This is the English version of the [German installation guide on rvbg.eu](https://wiki.rvbg.eu/#arch/installation.md).
 This guide is based upon a [german arch wiki entry](https://wiki.archlinux.de/title/Moderne_Installation_mit_UEFI_und_Verschlüsselung).
 
 At the end of this guide a fully functional Arch Linux will be installed.
