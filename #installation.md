@@ -217,5 +217,6 @@ You can add one using ```passwd```.
 The volume can be changed with `alsamixer`.
 
 ## Changelog and versions
-> 03.04.2020 - Version 1.1en (based on 03.04.2020 - Version 1.1)
+> 03.04.2020 - Version 1.1en (based on 03.04.2020 - Version 1.1
+
 > 05.04.2020 - Version 2.1en (based on 05.04.2020 - Version 2.1)
