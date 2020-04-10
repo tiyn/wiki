@@ -1,36 +1,36 @@
 # Docker
 Here you can find a bunch of rebuild shell scripts to automatically stop, remove, update and rebuild containers (or if they dont exist just build them).
 
-| File/Folder       | Description                                     | Rebuild Readme | Installation Guide |
-| ----------------- | ----------------------------------------------- | -------------- | ------------------ |
-| airsonic          | music streaming service                         | yes            | no                 |
-| bind              | dns service                                     | yes	           | no                 |
-| cups              | print service                                   | yes            | no                 |
-| docker-mailserver | mail service                                    | yes            | no                 |
-| docker-radicale   | caldav service                                  | yes            | no                 |
-| folding-at-home   | give your cpu power to fight disease            | yes            | no                 |
-| gitea	            | github-like git service                         | yes            | no                 |
-| git-server-docker | git-server without gui                          | yes            | no                 |
-| gopherproxy       | show a given gopherhole over http               | yes            | no                 |
-| gopherserver      | service to run a gopherhole                     | yes            | no                 |
-| hastebin          | pastebin alternative                            | yes            | no                 |
-| homer             | static website                                  | yes            | no                 |
-| jellyfin          | video streaming service                         | yes            | no                 |
-| mordhau-server    | server for steamgame mordhau                    | yes            | no                 |
-| nginx             | reverse proxy for http(s)                       | yes		       | no          	    |
-| onedrive          | onedrive client                                 | yes            | no                 |
-| openvpn           | vpn service                                     | yes            | no                 |
-| owncloud          | server app for owncloud                         | yes            | no                 |
-| owncloudclient    | client app for owncloud                         | yes            | no                 |
-| pinedocs          | view files, good for documentation or wiki      | yes            | no                 |
-| pltu              | vpn tunnel to a plex service                    | yes            | no                 |
-| portainer         | docker monitoring web-gui                       | yes            | no                 |
-| portainer-agent   | docker agent to connect to existing portainer   | yes            | no                 |
-| python-flask      | python flask webdev framework                   | yes            | no                 |
-| samba             | shared network storage                          | yes            | no                 |
-| syncthing         | decentralized synchronization tool              | yes            | no                 |
-| teamspeak         | teamspeak3 server                               | yes            | no                 |
-| todo              | simple todo webgui                              | yes            | no                 |
+| File/Folder       | Description                                     |
+| ----------------- | ----------------------------------------------- |
+| airsonic          | music streaming service                         |
+| bind              | dns service                                     |
+| cups              | print service                                   |
+| docker-mailserver | mail service                                    |
+| docker-radicale   | caldav service                                  |
+| folding-at-home   | give your cpu power to fight disease            |
+| gitea             | github-like git service                         |
+| git-server-docker | git-server without gui                          |
+| gopherproxy       | show a given gopherhole over http               |
+| gopherserver      | service to run a gopherhole                     |
+| hastebin          | pastebin alternative                            |
+| homer             | static website                                  |
+| jellyfin          | video streaming service                         |
+| mordhau-server    | server for steamgame mordhau                    |
+| nginx             | reverse proxy for http(s)                       |
+| onedrive          | onedrive client                                 |
+| openvpn           | vpn service                                     |
+| owncloud          | server app for owncloud                         |
+| owncloudclient    | client app for owncloud                         |
+| pinedocs          | view files, good for documentation or wiki      |
+| pltu              | vpn tunnel to a plex service                    |
+| portainer         | docker monitoring web-gui                       |
+| portainer-agent   | docker agent to connect to existing portainer   |
+| python-flask      | python flask webdev framework                   |
+| samba             | shared network storage                          |
+| syncthing         | decentralized synchronization tool              |
+| teamspeak         | teamspeak3 server                               |
+| todo              | simple todo webgui                              |
 
 ## Dependencies
 These scripts only require ```sh``` and a standard ```docker``` install.
