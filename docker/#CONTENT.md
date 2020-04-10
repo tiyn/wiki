@@ -1,5 +1,5 @@
-# DockerRebuilds
-In this repository you can find a bunch of rebuild shell scripts to automatically stop, remove, update and rebuild containers (or if they dont exist just build them).
+# Docker
+Here you can find a bunch of rebuild shell scripts to automatically stop, remove, update and rebuild containers (or if they dont exist just build them).
 
 | Name              | Description                                     | Rebuild Readme | Installation Guide |
 | ----------------- | ----------------------------------------------- | -------------- | ------------------ |
