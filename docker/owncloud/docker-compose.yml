@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+
+  owncloud:
+    image: owncloud
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - owncloud:/var/www/html
+      - config:/var/www/html/config
+
+  mariadb:
+    image: mariadb
+    restart: unless-stopped
+    environment:
+        MYSQL_ROOT_PASSWORD: pass
+    volumes:
+      - mariadb:/var/lib/mysql
+
+volumes:
+  owncloud:
+    driver: local
+  mariadb:
+    driver: local
+  config:
+    driver: local
