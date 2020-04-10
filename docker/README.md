@@ -1,7 +1,7 @@
 # Docker
 Here you can find a bunch of rebuild shell scripts to automatically stop, remove, update and rebuild containers (or if they dont exist just build them).
 
-| Name              | Description                                     | Rebuild Readme | Installation Guide |
+| File/Folder       | Description                                     | Rebuild Readme | Installation Guide |
 | ----------------- | ----------------------------------------------- | -------------- | ------------------ |
 | airsonic          | music streaming service                         | yes            | no                 |
 | bind              | dns service                                     | yes	           | no                 |
