@@ -18,7 +18,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | owncloud         | /var/www/html          | storage for owncloud plugins |
 | config           | /var/www/html/config   | storage for owncloud config  |
 
-#### Ports
+##### Ports
 Set the following ports in the `ports:` section.
 
 | Container Port | Recommended outside port | Protocol | Description |
