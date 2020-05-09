@@ -17,7 +17,6 @@ To sync the data using CardDAV you'll need `vdirsyncer` aswell.
 		[general]
 		status_path = "~/.cache/vdirsyncer/status"
 
-		#contacts
 		[pair private_contacts]
 		a = "private_contacts_local"
 		b = "private_contacts_remote"
