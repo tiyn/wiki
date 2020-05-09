@@ -13,39 +13,39 @@ To sync calendars you'll need `vdirsyncer` aswell.
 
 - To configure vdirsyncer edit a file in `~/.config/vdirsyncer/config`.
 
-	```
-	[general]
-	status_path = "~/.cache/vdirsyncer/status"
+```
+[general]
+status_path = "~/.cache/vdirsyncer/status"
 
-	#calendar
-	[pair private_calendar]
-	a = "private_calendar_local"
-	b = "private_calendar_remote"
-	collections = ["from a", "from b"]
-	metadata = ["color"]
+#calendar
+[pair private_calendar]
+a = "private_calendar_local"
+b = "private_calendar_remote"
+collections = ["from a", "from b"]
+metadata = ["color"]
 
-	[storage private_calendar_local]
-	type = "filesystem"
-	path = "~/.local/share/pim/calendars/private_calendar"
-	fileext = ".ics"
+[storage private_calendar_local]
+type = "filesystem"
+path = "~/.local/share/pim/calendars/private_calendar"
+fileext = ".ics"
 
-	[storage private_calendar_remote]
-	type = "caldav"
-	url = "https://<url>"
-	auth = "basic"
-	username = "<username>"
-	password = "<password>"
+[storage private_calendar_remote]
+type = "caldav"
+url = "https://<url>"
+auth = "basic"
+username = "<username>"
+password = "<password>"
 
-	```
+```
 
 - `vdirsyncer discober && vdirsyncer metasync` - After that initialize vdirsyncer.
 - `vdirsyncer sync` - Synchronize your data (put it in a crontab to run periodically)
 - Edit the `~/.config/khal/config`
 	-	Insert the following lines
-		```
-		[calendars]
+```
+[calendars]
 
-		[[calendars]]
-		path = ~/.local/share/pim/calendars/*/*
-		type = discover
-		```
+[[calendars]]
+path = ~/.local/share/pim/calendars/*/*
+type = discover
+```
