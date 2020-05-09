@@ -17,7 +17,6 @@ To sync calendars you'll need `vdirsyncer` aswell.
 	[general]
 	status_path = "~/.cache/vdirsyncer/status"
 
-	#calendar
 	[pair private_calendar]
 	a = "private_calendar_local"
 	b = "private_calendar_remote"
