@@ -13,27 +13,27 @@ To sync the data using CardDAV you'll need `vdirsyncer` aswell.
 
 - Edit the `~/.config/vdirsyncer/config`.
 	-	Insert the following lines:
-		```
-		[general]
-		status_path = "~/.cache/vdirsyncer/status"
+```
+[general]
+status_path = "~/.cache/vdirsyncer/status"
 
-		[pair private_contacts]
-		a = "private_contacts_local"
-		b = "private_contacts_remote"
-		collections = ["from a", "from b"]
+[pair private_contacts]
+a = "private_contacts_local"
+b = "private_contacts_remote"
+collections = ["from a", "from b"]
 
-		[storage private_contacts_local]
-		type = "filesystem"
-		path = "~/.local/share/pim/contacts"
-		fileext = ".vcf"
+[storage private_contacts_local]
+type = "filesystem"
+path = "~/.local/share/pim/contacts"
+fileext = ".vcf"
 
-		[storage private_contacts_remote]
-		type = "carddav"
-		url = "https://<url>"
-		username = "<username>"
-		password = "<password>"
-		auth = "basic"
-		```
+[storage private_contacts_remote]
+type = "carddav"
+url = "https://<url>"
+username = "<username>"
+password = "<password>"
+auth = "basic"
+```
 - `vdirsyncer discover && vdirsyncer metasync` - Initialize vdirsyncer
 - `vdirsyncer sync` - Synchronize the addressbook (put this into a crontab to update periodically)
 - Add and configure a config for khard

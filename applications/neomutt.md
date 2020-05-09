@@ -32,14 +32,14 @@ After installation you're able to use the following commands, that will guide yo
 
 - Edit `~/.config/mutt/muttrc`
 	-	Append the following lines.
-		```
-		set query_command= "khard email --parsable --search-in-source-files %s"
-		bind editor <Tab> complete-query
-		bind editor ^T complete
-		macro index,pager A \
-			"<pipe message>khard add-email<return>" \
-			"add the sender email address to khard"
-		```
+```
+set query_command= "khard email --parsable --search-in-source-files %s"
+bind editor <Tab> complete-query
+bind editor ^T complete
+macro index,pager A \
+	"<pipe message>khard add-email<return>" \
+	"add the sender email address to khard"
+```
 - You should now be able to tab-complete email-addresses in neomutt
 - You can also add new ones by pressing A
 
