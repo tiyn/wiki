@@ -104,7 +104,7 @@ This will improve the download speed.
 Now you need a working internet connection.
 Plug in your lan cable or use `wifi-menu` to get a wireless connection.
 
-- `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim dialog dhcpcd` - Installation of main system with needed tools
+- `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager` - Installation of main system with needed tools
 - `genfstab -Up /mnt > /mnt/etc/fstab` - creation of fstab
 - `arch-chroot /mnt` - Switch into the newly installed system
 - `echo ArchLinux > /etc/hostname` - Assign hostname. `ArchLinux` can be changed for any name of your preference.
