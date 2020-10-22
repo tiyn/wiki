@@ -8,5 +8,5 @@ The software can vary in coverage and interface type.
 
 One of the most used file modification is done in csv or similar datatypes.
 
-- [sc-im](setups/sc-im.md) is a simple table calculation program with a terminal based interface.
+- [sc-im](sc-im.md) is a simple table calculation program with a terminal based interface.
 
