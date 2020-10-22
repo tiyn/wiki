@@ -1,19 +1,8 @@
-# Proxmox
+# Disk Management
 
-Proxmox is an environment for virtual machines and containers.
-
-## Disk Management
-
-### Enlarging disk of a VM
+## Grow non-LVM ext4 partition
 
 ATTENTION: Please note that the partition to enlarge has to be the last one with the free space after it.
-This guide does not consider LVMs and is written for partitions with ext4 filesystems.
-
-SSH into Proxmox.
-Enlarge a disk by using:
-`qm resize <vmid> <vm-disk-to-enlarge> <size>`
-For example:
-`qm resize 100 ide0 +100G`
 
 SSH into the VM.
 - run `lsblk` check if the disk size has changed
