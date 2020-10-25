@@ -16,4 +16,16 @@ In the following it is assumed that the partition to enlarge is `/dev/sda2`
 
 Now you need to resize the filesystem with `resize2fs /dev/sda2`.
 
+## Error solving
 
+### sudo: unable to open ... Read-only file system
+
+source: [https://askubuntu.com/questions/197459/how-to-fix-sudo-unable-to-open-read-only-file-system]
+
+Ususally the filesystem will go into read-only mode whe the system is running and there is a consistency error.
+To fix it run:
+- `sudo fsck -Af -M` - check all filesystems
+If `fsck` gets stuck after its version banner:
+`fsck from util-linux 2.20.1`
+you may want to try using the ext4-specific fsck:
+- `fsck.ext4 -f /dev/sda1`
