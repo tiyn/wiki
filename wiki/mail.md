@@ -15,4 +15,4 @@ If you want to host your own mail-server there are solutions with and without in
 If you don't have a built-in web interface for your mail-server you need some software to access your mails.
 And even if you have it can be useful to keep your mails synced locally on your pc.
 
-- [Neomutt](neomutt.md) is a terminal-based mail client, that has a simple interface.
+- [Neomutt](linux/neomutt.md) is a terminal-based mail client, that has a simple interface.
