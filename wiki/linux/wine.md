@@ -4,8 +4,6 @@ Wine is a compatibility layer to run windows programs on linux machines.
 
 ## Setup
 
-### Arch-Linux
-
 - Enable multilib support in pacman
 	-	`vim /etc/pacman.conf` - Uncomment the following lines
 		```
@@ -14,7 +12,7 @@ Wine is a compatibility layer to run windows programs on linux machines.
 		```
 - `pacman -S wine winetricks` - Install wine and configuration helper
 
-### Configuration
+## Configuration
 
 - Set the global variable `WINEPREFIX` to your liking, standard is `$HOME/.wine`
 - `winetricks` - run the installation of basic windows dependencies to the wine directory
