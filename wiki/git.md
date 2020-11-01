@@ -24,4 +24,3 @@ Additionally it is easy to collaborate together.
 If you don't need a bloated web-interface a more basic approach is more than enough.
 
 - [git-server-docker](bare-git.md) is a pretty basic docker-container for git.
-

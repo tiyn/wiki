@@ -11,4 +11,5 @@ This is a guide on how to persistently change the symlink /bin/sh from bash to d
 
 - `yay -S dash` - Install dash
 - `sudo ln -sfT /bin/dash /bin/sh` - link /bin/sh to dash
-- `sudo vim /usr/share/libalpm/hooks/bash-update.hook` - setup a hook to avoid bash resetting the symlink
+- `sudo vim /usr/share/libalpm/hooks/bash-update.hook` - setup a hook to avoid
+bash resetting the symlink

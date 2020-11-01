@@ -12,8 +12,9 @@ To sync the data using CardDAV you'll need `vdirsyncer` aswell.
 ### Configuration
 
 - Edit the `~/.config/vdirsyncer/config`.
-	-	Insert the following lines:
-```
+  - Insert the following lines:
+
+```txt
 [general]
 status_path = "~/.cache/vdirsyncer/status"
 
@@ -34,12 +35,15 @@ username = "<username>"
 password = "<password>"
 auth = "basic"
 ```
+
 - `vdirsyncer discover && vdirsyncer metasync` - Initialize vdirsyncer
-- `vdirsyncer sync` - Synchronize the addressbook (put this into a crontab to update periodically)
+- `vdirsyncer sync` - Synchronize the addressbook (put this into a crontab to
+update periodically)
 - Add and configure a config for khard
-	- `mkdir ~/.config/khard` - add a directory for the config
-	- `cp /usr/share/doc/khard/khard.conf.example ~/.config/khard/khard.conf` - Copy the example configuration
-	- Adjust `khard.conf` to your needs
+  - `mkdir ~/.config/khard` - add a directory for the config
+  - `cp /usr/share/doc/khard/khard.conf.example ~/.config/khard/khard.conf` -
+  Copy the example configuration
+  - Adjust `khard.conf` to your needs
 
 #### Mutt
 

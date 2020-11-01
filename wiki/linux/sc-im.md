@@ -22,4 +22,5 @@ You can insert new rows `ir`/`i3r` or columns `ic`/`i3c`.
 
 There are some functions you can use when in numbers mode.
 
-- `=@sum(<start-cell>:<end-cell>)` - Summarize all number-entries in the range of given cells
+- `=@sum(<start-cell>:<end-cell>)` - Summarize all number-entries in the range
+of given cells

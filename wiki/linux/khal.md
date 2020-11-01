@@ -13,7 +13,7 @@ To sync calendars you'll need `vdirsyncer` aswell.
 
 - To configure vdirsyncer edit a file in `~/.config/vdirsyncer/config`.
 
-```
+```txt
 [general]
 status_path = "~/.cache/vdirsyncer/status"
 
@@ -41,8 +41,9 @@ password = "<password>"
 - `vdirsyncer discober && vdirsyncer metasync` - After that initialize vdirsyncer.
 - `vdirsyncer sync` - Synchronize your data (put it in a crontab to run periodically)
 - Edit the `~/.config/khal/config`
-	-	Insert the following lines
-```
+  - Insert the following lines
+
+```txt
 [calendars]
 
 [[calendars]]

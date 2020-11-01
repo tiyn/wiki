@@ -13,4 +13,4 @@ To get a compiler for c there are a few options.
 
 ### Vim
 
-The steps to make Vim a c IDE are described in [../linux/vim/c-language.md].
+The steps to make Vim a c IDE are described in [the vim section of this wiki](../linux/vim/c-language.md).
