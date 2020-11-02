@@ -25,8 +25,6 @@ Now you need to resize the filesystem with `resize2fs /dev/sda2`.
 
 ### sudo: unable to open ... Read-only file system
 
-source: [https://askubuntu.com/questions/197459/how-to-fix-sudo-unable-to-open-read-only-file-system]
-
 Ususally the filesystem will go into read-only mode whe the system is running
 and there is a consistency error.
 To fix it run:
