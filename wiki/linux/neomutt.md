@@ -5,7 +5,7 @@ It can be easily configured using mutt-wizard.
 
 ## Setup
 
-### setup with nutt-wizard
+### setup with mutt-wizard
 
 - Install the dependecies: `neomutt`, `isync`, `msmtp`, `pass`
 - Install mutt-wizard from [github](https://github.com/LukeSmithxyz/mutt-wizard)
@@ -16,6 +16,10 @@ github page.
 You need to add the mail accounts you want to have in mutt.
 
 - `mbsync -a` - updates all mail-accounts
+
+#### Googlemail
+To use Googlemail or as it is known now Gmail you need to either create an App
+password or enable third-party applications.
 
 ### Khard in NeoMutt
 
