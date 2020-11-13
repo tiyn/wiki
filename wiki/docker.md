@@ -3,6 +3,18 @@
 Docker is a virtualization software that deploys docker containers.
 Due to easy handling and reproducable environments it is a useful tool.
 
+## Installation
+
+- Arch linux: run `pacman -S docker` to install docker
+
+## Run Docker as non-root user
+
+To run docker as a non-root user you need to add your user to the `docker` group.
+To do this create the group docker if it doesn't exist `sudo groupadd docker`
+and then add your user to the group using `sudo usermod -aG docker $USER`.
+After that relog into your machine and you should be able to run
+`docker run hello-world`.
+
 ## Enable Nvidia GPUs
 
 To use Nvidia GPUs with docker you need to install the nvidia-cuda-toolkit.
