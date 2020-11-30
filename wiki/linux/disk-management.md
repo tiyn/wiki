@@ -8,7 +8,7 @@ the free space after it.
 SSH into the VM.
 
 - run `lsblk` check if the disk size has changed
-- if not `reboot` the virtual machine
+- if not `reboot` the machine
 
 In the following it is assumed that the partition to enlarge is `/dev/sda2`
 
