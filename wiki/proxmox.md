@@ -11,7 +11,7 @@ Enlarge a disk by using:
 `qm resize <vmid> <vm-disk-to-enlarge> <size>`
 For example:
 `qm resize 100 ide0 +100G`
-After that grow the filesystem as described in [linux/disk-management.md] .
+After that grow the filesystem as described in [the disk-management article](linux/disk-management.md).
 
 ## PCI/GPU passthrough
 
