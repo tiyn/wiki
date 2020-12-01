@@ -21,8 +21,6 @@ qm resize 100 ide0 +100G
 
 After that grow the filesystem as described in [the disk-management article](linux/disk-management.md).
 
-qm resize 100 ide0 +100G
-
 ## VM passthrough
 
 ### USB passthrough
