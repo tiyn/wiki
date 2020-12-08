@@ -77,11 +77,6 @@ A basic example for adding a few extensions is:
 
 ```vimscript
 let g:coc_global_extensions = [
-    \ 'coc-java',
-    \ 'coc-markdownlint',
-    \ 'coc-python',
-    \ 'coc-sh',
-    \ 'coc-vimtex',
     \ ]
 ```
 
