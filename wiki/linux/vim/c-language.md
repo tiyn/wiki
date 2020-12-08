@@ -7,7 +7,7 @@ In this entry we will focus on making vim support c and use vim as an ide for c.
 
 ### Coc
 
-To enable autocompletion for coc you need to install `ccls`.
+To enable autocompletion for [coc](coc.md) you need to install `ccls`.
 After that you need to add the following lines to your coc config file.
 
 ```json

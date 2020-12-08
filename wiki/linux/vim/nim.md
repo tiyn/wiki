@@ -6,7 +6,7 @@
 
 ### Coc
 
-To enable autocompletion for coc you need to install `nimlsp`
+To enable autocompletion for [coc](coc.md) you need to install `nimlsp`
 (`nimble install nimlsp`).
 After that you need to add the following lines to your coc config file.
 
