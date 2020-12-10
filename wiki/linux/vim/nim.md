@@ -25,4 +25,4 @@ After that you need to add the following lines to your coc config file.
 ### Highlighting
 
 To enable highlighting you can install a
-[nvim plugin by alaviss](https://github.com/alaviss/nim.nvim).
+[vim plugin by zah](https://github.com/zah/nim.vim).
