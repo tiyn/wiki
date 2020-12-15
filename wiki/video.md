@@ -22,6 +22,6 @@ This way you don't have to search for your discs all the time.
 - [MakeMKV](https://www.makemkv.com) for windows can extract a `.mkv` file from
   a disc (Beta key can be found
   [here](https://www.makemkv.com/forum/viewtopic.php?f=5&t=1053)).
-- [MKVToolNix (including MKVCleaver)](https://mkvtoolnix.download/links.html)
-  for windows and linux can extract subtitles from a `.mkv` file
+- [MKS Extractor GUI](https://www.videohelp.vom/software/MKS-Extractor-GUI)
+  for windows can extract subtitles from a `.mkv` file
 - [VidCoder](https://vidcoder.net) for windows can compress `.mkv` files.
