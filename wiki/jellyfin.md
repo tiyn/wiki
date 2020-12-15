@@ -1,5 +1,8 @@
 # Jellyfin
 
+[Jellyfin](https://jellyfin.ord) is a suite for multimedia streaming.
+It includes a web-interface.
+
 ## Setup Server
 
 ### Docker
