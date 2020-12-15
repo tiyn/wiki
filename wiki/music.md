@@ -26,5 +26,5 @@ To label and sort music you need a program to add tags.
 You can convert your CDs to files on your computer.
 This way you don't have to search for your CDs all the time.
 
-- [Exact Audio Copy](https://www.exactaudiocopy.de) can rip music and automatically
+- [Exact Audio Copy](https://www.exactaudiocopy.de) for windows can rip music and automatically
 tag it with the help of a list of databases.
