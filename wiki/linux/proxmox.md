@@ -13,7 +13,7 @@ Enlarge a disk by using:
 qm resize <vmid> <vm-disk-to-enlarge> <size>
 ```
 
-For example:
+For example (100G is 100GibiByte):
 
 ```shell
 qm resize 100 ide0 +100G
