@@ -31,3 +31,11 @@ new `feature`
   - If not created already create a `config` branch from the `base` branch
   - Get the `config.def.h` of `master` into `config` with
   `git checkout master config.def.h`
+
+## Programs
+
+- dmenu is a menu with prgram launcher functionality
+- dwm is a window manager
+- [ii](ii.md) is an IRC client
+- slock is a screen locker
+- st is a terminal
