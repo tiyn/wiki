@@ -36,6 +36,6 @@ new `feature`
 
 - dmenu is a menu with prgram launcher functionality
 - dwm is a window manager
-- [ii](ii.md) is an IRC client
+- ii is an IRC client
 - slock is a screen locker
 - st is a terminal
