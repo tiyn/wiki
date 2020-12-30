@@ -50,6 +50,14 @@ For documentation you can look in the [Proxmox wiki](https://pve.proxmox.com/wik
 There is also an [article](https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough)
 on reddit, that focusses especially on windows 10 VMs with GPU passthrough.
 
+### Increasing backup-limit of Proxmox storage
+
+The default limit for backup is 1.
+This is a bit too low.
+To increase it navigate to the webinterface and click on Datacenter and Storage
+select the storage you want to save your backup to and change `Max Backups` to
+your liking.
+
 ## Bugfixing
 
 ### No internet after mainboard swap
