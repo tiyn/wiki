@@ -4,6 +4,14 @@ Proxmox is an environment for virtual machines and containers.
 
 ## Disk Management
 
+### Adding a LVM to Proxmox
+
+Create a `pv` and `vg` according to [the LVM page](lvm.md) at subsection
+`Create VG for proxmox`.
+Then add the LVM via the web-interface.
+Select Datacenter and Storage. The `Add` and choose `LVM`.
+After that follow the instructions and fill in the fields to your liking.
+
 ### Enlarging disk of a VM
 
 SSH into Proxmox.
