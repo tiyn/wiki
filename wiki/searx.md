@@ -42,11 +42,7 @@ docker run --name searx \
 
 ## Adding to Firefox
 
-You can add Searx as your standard search engine with the addon `Add custom search engine`.
+Add Searx as a new search engine for firefox and set it as main search for the
+address bar as described in [the Firefox article](./firefox.md).
 Follow the instructions by the addon and put searx with
 `<url to searx instance>/search?q=%s` as search string.
-Make sure to replace `<url to searx instance>` with the url of your instance.
-
-It is possible to add it without an addon.
-Navigate to the searx instance and click the `...` in the address bar.
-Then click `Add Search Engine`
