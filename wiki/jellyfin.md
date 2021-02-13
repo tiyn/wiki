@@ -86,3 +86,10 @@ volumes:
   media_tvshows:
     external: true
 ```
+
+### Add IP-TV
+
+You can add IP-TV under `Live TV` in the administration panel.
+To include a m3u IP-TV stream just put the file on the server or copy its URL
+and add it under `Live TV`.
+After that make sure to setup `DVR` to your liking to record.
