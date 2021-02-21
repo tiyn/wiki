@@ -13,6 +13,8 @@ an automatic dark mode for sites without native dark mode.
 lets you separate cookies in different containers on a per site base.
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/firefox/addon/hide-scrollbars)
 hides scrollbars.
+- [Never-Consent](https://addons.mozilla.org/en-GB/firefox/addon/never-consent)
+automatically refuses GDPR consent to a bunch of platforms.
 - [NoScript](https://addons.mozilla.org/en-GB/firefox/addon/noscript) blocks all
 javascript so that the parts you need can be reenabled and the rest is not used.
 - [Privacy Badger](https://addons.mozilla.org/en-GB/firefox/addon/privacy-badger17)
