@@ -6,6 +6,7 @@ Due to easy handling and reproducable environments it is a useful tool.
 ## Installation
 
 - Arch linux: run `pacman -S docker` to install docker
+- Ubuntu: visit [the official installation guide](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Run Docker as non-root user
 
