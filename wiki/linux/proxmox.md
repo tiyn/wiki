@@ -29,6 +29,14 @@ qm resize 100 ide0 +100G
 
 After that grow the filesystem as described in [the disk-management article](disk-management.md).
 
+## Remove local-lvm and add its size to local
+
+First remove `local-lvm` with `lvremove /dev/pve/data`.
+Then remove `local-lvm` in the proxmox gui via `Datacenter/Storage/Remove`.
+Change the `Content` of the remaining storage according to your needs.
+Add the free storage to the remaining storage with `lvresize -rl +100%FREE /dev/pve/root`.
+Finally extend the filesystem `resize2fs /dev/mapper/pve-root`.
+
 ## VM passthrough
 
 ### USB passthrough
