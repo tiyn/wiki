@@ -1,5 +1,9 @@
 # Airsonic
 
+Airsonic is a free and open-source personal media streamer.
+It is a fork of [Subsonic](https://www.subsonic.org) and thus is compatible with
+most of its clients.
+
 ## Setup Server
 
 ### Docker
@@ -58,3 +62,11 @@ docker run --name=airsonic \
     -e TZ=Europe/Berlin \
     -d linuxserver/airsonic
 ```
+
+## Setup Client
+
+As already mentioned it is possible to use a bunch of different clients because
+the server is compatible with most of the Subsonic clients.
+
+- [Ultrasonic](https://www.f-droid.org/en/packages/org.moire.ultrasonic) is a
+free and open-source android subsonic/airsonic client.
