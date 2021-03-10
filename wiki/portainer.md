@@ -1,12 +1,10 @@
 # Portainer
 
-## Setup Server
-
-### Docker
+## Setup Server with Docker
 
 The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/portainer).
 
-#### Volumes
+### Server: Volumes
 
 Set the following volumes with the -v tag.
 
@@ -15,7 +13,7 @@ Set the following volumes with the -v tag.
 | `portainer`            | `/data`                | configuration directory                           |
 | `/var/run/docker.sock` | `/var/run/docker.sock` | connection to local docker containers and volumes |
 
-#### Ports
+### Server: Ports
 
 Set the following ports with the -p tag.
 
@@ -23,7 +21,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `9000`         | `9000`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Server: Rebuild
 
 ```shell
 #!/bin/sh
@@ -38,13 +36,11 @@ docker run --name portainer \
     -d portainer/portainer
 ```
 
-## Setup Agent
-
-### Docker
+## Setup Agent with Docker
 
 The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/agent).
 
-#### Volumes
+### Agent: Volumes
 
 Set the following volumes with the -v tag.
 
@@ -53,7 +49,7 @@ Set the following volumes with the -v tag.
 | `/var/run/docker.sock`    | `/var/run/docker.sock`    | connect your running docker containers |
 | `/var/lib/docker/volumes` | `/var/lib/docker/volumes` | connect running docker volumes         |
 
-#### Ports
+### Agent: Ports
 
 Set the following ports with the -p tag.
 
@@ -61,7 +57,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | -------------------- |
 | `9001`         | `9001`                   | TCP      | Portainer agent port |
 
-#### Rebuild
+### Agent: Rebuild
 
 ```shell
 #!/bin/sh

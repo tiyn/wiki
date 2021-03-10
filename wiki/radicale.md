@@ -1,15 +1,13 @@
 # Radicale
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [tomsquest](https://hub.docker.com/r/tomsquest/docker-radicale).
 
 The `latest` tag at the moment of writing this readme was corrupted.
 The last usable tag was used therefore to guarantee best performance for all users.
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -18,7 +16,7 @@ Set the following volumes with the -v tag.
 | `radicale_data`   | `/data`         | storage for caldav          |
 | `radicale_config` | `/config`       | storage for radicale config |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -26,7 +24,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------- |
 | `5232`         | `5232`                   | TCP      | WebUI, caldav |
 
-#### Additional
+### Additional
 
 There are some special variables to set.
 
@@ -34,7 +32,7 @@ There are some special variables to set.
 | ------------- | ---------------------------------------------------------------------- |
 | `--read-only` | make radicale read-only, caldav can still be changed and used normally |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #/bin/sh
@@ -50,7 +48,7 @@ docker run --name radicale \
     -d tomsquest/docker-radicale:2.1.11.4
 ```
 
-#### Configuration
+## Configuration
 
 After installation there are a few crucial steps to take to secure your
 calendars with a login.

@@ -1,16 +1,14 @@
 # Owncloud
 
-## Setup Server
-
-### Docker
+## Setup Server with Docker
 
 The official container and documentation was made by [owncloud](https://hub.docker.com/_/owncloud).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The services in this files are explained seperately.
+The main Docker container needs a database in form of a [MariaDB](./mariadb.md)
+Docker container.
 
-#### Owncloud
-
-##### Volumes
+### Server: Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -19,7 +17,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `owncloud`  | `/var/www/html`        | storage for owncloud plugins |
 | `config`    | `/var/www/html/config` | storage for owncloud config  |
 
-##### Ports
+### Server: Ports
 
 Set the following ports in the `ports:` section.
 
@@ -27,26 +25,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
 
-#### Maria DB
-
-##### Environment-variables
-
-Set the following environment-variables in the `environment:` section of the
-docker-compose file.
-
-| Name                  | Usage                        | Default |
-| --------------------- | ---------------------------- | ------- |
-| `MYSQL_ROOT_PASSWORD` | set the mysql admin password |         |
-
-##### Volumes
-
-Set the following volumes in the `volumes:` section of the docker-compose file.
-
-| Volume-Name | Container mount  | Description               |
-| ----------- | ---------------- | ------------------------- |
-| `mariadb`   | `/var/lib/mysql` | storage for owncloud data |
-
-#### Rebuild
+### Server: Rebuild
 
 ```shell
 #!/bin/sh
@@ -56,7 +35,7 @@ docker pull mariadb
 docker-compose up -d
 ```
 
-#### Docker-Compose.yml
+### Server: Docker-Compose.yml
 
 ```yml
 version: "3.1"
@@ -88,13 +67,11 @@ volumes:
     driver: local
 ```
 
-## Setup Client
-
-### Docker
+## Setup Client with Docker
 
 The original container and documentation are made by [tiynger](https://hub.docker.com/r/tiynger/owncloudclient)
 
-#### Environment-variables
+### Client: Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -104,7 +81,7 @@ Set the following variables with the -e tag.
 | `PASSWORD` | password of OwnCloud server                         | `admin`     |
 | `URL`      | url of OwnCloud server (dont forget the http(s)://) | `localhost` |
 
-#### Additional
+### Client: Additional
 
 There are some special variables to set.
 
@@ -112,7 +89,7 @@ There are some special variables to set.
 | -------------------- | ---------------------------------------------------------- |
 | `--opt-log max-size` | prevent log file from growing to large (`50m` recommended) |
 
-#### Volumes
+### Client: Volumes
 
 Set the following volumes with the -v tag.
 
@@ -120,7 +97,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | ----------------------------------- |
 | `data`      | `/data`         | directory for the owncloud contents |
 
-#### Rebuild
+### Client: Rebuild
 
 ```shell
 #!/bin/sh

@@ -1,12 +1,10 @@
 # Hastebin
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [rlister](https://hub.docker.com/r/rlister/hastebin).
 
-#### Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -14,7 +12,7 @@ Set the following variables with the -e tag.
 | -------------- | ----------------------- | ------- |
 | `STORAGE_TYPE` | Type to store the datas | `file`  |
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -22,7 +20,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | -------------------------- |
 | `hastebin`  | `/app/data`     | storage directory for data |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -30,7 +28,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `7777`         | `7777`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

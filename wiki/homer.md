@@ -1,12 +1,10 @@
 # Homer
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [b4bz](https://hub.docker.com/r/b4bz/homer).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -15,7 +13,7 @@ Set the following volumes with the -v tag.
 | `/current/dir/config.yml` | `/www/config.yml` | configuration file for static page |
 | `homer`                   | `/www/assets`     | storage for icons, etc             |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -23,7 +21,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh
@@ -38,7 +36,7 @@ docker run --name homer \
     -d b4bz/homer:latest
 ```
 
-#### Configuration
+### Configuration
 
 This is a sample config.yml:
 

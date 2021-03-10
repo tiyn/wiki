@@ -3,11 +3,9 @@
 [Golinks](https://github.com/prologic/golinks) is a web app that can create and
 use bookmarks and run different searches by prefixes.
 
-## Setup
+## Setup Server with Docker
 
-### Docker
-
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -15,7 +13,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | -------------------------- |
 | `golinks`   | `/search.db`    | database with all commands |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -23,7 +21,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8000`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh
@@ -32,7 +30,7 @@ docker pull prologic/golinks:latest
 docker-compose up -d
 ```
 
-#### Docker-Compose.yml
+### Docker-Compose.yml
 
 ```yml
 version: "3.1"
@@ -54,7 +52,9 @@ volumes:
     driver: local
 ```
 
-### Setup in Firefox
+## Client
+
+### Firefox
 
 Add Golinks as a new search engine for firefox and set it as main search for the
 address bar as described in [the Firefox article](./firefox.md).

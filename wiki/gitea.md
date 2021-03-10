@@ -9,13 +9,14 @@ If you want to use all features in addition to the basic client described in
 [git.md](git.md) but don't want to use the web-interface all the time you can get
 [tea](https://gitea.com/gitea/tea) the official cli-tool for gitea.
 
-## Setup Server
+## Setup Server with Docker
 
-### Docker
+The Server consists of 2 Docker containers, one is the gitea main server and one
+is a database.
+In addition to the main container you need to connect a [mySQL container](./mysql.md)
+to it.
 
-#### Gitea
-
-##### Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -30,7 +31,7 @@ docker-compose file.
 | `DB_USER`   | Username for the database      |         |
 | `DB_PASSWD` | Password for the database      |         |
 
-##### Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -40,7 +41,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `/etc/timezone`  | `/etc/timezone:ro` | link timezone                  |
 | `/etc/localtime` | `/etc/localtime`   | link localtime                 |
 
-##### Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -49,7 +50,7 @@ Set the following ports in the `ports:` section.
 | `3000`         | `3000`                   | TCP      | WebUI                  |
 | `22`           | `222`                    | TCP      | ssh port of git server |
 
-##### Networks
+### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
 
@@ -57,7 +58,7 @@ Set the following networks in the `networks:` section of the docker-compose file
 | ------- | --------------------- |
 | `gitea` | connect db with gitea |
 
-##### Dependencies
+### Dependencies
 
 Set the following dependencies in the `depends_on:` section of the
 docker-compose file.
@@ -66,37 +67,8 @@ docker-compose file.
 | ---- | -------------------- |
 | `db` | Ensure db is running |
 
-#### MySql
 
-##### Environment-variables
-
-Set the following environment-variables in the `environment:` section of the
-docker-compose file.
-
-| Name                  | Usage                         | Default |
-| --------------------- | ----------------------------- | ------- |
-| `MYSQL_ROOT_PASSWORD` | set the mysql admin password  |         |
-| `MYSQL_USER`          | set the mysql username        |         |
-| `MYSQL_PASSWORD`      | set the mysql user password   |         |
-| `MYSQL_Database`      | specify mysql database to use |         |
-
-##### Volumes
-
-Set the following volumes in the `volumes:` section of the docker-compose file.
-
-| Volume-Name | Container mount  | Description               |
-| ----------- | ---------------- | ------------------------- |
-| `mysql`     | `/var/lib/mysql` | storage for owncloud data |
-
-##### Networks
-
-Set the following networks in the `networks:` section of the docker-compose file.
-
-| Name    | Usage                 |
-| ------- | --------------------- |
-| `gitea` | connect db with gitea |
-
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh
@@ -104,7 +76,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-#### Docker-Compose.yml
+### Docker-Compose.yml
 
 ```yml
 version: "2"

@@ -4,13 +4,11 @@ Airsonic is a free and open-source personal media streamer.
 It is a fork of [Subsonic](https://www.subsonic.org) and thus is compatible with
 most of its clients.
 
-## Setup Server
-
-### Docker
+## Setup server with Docker
 
 The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/airsonic).
 
-#### Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -20,7 +18,7 @@ Set the following variables with the -e tag.
 | `PGID` | GroupID  |         |
 | `TZ`   | Timezone |         |
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -33,7 +31,7 @@ Set the following volumes with the -v tag.
 | `media_audiobooks` | `/audiobooks`   | Location for audiobooks |
 | `media_podcasts`   | `/podcasts`     | location for podcasts   |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -41,7 +39,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `4040`         | `4040`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh
@@ -63,7 +61,7 @@ docker run --name=airsonic \
     -d linuxserver/airsonic
 ```
 
-## Setup Client
+## Client
 
 As already mentioned it is possible to use a bunch of different clients because
 the server is compatible with most of the Subsonic clients.

@@ -3,14 +3,12 @@
 [Jellyfin](https://jellyfin.ord) is a suite for multimedia streaming.
 It includes a web-interface.
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [linuxserver](https://hub.docker.com/linuxserver/jellyfin).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-#### Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the docker-compose file.
 
@@ -20,7 +18,7 @@ Set the following environment-variables in the `environment:` section of the doc
 | `PGID` | Groupid to run the container |         |
 | `TZ`   | specify the timezone         |         |
 
-#### Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -38,7 +36,7 @@ it is recommended to use them as external volumes (volumes section:
 To use the rebuild the volumes have to exist before creating the container
 (`docker volume create media_movies` and tvshows accordingly).
 
-#### Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -46,7 +44,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8096`         | `8096`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh
@@ -55,7 +53,7 @@ docker pull linuxserver/jellyfin:latest
 docker-compose up -d
 ```
 
-#### Docker-Compose.yml
+### Docker-Compose.yml
 
 ```yml
 version: "2"
@@ -87,7 +85,7 @@ volumes:
     external: true
 ```
 
-### Add IP-TV
+## Add IP-TV
 
 You can add IP-TV under `Live TV` in the administration panel.
 To include a m3u IP-TV stream just put the file on the server or copy its URL

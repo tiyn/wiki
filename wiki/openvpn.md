@@ -1,12 +1,10 @@
 # OpenVPN
 
-## Setup Server
-
-### Docker
+## Setup Server with Docker
 
 The official container and documentation was made by [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -14,7 +12,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | ------------------------ |
 | `ovpn`      | `/etc/openvpn`  | storage for openvpn data |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -22,7 +20,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------ |
 | `1194`         | `1194`                   | UDP      | openvpn port |
 
-#### Additional
+### Additional
 
 There are some special variables to set.
 
@@ -30,7 +28,7 @@ There are some special variables to set.
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

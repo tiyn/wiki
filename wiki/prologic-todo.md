@@ -1,12 +1,10 @@
 # Todo-List
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [prologic](https://hub.docker.com/r/prologic/todo).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -14,7 +12,7 @@ Set the following volumes with the -v tag.
 | ----------- | ---------------------- | ---------------------- |
 | `todo`      | `/go/src/todo/todo.db` | Database for todo list |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -22,7 +20,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8000`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

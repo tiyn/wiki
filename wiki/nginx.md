@@ -1,8 +1,6 @@
 # Nginx
 
-## Setup Server
-
-### Docker
+## Docker
 
 The easiest way to configure and run nginx is
 [ncdt](https://github.com/nasourso/nginx-certbot-docker-tui) by nasourso.
@@ -14,7 +12,7 @@ You can just run the script and it will install all needed dependencies.
 After that just go ahead and start the container.
 You can then configure reverse proxies by adding websites.
 
-#### Block remote port access
+### Block remote port access
 
 If you configured a reverse proxy to a port chances are you don't want the port
 to be accessed outside of the proxy.
@@ -25,7 +23,7 @@ This can be changed at the forwarded docker-service by replacing for example
 This forces the docker container to only expose the port in the docker bridge
 network, effectively banning remote access.
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

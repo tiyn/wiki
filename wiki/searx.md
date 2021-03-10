@@ -2,13 +2,11 @@
 
 [Searx](https://searx.me) is a free metasearch engine.
 
-## Setup
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [searx](https://hub.docker.com/r/searx/searx).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -17,7 +15,7 @@ Set the following volumes with the -v tag.
 | `searx_etc` | `/etc/searx`     | storage for etc  |
 | `searx_log` | `/var/log/uwsgi` | storage for logs |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -25,7 +23,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

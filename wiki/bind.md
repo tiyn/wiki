@@ -1,12 +1,10 @@
 # Bind
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [ventz](https://hub.docker.com/r/ventz/bind).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -15,7 +13,7 @@ Set the following volumes with the -v tag.
 | `bind_cache` | `/var/cache/bind` | cache for dns         |
 | `bind_etc`   | `/etc/bind`       | configuration for dns |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -24,7 +22,7 @@ Set the following ports with the -p tag.
 | `53`           | `53`                     | TCP      | dns protocol port |
 | `53`           | `53`                     | UDP      | dns protocol port |
 
-#### Additional
+### Additional
 
 There are some special variables to set.
 
@@ -32,7 +30,7 @@ There are some special variables to set.
 | ------- | ------------------------------------------------------- |
 | `--dns` | set two of these flags for specific dns forward servers |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

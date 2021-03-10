@@ -1,12 +1,10 @@
 # Gopher Server
 
-## Setup Server
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [tiynger](https://hub.docker.com/r/tiynger/gopherserver).
 
-#### Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -14,7 +12,7 @@ Set the following variables with the -e tag.
 | ------------- | --------------------------------------------------- | ----------- |
 | `SERVER_NAME` | set this to your IP/Domain (no "gopher://" needed!) | `localhost` |
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -22,7 +20,7 @@ Set the following volumes with the -v tag.
 | -------------- | --------------- | ----------------------------- |
 | `gopherwebdir` | `/var/gopher`   | directory for the gopher page |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -30,7 +28,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ---------------------------- |
 | `70`           | `70`                     | TCP      | port for the gopher-protocol |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

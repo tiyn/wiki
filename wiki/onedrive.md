@@ -1,12 +1,10 @@
 # Onedrive
 
-## Setup Mirror
-
-### Docker
+## Setup with Docker
 
 The official container and documentation was made by [oznu](https://hub.docker.com/r/oznu/onedrive).
 
-#### Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -15,7 +13,7 @@ Set the following variables with the -e tag.
 | `PUID` | UserID  |         |
 | `PGID` | GroupID |         |
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -24,7 +22,7 @@ Set the following volumes with the -v tag.
 | `onedrive_config` | `/config`       | configuration storage for the server connection |
 | `onedrive_doc`    | `/documents`    | storage for downloaded documents                |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

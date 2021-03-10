@@ -1,12 +1,10 @@
 # Samba
 
-## Setup Server
-
-### Docker
+## Setup Server with Docker
 
 The official container and documentation was made by [dperson](https://hub.docker.com/r/samba).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -19,7 +17,7 @@ Set the following volumes with the -v tag.
 | `samba_etc`   | `/etc`             | etc directory of samba server |
 | `samba_log`   | `/var/log/samba`   | storage for samba logs        |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -28,7 +26,7 @@ Set the following ports with the -p tag.
 | `139`          | `139`                    | TCP      | Samba internal |
 | `445`          | `445`                    | TCP      | Samba internal |
 
-#### Additional
+### Additional
 
 There are some special variables to set.
 
@@ -38,7 +36,7 @@ There are some special variables to set.
 | `-w \<workgroup\>`                                                        | define workgroup |
 | `-s \<name;path\>(;browse;readonly;guest;users;admins;writelist;comment)` | define shares    |
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh

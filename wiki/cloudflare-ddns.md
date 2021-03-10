@@ -4,7 +4,7 @@ If you have a dynamic IP address, you will need to update your domain on cloudfl
 regularly to ensure you're mapping onto the right address.
 This service will do that for you.
 
-## Docker
+## Setup with Docker
 
 The official container and documentation was made by [oznu](https://github.com/oznu/docker-cloudflare-ddns).
 

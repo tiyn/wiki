@@ -1,12 +1,10 @@
 # Cups
 
-## Setup Server
-
-### Docker
+## Setup Server with Docker
 
 The official container and documentation was made by [olbat](https://hub.docker.com/r/olbat/cupsd).
 
-#### Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -15,7 +13,7 @@ Set the following volumes with the -v tag.
 | `cups`          | `/etc/cups`     | configuration for printers, etc |
 | `/var/run/dbus` | `/var/run/dbus` | connection to host dbus         |
 
-#### Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -23,11 +21,11 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------------- |
 | `631`          | `631`                    | TCP      | cups server webui |
 
-#### Additional
+### Additional
 
 The default username is `print`, the default password is `print`.
 
-#### Rebuild
+### Rebuild
 
 ```shell
 #!/bin/sh
@@ -43,7 +41,9 @@ docker run --name cups \
         -d olbat/cupsd:latest
 ```
 
-## Client Setup
+## Client
+
+For Linux computers follow the guide below:
 
 - Install the cups-client package (in Arch Linux it is included in `cups`)
 - Edit `/etc/cups/client.conf` and insert `ServerName <ip to print-server>:631`
