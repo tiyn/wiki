@@ -1,14 +1,8 @@
-# Cloudflare DDNS
-
-If you have a dynamic IP address, you will need to update your domain on cloudflare
-regularly to ensure you're mapping onto the right address.
-This service will do that for you.
-
-## Setup with Docker
+# oznu - docker-cloudflare-ddns
 
 The official container and documentation was made by [oznu](https://github.com/oznu/docker-cloudflare-ddns).
 
-### Environment variables
+## Environment variables
 
 Set the following variables with the -e tag.
 
@@ -18,7 +12,7 @@ Set the following variables with the -e tag.
 | `ZONE=`       | append your domain (for example `main.com`)            |
 | `SUBDOMAIN`   | append your subdomain (for example `dynamic`)          |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

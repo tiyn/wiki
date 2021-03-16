@@ -1,10 +1,8 @@
-# Teamspeak3
-
-## Setup Server with Docker
+# teamspeak
 
 The official container and documentation was made by [teamspeak](https://hub.docker.com/_/teamspeak).
 
-### Environment-variables
+## Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -12,7 +10,7 @@ Set the following variables with the -e tag.
 | ------------------- | ---------------------------- | ------- |
 | `TS3SERVER_LICENSE` | accept the license agreement |         |
 
-### Volumes
+## Volumes
 
 Set the following volumes with the -v tag.
 
@@ -20,7 +18,7 @@ Set the following volumes with the -v tag.
 | ------------ | ---------------- | --------------------------- |
 | `teamspeak3` | `/var/ts3server` | storage for ts3-server data |
 
-### Ports
+## Ports
 
 Set the following ports with the -p tag.
 
@@ -30,7 +28,7 @@ Set the following ports with the -p tag.
 | `10011`        | `10011`                  | TCP      | ts3-intern  |
 | `30033`        | `30033`                  | TCP      | ts3-intern  |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

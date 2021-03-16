@@ -1,6 +1,4 @@
-# Dovecot
-
-## Setup with Docker
+# tvial - docker-mailserver
 
 The official container and documentation was made by [tvial](https://hub.docker.com/r/tvial/docker-mailserver).
 It contains dovecot, antispam, antivirus, ssl, etc.
@@ -29,7 +27,7 @@ And finally generate the DCIM keys and rebuild once again.
 
 Afterwards you're ready to go by once again running the `rebuild.sh` file.
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

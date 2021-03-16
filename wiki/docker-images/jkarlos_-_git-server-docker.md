@@ -1,10 +1,8 @@
-# Bare Git
-
-## Setup server with Docker
+# jkarlos - git-server-docker
 
 The official container and documentation was made by [jkarlos](https://hub.docker.com/r/jkarlos/git-server-docker).
 
-### Volumes
+## Volumes
 
 Set the following volumes with the -v tag.
 
@@ -13,7 +11,7 @@ Set the following volumes with the -v tag.
 | `git-server_repos` | `/git-server/repos` | storage for git repos     |
 | `git-server_keys`  | `/git-server/keys`  | storage for user ssh keys |
 
-### Ports
+## Ports
 
 Set the following ports with the -p tag.
 
@@ -21,7 +19,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------------------------------- |
 | `22`           | `2222`                   | TCP      | ssh port for accessing the git server |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

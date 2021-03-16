@@ -11,7 +11,7 @@ access a server for it.
 If you want to keep your system clean of much data, you can use this kind of setup.
 There are differences depending on your preffered client interface.
 
-- [Airsonic](airsonic.md) is a free fork of Subsonic, can be dockerized and has
+- [Airsonic](./airsonic.md) is a free fork of Subsonic, can be dockerized and has
   a web-interface.
 
 ## Scan CDs

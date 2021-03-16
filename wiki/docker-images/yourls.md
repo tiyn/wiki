@@ -1,12 +1,10 @@
-# YOURLS
-
-## Setup with Docker
+# yourls
 
 The official container and documentation was made by [yourls](https://hub.docker.com/_/yourls).
 In addition to the main container you need to connect a [mySQL container](./mysql.md)
 to it.
 
-### Environment-variables
+## Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -17,7 +15,7 @@ Set the following variables with the -e tag.
 | `YOURLS_USER`    | username for yourls admin  |         |
 | `YOURLS_PASS`    | password for yourls admin  |         |
 
-### Volumes
+## Volumes
 
 Set the following volumes with the -v tag.
 
@@ -25,7 +23,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | -------------------- |
 | `yourls`    | `/var/www/html` | yourls specific html |
 
-### Ports
+## Ports
 
 Set the following ports with the -p tag.
 
@@ -33,7 +31,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------------- |
 | `80`           | `80`                     | TCP      | dns protocol port |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh
@@ -41,7 +39,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-### Docker-Compose.yml
+## Docker-Compose.yml
 
 ```yml
 version: "3.1"

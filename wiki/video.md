@@ -11,8 +11,8 @@ access a server for it.
 If you want to keep your system clean of much data, you can use this kind of setup.
 There are differences depending on your preffered client interface.
 
-- [Plex](plex.md) is a dockerizable media streaming service with web-interface.
-- [Jellyfin](jellyfin.md) is a foss dockerizable media streaming service with web-interface.
+- [Plex](https://www.plex.tv) is a dockerizable media streaming service with web-interface.
+- [Jellyfin](./jellyfin.md) is a foss dockerizable media streaming service with web-interface.
 
 ## Scan DVDs/Blu-Rays
 

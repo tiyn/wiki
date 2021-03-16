@@ -1,14 +1,10 @@
-# MySQL
-
-[MySQL](https://www.mysql.com) is an open-source database management system.
-
-## Setup with Docker
+# mysql
 
 The official container and documentation was made by [MySQL](https://hub.docker.com/_/mysql).
 The Docker container is mainly used in combination with other containers.
 To achieve this in the easiest way use a docker-compose file
 
-### Environment-variables
+## Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -20,7 +16,7 @@ docker-compose file.
 | `MYSQL_PASSWORD`      | set the mysql user password   |         |
 | `MYSQL_Database`      | specify mysql database to use |         |
 
-### Volumes
+## Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -28,7 +24,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ----------- | ---------------- | ------------------------- |
 | `mysql`     | `/var/lib/mysql` | storage for owncloud data |
 
-### Networks
+## Networks
 
 You can set networks in the `networks:` part of a docker-compose file to connect
 the database with other docker containers.

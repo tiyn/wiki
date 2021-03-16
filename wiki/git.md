@@ -21,10 +21,11 @@ Additionally it is easy to collaborate together.
 
 - [Gitea](gitea.md) is an open-source and selfhosted and can be dockerized.
 - [Github](https://github.com) is the go to system for many people. Not
-selfhosted, owned by microsoft ([cli-tool](https://github.com/github/hub)).
+  selfhosted, owned by microsoft ([cli-tool](https://github.com/github/hub)).
 
 ## Server without graphical interface
 
 If you don't need a bloated web-interface a more basic approach is more than enough.
 
-- [git-server-docker](bare-git.md) is a pretty basic docker-container for git.
+- [git-server-docker](./docker-images/jkarlos_-_git-server-docker.md) is a pretty
+  basic docker-container for git.

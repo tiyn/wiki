@@ -1,10 +1,8 @@
-# Syncthing
-
-## Setup with Docker
+# linuxserver - syncthing
 
 The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/syncthing).
 
-### Environment-variables
+## Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -15,7 +13,7 @@ Set the following variables with the -e tag.
 | `TZ`        | Timezone         |         |
 | `UMASK_SET` | setting usermask |         |
 
-### Volumes
+## Volumes
 
 Set the following volumes with the -v tag.
 
@@ -23,7 +21,7 @@ Set the following volumes with the -v tag.
 | ------------------ | --------------- | ----------------------------------------------- |
 | `syncthing_config` | `/config`       | storage for config and possible downloaded data |
 
-### Ports
+## Ports
 
 Set the following ports with the -p tag.
 
@@ -33,7 +31,7 @@ Set the following ports with the -p tag.
 | `22000`        | `22000`                  | TCP      | Syncthing internal |
 | `21027`        | `21027`                  | UDP      | Syncthing internal |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

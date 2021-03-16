@@ -1,10 +1,8 @@
-# Pinedocs
-
-## Setup with Docker
+# xy2z - pinedocs
 
 The official container and documentation was made by [xy2z](https://hub.docker.com/r/xy2z/pinedocs).
 
-### Volumes
+## Volumes
 
 Set the following volumes with the -v tag.
 
@@ -12,7 +10,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | -------------------- |
 | `pinedocs`  | `/data`         | storage for pinedocs |
 
-### Ports
+## Ports
 
 Set the following ports with the -p tag.
 
@@ -20,7 +18,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

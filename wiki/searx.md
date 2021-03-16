@@ -2,41 +2,9 @@
 
 [Searx](https://searx.me) is a free metasearch engine.
 
-## Setup with Docker
+## Server
 
-The official container and documentation was made by [searx](https://hub.docker.com/r/searx/searx).
-
-### Volumes
-
-Set the following volumes with the -v tag.
-
-| Volume-Name | Container mount  | Description      |
-| ----------- | ---------------- | ---------------- |
-| `searx_etc` | `/etc/searx`     | storage for etc  |
-| `searx_log` | `/var/log/uwsgi` | storage for logs |
-
-### Ports
-
-Set the following ports with the -p tag.
-
-| Container Port | Recommended outside port | Protocol | Description |
-| -------------- | ------------------------ | -------- | ----------- |
-| `8080`         | `8080`                   | TCP      | WebUI       |
-
-### Rebuild
-
-```shell
-#!/bin/sh
-docker stop searx
-docker rm searx
-docker pull searx/searx
-docker run --name searx \
-    --restart unless-stopped \
-    -v searx_etc:/etc/searx \
-    -v searx_log:/var/log/uwsgi \
-    -p 8080:8080 \
-    -d searx/searx
-```
+A server can be setup via docker with the [searx image](./docker-images/searx_-_searx.md).
 
 ## Adding to Firefox
 

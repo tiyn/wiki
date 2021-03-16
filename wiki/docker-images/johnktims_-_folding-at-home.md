@@ -1,10 +1,8 @@
-# Folding-at-home
-
-## Setup with Docker
+# johnktims - folding-at-home
 
 The official container and documentation was made by [johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
 
-### Ports
+## Ports
 
 Set the following ports with the -p tag.
 
@@ -12,7 +10,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `7396`         | `7396`                   | TCP      | WebUI       |
 
-### Additional
+## Additional
 
 There are some special variables to set.
 
@@ -22,14 +20,11 @@ There are some special variables to set.
 | `--power` | set the default power to fold at home |
 | `--team`  | set your teamid to contribute points  |
 
-#### GPU
+### GPU
 
-To add a nvidia gpu add the `nvidia-docker-toolkit` or the recommended software
-for your gpu.
-After that you can set you gpu to fold aswell by adding `--gpus=all`.
-GPU support is also mentioned in [the docker entry](docker.md).
+GPU support is documented in [the docker entry](../docker.md).
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

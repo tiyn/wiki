@@ -1,10 +1,8 @@
-# Flask
-
-## Setup with Docker
+# tiynger - pythonflask
 
 The original container and documentation are made by [tiynger](https://hub.docker.com/r/tiynger/pythonflask).
 
-### Volumes
+## Volumes
 
 Set the following volumes with the -v tag.
 
@@ -12,7 +10,7 @@ Set the following volumes with the -v tag.
 | ----------- | --------------- | ------------------------------- |
 | `app`       | `/flask`        | directory for flask application |
 
-### Ports
+## Ports
 
 Set the following volumes with the -p tag.
 
@@ -20,7 +18,7 @@ Set the following volumes with the -p tag.
 | -------------- | --------------------- | -------- | ----------- |
 | `5000`         | `80`                  | TCP      | HTTP port   |
 
-### Rebuild
+## Rebuild
 
 ```shell
 #!/bin/sh

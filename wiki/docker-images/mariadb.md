@@ -1,15 +1,10 @@
-# MariaDB
-
-[MariaDB](https://www.mariadb.com) is an open-source database management system
-forked from [mySQL](./mysql.md).
-
-## Setup Server with Docker
+# mariadb
 
 The official container and documentation was made by [mariadb](https://hub.docker.com/_/mariadb).
 The Docker container is mainly used in combination with other containers.
 To achieve this in the easiest way use a docker-compose file
 
-### Environment-variables
+## Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -21,7 +16,7 @@ docker-compose file.
 | `MYSQL_PASSWORD`      | set the mysql user password   |         |
 | `MYSQL_Database`      | specify mysql database to use |         |
 
-### Volumes
+## Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
