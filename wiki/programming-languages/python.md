@@ -20,6 +20,7 @@ You can then set and install your preferred version of python globally with
 `pyenv install <version>` and `pyenv global <version>`.
 
 Analog to managing python versions, `pipenv` can manage pip and package versions.
+A guide and description of the usage can be found on [gioele.io](https://gioele.io/pyenv-pipenv).
 
 ### Avoid Errors in Vim
 
