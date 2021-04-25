@@ -1,4 +1,4 @@
-# Coc
+# Coc in Vim
 
 [Conquer of completion](https://github.com/neoclide/coc.nvim) enables full
 language server protocol support for neovim.

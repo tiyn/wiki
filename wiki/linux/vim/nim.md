@@ -1,4 +1,4 @@
-# Nim
+# Nim in Vim
 
 [Nim](https://nim-lang.org) is a statically typed compiled systems programming
 
