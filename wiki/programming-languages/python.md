@@ -33,6 +33,13 @@ let g:python3_host_prog = "/usr/bin/python3"
 
 to your `init.vim` to avoid usage of `pyenv`s version of python in autocompletion.
 
+## Usage
+
+### Create a requirements file
+
+To automatically create a `requirements.txt` of your current project, navigate
+to it and run `pipreqs` (install it if not already done).
+
 ## IDE
 
 ### Vim
