@@ -1,7 +1,7 @@
-# Alternatives to
+# Recommended
 
-This article is a list of proprietary hard- and software and alternatives to
-them or privacy respecting clients/frontends.
+This article is a list of proprietary hard- and software, its alternatives and other
+good free and/or open-source software.
 
 ## Social networks and platforms
 
