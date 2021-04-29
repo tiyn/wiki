@@ -9,10 +9,12 @@ Make sure to set the `GOPATH` and the `GOBIN` variable and add the last to the `
 by adding the following to your `.profile`:
 
 ```sh
-export GOPATH="${HOME}/code/go"
+export GOPATH="${HOME}/go"
 export GOBIN="${GOPATH}/bin"
 export PATH="${GOBIN}:${PATH}"
 ```
+
+You can move the `GOPATH` where you want.
 
 ## IDE
 
