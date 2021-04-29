@@ -1,5 +1,7 @@
 # Owncloud
 
+ownCloud is a free client-server cloud-service.
+
 ## Server
 
 A server can be setup via docker with the [owncloud image](./docker-images/owncloud.md).
