@@ -20,7 +20,7 @@ them or privacy respecting clients/frontends.
   - [NewPipe](https://newpipe.net/) is an free and open-source android youtube client.
   NewPipe features local subscription management.
 
-## Mobile software and smart devices
+## Various software and Smart devices
 
 - Preinstalled apps can be found on many android devices.
   - [SimpleMobileTools](https://www.simplemobiletools.com/) features a wide variety
