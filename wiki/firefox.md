@@ -34,8 +34,8 @@ browser.
 ## Add a new search engine
 
 You can add a new search engine with the addon `Add custom search engine`.
-Make sure to replace `<url to searx instance>` with the url of your instance.
+Make sure to replace `<url to search engine>` with the according url.
 
 It is possible to add it without an addon.
-Navigate to the searx instance and click the `...` in the address bar.
+Navigate to the search engine and click the `...` in the address bar.
 Then click `Add Search Engine`
