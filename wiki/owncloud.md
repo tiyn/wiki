@@ -23,3 +23,8 @@ Afterwards enable locking again by removing the added line.
 
 The reason I choose this process over editing the database file, is ease of use.
 The editing of the database is much more time consuming especially if run with docker.
+
+## WebDAV
+
+You can access ownCloud via WebDAV with the link
+`https://<owncloud instance>/remote.php/dav/files/<user>/<path to folder or file>`.

@@ -11,6 +11,8 @@ browser.
   an automatic dark mode for sites without native dark mode.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
+- [Floccus](https://addons.mozilla.org/en-US/firefox/addon/floccus/) syncs your
+  bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/firefox/addon/hide-scrollbars)
   hides scrollbars.
 - [Never-Consent](https://addons.mozilla.org/en-GB/firefox/addon/never-consent)
