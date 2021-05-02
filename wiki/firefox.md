@@ -5,6 +5,9 @@ browser.
 
 ## List of useful Firefox addons
 
+Following is a list of useful Firefox addons.
+They can be removed and configured under `about:config`.
+
 - [ClearURLs](https://addons.mozilla.org/en-GB/firefox/addon/clearurls) removes
   tracking elements from URLs.
 - [Dark Reader](https://addons.mozilla.org/en-GB/firefox/addon/darkreader) creates
