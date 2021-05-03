@@ -27,14 +27,17 @@ They can be removed and configured under `about:config`.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.
-- [Tree Style Tab](https://addons.mozilla.org/en-GB/firefox/addon/tree-style-tab)
-  shows tabs like a tree. This is especially useful if many tabs are used.
 - [uBlock Origin](https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin)
   blocks unwanted content like ads.
 - [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/firefox/addon/user-agent-string-switcher)
   spoofs websites that try to gather information about your webbrowser.
 - [Vim Vixen](https://addons.mozilla.org/en-GB/firefox/addon/vim-vixen) enables
   vim movement for firefox.
+- Plugins for Tabs, etc. in tree style:
+  - [Sidebery](https://addons.mozilla.org/en-GB/firefox/addon/sidebery)
+    is a sidebar with treestyle tabs and bookmarks.
+  - [Tree Style Tab](https://addons.mozilla.org/en-GB/firefox/addon/tree-style-tab)
+    shows tabs like a tree. This is especially useful if many tabs are used.
 
 ## Add a new search engine
 
