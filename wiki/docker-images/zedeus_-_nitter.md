@@ -40,7 +40,7 @@ Set the following volumes with the -v tag.
 
 ## Ports
 
-Set the following ports in the `ports:` section.
+Set the following ports with the -p tag.
 
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |

@@ -24,6 +24,9 @@ They can be removed and configured under `about:config`.
   javascript so that the parts you need can be reenabled and the rest is not used.
 - [Privacy Badger](https://addons.mozilla.org/en-GB/firefox/addon/privacy-badger17)
   blocks unwanted invisible trackers.
+- [Privacy Redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/)
+  redirects youtube, instagram, twitter, etc to free alternatives or alternative
+  frontends.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.

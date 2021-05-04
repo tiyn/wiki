@@ -13,4 +13,5 @@ A server can be setup via docker with the [linuxserver image](./docker-images/li
 There are various addons to redirect from YouTube links to your (or a public)
 invidious instance.
 For Firefox for example there is
-[invidious redirect](https://addons.mozilla.org/en-US/firefox/addon/invidious-redirect-2/).
+[invidious redirect](https://addons.mozilla.org/en-US/firefox/addon/invidious-redirect-2/)
+or [privacy redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/).

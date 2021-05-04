@@ -9,6 +9,9 @@ recommended, good software (mostly free and/or open-source).
   - [GadgetBridge](https://codeberg.org/Freeyourgadget/Gadgetbridge) is a free and
   cloudless alternative compatible with many devices.
 
+- [**Instagram**](https://instagram.com) alternatives:
+  - [Bibliogram](./bibliogram.md) is an alternative frontend for instagram.
+
 - **Microsoft office** alternatives:
   - [ThunderBird](https://www.thunderbird.net/) is an open-source email client.
   - [LibreOffice](https://www.libreoffice.org/) is a free and open-source office
