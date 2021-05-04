@@ -31,6 +31,7 @@ recommended, good software (mostly free and/or open-source).
 - [**Twitter**](https://twitter.com) alternatives:
   - [Fritter](https://github.com/jonjomckay/fritter) is a free, open-source Twitter
   client for Android and iOS. Fritter features local subscription management.
+  - [Nitter](./nitter.md) is a free and open source alternative frontend.
 
 - [**YouTube**](https://youtube.com) is a online video platform owned by Google.
   - [Invidious](./invidious.md) is a copyleft and open-source alternative frontend.
