@@ -30,6 +30,7 @@ recommended, good software (mostly free and/or open-source).
   - [Slide](https://github.com/ccrama/Slide) is a open-sourced Reddit browser for
   Android. Slide does not feature local subscription management, so you will still
   need a reddit account.
+  - [LibReddit](./libreddit.md) is an alternative private front-end to Reddit.
 
 - [**Twitter**](https://twitter.com) alternatives:
   - [Fritter](https://github.com/jonjomckay/fritter) is a free, open-source Twitter
