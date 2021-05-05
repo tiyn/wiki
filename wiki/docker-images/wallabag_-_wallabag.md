@@ -74,7 +74,7 @@ services:
       - SYMFONY__ENV__MAILER_USER=~
       - SYMFONY__ENV__MAILER_PASSWORD=~
       - SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
-      - SYMFONY__ENV__DOMAIN_NAME=http://bag.home.server
+      - SYMFONY__ENV__DOMAIN_NAME=https://<wallabag instance>
       - SYMFONY__ENV__SERVER_NAME="Your wallabag instance"
     ports:
         - "8082:80"
