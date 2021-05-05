@@ -42,6 +42,14 @@ They can be removed and configured under `about:config`.
   - [Tree Style Tab](https://addons.mozilla.org/en-GB/firefox/addon/tree-style-tab)
     shows tabs like a tree. This is especially useful if many tabs are used.
 
+## Useful configuration
+
+To disable the telemetry of firefox navigate to `about:telemetry` and (if it says
+enabled) click on `enabled` and disable all the options.
+
+To disable ads from firefox navigate to `about:config`, search for
+`browser.newtabpage.activity-stream.showSponsored` and disable all upcoming results.
+
 ## Add a new search engine
 
 You can add a new search engine with the addon `Add custom search engine`.
