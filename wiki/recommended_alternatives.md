@@ -17,6 +17,9 @@ recommended, good software (mostly free and/or open-source).
   - [LibreOffice](https://www.libreoffice.org/) is a free and open-source office
   software suite.
 
+- [**Pocket**](https://getpocket.com/) alternatives:
+  - [wallabag](./wallabag.md) is a self-hosted application for saving websites.
+
 - **Preinstalled Android apps** alternatives:
   - [SimpleMobileTools](https://www.simplemobiletools.com/) features a wide variety
   of apps, that can replace the preinstalled apps (calendar, gallery, launcher, etc.).

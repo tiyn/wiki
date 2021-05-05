@@ -2,7 +2,7 @@
 
 The official container and documentation was made by [mariadb](https://hub.docker.com/_/mariadb).
 The Docker container is mainly used in combination with other containers.
-To achieve this in the easiest way use a docker-compose file
+To achieve this in the easiest way use a docker-compose file.
 
 ## Environment-variables
 
