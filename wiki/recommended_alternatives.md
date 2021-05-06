@@ -40,6 +40,9 @@ recommended, good software (mostly free and/or open-source).
   client for Android and iOS. Fritter features local subscription management.
   - [Nitter](./nitter.md) is a free and open source alternative frontend.
 
+- [**Watch2gether**](https://w2g.tv/) alternatives:
+  - [SyncTube](./synctube.md) is self hostable software to synchronize video viewing.
+
 - [**YouTube**](https://youtube.com) is a online video platform owned by Google.
   - [Invidious](./invidious.md) is a copyleft and open-source alternative frontend.
   Invidious features local subscription management.
