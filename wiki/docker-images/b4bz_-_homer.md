@@ -8,7 +8,6 @@ Set the following volumes with the -v tag.
 
 | Volume-Name               | Container mount   | Description                        |
 | ------------------------- | ----------------- | ---------------------------------- |
-| `/current/dir/config.yml` | `/www/config.yml` | configuration file for static page |
 | `homer`                   | `/www/assets`     | storage for icons, etc             |
 
 ## Ports
