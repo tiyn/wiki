@@ -14,4 +14,4 @@ libreddit instance.
 For Firefox for example there is
 [privacy redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/).
 For Android there is
-[the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./f-droid.md)).
+[the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./android/f-droid.md)).

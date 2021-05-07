@@ -16,4 +16,4 @@ For Firefox for example there is
 [invidious redirect](https://addons.mozilla.org/en-US/firefox/addon/invidious-redirect-2/)
 or [privacy redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/).
 For Android there is
-[the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./f-droid.md)).
+[the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./android/f-droid.md)).
