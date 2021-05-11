@@ -6,10 +6,6 @@ ownCloud is a free client-server cloud-service.
 
 A server can be setup via docker with the [owncloud image](./docker-images/owncloud.md).
 
-## Client
-
-A client can be setup via docker with the [tiynger image](./docker-images/tiynger_-_owncloudclient.md).
-
 ## Error handling
 
 ### Problems with a locked file
