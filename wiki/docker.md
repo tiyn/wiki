@@ -8,6 +8,14 @@ Due to easy handling and reproducable environments it is a useful tool.
 - Arch linux: run `pacman -S docker` to install docker
 - Ubuntu: visit [the official installation guide](https://docs.docker.com/engine/install/ubuntu/)
 
+Another possibility is to try the official convenience script.
+To get and execute it run the following in your terminal.
+
+```shell
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+
 ## Run Docker as non-root user
 
 To run docker as a non-root user you need to add your user to the `docker` group.
