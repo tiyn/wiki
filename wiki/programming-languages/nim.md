@@ -13,5 +13,5 @@ If you're on an arch-based machine you can also run `yay -S choosenim` (install 
 
 ### Vim
 
-The steps to make Vim a c IDE are described in
+The steps to make Vim a nim IDE are described in
 [the vim section of this wiki](../linux/vim/nim.md).
