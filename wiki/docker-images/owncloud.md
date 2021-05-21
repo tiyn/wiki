@@ -10,10 +10,10 @@ Docker container.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
-| Volume-Name | Container mount        | Description                  |
-| ----------- | ---------------------- | ---------------------------- |
-| `owncloud`  | `/var/www/html`        | storage for owncloud plugins |
-| `config`    | `/var/www/html/config` | storage for owncloud config  |
+| Outside mount/volume name | Container mount        | Description                  |
+| ------------------------- | ---------------------- | ---------------------------- |
+| `owncloud`                | `/var/www/html`        | storage for owncloud plugins |
+| `config`                  | `/var/www/html/config` | storage for owncloud config  |
 
 ## Ports
 

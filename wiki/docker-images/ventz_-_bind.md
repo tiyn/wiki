@@ -6,10 +6,10 @@ The official container and documentation was made by [ventz](https://hub.docker.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name  | Container mount   | Description           |
-| ------------ | ----------------- | --------------------- |
-| `bind_cache` | `/var/cache/bind` | cache for dns         |
-| `bind_etc`   | `/etc/bind`       | configuration for dns |
+| Outside mount/volume name | Container mount   | Description           |
+| ------------------------- | ----------------- | --------------------- |
+| `bind_cache`              | `/var/cache/bind` | cache for dns         |
+| `bind_etc`                | `/etc/bind`       | configuration for dns |
 
 ## Ports
 

@@ -19,9 +19,9 @@ Set the following variables with the -e tag.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description          |
-| ----------- | --------------- | -------------------- |
-| `yourls`    | `/var/www/html` | yourls specific html |
+| Outside mount/volume name | Container mount | Description          |
+| ------------------------- | --------------- | -------------------- |
+| `yourls`                  | `/var/www/html` | yourls specific html |
 
 ## Ports
 

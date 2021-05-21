@@ -9,10 +9,10 @@ The last usable tag was used therefore to guarantee best performance for all use
 
 Set the following volumes with the -v tag.
 
-| Volume-Name       | Container mount | Description                 |
-| ----------------- | --------------- | --------------------------- |
-| `radicale_data`   | `/data`         | storage for caldav          |
-| `radicale_config` | `/config`       | storage for radicale config |
+| Outside mount/volume name | Container mount | Description                 |
+| ------------------------- | --------------- | --------------------------- |
+| `radicale_data`           | `/data`         | storage for caldav          |
+| `radicale_config`         | `/config`       | storage for radicale config |
 
 ## Ports
 

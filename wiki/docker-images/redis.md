@@ -8,6 +8,6 @@ To achieve this in the easiest way use a docker-compose file.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
-| Volume-Name | Container mount | Description          |
-| ----------- | --------------- | -------------------- |
-| `redis`     | `/data`         | storage for all data |
+| Outside mount/volume name | Container mount | Description          |
+| ------------------------- | --------------- | -------------------- |
+| `redis`                   | `/data`         | storage for all data |

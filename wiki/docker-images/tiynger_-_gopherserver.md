@@ -14,9 +14,9 @@ Set the following variables with the -e tag.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name    | Container mount | Description                   |
-| -------------- | --------------- | ----------------------------- |
-| `gopherwebdir` | `/var/gopher`   | directory for the gopher page |
+| Outside mount/volume name | Container mount | Description                   |
+| ------------------------- | --------------- | ----------------------------- |
+| `gopherwebdir`            | `/var/gopher`   | directory for the gopher page |
 
 ## Ports
 

@@ -6,10 +6,10 @@ The container and documentation was made by [dperson](https://hub.docker.com/r/d
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description                |
-| ----------- | --------------- | -------------------------- |
-| `tor_var`   | `/var/lib/tor`  | Location for various files |
-| `tor_etc`   | `/etc/tor`      | Various other config       |
+| Outside mount/volume name | Container mount | Description                |
+| ------------------------- | --------------- | -------------------------- |
+| `tor_var`                 | `/var/lib/tor`  | Location for various files |
+| `tor_etc`                 | `/etc/tor`      | Various other config       |
 
 ## Ports
 

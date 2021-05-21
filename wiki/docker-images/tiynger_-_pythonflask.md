@@ -6,9 +6,9 @@ The original container and documentation are made by [tiynger](https://hub.docke
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description                     |
-| ----------- | --------------- | ------------------------------- |
-| `app`       | `/flask`        | directory for flask application |
+| Outside mount/volume name | Container mount | Description                     |
+| ------------------------- | --------------- | ------------------------------- |
+| `app`                     | `/flask`        | directory for flask application |
 
 ## Ports
 

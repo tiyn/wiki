@@ -6,10 +6,10 @@ The official container and documentation was made by [jkarlos](https://hub.docke
 
 Set the following volumes with the -v tag.
 
-| Volume-Name        | Container mount     | Description               |
-| ------------------ | ------------------- | ------------------------- |
-| `git-server_repos` | `/git-server/repos` | storage for git repos     |
-| `git-server_keys`  | `/git-server/keys`  | storage for user ssh keys |
+| Outside mount/volume name | Container mount     | Description               |
+| ------------------------- | ------------------- | ------------------------- |
+| `git-server_repos`        | `/git-server/repos` | storage for git repos     |
+| `git-server_keys`         | `/git-server/keys`  | storage for user ssh keys |
 
 ## Ports
 

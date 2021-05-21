@@ -15,9 +15,9 @@ repository according and run the `rebuild.sh`
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description                         |
-| ----------- | --------------- | ----------------------------------- |
-| `db`        | `/app/db`       | storage for the bibliogram database |
+| Outside mount/volume name | Container mount | Description                         |
+| ------------------------- | --------------- | ----------------------------------- |
+| `db`                      | `/app/db`       | storage for the bibliogram database |
 
 ## Ports
 

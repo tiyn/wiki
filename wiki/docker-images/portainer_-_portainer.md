@@ -6,10 +6,10 @@ The official container and documentation was made by [portainer](https://hub.doc
 
 Set the following volumes with the -v tag.
 
-| Volume-Name            | Container mount        | Description                                       |
-| ---------------------- | ---------------------- | ------------------------------------------------- |
-| `portainer`            | `/data`                | configuration directory                           |
-| `/var/run/docker.sock` | `/var/run/docker.sock` | connection to local docker containers and volumes |
+| Outside mount/volume name | Container mount        | Description                                       |
+| ------------------------- | ---------------------- | ------------------------------------------------- |
+| `portainer`               | `/data`                | configuration directory                           |
+| `/var/run/docker.sock`    | `/var/run/docker.sock` | connection to local docker containers and volumes |
 
 ## Ports
 

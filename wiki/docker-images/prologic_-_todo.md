@@ -6,9 +6,9 @@ The official container and documentation was made by [prologic](https://hub.dock
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount        | Description            |
-| ----------- | ---------------------- | ---------------------- |
-| `todo`      | `/go/src/todo/todo.db` | Database for todo list |
+| Outside mount/volume name | Container mount        | Description            |
+| ------------------------- | ---------------------- | ---------------------- |
+| `todo`                    | `/go/src/todo/todo.db` | Database for todo list |
 
 ## Ports
 

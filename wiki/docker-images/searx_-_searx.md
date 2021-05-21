@@ -6,10 +6,10 @@ The official container and documentation was made by [searx](https://hub.docker.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount  | Description      |
-| ----------- | ---------------- | ---------------- |
-| `searx_etc` | `/etc/searx`     | storage for etc  |
-| `searx_log` | `/var/log/uwsgi` | storage for logs |
+| Outside mount/volume name | Container mount  | Description      |
+| ------------------------- | ---------------- | ---------------- |
+| `searx_etc`               | `/etc/searx`     | storage for etc  |
+| `searx_log`               | `/var/log/uwsgi` | storage for logs |
 
 ## Ports
 

@@ -6,9 +6,9 @@ The official container and documentation was made by [b4bz](https://hub.docker.c
 
 Set the following volumes with the -v tag.
 
-| Volume-Name               | Container mount   | Description                        |
-| ------------------------- | ----------------- | ---------------------------------- |
-| `homer`                   | `/www/assets`     | storage for icons, etc             |
+| Outside mount/volume name | Container mount | Description            |
+| ------------------------- | --------------- | ---------------------- |
+| `homer`                   | `/www/assets`   | storage for icons, etc |
 
 ## Ports
 

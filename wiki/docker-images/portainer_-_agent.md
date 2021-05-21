@@ -6,7 +6,7 @@ The official container and documentation was made by [portainer](https://hub.doc
 
 Set the following volumes with the -v tag.
 
-| Volume-Name               | Container mount           | Description                            |
+| Outside mount/volume name | Container mount           | Description                            |
 | ------------------------- | ------------------------- | -------------------------------------- |
 | `/var/run/docker.sock`    | `/var/run/docker.sock`    | connect your running docker containers |
 | `/var/lib/docker/volumes` | `/var/lib/docker/volumes` | connect running docker volumes         |

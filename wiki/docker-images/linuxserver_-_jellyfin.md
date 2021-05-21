@@ -18,12 +18,12 @@ docker-compose file.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
-| Volume-Name     | Container mount | Description                          |
-| --------------- | --------------- | ------------------------------------ |
-| `config`        | `/config`       | storage for config files of jellyfin |
-| `media_movies`  | `/data/movies`  | storage for movies                   |
-| `media_tvshows` | `/data/tvshows` | storage for tvshows                  |
-| `transcode`     | `/transcode`    | tmp storage to transcode             |
+| Outside mount/volume name | Container mount | Description                          |
+| ------------------------- | --------------- | ------------------------------------ |
+| `config`                  | `/config`       | storage for config files of jellyfin |
+| `media_movies`            | `/data/movies`  | storage for movies                   |
+| `media_tvshows`           | `/data/tvshows` | storage for tvshows                  |
+| `transcode`               | `/transcode`    | tmp storage to transcode             |
 
 Because it is useful to have the possibility to use the `media_movies` and
 `media_tvshows` in multiple containers,

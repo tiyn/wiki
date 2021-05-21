@@ -4,9 +4,9 @@
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description                |
-| ----------- | --------------- | -------------------------- |
-| `golinks`   | `/search.db`    | database with all commands |
+| Outside mount/volume name | Container mount | Description                |
+| ------------------------- | --------------- | -------------------------- |
+| `golinks`                 | `/search.db`    | database with all commands |
 
 ## Ports
 

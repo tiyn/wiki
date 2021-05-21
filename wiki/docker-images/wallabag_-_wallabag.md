@@ -31,9 +31,9 @@ docker-compose file.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
-| Volume-Name         | Container mount                       | Description                      |
-| ------------------- | ------------------------------------- | -------------------------------- |
-| `wallabag_wallabag` | `/var/www/wallabag/web/assets/images` | storage for wallabag config data |
+| Outside mount/volume name | Container mount                       | Description                      |
+| ------------------------- | ------------------------------------- | -------------------------------- |
+| `wallabag_wallabag`       | `/var/www/wallabag/web/assets/images` | storage for wallabag config data |
 
 ## Ports
 

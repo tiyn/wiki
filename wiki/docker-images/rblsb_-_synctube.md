@@ -13,9 +13,9 @@ Then build the image inside the git folder with `docker build -t synctube .`.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount     | Description         |
-| ----------- | ------------------- | ------------------- |
-| `synctube`  | `/usr/src/app/user` | Configuration files |
+| Outside mount/volume name | Container mount     | Description         |
+| ------------------------- | ------------------- | ------------------- |
+| `synctube`                | `/usr/src/app/user` | Configuration files |
 
 ## Ports
 

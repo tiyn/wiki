@@ -10,9 +10,9 @@ Docker container.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
-| Volume-Name | Container mount | Description                              |
-| ----------- | --------------- | ---------------------------------------- |
-| `nextcloud` | `/var/www/html` | storage for nextcloud plugins and config |
+| Outside mount/volume name | Container mount | Description                              |
+| ------------------------- | --------------- | ---------------------------------------- |
+| `nextcloud`               | `/var/www/html` | storage for nextcloud plugins and config |
 
 ## Ports
 

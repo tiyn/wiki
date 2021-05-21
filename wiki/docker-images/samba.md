@@ -6,14 +6,14 @@ The official container and documentation was made by [dperson](https://hub.docke
 
 Set the following volumes with the -v tag.
 
-| Volume-Name   | Container mount    | Description                   |
-| ------------- | ------------------ | ----------------------------- |
-| `samba_nas`   | `/nas`             | storage for samba data        |
-| `samba_lib`   | `/var/lib/samba`   | storage for samba lib         |
-| `samba_cache` | `/var/cache/samba` | storage for samba cache       |
-| `samba_run`   | `/run/samba`       | run entries for samba         |
-| `samba_etc`   | `/etc`             | etc directory of samba server |
-| `samba_log`   | `/var/log/samba`   | storage for samba logs        |
+| Outside mount/volume name | Container mount    | Description                   |
+| ------------------------- | ------------------ | ----------------------------- |
+| `samba_nas`               | `/nas`             | storage for samba data        |
+| `samba_lib`               | `/var/lib/samba`   | storage for samba lib         |
+| `samba_cache`             | `/var/cache/samba` | storage for samba cache       |
+| `samba_run`               | `/run/samba`       | run entries for samba         |
+| `samba_etc`               | `/etc`             | etc directory of samba server |
+| `samba_log`               | `/var/log/samba`   | storage for samba logs        |
 
 ## Ports
 

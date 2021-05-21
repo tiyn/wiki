@@ -6,9 +6,9 @@ The official container and documentation was made by [kylemanna](https://hub.doc
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description              |
-| ----------- | --------------- | ------------------------ |
-| `ovpn`      | `/etc/openvpn`  | storage for openvpn data |
+| Outside mount/volume name | Container mount | Description              |
+| ------------------------- | --------------- | ------------------------ |
+| `ovpn`                    | `/etc/openvpn`  | storage for openvpn data |
 
 ## Ports
 

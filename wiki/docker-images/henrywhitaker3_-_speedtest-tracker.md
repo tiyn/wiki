@@ -15,17 +15,17 @@ Set the following variables with the -e tag.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description        |
-| ----------- | --------------- | ------------------ |
-| `speedtest` | `/config`       | storage for config |
+| Outside mount/volume name | Container mount | Description        |
+| ------------------------- | --------------- | ------------------ |
+| `speedtest`               | `/config`       | storage for config |
 
 ## Ports
 
 Set the following ports with the -p tag.
 
-| Container Port | Recommended outside port | Protocol | Description        |
-| -------------- | ------------------------ | -------- | ------------------ |
-| `80`           | `8765`                   | TCP      | WebUI              |
+| Container Port | Recommended outside port | Protocol | Description |
+| -------------- | ------------------------ | -------- | ----------- |
+| `80`           | `8765`                   | TCP      | WebUI       |
 
 ## Rebuild
 

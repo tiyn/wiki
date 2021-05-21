@@ -16,14 +16,14 @@ Set the following variables with the -e tag.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name        | Container mount | Description             |
-| ------------------ | --------------- | ----------------------- |
-| `airsonic_config`  | `/config`       | Configuration files     |
-| `airsonic_media`   | `/media`        | Various other media     |
-| `media_playlists`  | `/playlists`    | Location for playlists  |
-| `media_music`      | `/music`        | Location for music      |
-| `media_audiobooks` | `/audiobooks`   | Location for audiobooks |
-| `media_podcasts`   | `/podcasts`     | location for podcasts   |
+| Outside mount/volume name | Container mount | Description             |
+| ------------------------- | --------------- | ----------------------- |
+| `airsonic_config`         | `/config`       | Configuration files     |
+| `airsonic_media`          | `/media`        | Various other media     |
+| `media_playlists`         | `/playlists`    | Location for playlists  |
+| `media_music`             | `/music`        | Location for music      |
+| `media_audiobooks`        | `/audiobooks`   | Location for audiobooks |
+| `media_podcasts`          | `/podcasts`     | location for podcasts   |
 
 ## Ports
 

@@ -24,11 +24,11 @@ docker-compose file.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
-| Volume-Name      | Container mount    | Description                    |
-| ---------------- | ------------------ | ------------------------------ |
-| `data`           | `/data`            | storage for data of git server |
-| `/etc/timezone`  | `/etc/timezone:ro` | link timezone                  |
-| `/etc/localtime` | `/etc/localtime`   | link localtime                 |
+| Outside mount/volume name | Container mount    | Description                    |
+| ------------------------- | ------------------ | ------------------------------ |
+| `data`                    | `/data`            | storage for data of git server |
+| `/etc/timezone`           | `/etc/timezone:ro` | link timezone                  |
+| `/etc/localtime`          | `/etc/localtime`   | link localtime                 |
 
 ## Ports
 

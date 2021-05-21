@@ -6,9 +6,9 @@ The official container and documentation was made by [xy2z](https://hub.docker.c
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description          |
-| ----------- | --------------- | -------------------- |
-| `pinedocs`  | `/data`         | storage for pinedocs |
+| Outside mount/volume name | Container mount | Description          |
+| ------------------------- | --------------- | -------------------- |
+| `pinedocs`                | `/data`         | storage for pinedocs |
 
 ## Ports
 

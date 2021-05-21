@@ -6,10 +6,10 @@ The official container and documentation was made by [olbat](https://hub.docker.
 
 Set the following volumes with the -v tag.
 
-| Volume-Name     | Container mount | Description                     |
-| --------------- | --------------- | ------------------------------- |
-| `cups`          | `/etc/cups`     | configuration for printers, etc |
-| `/var/run/dbus` | `/var/run/dbus` | connection to host dbus         |
+| Outside mount/volume name | Container mount | Description                     |
+| ------------------------- | --------------- | ------------------------------- |
+| `cups`                    | `/etc/cups`     | configuration for printers, etc |
+| `/var/run/dbus`           | `/var/run/dbus` | connection to host dbus         |
 
 ## Ports
 

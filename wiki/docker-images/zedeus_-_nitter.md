@@ -34,9 +34,9 @@ WantedBy=multi-user.target
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description               |
-| ----------- | --------------- | ------------------------- |
-| `nitter`    | `/data`         | storage for all of nitter |
+| Outside mount/volume name | Container mount | Description               |
+| ------------------------- | --------------- | ------------------------- |
+| `nitter`                  | `/data`         | storage for all of nitter |
 
 ## Ports
 

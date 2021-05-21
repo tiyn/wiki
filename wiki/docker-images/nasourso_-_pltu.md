@@ -6,9 +6,9 @@ The official container and documentation was made by [nasourso](https://hub.dock
 
 Set the following volumes with the -v tag.
 
-| Volume-Name | Container mount | Description                                         |
-| ----------- | --------------- | --------------------------------------------------- |
-| `pltu`      | `/cert`         | storage for openvpn certificate of server with plex |
+| Outside mount/volume name | Container mount | Description                                         |
+| ------------------------- | --------------- | --------------------------------------------------- |
+| `pltu`                    | `/cert`         | storage for openvpn certificate of server with plex |
 
 ## Ports
 
