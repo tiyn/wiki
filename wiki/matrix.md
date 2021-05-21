@@ -32,6 +32,8 @@ _matrix._tcp.matrix. <TTL> class SRV 1 10 443 synapse.example.com
 
 ### Synapse
 
+The docker-image used for the synapse matrix server can be found in the
+[docker-image directory](./docker-images/matrixdotorg_-_synapse.md).
 Create the `docker-compose.yml` file at a location of your choice (this guide
 will assume and recommend the file lies in a directory called matrix) with the
 following contents:
@@ -111,6 +113,8 @@ following the guide (this applies to any following step).
 
 ### Nginx
 
+The docker-image used for the nginx instance can be found in the
+[docker-image directory](./docker-images/nginx.md).
 For federation to work properly an nginx container is needed aswell.
 In the directory containing your `docker-compose.yml` create the file
 `data/matrix/nginx/matrix.conf` and fill in the following lines:
@@ -199,6 +203,8 @@ All following sections will add features to it.
 
 ### Element web client
 
+The docker-image used for the web client can be found in the
+[docker-image directory](./docker-images/vectorim_-_riot-web.md).
 This section will add a self hosted Matrix web client in form of `Element`
 (which was previously called `riot`).
 
@@ -306,6 +312,8 @@ If any of that is not working there is something wrong with your configuration.
 
 ### Administration interface
 
+The docker-image used for the administration interface can be found in the
+[docker-image directory](./docker-images/awesometechnologies_-_synapse-admin.md).
 This section will add a self hosted Matrix administration interface.
 This is especially useful if you have `enable_registration` set to `false`
 because you can dynamically create and administrate users and rooms.
