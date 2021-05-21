@@ -26,7 +26,7 @@ There are some special variables to set.
 | -------------- | ------------------------ |
 | `--privileged` | is needed due to openvpn |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

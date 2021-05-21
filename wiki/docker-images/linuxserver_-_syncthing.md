@@ -31,7 +31,7 @@ Set the following ports with the -p tag.
 | `22000`        | `22000`                  | TCP      | Syncthing internal |
 | `21027`        | `21027`                  | UDP      | Syncthing internal |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

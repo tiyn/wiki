@@ -26,7 +26,7 @@ There are some special variables to set.
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

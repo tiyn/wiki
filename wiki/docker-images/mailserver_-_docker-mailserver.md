@@ -29,7 +29,7 @@ And finally generate the DCIM keys and rebuild once again.
 
 Afterwards you're ready to go by once again running the `rebuild.sh` file.
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

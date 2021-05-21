@@ -18,7 +18,7 @@ There are some special variables to set.
 | ------ | ------------------------------------------------------------- |
 | `-uri` | define the gopher site to proxy (just 'domain.tld' is enough) |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

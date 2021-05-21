@@ -18,7 +18,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8000`                   | TCP      | WebUI       |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

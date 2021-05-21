@@ -26,7 +26,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ---------------------------- |
 | `70`           | `70`                     | TCP      | port for the gopher-protocol |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

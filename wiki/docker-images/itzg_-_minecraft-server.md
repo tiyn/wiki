@@ -32,7 +32,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | --------- | ------------------ |
 | `25565`        | `25565`                  | Minecraft | Port for Minecraft |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

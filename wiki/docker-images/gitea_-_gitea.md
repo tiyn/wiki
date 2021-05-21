@@ -56,7 +56,7 @@ docker-compose file.
 | ---- | -------------------- |
 | `db` | Ensure db is running |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -64,7 +64,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## Docker-Compose.yml
+## docker-compose.yml
 
 ```yml
 version: "2"

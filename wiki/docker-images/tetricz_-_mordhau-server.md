@@ -39,7 +39,7 @@ Set the following ports with the -p tag.
 | `15000` | `15000` | UDP | mordhau internal |
 | `27015` | `27015` | UDP | mordhau internal |
 
-## Start
+## start.sh
 
 ```shell
 #!/bin/sh
@@ -67,7 +67,7 @@ docker run --name=mordhau \
  tetricz/mordhau-server
 ```
 
-## Stop
+## stop.sh
 
 ```shell
 #/bin/sh

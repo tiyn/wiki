@@ -30,7 +30,7 @@ There are some special variables to set.
 | ------------- | ---------------------------------------------------------------------- |
 | `--read-only` | make radicale read-only, caldav can still be changed and used normally |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #/bin/sh
@@ -46,12 +46,7 @@ docker run --name radicale \
     -d tomsquest/docker-radicale:2.1.11.4
 ```
 
-## Configuration
-
-After installation there are a few crucial steps to take to secure your
-calendars with a login.
-It is important to change the config file which can be found in the docker
-volume with name `radicale_config` to match the `config`-file.
+## radicale\_config/config
 
 ```txt
 # -*- mode: conf -*-

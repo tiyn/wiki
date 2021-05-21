@@ -18,7 +18,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -32,9 +32,7 @@ docker run --name homer \
     -d b4bz/homer:latest
 ```
 
-## Configuration
-
-This is a sample config.yml:
+## config.yml
 
 ```yml
 title: "tmp"

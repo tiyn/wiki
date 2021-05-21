@@ -19,7 +19,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | -------------------- |
 | `9001`         | `9001`                   | TCP      | Portainer agent port |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

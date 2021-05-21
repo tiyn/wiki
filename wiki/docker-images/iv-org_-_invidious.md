@@ -39,7 +39,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `3000`         | `3000`                   | TCP      | WebUI       |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -50,7 +50,7 @@ docker-compose up -d
 cd ..
 ```
 
-## Docker-Compose.yml
+## docker-compose.yml
 
 ```yml
 version: "3"

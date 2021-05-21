@@ -18,7 +18,7 @@ Set the following volumes with the -p tag.
 | -------------- | --------------------- | -------- | ----------- |
 | `5000`         | `80`                  | TCP      | HTTP port   |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

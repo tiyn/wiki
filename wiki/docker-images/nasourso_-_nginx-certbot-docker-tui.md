@@ -9,7 +9,7 @@ You can just run the script and it will install all needed dependencies.
 After that just go ahead and start the container.
 You can then configure reverse proxies by adding websites.
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

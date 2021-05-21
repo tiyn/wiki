@@ -31,7 +31,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------------- |
 | `80`           | `80`                     | TCP      | dns protocol port |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -39,7 +39,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## Docker-Compose.yml
+## docker-compose.yml
 
 ```yml
 version: "3.1"

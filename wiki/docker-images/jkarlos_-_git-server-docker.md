@@ -19,7 +19,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------------------------------- |
 | `22`           | `2222`                   | TCP      | ssh port for accessing the git server |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

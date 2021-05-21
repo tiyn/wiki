@@ -43,7 +43,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -54,7 +54,7 @@ docker pull redis:alpine
 docker-compose up -d
 ```
 
-## Docker-Compose.yml
+## docker-compose.yml
 
 ```yml
 version: '3'

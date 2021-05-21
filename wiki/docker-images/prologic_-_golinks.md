@@ -16,7 +16,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8000`                   | TCP      | WebUI       |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -25,7 +25,7 @@ docker pull prologic/golinks:latest
 docker-compose up -d
 ```
 
-## Docker-Compose.yml
+## docker-compose.yml
 
 ```yml
 version: "3.1"

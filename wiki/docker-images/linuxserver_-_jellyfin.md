@@ -40,7 +40,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8096`         | `8096`                   | TCP      | WebUI       |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
@@ -49,7 +49,7 @@ docker pull linuxserver/jellyfin:latest
 docker-compose up -d
 ```
 
-## Docker-Compose.yml
+## docker-compose.yml
 
 ```yml
 version: "2"

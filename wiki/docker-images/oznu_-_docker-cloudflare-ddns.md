@@ -12,7 +12,7 @@ Set the following variables with the -e tag.
 | `ZONE=`       | append your domain (for example `main.com`)            |
 | `SUBDOMAIN`   | append your subdomain (for example `dynamic`)          |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

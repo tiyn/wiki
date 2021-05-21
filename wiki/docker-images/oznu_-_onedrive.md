@@ -20,7 +20,7 @@ Set the following volumes with the -v tag.
 | `onedrive_config`         | `/config`       | configuration storage for the server connection |
 | `onedrive_doc`            | `/documents`    | storage for downloaded documents                |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

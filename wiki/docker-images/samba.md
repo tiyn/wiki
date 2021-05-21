@@ -34,7 +34,7 @@ There are some special variables to set.
 | `-w \<workgroup\>`                                                        | define workgroup |
 | `-s \<name;path\>(;browse;readonly;guest;users;admins;writelist;comment)` | define shares    |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

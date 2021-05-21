@@ -24,7 +24,7 @@ There are some special variables to set.
 
 GPU support is documented in [the docker entry](../docker.md).
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

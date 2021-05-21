@@ -23,7 +23,7 @@ Set the following ports with the -p tag.
 
 The default username is `print`, the default password is `print`.
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

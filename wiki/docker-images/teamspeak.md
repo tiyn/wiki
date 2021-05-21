@@ -28,7 +28,7 @@ Set the following ports with the -p tag.
 | `10011`        | `10011`                  | TCP      | ts3-intern  |
 | `30033`        | `30033`                  | TCP      | ts3-intern  |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh

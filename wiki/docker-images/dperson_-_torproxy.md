@@ -20,7 +20,7 @@ Set the following ports with the -p tag.
 | `8118`         | `8118`                   | TCP      | privoxy web proxy   |
 | `9050`         | `9050`                   | TCP      | socks protocol port |
 
-## Rebuild
+## rebuild.sh
 
 ```shell
 #!/bin/sh
