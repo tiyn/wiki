@@ -36,3 +36,17 @@ The programs below are useful docker-management systems in different style.
 To use Nvidia GPUs with docker you need to install the nvidia-cuda-toolkit.
 There is a [guide on marmelab](https://marmelab.com/blog/2018/03/21/using-nvidia-gpu-within-docker-container.html)
 that focusses on that topic.
+
+### Block remote port access
+
+If you configured a reverse proxy to a port chances are you don't want the port
+to be accessed outside of the proxy.
+Especially if you set up a authentication over nginx the open port will avoid
+the authentication.
+This can be changed at the forwarded docker-service by replacing for example
+`-p 7000:7000` with `-p 172.17.0.1:7000:7000`.
+This forces the docker container to only expose the port in the docker bridge
+network, effectively banning remote access.
+
+If you use [Traefik](./traefik.md) it is not needed, because you don't have to
+publish ports to reverse proxy them.
