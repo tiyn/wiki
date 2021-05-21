@@ -180,10 +180,10 @@ To create a reverse proxy from a docker container add the following lines in the
 
 ```yml
   - "traefik.enable=true"
-  - "traefik.http.routers.gitea-secure.entrypoints=websecure"
-  - "traefik.http.routers.gitea-secure.rule=Host(`<subdomain>.<domain>`)"
-  - "traefik.http.routers.gitea-secure.service=<service name>"
-  - "traefik.http.services.gitea.loadbalancer.server.port=<port>"
+  - "traefik.http.routers.<service name>-secure.entrypoints=websecure"
+  - "traefik.http.routers.<service name>-secure.rule=Host(`<subdomain>.<domain>`)"
+  - "traefik.http.routers.<service name>-secure.service=<service name>"
+  - "traefik.http.services.<service name>.loadbalancer.server.port=<port>"
 ```
 
 This configuration automatically redirects http to https.
