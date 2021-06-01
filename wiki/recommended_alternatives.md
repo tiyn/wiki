@@ -53,3 +53,5 @@ recommended, good software (mostly free and/or open-source).
 
 - [anki](https://github.com/ankitects/anki) is an open-source tool to learn with
 [SRS](https://en.wikipedia.org/wiki/Spaced_repetition) flashcards.
+- [Webapps by tobykurien](https://github.com/tobykurien/webapps) is a tool to
+create sandboxed android apps of websites.
