@@ -1,7 +1,9 @@
 # Arch installation with LUKS encryption and LVM
 
-This is the English version of the [German installation guide on rvbg.eu](https://wiki.rvbg.eu/#arch/installation.md).
-This guide is based upon a [german arch wiki entry](https://wiki.archlinux.de/title/Moderne_Installation_mit_UEFI_und_Verschlüsselung).
+This is the English version of the
+[German installation guide on rvbg.eu](https://wiki.rvbg.eu/#arch/installation.md).
+This guide is based upon a
+[german arch wiki entry](https://wiki.archlinux.de/title/Moderne_Installation_mit_UEFI_und_Verschlüsselung).
 
 At the end of this guide a fully functional Arch Linux will be installed.
 
@@ -52,7 +54,7 @@ The swap partition will be created later under lvm.
 - `↵ Enter` - Confirm first sector
 - `↵ Enter` - Confirm last sector
 - `↵ Enter` - Confirm partition type
-- `P` - Show created partitions
+- `p` - Show created partitions
 - `W` - Save all changes
 - `Y` - Confirm saving changes
 
@@ -180,6 +182,10 @@ en_US.UTF-8 UTF-8
 ## 11. Finishing base installation
 
 - `passwd` - set password for the root account
+- `systemctl enable NetworkManager.service`
+
+## 12. Finish the setup
+
 - `exit` - exit the installed system
 - `umount /mnt/{boot,}` - unmount all partitions
 - `shutdown now` - shutdown device
@@ -188,6 +194,13 @@ en_US.UTF-8 UTF-8
 
 If the system is installed in a virtual environment or a system with deactivated
 UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
+
+## 13. Further steps and graphical environment
+
 Now you can follow my larbs installation script
-(`curl -o larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`
-or go on to other guides.
+(`curl -o larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
+this will install a bunch of useful software including a graphical environment.
+You can go on to other guides aswell.
+
+Additionally if you have a NVidia Graphics Cards you should read
+[the NVidia entry](../nvidia.md) too.
