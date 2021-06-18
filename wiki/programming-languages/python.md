@@ -46,3 +46,29 @@ to it and run `pipreqs` (install it if not already done).
 
 The steps to make Vim a python IDE are described in
 [the vim section of this wiki](../linux/vim/python.md).
+
+## Modules
+
+There are various modules and package managers to install these for python like
+`pip`.
+
+## Pytorch
+
+### Setup Pytorch with Cuda for GPU usage
+
+If you are on Arch Linux or a distribution based on it install
+`python-pytorch-cuda` via `pacman -S python-pytorch-cuda`.
+
+After that visit
+[the official pytorch website](https://pytorch.org/get-started/locally/) and
+install pytorch for your custom configuration.
+
+After that try to run the following python script:
+
+```python
+import torch
+
+torch.cuda.is_available()
+```
+
+This should give back `True`.

@@ -2,6 +2,11 @@
 
 SSH is a network protocoll to securely connect to a computer.
 
+## Generate new keys
+
+To generate new ssh keys simply run `ssh-keygen -t ed25519` or
+`ssh-keygen -t rsa -b 4096`.
+
 ## Enable root login via SSH
 
 Edit the `/etc/ssh/sshd_config` and change the line containing `PermitRootLogin`
