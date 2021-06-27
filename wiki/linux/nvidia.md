@@ -18,3 +18,10 @@ There is no initial setup in for of a `xorg.conf` in `/etc/X11` needed
 After running `sudo nvidia-setting` can drag and drop the monitors to your
 liking.
 After that you have to save the configuration to the `/etc/X11/xorg.conf`.
+
+## Avoid screen tearing
+
+To avoid screen tearing open up `nvidia-settings` and under
+`X Server Display Configuration` select your display.
+Then click on `Advanced` and select either `Force Composition Timeline` or
+`Force Full Composition Timeline`.
