@@ -21,5 +21,8 @@ This way you don't have to search for your CDs all the time.
 
 - [Exact Audio Copy](https://www.exactaudiocopy.de) for windows can rip music
   and automatically tag it with the help of a list of databases.
-- [metaflac](https://linux.die.net/man/1/metaflac) for linux is a programm to edit the tags of flac files. It is bundled
-  in the `flac` package for debian and arch based systems.
+- [metaflac](https://linux.die.net/man/1/metaflac) for linux is a programm
+  to edit the tags of flac files from the command line.
+  It is bundled in the `flac` package for debian and arch based systems.
+- [MusicBrainz Picard](https://picard.musicbrainz.org/) for linux is a
+  graphical user interface for tagging files of many different formats.
