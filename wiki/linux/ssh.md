@@ -1,6 +1,7 @@
 # SSH
 
 SSH is a network protocoll to securely connect to a computer.
+In this article it is assumed that `openssh` is used.
 
 ## Generate new keys
 
@@ -17,3 +18,8 @@ to `PermitRootLogin yes`.
 To enable easy login without password you can add the contents of the file
 `~/.ssh/id_rsa.pub` from your local machine to the file `~/.ssh/authorized_keys`
 on the machine you want to log into.
+You can use the modified command below for ease of use:
+
+```shell
+cat ~/.ssh/id_rsa.pub | ssh username@server 'cat >> ~/.ssh/authorized_keys'
+```
