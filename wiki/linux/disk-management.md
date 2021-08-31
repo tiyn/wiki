@@ -1,14 +1,21 @@
 # Disk Management
 
+This entry focusses on non-LVM and non-MDADM storage.
+For [LVM](lvm.md) and [MDADM](./mdadm.md) there are separate entries.
+
+## Create Partition
+
+In the following it is assumed that the disk is `/dev/sda`
+
+- open up parted with `parted /dev/sdd`
+- if not already done create a partition table with `mklabel GPT`
+- create a primary partition (ext4 format) with `mkpart primary 2048s 100%`
+- `quit` parted
+
 ## Grow non-LVM ext4 partition
 
 ATTENTION: Please note that the partition to enlarge has to be the last one with
 the free space after it.
-
-SSH into the VM.
-
-- run `lsblk` check if the disk size has changed
-- if not `reboot` the machine
 
 In the following it is assumed that the partition to enlarge is `/dev/sda2`
 
