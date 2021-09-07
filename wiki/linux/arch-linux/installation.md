@@ -136,7 +136,12 @@ en_US.UTF-8 UTF-8
 
 - `locale-gen` - Generate languages
 - `echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf` - set the keymap
-- `tzselect` - Set region
+- `cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime` - set your timezone
+  (select the first file accordingly to your location)
+- `date +%Y%m%d -s "<yyyymmdd>"` - set the current date (change
+  values accordingly)
+- `date +%T -s "<hh:mm:ss>"` - set the current time (change values accordingly)
+- `hwclock -w` - sync the current date and time with the hardware clock
 
 ## 9. Configure and create kernel-image
 
