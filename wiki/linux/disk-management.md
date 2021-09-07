@@ -1,7 +1,8 @@
 # Disk Management
 
-This entry focusses on non-LVM and non-MDADM storage.
-For [LVM](lvm.md) and [MDADM](./mdadm.md) there are separate entries.
+This article focusses on non-LVM and non-MDADM storage.
+For [LVM](lvm.md), [MDADM](./mdadm.md) and [LUKS volumes](./dm-crypt.md) there
+are separate entries.
 
 ## Create Partition
 

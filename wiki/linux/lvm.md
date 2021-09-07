@@ -24,10 +24,24 @@ pvcreate /dev/sdc1
 vgextend <name of your volume group> /dev/sdc1
 ```
 
+## Resize a physical volume
+
+To increase the size of a physical volume you have to have free free space
+in the partition containing the physical volume.
+A guide to change 'normal' partitions can be found in the
+[disk management article](./disk-management.md); if you have a volume that is
+encrypted with LUKS a guide is available in
+[the dm-crypt articel](./dm-crypt.md).
+
+To resize the physical volume to the size of the containing volume run:
+`pvresize /dev/mapper/<name of physical volume>`
+
 ## Increase size of a logical volume
 
-To increase the size of the logical volume you need to have free space in the
+To increase the size of the logical volume you have to have free space in the
 according volume group. You can check that by running: `vgdisplay`.
+If you don't have enough space you have to resize the physical volume as
+described in this article.
 Then run:
 
 ```shell

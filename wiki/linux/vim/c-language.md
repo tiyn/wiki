@@ -1,7 +1,8 @@
 # C in Vim
 
 C is a common programming language.
-In this entry we will focus on making vim support c and use vim as an ide for c.
+In this article we will focus on making vim support c and use vim as an ide for
+c.
 
 ## Autocompletion
 

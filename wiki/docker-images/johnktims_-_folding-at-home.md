@@ -22,7 +22,7 @@ There are some special variables to set.
 
 ### GPU
 
-GPU support is documented in [the docker entry](../docker.md).
+GPU support is documented in [the docker article](../docker.md).
 
 ## rebuild.sh
 

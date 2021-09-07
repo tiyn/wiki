@@ -1,7 +1,7 @@
 # VHDL in Vim
 
 VHDL is a hardware description language.
-In this entry we will focus on making vim support VHDL.
+In this article we will focus on making vim support VHDL.
 
 ## Linting
 

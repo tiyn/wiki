@@ -12,7 +12,7 @@ This setup guide follows a modified version of the
 [guide by matusnovak](https://gist.github.com/matusnovak/37109e60abe79f4b59fc9fbda10896da).
 Furthermore this guide will assume you already have a
 [traefik v2.4](./traefik.md) instance setup as described in the
-[traefik docker image entry](./docker-images/traefik.md).
+[traefik docker image article](./docker-images/traefik.md).
 
 ### DNS records
 

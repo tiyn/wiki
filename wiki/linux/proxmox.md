@@ -15,7 +15,7 @@ After that follow the instructions and fill in the fields to your liking.
 ### Enlarging disk of a VM
 
 Make sure there is enough disk space available.
-For further information see [the disk management entry](./disk-management.md)
+For further information see [the disk management article](./disk-management.md)
 
 SSH into Proxmox.
 Enlarge a disk by using:
@@ -24,13 +24,14 @@ Enlarge a disk by using:
 qm resize <vmid> <vm-disk-to-enlarge> <size>
 ```
 
-For example (100G is 100GibiByte):
+For example if you want to the disk 100 by 100G (100GibiByte):
 
 ```shell
 qm resize 100 ide0 +100G
 ```
 
-After that grow the filesystem as described in [the disk management article](./disk-management.md).
+After that grow the filesystem in the vm as described in
+[the disk management article](./disk-management.md).
 
 ## Remove local-lvm and add its size to local
 
