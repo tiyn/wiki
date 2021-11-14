@@ -23,3 +23,13 @@ You can use the modified command below for ease of use:
 ```shell
 cat ~/.ssh/id_rsa.pub | ssh username@server 'cat >> ~/.ssh/authorized_keys'
 ```
+
+## Mount directory with sshfs
+
+To mount a directory (in this case called `directory`) from a remote server
+(in this case called `server` also can be substituted by something like
+`user@server-ip`) on a local mount (in this case `mountpoint`) run:
+
+```shell
+sshfs server:/directory mountpoint
+```
