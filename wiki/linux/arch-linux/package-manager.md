@@ -18,3 +18,18 @@ right package.
 It is possible that it runs into errors when importing new keys.
 If this happens you should try to restart your gpg key server with
 `gpgconf --kill all`.
+
+### Unknown public key
+
+If the error `ERROR: One or more PGP signatures could not be verified!`, you
+have to manually receive the key and trust it.
+This is done by running the following lines:
+
+```sh
+gpg --recv-key <KEYID>
+gpg --lsign <KEYID>
+```
+
+Where <KEYID> is the placeholder of the identification string of the key.
+It usually gets gets printed in the line above the error looking like
+`FAILED (unknown public key <KEYID>)`.
