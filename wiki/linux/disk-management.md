@@ -24,7 +24,8 @@ In the following it is assumed that the partition to enlarge is `/dev/sda2`
 - inside of parted run `print free` and check where the free space after your
 partition ends
 - run `resizepart` and follow the instructions; End is the number you checked in
-the last step
+the last step (alternatively you can insert `100%` as end, if you want to add all
+the available free space to the partition)
 - `quit` parted
 
 Now you need to resize the filesystem with `resize2fs /dev/sda2`.
