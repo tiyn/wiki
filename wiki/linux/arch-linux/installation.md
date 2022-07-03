@@ -207,3 +207,7 @@ You can go on to other guides aswell.
 
 Additionally if you have a NVidia Graphics Cards you should read
 [the NVidia article](../nvidia.md) too.
+
+If you are interested in automatic decryption of the dm-crypt encrypted
+partition, take a look at the according section in
+[the dm-crypt article](../dm-crypt.md).
