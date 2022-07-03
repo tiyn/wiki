@@ -33,7 +33,7 @@ partition first accordingly (see [disk management](./disk-management.md)).
 ## Creating an automatic encryption key with an USB stick
 
 This guide assumes you to have an Arch Linux System, as installed in
-[this wiki arch linux installation](./arch-linux/installation.md).
+[this wikis arch linux installation](./arch-linux/installation.md).
 This section is based on entries from the
 [arch linux forum](https://forum.archlinux.de/d/28886-systementschluesselung-per-usb-stick).
 
