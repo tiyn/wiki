@@ -93,3 +93,14 @@ Finally run:
 Reboot the system with `reboot`.
 Make sure the USB key for decryption is plugged in.
 If so the encrypted partition should be decrypted automatically.
+
+## Unlock an encrypted device with the USB key created in the previous section
+
+With the following command an encrypted device can be decrypted with the usb
+stick created in the previous section.
+Make sure to edit `--key-file`, `--keyfile-offset` and `--keyfile-size` to
+match the settings used in the creation of the USB key.
+
+```sh
+cryptsetup luksOpen /dev/sda2 crypt-volume --key-file=/dev/usbkey --keyfile-offset=14848 --keyfile-size=2048
+```
