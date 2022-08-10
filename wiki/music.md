@@ -9,10 +9,10 @@ access a server for it.
 ## Server/Client
 
 If you want to keep your system clean of much data, you can use this kind of setup.
-There are differences depending on your preffered client interface.
+There are differences depending on your preffered software interface.
 
 - [Airsonic](./airsonic.md) is a free fork of Subsonic, can be dockerized and has
-  a web-interface.
+  a web-interface and multiple possible client options.
 
 ## Scan CDs
 
