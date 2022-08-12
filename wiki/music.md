@@ -24,7 +24,7 @@ This way you don't have to search for your CDs all the time.
 - [metaflac](./linux/flac.md) for linux is a programm
   to edit the tags of flac files from the command line.
   It is bundled in the `flac` package for debian and arch based systems.
-- [MusicBrainz Picard](https://picard.musicbrainz.org/) for linux is a
+- [MusicBrainz Picard](./picard.md) for linux is a
   graphical user interface for tagging files of many different formats.
 
 ## Working with flac files on Linux
