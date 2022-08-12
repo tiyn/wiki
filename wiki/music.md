@@ -27,6 +27,19 @@ This way you don't have to search for your CDs all the time.
 - [MusicBrainz Picard](./picard.md) for linux is a
   graphical user interface for tagging files of many different formats.
 
+## Quality analysis of different versions of an album
+
+While deciding on what version of an album is the best visit
+[Dynamic Range DB](https://dr.loudness-war.info).
+It shows dynamic range scorings of each version.
+
+## Get additional data to an album/single
+
+If additional information for an album is needed, visit
+[Discogs](https://www.discogs.com).
+Discogs has tracklists, dates and more information to nearly all versions of
+albums and singles.
+
 ## Working with flac files on Linux
 
 If you are on a Linux system and have flac files to work with visit
