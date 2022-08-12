@@ -33,3 +33,18 @@ gpg --lsign <KEYID>
 Where <KEYID> is the placeholder of the identification string of the key.
 It usually gets gets printed in the line above the error looking like
 `FAILED (unknown public key <KEYID>)`.
+
+### Error while updating `is marginal trust`
+  
+Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
+right package.
+It is possible that it runs into errors when importing new keys.
+If the error `[...] Key [...] is marginal trust` occurs while updating the
+system, it can be fixed by running the following commands and then restarting
+the update process of the package manager.
+  
+```sh
+pacman -Sy archlinux-keyring
+pacman-key --populate archlinux
+pacman-key --refresh-keys
+```
