@@ -19,7 +19,7 @@ The tracknumber is padded to at least 2 places.
 
 ```
 $replace($lower(
-$if($gt(%totaldiscs%,1.),$num(%discnumber%,$len(%totaldiscs%)).,)
+$if($gt(%totaldiscs%,1),$num(%discnumber%,$len(%totaldiscs%)).,)
 $num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))._
 %artist%_-_
 %title%), ,_)
