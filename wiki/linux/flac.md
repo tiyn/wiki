@@ -16,3 +16,7 @@ The `-o` tag specifies the output file format.
 ```sh
 cuebreakpoints '<cue file>' | shnsplit -o flac '<audio flac file>'
 ```
+
+## Tagging
+
+For tagging go to the [MusicBrainz Picard entry](../picard.md).
