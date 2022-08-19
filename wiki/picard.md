@@ -25,6 +25,23 @@ $num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))._
 %title%), ,_)
 ```
 
+Another Script is mainly used for audiobooks, where the title is not part of
+the filename to avoid confusion.
+The files are renamed with the scheme
+`[<discnumber>.]<tracknumber>._<artist>_-_<album>_<tracknumber>`
+all in lower case.
+Both discnumber and tracknumber are handled in the same way as in the previous
+script.
+
+```
+$replace($lower(
+$if($gt(%totaldiscs%,1),$num(%discnumber%,$len(%totaldiscs%)).,)
+$num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))._
+%artist%_-_
+%album%), ,_)_
+$num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))
+```
+
 ## Tagging
 
 The following explains the most general tags in short.
