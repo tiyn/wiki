@@ -1,6 +1,6 @@
 # Music
 
-Music is a nice to have on your system.
+Music is nice to have on your system.
 There are multiple different approaches on how to get it working depending on
 your needs.
 In general you need to consider if you want the music directly on your pc or
