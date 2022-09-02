@@ -16,7 +16,8 @@ Middle-earth.
 
 The installation guide for this mods is based on
 [Laetus'](http://www.twcenter.net/forums/showthread.php?724777-Third-Age-and-Linux)
-post in the Total War Center Forum .
+post in the Total War Center Forum and assumes Medieval 2: Total War was
+purchased via [Steam](./steam.md).
 For installation the latest version needs to be downloaded from
 [MOD DB](https://www.moddb.com/mods/divide-and-conquer/downloads/).
 Following this run the executable (`.exe`) file and select not the game but a
