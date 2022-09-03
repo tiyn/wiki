@@ -14,24 +14,30 @@ It is a Lord of the Rings themed mod, not only adding a large array of new
 units, castles and factions, but converting it to a setting based in
 Middle-earth.
 
+#### Installation (Windows)
+
+For Windows guides follow the official installation guide at
+[MOD DB](https://www.moddb.com/mods/divide-and-conquer/).
+
+#### Installation (Linux)
+
 The installation guide for this mods is based on
 [Laetus'](http://www.twcenter.net/forums/showthread.php?724777-Third-Age-and-Linux)
 post in the Total War Center Forum and assumes Medieval 2: Total War was
-purchased via [Steam](./steam.md).
+purchased via [Steam](./steam.md) and being on a linux system.
 For installation the latest version needs to be downloaded from
 [MOD DB](https://www.moddb.com/mods/divide-and-conquer/downloads/).
-Following this run the executable (`.exe`) file and select not the game but a
-newly createt folder.
-If you are on linux use [wine](../linux/wine.md) for this.
+Following this run the executable (`.exe`) file with [wine](../linux/wine.md)
+and select not the game but a newly createt folder.
 The executable will create many files in the directory.
+At last it will open a dialog for large adress awareness, which you can
+immediately close without further actions.
 The important files are located in a subdirectory called `mods`.
-If you are on linux you need to rename all the files and directories under the
-`mods` folder to lowercase.
+Rename all the files and directories under the `mods` folder to lowercase.
 This can be done by running
 `find . -depth -exec perl-rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;` after
 changing the working directory to the `mods` folder.
 `perl-rename` can be called just `rename` depending on the distribution.
-This concludes the extra steps for linux systems.
 Rename the directory below the `mods` folder to `third_age`.
 `third_age` now has to be moved to the modding folder of Medieval 2: Total War.
 This folder named `mods` too can be found on the top level of the game
