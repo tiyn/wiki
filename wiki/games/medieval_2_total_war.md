@@ -30,6 +30,7 @@ If you are on linux you need to rename all the files and directories under the
 This can be done by running
 `find . -depth -exec perl-rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;` after
 changing the working directory to the `mods` folder.
+`perl-rename` can be called just `rename` depending on the distribution.
 This concludes the extra steps for linux systems.
 Rename the directory below the `mods` folder to `third_age`.
 `third_age` now has to be moved to the modding folder of Medieval 2: Total War.
