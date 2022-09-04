@@ -12,6 +12,10 @@ It has to be set up first if not already done.
 Additionall this guide assumes you are using the `Enable DX9 Rendering` option
 in the graphics tab of the settings.
 
+The following subsections assume that Guild Wars 2 is installed at
+`gw2_root_directory`.
+Replace this directory placeholder according to your installation.
+
 ### gw2-addon-loader
 
 To make multiple addons work together an addon loader is recommended.
