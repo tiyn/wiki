@@ -1,5 +1,6 @@
 # portainer - portainer
 
+This is a docker container for a [portainer](../portainer.md) server.
 The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/portainer).
 
 ## Volumes

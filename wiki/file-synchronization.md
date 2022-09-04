@@ -22,5 +22,5 @@ this is probably a more
 safe way to "host" files.
 There is no single server as point of attack with all your data.
 
-- [Syncthing](./syncthing.md) is a free and open-source peer-to-peer file
+- Syncthing is a free and open-source peer-to-peer file
   synchronization tool that can be dockerized.

@@ -1,5 +1,6 @@
 # nasourso - pltu
 
+This is a docker container for a Plex tunnel via VPN.
 The official container and documentation was made by [nasourso](https://hub.docker.com/r/nasourso/pltu).
 
 ## Volumes

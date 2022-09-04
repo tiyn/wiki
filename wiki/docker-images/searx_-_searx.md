@@ -1,6 +1,8 @@
 # searx - searx
 
-The official container and documentation was made by [searx](https://hub.docker.com/r/searx/searx).
+This is a docker container for a [searx](../searx.md) meta-search machine.
+The official container and documentation was made by
+[searx](https://hub.docker.com/r/searx/searx).
 
 ## Volumes
 

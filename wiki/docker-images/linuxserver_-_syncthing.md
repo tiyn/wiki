@@ -1,5 +1,7 @@
 # linuxserver - syncthing
 
+This is a docker container for syncthing for
+[file synchronization](../file-synchronization.md).
 The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/syncthing).
 
 ## Environment-variables

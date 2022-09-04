@@ -1,10 +1,10 @@
 # matrixdotorg - synapse
 
+This is a docker container for a synapse server using the
+[matrix](../matrix.md) protocol.
 The official container and documentation was made by
 [matrixdotorg](https://hub.docker.com/matrixdotorg/synapse).
 This docker-rebuild is made up by a `docker-compose.yml` file.
-If you want to setup a Matrix homeserver please take a look at
-[the matrix setup guide](../matrix.md).
 
 ## Environment-variables
 

@@ -1,6 +1,8 @@
 # ventz - bind
 
-The official container and documentation was made by [ventz](https://hub.docker.com/r/ventz/bind).
+This is a docker container for a [dns](../dns.md) resolver.
+The official container and documentation was made by
+[ventz](https://hub.docker.com/r/ventz/bind).
 
 ## Volumes
 

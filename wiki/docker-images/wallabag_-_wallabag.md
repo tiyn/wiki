@@ -1,5 +1,6 @@
 # wallabag - wallabag
 
+This is a docker container for a [wallabag](../wallabag.md) server.
 The Server consists of 3 Docker containers, one is the wallabag main server, one
 is a database and one a redis instance.
 In addition to the main container you need to connect a [mariadb container](./mariadb.md)

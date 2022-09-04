@@ -1,5 +1,6 @@
 # kylemanna - openvpn
 
+This is a docker container for an openvpn server.
 The official container and documentation was made by [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
 
 ## Volumes

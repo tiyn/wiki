@@ -1,6 +1,8 @@
 # prologic - gopherproxy
 
-The official container and documentation was made by [prologic](https://hub.docker.com/r/prologic/gopherproxy).
+This is a docker container for a gopher to http proxy.
+The official container and documentation was made by
+[prologic](https://hub.docker.com/r/prologic/gopherproxy).
 
 ## Ports
 

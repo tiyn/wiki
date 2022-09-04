@@ -1,5 +1,6 @@
 # itzg - minecraft-server
 
+This is a docker container for a [Minecraft](../games/minecraft.md) server.
 The container and documentation was made by [itzg](https://hub.docker.com/r/itzg/minecraft-server).
 
 ## Environment-variables

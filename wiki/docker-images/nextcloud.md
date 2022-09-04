@@ -1,5 +1,6 @@
 # NextCloud
 
+This is a docker container for [NextCloud](../nextcloud.md).
 The official container and documentation was made by [NextCloud](https://hub.docker.com/_/nextcloud).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The services in this files are explained seperately.

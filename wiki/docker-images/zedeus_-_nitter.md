@@ -1,6 +1,9 @@
 # zedeus - nitter
 
-The official container and documentation was made by [zedeus](https://github.com/zedeus/nitter).
+This is a docker container for the alternative Twitter frontend
+[nitter](../nitter.md).
+The official container and documentation was made by
+[zedeus](https://github.com/zedeus/nitter).
 
 ## Volumes
 
@@ -37,7 +40,7 @@ docker run --name nitter \
 
 ```txt
 [Unit]
-Description=Nitter (An alternative Twitter front-end)
+Description=Nitter (An alternative Twitter frontend)
 After=syslog.target
 After=network.target
 

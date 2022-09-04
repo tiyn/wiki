@@ -1,5 +1,6 @@
 # teamspeak
 
+This is a docker container for a [teamspeak3](../teamspeak3.md) server.
 The official container and documentation was made by [teamspeak](https://hub.docker.com/_/teamspeak).
 
 ## Environment-variables

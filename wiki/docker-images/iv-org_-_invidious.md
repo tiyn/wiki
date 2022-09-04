@@ -1,5 +1,6 @@
 # iv-org - invidious
 
+This is a docker container for [Invidious](../invidious.md).
 The official container and documentation was made by [invidious](https://github.com/iv-org/invidious).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 There is no official pre-build on docker-hub.

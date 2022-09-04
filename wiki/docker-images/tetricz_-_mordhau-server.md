@@ -1,5 +1,6 @@
 # tetricz - mordhau-server
 
+This is a docker container for a mordhau server.
 The official container and documentation was made by [tetricz](https://hub.docker.com/r/tetricz/mordhau-server).
 
 ## Environment-variables

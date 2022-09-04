@@ -1,6 +1,9 @@
 # cloudrac3r - bibliogram
 
-The official container and documentation was made by [cloudrac3r](https://github.com/cloudrac3r/bibliogram).
+This is a docker container for the alternative Instagram frontend
+[Bibliogram](../bibliogram.md).
+The official container and documentation was made by
+[cloudrac3r](https://github.com/cloudrac3r/bibliogram).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
 ## Set-up for building process

@@ -1,6 +1,8 @@
 # tomsquest - docker-radicale
 
-The official container and documentation was made by [tomsquest](https://hub.docker.com/r/tomsquest/docker-radicale).
+This is a docker container for a radicale CalDAV server.
+The official container and documentation was made by
+[tomsquest](https://hub.docker.com/r/tomsquest/docker-radicale).
 
 The `latest` tag at the moment of writing this readme was corrupted.
 The last usable tag was used therefore to guarantee best performance for all users.
