@@ -39,3 +39,13 @@ new `feature`
 - ii is an IRC client
 - slock is a screen locker
 - st is a terminal
+
+## suckless program crashes or struggles with colored emojis
+
+Suckless programs  especially `st` and `dmenu` can not display colored
+emojis.
+This is because of problems with libxft.
+libxft is the client side font rendering library to display anti-aliased text.
+To change this [libxft-bgra](https://github.com/uditkarode/libxft-bgra) needs
+to be installed.
+This is a patched version especially for running with the suckless programs.
