@@ -6,8 +6,8 @@ An alternative solution for this, especially when used in combination with
 
 ## Server
 
-A server can be setup via docker with the
-[nasourso image](./docker-images/nasourso_-_nginx-certbot-docker-tui.md).
+A server can be setup via docker with a terminal user interface program for
+nginx and certbot, which is called nginx-certbot-docker-tui or short ncdt.
 
 Alternatively the standalone [nginx image](./docker-images/nginx.md) can be
 used.
