@@ -60,6 +60,9 @@ They can be removed and configured under `about:config`.
 - [Privacy Redirect](https://addons.mozilla.org/en-US/Firefox/addon/privacy-redirect/)
   redirects youtube, instagram, twitter, etc to free alternatives or alternative
   frontends.
+- [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
+  skips YouTube video sponsors automatically, works with
+  [invidious](./invidious.md) too.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.

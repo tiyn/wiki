@@ -6,7 +6,7 @@ It includes locally stored subscription management.
 
 ## Server
 
-A server can be setup via docker with the [linuxserver image](./docker-images/linuxserver_-_jellyfin.md).
+A server can be setup via docker with the [iv-org image](./docker-images/iv-org_-_invidious.md).
 
 ## Automatic redirect from YouTube
 
@@ -17,3 +17,10 @@ For Firefox for example there is
 or [privacy redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/).
 For Android there is
 [the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./android/f-droid.md)).
+
+## Skip sponsorships in videos
+
+When using [Firefox](./firefox.md) SponsorBlock can be installed.
+This will skip YouTube video sponsors in YouTube and in Invidious.
+Further informations and links can be found in the
+[Firefox entry of this wiki](./firefox.md#list-of-useful-firefox-addons).

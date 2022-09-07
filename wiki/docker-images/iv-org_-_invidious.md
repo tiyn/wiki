@@ -56,19 +56,7 @@ cd ..
 ```yml
 version: "3"
 services:
-  postgres:
-    image: postgres:10
-    restart: unless-stopped
-    volumes:
-      - postgresdata:/var/lib/postgresql/data
-      - ./config/sql:/config/sql
-      - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
-    environment:
-      POSTGRES_DB: invidious
-      POSTGRES_PASSWORD: kemal
-      POSTGRES_USER: kemal
-    healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
+
   invidious:
     build:
       context: .
@@ -77,24 +65,47 @@ services:
     ports:
       - "3000:3000"
     environment:
-      # Adapted from ./config/config.yml
+      # Please read the following file for a comprehensive list of all available
+      # configuration options and their associated syntax:
+      # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
       INVIDIOUS_CONFIG: |
-        channel_threads: 1
-        check_tables: true
-        feed_threads: 1
         db:
+          dbname: invidious
           user: kemal
           password: kemal
-          host: postgres
+          host: invidious-db
           port: 5432
-          dbname: invidious
-        full_refresh: false
-        https_only: false
-        registration_enabled: false
-        popular_enabled: false
+        check_tables: true
+        # external_port:
         domain: yt.home.server
+        https_only: false
+        popular_enabled: false
+        registration_enabled: false
+        # statistics_enabled: false
+        default_user_preferences:
+            dark_mode: true
+            default_home: "Subscriptions"
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 2
     depends_on:
-      - postgres
+      - invidious-db
+
+  invidious-db:
+    image: docker.io/library/postgres:13
+    restart: unless-stopped
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+      - ./config/sql:/config/sql
+      - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+    environment:
+      POSTGRES_DB: invidious
+      POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: kemal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
 
 volumes:
   postgresdata:
