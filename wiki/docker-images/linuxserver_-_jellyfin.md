@@ -1,7 +1,7 @@
 # linuxserver - jellyfin
 
 This is a docker container for a [jellyfin](../jellyfin.md) server.
-The official container and documentation was made by [linuxserver](https://hub.docker.com/linuxserver/jellyfin).
+The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/jellyfin).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
 ## Environment-variables
