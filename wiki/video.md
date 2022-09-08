@@ -30,6 +30,9 @@ This way you don't have to search for your discs all the time.
   echo sg > /etc/modules-load.d/sg.conf
   ```
 
+  MakeMKV can be obtained over different ways. One of them is flatpack in which
+  you start MakeMKV via `flatpak run com.makemkv.MakeMKV` after installation.
+
 - [MKS Extractor GUI](https://www.videohelp.vom/software/MKS-Extractor-GUI)
   for windows can extract subtitles from a `.mkv` file.
 - [Subtitleedit]([https://www.videohelp.vom/software/MKS-Extractor-GUI](https://www.nikse.dk/subtitleedit))
