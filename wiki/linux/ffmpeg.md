@@ -12,9 +12,13 @@ video you want to concatenate in the form of:
 file '<path to the video>'
 ```
 
+You have to give the absolute path towards the files.
 Make sure the videos are in correct order.
 To concatenate these video files you can run:
 
 ```shell
 ffmpeg -f concat -safe 0 -i files.txt -map 0 -c copy output.mp4
 ```
+
+If the video files you want to concatenate are not mp4 files change the above
+command accordingly.
