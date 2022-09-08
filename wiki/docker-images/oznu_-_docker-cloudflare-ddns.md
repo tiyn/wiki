@@ -3,6 +3,11 @@
 This is a docker container for dynamically updating cloudflare dns entries.
 The official container and documentation was made by [oznu](https://github.com/oznu/docker-cloudflare-ddns).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment variables
 
 Set the following variables with the -e tag.

@@ -4,6 +4,8 @@ This is a docker container for a mailserver.
 The official container and documentation was made by [mailserver](https://hub.docker.com/r/mailserver/docker-mailserver).
 It contains dovecot, antispam, antivirus, ssl, etc.
 
+## Set-up
+
 The configuration is done automatically using scripts by mailserver.
 First you need to download the essential setup files.
 
@@ -18,6 +20,7 @@ chmod a+x ./setup.sh
 After that you need to edit the `.env` and the `mailserver.env<>` files to
 configure the mailserver.
 
+Create the file `rebuild.sh`.
 You then need to start the container with the `rebuild.sh` and add email
 accounts using the following command.
 

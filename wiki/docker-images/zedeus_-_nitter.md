@@ -5,6 +5,11 @@ This is a docker container for the alternative Twitter frontend
 The official container and documentation was made by
 [zedeus](https://github.com/zedeus/nitter).
 
+## Set-up
+
+Create the file `rebuild.sh` and `nitter.conf` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes with the -v tag.

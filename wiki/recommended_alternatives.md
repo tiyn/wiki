@@ -49,6 +49,10 @@ recommended, good software (mostly free and/or open-source).
   - [NewPipe](https://newpipe.net/) is an free and open-source android youtube client.
   NewPipe features local subscription management.
 
+- [**Google**](https://google.com) is a search engine.
+  - [Searx](./searx.md) is a self-hostable meta-search engine.
+  - [Whoogle](./whoogle.md) is another self-hostable meta-search engine.
+
 ## Recommended Software
 
 - [anki](https://github.com/ankitects/anki) is an open-source tool to learn with

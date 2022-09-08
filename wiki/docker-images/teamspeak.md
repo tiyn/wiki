@@ -3,6 +3,11 @@
 This is a docker container for a [teamspeak3](../teamspeak3.md) server.
 The official container and documentation was made by [teamspeak](https://hub.docker.com/_/teamspeak).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment-variables
 
 Set the following variables with the -e tag.

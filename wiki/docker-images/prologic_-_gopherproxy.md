@@ -4,6 +4,11 @@ This is a docker container for a gopher to http proxy.
 The official container and documentation was made by
 [prologic](https://hub.docker.com/r/prologic/gopherproxy).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Ports
 
 Set the following ports with the -p tag.

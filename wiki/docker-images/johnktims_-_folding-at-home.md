@@ -3,6 +3,11 @@
 This is a docker container for [Folding@home](https://foldingathome.org/).
 The official container and documentation was made by [johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Ports
 
 Set the following ports with the -p tag.

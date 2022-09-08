@@ -3,6 +3,11 @@
 This is a docker container for a selfhosted internet speed tracker.
 The official container and documentation was made by [henrywhitaker3](https://hub.docker.com/r/henrywhitaker3/speedtest-tracker).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment-variables
 
 Set the following variables with the -e tag.

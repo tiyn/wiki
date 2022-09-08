@@ -3,6 +3,11 @@
 This is a docker container for a [airsonic](../airsonic.md) server.
 The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/airsonic).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment-variables
 
 Set the following variables with the -e tag.

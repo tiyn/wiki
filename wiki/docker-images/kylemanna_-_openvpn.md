@@ -3,6 +3,11 @@
 This is a docker container for an openvpn server.
 The official container and documentation was made by [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes with the -v tag.

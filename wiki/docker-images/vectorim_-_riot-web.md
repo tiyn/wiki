@@ -5,6 +5,11 @@ The official container and documentation was made by
 [linuxserver](https://hub.docker.com/vectorim/riot-web).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.

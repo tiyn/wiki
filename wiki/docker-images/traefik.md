@@ -5,10 +5,13 @@ The official container and documentation was made by
 [traefik](https://hub.docker.com/_/traefik).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up for config files
+## Set-up
 
-First of all create a folder for your `rebuild.sh` and `docker-compose.yml`.
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 In that folder create the directories `data/config`.
+Place the files `data/traefik.yml` and `data/config/dynamic.yml` in the
+according directories.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 

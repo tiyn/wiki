@@ -5,11 +5,14 @@ The official container and documentation was made by [invidious](https://github.
 This docker-rebuild is made up by a `docker-compose.yml` file.
 There is no official pre-build on docker-hub.
 
-## Set-up for building process
+## Set-up
 
 First of all create a folder for your `rebuild.sh`.
-After that clone invidious from github into a folder within the just created folder.
-Set the variables, volumes and ports according and run the `rebuild.sh`
+After that clone invidious from
+[github](https://github.com/iv-org/invidious) into a folder within the
+just created folder.
+You can find the `docker-compose.yml` in the cloned directory.
+Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 ## Environment-variables
 

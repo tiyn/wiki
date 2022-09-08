@@ -6,6 +6,11 @@ is a database.
 In addition to the main container you need to connect a [mySQL container](./mysql.md)
 to it.
 
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment-variables
 
 Set the following environment-variables in the `environment:` section of the

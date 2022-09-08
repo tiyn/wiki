@@ -3,6 +3,13 @@
 This is a docker container for a mordhau server.
 The official container and documentation was made by [tetricz](https://hub.docker.com/r/tetricz/mordhau-server).
 
+## Set-up
+
+Create the files `start.sh` and `stop.sh`.
+Change the settings according to your needs and run `./start.sh` to start
+the server.
+With `stop.sh` you can stop it.
+
 ## Environment-variables
 
 Set the following variables with the -e tag.

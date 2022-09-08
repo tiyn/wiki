@@ -2,6 +2,11 @@
 
 The official container and documentation was made by [dperson](https://hub.docker.com/r/samba).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes with the -v tag.

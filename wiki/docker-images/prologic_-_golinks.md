@@ -5,6 +5,10 @@ commands and aliases.
 The official container and documentation was made by
 [prologic](https://git.mills.io/prologic/golinks).
 
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 

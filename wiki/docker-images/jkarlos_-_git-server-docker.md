@@ -3,6 +3,11 @@
 This is a docker container for a [git](../git.md) server.
 The official container and documentation was made by [jkarlos](https://hub.docker.com/r/jkarlos/git-server-docker).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes with the -v tag.

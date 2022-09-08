@@ -3,6 +3,11 @@
 This is a docker container for a [portainer](../portainer.md) server.
 The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/portainer).
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes with the -v tag.

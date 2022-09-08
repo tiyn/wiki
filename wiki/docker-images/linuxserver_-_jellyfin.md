@@ -4,6 +4,11 @@ This is a docker container for a [jellyfin](../jellyfin.md) server.
 The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/jellyfin).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment-variables
 
 Set the following environment-variables in the `environment:` section of the

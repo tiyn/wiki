@@ -7,6 +7,13 @@ The official container and documentation was made by
 The `latest` tag at the moment of writing this readme was corrupted.
 The last usable tag was used therefore to guarantee best performance for all users.
 
+## Set-up
+
+Create the file `rebuild.sh`.
+Create a volume with the name `radicale_config`.
+Then create the `config` file in the volume `radicale_config`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Volumes
 
 Set the following volumes with the -v tag.
@@ -48,7 +55,7 @@ docker run --name radicale \
     -d tomsquest/docker-radicale:2.1.11.4
 ```
 
-## radicale\_config/config
+## radicale\_config/\_data/config
 
 ```txt
 # -*- mode: conf -*-

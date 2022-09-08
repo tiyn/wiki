@@ -6,6 +6,11 @@ The official container and documentation was made by
 In addition to the main container you need to connect a
 [mySQL container](./mysql.md) to it.
 
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
 ## Environment-variables
 
 Set the following variables with the -e tag.

@@ -4,11 +4,14 @@ This is a docker container for the synchronized video platform synctube.
 The official container and documentation was made by [rblsb](https://github.com/rblsb/synctube).
 There is no official pre-build on docker-hub.
 
-## Set-up for building process
+## Set-up
 
 First of all create a folder for your `rebuild.sh`.
-After that clone synctube from github into a folder within the just created folder.
+After that clone synctube from [github](https://github.com/rblsb/synctube) into
+a folder within the just created folder.
 Then build the image inside the git folder with `docker build -t synctube .`.
+Set the variables, volumes and ports according and run the `rebuild.sh`.
+
 
 ## Volumes
 
