@@ -29,3 +29,9 @@ If you don't need a bloated web-interface a more basic approach is more than eno
 
 - [git-server-docker](./docker-images/jkarlos_-_git-server-docker.md) is a pretty
   basic docker-container for git.
+
+## Ignore files having local changes
+
+If you need to make changes to a file that are local you can run
+`config update-index --skip-worktree <file>`.
+Following this the file won't show up as having changes from the upstream.
