@@ -9,7 +9,7 @@ A server can be setup via docker with the [zedeus image](./docker-images/zedeus_
 
 ## Automatic redirect from Twitter
 
-There are various addons to redirect from Twitter links to your (or a public)
+There are various add-ons to redirect from Twitter links to your (or a public)
 Nitter instance.
 For Firefox for example there is
 [nitter redirect](https://addons.mozilla.org/en-US/firefox/addon/nitter-redirect/)

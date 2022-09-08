@@ -10,7 +10,7 @@ A server can be setup via docker with the [iv-org image](./docker-images/iv-org_
 
 ## Automatic redirect from YouTube
 
-There are various addons to redirect from YouTube links to your (or a public)
+There are various add-ons to redirect from YouTube links to your (or a public)
 invidious instance.
 For Firefox for example there is
 [invidious redirect](https://addons.mozilla.org/en-US/firefox/addon/invidious-redirect-2/)

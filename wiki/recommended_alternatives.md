@@ -18,7 +18,10 @@ recommended, good software (mostly free and/or open-source).
   software suite.
 
 - [**Pocket**](https://getpocket.com/) alternatives:
-  - [wallabag](./wallabag.md) is a self-hosted application for saving websites.
+  - [wallabag](./wallabag.md) is a self-hosted application for saving websites
+  to read them at a later point.
+  - [linkding](./linkding.md) is a self-hosted application for saving bookmarks
+  and archiving them.
 
 - **Preinstalled Android apps** alternatives:
   - [SimpleMobileTools](https://www.simplemobiletools.com/) features a wide variety

@@ -36,9 +36,9 @@ In Firefox compact mode is a configuration to make tabs and navigation elements
 including bookmarks smaller.
 The configuration can be done at `browser.compactmode.show`.
 
-## List of useful Firefox addons
+## List of useful Firefox add-ons
 
-Following is a list of useful Firefox addons.
+Following is a list of useful Firefox add-ons.
 They can be removed and configured under `about:config`.
 
 - [ClearURLs](https://addons.mozilla.org/en-GB/Firefox/addon/clearurls) removes
@@ -80,9 +80,9 @@ They can be removed and configured under `about:config`.
 
 ## Add a new search engine
 
-You can add a new search engine with the addon `Add custom search engine`.
+You can add a new search engine with the add-on `Add custom search engine`.
 Make sure to replace `<url to search engine>` with the according url.
 
-It is possible to add it without an addon.
+It is possible to add it without an add-on.
 Navigate to the search engine and click the `...` in the address bar.
 Then click `Add Search Engine`

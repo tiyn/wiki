@@ -6,7 +6,9 @@ The official container and documentation was made by [b4bz](https://hub.docker.c
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Run `./rebuild.sh` afterwards to create the volumes.
+Place the file `config.yml` in the `homer` docker volume and change it to your
+needs.
 
 ## Volumes
 
