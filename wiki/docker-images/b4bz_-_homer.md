@@ -9,6 +9,7 @@ Create the file `rebuild.sh`.
 Run `./rebuild.sh` afterwards to create the volumes.
 Place the file `config.yml` in the `homer` docker volume and change it to your
 needs.
+After that rerun `./rebuild.sh` to make update your config.
 
 ## Volumes
 
