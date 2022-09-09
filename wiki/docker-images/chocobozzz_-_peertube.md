@@ -31,7 +31,6 @@ Set the following volumes with the -v tag.
 | `config`                  | `/config`                  | configuration data     |
 | `data`                    | `/data`                    | further data storage   |
 
-
 ## rebuild.sh
 
 ```shell
