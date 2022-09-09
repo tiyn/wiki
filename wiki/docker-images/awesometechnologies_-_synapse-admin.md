@@ -1,6 +1,5 @@
 # awesometechnologies - synapse-admin
 
-
 This is a docker container for a Synapse server of [Matrix](../matrix.md).
 The official container and documentation was made by
 [awesometechnologies](https://hub.docker.com/awesometechnologies/synapse-admin).

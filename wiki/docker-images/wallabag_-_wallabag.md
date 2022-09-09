@@ -92,12 +92,6 @@ services:
       - MYSQL_ROOT_PASSWORD=wallaroot
     volumes:
       - /opt/wallabag/data:/var/lib/mysql
-  db:
-    image: mariadb
-    environment:
-      - MYSQL_ROOT_PASSWORD=wallaroot
-    volumes:
-      - /opt/wallabag/data:/var/lib/mysql
   redis:
     image: redis:alpine
     volumes:

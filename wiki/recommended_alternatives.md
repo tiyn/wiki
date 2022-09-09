@@ -51,6 +51,8 @@ recommended, good software (mostly free and/or open-source).
   Invidious features local subscription management.
   - [NewPipe](https://newpipe.net/) is an free and open-source android youtube client.
   NewPipe features local subscription management.
+  - [PeerTube](./peertube.md) is a free and decentralized video platform.
+  Creators that are on YouTube are not neccessarily on PeerTube and vice versa.
 
 - [**Google**](https://google.com) is a search engine.
   - [Searx](./searx.md) is a self-hostable meta-search engine.
