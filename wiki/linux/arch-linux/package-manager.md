@@ -1,11 +1,11 @@
-# Package Manager
+# Pacman and Yay
 
 Package managers are important programs to get software onto your system.
 In Arch Linux there are 2 main package managers.
 One is `pacman`, the default package manager.
 But there are also a bunch other managers for the Arch User Repositories (AUR).
 
-In this article I'll use `yay` as my go to AUR manager.
+In this article `yay` is used as the go to AUR manager.
 `yay` is also a wrapper for `pacman` so you can just use `yay` instead of pacman
 to install programs.
 
@@ -35,14 +35,14 @@ It usually gets gets printed in the line above the error looking like
 `FAILED (unknown public key <KEYID>)`.
 
 ### Error while updating `is marginal trust`
-  
+
 Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
 right package.
 It is possible that it runs into errors when importing new keys.
 If the error `[...] Key [...] is marginal trust` occurs while updating the
 system, it can be fixed by running the following commands and then restarting
 the update process of the package manager.
-  
+
 ```sh
 pacman -Sy archlinux-keyring
 pacman-key --populate archlinux

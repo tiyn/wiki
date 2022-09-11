@@ -70,15 +70,15 @@ Scripts to change configuration at docking/undocking
 
 ## FN keys not working
 
-If the fn keys are not working properly run 
+If the fn keys are not working properly run
 [a script](https://github.com/tiyn/dotfiles/blob/master/.local/bin/etc/fchange)
 that changes the `sys/module/hid_apple/parameters/fnmode` file.
 This toggles between the two different fn key functions.
 
 ## Toggle the touchpad
 
-To toggle the touchpad on or off 
+To toggle the touchpad on or off
 [a simple script](https://github.com/tiyn/dotfiles/blob/master/.local/bin/tools/dwm/toggletouchpad)
 can be used that uses `synclient TouchpadOff=1` or `synclient TouchpadOff=0`.
-This requires `xf86-input-synaptics` which is a synaptics driver for 
+This requires `xf86-input-synaptics` which is a synaptics driver for
 notebook touchpads.
