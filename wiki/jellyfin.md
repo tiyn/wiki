@@ -16,10 +16,16 @@ After that make sure to setup `DVR` to your liking to record.
 
 ## Naming schemes of movies and TV shows
 
-Both movies and TV shows can have extras like a `making of` or a `behind the
-scenes`.
-This section describes on how to place them in the directories correctly to get
-jellyfin to recognize them as extras.
+This section describes how to name and how to place movies and TV shows and
+their extras in the directories correctly to get jellyfin to recognize them.
+
+In
+[the jellyfin tv shows documentation](https://jellyfin.org/docs/general/server/media/shows.html)
+and
+[the jellyfin movie documentation](https://jellyfin.org/docs/general/server/media/movies.html)
+are sections on how to name files correctly.
+This entry uses the conventions based in the documentation and introduces
+slight changes to indicate different versions and encodings more precisely.
 
 ### Handling movies or episodes consisting of multiple video files
 
@@ -46,21 +52,19 @@ Lastly the file extension `.srt` is appended.
 The complete subtitle file look like this:
 `movie_(1234)_-_brd_uu.en.forced.srt`.
 
-### Naming movies, multiple versions of them and extras
-
-In
-[the jellyfin documentation](https://jellyfin.org/docs/general/server/media/movies.html)
-is a section on how to name the files correctly.
-In the following slight changes are made to ensure better naming schemes.
 Additionally to indicate the encoding and source can be indicated before the
 file extension.
 `brd` for Blu-ray disc, `dvd` for digital versatile disc.
 This is followed by an encoding indicator starting with `u` and followed by
 your own scheme for encodings.
-Different versions of the same movie can be stored in the same folder with
-slightly different names to indicate the specific version.
-Inside the movie folder you can create subfolders with the following names for
-different extras:
+
+### Naming extras
+
+The following list are set expressions for extras of movies and tv shows.
+These will be used in the following sections on how to name
+[movies](#naming-movies) and
+[tv shows](#naming-tv-shows).
+For the exact use of them look into these sections.
 
 - `behind_the_scenes`
 - `deleted_scenes`
@@ -71,6 +75,14 @@ different extras:
 - `scenes`
 - `shorts`
 - `trailers`
+
+### Naming movies
+
+In the following slight changes are made to ensure better naming schemes.
+Different versions of the same movie can be stored in the same folder with
+slightly different names to indicate the specific version.
+Inside the movie folder you can create subfolders with names according to the
+expressions for extras from the [extras section](#naming-extras).
 
 The `movies` folder is a folder containing all movies.
 An example looks like the following:
@@ -97,33 +109,15 @@ movies
 Another way to keep extras in the main folder of the movie is by adding the
 following suffixes to the files accordingly:
 
-### Naming TV Shows, episodes and extras
+### Naming TV shows
 
-In
-[the jellyfin documentation](https://jellyfin.org/docs/general/server/media/shows.html)
-is a section on how to name the files correctly.
-In the following slight changes are made to ensure better naming schemes.
 Inside the shows folder you can create the `season_00` folder as a directory
 for extras.
-Additionally to indicate the encoding and source can be indicated before the
-file extension.
-`brd` for Blu-ray disc, `dvd` for digital versatile disc.
-This is followed by an encoding indicator starting with `u` and followed by
-your own scheme for encodings.
 Files containing multiple episodes at once are named by specifying the first
 and last episode they include `s01e01-e02`.
 Because of the heavily varying the titles of the episodes are not included.
-Use the following list to specify the extras inside the `season_0` folder:
-
-- `behind_the_scenes`
-- `deleted_scenes`
-- `extras` (generic catch all for extras of an unknown type)
-- `featurettes`
-- `interviews`
-- `samples`
-- `scenes`
-- `shorts`
-- `trailers`
+Specify the extras inside the `season_0` folder with the expressions from
+[the extras section](#naming-extras).
 
 The `shows` folder is a folder containing all tv shows.
 An example looks like the following.
