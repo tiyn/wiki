@@ -45,9 +45,7 @@ translate to other file types aswell.
 Files containing subtitles are named the same as the video file they relate to
 The only difference is the file extension.
 After the name of the file the language of the subtitles is indicated by the
-[two-letter or three-letter country code](https://www.iso.org/obp/ui/#search/code/).
-This entry prefer the use of the two-letter code - for example `.en` for the
-english language.
+two-letter language code [specified by ISO 639-1](https://quickref.me/iso-639-1).
 After that `.forced` can be added, if the subtitles are forced.
 Lastly the file extension `.srt` is appended.
 The complete subtitle file look like this:
