@@ -27,9 +27,26 @@ Jellyfin does not have the capability to seamlessly transition between multiple
 files of a movie or episode.
 The easiest way to achieve a seamless movie experience is to concatenate the two
 movie files.
-This can be done with [ffmpeg](./linux/ffmpeg.md#concatenate-multiple-video-files-with-matching-audio-tracks).
+This can be done with
+[ffmpeg](./linux/ffmpeg.md#concatenate-multiple-video-files-with-matching-audio-tracks).
 
-### Naming Movies, multiple movie versions and extras
+### Naming Subtitles of movies or tv shows
+
+Subtitles can be written into video files.
+If that is the case an additional naming of the file is not needed.
+This section especially targets `.srt` files but the naming conventions
+translate to other file types aswell.
+Files containing subtitles are named the same as the video file they relate to
+The only difference is the file extension.
+After the name of the file the language of the subtitles is indicated by the
+[two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2),
+for example `.en` for english.
+After that `.forced` can be added, if the subtitles are forced.
+Lastly the file extension `.srt` is appended.
+The complete subtitle file look like this:
+`movie_(1234)_-_brd_uu.en.forced.srt`.
+
+### Naming movies, multiple versions of them and extras
 
 In
 [the jellyfin documentation](https://jellyfin.org/docs/general/server/media/movies.html)
@@ -62,10 +79,13 @@ An example looks like the following:
 movies
 └── best_movie_ever_(2019)
     ├── best_movie_ever_(2019)_-_brd_uu.mp4
+    ├── best_movie_ever_(2019)_-_brd_uu.en.forced.srt
     ├── best_movie_ever_(2019)_-_dvd_u1.mp4
+    ├── best_movie_ever_(2019)_-_brd_u1.en.srt
     ├── best_movie_ever_(2019)_-_brd_un_directors_cut.mp4
     ├── behind_the_scenes
     │   ├── best_movie_ever_(2019)_-_brd_uu_making_of.mp4
+    │   ├── best_movie_ever_(2019)_-_brd_uu_making_of.en.srt
     │   └── best_movie_ever_(2019)_-_brd_uu_finding_the_right_score.mp4
     ├── interviews
     │   └── best_movie_ever_(2019)_-_brd_u1_director_interview.mp4
@@ -118,8 +138,11 @@ shows
     │
     ├── season_1
     │   ├── series_-_s01e01-e02_dvd_un.mkv
+    │   ├── series_-_s01e01-e02_dvd_un.de.srt
     │   ├── series_-_s01e03_brd_un.mkv
+    │   ├── series_-_s01e03_brd_un.de.forced.srt
     │   └── series_-_s01e04_brd_un.mkv
+    │   └── series_-_s01e04_brd_un.en.srt
     └── season_2
         ├── series_-_s02e01_dvd_un.mkv
         └── series_-_s02e02_dvd_un.mkv
