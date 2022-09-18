@@ -58,7 +58,10 @@ Following this different images, banners and icons can be found on
 When hovering over an asset a little blue button will appear.
 On the press of the button a game can be chosen that will use the asset in the
 steam application.
-This works for both Steam and non-Steam games.
+Make sure the game is a Steam game or
+[added to Steam as a non-Steam game](#adding-non-steam-games).
+After the installation of the game, the system may need to restart to correctly
+work with [SGDBoop](https://www.steamgriddb.com/boop) for the game.
 
 ## Steam Deck
 
