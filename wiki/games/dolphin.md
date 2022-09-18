@@ -36,3 +36,10 @@ Select emulate Wii Bluetooth adapter for Wii controllers.
 For the first Wii controller open the configuration, select
 `SDL/0/Microsoft X-Box 360 Pad 0` as type and change the buttons to your
 preference.
+
+## Running a game without selection in the menu
+
+To run a game instantly the path to the [ROM](./emulators.md) needs to be
+appended to the command used for starting Dolphin.
+This should be made in quotation marks as it could contain characters that need
+to be escaped.
