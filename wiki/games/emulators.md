@@ -10,3 +10,4 @@ ROMs are a digital copy of a video game.
 ## List of Emulator software
 
 - [PPSSPP](./ppsspp.md) is made to emulate Playstation Portable games
+- [Dolphin](./dolphin.md) is made to emulate GameCube and Wii games
