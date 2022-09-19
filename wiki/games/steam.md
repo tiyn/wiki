@@ -62,12 +62,3 @@ Make sure the game is a Steam game or
 [added to Steam as a non-Steam game](#adding-non-steam-games).
 After the installation of the game, the system may need to restart to correctly
 work with [SGDBoop](https://www.steamgriddb.com/boop) for the game.
-
-## Steam Deck
-
-The [Steam Deck](https://store.steampowered.com/steamdeck) is a handheld gaming
-computer made by the same developers as Steam.
-Due to its form factor it can be used especially well to play games that need a
-controller, such as many games that run on [emulators](./emulators.md).
-But by adding a USB-hub and connecting keyboard and mouse it can be used to
-play classical PC games aswell.
