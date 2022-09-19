@@ -1,15 +1,22 @@
 # Picard
 
 [MusicBrainz Picard](https://picard.musicbrainz.org/) is a free cross-platform
-tagging software for music.
+tagging software for [music or other audio files](./audio.md).
+It is able to tag a wide range of [audio codecs](./audio.md#audio-codecs)
+[flac](./flac_(codec).md) among others.
 
 ## File naming
 
-To enable the file renaming on saving check `Rename files when saving` in the preferences
-
+To enable the file renaming on saving check `Rename files when saving` in the
+preferences.
 Under `Options` you can `Open file naming script editor` to change the script.
+The tags described used are based on the audio codec.
+In this section it is assumed the standard
+[flac tags](./flac_(codec).md#tagging) are used as described in this wiki.
 
-The following is a basic script for renaming files to the scheme
+### Music
+
+The following is a basic script for renaming music files to the scheme
 `[<discnumber>.]<tracknumber>._<artist>_-_<title>`
 all in lower case.
 discnumber is only added, when the total disc count is greater than 1.
@@ -24,6 +31,8 @@ $num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))._
 %artist%_-_
 %title%), ,_)
 ```
+
+### Audiobooks
 
 Another Script is mainly used for audiobooks, where the title is not part of
 the filename to avoid confusion.
@@ -41,23 +50,3 @@ $num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))._
 %album%), ,_)_
 $num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))
 ```
-
-## Tagging
-
-The following explains the most general tags in short.
-These are the recommended tags, that are in part used by the script for
-renaming the files.
-
-- `title` is the name of the music piece.
-- `artist` is the artist of the song - for classical music it is the composer.
-- `album` is the name of the album.
-- `tracknumber` is the number of the music piece in the album
-- `date` is the year of publication
-- `albumartist` is the artist that made the album
-- `discnumber` is the disc number of the music piece in the album
-- `genre` is the genre of the music piece
-- `totaldiscs` is the amount of discs of the album
-- `totaltracks` is the amount of tracks in the disc of the music piece
-- `front` is an image of the front cover
-- `performer` is only used in classical music and defines the artist that
-  played the piece.
