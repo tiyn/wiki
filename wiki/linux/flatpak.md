@@ -17,3 +17,8 @@ When software installation is done with Flatpak it is recommended to pass the
 `--user` so the software is not installed system-wide but for the user only.
 In practice it looks like the following:
 `flatpak install --user <package to install>`.
+
+## Running software
+
+Software installed via flatpak can be run by typing the full package path into
+the command line, for example `com.makemkv.MakeMKV`.
