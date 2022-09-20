@@ -94,8 +94,6 @@ These will be used in the following sections on how to name
 [tv shows](#naming-tv-shows).
 For the exact use of them look into these sections.
 
-- `behind_the_scenes`
-- `deleted_scenes`
 - `extras` (generic catch all for extras of an unknown type)
 - `featurettes`
 - `interviews`
@@ -124,12 +122,12 @@ movies
     ├── best_movie_ever_(2019)_-_brd_u1.en.srt
     ├── best_movie_ever_(2019)_-_brd_un_directors_cut.mp4
     ├── behind_the_scenes
-    │   ├── best_movie_ever_(2019)_-_brd_uu_making_of.mp4
-    │   ├── best_movie_ever_(2019)_-_brd_uu_making_of.en.srt
-    │   └── best_movie_ever_(2019)_-_brd_uu_finding_the_right_score.mp4
     ├── interviews
     │   └── best_movie_ever_(2019)_-_brd_u1_director_interview.mp4
     └── extras
+        ├── best_movie_ever_(2019)_-_brd_uu_making_of.mp4
+        ├── best_movie_ever_(2019)_-_brd_uu_making_of.en.srt
+        ├── best_movie_ever_(2019)_-_brd_uu_finding_the_right_score.mp4
         └── best_movie_ever_(2019)_-_dvd_un_home_recreation.mp4
 ```
 
