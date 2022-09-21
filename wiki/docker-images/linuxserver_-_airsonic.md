@@ -41,7 +41,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop airsonic
 docker rm airsonic

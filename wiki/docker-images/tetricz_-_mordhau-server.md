@@ -49,9 +49,8 @@ Set the following ports with the -p tag.
 
 ## start.sh
 
-```shell
+```sh
 #!/bin/sh
-
 docker pull tetricz/mordhau-server
 docker run --name=mordhau \
  --restart=unless-stopped \
@@ -77,9 +76,8 @@ docker run --name=mordhau \
 
 ## stop.sh
 
-```shell
+```sh
 #/bin/sh
-
 docker stop mordhau
 docker rm mordhau
 ```

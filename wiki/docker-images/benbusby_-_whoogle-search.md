@@ -31,7 +31,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 cd whoogle-search
 docker-compose down

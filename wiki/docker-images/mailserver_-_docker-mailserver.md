@@ -9,7 +9,7 @@ It contains dovecot, antispam, antivirus, ssl, etc.
 The configuration is done automatically using scripts by mailserver.
 First you need to download the essential setup files.
 
-```shell
+```sh
 wget -O .env https://raw.githubusercontent.com/docker-mailserver/docker-mailserver/master/compose.env
 wget https://raw.githubusercontent.com/docker-mailserver/docker-mailserver/master/docker-compose.yml
 wget https://raw.githubusercontent.com/docker-mailserver/docker-mailserver/master/mailserver.env
@@ -35,7 +35,7 @@ Afterwards you're ready to go by once again running the `rebuild.sh` file.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker pull mailserver/docker-mailserver:latest

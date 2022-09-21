@@ -32,7 +32,7 @@ Set the following ports in the `ports:` section.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 cd /root/docker/bibliogram/bibliogram
 docker-compose down

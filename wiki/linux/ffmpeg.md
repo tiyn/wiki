@@ -8,7 +8,7 @@ many audio and video tools and libraries.
 First you need to create a text file `files.txt` that includes a line for every
 video you want to concatenate in the form of:
 
-```shell
+```sh
 file '<path to the video>'
 ```
 
@@ -16,7 +16,7 @@ You have to give the absolute path towards the files.
 Make sure the videos are in correct order.
 To concatenate these video files you can run:
 
-```shell
+```sh
 ffmpeg -f concat -safe 0 -i files.txt -map 0 -c copy output.mp4
 ```
 

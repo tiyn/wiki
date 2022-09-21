@@ -28,7 +28,7 @@ Set the following volumes with the -v tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop onedrive
 docker rm onedrive

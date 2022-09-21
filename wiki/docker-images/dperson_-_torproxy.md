@@ -28,7 +28,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop tor-proxy
 docker rm tor-proxy

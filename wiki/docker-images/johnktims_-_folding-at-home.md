@@ -32,7 +32,7 @@ GPU support is documented in [the docker article](../docker.md).
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop folding-at-home
 docker rm folding-at-home

@@ -31,7 +31,7 @@ The default username is `print`, the default password is `print`.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop cups
 docker rm cups

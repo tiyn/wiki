@@ -37,7 +37,7 @@ There are some special variables to set.
 
 ## Rebuild
 
-```shell
+```sh
 #!/bin/sh
 docker stop bind
 docker rm bind

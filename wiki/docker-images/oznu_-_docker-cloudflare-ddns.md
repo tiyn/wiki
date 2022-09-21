@@ -20,7 +20,7 @@ Set the following variables with the -e tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop ddns
 docker rm ddns

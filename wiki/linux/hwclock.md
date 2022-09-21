@@ -6,7 +6,7 @@
 
 To display the hardware clock run the following command:
 
-```shell
+```sh
 hwclock
 ```
 
@@ -14,6 +14,6 @@ hwclock
 
 To sync the hardware clock run the following command:
 
-```shell
+```sh
 hwclock -w
 ```

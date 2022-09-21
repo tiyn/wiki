@@ -11,7 +11,7 @@ Due to easy handling and reproducable environments it is a useful tool.
 Another possibility is to try the official convenience script.
 To get and execute it run the following in your terminal.
 
-```shell
+```sh
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```

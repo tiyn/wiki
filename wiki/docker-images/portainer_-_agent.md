@@ -27,7 +27,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop portainer_agent
 docker rm portainer_agent

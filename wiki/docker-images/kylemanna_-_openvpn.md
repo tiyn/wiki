@@ -34,7 +34,7 @@ There are some special variables to set.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop openvpn
 docker rm openvpn

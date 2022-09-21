@@ -60,7 +60,7 @@ The last line is to add authentication.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker pull traefik:v2.4

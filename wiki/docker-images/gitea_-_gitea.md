@@ -64,7 +64,7 @@ docker-compose file.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker-compose up -d

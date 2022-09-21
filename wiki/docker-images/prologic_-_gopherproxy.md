@@ -27,7 +27,7 @@ There are some special variables to set.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop gopheroverhttp
 docker rm gopheroverhttp

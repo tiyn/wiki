@@ -8,7 +8,7 @@ It is a replacement for the program `ifconfig`.
 
 You can list network interfaces by running:
 
-```shell
+```sh
 ip link list
 ```
 
@@ -16,12 +16,12 @@ ip link list
 
 Assuming the interface is named `wlan0` run the following:
 
-```shell
+```sh
 ip link set wlan0 up
 ```
 
 Disabling works accordingly by running:
 
-```shell
+```sh
 ip link set wlan0 down
 ```

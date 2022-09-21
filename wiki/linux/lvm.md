@@ -19,7 +19,7 @@ First format the disk so that it has one partition (we will assume its called
 `/dev/sdc1`).
 To add the partition to a group run:
 
-```shell
+```sh
 pvcreate /dev/sdc1
 vgextend <name of your volume group> /dev/sdc1
 ```
@@ -44,18 +44,18 @@ If you don't have enough space you have to resize the physical volume as
 described in this article.
 Then run:
 
-```shell
+```sh
 lvextend -L +<size (e.g. 40G)> /dev/<volume groupt>/<logical volume>
 ```
 
 If you want to allocate all the free space existing in a volume group run:
 
-```shell
+```sh
 lvextend -l +100%FREE /dev/<volume group>/<logical volume>
 ```
 
 Now you need to extend the filesystem with:
 
-```shell
+```sh
 resize2fs /dev/<volume group>/<logical volume>
 ```
