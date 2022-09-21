@@ -50,7 +50,7 @@ albums and singles.
 
 ## Naming convention
 
-It is suggest to place the audio files in a directory named after the album they
+It is suggested to place the audio files in a directory named after the album they
 belong to.
 These album directories are placed in directories named after the album artist.
 Files can be named in the following scheme:
