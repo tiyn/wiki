@@ -26,16 +26,14 @@ run Vulkan.
 The Device name will change if you are not using a
 [Steam Deck](./steam_deck.md).
 
-```txt
-Backend: Vulkan
-Device: AMD RADV VANGOGH
-Fullscreen: on
-VSync: on
-Rendering solution: Auto (1:1)
-Upscale level: 2x
-Upscale type: Hybrid + Bicubic
-Deposterize: on
-```
+- Backend: `Vulkan`
+- Device: `AMD RADV VANGOGH`
+- Fullscreen: `on`
+- VSync: `on`
+- Rendering solution: `Auto (1:1)`
+- Upscale level: `2x`
+- Upscale type: `Hybrid + Bicubic`
+- Deposterize: `on`
 
 ### Running a game without selection in the menu
 
