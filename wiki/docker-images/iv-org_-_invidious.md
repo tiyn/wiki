@@ -51,7 +51,8 @@ Set the following ports in the `ports:` section.
 #!/bin/sh
 cd invidious
 docker-compose down
-docker pull postgres:10
+docker pull quay.io/invidious/invidious:latest
+docker pull docker.io/library/postgres:14
 docker-compose up -d
 cd ..
 ```
@@ -63,9 +64,7 @@ version: "3"
 services:
 
   invidious:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
+    image: quay.io/invidious/invidious:latest
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -85,21 +84,21 @@ services:
         domain: yt.home.server
         https_only: false
         popular_enabled: false
-        registration_enabled: false
+        #registration_enabled: false
         # statistics_enabled: false
         default_user_preferences:
             dark_mode: true
             default_home: "Subscriptions"
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
-      interval: 30s
-      timeout: 5s
-      retries: 2
+      interval: 30m
+      timeout: 5m
+      retries: 3
     depends_on:
       - invidious-db
 
   invidious-db:
-    image: docker.io/library/postgres:13
+    image: docker.io/library/postgres:14
     restart: unless-stopped
     volumes:
       - postgresdata:/var/lib/postgresql/data
