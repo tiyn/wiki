@@ -81,7 +81,7 @@ services:
           port: 5432
         check_tables: true
         # external_port:
-        domain: yt.home.server
+        domain: sub.domain.tld
         https_only: false
         popular_enabled: false
         #registration_enabled: false
