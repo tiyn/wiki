@@ -1,6 +1,6 @@
 # ventz - bind
 
-This is a docker container for a [dns](../dns.md) resolver.
+This is a docker container for a [bind](../bind.md) [DNS](../dns.md) resolver.
 The official container and documentation was made by
 [ventz](https://hub.docker.com/r/ventz/bind).
 
@@ -15,8 +15,8 @@ Set the following volumes with the -v tag.
 
 | Outside mount/volume name | Container mount   | Description           |
 | ------------------------- | ----------------- | --------------------- |
-| `bind_cache`              | `/var/cache/bind` | cache for dns         |
-| `bind_etc`                | `/etc/bind`       | configuration for dns |
+| `bind_cache`              | `/var/cache/bind` | cache for DNS         |
+| `bind_etc`                | `/etc/bind`       | configuration for DNS |
 
 ## Ports
 
@@ -24,8 +24,8 @@ Set the following ports with the -p tag.
 
 | Container Port | Recommended outside port | Protocol | Description       |
 | -------------- | ------------------------ | -------- | ----------------- |
-| `53`           | `53`                     | TCP      | dns protocol port |
-| `53`           | `53`                     | UDP      | dns protocol port |
+| `53`           | `53`                     | TCP      | DNS protocol port |
+| `53`           | `53`                     | UDP      | DNS protocol port |
 
 ## Additional
 
@@ -33,7 +33,7 @@ There are some special variables to set.
 
 | Flag    | Usage                                                   |
 | ------- | ------------------------------------------------------- |
-| `--dns` | set two of these flags for specific dns forward servers |
+| `--dns` | set two of these flags for specific DNS forward servers |
 
 ## Rebuild
 
