@@ -1,8 +1,7 @@
 # Nginx
 
-[nginx](https://www.nginx.com/) is a http reverse proxy.
-An alternative solution for this, especially when used in combination with
-[Docker images](./docker.md) is [traefik](./traefik.md).
+[nginx](https://www.nginx.com/) is a web server that can be used as
+[reverse proxy](./reverse-proxy.md).
 
 ## Server
 

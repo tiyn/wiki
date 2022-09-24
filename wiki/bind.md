@@ -91,6 +91,8 @@ $TTL 1D
 To make the server you operate on the nameserver select a subdomain for it and
 subsitute `<thisserver>` for it and its IP address `<ip of thisserver>`.
 More [DNS records](./dns.md#records) can be added.
+Most importantly used and needed for [reverse proxies](./reverse-proxy.md) are
+[A records](./dns.md#a-record) and [CNAME records](./dns.md#cname-record).
 
 Then create `/etc/bind/extra-zones/revp.178.168.192` and fill it with the
 following lines.
