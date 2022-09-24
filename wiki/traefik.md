@@ -1,6 +1,6 @@
 # Traefik
 
-[Traeffik](https://github.com/traefik/traefik) is a http reverse proxy with
+[Traefik](https://github.com/traefik/traefik) is a http reverse proxy with
 a special integration of infrastructure components (e.g. [Docker](./docker.md)).
 
 ## Server
