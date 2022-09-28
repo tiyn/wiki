@@ -17,14 +17,16 @@ there.
 
 Syncthing can be configured in root and in user space.
 
-#### Root space configuration
+#### Root space configuration for Linux
 
+This section assumes that a Linux system is used.
 For root space configuration you can use the Docker image for easy setup.
 Afterwards navigate to the set IP with your browser and set up the directories
 to sync.
 
 #### User space configuration for Linux
 
+This section assumes that a Linux system is used.
 The user space configuration is a bit more difficult than the root space
 configuration.
 The following steps are adapted from a
