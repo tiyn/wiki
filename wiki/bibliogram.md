@@ -6,9 +6,10 @@ Please note that Bibliogram is now officially discontinued according to
 [the developer](https://cadence.moe/blog/2022-09-01-discontinuing-bibliogram)
 as it is not possible anymore to show user pages but only single posts.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [cloudrac3r image](./docker-images/cloudrac3r_-_bibliogram.md).
+The software can be setup via docker with the
+[cloudrac3r image](./docker-images/cloudrac3r_-_bibliogram.md).
 
 ## Automatic redirect from Instagram
 

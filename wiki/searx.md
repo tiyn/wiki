@@ -2,9 +2,10 @@
 
 [Searx](https://searx.me) is a free metasearch engine.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [searx image](./docker-images/searx_-_searx.md).
+The software can be setup via Docker with the
+[searx image](./docker-images/searx_-_searx.md).
 
 ## Adding to Firefox
 

@@ -2,9 +2,10 @@
 
 [Wallabag](https://github.com/wallabag/wallabag) is a read-it-later app.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [wallabag image](./docker-images/wallabag_-_wallabag.md).
+The software can be setup via Docker with the
+[wallabag image](./docker-images/wallabag_-_wallabag.md).
 
 ## Add-ons for quick access
 

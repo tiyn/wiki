@@ -3,9 +3,10 @@
 [Nitter](https://github.com/zedeus/nitter) is an alternative frontend for
 Twitter.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [zedeus image](./docker-images/zedeus_-_nitter.md).
+The software can be setup via docker with the
+[zedeus image](./docker-images/zedeus_-_nitter.md).
 
 ## Automatic redirect from Twitter
 

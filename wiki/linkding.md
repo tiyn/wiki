@@ -3,10 +3,10 @@
 [Linkding](https://github.com/sissbruecker/linkding) is a self-hostable
 bookmarking and archiving service.
 
-## Server
+## The software
 
-A server can be setup via docker with the
-[image by sissbrueckner](./docker-images/sissbrueckner_-_linkding.md)
+The software can be setup via docker with the
+[image by sissbrueckner](./docker-images/sissbrueckner_-_linkding.md).
 
 ## Firefox add-on
 

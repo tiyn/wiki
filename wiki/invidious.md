@@ -4,9 +4,10 @@
 YouTube.
 It includes locally stored subscription management.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [iv-org image](./docker-images/iv-org_-_invidious.md).
+The software can be setup via docker with the
+[iv-org image](./docker-images/iv-org_-_invidious.md).
 
 ## Automatic redirect from YouTube
 

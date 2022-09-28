@@ -2,16 +2,15 @@
 
 [Teamspeak3](https://www.teamspeak.com) is a voice-over-IP service.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [teamspeak image](./docker-images/teamspeak.md).
+The software can be setup via Docker with the
+[teamspeak image](./docker-images/teamspeak.md).
 
-## DNS
+## Link Teamspeak3 to a subdomain
 
-### Link Teamspeak3 to a subdomain
-
-To link Teamspeak3 to one of your subdomains you need to add a [DNS](./dns.md)
-SRV-record:
+To link Teamspeak3 to one of your subdomains you need to add a
+[DNS SRV-record](./dns.md#srv-record):
 
 ```txt
 type: SRV

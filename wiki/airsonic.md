@@ -7,12 +7,12 @@ Airsonic is not maintained anymore and therefore deprecated.
 A more modern implementation of it is
 [Airsonic-Advanced](./airsonic-advanced.md).
 
-## Server
+## Set up
 
-A server can be setup via docker with the
+The software can be setup via docker with the
 [linuxserver image](./docker-images/linuxserver_-_airsonic.md).
 
-## Clients
+### Clients
 
 It is possible to use many different clients because the server is compatible
 with all the Subsonic clients.

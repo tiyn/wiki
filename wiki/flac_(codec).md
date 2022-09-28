@@ -2,7 +2,7 @@
 
 This article describes the `flac` codec.
 For the linux `flac` package see the
-[flac package entry](./linux/flac_(package).md)
+[flac package entry](./linux/flac_(package).md.
 
 `flac` - short for Free Lossless Audio Codec - is a [audio](./audio.md) codec
 without compression losses.

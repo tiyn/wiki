@@ -1,9 +1,14 @@
 # Portainer
 
-## Server
+[Portainer](https://www.portainer.io/) is a Kubernetes management platform that
+also works with [Docker](./docker.md).
 
-A server can be setup via docker with the [portainer image](./docker-images/portainer_-_portainer.md).
+## Setup
 
-## Agent
+The software can be setup via Docker with the
+[portainer image](./docker-images/portainer_-_portainer.md).
 
-An agent can be setup via docker with the [portainer image](./docker-images/portainer_-_agent.md).
+## Configure an agent
+
+An agent is a cluster of Docker API proxies
+An agent can be setup via Docker with the [portainer image](./docker-images/portainer_-_agent.md).

@@ -3,7 +3,7 @@
 [PeerTube](https://joinpeertube.org/) is a free and decentralized video
 platform using WebTorrent.
 
-## Server
+## Setup
 
-A server can be setup via docker with the
+The software can be setup via docker with the
 [chocobozzz image](./docker-images/chocobozzz_-_peertube.md).

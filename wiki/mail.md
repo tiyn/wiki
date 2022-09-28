@@ -6,7 +6,8 @@ Nevertheless there are some really nice pieces of software to check out.
 
 ## Server
 
-If you want to host your own mail-server there are solutions with and without interfaces.
+If you want to host your own mail-server there are solutions with and without
+interfaces.
 
 - [Dovecot](./docker-images/tvial_-_docker-mailserver.md) is a simple dockerized
   mail server that has no interface.

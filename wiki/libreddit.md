@@ -3,9 +3,10 @@
 [LibReddit](https://github.com/spikecodes/libreddit) is an alternative frontend for
 Reddit.
 
-## Server
+## Setup
 
-A server can be setup via docker with the [spikecodes image](./docker-images/spikecodes_-_libreddit.md).
+The software can be setup via docker with the
+[spikecodes image](./docker-images/spikecodes_-_libreddit.md).
 
 ## Automatic redirect from Reddit
 

@@ -3,9 +3,9 @@
 [Whoogle](https://github.com/benbusby/whoogle-search) is a self-hostable
 metasearch engine.
 
-## Server
+## Setup
 
-A server can be setup via docker with the
+The software can be setup via docker with the
 [image by benbusby](./docker-images/benbusby_-_whoogle-search.md)
 
 ## Adding to Firefox

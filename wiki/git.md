@@ -9,10 +9,10 @@ The Client is pretty simple to understand.
 With only a handfull of commands you should be able to get your versioning going.
 For servers with web interfaces there are different cli tools to control it
 without using a browser.
+For most linux distributions it is packaged with the `git` package
 
-- Arch based systems: `pacman -S git`
-
-There is also an interactive [fixup guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
+There is also an interactive
+[fixup guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
 
 ## Server with web interface
 

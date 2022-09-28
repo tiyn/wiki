@@ -3,12 +3,12 @@
 [Bind](https://www.isc.org/bind/) is an open-source software suite for
 interacting with the [DNS](./dns.md).
 
-## Server
+## Setup
 
-A server can be setup via docker with the
+The software can be setup via docker with the
 [ventz image](./docker-images/ventz_-_bind.md).
 
-## Setup a local DNS server with forwarding
+## Configure Local DNS server with forwarding
 
 After setting up the server.
 Look into the file `/etc/bind/named.conf.options`.
@@ -45,7 +45,7 @@ options {
 };
 ```
 
-## Creating local domains
+## Configure local domains
 
 This section explains how to add local domains for local systems.
 It is explicitly compatible with the

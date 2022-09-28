@@ -3,9 +3,9 @@
 [Matrix](https://matrix.org/) is an open network for secure, decentralized
 communication.
 
-## Docker setup
+## Setup
 
-The matrix server can be a complex setup of servers and services.
+The matrix server is a complex setup of servers and services.
 Please note that this configuration is a composition of docker images.
 Therefore a shared `docker-compose.yml` file is used.
 This setup guide follows a modified version of the
@@ -194,12 +194,6 @@ You should see a green sign that indicates success.
 
 If one of these does not work (but synapse works) your nginx configuration is
 not correctly set up.
-
-## Additional Features
-
-Your done with the most basic setup for your Matrix Homeserver to work properly
-with federation.
-All following sections will add features to it.
 
 ### Element web client
 

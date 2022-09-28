@@ -6,12 +6,12 @@ a free and open-source personal media streamer mainly used for
 It is a more modern implementation of [Airsonic](./airsonic.md) which in turn
 is a fork of [Subsonic](./subsonic.md).
 
-## Server
+## Setup
 
-A server can be setup via docker with the
+The software can be setup via docker with the
 [linuxserver image](./docker-images/linuxserver_-_airsonic-advanced.md).
 
-### Setup
+### Initial configuration
 
 The administration username after installation is `admin`.
 The password is `admin` too.
@@ -32,7 +32,13 @@ Select `Add credentials` and select `encrypted-AES-GCM` as encoder.
 Type in the Airsonic password and confirm it and create the new credential.
 Log in with the clients now works correctly.
 
-### Scrobbling with Last.fm
+### Clients
+
+It is possible to use many different clients because the server is compatible
+with all the Subsonic clients.
+These can be found in the [Subsonic entry](./subsonic.md#clients).
+
+## Scrobbling with Last.fm
 
 To set up the scrobbling of music with Last.fm check
 `Register what I'm playing at Last.fm` in the personal tab of the settings.
@@ -41,9 +47,3 @@ tab.
 Select `Add credentials`, set the App to Last.fm and put in the Last.fm
 password.
 After the creation of credentials in this way the music will be scrobbled.
-
-## Clients
-
-It is possible to use many different clients because the server is compatible
-with all the Subsonic clients.
-These can be found in the [Subsonic entry](./subsonic.md#clients).
