@@ -15,7 +15,7 @@ package is called `org.DolphinEmu.dolphin-emu`.
 The following sections describe specific issues relating to the configuration
 of Dolphin.
 
-### [Steam Deck](./steam_deck.md) specific settings
+### Steam Deck specific settings
 
 The following settings are especially useful when emulating games on the
 [Steam Deck](./steam_deck.md) as pointed out by

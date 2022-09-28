@@ -15,7 +15,7 @@ package is called `org.ppsspp.PPSSPP`.
 The following sections describe specific issues relating to the configuration
 of PPSSPP.
 
-### [Steam Deck](./steam_deck.md) specific settings
+### Steam Deck specific settings
 
 The following settings are especially useful when emulating PSP games on the
 [Steam Deck](./steam_deck.md) as pointed out by
