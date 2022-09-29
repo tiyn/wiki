@@ -21,7 +21,7 @@ For Windows guides follow the official installation guide at
 
 #### Installation (Linux)
 
-The installation guide for this mods is based on
+The installation guide for this mod is based on
 [Laetus'](http://www.twcenter.net/forums/showthread.php?724777-Third-Age-and-Linux)
 post in the Total War Center Forum and assumes Medieval 2: Total War was
 purchased via [Steam](./steam.md) and being on a linux system.
