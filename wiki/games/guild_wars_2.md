@@ -51,8 +51,7 @@ From there place the included Directory
 ### arcdps
 
 [arcdps](https://www.deltaconnected.com/arcdps/) is a damage meter.
-It is accessible in-game via the hotkeys `Alt-Shift-T`.
-The boon table is accessible in-game via the hotkeys `Alt-Shift-B`.
+Its menu is accessible in-game via the hotkeys `Alt-Shift-T`.
 
 Download the file `d3d11.dll` from
 [their website](https://www.deltaconnected.com/arcdps/x64/).
@@ -60,13 +59,38 @@ Then rename it to `gw2addon_arcdps.dll` and move it to a newly created
 directory inside the Guild Wars 2 add-on directory
 `gw2_root_directory/addons/arcdps/gw2addon_arcdps.dll`.
 
-There is an extension to this add-on regarding the boon stats which are not
-easily readable otherwise.
+#### boon-tables
+
+There is an extension to the arcdps add-on regarding the boon stats which are
+not easily readable otherwise.
 For this download the current version of the
 [gw2-arcdps-boon-table](https://github.com/knoxfighter/GW2-ArcDPS-Boon-Table/releases)
-and move the downloaded file without changing its name to
-`gw2_root_directory/bin64/d3d9_arcdps_table.dll`.
-This extension uses the same hotkey for the boon table as before.
+and move the downloaded `.dll` file without changing its name to
+`gw2_root_directory/addons/arcdps/d3d9_arcdps_table.dll`.
+This extension can be opened via the main menu of the original arcdps settings
+with the `Boon Table` checkmark or with the hotkey `Alt-Shift-B`.
+
+#### mechanics
+
+Another extension to the arcdps addon is a log of mechanics for various
+strikes, fractals and raids.
+For this download the current version of
+[gw2-arcdps-mechanics-log](https://github.com/knoxfighter/GW2-ArcDPS-Mechanics-Log/releases)
+and move the downloaded `.dll` file without changing its name to
+`gw2_root_directory/addons/arcdps/d3d9_arcdps_mechanics.dll`.
+This extension can be opened via the extensions menu of the original arcdps
+settings.
+
+#### healing_stats
+
+The following is an extension of the arcdps addon that allows easier readability
+of healing.
+For this download the current version of
+[arcdps_healing_stats](https://github.com/Krappa322/arcdps_healing_stats/releases)
+and move the downloaded `.dll` file without changing its name to
+`gw2_root_directory/addons/arcdps/arcdps_healing_stats.dll`.
+This extension can be opened via the extensions menu of the original arcdps
+settings.
 
 ### gw2radial
 
