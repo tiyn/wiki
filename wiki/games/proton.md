@@ -8,8 +8,10 @@ based on [Wine](../linux/wine.md).
 
 [Proton GE](https://github.com/GloriousEggroll/proton-ge-custom) is a community
 built version of Proton.
+GE stands for Glorious Eggroll, the lead developer of Proton GE.
 It often contains fixes for bugs which are not yet included in the official
 Proton releases.
+Thus some games, that do not work with Proton, can be run with Proton GE.
 
 Proton GE can be installed on Linux systems by installing the `ProtonUp-Qt`
 application using [Flatpak](../linux/flatpak.md).
