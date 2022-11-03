@@ -1,7 +1,8 @@
 # Jellyfin
 
 [Jellyfin](https://jellyfin.ord) is a suite for multimedia streaming.
-It includes a web-interface and is mainly used for [video data](./video.md).
+It includes a web-interface and is mainly used for
+[movies and tv shows](./movies_&_tv_shows.md).
 
 ## Setup
 

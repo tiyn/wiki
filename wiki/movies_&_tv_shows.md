@@ -1,4 +1,4 @@
-# Video
+# Movies & TV Shows
 
 It is nice to have some movies saved on your system.
 There are multiple different approaches on how to get it working depending on

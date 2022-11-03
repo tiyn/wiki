@@ -28,3 +28,15 @@ initializing.
 ```txt
 After=pve-guests.service
 ```
+
+Such a service can be started by running:
+
+```sh
+sudo systemctl start unturned
+```
+
+Alternatively it can be enabled to start at every boot by running:
+
+```sh
+sudo systemctl enable unturned
+```
