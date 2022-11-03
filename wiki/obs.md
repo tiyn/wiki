@@ -14,6 +14,7 @@ camera.
 For Linux systems [V4L2](./linux/v4l2.md) needs to be set up.
 This guide assumes it is set up according to the section in the
 [V4L2 entry](./linux/v4l2.md#v4l2loopback).
+Make sure to start and/or enable it.
 Additionally `obs-v4l2sink` needs to be installed.
 Under `Tools/v4l2sink` select the device path set up in V4L2 and the `YUV420`
 video format.
