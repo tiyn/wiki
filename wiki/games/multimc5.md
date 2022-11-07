@@ -1,7 +1,7 @@
 # MultiMC5
 
-[MultiMC5](https://multimc.org) is a custom launcher that allows multiple Minecraft
-instances installed at once.
+[MultiMC5](https://multimc.org) is a custom launcher that allows multiple
+[Minecraft](./minecraft.md) instances installed at once.
 
 ## Add OptiFine to a Minecraft instance
 
