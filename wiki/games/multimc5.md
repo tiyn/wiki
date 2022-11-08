@@ -6,13 +6,21 @@
 ## Add OptiFine to a Minecraft instance
 
 [OptiFine](https://www.optifine.net/home) is a Minecraft optimization mod.
-This guide shows how to add optifine to an instance on windows.
+The following steps show how to add optifine to a MultiMC5 Minecraft instance.
+It is based on a comment by
+[FuchsFuchs1](https://gist.github.com/jspanos71/32dc422eb4435a8f8dd5604e7a77c327).
+The setup uses the [Fabric Mod Loader](https://fabricmc.net/) together with
+[OptiFabric](https://www.curseforge.com/minecraft/mc-mods/optifabric) to make
+OptiFine available.
 
 - If not already done create an instance on MultiMC5
-- Download the according version of OptiFine from their
-  [website](https://www.optifine.net/downloads)
-- Open the [Minecraft standard (Java) launcher](./minecraft.md#client) and
-  start the according version at least once
-- Open the OptiFine jar, click `Extract` and save the extracted OptiFine to a folder
-- Edit the according instance and select `Version`, then select `Add to Minecraft.jar`
-  and select the extracted OptiFine
+- Select `Edit Instance`, navigate to `Version` and `Install Fabric`
+- Download the version of
+  [OptiFabric](https://www.curseforge.com/minecraft/mc-mods/optifabric/files)
+  according to your Minecraft version
+- Navigate to `Loader Mods` and press `Add`, then select the downloaded
+  OptiFabric file
+- Download the version of [OptiFine](https://optifine.net/downloads) according
+  to your Minecraft version
+- Navigate to `Loader Mods` and press `Add`, then select the downloaded
+  OptiFine file
