@@ -9,7 +9,8 @@
 This guide shows how to add optifine to an instance on windows.
 
 - If not already done create an instance on MultiMC5
-- Download the according version of OptiFine from their [website](https://www.optifine.net/downloads)
+- Download the according version of OptiFine from their
+  [website](https://www.optifine.net/downloads)
 - Open the [Minecraft standard (Java) launcher](./minecraft.md#client) and
   start the according version at least once
 - Open the OptiFine jar, click `Extract` and save the extracted OptiFine to a folder

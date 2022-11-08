@@ -4,7 +4,8 @@
 
 ## Server
 
-A server can be setup via docker with the [linuxserver image](../docker-images/itzg_-_minecraft-server.md).
+A server can be setup via docker with the
+[itzg image](../docker-images/itzg_-_minecraft-server.md).
 
 ## Client
 
