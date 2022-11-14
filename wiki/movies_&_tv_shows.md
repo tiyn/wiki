@@ -116,19 +116,19 @@ An example looks like the following:
 ```
 movies
 └── best_movie_ever_(2019)
-    ├── best_movie_ever_(2019)_-_brd_uu.mp4
-    ├── best_movie_ever_(2019)_-_brd_uu.en.forced.srt
-    ├── best_movie_ever_(2019)_-_dvd_u1.mp4
-    ├── best_movie_ever_(2019)_-_brd_u1.en.srt
-    ├── best_movie_ever_(2019)_-_brd_un_directors_cut.mp4
+    ├── best_movie_ever_(2019)-brd_uu.mp4
+    ├── best_movie_ever_(2019)-brd_uu.en.forced.srt
+    ├── best_movie_ever_(2019)-dvd_u1.mp4
+    ├── best_movie_ever_(2019)-brd_u1.en.srt
+    ├── best_movie_ever_(2019)-brd_un_directors_cut.mp4
     ├── behind_the_scenes
     ├── interviews
-    │   └── best_movie_ever_(2019)_-_brd_u1_director_interview.mp4
+    │   └── director_interview-brd_u1.mp4
     └── extras
-        ├── best_movie_ever_(2019)_-_brd_uu_making_of.mp4
-        ├── best_movie_ever_(2019)_-_brd_uu_making_of.en.srt
-        ├── best_movie_ever_(2019)_-_brd_uu_finding_the_right_score.mp4
-        └── best_movie_ever_(2019)_-_dvd_un_home_recreation.mp4
+        ├── making_of-brd_uu.mp4
+        ├── making_of-brd_u1.en.srt
+        ├── finding_the_right_score-dvd_u1.mp4
+        └── home_recreation-brd_u2.mp4
 ```
 
 
@@ -152,18 +152,18 @@ An example looks like the following.
 shows
 └── series_(2010)
     ├── season_0
-    │   ├── series_-_behind_the_scenes_brd_uu.mkv
-    │   ├── series_-_name_interview_brd_uu.mkv
-    │   └── series_-_featurette_dvd_un.mkv
+    │   ├── behind_the_scenes-brd_uu.mkv
+    │   ├── interview-brd_uu.mkv
+    │   └── featurette-dvd_un.mkv
     │
     ├── season_1
-    │   ├── series_-_s01e01-e02_dvd_un.mkv
-    │   ├── series_-_s01e01-e02_dvd_un.de.srt
-    │   ├── series_-_s01e03_brd_un.mkv
-    │   ├── series_-_s01e03_brd_un.de.forced.srt
-    │   └── series_-_s01e04_brd_un.mkv
-    │   └── series_-_s01e04_brd_un.en.srt
+    │   ├── series_(2010)_s01e01-e02-dvd_un.mkv
+    │   ├── series_(2010)_s01e01-e02-dvd_un.de.srt
+    │   ├── series_(2010)_s01e03-brd_un.mkv
+    │   ├── series_(2010)_s01e03-brd_un.de.forced.srt
+    │   └── series_(2010)_s01e04-brd_un.mkv
+    │   └── series_(2010)_s01e04-brd_un.en.srt
     └── season_2
-        ├── series_-_s02e01_dvd_un.mkv
-        └── series_-_s02e02_dvd_un.mkv
+        ├── series_(2010)_s02e01-dvd_un.mkv
+        └── series_(2010)_s02e02-dvd_un.mkv
 ```
