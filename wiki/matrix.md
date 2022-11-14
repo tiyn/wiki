@@ -86,15 +86,24 @@ docker run -it --rm \
     matrixdotorg/synapse:latest generate
 ```
 
-Navigate to the volume and edit the configuration files.
-For the `homeserver.yaml` locate the following line and change them
-accordingly:
+If you want to enable/disable registration go to the `homeserver.yaml`
+and add the following line either set to `true` or `false`:
+`enable_registration: true`.
 
-```yaml
-public_baseurl: https://synapse.example.com/
+Additionally create the following lines:
+
 ```
-
-Additionally uncomment the lines following `ip_range_blacklist:`
+federation_ip_range_blacklist:
+  - '127.0.0.0/8'
+  - '10.0.0.0/8'
+  - '172.16.0.0/12'
+  - '192.168.0.0/16'
+  - '100.64.0.0/10'
+  - '169.254.0.0/16'
+  - '::1/128'
+  - 'fe80::/64'
+  - 'fc00::/7'
+```
 
 If you start the docker container with `docker-compose up` and navigate to
 `https://synapse.example.com` you should be redirected to
@@ -104,9 +113,6 @@ If this is not the case please check your configuration.
 
 Create an admin user in the docker containers shell with the command:
 `register_new_matrix_user -c /data/homeserver.yaml https://synapse.example.com`
-
-If you want to enable registration go to the `homeserver.yaml`
-and locate the line starting with `enable_registration:` and set it to `true`.
 
 Finally shut down the container using `docker-compose down` to be able to keep
 following the guide (this applies to any following step).
