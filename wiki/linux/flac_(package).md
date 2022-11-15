@@ -15,6 +15,9 @@ using `cuebreakpoints` and `shnsplit`.
 On most distributions they are in a package with the same name.
 The following line of shell command splits a flac file according to a cue file.
 The `-o` tag specifies the output file format.
+If problems arise when splitting up the file it is recommended to convert the
+file to the also lossless `.wav`, split the files and convert it back to
+`.flac`.
 
 ```sh
 cuebreakpoints '<cue file>' | shnsplit -o flac '<audio flac file>'
