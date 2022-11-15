@@ -19,3 +19,5 @@ The `-o` tag specifies the output file format.
 ```sh
 cuebreakpoints '<cue file>' | shnsplit -o flac '<audio flac file>'
 ```
+
+Omitting of the `-o` flag will result in output files with the `.wav` filetype.
