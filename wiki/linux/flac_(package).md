@@ -10,8 +10,8 @@ Another possible tagging software is [MusicBrainz Picard](../picard.md)
 
 ## Splitting Flac file according to cue file
 
-An easy way to split flac files according to a cue file is using
-`cuebreakpoints` and `shnsplit`.
+An easy way to split flac files according to a [cue file](../cue_sheet.md) is
+using `cuebreakpoints` and `shnsplit`.
 On most distributions they are in a package with the same name.
 The following line of shell command splits a flac file according to a cue file.
 The `-o` tag specifies the output file format.

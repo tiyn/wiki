@@ -103,6 +103,8 @@ federation_ip_range_blacklist:
   - '::1/128'
   - 'fe80::/64'
   - 'fc00::/7'
+retention:
+  enabled: true
 ```
 
 If you start the docker container with `docker-compose up` and navigate to
@@ -301,8 +303,11 @@ section:
       - "traefik.http.routers.element-secure.rule=Host(`chat.example.com`)"
       - "traefik.http.routers.element-secure.service=element"
       - "traefik.http.services.element.loadbalancer.server.port=80"
-
 ```
+
+Add the following line to the `homeserver.yaml` of the synapse server to
+indicate your element domain:
+`web_client_location: https://chat.example.com`.
 
 Start the container.
 You should now be able to navigate to `https://chat.example.com` where you are
