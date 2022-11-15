@@ -3,6 +3,14 @@
 [ffmpeg](https://www.ffmpeg.org) is a free and open-source suite consisting of
 many audio and video tools and libraries.
 
+## Convert from format to another
+
+The following line is an example for a conversion of a video and audio capable
+format - in this case `.webm` - to an audio format - in this case `.flac`:
+`ffmpeg -i audio.webm -c:a flac audio.flac`.
+For audio to audio conversion the following example is used:
+`ffmpeg -i audio.m4a -f flac audio.flac`.
+
 ## Concatenate multiple video files with matching audio-tracks
 
 First you need to create a text file `files.txt` that includes a line for every
