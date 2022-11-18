@@ -13,15 +13,18 @@ recommended, good software (mostly free and/or open-source).
   - [Bibliogram](./bibliogram.md) is an alternative frontend for instagram.
 
 - **Microsoft office** alternatives:
-  - [ThunderBird](https://www.thunderbird.net/) is an open-source email client.
+  - [ThunderBird](https://www.thunderbird.net/) is an open-source email client
+    and an alternative to Microsoft Office.
   - [LibreOffice](https://www.libreoffice.org/) is a free and open-source office
-  software suite.
+  software suite and an alternative to Microsoft Word, Excel and Powerpoint.
 
 - [**Pocket**](https://getpocket.com/) alternatives:
   - [wallabag](./wallabag.md) is a self-hosted application for saving websites
-  to read them at a later point.
+  to read them at a later point. It also saves the text of a site to the
+  application to make it available offline.
   - [linkding](./linkding.md) is a self-hosted application for saving bookmarks
-  and archiving them.
+  and archiving them. It features saving the current state of the sites with
+  [web archive](https://web.archive.org) and is lightweight.
 
 - **Preinstalled Android apps** alternatives:
   - [SimpleMobileTools](https://www.simplemobiletools.com/) features a wide variety
@@ -55,8 +58,10 @@ recommended, good software (mostly free and/or open-source).
   Creators that are on YouTube are not neccessarily on PeerTube and vice versa.
 
 - [**Google**](https://google.com) is a search engine.
-  - [Searx](./searx.md) is a self-hostable meta-search engine.
-  - [Whoogle](./whoogle.md) is another self-hostable meta-search engine.
+  - [Searx](./searx.md) is a self-hostable meta-search engine that can be
+    heavily customized.
+  - [Whoogle](./whoogle.md) is another self-hostable meta-search engine that
+    has a similar style to google.
 
 ## Recommended Software
 
