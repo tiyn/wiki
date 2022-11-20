@@ -112,7 +112,7 @@ $TTL 1D
 15                      PTR              <thisserver>.<domain>.<tld>.
 ```
 
-Additionally add all domain names in front of the first `)` that have been
+Additionally add all domain names in front of the first `(` that have been
 added in the `zone.<domain>.<tld>` file as an [A record](./dns.md#a-record).
 Note that all these have to be followed by a `.` just like
 `<thisserver>.<domain>.<tld>.` is.
