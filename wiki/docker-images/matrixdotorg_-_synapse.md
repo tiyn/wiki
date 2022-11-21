@@ -52,7 +52,6 @@ docker-compose up -d
 ## docker-compose.yml
 
 ```yml
-
 services:
   synapse:
     image: "matrixdotorg/synapse:latest"
