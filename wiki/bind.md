@@ -150,7 +150,7 @@ following lines.
 ```txt
 $ORIGIN 178.168.192.in-addr.arpa.
 $TTL 1D
-@       IN SOA  <thisserver>.<domain>.<tld>. (
+@       IN SOA  <domain>.<tld>. <thisserver>.<domain>.<tld>. (
                         200405190       ; serial
                         28800           ; refresh
                         14400           ; retry
@@ -177,7 +177,7 @@ the previous examples is shown in the following.
 ```txt
 $ORIGIN 178.168.192.in-addr.arpa.
 $TTL 1D
-@       IN   SOA        kenny.home.server. quentin.home.server. sheldon.home.server. fritz.box. (
+@       IN   SOA        home.server. kenny.home.server. (
                         200405190       ; serial
                         28800           ; refresh
                         14400           ; retry
