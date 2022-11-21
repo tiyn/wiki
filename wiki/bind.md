@@ -83,13 +83,63 @@ $TTL 1D
                                         4H              ; retry
                                         4W              ; expire
                                         1D )            ; minimum
-@                                       NS      <thisserver>
+@                                       NS          <servername>
 
-<thisserver>                           A               <ip of thisserver>
+<servername>                           A            <ip of server>
 ```
 
+
 To make the server you operate on the nameserver select a subdomain for it and
-subsitute `<thisserver>` for it and its IP address `<ip of thisserver>`.
+subsitute `<servername>` for it and its IP address `<ip of server>`.
+The following uses a filled in example with multiple subdomains.
+It uses CNAME records as a placeholder for the ip.
+In the last section the domain itself `home.server` is mapped to the ip
+`192.168.178.16`.
+This cannot be done with CNAME as `home.server` is already mapped as a
+nameserver and assigning it multiple times is not supported.
+
+```txt
+$TTL 1D
+@               IN SOA  home.server. kenny.home.server (
+                                        200405191       ; serial
+                                        8H              ; refresh
+                                        4H              ; retry
+                                        4W              ; expire
+                                        1D )            ; minimum
+@                                       NS      kenny
+
+bag                                  IN CNAME   kenny
+home                                 IN CNAME   kenny
+links                                IN CNAME   kenny
+search                               IN CNAME   kenny
+speedtest                            IN CNAME   kenny
+sync.kenny                           IN CNAME   kenny
+www                                  IN CNAME   kenny
+
+audio                                IN CNAME   quentin
+insta                                IN CNAME   quentin
+jelly                                IN CNAME   quentin
+media                                IN CNAME   quentin
+music                                IN CNAME   quentin
+plex                                 IN CNAME   quentin
+reddit                               IN CNAME   quentin
+rss                                  IN CNAME   quentin
+sync.quentin                         IN CNAME   quentin
+transmission                         IN CNAME   quentin
+tv                                   IN CNAME   quentin
+twitter                              IN CNAME   quentin
+yt                                   IN CNAME   quentin
+
+folding                              IN CNAME   sheldon
+
+home.server.                         IN A       192.168.178.16
+localhost                            IN A       127.0.0.1
+kenny                                IN A       192.168.178.16
+mario                                IN A       192.168.178.15
+quentin                              IN A       192.168.178.18
+sheldon                              IN A       192.168.178.19
+```
+
 More [DNS records](./dns.md#records) can be added.
 Most importantly used and needed for [reverse proxies](./reverse-proxy.md) are
 [A records](./dns.md#a-record) and [CNAME records](./dns.md#cname-record).
@@ -109,7 +159,7 @@ $TTL 1D
                         )
                         NS              <thisserver>.<domain>.<tld>.
 
-15                      PTR              <thisserver>.<domain>.<tld>.
+<last part of ipv4>     PTR              <thisserver>.<domain>.<tld>.
 ```
 
 Additionally add all domain names in front of the first `(` that have been
@@ -117,6 +167,29 @@ added in the `zone.<domain>.<tld>` file as an [A record](./dns.md#a-record).
 Note that all these have to be followed by a `.` just like
 `<thisserver>.<domain>.<tld>.` is.
 For all these records add a PTR record too.
-The first part of the PTR line indicated the IP address.
+The first part of the PTR line is part of the IP address.
 To get the full address add it to the subnet.
 In this case this server has the IP `192.168.178.15`.
+
+An example of `/etc/bind/extra-zones/revp.178.168.192` that is compatible with
+the previous examples is shown in the following.
+
+```txt
+$ORIGIN 178.168.192.in-addr.arpa.
+$TTL 1D
+@       IN SOA  fritz.box home.server kenny.home.server. mario.home.server. otto.home.server. quentin.home.server. sheldon.home.server. ( ;hostmaster.home.server.
+                        200405190       ; serial
+                        28800           ; refresh
+                        14400           ; retry
+                        2419200         ; expire
+                        86400           ; minimum
+                        )
+                        NS              kenny.home.server.
+15                      PTR             mario.home.server.
+16                      PTR             kenny.home.server.
+18                      PTR             quentin.home.server.
+19                      PTR             sheldon.home.server.
+```
+
+According to your IPs and domains you may need to create multiple `revp.` or
+`zone.` files and need to map them back to `named.conf.local`.
