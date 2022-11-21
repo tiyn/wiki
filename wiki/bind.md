@@ -150,16 +150,16 @@ following lines.
 ```txt
 $ORIGIN 178.168.192.in-addr.arpa.
 $TTL 1D
-@       IN SOA  <domain>.tld <thisserver>.<domain>.<tld>. (
+@       IN SOA  <thisserver>.<domain>.<tld>. (
                         200405190       ; serial
                         28800           ; refresh
                         14400           ; retry
                         2419200         ; expire
                         86400           ; minimum
                         )
-                        NS              <thisserver>.<domain>.<tld>.
+@                   IN  NS               <thisserver>.<domain>.<tld>.
 
-<last part of ipv4>     PTR              <thisserver>.<domain>.<tld>.
+<last part of ipv4> IN  PTR              <thisserver>.<domain>.<tld>.
 ```
 
 Additionally add all domain names in front of the first `(` that have been
@@ -177,18 +177,18 @@ the previous examples is shown in the following.
 ```txt
 $ORIGIN 178.168.192.in-addr.arpa.
 $TTL 1D
-@       IN SOA  fritz.box home.server kenny.home.server. mario.home.server. otto.home.server. quentin.home.server. sheldon.home.server. ( ;hostmaster.home.server.
+@       IN   SOA        kenny.home.server. quentin.home.server. sheldon.home.server. fritz.box. (
                         200405190       ; serial
                         28800           ; refresh
                         14400           ; retry
                         2419200         ; expire
                         86400           ; minimum
                         )
-                        NS              kenny.home.server.
-15                      PTR             mario.home.server.
-16                      PTR             kenny.home.server.
-18                      PTR             quentin.home.server.
-19                      PTR             sheldon.home.server.
+@               IN      NS              kenny.home.server.
+1               IN      PTR             fritz.box.
+16              IN      PTR             kenny.home.server.
+18              IN      PTR             quentin.home.server.
+19              IN      PTR             sheldon.home.server.
 ```
 
 According to your IPs and domains you may need to create multiple `revp.` or
