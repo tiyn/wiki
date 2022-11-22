@@ -26,9 +26,12 @@ In the admin dashboard install the
 and restart the server.
 Afterwards create a user with a username in TVHeadend under
 `Go to Configuration > Users > Access Entries > Add`.
-Check the parameters
+Check the `Change Parameters`
 `Rights`, `Channel number range`, `Channel tags`, `DVR configurations`,
 `Streaming profiles` and `Connection limits`.
+Check the `Streaming Profiles` `htsp`, `matroska`, `pass`,
+`webtv-h264-aac-matroska`, `webtv-h264-aac-mpegts`, `webtv-h264-vorbis-mp4` and
+`webtv-vp8-vorbis-webm`.
 Check `Enabled` and `Web Interface`.
 Select `Basic`, `Advanced` and `HTSP` under `Streaming` and `Basic`, `HTSP` and
 `View all` under `Video recorder`.

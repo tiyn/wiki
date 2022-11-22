@@ -50,3 +50,16 @@ After these steps a list of Muxes should appear in
 Following this a list of TV and radio channels should appear in
 `Configuration > DBV Inputs > Services`.
 After this the setup is completed.
+
+## Adding channels
+
+Following the Setup you have a list of possible channels available at
+`Configuration > DVB Inputs > Service`.
+Select the channels that are to be streamed and/or recorded and press
+`Map selected services`.
+After that the channels are mapped navigate to
+`Configuration > Channel/EPG > Channels` where a list of your selected channels
+is displayed.
+There you can select `Numbers` by invoking `Edit` on the Channels.
+Under `Electronic Program Guide` a list of current and future programs is
+shown.
