@@ -51,5 +51,7 @@ Now in Jellyfin under `Go to Dashboard > Plugins > TVHeadend > Settings` set
 the `TVHeadend Hostname or IP Address`, the `HTTP Port` and `HTSP Port`, the
 `Username` and the `Password` set in the previous step.
 
+Finally run `Refresh Guide Data` under `Dashboard > Live TV > Live TV` to load
+the guide data for the next 7 days aswell as to refresh the TV channels.
 Afterwards the channels [mapped in TVHeadend](./tvheadend.md#adding-channels)
 should appear in the `Live TV` Library.
