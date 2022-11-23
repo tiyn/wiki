@@ -7,7 +7,11 @@
 The software can be setup via Docker with the
 [teamspeak image](./docker-images/teamspeak.md).
 
-## Link Teamspeak3 to a subdomain
+## Usage
+
+This section addresses various features of Teamspeak3.
+
+### Link Teamspeak3 to a subdomain
 
 To link Teamspeak3 to one of your subdomains you need to add a
 [DNS SRV-record](./dns.md#srv-record):

@@ -9,19 +9,23 @@ It includes a web-interface and is mainly used for
 The software can be setup via docker with the
 [linuxserver image](./docker-images/linuxserver_-_jellyfin.md).
 
-## Live TV and DVR
+## Usage
+
+This section addresses various features of invidious.
+
+### Live TV and DVR
 
 Jellyfin can connect to live TV with different tuners to display and record TV
 channels - so called DVR - directly via jellyfin.
 
-### Live TV with M3U Tuner
+#### Live TV with M3U Tuner
 
 You can add IP-TV under `Live TV` in the administration panel.
 To include a M3U IP-TV stream just put the file on the server or copy its URL
 and add it under `Live TV`.
 After that make sure to setup `DVR` to your liking to record.
 
-### Live TV and DVR with TVHeadend
+#### Live TV and DVR with TVHeadend
 
 This section explains the steps neccessary to make [TVHeadend](./tvheadend.md)
 work with a jellyfin server according to the

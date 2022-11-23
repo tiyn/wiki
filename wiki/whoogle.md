@@ -8,7 +8,11 @@ metasearch engine.
 The software can be setup via docker with the
 [image by benbusby](./docker-images/benbusby_-_whoogle-search.md)
 
-## Adding to Firefox
+## Usage
+
+This section addresses various features of Whoogle.
+
+### Browser support
 
 Add Whoogle as a new search engine for firefox and set it as main search for the
 address bar as described in [the Firefox article](./firefox.md).

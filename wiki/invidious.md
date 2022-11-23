@@ -9,7 +9,11 @@ It includes locally stored subscription management.
 The software can be setup via docker with the
 [iv-org image](./docker-images/iv-org_-_invidious.md).
 
-## Automatic redirect from YouTube
+## Usage
+
+This section addresses various use cases and problems solvable with invidious.
+
+### Automatic redirect
 
 There are various add-ons to redirect from YouTube links to your (or a public)
 invidious instance.
@@ -19,7 +23,7 @@ or [privacy redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-red
 For Android there is
 [the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./android/f-droid.md)).
 
-## Skip sponsorships in videos
+### Skip sponsorships in videos
 
 When using [Firefox](./firefox.md) SponsorBlock can be installed.
 This will skip YouTube video sponsors in YouTube and in Invidious.

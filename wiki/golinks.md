@@ -3,12 +3,16 @@
 [Golinks](https://github.com/prologic/golinks) is a web app that can create and
 use bookmarks and run different searches by prefixes.
 
-## Setup
+## Server
 
 The software can be setup via docker with the
 [prologic image](./docker-images/prologic_-_golinks.md).
 
-### Client: Firefox
+## Usage
+
+This section addresses various features of Golinks.
+
+## Browser add-ons
 
 Add Golinks as a new search engine for firefox and set it as main search for the
 address bar as described in [the Firefox article](./firefox.md#add-a-new-search-engine).

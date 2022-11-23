@@ -6,7 +6,21 @@ It is non-free and closed-source.
 There are free and open-source alternatives named [Airsonic](./airsonic.md) and
 [Airsonic-Advanced](./airsonic-advanced.md).
 
-## Clients
+## Setup
+
+Subsonic is a service that consists of a [client](#client) and a
+[server](#server).
+
+### Server
+
+It is possible to use different servers.
+The following list contains a selection of servers.
+
+- [airsonic](./airsonic.md) is a free and open-source fork of subsonic.
+- [airsonic-advanced](./airsonic-advanced.md) is a free and open-source fork of
+  airsonic with new features.
+
+### Client
 
 It is possible to use different clients.
 The following list contains a selection of clients.

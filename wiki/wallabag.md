@@ -7,7 +7,11 @@
 The software can be setup via Docker with the
 [wallabag image](./docker-images/wallabag_-_wallabag.md).
 
-## Add-ons for quick access
+## Usage
+
+This section addresses various features of Wallabag.
+
+## Browser add-ons
 
 [On the firefox add-on site](https://addons.mozilla.org/de/firefox/addon/linkding-extension/)
 you can find an add-on for wallabag.

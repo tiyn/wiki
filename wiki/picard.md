@@ -5,7 +5,11 @@ tagging software for [music or other audio files](./audio.md).
 It is able to tag a wide range of [audio codecs](./audio.md#audio-codecs)
 [flac](./flac_(codec).md) among others.
 
-## File naming
+## Usage
+
+This section addresses various features of picard.
+
+### File naming
 
 To enable the file renaming on saving check `Rename files when saving` in the
 preferences.
@@ -14,7 +18,7 @@ The tags described used are based on the audio codec.
 In this section it is assumed the standard
 [flac tags](./flac_(codec).md#tagging) are used as described in this wiki.
 
-### Music
+#### Music
 
 The following is a basic script for renaming music files to the scheme
 `[<discnumber>.]<tracknumber>._<artist>_-_<title>`
@@ -32,7 +36,7 @@ $num(%tracknumber%,$if($gt($len(%totaltracks%),2),$len(%totaltracks%),2))._
 %title%), ,_)
 ```
 
-### Audiobooks
+#### Audiobooks
 
 Another Script is mainly used for audiobooks, where the title is not part of
 the filename to avoid confusion.

@@ -4,6 +4,9 @@
 streams to internet streams.
 It supports multiple dvb tuners and tuner sticks aswell as Sat>IP tuners.
 It also has the ability to record programs like a digital video recorder.
+TVHeadend has an
+[official documentation](https://docs.tvheadend.org/webui/config_dvr/) on its
+website.
 TVHeadend is compatible with [jellyfin](./jellyfin.md#connect-tvheadend) with
 the help of a plugin.
 
@@ -11,6 +14,11 @@ the help of a plugin.
 
 The software can be setup via docker with the
 [linuxserver image](./docker-images/linuxserver_-_tvheadend.md).
+For different hardware there may be additional run options needed to get
+TVHeadend working properly.
+Additionally a solid [initial configuration](#initial-configuration) is
+recommended.
+This configuration includes the setup of different types of tuners.
 
 ### Fritzbox
 
@@ -25,7 +33,30 @@ Setting up a linux system with additional IP addresses is described in
 
 The still needed setup is equal to the [setup for DVB-C Tuners](#dvb-c).
 
-### DVB-C
+### Initial configuration
+
+This subsection is about the recommended configurations for a TVHeadend
+instance.
+
+One of the most important configurations is the naming scheme of the recorded
+files.
+To change this setting navigate to
+`Configuration > Recording > Digital Video Recorder Profiles` and select your
+current profile.
+Under `Filesystem Settings` `Format string/Pathname specification` can be found.
+In the according
+[official documentation section](https://docs.tvheadend.org/webui/config_dvr/)
+The default format string and possible variations are specified there.
+The recommended Format string used by this guide is the following:
+`$t/$t$_e_%F$n.$x`.
+It will create a folder with the same name as the show for each show.
+The containing files are named with the title, the possible episode aswell as
+the date the show was recorded.
+If two files feature the same name an ascending number is added.
+This naming scheme is compatible with [Jellyfins](./jellyfin.md) `Other`
+content type.
+
+#### DVB-C
 
 In TVHeadend navigate to `Configuration > DBV Inputs > TV adapters`.
 Create a Network, select `Enabled`, set your `Network name`, select one of the
@@ -51,7 +82,11 @@ Following this a list of TV and radio channels should appear in
 `Configuration > DBV Inputs > Services`.
 After this the setup is completed.
 
-## Adding channels
+## Usage
+
+This section addresses various features of TVHeadend.
+
+### Mapping channels
 
 Following the Setup you have a list of possible channels available at
 `Configuration > DVB Inputs > Service`.
@@ -63,3 +98,14 @@ is displayed.
 There you can select `Numbers` by invoking `Edit` on the Channels.
 Under `Electronic Program Guide` a list of current and future programs is
 shown.
+
+### Scheduling a recording
+
+To record a show navigate to `Electronic Program Guide` after
+[adding the channel](#adding-channels) that is to be recorded.
+In the program guide a list of all shows is given.
+Left click on the show to record and select `Record` in the pop-up.
+To record all shows of the same name select `Autorec`.
+In `Digital Video Recorder` all `Upcoming/Current Recordings` can be seen and
+deleted if neccessary.
+In `Autorecs` the show names to record are listed.

@@ -10,7 +10,11 @@ The software can be setup via docker with the
 When using NextCloud with a specific nginx configuration you have to append
 `'overwriteprotocol' => 'https',` to your `config/config.html`.
 
-## WebDAV
+## Usage
+
+This section addresses various features of NextCloud.
+
+### WebDAV
 
 You can access ownCloud via WebDAV with the link
 `https://<nextcloud instance>/remote.php/dav/files/<user>/<path to folder or file>`.

@@ -8,7 +8,11 @@ Twitter.
 The software can be setup via docker with the
 [zedeus image](./docker-images/zedeus_-_nitter.md).
 
-## Automatic redirect from Twitter
+## Usage
+
+This section addresses various features of Nitter.
+
+## Automatic redirect
 
 There are various add-ons to redirect from Twitter links to your (or a public)
 Nitter instance.

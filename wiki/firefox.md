@@ -9,9 +9,10 @@ Telemetry is the remote measurement and transmission of data.
 To change the telemetry of Firefox navigate to `about:telemetry` and click the
 options to toggle between enabled and disabled.
 
-## Settings
+## Configuration
 
-In Firefox the settings can be found in the menu on the right-hand side.
+Firefox has many possible settings and precerences.
+This section addresses possible settings and preferences for specific use cases.
 
 ### Scrolling
 
@@ -19,22 +20,18 @@ On Linux distributions auto scroll is disabled by default.
 This means that you cant click the middle mouse button to use it for scrolling.
 To enable it go into the preferences and check `Use autoscrolling`.
 
-## Configuration
-
-In Firefox a special side for configuration can be found by setting as the URL
-`about:config`.
-
 ### Sponsorings
 
 Sponsorings are embedded ads in Firefox.
-Enabling and disabling of sponsorings can be done at
+After navigating to `about:config` enabling and disabling of sponsorings can be done at
 `browser.newtabpage.activity-stream.showSponsored`.
 
 ### Compact Mode
 
 In Firefox compact mode is a configuration to make tabs and navigation elements
 including bookmarks smaller.
-The configuration can be done at `browser.compactmode.show`.
+After navigating to `about:config` the configuration can be done at
+`browser.compactmode.show`.
 
 ## List of useful Firefox add-ons
 

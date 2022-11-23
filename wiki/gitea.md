@@ -5,6 +5,11 @@ It is similar to Github but opensource.
 
 ## Setup
 
+Gitea as a [Git](./git.md) service consists of a [client](#client) and a
+[server](#server).
+
+### Server
+
 The software can be setup via docker with the
 [gitea image](./docker-images/gitea_-_gitea.md).
 Additionally to this a client is needed on the system that need access to the
