@@ -1,17 +1,37 @@
 # Audio
 
-Music and audiobooks is nice to have on your system.
-There are multiple different approaches on how to get it working on your system
+Music, audiobooks and podcast are widely enjoyed.
+There are multiple different approaches on how to get them onto your system
 depending on your needs.
 This entry describes how to handle audio data.
+Music and Audiobooks can be obtained by buying the digital files or by
+[extracting them off of a CD](#extract-audio-files-from-cds).
+Podcasts need a so called Podcatcher.
+A Podcatcher is used to subscribe to podcasts and download them automatically.
 
 ## Media software
 
-If you want to keep your system clean of much data, you can use this kind of setup.
+If you want to keep your system clean of much data, you can use this kind of
+setup.
 There are differences depending on your preffered software interface.
 
-- [Airsonic](./airsonic.md) is a free fork of Subsonic, can be dockerized and has
-  a web-interface and multiple possible client options.
+### Software for Music/Podcasts/Audiobooks
+
+- [Subsonic](./subsonic.md) is a media streamer for music, podcasts and
+  audiobooks.
+  Subsonic is self-hostable.
+  Subsonic that can be dockerized and has a web-interface aswell as several
+  clients that can be used.
+  There are also the free and open-source implementations - that feature all the
+  same features and using its API - named [Airsonic](./airsonic.md) (no longer
+  maintained) and its inofficial successor [Airsonic-advanced](./airsonic.md).
+
+### Software for Podcasts
+
+- [Podgrab](./podgrab.md) is a free and open-source podcatcher that can also be
+  used to listen to them.
+  It is self-hostable and can be dockerized.
+  It has a web-interface and does not feature client software.
 
 ## Audio codecs
 
