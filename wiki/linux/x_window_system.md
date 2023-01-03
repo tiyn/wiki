@@ -83,8 +83,6 @@ If a section for the device is already present the line
 Otherwise a catchall section for all types of mouses can be created like the
 following:
 
-[asdfa](/wiki/obs.md#background-removal)
-
 ```txt
 Section "InputClass"
     Identifier "middle button emulation class"
