@@ -202,8 +202,9 @@ UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 
 Now you can follow the recommended larbs installation script of this wiki
 (`curl -o larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
-this will install a bunch of useful base software including a graphical
-environment.
+this will install a bunch of useful base software including
+[a graphical environment](../x_window_system.md) and
+[a window manager](../suckless.md#programs).
 You can go on to other guides aswell.
 
 Additionally if you have a NVidia Graphics Cards you should read

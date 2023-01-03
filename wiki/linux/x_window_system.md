@@ -1,7 +1,7 @@
-# X11
+# X Window System
 
-X, X Window System and X11 according to the current version is a protocoll for
-handling the display of the most unix-like operating systems.
+X Window System - also called X and X11 according to the current version - is a
+protocoll for handling the display of the most unix-like operating systems.
 [Xorg](https://www.x.org/wiki/) is the most used implementation of the X
 protocoll.
 It is maintained by the [X.Org Foundation](https://x.org/wiki/).
@@ -82,6 +82,8 @@ If a section for the device is already present the line
 `Option "MiddleEmulation" "true"` should be added to it.
 Otherwise a catchall section for all types of mouses can be created like the
 following:
+
+[asdfa](/wiki/obs.md#background-removal)
 
 ```txt
 Section "InputClass"

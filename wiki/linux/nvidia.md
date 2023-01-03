@@ -17,7 +17,9 @@ There is no initial setup in for of a `xorg.conf` in `/etc/X11` needed
 
 After running `sudo nvidia-setting` can drag and drop the monitors to your
 liking.
-After that you have to save the configuration to the `/etc/X11/xorg.conf`.
+After that you have to save the configuration to the
+[X window manager](./x_window_system.md) configuration file
+`/etc/X11/xorg.conf`.
 
 ## Avoid screen tearing
 
