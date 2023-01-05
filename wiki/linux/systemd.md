@@ -1,7 +1,7 @@
 # SystemD
 
-SystemD is a software suit for system components for Linux systems.
-It is mainly used for service configuration.
+SystemD is an [init system](./init.md) for Linux systems.
+It is used for service configuration and startup.
 
 ## Run command on boot
 
@@ -40,3 +40,12 @@ Alternatively it can be enabled to start at every boot by running:
 ```sh
 sudo systemctl enable unturned
 ```
+
+## Start/Stop/Enable/Disable a service
+
+Services can be started by running `systemctl start <service-name>`.
+They respectively can be stopped by replacing the `start`
+keyword for `stop`.
+To start the service after boot it has to be enabled.
+This works accordingly with the keyword `enable`.
+The `disable` keyword stops the service from starting automatically.
