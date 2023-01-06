@@ -8,7 +8,12 @@ interacting with the [DNS](./dns.md).
 The software can be setup via docker with the
 [ventz image](./docker-images/ventz_-_bind.md).
 
-## Configure Local DNS server with forwarding
+## Usage
+
+The following sections describe various use cases for Bind and how to set up
+specific domains.
+
+### Configure Local DNS server with forwarding
 
 After setting up the server.
 Look into the file `/etc/bind/named.conf.options`.
@@ -45,7 +50,7 @@ options {
 };
 ```
 
-## Configure local domains
+### Configure local domains
 
 This section explains how to add local domains for local systems.
 It is explicitly compatible with the

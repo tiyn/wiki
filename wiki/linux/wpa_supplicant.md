@@ -4,7 +4,9 @@
 It is especially interesting due to its WPA2 and WPA3 capabilities in contrast
 to other networking software.
 
-## Connect to a WPA2 secured WLAN
+## Usage
+
+### Connect to a WPA2 secured WLAN
 
 This part assumes that your network interface is called `wlan0`
 (change it accordingly).

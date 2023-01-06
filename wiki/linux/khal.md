@@ -1,13 +1,12 @@
 # Khal
 
-`khal` is a calendar you can use in your terminal.
+[Khal](https://github.com/pimutils/khal) is a calendar you can use in your terminal.
 You can sync it with [vdirsyncer](vdirsyncer.md)
 
 ## Setup
 
-### Arch-Linux
-
-- `pacman -S khal` - Install needed packages
+On most linux distributions Khal can be installed with the `khal` package.
+Alternatively it can be installed via [Github](https://github.com/pimutils/khal).
 
 ### Configuration
 

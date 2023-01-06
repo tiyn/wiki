@@ -3,7 +3,9 @@
 [ffmpeg](https://www.ffmpeg.org) is a free and open-source suite consisting of
 many audio and video tools and libraries.
 
-## Convert from format to another
+## Usage
+
+### Convert from format to another
 
 The following line is an example for a conversion of a video and audio capable
 format - in this case `.webm` - to an audio format - in this case `.flac`:

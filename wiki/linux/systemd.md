@@ -3,7 +3,9 @@
 SystemD is an [init system](./init.md) for Linux systems.
 It is used for service configuration and startup.
 
-## Run command on boot
+## Usage
+
+### Run Command on Boot
 
 To run a command (in this case `/bin/bash /root/run.sh`) create the following
 file at `/etc/systemd/system/` with a name ending on `.service`.

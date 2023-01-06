@@ -3,7 +3,9 @@
 A MIME type (short for Multipurpose Internet Mail Extensions) is a identifier
 for file formats and contents on the internet.
 
-## Setting applications for MIME types
+## Usage
+
+### Setting applications for MIME types
 
 In `~/.config/mimeapps.list` a list of applications to run specific MIME
 types can be found.
@@ -44,7 +46,7 @@ Exec=/usr/bin/sxiv -a %f
 Atleast `Type`, `Name` and `Exec` have to be specified for a minimal
 application file.
 
-## Getting MIME type of a file
+### Getting MIME type of a file
 
 The MIME type of a file can be returned by running
 `xdg-mime query filetype <file>` or `file -b --mime-type image.png`.

@@ -78,7 +78,7 @@ To increase it navigate to the webinterface and click on Datacenter and Storage
 select the storage you want to save your backup to and change `Max Backups` to
 your liking.
 
-## Bugfixing
+## Troubleshooting
 
 ### No internet after mainboard swap
 

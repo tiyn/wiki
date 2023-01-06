@@ -4,7 +4,9 @@
 interfaces, routing and tunnels.
 It is a replacement for the program `ifconfig`.
 
-## List all network interfaces
+## Usage
+
+### List all network interfaces
 
 You can list network interfaces by running:
 
@@ -12,7 +14,7 @@ You can list network interfaces by running:
 ip link list
 ```
 
-## Enable/disable a network interface
+### Enable/disable a network interface
 
 Assuming the interface is named `wlan0` run the following:
 

@@ -20,8 +20,9 @@ Properties and options of a peripheral device can then be shown by running
 `xinput list-props <id>` where `<id>` is the identifier of the
 device.
 
-
 ### Keyboard
+
+This section describes the handling of keyboards by X.
 
 #### Change Keyboardlayout
 
@@ -31,24 +32,12 @@ For a permanent change run `localectl set-x11-keymap <your preferred layout>`.
 
 ### Display
 
-#### Screen Tearing
+This section describes the handling of displays by X.
+Additionally to the guides in this section that are independent of the used
+graphics unit special configuration for [Nvidia](/wiki/linux/nvidia.md)
+and [Intel](./intel.md) can be found in their respective entries in this wiki.
 
-Linux systems that use intel graphics can sometimes have problems with screen
-tearing.
-To get this working you need to change the `/etc/X11/xorg.conf.d/20-intel.conf`
-as explained on
-[maketecheasier](https://www.maketecheasier.com/get-rid-screen-tearing-linux)
-to:
-
-```txt
-Section "Device"
-    Identifier "Intel Graphics"
-    Driver "intel"
-    Option "TearFree" "true"
-EndSection
-```
-
-#### Disable Screen Blanking
+#### Screen Blanking
 
 To save power the screen is set to turn black after a given amount of time.
 This can be disabled temporarily by running `xset s off` or permanently by
@@ -62,9 +51,14 @@ EndSection
 
 ### Mouse
 
-#### Enable/Disable the Usage of the Middle Mouse Button
+This section describes the handling of mouse by X.
 
-The middle mouse button can be activated or deactivated.
+#### Emulation of the Middle Mouse Button
+
+If middle mouse button emulation is enabled the system will emulate a middle
+mouse button click when clicking both left and right mouse button
+simultaneously.
+The middle mouse button emulation can be activated or deactivated.
 First the current options have to be confirmed as explained in
 [the peripheral section](#peripheral-devices).
 Important is the property named `libinput Middle Emulation Enabled`.

@@ -4,7 +4,7 @@
 for identifying and deleting duplicate files residing within one or more
 specified directories.
 
-## Installation
+## Setup
 
 The fdupes program can be installed by going to the
 [github page of it](https://github.com/adrianlopezroche/fdupes/releases).

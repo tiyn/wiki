@@ -2,7 +2,9 @@
 
 `mdadm` is a utility to create and manage raid devices.
 
-## Get information about a raid
+## Usage
+
+### Get information about a raid
 
 To get an info for a running raid (assuming it is `/dev/md0`) run
 `mdadm -D /dev/md0`.
@@ -15,11 +17,11 @@ be a whole drive and the mdadm drive is called `/dev/md0`.
 
 `mdadm --add /dev/md0 /dev/sdd1`
 
-## Raid 1
+### Raid 1
 
 Raid 1 creates a mirror with even amount of drives.
 
-### Create raid 1 device
+#### Create raid 1 device
 
 You can create a Raid 1 device with
 `mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sda /dev/sdb`
@@ -27,7 +29,7 @@ where `sda` and `sdb` are the disks you want to include in your raid.
 You can increase the number of raid devices, but they have to be at least 2.
 If it is an uneven amount of disks in the raid, a disk will act as a spare disk.
 
-### Convert raid 1 to raid 5
+#### Convert raid 1 to raid 5
 
 Assuming the raid device is called `/dev/md0`.
 All other drives are part of the `md0` raid device.

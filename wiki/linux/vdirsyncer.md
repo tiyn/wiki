@@ -1,13 +1,13 @@
 # Vdirsyncer
 
-`vdirsyncer` can sync calendars and contacts using the caldav and carddav
-protocol.
+[Vdirsyncer](https://github.com/pimutils/vdirsyncer) can sync calendars and
+contacts using the caldav and carddav protocol.
 
 ## Setup
 
-### Arch-Linux
-
-- `pacman -S vdirsyncer` - Install needed packages
+Vdirsyncer can be installed via the
+[github page](https://github.com/pimutils/vdirsyncer).
+Some distributions also feature the `vdirsyncer` package.
 
 ### Configuration
 

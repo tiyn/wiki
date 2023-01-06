@@ -3,7 +3,9 @@
 [Netplan](https://netplan.io) is a utility for configuring the networking of a
 linux system via YAML files.
 
-## Add more IP addresses to a system
+## Usage
+
+### Add more IP addresses to a system
 
 In the file `/etc/netplan/50-cloud-init.yaml` create an `addresses:` section
 for a device (for example an ethernet device) and list the IP addresses you

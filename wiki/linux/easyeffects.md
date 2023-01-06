@@ -6,7 +6,7 @@ streams.
 Easyeffects uses [Pipewire](./pipewire.md) as
 [sound server](/wiki/linux/audio.md#sound-server).
 
-## Installation
+## Setup
 
 Easyeffects can be installed in most distributions by installing the
 `easyeffects` plugin.
@@ -17,7 +17,7 @@ An installation via [Flatpak](./flatpak.md) is also possible.
 Easyeffects can apply `Effects` to input and output sound.
 
 ### Noise cancellation
-
+Setup
 Noise cancellation can be achieved by installing
 Easyeffects.
 Make sure to check the box `Process all Inputs` and `Process all Outputs` to

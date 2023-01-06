@@ -8,7 +8,9 @@ On most distributions it is bundled together with the command line tagging
 software `metaflac` and other auxiliary tools in the `flac` package.
 Another possible tagging software is [MusicBrainz Picard](../picard.md)
 
-## Splitting Flac file according to cue file
+## Usage
+
+### Splitting Flac file according to cue file
 
 An easy way to split flac files according to a [cue file](../cue_sheet.md) is
 using `cuebreakpoints` and `shnsplit`.

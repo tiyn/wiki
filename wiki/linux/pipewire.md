@@ -3,7 +3,7 @@
 [Pipewire](https://pipewire.org) is a graph based
 [sound server](/wiki/linux/audio.md#sound-server).
 
-## Installation
+## Setup
 
 For clients that use the [PulseAudio](/wiki/linux/pulseaudio.md) API
 `pipewire-pulse` (on Arch-based distros or according
@@ -13,7 +13,7 @@ Additionally `pipewire-alsa` and `pipewire-jack` for JACK and Alsa clients are
 available.
 Make sure to restart to be sure everything is running correctly.
 
-## Sound processing
+## Usage
 
 For simple sound processing in the form of volume adjustment as well as setting
 the default input and output devices `pavucontrol` can be used as a simple

@@ -1,13 +1,13 @@
 # Todoman
 
-`todoman` is a todolist you can use in your terminal.
+[todoman](https://github.com/pimutils/todoman) is a todolist you can use in your terminal.
 You can sync it using [vdirsyncer](vdirsyncer.md)
 
 ## Setup
 
-### Arch-Linux
-
-- `pacman -S todoman` - Install needed packages
+Todoman can be installed via the
+[github page](https://github.com/pimutils/todoman).
+Some distributions also feature the `todoman` package.
 
 ### Configuration
 

@@ -16,14 +16,16 @@ For browsing and installing Flatpak packages via a graphic user interface the
 software management suite called Discover can be used.
 It requires the Flatpak backend.
 
-## Installing software
+## Usage
+
+### Installing software
 
 When software installation is done with Flatpak it is recommended to pass the
 `--user` so the software is not installed system-wide but for the user only.
 In practice it looks like the following:
 `flatpak install --user <package to install>`.
 
-## Running software
+### Running software
 
 Software installed via Flatpak can be run by typing the full package path into
 the command line, for example `com.makemkv.MakeMKV`.

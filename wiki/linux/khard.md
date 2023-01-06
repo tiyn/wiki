@@ -1,13 +1,12 @@
 # Khard
 
-`khard` is a adressbook that runs in your terminal.
+[Khard](https://github.com/lucc/khard) is a adressbook that runs in your terminal.
 You can sync it with [vdirsyncer](vdirsyncer.md).
 
 ## Setup
 
-### Arch Linux
-
-- `pacman -S khard` - Install needed programs
+On most linux distributions Khal can be installed with the `khard` package.
+Alternatively it can be installed via [Github](https://github.com/lucc/khard).
 
 ### Configuration
 

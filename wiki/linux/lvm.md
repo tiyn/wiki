@@ -2,7 +2,9 @@
 
 `lvm` is a utility to create logical volumes.
 
-## Create VG for proxmox
+## Usage
+
+### Create VG for proxmox
 
 We will use `/dev/sdb` as our drive.
 Setup the disk for the physical volume with `sgdisk -N 1 /dev/sdb`.
@@ -13,7 +15,7 @@ This can be solved by removing the old partition table with `wipefs -a /dev/sdb`
 And finally create the volume group `vgcreate vmdata /dev/sdb`.
 Then follow the guide in proxmox on how to connect a `vg` to proxmox.
 
-## Add Drive to existing volume group
+### Add Drive to existing volume group
 
 First format the disk so that it has one partition (we will assume its called
 `/dev/sdc1`).
@@ -24,7 +26,7 @@ pvcreate /dev/sdc1
 vgextend <name of your volume group> /dev/sdc1
 ```
 
-## Resize a physical volume
+### Resize a physical volume
 
 To increase the size of a physical volume you have to have free free space
 in the partition containing the physical volume.
@@ -36,7 +38,7 @@ encrypted with LUKS a guide is available in
 To resize the physical volume to the size of the containing volume run:
 `pvresize /dev/mapper/<name of physical volume>`
 
-## Increase size of a logical volume
+### Increase size of a logical volume
 
 To increase the size of the logical volume you have to have free space in the
 according volume group. You can check that by running: `vgdisplay`.

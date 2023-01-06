@@ -2,7 +2,15 @@
 
 [ViFM](https://vifm.info) is a file manager focussed on vim like usage.
 
-## Image Previews with Ueberzug
+## Setup
+
+ViFM can be installed via the
+[github page](https://github.com/vifm/vifm).
+Some distributions also feature the `vifm` package.
+
+### Configuration
+
+#### Image Previews with Ueberzug
 
 This section is based on a
 [video by Distrotube](https://www.youtube.com/watch?v=qgxsduCO1pE).

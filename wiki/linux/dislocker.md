@@ -8,7 +8,7 @@ Bitlocker-ed volumes under Linux systems.
 On most of the Linux distributions Dislocker is bundled with the `dislocker`
 package.
 
-## Mounting Bitlocker-ed volume
+## Usage
 
 For the mounting to work two directories are required.
 One to mount the `dislocker-file` (`/mnt/bitlocker`) and one to mount the
