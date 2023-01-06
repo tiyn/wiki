@@ -2,7 +2,7 @@
 
 GoLang is a common programming language.
 
-## Installation
+## Setup
 
 To get go working you basically just need to install [Go](https://golang.org/doc/install).
 Make sure to set the `GOPATH` and the `GOBIN` variable and add the last to the `Path`
@@ -16,8 +16,6 @@ export PATH="${GOBIN}:${PATH}"
 
 You can move the `GOPATH` where you want.
 
-## IDE
-
-### Vim
+## Vim
 
 The steps to make Vim a Go IDE are described in [the vim section of this wiki](../linux/vim/golang.md).

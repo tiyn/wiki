@@ -3,7 +3,7 @@
 [Python](https://www.python.org) is an interpreted general-purpose programming
 language.
 
-## Installation
+## Setup
 
 You can install python using various ways.
 With `pyenv` you can switch between different versions.
@@ -22,9 +22,12 @@ You can then set and install your preferred version of python globally with
 Analog to managing python versions, `pipenv` can manage pip and package versions.
 A guide and description of the usage can be found on [gioele.io](https://gioele.io/pyenv-pipenv).
 
-### Avoid Errors in Vim
+### Vim
 
-Make sure to add
+The steps to make Vim a python IDE are described in
+[the vim section of this wiki](../linux/vim/python.md).
+
+Additionally make sure to add
 
 ```vimscript
 let g:python_host_prog = "/usr/bin/python2"
@@ -39,13 +42,6 @@ to your `init.vim` to avoid usage of `pyenv`s version of python in autocompletio
 
 To automatically create a `requirements.txt` of your current project, navigate
 to it and run `pipreqs` (install it if not already done).
-
-## IDE
-
-### Vim
-
-The steps to make Vim a python IDE are described in
-[the vim section of this wiki](../linux/vim/python.md).
 
 ## Modules
 
