@@ -12,7 +12,9 @@ games are run with the help of [Proton](./proton.md).
 The Steam Deck includes the Flatpak based [Discover](../linux/flatpak.md)
 software management suite to install additional software.
 
-## Shortcuts
+## Usage
+
+### Shortcuts
 
 - Esc: `STEAM + D-Pad Left`
 - Show Keyboard: `STEAM + X`

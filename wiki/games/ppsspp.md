@@ -10,10 +10,10 @@ the [PPSSPP website](https://ppsspp.org/downloads.html).
 Additionally it can be installed using [Flatpak](../linux/flatpak.md) where the
 package is called `org.ppsspp.PPSSPP`.
 
-## Configuration
+## Usage
 
 The following sections describe specific issues relating to the configuration
-of PPSSPP.
+and usage of PPSSPP.
 
 ### Steam Deck specific settings
 

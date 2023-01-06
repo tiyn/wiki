@@ -10,10 +10,10 @@ the [Dolphin website](https://dolphin-emu.org/download/).
 Additionally it can be installed using [Flatpak](../linux/flatpak.md) where the
 package is called `org.DolphinEmu.dolphin-emu`.
 
-## Configuration
+## Usage
 
 The following sections describe specific issues relating to the configuration
-of Dolphin.
+and usage of Dolphin.
 
 ### Steam Deck specific settings
 

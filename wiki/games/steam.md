@@ -6,7 +6,9 @@ It is developed by [Valve](https://www.valvesoftware.com).
 Steam uses its compatibility layer, [Proton](./proton.md) for running windows
 games on linux based operating systems.
 
-## Adding non-Steam Games
+## Usage
+
+### Adding non-Steam Games
 
 Games that are not in the Steam store can be added to the Steam application.
 This is done by opening (the desktop mode) of Steam and selecting
@@ -26,7 +28,7 @@ command but this can also differ depending on the launcher.
 Websites can be added by setting `xdg-open "<url/ip>"` as the `Launch Option`.
 This will open the website with the Steam browser.
 
-## Setting Icons and Banners for Games
+### Setting Icons and Banners for Games
 
 Images for games can be changed by downloading them and applying them manually.
 An easier route can be taken by using

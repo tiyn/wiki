@@ -14,12 +14,12 @@ It is a Lord of the Rings themed mod, not only adding a large array of new
 units, castles and factions, but converting it to a setting based in
 Middle-earth.
 
-#### Installation (Windows)
+#### Setup (Windows)
 
 For Windows guides follow the official installation guide at
 [MOD DB](https://www.moddb.com/mods/divide-and-conquer/).
 
-#### Installation (Linux)
+#### Setup (Linux)
 
 The installation guide for this mod is based on
 [Laetus'](http://www.twcenter.net/forums/showthread.php?724777-Third-Age-and-Linux)

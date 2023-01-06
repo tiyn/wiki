@@ -3,7 +3,9 @@
 [MultiMC5](https://multimc.org) is a custom launcher that allows multiple
 [Minecraft](./minecraft.md) instances installed at once.
 
-## Add OptiFine to a Minecraft instance
+## Usage
+
+### Adding OptiFine to a Minecraft instance
 
 [OptiFine](https://www.optifine.net/home) is a Minecraft optimization mod.
 The following steps show how to add optifine to a MultiMC5 Minecraft instance.
