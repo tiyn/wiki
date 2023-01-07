@@ -10,9 +10,12 @@ package.
 
 ## Usage
 
-For the mounting to work two directories are required.
+### Manual Mounting of Bitlocker Partition
+
+For the [mounting](/wiki/linux/filesystems.md#mounting) to work two directories
+are required.
 One to mount the `dislocker-file` (`/mnt/bitlocker`) and one to mount the
-windows volume (`/mnt/windows`).
+[windows volume](/wiki/linux/ntfs.md#manual-mounting) (`/mnt/windows`).
 The device which holds the windows partition is assumed to be calles
 `/dev/sdc1`.
 
@@ -20,18 +23,33 @@ The following command mounts the `dislocker` file to `/mnt/bitlocker`.
 Make sure to replace the password in the following command.
 There is no gap between the `-u` and the password:
 `sudo dislocker /dev/sdc1 -u<password> -- /mnt/bitlocker`.
-
+If the Bitlocker partition is set up using a `.BEK` file then the follwing
+command takes the path to the file in:
+`sudo dislocker /dev/sdb2 -f <path to bek-file> -- /mnt/bitlocker`
 Alternatively a recovery key can be used:
-`sudo dislocker /dev/sdc1 -p<recovery_password> -- /mnt/bitlocker`.
+`sudo dislocker /dev/sdc1 -p<recovery password> -- /mnt/bitlocker`.
 
-Afterwards the `dislocker-file` can be mounted to the `/mnt/windows` directory:
-`sudo mount -o loop /mnt/bitlocker/dislocker-file /mnt/windows`.
-It is possible that the partition uses the NTFS which requires the `ntfs-3g`
-package to be installed to work with linux and specified in the command:
-`sudo mount -t ntfs-3g -o loop /mnt/bitlocker/dislocker-file /mnt/windows`.
-If the partition to mount is bootable or contains a windows system the
-hibernation and fast boot have to be disabled to mount the partition with write
-access.
+Afterwards the `dislocker-file` can be mounted to the `/mnt/windows` directory
+or another mount point as described in the
+[NTFS entry](/wiki/linux/ntfs.md#manual-mounting).
 
-Following these commands the windows partition can be found mounted on
+### Automatic Mounting at Boot
+
+Using [fstab](/wiki/linux/filesystems.md#mounting) the partition encrypted with
+Bitlocker can be automatically mounted.
+The following lines have to be adapted and written into
+[`/etc/fstab`](/wiki/linux/filesystems.md#mounting).
+In this case the intermediary dislocker file `dislocker-file` is mounted to
+`/mnt/bitlocker`.
+
+```txt
+UUID=<partition uuid> /mnt/bitlocker fuse.dislocker bekfile=<path to bek-file>,nofail 0 0
+```
+
+After that a line to mount the `dislocker-file` as a [NTFS](./ntfs.md) partition
+has to be added as described in
+[the NTFS entry](/wiki/linux/ntfs.md#automatic-mounting).
+In this case the specified partition to mount is
+`/mnt/bitlocker/dislocker-file`.
+The mount point can be chosen according to preference - for example
 `/mnt/windows`.
