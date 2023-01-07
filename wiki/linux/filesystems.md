@@ -6,6 +6,9 @@ File systems control how data on a drive is stored.
   additionally be encrypted with [Bitlocker](./dislocker.md).
 - [Samba](./samba.md) is free windows interoperability software that is not a
   classic file system can be mounted so it will be mentioned here
+- [DM-Crypt] is an encryption service. Volumes encrypted with it follow a
+  special decryption process.
+
 
 ## Mounting
 
@@ -27,11 +30,21 @@ its subfolders.
 For automatic mounting the following line has to be adapted and added to the
 file `/etc/fstab`
 `<specified partition>	<path to mount point>   <file system> <additional options>  <dump flag> <fsck order>`
-The partition can be specified by UUID - which can be found at
-`/dev/disk/by-uuid` or other identifiers aswell as the simple path to it (for
-example `/dev/sda1`).
+The partition can be specified by [UUID](#universally-unique-identifier).
 The file system varies and a file system specific guide on how to mount them
 can be found in their respective entries.
 The dump flag signals if the file system should be dumped.
 The `fsck` order signals if a file system should be checked at boot.
 Boot partitions should be flagged with a `1` for this reason, otherwise `0`.
+
+## Universally Unique identifier
+
+Universally Unique identifier (UUID) are identifiers for informations on
+computer systems.
+Most notably they are used to identify file systems.
+This way the UUID of a file system can be used to identify and
+[mount it](#mounting) persistently and correctly.
+
+By listing the directory `/dev/disk/by-partuuid` all mappings of devices to a
+UUID are displayed.
+
