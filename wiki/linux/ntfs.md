@@ -28,7 +28,11 @@ For the usage of NTFS file systems the `ntfs-3g` package - available on most
 distributions - has to be installed.
 To automount partitions with NTFS the following line has to be adapted and added
 to `/etc/fstab`:
-`<specified partition> <path to mount point> ntfs-3g nofail,windows_names,big_writes 0 0`
+
+```txt
+<specified partition> <path to mount point> ntfs-3g nofail,windows_names,big_writes 0 0
+```
+
 If the partition to mount is bootable or contains a windows system the
 hibernation and fast boot have to be disabled to mount the partition with write
 access.
