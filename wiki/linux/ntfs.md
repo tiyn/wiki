@@ -9,9 +9,13 @@ distributions - has to be installed.
 
 ## Usage
 
+When [mounting](/wiki/linux/filesystems.md#mounting) a
+[Bitlocker encrypted drive](./dislocker.md) there are additional steps that have
+to be taken to decrypt the device.
+
 ### Manual Mounting
 
-Partitions using [NTFS] can be mounted on Linux based operating systems by
+Partitions using NTFS can be mounted on Linux based operating systems by
 running the following command:
 `mount -t ntfs-3g -o loop <path to partition> <path to mount point>`.
 If the partition to mount is bootable or contains a windows system the

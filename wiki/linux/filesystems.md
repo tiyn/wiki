@@ -2,7 +2,8 @@
 
 File systems control how data on a drive is stored.
 
-- [NTFS](./ntfs.md) is a proprietary file system used by Windows
+- [NTFS](./ntfs.md) is a proprietary file system used by Windows which can
+  additionally be encrypted with [Bitlocker](./dislocker.md).
 - [Samba](./samba.md) is free windows interoperability software that is not a
   classic file system can be mounted so it will be mentioned here
 
