@@ -73,7 +73,7 @@ If you want to allocate all the free space existing in a volume group run:
 lvextend -l +100%FREE /dev/<volume group>/<logical volume>
 ```
 
-Now you need to extend the filesystem with:
+Now you need to extend the file system with:
 
 ```sh
 resize2fs /dev/<volume group>/<logical volume>
@@ -103,8 +103,8 @@ to shrink.
 Then the file system needs to be resized.
 For safety reasons make the file system exactly as big or smaller than the
 future logical volume.
-The process of shrinking a filesystem is explained in the
-[file system entry](/wiki/linux/disk-management.md#shrinking-a-file-system).
+The process of shrinking a file system is explained in the
+[disk management entry](/wiki/linux/disk-management.md#shrinking-a-file-system).
 The partition to shrink in this case is the logical volume.
 This is the only step that needs to be done offline for root volumes.
 Rebooting to the root volume at this moment is advised.
@@ -162,5 +162,6 @@ the [according section](#remove-physical-volume).
 
 Afterwards the file system can be matched to the logical volume so it takes up
 the full new size.
-This is explained in
+This is explained in the
+[entry about disk management](/wiki/linux/disk-management.md#growing-a-file-system).
 

@@ -26,8 +26,8 @@ access.
 
 For the usage of NTFS file systems the `ntfs-3g` package - available on most
 distributions - has to be installed.
-To automount partitions with NTFS the following line has to be adapted and added
-to `/etc/fstab`:
+To [automount partitions](/wiki/linux/disk-management.md#mounting) with NTFS
+the following line has to be adapted and added to `/etc/fstab`:
 
 ```txt
 <specified partition> <path to mount point> ntfs-3g nofail,windows_names,big_writes 0 0
