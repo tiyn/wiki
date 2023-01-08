@@ -2,14 +2,17 @@
 
 This guide is based upon a
 [german arch wiki article](https://wiki.archlinux.de/title/Moderne_Installation_mit_UEFI_und_Verschlüsselung).
+For encryption [dm-crypt](../dm-crypt.md) is used.
+Inside the encrypted partition a logical volume will be created with
+[LVM](../lvm.md).
 
 At the end of this guide a fully functional Arch Linux will be installed.
 
 ## 1. Preparation
 
-Ahead of the installation an Arch boot-stick has to be created. The iso-file can
-be found on the [official website](https://www.archlinux.org/download/).
-The iso can be written on an USB-stick using `dd`.
+Ahead of the installation an Arch boot-stick has to be created as described in
+[the Arch Linux entry](/wiki/linux/arch-linux/arch-linux.md#installation-medium).
+
 After that the USB can be plugged in the system on which Arch should be installed.
 Boot the target system and select `Boot Arch Linux (x86_64)`.
 

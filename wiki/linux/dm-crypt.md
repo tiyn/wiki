@@ -171,7 +171,7 @@ Additionally the following lines has to be adapted and added to the file
 
 `<mapping location>` has to be the same as chosen in the step before.
 `<UUID of encrypted volume>` is the
-[universally unique identifier](/wiki/linux/filesystems.md#universally-unique-identifier)
+[universally unique identifier](/wiki/linux/disk-management.md#universally-unique-identifier)
 of the volume.
 `<location of key file>` describes the location where to find the key file
 created in the previous step.

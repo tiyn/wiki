@@ -1,8 +1,46 @@
 # Disk Management
 
 This article focusses on non-LVM and non-MDADM storage.
-For [LVM](lvm.md), [MDADM](./mdadm.md) and [LUKS volumes](./dm-crypt.md) there
+For [LVM](lvm.md), [NTFS](./ntfs.md), [Samba](./samba.md), [MDADM](./mdadm.md) and [LUKS volumes](./dm-crypt.md) there
 are separate entries.
+
+## Universally Unique identifier
+
+Universally Unique identifier (UUID) are identifiers for informations on
+computer systems.
+Most notably they are used to identify file systems.
+This way the UUID of a file system can be used to identify and
+[mount it](#mounting) persistently and correctly.
+
+By listing the directory `/dev/disk/by-partuuid` all mappings of devices to a
+UUID are displayed.
+
+## Mounting
+
+Mounting a file system makes the files of it accessible to the user.
+The command `mount` is used to manually and temporarily mount file systems.
+Automatic mounting is done by changing the file `/etc/fstab`.
+
+The exact guide on how to mount specific file systems can be found in their
+respecitive wiki entries.
+The following describes the general basics of mounting temporarily and
+persistently.
+
+The basic mount command for temporarily accessing a file system is the
+following:
+`mount <path to partition> <path to mount point>`
+All partitions can be found at `/dev` and the standard mount point is `/mnt` and
+its subfolders.
+
+For automatic mounting the following line has to be adapted and added to the
+file `/etc/fstab`
+`<specified partition>	<path to mount point>   <file system> <additional options>  <dump flag> <fsck order>`
+The partition can be specified by [UUID](#universally-unique-identifier).
+The file system varies and a file system specific guide on how to mount them
+can be found in their respective entries.
+The dump flag signals if the file system should be dumped.
+The `fsck` order signals if a file system should be checked at boot.
+Boot partitions should be flagged with a `1` for this reason, otherwise `0`.
 
 ## Create Partition
 
@@ -13,7 +51,10 @@ In the following it is assumed that the disk is `/dev/sda`
 - create a primary partition (ext4 format) with `mkpart primary 2048s 100%`
 - `quit` parted
 
-## Grow non-LVM ext4 partition
+`<path to partition>` points to the partition that will be enlarged (for
+example `/dev/sda2`).
+
+## Grow non-LVM partition
 
 ATTENTION: Please note that the partition to enlarge has to be the last one with
 the free space after it.
@@ -28,7 +69,33 @@ the last step (alternatively you can insert `100%` as end, if you want to add al
 the available free space to the partition)
 - `quit` parted
 
-Now you need to resize the filesystem with `resize2fs /dev/sda2`.
+Afterwards the file system need to be resized as described in a
+[later section](#growing-a-file-system).
+
+## Growing a File System
+
+A file system can easily be resized if free space is available on the partition
+it is stored in.
+The free space has to be placed behind the partition.
+This can be done by running the following command:
+
+```sh
+sudo resize2fs <path to partition>
+```
+
+## Shrinking a File System
+
+To shrink a file system the `resize2fs` command will be used aswell as `e2fsck`.
+First the file system needs to be checked for size aswell as data distribution.
+This can be done using the command `sudo e2fsck -f <path to partition>`.
+`<path to partition>` directs to the volume whose file system should be
+shrinked - for example `/dev/sda1`.
+It has to be the same for the next step aswell.
+Afterwards the file system can be shrinked with the command
+`sudo resize2fs <path to partition> <new size of the file system>`.
+`<new size of the file system>` is the size that the file system will be
+shrunken to in the usual notation (for example `12G`).
+Especially for large file systems this might take a while.
 
 ## Error solving
 

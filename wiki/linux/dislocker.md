@@ -12,7 +12,7 @@ package.
 
 ### Manual Mounting of Bitlocker Partition
 
-For the [mounting](/wiki/linux/filesystems.md#mounting) to work two directories
+For the [mounting](/wiki/linux/disk-management.md#mounting) to work two directories
 are required.
 One to mount the `dislocker-file` (`/mnt/bitlocker`) and one to mount the
 [windows volume](/wiki/linux/ntfs.md#manual-mounting) (`/mnt/windows`).
@@ -35,10 +35,10 @@ or another mount point as described in the
 
 ### Automatic Mounting at Boot
 
-Using [fstab](/wiki/linux/filesystems.md#mounting) the partition encrypted with
+Using [fstab](/wiki/linux/disk-management.md#mounting) the partition encrypted with
 Bitlocker can be automatically mounted.
 The following lines have to be adapted and written into
-[`/etc/fstab`](/wiki/linux/filesystems.md#mounting).
+[`/etc/fstab`](/wiki/linux/disk-management.md#mounting).
 In this case the intermediary dislocker file `dislocker-file` is mounted to
 `/mnt/bitlocker`.
 

@@ -1,6 +1,6 @@
 # NTFS
 
-NTFS is the proprietary [file system](./filesystems.md) of Windows.
+NTFS is the proprietary [file system](./disk-management.md) of Windows.
 
 ## Setup
 
@@ -9,7 +9,7 @@ distributions - has to be installed.
 
 ## Usage
 
-When [mounting](/wiki/linux/filesystems.md#mounting) a
+When [mounting](/wiki/linux/disk-management.md#mounting) a
 [Bitlocker encrypted drive](./dislocker.md) there are additional steps that have
 to be taken to decrypt the device.
 
