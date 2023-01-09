@@ -6,7 +6,7 @@ linux systems.
 ## Setup
 
 The `flatpak` package can be installed by most distribution specific package
-managers (e.g. [pacman or yay](./arch-linux/pacman_and_yay.md)).
+managers (e.g. [pacman or yay](./arch-linux/package_manager.md)).
 After installation it is important to add [flathub](https://flathub.org/home),
 a source for many Flatpak packages.
 The addition of this can be done by running
