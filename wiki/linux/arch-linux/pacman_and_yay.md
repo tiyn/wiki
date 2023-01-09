@@ -9,6 +9,16 @@ In this article `yay` is used as the go to AUR manager.
 `yay` is also a wrapper for `pacman` so you can just use `yay` instead of pacman
 to install programs.
 
+## Update Mirrorlist
+
+After a while not updating the system it is possible for the mirrorlist to be
+outdated.
+This can be fixed by updating it with the following command:
+
+```sh
+curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
+```
+
 ## Bugfixes
 
 ### Error while importing keys
