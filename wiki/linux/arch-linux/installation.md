@@ -209,6 +209,9 @@ this will install a bunch of useful base software including
 [a graphical environment](../x_window_system.md) and
 [a window manager](../suckless.md#programs).
 You can go on to other guides aswell.
+Especially the
+[Recommended practices](/wiki/linux/arch-linux/arch-linux.md#recommended-practices)
+should be checked for further setups.
 
 Additionally if you have a NVidia Graphics Cards you should read
 [the NVidia article](../nvidia.md) too.
