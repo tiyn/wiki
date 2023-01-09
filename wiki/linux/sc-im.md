@@ -4,9 +4,6 @@
 
 ## Setup
 
-
-### Arch-Linux
-
 Sc-im can be installed via [github](https://github.com/andmarti1424/sc-im).
 Some distributions also feature the `sc-im` package.
 

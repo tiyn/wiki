@@ -10,7 +10,7 @@ They provide motherboard chips, network interface controllers, flash memory,
 Intel graphics is the name for various intel made integrated graphics
 processors.
 
-### Usage
+### Configuration
 
 #### Screen Tearing
 

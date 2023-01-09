@@ -2,7 +2,6 @@
 
 DM-Crypt can create and manage encrypted devices.
 
-
 ## Usage
 
 ### Creating an Encrypted Devices

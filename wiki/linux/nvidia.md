@@ -2,7 +2,7 @@
 
 NVidia is a vendor for graphics cards.
 
-## Setup NVidia GPU
+## Setup
 
 For NVidia GPUs to work install the `nvidia` and the `nvidia-utils` package.
 If you want to easily configure the monitors as described in a later section of

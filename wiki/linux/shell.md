@@ -3,7 +3,7 @@
 A shell is a command-line interpreter that provides a command-line interface to
 interact with the many unix-like system.
 
-## Change /bin/sh
+## Change the standard shell
 
 The Shell in some distributions is made up by a POSIX compliant mode of bash.
 Problem with that is the speed.

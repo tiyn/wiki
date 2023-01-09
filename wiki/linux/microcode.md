@@ -3,7 +3,7 @@
 Processor vendors release stability and security updates to the processor
 microcode.
 
-## Installation
+## Setup
 
 Most Linux based operating systems feature packages depending on the processor
 manufacturer (on Arch Linux for example `intel-ucode` and `amd-ucode`).

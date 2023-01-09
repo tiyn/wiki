@@ -3,7 +3,7 @@
 NetworkManager - short NM - is a program to automatically detect and connect to
 networks by providing options for various configuration.
 
-## Installation
+## Setup
 
 NetworkManager can be installed with the `networkmanager` package on most linux
 distributions which provides daemon aswell as `nmcli` a command line interface

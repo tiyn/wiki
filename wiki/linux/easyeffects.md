@@ -8,8 +8,8 @@ Easyeffects uses [Pipewire](./pipewire.md) as
 
 ## Setup
 
-Easyeffects can be installed in most distributions by installing the
-`easyeffects` plugin.
+Easyeffects can be installed on most distributions by installing the
+`easyeffects` package.
 An installation via [Flatpak](./flatpak.md) is also possible.
 
 ## Usage
