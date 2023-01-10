@@ -2,6 +2,8 @@
 
 [Open Broadcaster Software](https://obsproject.com) - short OBS - is a free
 and open source software for video recording and live streaming.
+Additionally see the
+[the webcams entry](/wiki/linux/webcams.md#configure-the-webcam) if on Linux.
 
 ## Plugins
 
@@ -19,12 +21,10 @@ camera.
 First of all [V4L2](./linux/v4l2.md) needs to be set up.
 This guide assumes it is set up according to the section in the
 [V4L2 entry](./linux/v4l2.md#v4l2loopback).
-Make sure to start and/or enable it.
-Additionally `obs-v4l2sink` needs to be installed.
-Under `Tools/v4l2sink` select the device path set up in V4L2.
-Select the same video format as set for your camera.
-For Linux see [the webcams entry](/wiki/linux/webcams.md#configure-the-webcam)
-to configure the video format.
+Make sure to
+[start the service](/wiki/linux/systemd.md#startstopenabledisable-a-service) by
+running `systemctl start v4l2loopback.service` or enable it to start after each
+boot with `systemctl enable v4l2loopback.service`.
 Afterwards the virtual camera can be started.
 
 ### Background Removal
