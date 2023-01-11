@@ -1,10 +1,10 @@
-# NVidia
+# Nvidia
 
-NVidia is a vendor for graphics cards.
+[Nvidia](/wiki/nvidia.md) is a vendor for graphics cards.
 
 ## Setup
 
-For NVidia GPUs to work install the `nvidia` and the `nvidia-utils` package.
+For Nvidia GPUs to work install the `nvidia` and the `nvidia-utils` package.
 If you want to easily configure the monitors as described in a later section of
 this file you can also install `nvidia-settings`.
 
