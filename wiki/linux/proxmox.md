@@ -30,8 +30,14 @@ For example if you want to the disk 100 by 100G (100GibiByte):
 qm resize 100 ide0 +100G
 ```
 
+Afterwards the partition of the VM needs to be enlarged.
+For that
+[the disk management article](/wiki/linux/disk-management.md#grow-non-lvm-partition)
+can be used for non-LVM paritions.
+Alternatively [the LVM article](/wiki/linux/lvm.md#increase-size-of-a-logical-volume)
+can be referenced for LVM systems.
 After that grow the filesystem in the vm as described in
-[the disk management article](./disk-management.md).
+[the disk management article](/wiki/linux/disk-management.md#growing-a-file-system).
 
 ## Remove local-lvm and add its size to local
 
