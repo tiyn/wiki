@@ -18,4 +18,6 @@ Proprietary formats may but don't have to feature DRM.
 There are some software solutions for handling DRM like the no longer supported
 [DeDRM by apprenticeharper](https://github.com/apprenticeharper/DeDRM_tools) or
 its supported counterpart [DeDRM by noDRM](https://github.com/noDRM/DeDRM_tools).
-Due to legal issues it is recommended to not use these or similar software.
+Due to legal issues in many places it is recommended to not use these or
+similar software.
+If the software is to be used by you check your local laws first.
