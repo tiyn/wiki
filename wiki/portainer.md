@@ -10,7 +10,7 @@ It consist of one [server](#server) and possibly multiple [agents](#agent).
 
 ### Server
 
-The software can be setup via Docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [portainer image](./docker-images/portainer_-_portainer.md).
 
 ## Agent

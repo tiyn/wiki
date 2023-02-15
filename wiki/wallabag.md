@@ -4,7 +4,7 @@
 
 ## Setup
 
-The software can be setup via Docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [wallabag image](./docker-images/wallabag_-_wallabag.md).
 
 ## Usage

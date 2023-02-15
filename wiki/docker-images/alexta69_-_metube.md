@@ -1,6 +1,7 @@
 # alexta69 - metube
 
-This is a docker container for a [MeTube](/wiki/metube.md) server.
+This is a [Docker](/wiki/docker.md) container for a [MeTube](/wiki/metube.md)
+server.
 The official container and documentation was made by
 [alexta69](https://github.com/alexta69/metube).
 This docker-rebuild is made up by a `docker-compose.yml` file.

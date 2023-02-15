@@ -1,7 +1,9 @@
 # portainer - agent
 
-This is a docker container for a [portainer](../portainer.md) agent.
-The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/agent).
+This is a [Docker](/wiki/docker.md) container for a [portainer](../portainer.md)
+agent.
+The official container and documentation was made by
+[portainer](https://hub.docker.com/r/portainer/agent).
 
 ## Set-up
 

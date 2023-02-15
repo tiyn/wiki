@@ -1,8 +1,9 @@
 # spikecodes - libreddit
 
-This is a docker container for the alternative reddit frontend
-[libreddit](../libreddit.md).
-The official container and documentation was made by [spikecodes](https://github.com/spikecodes/libreddit).
+This is a [Docker](/wiki/docker.md) container for the alternative reddit
+frontend [libreddit](../libreddit.md).
+The official container and documentation was made by
+[spikecodes](https://github.com/spikecodes/libreddit).
 
 ## Set-up
 

@@ -1,6 +1,6 @@
 # axhilrex - podgrab
 
-This is a docker container for a [Podgrab](../podgrab.md)
+This is a [Docker](/wiki/docker.md) container for a [Podgrab](../podgrab.md)
 server.
 The official container and documentation was made by
 [axhilrex](https://github.com/akhilrex/podgrab).

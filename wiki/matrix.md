@@ -6,7 +6,8 @@ communication.
 ## Setup
 
 The matrix server is a complex setup of servers and services.
-Please note that this configuration is a composition of docker images.
+Please note that this configuration is a composition of
+[Docker](/wiki/docker.md) images.
 Therefore a shared `docker-compose.yml` file is used.
 This setup guide follows a modified version of the
 [guide by matusnovak](https://gist.github.com/matusnovak/37109e60abe79f4b59fc9fbda10896da).

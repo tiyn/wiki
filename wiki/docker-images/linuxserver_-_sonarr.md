@@ -1,6 +1,6 @@
 # linuxserver - sonarr
 
-This is a docker container for a [Sonarr](https://github.com/Sonarr/Sonarr)
+This is a [Docker](/wiki/docker.md) container for a [Sonarr](/wiki/*arr.md)
 server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/sonarr).

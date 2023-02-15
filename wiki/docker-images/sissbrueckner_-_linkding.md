@@ -1,7 +1,7 @@
 # sissbrueckner - linkding
 
-This is a docker container for a [linkding](../linkding.md) bookmark and
-archive service.
+This is a [Docker](/wiki/docker.md) container for a [linkding](../linkding.md)
+bookmark and archive service.
 The official container and documentation was made by
 [sissbrueckner](https://github.com/sissbruecker/linkding).
 

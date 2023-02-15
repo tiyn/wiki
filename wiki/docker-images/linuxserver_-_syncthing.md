@@ -1,8 +1,9 @@
 # linuxserver - syncthing
 
-This is a docker container for syncthing for
+This is a [Docker](/wiki/docker.md) container for syncthing for
 [file synchronization](../file-synchronization.md).
-The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/syncthing).
+The official container and documentation was made by
+[linuxserver](https://hub.docker.com/r/linuxserver/syncthing).
 
 ## Set-up
 

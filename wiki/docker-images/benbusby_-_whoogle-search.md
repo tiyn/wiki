@@ -1,6 +1,7 @@
 # benbusby - whoogle-search
 
-This is a docker container for a [whoogle](../whoogle.md) meta-search machine.
+This is a [Docker](/wiki/docker.md) container for a [whoogle](../whoogle.md)
+meta-search machine.
 The official container and documentation was made by
 [benbusby](https://github.com/benbusby/whoogle-search).
 

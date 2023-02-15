@@ -4,7 +4,7 @@ NextCloud is a free and open source client-server cloud-service.
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [nextcloud image](./docker-images/nextcloud.md).
 
 When using NextCloud with a specific nginx configuration you have to append

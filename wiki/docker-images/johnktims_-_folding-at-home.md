@@ -1,7 +1,9 @@
 # johnktims - folding-at-home
 
-This is a docker container for [Folding@home](https://foldingathome.org/).
-The official container and documentation was made by [johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
+This is a [Docker](/wiki/docker.md) container for
+[Folding@home](https://foldingathome.org/).
+The official container and documentation was made by
+[johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
 
 ## Set-up
 

@@ -5,5 +5,5 @@ user interface for downloading [YouTube](/wiki/youtube.md) videos.
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [alexta69 image](./docker-images/alexta69_-_metube.md).

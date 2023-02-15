@@ -1,8 +1,8 @@
 # owncloud
 
-
-This is a docker container for a [owncloud](../owncloud.md) server.
-The official container and documentation was made by [owncloud](https://hub.docker.com/_/owncloud).
+This is a [Docker](/wiki/docker.md) container for a [owncloud](../owncloud.md) server.
+The official container and documentation was made by
+[owncloud](https://hub.docker.com/_/owncloud).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The services in this files are explained seperately.
 The main Docker container needs a database in form of a [MariaDB](./mariadb.md)

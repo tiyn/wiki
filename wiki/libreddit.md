@@ -5,7 +5,7 @@ Reddit.
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [spikecodes image](./docker-images/spikecodes_-_libreddit.md).
 
 ## Usage

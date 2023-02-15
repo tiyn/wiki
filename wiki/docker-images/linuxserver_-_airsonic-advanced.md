@@ -1,7 +1,7 @@
 # linuxserver - airsonic-advanced
 
-This is a docker container for a [Airsonic-Advanced](../airsonic-advanced.md)
-server.
+This is a [Docker](/wiki/docker.md) container for a
+[Airsonic-Advanced](../airsonic-advanced.md) server.
 The official container and documentation was made by
 [linuxserver](https://github.com/linuxserver/docker-airsonic-advanced).
 

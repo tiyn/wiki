@@ -1,7 +1,9 @@
 # rblsb - synctube
 
-This is a docker container for the synchronized video platform synctube.
-The official container and documentation was made by [rblsb](https://github.com/rblsb/synctube).
+This is a [Docker](/wiki/docker.md) container for the synchronized video
+platform synctube.
+The official container and documentation was made by
+[rblsb](https://github.com/rblsb/synctube).
 There is no official pre-build on docker-hub.
 
 ## Set-up

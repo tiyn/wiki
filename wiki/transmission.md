@@ -5,7 +5,7 @@
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [haugene image](./docker-images/haugene_-_transmission-openvpn.md) that
 includes an openvpn tunnel.
 

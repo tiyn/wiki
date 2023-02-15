@@ -1,6 +1,6 @@
 # yourls
 
-This is a docker container for the URl shortener yourls.
+This is a [Docker](/wiki/docker.md) container for the URl shortener yourls.
 The official container and documentation was made by
 [yourls](https://hub.docker.com/_/yourls).
 In addition to the main container you need to connect a

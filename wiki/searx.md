@@ -4,7 +4,7 @@
 
 ## Setup
 
-The software can be setup via Docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [searx image](./docker-images/searx_-_searx.md).
 
 ## Usage

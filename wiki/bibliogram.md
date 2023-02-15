@@ -8,7 +8,7 @@ as it is not possible anymore to show user pages but only single posts.
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [cloudrac3r image](./docker-images/cloudrac3r_-_bibliogram.md).
 
 ## Automatic redirect from Instagram

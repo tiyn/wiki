@@ -1,6 +1,6 @@
 # linuxserver - tvheadend
 
-This is a docker container for a [TVHeadend](../tvheadend.md)
+This is a [Docker](/wiki/docker.md) container for a [TVHeadend](../tvheadend.md)
 server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/tvheadend).

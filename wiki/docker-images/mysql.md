@@ -1,7 +1,8 @@
 # mysql
 
-This is a docker container for a MySQL database.
-The official container and documentation was made by [MySQL](https://hub.docker.com/_/mysql).
+This is a [Docker](/wiki/docker.md) container for a MySQL database.
+The official container and documentation was made by
+[MySQL](https://hub.docker.com/_/mysql).
 The Docker container is mainly used in combination with other containers.
 To achieve this in the easiest way use a docker-compose file
 

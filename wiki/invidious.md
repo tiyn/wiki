@@ -6,7 +6,7 @@ It includes locally stored subscription management.
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [iv-org image](./docker-images/iv-org_-_invidious.md).
 
 ## Usage

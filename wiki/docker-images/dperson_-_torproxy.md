@@ -1,6 +1,6 @@
 # dperson - torproxy
 
-This is a docker container for a [Tor](../tor.md) proxy.
+This is a [Docker](/wiki/docker.md) container for a [Tor](../tor.md) proxy.
 The container and documentation was made by [dperson](https://hub.docker.com/r/dperson/torproxy).
 
 ## Set-up

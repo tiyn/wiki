@@ -1,6 +1,6 @@
 # linuxserver - lidarr
 
-This is a docker container for a [Lidarr](https://github.com/Lidarr/Lidarr)
+This is a [Docker](/wiki/docker.md) container for a [Lidarr](/wiki/*arr.md)
 server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/lidarr).

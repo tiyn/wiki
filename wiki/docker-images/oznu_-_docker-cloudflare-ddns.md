@@ -1,7 +1,9 @@
 # oznu - docker-cloudflare-ddns
 
-This is a docker container for dynamically updating cloudflare dns entries.
-The official container and documentation was made by [oznu](https://github.com/oznu/docker-cloudflare-ddns).
+This is a [Docker](/wiki/docker.md) container for dynamically updating
+cloudflare dns entries.
+The official container and documentation was made by
+[oznu](https://github.com/oznu/docker-cloudflare-ddns).
 
 ## Set-up
 

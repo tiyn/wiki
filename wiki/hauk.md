@@ -7,5 +7,5 @@ app that is available at
 
 ## Setup
 
-The server can be setup via docker with the
+The server can be setup via [Docker](/wiki/docker.md) with the
 [bilde2910 image](/wiki/docker-images/bilde2910_-_hauk.md).

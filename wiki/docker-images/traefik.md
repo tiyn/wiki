@@ -1,6 +1,6 @@
 # traefik
 
-This is a docker container for a traefik edge router.
+This is a [Docker](/wiki/docker.md) container for a traefik edge router.
 The official container and documentation was made by
 [traefik](https://hub.docker.com/_/traefik).
 This docker-rebuild is made up by a `docker-compose.yml` file.

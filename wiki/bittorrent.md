@@ -12,6 +12,13 @@ The list below shows clients with an existing entry in this wiki.
 
 - [Transmission](/wiki/transmission.md)
 
+## Personal Video Recorders
+
+There are a bunch of applications intended as personal video recorders for
+usenet or BitTorrent usage.
+These include the so called [\*ARR applications](/wiki/*arr.md).
+Usually an indexer application like [Jackett](/wiki/jackett.md) is needed.
+
 ## Legal Situation
 
 This is not a legal advice.

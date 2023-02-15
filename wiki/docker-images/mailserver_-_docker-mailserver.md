@@ -1,7 +1,8 @@
 # mailserver - docker-mailserver
 
-This is a docker container for a mailserver.
-The official container and documentation was made by [mailserver](https://hub.docker.com/r/mailserver/docker-mailserver).
+This is a [Docker](/wiki/docker.md) container for a mailserver.
+The official container and documentation was made by
+[mailserver](https://hub.docker.com/r/mailserver/docker-mailserver).
 It contains dovecot, antispam, antivirus, ssl, etc.
 
 ## Set-up

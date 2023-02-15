@@ -6,7 +6,7 @@ The Software synchronizes files between multiple devices directly.
 
 ## Setup
 
-The software can be setup via Docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [linuxserver image](./docker-images/linuxserver_-_syncthing.md).
 
 Additionally the software can be installed by visiting the

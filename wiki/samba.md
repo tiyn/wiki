@@ -6,7 +6,7 @@ Samba is the standard Windows interoperability suite for Linux and Unix.
 
 ## Setup
 
-The software can be setup via docker with the
+The software can be setup via [Docker](/wiki/docker.md) with the
 [samba image](./docker-images/samba.md).
 
 ## Usage

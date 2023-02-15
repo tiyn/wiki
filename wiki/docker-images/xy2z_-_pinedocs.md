@@ -1,7 +1,8 @@
 # xy2z - pinedocs
 
-This is a docker container for the file viewer pinedocs.
-The official container and documentation was made by [xy2z](https://hub.docker.com/r/xy2z/pinedocs).
+This is a [Docker](/wiki/docker.md) container for the file viewer pinedocs.
+The official container and documentation was made by
+[xy2z](https://hub.docker.com/r/xy2z/pinedocs).
 
 ## Set-up
 

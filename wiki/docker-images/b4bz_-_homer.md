@@ -1,6 +1,6 @@
 # b4bz - homer
 
-This is a docker container for a Homer static site.
+This is a [Docker](/wiki/docker.md) container for a Homer static site.
 The official container and documentation was made by [b4bz](https://hub.docker.com/r/b4bz/homer).
 
 ## Set-up

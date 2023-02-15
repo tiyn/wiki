@@ -1,7 +1,8 @@
 # jkarlos - git-server-docker
 
-This is a docker container for a [git](../git.md) server.
-The official container and documentation was made by [jkarlos](https://hub.docker.com/r/jkarlos/git-server-docker).
+This is a [Docker](/wiki/docker.md) container for a [git](../git.md) server.
+The official container and documentation was made by
+[jkarlos](https://hub.docker.com/r/jkarlos/git-server-docker).
 
 ## Set-up
 
