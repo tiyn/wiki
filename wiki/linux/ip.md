@@ -38,9 +38,16 @@ It is either bundled in the `dig` package - like in
 package - like in Ubuntu - or even another package depending on the distribution
 used.
 After installation the following command can be used to get the outside IP
-address of your system `dig +short txt ch whoami.cloudflare @1.0.0.1`.
+address of your system.
+
+```sh
+dig +short txt ch whoami.cloudflare @1.0.0.1
+```
 
 There is an alternative to this using `wget`.
 It uses a call to DuckDuckGo and requests the outside IP from there.
-The mentioned command is the following
-`wget -qqO- 'https://duckduckgo.com/?q=what+is+my+ip' | grep -Pow 'Your IP address is \K[0-9.]+'`.
+The mentioned command is the following.
+
+```sh
+wget -qqO- 'https://duckduckgo.com/?q=what+is+my+ip' | grep -Pow 'Your IP address is \K[0-9.]+'
+```
