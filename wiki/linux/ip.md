@@ -32,7 +32,10 @@ ip link set wlan0 down
 
 For VPN and other applications using a tunnel it can be useful to check the
 outside IP of your system.
-Together with `awk` only the outside IP address can be displayed.
-This is done with the command `ip route get 1.2.3.4 | awk '{print $7}'`.
-Alternatively it can be done without `awk` by simply running the command
-`ip route get 1.2.3.4` and checking for the seventh column.
+The following command uses the `dig` command.
+It is either bundled in the `dig` package - like in
+[Arch Linux](/wiki/linux/arch-linux/arch-linux.md) - or in the `dnsutils`
+package - like in Ubuntu - or even another package depending on the distribution
+used.
+After installation the following command can be used to get the outside IP
+address of your system `dig +short txt ch whoami.cloudflare @1.0.0.1`.
