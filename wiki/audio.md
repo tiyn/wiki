@@ -9,7 +9,7 @@ Music and Audiobooks can be obtained by buying the digital files or by
 Podcasts need a so called Podcatcher.
 A Podcatcher is used to subscribe to podcasts and download them automatically.
 
-## Media software
+## Media Software
 
 If you want to keep your system clean of much data, you can use this kind of
 setup.
@@ -33,16 +33,58 @@ There are differences depending on your preffered software interface.
   It is self-hostable and can be dockerized.
   It has a web-interface and does not feature client software.
 
-## Audio codecs
+## Audio Formats
 
-An audio codec is an encoding of an audio file.
-There are lossy and lossless codecs, the latter not compromising quality for
+An audio format is an encoding of an audio file.
+There are lossy and lossless formats, the latter not compromising quality for
 smaller file sizes.
-Following is a list of codecs written about in this wiki:
+Following is a list of specific and often used formats:
 
-- [flac](./flac_(codec).md) is a lossless codec
+- wav is an uncompressed lossless format
+- aiff is an uncompressed lossless format
+- [flac](./flac_(codec).md) is a compressed lossless format
+- alac is a compressed lossless format
+- ape is a compressed lossless format
+- mp3 is a compressed lossy codec
+- aac is a compressed lossy codec
+- wma is a compressed lossy codec
+- ac3 is a compressed lossy codec usually found in DVDs
+- dts is a compressed lossy codec usually found in DVDs
 
-## Extract audio files from CDs
+### Lossy and Lossless Formats and Their Conversion
+
+Music files can either be encoded lossy or lossless.
+Lossless formats can be converted from and to each other without loosing
+information.
+Lossless formats can also be converted to lossy formats to make the files
+smaller and save space.
+Files should not be converted to lossy formats more than once.
+Additionally lossy formats should not be converted to lossless formats as it
+increases the file size without adding any audio information.
+These not recommended conversions are called bad conversions.
+
+#### Detect Bad Conversions
+
+The bitrate, format and the sample rate can be usually checked with simple
+tools.
+For Linux a simple software solution for this is the `file` command.
+Running it will display these features of a given audio file.
+This will however only display the format features.
+Bad convserions as described in
+[the previous section](#lossy-and-lossless-formats-and-their-conversion) can not
+be detected by this.
+A spectral analysis can detect bad conversions.
+For this a audio analyzer like
+[Sonic Visualizer](https://www.sonicvisualiser.org/) is needed.
+Select a audio file and press `Add Spectogram` under `Layer`.
+This will display a spectogram.
+Music off of a retail CD and lossless songs have frequencies that extend at
+least up to 22kHz.
+If the frequency extends up to these 22kHz the file is lossless for sure.
+If the frequency is cut before and the file is encoded in a lossless file it is
+has undergone a bad conversion and is not really lossless.
+
+## Extract Audio Files from CDs
 
 You can convert your CDs to files on your computer.
 This way you don't have to search for your CDs all the time.
@@ -55,20 +97,20 @@ This way you don't have to search for your CDs all the time.
 - [MusicBrainz Picard](./picard.md) for linux is a
   graphical user interface for tagging files of many different formats.
 
-## Quality analysis of different versions of an album
+## Analysis of Different Versions of an Album
 
 While deciding on what version of an album is the best visit
 [Dynamic Range DB](https://dr.loudness-war.info).
 It shows dynamic range scorings of each version.
 
-## Get additional data to an album/single
+## Get Additional Data to an Album/Single
 
 If additional information for an album is needed, visit
 [Discogs](https://www.discogs.com).
 Discogs has tracklists, dates and more information to nearly all versions of
 albums and singles.
 
-## Naming convention
+## Naming Convention
 
 It is suggested to place the audio files in a directory named after the album they
 belong to.
