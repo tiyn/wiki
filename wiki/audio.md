@@ -38,7 +38,7 @@ There are differences depending on your preffered software interface.
 An audio format is an encoding of an audio file.
 There are lossy and lossless formats, the latter not compromising quality for
 smaller file sizes.
-Following is a list of specific and often used formats:
+Following is a list of often used formats:
 
 - wav is an uncompressed lossless format
 - aiff is an uncompressed lossless format
@@ -119,3 +119,14 @@ Files can be named in the following scheme:
 
 - music: `[<discnumber>.]<tracknumber>._<artist>_-_<title>`
 - audiobooks: `[<discnumber>.]<tracknumber>._<artist>_-_<album>_<tracknumber>`
+
+## Cue Files
+
+`.cue` files act as a table of contents for a CD rip.
+These can be created when the
+[audio of a CD is extracted](#extract-audio-files-from-cds).
+Usually this appears together with a single file for the whole CD.
+The audio file can then be split according to the `.cue` file.
+For splitting of `.flac` files on a Linux system check the
+[a flac (package) entry](/wiki/linux/flac_(package).md#splitting-flac-file-according-to-cue-file)
+for further informations.
