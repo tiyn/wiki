@@ -78,11 +78,11 @@ For this a audio analyzer like
 [Sonic Visualizer](https://www.sonicvisualiser.org/) is needed.
 Select a audio file and press `Add Spectogram` under `Layer`.
 This will display a spectogram.
-Music off of a retail CD and lossless songs have frequencies that extend at
-least up to 22kHz.
-If the frequency extends up to these 22kHz the file is lossless for sure.
-If the frequency is cut before and the file is encoded in a lossless file it is
-has undergone a bad conversion and is not really lossless.
+Music off of a retail CD and lossless songs have frequencies that extend up to
+22kHz and can extend even further for hi-res music.
+If the frequency extends up to at least 22kHz the file is lossless for sure.
+If the frequency is cut before and the file is encoded in a lossless file it has
+undergone a bad conversion and is not really lossless.
 
 ## Extract Audio Files from CDs
 
