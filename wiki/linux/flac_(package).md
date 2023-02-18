@@ -19,12 +19,27 @@ using `cuebreakpoints` and `shnsplit`.
 On most distributions they are in a package with the same name.
 The following line of shell command splits a flac file according to a cue file.
 The `-o` tag specifies the output file format.
-If problems arise when splitting up the file it is recommended to convert the
-file to the also lossless `.wav`, split the files and convert it back to
-`.flac`.
 
 ```sh
 cuebreakpoints '<cue file>' | shnsplit -o flac '<audio flac file>'
 ```
 
 Omitting of the `-o` flag will result in output files with the `.wav` filetype.
+Alternatively the usage of `cuebreakpoints` can be avoided with the following
+command.
+
+```sh
+ shnsplit -f '<cue file>' -o flac '<audio flac file>'
+```
+
+Another option is to use [`cue2tracks`](https://github.com/ar-lex/cue2tracks).
+An example command looks like the following.
+The `.flac` file is not mentioned in the command.
+
+```sh
+cue2tracks '<cue file>'
+```
+
+For any of these commands there can be problems with splitting `.flac` files.
+It then is recommended to convert the file to the also lossless `.wav` format,
+split the files and convert it back to `.flac`.
