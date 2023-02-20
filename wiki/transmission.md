@@ -16,7 +16,7 @@ setting `Stop seeding at ratio:` to `0` under `Torrents` in the settings.
 This will stop the process of seeding once a package is downloaded allowing
 other torrents to start downloading.
 
-## Change Number of Concurrent Downloads and Uploads
+## Change Number of Concurrent Downloads
 
 The default number of concurrent downloads is set to 5.
 To increase this number edit the file `~/.config/transmission/settings.json`
@@ -29,7 +29,3 @@ is located at `/config/transmission-home/settings.json`.
 ```txt
 "download-queue-size": 5
 ```
-
-The number of concurrent uploads is not limited.
-Disabling the uploads of files can be done manually or by
-[limiting the upload](#limiting-upload).
