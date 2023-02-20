@@ -33,6 +33,8 @@ command.
 ```
 
 Another option is to use [`cue2tracks`](https://github.com/ar-lex/cue2tracks).
+This has the advantage that tags for album title, song name and others are set
+while splitting the files.
 An example command looks like the following.
 The `.flac` file is not mentioned in the command.
 
