@@ -9,10 +9,8 @@ Guild Wars 2 features a large add-on community.
 All add-ons described in this guide will assume
 [gw2-add-on-loader](#gw2-add-on-loader) is already installed.
 It has to be set up first if not already done.
-Additionall this guide assumes you are using the DX11 rendering which is enabled
-by default.
-Nevertheless this guide should also be compatible with the DX9 rendering option
-enabled in the graphics section of the options.
+Additionally this guide assumes the usage of DX11 rendering which is enabled by
+default.
 
 The following subsections assume that Guild Wars 2 is installed at
 `gw2_root_directory`.
