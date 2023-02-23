@@ -9,17 +9,21 @@ Guild Wars 2 features a large add-on community.
 All add-ons described in this guide will assume
 [gw2-add-on-loader](#gw2-add-on-loader) is already installed.
 It has to be set up first if not already done.
-Additionall this guide assumes you are using the `Enable DX9 Rendering` option
-in the graphics tab of the settings.
+Additionall this guide assumes you are using the DX11 rendering which is enabled
+by default.
+Nevertheless this guide should also be compatible with the DX9 rendering option
+enabled in the graphics section of the options.
 
 The following subsections assume that Guild Wars 2 is installed at
 `gw2_root_directory`.
 Replace this directory placeholder according to your installation.
+Updating of the add-ons is done by downloading newer versions of the mentioned
+files and replacing the old ones at the corresponding locations.
 
 ### gw2-add-on-loader
 
 To make multiple add-ons work together an add-on loader is recommended.
-One option for thi is
+One option for this is
 [gw2-add-on-loader](https://github.com/gw2-addon-loader/loader-core).
 
 Download the current version from the
@@ -34,8 +38,12 @@ This files namely include the following:
 - `gw2_root_directory/bin64/d3d9.dll`
 
 This add-on loader loads both DX9 and DX11 add-ons.
-For the functionality to work [d3d9_wrapper](#d3d9wrapper) should be installed
-aswell.
+[d3d9_wrapper](#d3d9wrapper)  is needed for some functionality of the following
+add-ons.
+The installation of it is therefore recommended.
+
+This add-on does not need to be updated often.
+It only is required when Guild Wars 2 switches its API.
 
 ### d3d9_wrapper
 
@@ -48,6 +56,9 @@ From there place the included Directory
 `d3d9_wrapper/gw2addon_d3d9_wrapper.dll` in Guild Wars 2
 `gw2_root_directory/addon` directory.
 
+This add-on does not need to be updated often.
+It only is required when Guild Wars 2 switches its API.
+
 ### arcdps
 
 [arcdps](https://www.deltaconnected.com/arcdps/) is a damage meter.
@@ -58,6 +69,8 @@ Download the file `d3d11.dll` from
 Then rename it to `gw2addon_arcdps.dll` and move it to a newly created
 directory inside the Guild Wars 2 add-on directory
 `gw2_root_directory/addons/arcdps/gw2addon_arcdps.dll`.
+
+This add-on and its sub-add-ons needs to be updated regularly to work correctly.
 
 #### boon-tables
 
@@ -94,7 +107,7 @@ settings.
 
 ### gw2radial
 
-[gw2radial](https://github.com/gw2-addon-loader/GW2Radial) is a add-on for Guild
+[gw2radial](https://github.com/Friendly0Fire/GW2Radial) is a add-on for Guild
 Wars 2 that allows faster access to markers, mounts and novelties.
 It is accessible in-game via the hotkeys `Alt-Shift-M`.
 
@@ -103,3 +116,7 @@ Download the current version from the
 Then place the folder `gw2radial_d3d9` which contains the file
 `gw2addon_gw2radial_d3d9.dll` in the add-on directory of Guild Wars 2
 `gw2_root_directory/addons`.
+
+This add-on does not need to be updated often.
+Updates are only required to get new functions working for example when new
+mounts are added.
