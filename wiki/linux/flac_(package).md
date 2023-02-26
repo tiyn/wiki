@@ -45,3 +45,11 @@ cue2tracks '<cue file>'
 For any of these commands there can be problems with splitting `.flac` files.
 It then is recommended to convert the file to the also lossless `.wav` format,
 split the files and convert it back to `.flac`.
+
+High quality flac files with older `.cue` files that use the format `mm:ss:ff`
+might split the file at the wrong timings.
+The format `mm:ss:ff` is not compatible with the newer versions of
+cuebreakpoints, cue2tracks and shnsplit.
+To get the correct timings the `.cue` file has to be changed to use the format
+`mm:ss:fff`.
+It is recommended to use the shnsplit alternative in this case.
