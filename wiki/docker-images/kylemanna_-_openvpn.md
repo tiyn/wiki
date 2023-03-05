@@ -1,6 +1,7 @@
 # kylemanna - openvpn
 
-This is a [Docker](/wiki/docker.md) container for an openvpn server.
+This is a [Docker](/wiki/docker.md) container for an
+[OpenVPN server](/wiki/vpn.md).
 The official container and documentation was made by
 [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
 

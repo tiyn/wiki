@@ -1,7 +1,7 @@
 # dyonr - jackettvpn
 
-This is a [Docker](/wiki/docker.md) container for a VPN protected
-[Jackett](/wiki/jackett.md) server.
+This is a [Docker](/wiki/docker.md) container for a [VPN](/wiki/vpn.md)
+protected [Jackett](/wiki/jackett.md) server.
 The official container and documentation was made by
 [dyonr](https://github.com/DyonR/docker-Jackettvpn).
 

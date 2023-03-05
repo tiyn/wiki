@@ -44,6 +44,8 @@ They can be removed and configured under `about:config`.
   an automatic dark mode for sites without native dark mode.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/Firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
+  With this add-on a proxy can be selected for each container which enables
+  usage of [a VPN proxy](/wiki/vpn.md#proxy).
 - [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
   bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
