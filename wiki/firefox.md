@@ -38,6 +38,8 @@ After navigating to `about:config` the configuration can be done at
 Following is a list of useful Firefox add-ons.
 They can be removed and configured under `about:config`.
 
+- [Cameleon](https://addons.mozilla.org/en-GB/firefox/addon/chameleon-ext/)
+  spoofs your browser profile including user agent and screen size.
 - [ClearURLs](https://addons.mozilla.org/en-GB/Firefox/addon/clearurls) removes
   tracking elements from URLs.
 - [Dark Reader](https://addons.mozilla.org/en-GB/Firefox/addon/darkreader) creates
@@ -59,23 +61,22 @@ They can be removed and configured under `about:config`.
 - [Privacy Redirect](https://addons.mozilla.org/en-US/Firefox/addon/privacy-redirect/)
   redirects youtube, instagram, twitter, etc to free alternatives or alternative
   frontends.
+- [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
+  is a sidebar with treestyle tabs and bookmarks.
 - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
   skips YouTube video sponsors automatically, works with
   [invidious](./invidious.md) too.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.
+- [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
+  shows tabs like a tree. This is especially useful if many tabs are used.
 - [uBlock Origin](https://addons.mozilla.org/en-GB/Firefox/addon/ublock-origin)
   blocks unwanted content like ads.
 - [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/Firefox/addon/user-agent-string-switcher)
   spoofs websites that try to gather information about your webbrowser.
 - [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables
   vim movement for Firefox.
-- Plugins for Tabs, etc. in tree style:
-  - [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
-    is a sidebar with treestyle tabs and bookmarks.
-  - [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
-    shows tabs like a tree. This is especially useful if many tabs are used.
 
 ## Add a new search engine
 
