@@ -8,9 +8,9 @@ Tor can be used to access `.onion` sites or to anonymize traffic.
 
 This section features various features of Tor.
 
-### Tor
+### Proxy
 
-A Tor proxy can be used to anonymize traffic via the SOCKS protocol, an HTTP
-tunnel protocol or other ways.
+A Tor proxy can be used to access the Tor network via the SOCKS protocol, an
+HTTP tunnel protocol or other ways.
 It can be set up using [docker](/wiki/docker.md) and the
 [dperson image](./docker-images/dperson_-_torproxy.md).
