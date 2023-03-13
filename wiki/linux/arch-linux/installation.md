@@ -101,31 +101,18 @@ Now the created filesystems will be mounted for the installation.
 - `mount /dev/sda1 /mnt/boot` - Mount EFI partition
 - `swapon /dev/mapper/main-swap` - Mounting swap partition
 
-## 6. Prepare base installation (optional)
-
-In this step the country specific mirrorserver for the installation will be configured.
-This will improve the download speed.
-
-- `cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak` - Create a backup
-  of mirrorlist
-- `grep -E -A 1 ".*Germany.*$" /etc/pacman.d/mirrorlist.bak | sed '/--/d' > /etc/pacman.d/mirrorlist`
-- Example command to only use _German_ mirrors
-- `cat /etc/pacman.d/mirrorlist` - Check if the file is to your liking. If it is
-  not, you can just recover by using `mirrorlist.bak`
-
-## 7. Starting base installation
+## 6. Starting base installation
 
 Now you need a working internet connection.
 Plug in your lan cable or use `wifi-menu` to get a wireless connection.
 
 - `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager`
-- Installation of main system with needed tools
 - `genfstab -Up /mnt > /mnt/etc/fstab` - creation of fstab
 - `arch-chroot /mnt` - Switch into the newly installed system
 - `echo ArchLinux > /etc/hostname` - Assign hostname. `ArchLinux` can be changed
   for any name of your preference.
 
-## 8. Set Region and Language
+## 7. Set Region and Language
 
 - `echo LANG=en\_US.UTF-8 > /etc/locale.conf` - Assign system Language to be
   english (you can use other languages, look into the `/etc/locale.gen` for a list of all available languages)
@@ -139,14 +126,14 @@ en_US.UTF-8 UTF-8
 
 - `locale-gen` - Generate languages
 - `echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf` - set the keymap
-- `cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime` - set your timezone
+- `ln -sf  /usr/share/zoneinfo/Europe/Berlin /etc/localtime` - set your timezone
   (select the first file accordingly to your location)
 - `date +%Y%m%d -s "<yyyymmdd>"` - set the current date (change
   values accordingly)
 - `date +%T -s "<hh:mm:ss>"` - set the current time (change values accordingly)
 - `hwclock -w` - sync the current date and time with the hardware clock
 
-## 9. Configure and create kernel-image
+## 8. Configure and create kernel-image
 
 - `vim /etc/mkinitcpio.conf`
 
@@ -157,12 +144,10 @@ en_US.UTF-8 UTF-8
 
 - `mkinitcpio -p linux` - generate Kernel-Image
 
-## 10. Install and configure UEFI bootloader
+## 9. Install and configure UEFI bootloader
 
 - `bootctl install` - Prepare bootloader
-- `ls -l /dev/disk/by-uuid` - find out the UUID
-- `lsblk -no UUID /dev/sda2 | head -n1 > /boot/loader/entries/arch.conf` - print
-  the UUID in your configuration file
+- `ls -l /dev/disk/by-uuid` - find out the UUID of your root partition
 - `vim /boot/loader/entries/arch.conf` - Create configuration
 
   - Change the config to look similar to this:
@@ -174,8 +159,8 @@ en_US.UTF-8 UTF-8
     options  cryptdevice=UUID=<enter your uuid here>:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet
     ```
 
-- `cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fallback.conf`
-- Create a fallback
+- `cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fallback.conf` -
+  create a fallback
 - `vim /boot/loader/loader.conf` - Create loader configuration
 
   - Insert the following text
@@ -185,12 +170,12 @@ en_US.UTF-8 UTF-8
     default arch
     ```
 
-## 11. Finishing base installation
+## 10. Finishing base installation
 
 - `passwd` - set password for the root account
 - `systemctl enable NetworkManager.service`
 
-## 12. Finish the setup
+## 11. Finish the setup
 
 - `exit` - exit the installed system
 - `umount /mnt/{boot,}` - unmount all partitions
@@ -201,7 +186,7 @@ en_US.UTF-8 UTF-8
 If the system is installed in a virtual environment or a system with deactivated
 UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 
-## 13. Further steps and graphical environment
+## 12. Further steps and graphical environment
 
 Now you can follow the recommended larbs installation script of this wiki
 (`curl -o larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
