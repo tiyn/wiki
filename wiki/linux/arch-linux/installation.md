@@ -106,7 +106,7 @@ Now the created filesystems will be mounted for the installation.
 Now you need a working internet connection.
 Plug in your lan cable or use `wifi-menu` to get a wireless connection.
 
-- `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager`
+- `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager ntp`
 - `genfstab -Up /mnt > /mnt/etc/fstab` - creation of fstab
 - `arch-chroot /mnt` - Switch into the newly installed system
 - `echo ArchLinux > /etc/hostname` - Assign hostname. `ArchLinux` can be changed
@@ -128,10 +128,9 @@ en_US.UTF-8 UTF-8
 - `echo KEYMAP=de-latin1-nodeadkeys > /etc/vconsole.conf` - set the keymap
 - `ln -sf  /usr/share/zoneinfo/Europe/Berlin /etc/localtime` - set your timezone
   (select the first file accordingly to your location)
-- `date +%Y%m%d -s "<yyyymmdd>"` - set the current date (change
-  values accordingly)
-- `date +%T -s "<hh:mm:ss>"` - set the current time (change values accordingly)
-- `hwclock -w` - sync the current date and time with the hardware clock
+- `ntpdate -q 0.de.pool.ntp.org` - sync the time and date with
+  [NTP](/wiki/linux/ntp.md) (note that a german time server is used and
+  depending on the needs a adjustments should be made)
 
 ## 8. Configure and create kernel-image
 
