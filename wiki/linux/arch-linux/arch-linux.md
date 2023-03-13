@@ -1,6 +1,7 @@
 # Arch Linux
 
-[Arch Linux](https://archlinux.org/) is a rolling-release, general-purpose Linux
+[Arch Linux](https://archlinux.org/) is a rolling-release, general-purpose
+[Linux](/wiki/linux/linux.md)
 distribution.
 Arch Linux uses the [pacman](./package_manager.md) package manager.
 The Arch User Repositories (AUR) features community-made packages that can be
