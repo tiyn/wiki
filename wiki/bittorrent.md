@@ -10,7 +10,8 @@ file, seeding describes the download followed by also uploading it.
 There are various clients to use for BitTorrent down- and uploading.
 The list below shows clients with an existing entry in this wiki.
 
-- [Transmission](/wiki/transmission.md)
+- [Transmission](/wiki/transmission.md) is an easy to use client
+- [qBittorrent](/wiki/qbittorrent.md) is a very feature rich client
 
 ## Personal Video Recorders
 
