@@ -12,6 +12,7 @@ Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 The default username of the web interface is `admin`.
 The default password is `adminadmin`.
+Both can be changed in the web interface after setup.
 
 ## Environment-variables
 
