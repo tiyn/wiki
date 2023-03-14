@@ -10,6 +10,8 @@ The official container and documentation was made by
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
+The default username of the web interface is `admin`.
+The default password is `adminadmin`.
 
 ## Environment-variables
 
