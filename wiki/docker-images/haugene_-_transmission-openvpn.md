@@ -57,10 +57,10 @@ docker run --name transmission \
         -v /etc/localtime:/etc/localtime:ro \
         -v transmission_data:/data \
         -v transmission_config:/config \
-        -e OPENVPN_PROVIDER=vpn \
-        -e OPENVPN_CONFIG=vpn-country-udp \
-        -e OPENVPN_USERNAME=username \
-        -e OPENVPN_PASSWORD=password \
+        -e OPENVPN_PROVIDER=<vpn provider> \
+        -e OPENVPN_CONFIG=<vpn_-_country-udp> \
+        -e OPENVPN_USERNAME=<username> \
+        -e OPENVPN_PASSWORD=<password> \
         -e LOCAL_NETWORK=192.168.178.0/24 \
         -e CREATE_TUN_DEVICE=true \
         -e WEBPROXY_ENABLES=false \
