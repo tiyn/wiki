@@ -9,3 +9,9 @@ The software can be setup via [Docker](/wiki/docker.md) with the
 [dyonr image](/wiki/docker-images/dyonr_-_qbittorrentvpn.md) that
 includes an [OpenVPN](/wiki/vpn.md#openvpn) tunnel.
 
+## Limiting  Upload and Download
+
+By right clicking torrents a limit for the upload and download can be set.
+Setting the limit to `0` and disable the upload/download at all is not possible.
+The general upload and download can be limited under the tab `Speed` in the
+`Options` under the `Tools` menu.
