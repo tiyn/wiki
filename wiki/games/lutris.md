@@ -11,7 +11,7 @@ Additionally to that Lutris supports many different
 
 ## Usage
 
-### Manually add a game
+### Manually Add a Game
 
 By clicking on the `+` in the left upper corner of the Lutris application a new
 game can be manually added.
@@ -33,7 +33,70 @@ afterwards.
 After selecting `Install a Windows DLL or component` the package to install can
 be selected.
 
-### DX12/DX13 is not supported on your system
+### Setting Environment Variables
+
+Environment variables can be set globally or on a per game basis.
+To set them globally navigate to the `Global options` tab in the `Preferences`.
+There the `Environment variables` can be added and removed by selecting the
+corresponding buttons.
+To set the environment variables for a single game right-click the game and
+select `Configure`.
+Navigate to the `System options` tab where the `Environment variables` can be
+found.
+
+An environment variable has two parts.
+The key and the value.
+This guide uses the notation `key=value` for better readability.
+The following is an example of an environment variable in this notation.
+
+```txt
+__GL_SHADER_DISK_CACHE=1
+```
+
+### Nvidia Shader Cache Settings
+
+This section is based on a
+[piece of documentation by Lutris](https://github.com/lutris/docs/blob/master/Performance-Tweaks.md#nvidia-gpu-only-optimization)
+regarding performance optimization for systems with [Nvidia](/wiki/nvidia.md)
+GPUs.
+
+For Nvidia GPUs the shader cache is set to have a softlimit of 128MB.
+This can be easily reached by some games and will cause performance limitations.
+The cleanup of the cache after reaching 128MB can be disabled.
+For this set `__GL_SHADER_DISK_CACHE_SKIP_CLEANUP` as explained in the
+[section regarding environment variables](#setting-environment-variables).
+
+By default Lutris uses a cache location for all games.
+For better trouble shooting capabilities a unique shader location for each game
+can be set.
+This can be done with the [environment variable](#setting-environment-variables)
+`__GL_SHADER_DISK_CACHE_PATH=</path/to/shaders/>` that has to be set as a per
+game variable and adapted with a path of your choosing.
+
+### Performance Tweaks
+
+This section addresses ways of increasing the performance of games when run by
+Lutris.
+
+An easy way to increase the performance of games is to install and enable
+[Feral GameMode](https://github.com/FeralInteractive/gamemode) as recommended in
+the [documentation of Lutris](https://github.com/lutris/docs/blob/master/Performance-Tweaks.md#enable-game-mode).
+It is important to install both the 64-bit and the 32-bit version to ensure full
+functionality.
+Check the package manager of your distribution for packages with the names
+`gamemode` and `lib32-gamemode` or similar names or install it manually via git.
+Afterwards check in Lutris `Preferences` if `Enable Feral GameMode` is checked
+under the `Global options` tab.
+
+Another way to increase the performance is to increase the
+[Nvidia Shader Cache](#nvidia-shader-cache-settings) limit.
+
+## Troubleshooting
+
+This section explains ways of solving various problems that can occur when using
+Lutris.
+
+### DX12/DX13 is not Supported on Your System
 
 This section handles a fix if the game is not able to run due to the system not
 supporting DX12 or DX13.
