@@ -1,8 +1,8 @@
 # Proton
 
 [Proton](https://github.com/ValveSoftware/Proton) is a compatibility tool for
-[Steam](./steam.md) by its developers, [valve](https://www.valvesoftware.com),
-based on [Wine](../linux/wine.md).
+[Steam](./steam.md) by its developers, [Valve](https://www.valvesoftware.com),
+based on [WINE](../linux/wine.md).
 
 ## GE-Version
 
@@ -13,8 +13,12 @@ It often contains fixes for bugs which are not yet included in the official
 Proton releases.
 Thus some games, that do not work with Proton, can be run with Proton GE.
 
-Proton GE can be installed on Linux systems by installing the `ProtonUp-Qt`
-application using [Flatpak](../linux/flatpak.md).
+Proton GE can be installed on Linux systems by using the
+[ProtonUp](https://github.com/AUNaseef/protonup) application using
+[Flatpak](../linux/flatpak.md) or the package manager of the distribution.
+ProtonUp is usually bundled in a package named `protonup-qt`.
+It can be used to install Proton GE versions for both
+[Steam](/wiki/games/steam.md) and [Lutris](/wiki/games/lutris.md).
 
 ### Errors with the Wine prefix of a specific game
 

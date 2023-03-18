@@ -6,6 +6,8 @@ It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),
 [Epic Games](https://www.epicgames.com/), [Steam](/wiki/games/steam.md) and many
 other Windows games via its own installer that uses [WINE](/wiki/linux/wine.md).
+Lutris can also use [Proton](/wiki/games/proton.md) - a patched version of WINE
+developed by [Valve](https://www.valvesoftware.com/).
 Additionally to that Lutris supports many different
 [emulators](/wiki/games/emulators.md).
 
