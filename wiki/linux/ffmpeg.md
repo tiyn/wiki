@@ -45,8 +45,8 @@ The following is an example where the file `input` is encoded with `libx264` to
 The video bitrate is `555k` and the audio bitrate is `128k`.
 
 ```sh
-ffmpeg -y -i input -c:v libx264 -preset medium -b:v 555k -pass 1 -c:a libfdk_aac -b:a 128k -f mp4 /dev/null && \
-ffmpeg -i input -c:v libx264 -preset medium -b:v 555k -pass 2 -c:a libfdk_aac -b:a 128k output.mp4
+ffmpeg -y -i input -c:v libx264 -b:v 555k -pass 1 -c:a libfdk_aac -b:a 128k -f mp4 /dev/null && \
+ffmpeg -i input -c:v libx264 -b:v 555k -pass 2 -c:a libfdk_aac -b:a 128k output.mp4
 ```
 
 ### Encode Audio/Video to Target Size
