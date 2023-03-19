@@ -13,12 +13,18 @@ It often contains fixes for bugs which are not yet included in the official
 Proton releases.
 Thus some games, that do not work with Proton, can be run with Proton GE.
 
-Proton GE can be installed on Linux systems by using the
+## Setup
+
+Proton and [Proton GE](#ge-version) can be installed on Linux systems by using the
 [ProtonUp](https://github.com/AUNaseef/protonup) application using
 [Flatpak](../linux/flatpak.md) or the package manager of the distribution.
 ProtonUp is usually bundled in a package named `protonup-qt`.
 It can be used to install Proton GE versions for both
 [Steam](/wiki/games/steam.md) and [Lutris](/wiki/games/lutris.md).
+
+## Troubleshooting
+
+This section addresses various errors that can happen when using Proton.
 
 ### Errors with the Wine prefix of a specific game
 

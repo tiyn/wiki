@@ -5,11 +5,14 @@
 It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),
 [Epic Games](https://www.epicgames.com/), [Steam](/wiki/games/steam.md) and many
-other Windows games via its own installer that uses [WINE](/wiki/linux/wine.md).
-Lutris can also use [Proton](/wiki/games/proton.md) - a patched version of WINE
-developed by [Valve](https://www.valvesoftware.com/).
+other [Windows](/wiki/windows/windows.md) games via its own installer that uses
+[WINE](/wiki/linux/wine.md). Lutris can also use [Proton](/wiki/games/proton.md)
+- a patched version of WINE developed by
+[Valve](https://www.valvesoftware.com/).
 Additionally to that Lutris supports many different
 [emulators](/wiki/games/emulators.md).
+For running both Windows applications aswell as games
+[Bottles](/wiki/games/bottles.md) can be used.
 
 ## Usage
 
@@ -24,16 +27,6 @@ For Windows games using [WINE](/wiki/linux/wine.md) make sure to set the
 `Wine prefix` to the desired location.
 For cleanup afterwards the game can be moved into the WINE prefix folder as if
 it was installed inside Windows.
-
-### Installing Windows DLLs
-
-Select the game in the `Games` tab of the library.
-Then select the upwards arrow next to the [WINE](/wiki/linux/wine.md) symbol in
-the bar at the lower screen.
-Select `Winetricks` and `Select the default wineprefix` in the window
-afterwards.
-After selecting `Install a Windows DLL or component` the package to install can
-be selected.
 
 ### Setting Environment Variables
 
@@ -65,7 +58,7 @@ GPUs.
 For Nvidia GPUs the shader cache is set to have a softlimit of 128MB.
 This can be easily reached by some games and will cause performance limitations.
 The cleanup of the cache after reaching 128MB can be disabled.
-For this set `__GL_SHADER_DISK_CACHE_SKIP_CLEANUP` as explained in the
+For this set `__GL_SHADER_DISK_CACHE_SKIP_CLEANUP` to `1` as explained in the
 [section regarding environment variables](#setting-environment-variables).
 
 By default Lutris uses a cache location for all games.
@@ -93,6 +86,28 @@ under the `Global options` tab.
 Another way to increase the performance is to increase the
 [Nvidia Shader Cache](#nvidia-shader-cache-settings) limit.
 
+### Installing Windows DLLs
+
+Select the game in the `Games` tab of the library.
+Then select the upwards arrow next to the [WINE](/wiki/linux/wine.md) symbol in
+the bar at the lower screen.
+Select `Winetricks` and `Select the default wineprefix` in the window
+afterwards.
+After selecting `Install a Windows DLL or component` the package to install can
+be selected.
+
+### Change WINE/Proton Version
+
+[Windows](/wiki/windows/windows.md) games are handled by
+[WINE](/wiki/linux/wine.md).
+After right-clicking a game and selecting `Configure` the `Wine version` can be
+changed under the `Runner options` tab.
+There are many different versions of WINE, WINE-fshack and various
+[Proton](/wiki/games/proton.md) and
+[Proton GE versions](/wiki/games/proton.md#ge-version) to select.
+Using the default runner of [Bottles called Caffe](/wiki/games/bottles.md#caffe)
+is also possible.
+
 ## Troubleshooting
 
 This section explains ways of solving various problems that can occur when using
@@ -104,3 +119,14 @@ This section handles a fix if the game is not able to run due to the system not
 supporting DX12 or DX13.
 This can be easily fixed by inserting `-dx11` in `Arguments` under the
 `Game options` tab that pops up after selecting `Configure` for a selected game.
+
+### Crashes for Windows Games
+
+When it comes to crashes for [Windows](/wiki/windows/windows.md) games that get
+handled by [WINE](/wiki/linux/wine.md) one point of failure is the selected
+WINE version.
+Change the version used as explained in
+[the regarding section](#change-wineproton-version).
+Especially trying [Proton GE versions](/wiki/games/proton.md#ge-version) or
+WINE fshack versions can lead to successful running of the game.
+Specific games also benefit from running [Caffe](/wiki/games/bottles.md#caffe).
