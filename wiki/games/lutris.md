@@ -20,13 +20,30 @@ For running both Windows applications aswell as games
 
 By clicking on the `+` in the left upper corner of the Lutris application a new
 game can be manually added.
-For `.iso` files select `Install a Windows game from media`.
-For `.exe` files select `Add locally installed game`.
-Make sure to select the correct runner for the game in the following window.
-For Windows games using [WINE](/wiki/linux/wine.md) make sure to set the
-`Wine prefix` to the desired location.
+
+Mount `.iso` files first using the `mount -o loop <path to iso> <path to mount>`
+command.
+Check the directory the media was mounted to afterwards to select the appropiate
+Option.
+
+If a setup executable is available select `Install a Windows game from media`.
+Then select the setup executable from the mounted path.
+And proceed with the installation.
+Lutris will automatically pick the correct executable to start the game after
+setup.
+
+For non-setup `.exe` files of completely downloaded games select
+`Add locally installed game`.
+Make sure to select the runner [WINE](/wiki/linux/wine.md) for the game in the
+following window.
+Make sure to set the `Wine prefix` to the desired location.
+Select the `Working directory` to be the location of the downloaded game.
 For cleanup afterwards the game can be moved into the WINE prefix folder as if
 it was installed inside Windows.
+If so make sure to point the `Executable` after right-clicking the game and
+selecting `Configure` to the right location and remove the `Working directory`
+entry as it is not needed if the executable is inside the WINE prefix.
+
 
 ### Setting Environment Variables
 
