@@ -42,6 +42,13 @@ The dump flag signals if the file system should be dumped.
 The `fsck` order signals if a file system should be checked at boot.
 Boot partitions should be flagged with a `1` for this reason, otherwise `0`.
 
+For undoing the mount the `umount` command can be used.
+The following is a command to unmount a device from a specified directory.
+
+```sh
+umount <path to mount point>
+```
+
 ## Create Partition
 
 In the following it is assumed that the disk is `/dev/sda`
@@ -122,13 +129,13 @@ This error can be fixed and the directory made accessible again by running the
 following command.
 
 ```sh
-fusermount -u <path to mount dir>
+fusermount -u <path to mount point>
 ```
 
 If this does not work the following command can be used to unmount the device.
 
 ```sh
-umount -l <path to mount dir>
+umount -l <path to mount point>
 ```
 
 This section is based on a reply by
