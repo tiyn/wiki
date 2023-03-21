@@ -99,6 +99,9 @@ Especially for large file systems this might take a while.
 
 ## Error solving
 
+This section addresses various problems that can occur and are related to
+disk-management.
+
 ### sudo: unable to open ... Read-only file system
 
 Ususally the filesystem will go into read-only mode whe the system is running
@@ -110,3 +113,23 @@ To fix it run:
   `fsck from util-linux 2.20.1`
   you may want to try using the ext4-specific fsck:
 - `fsck.ext4 -f /dev/sda1`
+
+###  cannot access: Transport endpoint is not connected
+
+This error message can occur if a mounted directory is left mounted due to a
+crash of the filesystem but not accessible anymore.
+This error can be fixed and the directory made accessible again by running the
+following command.
+
+```sh
+fusermount -u <path to mount dir>
+```
+
+If this does not work the following command can be used to unmount the device.
+
+```sh
+umount -l <path to mount dir>
+```
+
+This section is based on a reply by
+[Jonathan Brown on Stack Overflow](https://stackoverflow.com/questions/16002539/fuse-error-transport-endpoint-is-not-connected).
