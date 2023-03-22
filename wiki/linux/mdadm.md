@@ -1,6 +1,6 @@
 # MDADM
 
-`mdadm` is a utility to create and manage raid devices.
+MDADM is a utility to create and manage raid devices.
 For the rest of this entry `n` is the number of drives inside a raid device.
 
 ## Usage
@@ -50,7 +50,7 @@ Note that mostly raid 1 devices consisting of 2 drives should be converted to
   `mdadm /dev/md0 --add /dev/sda1`
 - Finally grow the active drive number to your needs (in this example 4)
   `mdadm --grow /dev/md0 -n4`
-- `mdadm` now reshapes the raid. You can monitor it by running
+- MDADM now reshapes the raid. You can monitor it by running
   `watch cat /proc/mdstat`
 
 ### Raid 5
