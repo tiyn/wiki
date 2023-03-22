@@ -1,6 +1,7 @@
 # MDADM
 
 `mdadm` is a utility to create and manage raid devices.
+For the rest of this entry `n` is the number of drives inside a raid device.
 
 ## Usage
 
@@ -21,6 +22,8 @@ be a whole drive and the mdadm drive is called `/dev/md0`.
 
 Raid 1 creates a mirror with even amount of drives.
 For `n=2` [raid 5](#raid-5) and raid 1 are basically the same.
+The space efficiency is `1/n` and the fault tolerance is `n-1` drive failure.
+The read perfromance is `n` and the write performance `1`.
 
 #### Create raid 1 device
 
@@ -52,7 +55,11 @@ Note that mostly raid 1 devices consisting of 2 drives should be converted to
 
 ### Raid 5
 
-Raid 5 creates a raid device with distributed parity.
-For `n>1` drives with the same size it creates a raid device with the size `n-1`
-drives.
-For `n=2` raid 5 and [raid 1](#raid-1) are basically the same.
+Raid 5 creates a raid device with distributed parity and is set to have at least
+3 drives.
+The space efficiency is `1-(1/n)` and the fault tolerance is `1` drive failure.
+The read perfromance is `n` and the write performance `1/4` for single sector
+and `n-1` for full stripe.
+
+In the special case of 2 drives in a raid 5 it is functionally the same as
+[raid 1](#raid-1).
