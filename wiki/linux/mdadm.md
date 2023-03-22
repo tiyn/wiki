@@ -20,6 +20,7 @@ be a whole drive and the mdadm drive is called `/dev/md0`.
 ### Raid 1
 
 Raid 1 creates a mirror with even amount of drives.
+For `n=2` [raid 5](#raid-5) and raid 1 are basically the same.
 
 #### Create raid 1 device
 
@@ -31,11 +32,14 @@ If it is an uneven amount of disks in the raid, a disk will act as a spare disk.
 
 #### Convert raid 1 to raid 5
 
-Assuming the raid device is called `/dev/md0`.
+Assuming the raid 1 device is called `/dev/md0`.
 All other drives are part of the `md0` raid device.
+Note that mostly raid 1 devices consisting of 2 drives should be converted to
+[raid 5](#raid-5).
 
-- Remove all drives but 2 by running `mdadm /dev/md0 --fail /dev/sda1` and
-  `mdadm /dev/md0 --remove /dev/sda1` where `sda1` is the drive to remove
+- Remove all drives but 2 (if there are more drives than that) by running
+  `mdadm /dev/md0 --fail /dev/sda1` and `mdadm /dev/md0 --remove /dev/sda1`
+  where `sda1` is the drive to remove
 - Make sure your raid 1 array has only 2 active drives by running
   `mdadm --grow /dev/md0 -n 2`
 - Now convert your raid 1 to a raid 5 device with `mdadm --grow /dev/md0 -l5`
@@ -45,3 +49,10 @@ All other drives are part of the `md0` raid device.
   `mdadm --grow /dev/md0 -n4`
 - `mdadm` now reshapes the raid. You can monitor it by running
   `watch cat /proc/mdstat`
+
+### Raid 5
+
+Raid 5 creates a raid device with distributed parity.
+For `n>1` drives with the same size it creates a raid device with the size `n-1`
+drives.
+For `n=2` raid 5 and [raid 1](#raid-1) are basically the same.
