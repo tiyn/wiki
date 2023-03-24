@@ -67,3 +67,35 @@ used the
 is recommended.
 Afterwards move the game saves to the directory set up by Syncthing and create
 symbolic links to link them back to the original place.
+
+## Error Handling
+
+The following section addresses errors that can handle inside Steam or game
+errors that are specific to Steam.
+
+### Store Wishlist Displays More Items Than Shown
+
+It is possible for the counter of the Steam wishlist to display more games than
+the number of games shown when showing the wishlist.
+This happens when a game is removed from the Steam store but still being on the
+wishlist.
+To remove it navigate to the wishlist in a browser like
+[Firefox](/wiki/firefox.md).
+Press `F12` to open up the developer tools.
+Then navigate to the `Console` tab and enter `g_rgWishlistData` in it.
+It will display the list of games inside the wishlist.
+Identify the game that has been removed and is not shown in the wishlist
+anymore.
+Remember the `appid` of the game
+Then run the following command inside the console and change `<appid>`
+accordingly.
+
+```js
+$J.post( g_strWishlistBaseURL + 'remove/', {
+				'appid' : <appid>,
+				'sessionid' : g_sessionID
+});
+```
+
+By running this the game will be removed from the wishlist causing it to display
+the correct number of games.
