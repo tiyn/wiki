@@ -5,18 +5,36 @@ For the rest of this entry `n` is the number of drives inside a raid device.
 
 ## Usage
 
-### Get information about a raid
+### Get Information About a Raid
 
 To get an info for a running raid (assuming it is `/dev/md0`) run
 `mdadm -D /dev/md0`.
 
-### Add disk/partition to raid device
+### Add Disk/Partition to Raid Device
 
 You can add a disk or partition to a raid device by running the following.
 It is assumed you are adding a partition called `/dev/sdd1` but it could also
 be a whole drive and the mdadm drive is called `/dev/md0`.
 
 `mdadm --add /dev/md0 /dev/sdd1`
+
+This will add the disk as spare to the existing raid.
+To make the disk active the raid needs to be grown as described in the
+[regarding article](#growing-raid-device).
+
+### Growing Raid Device
+
+Growing a raid device will increase its number of active drives.
+[Check the number of active drives](#get-information-about-a-raid).
+Then change and run the following command accordingly.
+
+```sh
+mdadm --grow --raid-disks=5 /dev/md0
+```
+
+`/dev/md0` is the raid device.
+`5` is the number of disks that should be active.
+For adding disks view the [previous section](#add-diskpartition-to-raid-device).
 
 ### Raid 1
 
@@ -25,7 +43,7 @@ For `n=2` [raid 5](#raid-5) and raid 1 are basically the same.
 The space efficiency is `1/n` and the fault tolerance is `n-1` drive failure.
 The read perfromance is `n` and the write performance `1`.
 
-#### Create raid 1 device
+#### Create Raid 1 Device
 
 You can create a Raid 1 device with
 `mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sda /dev/sdb`
@@ -33,7 +51,7 @@ where `sda` and `sdb` are the disks you want to include in your raid.
 You can increase the number of raid devices, but they have to be at least 2.
 If it is an uneven amount of disks in the raid, a disk will act as a spare disk.
 
-#### Convert raid 1 to raid 5
+#### Convert Raid 1 to Raid 5
 
 Assuming the raid 1 device is called `/dev/md0`.
 All other drives are part of the `md0` raid device.
