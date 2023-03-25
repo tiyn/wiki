@@ -36,6 +36,57 @@ mdadm --grow --raid-disks=5 /dev/md0
 `5` is the number of disks that should be active.
 For adding disks view the [previous section](#add-diskpartition-to-raid-device).
 
+In the [following section](#changing-reshape-speed) methods are described that
+can be tried to affect the performance of the reshaping of a Raid array.
+
+### Changing Reshape Speed
+
+Reshaping can take a long time.
+It can be useful to increase or decrease the speed of it depending on the usage
+of the raid array while resizing.
+The following section is based on a guide by
+[nixCraft](https://www.cyberciti.biz/tips/linux-raid-increase-resync-rebuild-speed.html)
+and addresses the temporary change of speed of the reshape process of a raid
+array.
+
+There are two values that can be temporarily changed to limit the reshape speed.
+Those are `dev.raid.speed_limit_min` which defaults to `1000` and
+`dev.raid.speed_limit_max` which defaults to `10000`.
+
+```sh
+sysctl -w dev.raid.speed_limit_min=100000
+sysctl -w dev.raid.speed_limit_max=500000
+```
+
+Another value to change is the read-ahead.
+The current value can be displayed with the following command.
+
+```sh
+blockdev --getra /dev/md0
+```
+
+And it can be set with the following command.
+This commands sets the read-ahead to `32MB`.
+
+```sh
+blockdev --setra 65536 /dev/md0
+```
+
+For [Raid 5](#raid-5) the value `stripe_cache_size` can be important too.
+It can be changed with the following command which sets it to `32 MiB`.
+
+```sh
+echo 32768 > /sys/block/md3/md/stripe_cache_size
+```
+
+However make sure not to set it too large, as this can result in a
+"out of memory" condition.
+The memory consumed can be calculated with the following formula.
+
+```txt
+memory_consumed = system_page_size * nr_disks * stripe_cache_size
+```
+
 ### Raid 1
 
 Raid 1 creates a mirror with even amount of drives.
