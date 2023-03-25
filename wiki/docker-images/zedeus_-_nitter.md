@@ -1,6 +1,14 @@
 # zedeus - nitter
 
-The official container and documentation was made by [zedeus](https://github.com/zedeus/nitter).
+This is a [Docker](/wiki/docker.md) container for the alternative Twitter
+frontend [nitter](../nitter.md).
+The official container and documentation was made by
+[zedeus](https://github.com/zedeus/nitter).
+
+## Set-up
+
+Create the file `rebuild.sh` and `nitter.conf` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -20,7 +28,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop nitter
 docker rm nitter
@@ -37,7 +45,7 @@ docker run --name nitter \
 
 ```txt
 [Unit]
-Description=Nitter (An alternative Twitter front-end)
+Description=Nitter (An alternative Twitter frontend)
 After=syslog.target
 After=network.target
 

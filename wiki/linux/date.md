@@ -7,7 +7,7 @@ To change the hardware clock look at the [according article](./hwclock.md)
 
 To change the time and date run the following command:
 
-```shell
+```sh
 date
 ```
 
@@ -16,14 +16,14 @@ date
 To change the date run the following command with an adjusted value for the
 date:
 
-```shell
+```sh
 date +%Y%m%d -s "20210809"
 ```
 
 To change the time run the following command with an adjusted value for the
 date:
 
-```shell
+```sh
 date +%T -s "18:49:42"
 ```
 
@@ -34,6 +34,6 @@ After that you can check if the time is correct by displaying it.
 To set your timezone run the following command with the accordingly selected
 file for your location:
 
-```shell
+```sh
 cp /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 ```

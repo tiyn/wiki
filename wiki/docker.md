@@ -3,7 +3,7 @@
 Docker is a virtualization software that deploys docker containers.
 Due to easy handling and reproducable environments it is a useful tool.
 
-## Installation
+## Setup
 
 - Arch linux: run `pacman -S docker` to install docker
 - Ubuntu: visit [the official installation guide](https://docs.docker.com/engine/install/ubuntu/)
@@ -11,7 +11,7 @@ Due to easy handling and reproducable environments it is a useful tool.
 Another possibility is to try the official convenience script.
 To get and execute it run the following in your terminal.
 
-```shell
+```sh
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```

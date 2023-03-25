@@ -1,6 +1,14 @@
 # searx - searx
 
-The official container and documentation was made by [searx](https://hub.docker.com/r/searx/searx).
+This is a [Docker](/wiki/docker.md) container for a [searx](../searx.md)
+meta-search machine.
+The official container and documentation was made by
+[searx](https://hub.docker.com/r/searx/searx).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -21,7 +29,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop searx
 docker rm searx

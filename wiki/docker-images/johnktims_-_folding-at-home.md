@@ -1,6 +1,14 @@
 # johnktims - folding-at-home
 
-The official container and documentation was made by [johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
+This is a [Docker](/wiki/docker.md) container for
+[Folding@home](https://foldingathome.org/).
+The official container and documentation was made by
+[johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Ports
 
@@ -22,11 +30,11 @@ There are some special variables to set.
 
 ### GPU
 
-GPU support is documented in [the docker entry](../docker.md).
+GPU support is documented in [the docker article](../docker.md).
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop folding-at-home
 docker rm folding-at-home

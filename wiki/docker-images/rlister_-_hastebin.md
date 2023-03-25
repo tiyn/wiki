@@ -1,6 +1,13 @@
 # rlister - hastebin
 
-The official container and documentation was made by [rlister](https://hub.docker.com/r/rlister/hastebin).
+This is a [Docker](/wiki/docker.md) container for a hastebin server.
+The official container and documentation was made by
+[rlister](https://hub.docker.com/r/rlister/hastebin).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -28,7 +35,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop hastebin
 docker rm hastebin

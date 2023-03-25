@@ -1,6 +1,13 @@
 # xy2z - pinedocs
 
-The official container and documentation was made by [xy2z](https://hub.docker.com/r/xy2z/pinedocs).
+This is a [Docker](/wiki/docker.md) container for the file viewer pinedocs.
+The official container and documentation was made by
+[xy2z](https://hub.docker.com/r/xy2z/pinedocs).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -20,7 +27,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop pinedocs
 docker rm pinedocs

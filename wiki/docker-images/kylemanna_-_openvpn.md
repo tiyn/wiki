@@ -1,6 +1,14 @@
 # kylemanna - openvpn
 
-The official container and documentation was made by [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
+This is a [Docker](/wiki/docker.md) container for an
+[OpenVPN server](/wiki/vpn.md).
+The official container and documentation was made by
+[kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -28,7 +36,7 @@ There are some special variables to set.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop openvpn
 docker rm openvpn

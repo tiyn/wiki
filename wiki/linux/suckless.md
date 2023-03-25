@@ -3,7 +3,15 @@
 Suckless is a community that is best known for minimalist free software.
 Notable works include `dwm` and `dmenu`.
 
-## Workflow for installation
+## Programs
+
+- dmenu is a menu with prgram launcher functionality
+- dwm is a window manager
+- ii is an IRC client
+- slock is a screen locker
+- st is a terminal
+
+## Setup
 
 Programs written by the suckless community are minimal by default.
 `.diff` files are available to patch functionality.
@@ -32,10 +40,15 @@ new `feature`
   - Get the `config.def.h` of `master` into `config` with
   `git checkout master config.def.h`
 
-## Programs
 
-- dmenu is a menu with prgram launcher functionality
-- dwm is a window manager
-- ii is an IRC client
-- slock is a screen locker
-- st is a terminal
+## Troubleshooting
+
+### suckless program crashes or struggles with colored emojis
+
+Suckless programs  especially `st` and `dmenu` can not display colored
+emojis.
+This is because of problems with libxft.
+libxft is the client side font rendering library to display anti-aliased text.
+To change this [libxft-bgra](https://github.com/uditkarode/libxft-bgra) needs
+to be installed.
+This is a patched version especially for running with the suckless programs.

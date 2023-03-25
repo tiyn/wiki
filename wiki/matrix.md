@@ -3,16 +3,17 @@
 [Matrix](https://matrix.org/) is an open network for secure, decentralized
 communication.
 
-## Docker setup
+## Setup
 
-The matrix server can be a complex setup of servers and services.
-Please note that this configuration is a composition of docker images.
+The matrix server is a complex setup of servers and services.
+Please note that this configuration is a composition of
+[Docker](/wiki/docker.md) images.
 Therefore a shared `docker-compose.yml` file is used.
 This setup guide follows a modified version of the
 [guide by matusnovak](https://gist.github.com/matusnovak/37109e60abe79f4b59fc9fbda10896da).
 Furthermore this guide will assume you already have a
 [traefik v2.4](./traefik.md) instance setup as described in the
-[traefik docker image entry](./docker-images/traefik.md).
+[traefik docker image article](./docker-images/traefik.md).
 
 ### DNS records
 
@@ -86,15 +87,26 @@ docker run -it --rm \
     matrixdotorg/synapse:latest generate
 ```
 
-Navigate to the volume and edit the configuration files.
-For the `homeserver.yaml` locate the following line and change them
-accordingly:
+If you want to enable/disable registration go to the `homeserver.yaml`
+and add the following line either set to `true` or `false`:
+`enable_registration: true`.
 
-```yaml
-public_baseurl: https://synapse.example.com/
+Additionally create the following lines:
+
 ```
-
-Additionally uncomment the lines following `ip_range_blacklist:`
+federation_ip_range_blacklist:
+  - '127.0.0.0/8'
+  - '10.0.0.0/8'
+  - '172.16.0.0/12'
+  - '192.168.0.0/16'
+  - '100.64.0.0/10'
+  - '169.254.0.0/16'
+  - '::1/128'
+  - 'fe80::/64'
+  - 'fc00::/7'
+retention:
+  enabled: true
+```
 
 If you start the docker container with `docker-compose up` and navigate to
 `https://synapse.example.com` you should be redirected to
@@ -104,9 +116,6 @@ If this is not the case please check your configuration.
 
 Create an admin user in the docker containers shell with the command:
 `register_new_matrix_user -c /data/homeserver.yaml https://synapse.example.com`
-
-If you want to enable registration go to the `homeserver.yaml`
-and locate the line starting with `enable_registration:` and set it to `true`.
 
 Finally shut down the container using `docker-compose down` to be able to keep
 following the guide (this applies to any following step).
@@ -194,12 +203,6 @@ You should see a green sign that indicates success.
 
 If one of these does not work (but synapse works) your nginx configuration is
 not correctly set up.
-
-## Additional Features
-
-Your done with the most basic setup for your Matrix Homeserver to work properly
-with federation.
-All following sections will add features to it.
 
 ### Element web client
 
@@ -301,8 +304,11 @@ section:
       - "traefik.http.routers.element-secure.rule=Host(`chat.example.com`)"
       - "traefik.http.routers.element-secure.service=element"
       - "traefik.http.services.element.loadbalancer.server.port=80"
-
 ```
+
+Add the following line to the `homeserver.yaml` of the synapse server to
+indicate your element domain:
+`web_client_location: https://chat.example.com`.
 
 Start the container.
 You should now be able to navigate to `https://chat.example.com` where you are

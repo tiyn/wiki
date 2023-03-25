@@ -1,6 +1,15 @@
 # tetricz - mordhau-server
 
-The official container and documentation was made by [tetricz](https://hub.docker.com/r/tetricz/mordhau-server).
+This is a [Docker](/wiki/docker.md) container for a mordhau server.
+The official container and documentation was made by
+[tetricz](https://hub.docker.com/r/tetricz/mordhau-server).
+
+## Set-up
+
+Create the files `start.sh` and `stop.sh`.
+Change the settings according to your needs and run `./start.sh` to start
+the server.
+With `stop.sh` you can stop it.
 
 ## Environment-variables
 
@@ -41,9 +50,8 @@ Set the following ports with the -p tag.
 
 ## start.sh
 
-```shell
+```sh
 #!/bin/sh
-
 docker pull tetricz/mordhau-server
 docker run --name=mordhau \
  --restart=unless-stopped \
@@ -69,9 +77,8 @@ docker run --name=mordhau \
 
 ## stop.sh
 
-```shell
+```sh
 #/bin/sh
-
 docker stop mordhau
 docker rm mordhau
 ```

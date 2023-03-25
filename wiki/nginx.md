@@ -1,9 +1,13 @@
 # Nginx
 
-## Server
+[nginx](https://www.nginx.com/) is a web server that can be used as
+[reverse proxy](./reverse-proxy.md).
 
-A server can be setup via docker with the
-[nasourso image](./docker-images/nasourso_-_nginx-certbot-docker-tui.md).
+## Setup
+
+The software can be setup via [Docker](/wiki/docker.md) with a terminal user
+interface program for nginx and certbot, which is called
+nginx-certbot-docker-tui or short ncdt.
 
 Alternatively the standalone [nginx image](./docker-images/nginx.md) can be
 used.

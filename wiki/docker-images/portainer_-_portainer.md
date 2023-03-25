@@ -1,6 +1,14 @@
 # portainer - portainer
 
-The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/portainer).
+This is a [Docker](/wiki/docker.md) container for a [portainer](../portainer.md)
+server.
+The official container and documentation was made by
+[portainer](https://hub.docker.com/r/portainer/portainer).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -21,7 +29,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop portainer
 docker rm portainer

@@ -1,6 +1,14 @@
 # linuxserver - syncthing
 
-The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/syncthing).
+This is a [Docker](/wiki/docker.md) container for syncthing for
+[file synchronization](../file-synchronization.md).
+The official container and documentation was made by
+[linuxserver](https://hub.docker.com/r/linuxserver/syncthing).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -33,7 +41,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop syncthing
 docker rm syncthing

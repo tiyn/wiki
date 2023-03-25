@@ -1,9 +1,18 @@
 # tomsquest - docker-radicale
 
-The official container and documentation was made by [tomsquest](https://hub.docker.com/r/tomsquest/docker-radicale).
+This is a [Docker](/wiki/docker.md) container for a radicale CalDAV server.
+The official container and documentation was made by
+[tomsquest](https://hub.docker.com/r/tomsquest/docker-radicale).
 
 The `latest` tag at the moment of writing this readme was corrupted.
 The last usable tag was used therefore to guarantee best performance for all users.
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Create a volume with the name `radicale_config`.
+Then create the `config` file in the volume `radicale_config`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -32,7 +41,7 @@ There are some special variables to set.
 
 ## rebuild.sh
 
-```shell
+```sh
 #/bin/sh
 docker stop radicale
 docker rm radicale
@@ -46,7 +55,7 @@ docker run --name radicale \
     -d tomsquest/docker-radicale:2.1.11.4
 ```
 
-## radicale\_config/config
+## radicale\_config/\_data/config
 
 ```txt
 # -*- mode: conf -*-

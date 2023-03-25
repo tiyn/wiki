@@ -1,6 +1,14 @@
 # portainer - agent
 
-The official container and documentation was made by [portainer](https://hub.docker.com/r/portainer/agent).
+This is a [Docker](/wiki/docker.md) container for a [portainer](../portainer.md)
+agent.
+The official container and documentation was made by
+[portainer](https://hub.docker.com/r/portainer/agent).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -21,7 +29,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop portainer_agent
 docker rm portainer_agent

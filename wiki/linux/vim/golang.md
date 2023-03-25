@@ -1,8 +1,10 @@
 # GoLang in Vim
 
 GoLang is a common programming language.
-In this entry we will focus on making vim support Go and use vim as an ide for it.
-This guide is based on a guide from [octetz.com](https://octetz.com/docs/2019/2019-04-24-vim-as-a-go-ide/).
+In this article we will focus on making vim support Go and use vim as an ide
+for it.
+This guide is based on a guide from
+[octetz.com](https://octetz.com/docs/2019/2019-04-24-vim-as-a-go-ide/).
 
 ## Build, Test, Run, Docs, Debug, Format
 

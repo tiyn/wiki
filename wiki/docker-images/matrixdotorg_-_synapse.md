@@ -1,10 +1,15 @@
 # matrixdotorg - synapse
 
+This is a [Docker](/wiki/docker.md) container for a synapse server using the
+[matrix](../matrix.md) protocol.
 The official container and documentation was made by
 [matrixdotorg](https://hub.docker.com/matrixdotorg/synapse).
 This docker-rebuild is made up by a `docker-compose.yml` file.
-If you want to setup a Matrix homeserver please take a look at
-[the matrix setup guide](../matrix.md).
+
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -37,7 +42,7 @@ Set the following ports in the `ports:` section.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker pull matrixdotorg/synapse:latest
@@ -47,7 +52,6 @@ docker-compose up -d
 ## docker-compose.yml
 
 ```yml
-
 services:
   synapse:
     image: "matrixdotorg/synapse:latest"

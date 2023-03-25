@@ -1,10 +1,17 @@
 # NextCloud
 
-The official container and documentation was made by [NextCloud](https://hub.docker.com/_/nextcloud).
+This is a [Docker](/wiki/docker.md) container for [NextCloud](../nextcloud.md).
+The official container and documentation was made by
+[NextCloud](https://hub.docker.com/_/nextcloud).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The services in this files are explained seperately.
 The main Docker container needs a database in form of a [MariaDB](./mariadb.md)
 Docker container.
+
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -24,7 +31,7 @@ Set the following ports in the `ports:` section.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker pull nextcloud:latest

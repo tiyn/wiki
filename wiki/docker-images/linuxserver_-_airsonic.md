@@ -1,6 +1,14 @@
 # linuxserver - airsonic
 
-The official container and documentation was made by [linuxserver](https://hub.docker.com/r/linuxserver/airsonic).
+This is a [Docker](/wiki/docker.md) container for a [airsonic](../airsonic.md)
+server.
+The official container and documentation was made by
+[linuxserver](https://hub.docker.com/r/linuxserver/airsonic).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -35,7 +43,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop airsonic
 docker rm airsonic

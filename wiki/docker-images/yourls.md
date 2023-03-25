@@ -1,8 +1,15 @@
 # yourls
 
-The official container and documentation was made by [yourls](https://hub.docker.com/_/yourls).
-In addition to the main container you need to connect a [mySQL container](./mysql.md)
-to it.
+This is a [Docker](/wiki/docker.md) container for the URl shortener yourls.
+The official container and documentation was made by
+[yourls](https://hub.docker.com/_/yourls).
+In addition to the main container you need to connect a
+[mySQL container](./mysql.md) to it.
+
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -33,7 +40,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker-compose up -d

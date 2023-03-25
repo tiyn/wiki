@@ -1,6 +1,14 @@
 # samba
 
-The official container and documentation was made by [dperson](https://hub.docker.com/r/samba).
+This is a [Docker](/wiki/docker.md) container for a [Samba](../samba.md)
+server.
+The official container and documentation was made by
+[dperson](https://hub.docker.com/r/samba).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -36,7 +44,7 @@ There are some special variables to set.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop samba
 docker rm samba

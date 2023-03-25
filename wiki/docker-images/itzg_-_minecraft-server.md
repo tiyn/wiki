@@ -1,6 +1,14 @@
 # itzg - minecraft-server
 
-The container and documentation was made by [itzg](https://hub.docker.com/r/itzg/minecraft-server).
+This is a [Docker](/wiki/docker.md) container for a
+[Minecraft](../games/minecraft.md) server.
+The container and documentation was made by
+[itzg](https://hub.docker.com/r/itzg/minecraft-server).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -34,7 +42,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop minecraft
 docker rm minecraft

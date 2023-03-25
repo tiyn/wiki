@@ -1,9 +1,16 @@
 # wallabag - wallabag
 
+This is a [Docker](/wiki/docker.md) container for a [wallabag](../wallabag.md)
+server.
 The Server consists of 3 Docker containers, one is the wallabag main server, one
 is a database and one a redis instance.
 In addition to the main container you need to connect a [mariadb container](./mariadb.md)
 and a [redis container](./redis.md) to it.
+
+## Set-up
+
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -45,7 +52,7 @@ Set the following ports in the `ports:` section.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker pull wallabag/wallabag:latest
@@ -80,12 +87,6 @@ services:
         - "8082:80"
     volumes:
       - wallabag_wallabag:/var/www/wallabag/web/assets/images
-  db:
-    image: mariadb
-    environment:
-      - MYSQL_ROOT_PASSWORD=wallaroot
-    volumes:
-      - /opt/wallabag/data:/var/lib/mysql
   db:
     image: mariadb
     environment:

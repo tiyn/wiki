@@ -14,20 +14,30 @@ After that follow the instructions and fill in the fields to your liking.
 
 ### Enlarging disk of a VM
 
+Make sure there is enough disk space available.
+For further information see [the disk management article](./disk-management.md)
+
 SSH into Proxmox.
 Enlarge a disk by using:
 
-```shell
+```sh
 qm resize <vmid> <vm-disk-to-enlarge> <size>
 ```
 
-For example (100G is 100GibiByte):
+For example if you want to the disk 100 by 100G (100GibiByte):
 
-```shell
+```sh
 qm resize 100 ide0 +100G
 ```
 
-After that grow the filesystem as described in [the disk-management article](disk-management.md).
+Afterwards the partition of the VM needs to be enlarged.
+For that
+[the disk management article](/wiki/linux/disk-management.md#grow-non-lvm-partition)
+can be used for non-LVM paritions.
+Alternatively [the LVM article](/wiki/linux/lvm.md#increase-size-of-a-logical-volume)
+can be referenced for LVM systems.
+After that grow the filesystem in the vm as described in
+[the disk management article](/wiki/linux/disk-management.md#growing-a-file-system).
 
 ## Remove local-lvm and add its size to local
 
@@ -43,19 +53,19 @@ Finally extend the filesystem `resize2fs /dev/mapper/pve-root`.
 
 On the host system find the usb you're looking to pass through with
 
-```shell
+```sh
 lsusb
 ```
 
 Then assign it to the vm using
 
-```shell
+```sh
 qm set <vm-id> -usb<id-to-set> host=<id-of-the-usb>
 ```
 
 for example
 
-```shell
+```sh
 qm set 101 -usb0 host=aaaa:8816
 ```
 
@@ -74,7 +84,7 @@ To increase it navigate to the webinterface and click on Datacenter and Storage
 select the storage you want to save your backup to and change `Max Backups` to
 your liking.
 
-## Bugfixing
+## Troubleshooting
 
 ### No internet after mainboard swap
 

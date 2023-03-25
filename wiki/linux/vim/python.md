@@ -1,8 +1,8 @@
 # Python in Vim
 
 Python is a common programming language.
-In this entry we will focus on making vim support python and use vim as an ide
-for it.
+In this article we will focus on making vim support python and use vim as an
+ide for it.
 
 ## Autocompletion
 

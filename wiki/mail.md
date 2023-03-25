@@ -1,12 +1,15 @@
-# Mail
+# E-mail
 
-Mail is not dead yet.
-But most of the programs used to interact with them are total trash.
-Nevertheless there are some really nice pieces of software to check out.
+E-mail is a method of exchanging electronic messages.
+
+## Setup
+
+E-mail usually consists of a [server](#server) and a [client](#client).
 
 ## Server
 
-If you want to host your own mail-server there are solutions with and without interfaces.
+If you want to host your own mail-server there are solutions with and without
+interfaces.
 
 - [Dovecot](./docker-images/tvial_-_docker-mailserver.md) is a simple dockerized
   mail server that has no interface.

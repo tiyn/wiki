@@ -1,14 +1,21 @@
 # iv-org - invidious
 
-The official container and documentation was made by [invidious](https://github.com/iv-org/invidious).
+This is a [Docker](/wiki/docker.md) container for [Invidious](../invidious.md).
+The official container and documentation was made by
+[invidious](https://github.com/iv-org/invidious).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 There is no official pre-build on docker-hub.
+In addition to the main container you need to connect a
+[postgres container](./postgres.md) to it.
 
-## Set-up for building process
+## Set-up
 
 First of all create a folder for your `rebuild.sh`.
-After that clone invidious from github into a folder within the just created folder.
-Set the variables, volumes and ports according and run the `rebuild.sh`
+After that clone invidious from
+[github](https://github.com/iv-org/invidious) into a folder within the
+just created folder.
+You can find the `docker-compose.yml` in the cloned directory.
+Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 ## Environment-variables
 
@@ -41,11 +48,12 @@ Set the following ports in the `ports:` section.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 cd invidious
 docker-compose down
-docker pull postgres:10
+docker pull quay.io/invidious/invidious:latest
+docker pull docker.io/library/postgres:14
 docker-compose up -d
 cd ..
 ```
@@ -55,8 +63,43 @@ cd ..
 ```yml
 version: "3"
 services:
-  postgres:
-    image: postgres:10
+
+  invidious:
+    image: quay.io/invidious/invidious:latest
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      # Please read the following file for a comprehensive list of all available
+      # configuration options and their associated syntax:
+      # https://github.com/iv-org/invidious/blob/master/config/config.example.yml
+      INVIDIOUS_CONFIG: |
+        db:
+          dbname: invidious
+          user: kemal
+          password: kemal
+          host: invidious-db
+          port: 5432
+        check_tables: true
+        # external_port:
+        domain: sub.domain.tld
+        https_only: false
+        popular_enabled: false
+        #registration_enabled: false
+        # statistics_enabled: false
+        default_user_preferences:
+            dark_mode: true
+            default_home: "Subscriptions"
+    healthcheck:
+      test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
+      interval: 30m
+      timeout: 5m
+      retries: 3
+    depends_on:
+      - invidious-db
+
+  invidious-db:
+    image: docker.io/library/postgres:14
     restart: unless-stopped
     volumes:
       - postgresdata:/var/lib/postgresql/data
@@ -64,36 +107,10 @@ services:
       - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
     environment:
       POSTGRES_DB: invidious
-      POSTGRES_PASSWORD: kemal
       POSTGRES_USER: kemal
+      POSTGRES_PASSWORD: kemal
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "postgres"]
-  invidious:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-    restart: unless-stopped
-    ports:
-      - "3000:3000"
-    environment:
-      # Adapted from ./config/config.yml
-      INVIDIOUS_CONFIG: |
-        channel_threads: 1
-        check_tables: true
-        feed_threads: 1
-        db:
-          user: kemal
-          password: kemal
-          host: postgres
-          port: 5432
-          dbname: invidious
-        full_refresh: false
-        https_only: false
-        registration_enabled: false
-        popular_enabled: false
-        domain: yt.home.server
-    depends_on:
-      - postgres
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
 
 volumes:
   postgresdata:

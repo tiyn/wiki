@@ -1,6 +1,13 @@
 # prologic - gopherproxy
 
-The official container and documentation was made by [prologic](https://hub.docker.com/r/prologic/gopherproxy).
+This is a [Docker](/wiki/docker.md) container for a gopher to http proxy.
+The official container and documentation was made by
+[prologic](https://hub.docker.com/r/prologic/gopherproxy).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Ports
 
@@ -20,7 +27,7 @@ There are some special variables to set.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop gopheroverhttp
 docker rm gopheroverhttp

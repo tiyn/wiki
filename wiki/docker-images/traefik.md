@@ -1,13 +1,17 @@
 # traefik
 
+This is a [Docker](/wiki/docker.md) container for a traefik edge router.
 The official container and documentation was made by
 [traefik](https://hub.docker.com/_/traefik).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up for config files
+## Set-up
 
-First of all create a folder for your `rebuild.sh` and `docker-compose.yml`.
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 In that folder create the directories `data/config`.
+Place the files `data/traefik.yml` and `data/config/dynamic.yml` in the
+according directories.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -56,7 +60,7 @@ The last line is to add authentication.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker-compose down
 docker pull traefik:v2.4
@@ -180,6 +184,7 @@ To create a reverse proxy from a docker container add the following lines in the
 
 ```yml
   - "traefik.enable=true"
+  - "traefik.docker.network=proxy"
   - "traefik.http.routers.<service name>-secure.entrypoints=websecure"
   - "traefik.http.routers.<service name>-secure.rule=Host(`<subdomain>.<domain>`)"
   - "traefik.http.routers.<service name>-secure.service=<service name>"
@@ -187,3 +192,23 @@ To create a reverse proxy from a docker container add the following lines in the
 ```
 
 This configuration automatically redirects http to https.
+When using this configuration the port specified in the latter lines can be
+ommitted in the `ports:` section if not used directly.
+This ensures access only via https and restricts access via ip and port.
+
+## Setup Mailserver
+
+If setting up a
+[docker-mailserver by mailserver](./mailserver_-_docker-mailserver.md) no http
+or https is needed.
+But a certificate for the mailserver is needed regardless.
+In this case add the following lines to the file `docker-compose.yml` in the
+`services:` section and adapt them.
+
+```yml
+  whoami:
+    image: docker.io/traefik/whoami:latest
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`<subdomain>.<domain>`)"
+```

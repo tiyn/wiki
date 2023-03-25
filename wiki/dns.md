@@ -4,9 +4,12 @@ The Domain Name System (DNS) is a naming system for computers or other resources
 connected to a network.
 It associates various information with domain names.
 
-## Server
+## Software suites for DNS interaction
 
-A server can be setup via docker with the [ventz image](./docker-images/ventz_-_bind.md)
+The following list shows possible DNS software suites that can be used to set
+up a DNS server.
+
+- [Bind](./bind.md) is a open source package for setting up DNS
 
 ## Records
 

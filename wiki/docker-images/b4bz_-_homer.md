@@ -1,6 +1,15 @@
 # b4bz - homer
 
+This is a [Docker](/wiki/docker.md) container for a Homer static site.
 The official container and documentation was made by [b4bz](https://hub.docker.com/r/b4bz/homer).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Run `./rebuild.sh` afterwards to create the volumes.
+Place the file `config.yml` in the `homer` docker volume and change it to your
+needs.
+After that rerun `./rebuild.sh` to make update your config.
 
 ## Volumes
 
@@ -20,7 +29,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop homer
 docker rm homer

@@ -1,13 +1,11 @@
 # SC-IM
 
-`sc-im` is a program to view and edit tables especially in csv-format.
+[sc-im](https://github.com/andmarti1424/sc-im) is a program to view and edit tables especially in csv-format.
 
 ## Setup
 
-### Arch-Linux
-
-- `yay -S sc-im` - Install sc-im
-- `sc-im <insert-filename>.csv` - Edit files
+Sc-im can be installed via [github](https://github.com/andmarti1424/sc-im).
+Some distributions also feature the `sc-im` package.
 
 ## Usage
 
@@ -18,7 +16,7 @@ You can delete (multiple (for example `3`) rows `dr`/`d3r`, yank rows `yr`/`y3r`
 You can delete (multiple (for example `3`) columns `dc`/`d3c`, yank rows `yc`/`y3c`.
 You can insert new rows `ir`/`i3r` or columns `ic`/`i3c`.
 
-### Special numbers
+### Calculations and Functions
 
 There are some functions you can use when in numbers mode.
 

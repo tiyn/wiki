@@ -1,6 +1,13 @@
 # olbat - cupsd
 
-The official container and documentation was made by [olbat](https://hub.docker.com/r/olbat/cupsd).
+This is a [Docker](/wiki/docker.md) container for a [Cups](../cups.md) server.
+The official container and documentation was made by
+[olbat](https://hub.docker.com/r/olbat/cupsd).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
 
@@ -25,7 +32,7 @@ The default username is `print`, the default password is `print`.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop cups
 docker rm cups

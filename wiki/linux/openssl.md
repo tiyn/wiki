@@ -3,7 +3,9 @@
 [OpenSSL](https://www.openssl.org) is a software library for secure
 communication over computer networks.
 
-## Creating a key pair
+## Usage
+
+### Creating a key pair
 
 As described by [dreikanter](https://gist.github.com/dreikanter/c7e85598664901afae03fedff308736b)
 you can create and save a pretty secure private key to `private.key` with
@@ -11,7 +13,7 @@ you can create and save a pretty secure private key to `private.key` with
 After that run `openssl rsa -in private.key -pubout -out public.key` to save the
 according public key to `public.key`.
 
-## Encrypting and decrypting files
+### Encrypting and decrypting files
 
 [Dreikanter](https://gist.github.com/dreikanter/c7e85598664901afae03fedff308736b)
 describes to encrypt larger files with symmetric encryption and encrypt the key

@@ -1,15 +1,18 @@
 # cloudrac3r - bibliogram
 
-The official container and documentation was made by [cloudrac3r](https://github.com/cloudrac3r/bibliogram).
+This is a [Docker](/wiki/docker.md) container for the alternative Instagram
+frontend [Bibliogram](../bibliogram.md).
+The official container and documentation was made by
+[cloudrac3r](https://github.com/cloudrac3r/bibliogram).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up for building process
+## Set-up
 
 First of all create a folder for your `rebuild.sh`.
-After that clone bibliogram from [sr.ht](https://sr.ht/~cadence/bibliogram/)
-into a folder within the just created folder.
-Set the variables, volumes and ports in the `docker-compose.yml` in the cloned
-repository according and run the `rebuild.sh`
+After that clone bibliogram from [sr.ht](https://sr.ht/~cadence/bibliogram/) into
+a folder within the just created folder.
+You can find the `docker-compose.yml` in the cloned directory.
+Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 ## Volumes
 
@@ -29,7 +32,7 @@ Set the following ports in the `ports:` section.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 cd /root/docker/bibliogram/bibliogram
 docker-compose down

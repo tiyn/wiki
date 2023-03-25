@@ -1,6 +1,14 @@
 # teamspeak
 
-The official container and documentation was made by [teamspeak](https://hub.docker.com/_/teamspeak).
+This is a [Docker](/wiki/docker.md) container for a
+[teamspeak3](../teamspeak3.md) server.
+The official container and documentation was made by
+[teamspeak](https://hub.docker.com/_/teamspeak).
+
+## Set-up
+
+Create the file `rebuild.sh`.
+Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Environment-variables
 
@@ -30,7 +38,7 @@ Set the following ports with the -p tag.
 
 ## rebuild.sh
 
-```shell
+```sh
 #!/bin/sh
 docker stop teamspeak3
 docker rm teamspeak3
