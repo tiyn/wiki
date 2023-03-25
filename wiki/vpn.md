@@ -11,27 +11,51 @@ VPNs feature a server and a client side.
 [OpenVPN](https://openvpn.net) is a free software to create a VPN via an
 encrypted TLS connection.
 
-### Set up
+### Set up (OVPN)
 
 In the following sections the different set ups of OpenVPN usages are described.
 
-#### Server
+#### Server (OVPN)
 
 The software can be set up via [Docker](/wiki/docker.md) with the
 [kylemanna image](./docker-images/kylemanna_-_openvpn.md).
 Additionally to this a client is needed on the system that need access to the
 server software.
 
-#### Client
+#### Client (OVPN)
 
 OpenVPN clients can be found for many devices.
 For Android for example there is
 [OpenVPN for Android in the F-Droid store](https://f-droid.org/de/packages/de.blinkt.openvpn/).
 For most linux distributions there is a package called `openvpn`.
 
-#### Proxy
+#### Proxy (OVPN)
 
 For OpenVPN a proxy acts as an imntermediary between the system communicating
 with the proxy and the OpenVPN server.
 A proxy can be set up via [Docker](/wiki/docker.md) with the
 [jonohill image](./docker-images/jonohill_-_docker-openvpn-proxy.md).
+
+## WireGuard
+
+[WireGuard](https://www.wireguard.com/) is a free and open-source software that
+implements encrypted VPNs.
+It was designed to be especially fast and secure.
+
+### Setup (WG)
+
+In the following sections the different set ups of WireGuard usages are described.
+
+#### Server (WG)
+
+The software can be set up via [Docker](/wiki/docker.md) with the
+[linuxserver image](/wiki/docker-images/linuxserver_-_wireguard.md).
+Additionally to this a [client](#client-wg) is needed on the system that
+accesses the server.
+
+#### Client (WG)
+
+WireGuard clients can be found for many devices.
+For Android for example there is
+[Wireguard for Android in the F-Droid store](https://f-droid.org/de/packages/com.wireguard.android/).
+For most linux distributions there is a package called `wireguard`.
