@@ -8,7 +8,33 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs.
+
+Then run the following commands.
+Change `<VPN.SERVERNAME.COM>` to the URL the VPN is accessible at.
+If not already done set a port forward or something similar.
+
+```sh
+docker volume create --name openvpn
+docker run -v openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://<VPN.SERVERNAME.COM>
+docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
+```
+
+Afterwards run `./rebuild.sh`.
+
+## Usage
+
+### Create Certificates
+
+Each device that connects to the [OpenVPN](/wiki/vpn.md#openvpn) server should
+have a certificate to connect by.
+Create a certificate and retrieve it by running the following commands.
+Change all occurences of `<CLIENTNAME>` to the name of the client.
+
+```sh
+docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full <CLIENTNAME> nopass
+docker run -v openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <CLIENTNAME> > <CLIENTNAME>.ovpn
+```
 
 ## Volumes
 
