@@ -8,7 +8,7 @@ For Nvidia GPUs to work install the `nvidia` and the `nvidia-utils` package.
 If you want to easily configure the monitors as described in a later section of
 this file you can also install `nvidia-settings`.
 
-There is no initial setup in for of a `xorg.conf` in `/etc/X11` needed
+There is no initial setup for a `xorg.conf` in `/etc/X11` needed
 (except for a multiple GPU/APU setup).
 
 ### Configuration
