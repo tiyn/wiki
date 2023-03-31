@@ -11,9 +11,11 @@ Create the file `rebuild.sh`.
 Change the settings according to your needs.
 Especially change `<VPN.SERVERNAME.COM>` to the URL the VPN is accessible at.
 If not already done set a port forward or something similar.
-`PEERS` describes the number of configs to create for
+`PEERS` is given the number of configs to create for different
 [clients](/wiki/vpn.md#client-wg).
-It is also possible to give a list of clients to create.
+It is also possible to give a list of clients separated by commas
+(`first,second,third`) to create.
+The following shows the two options.
 Then run `./rebuild.sh`
 
 ## Usage
