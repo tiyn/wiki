@@ -8,6 +8,8 @@ Music and Audiobooks can be obtained by buying the digital files or by
 [extracting them off of a CD](#extract-audio-files-from-cds).
 Podcasts need a so called Podcatcher.
 A Podcatcher is used to subscribe to podcasts and download them automatically.
+For Linux specific music software navigate to the corresponding
+[wiki entry](/wiki/linux/audio.md).
 
 ## Media Software
 
@@ -16,6 +18,9 @@ setup.
 There are differences depending on your preffered software interface.
 
 ### Software for Music/Podcasts/Audiobooks
+
+The following is a list of server software, that is featured in this wiki.
+The corresponding client software is handled in the server softwares wiki entry.
 
 - [Subsonic](./subsonic.md) is a media streamer for music, podcasts and
   audiobooks.

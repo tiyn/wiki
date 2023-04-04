@@ -1,6 +1,8 @@
 # Audio
 
 Audio is an important point in a linux desktop environment
+For non-Linux specific audio software navigate to the corresponding
+[wiki article](/wiki/audio.md).
 
 ## Sound Server
 
@@ -23,3 +25,12 @@ installed.
 Belonging to the latter option noise cancellation can be easily achieved by
 installing [Noisetorch](https://github.com/lawl/NoiseTorch).
 After the installation modify the `Voice Activation Threshhold` to your needs.
+
+## Control Audio from Command Line/by Hotkey
+
+Audio from many different clients can be controlled (started, stopped, skipped)
+using the command line with [PlayerCTL](/wiki/linux/playerctl.md).
+With additional software it can also be used to control audio/music by pressing
+hotkeys.
+This is explained in the
+[PlayerCTL entry](/wiki/linux/playerctl.md#using-hotkeys).
