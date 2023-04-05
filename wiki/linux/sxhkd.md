@@ -41,3 +41,13 @@ entry.
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 ```
+
+### Reload Hotkey Daemon
+
+To reload the configuration file SXHKD needs to be restartet
+It can be useful to [set this on a hotkey](#setting-a-hotkey).
+
+```
+super + shift + x
+    pkill -usr1 -x sxhkd
+```
