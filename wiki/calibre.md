@@ -20,8 +20,16 @@ Preferences for this can be set under `Preferences` and `Saving books to disk`.
 Especially the creation of separate image and metadata files are often of
 interest.
 
-For using or changing of the title, sort title, author or author title check
-[the corresponding entry](#changing-the-default-author-and-title-sort).
+The template defines the path structure of the saved books.
+A simple template that will create the following structure is
+`{author_sort:re( &,;)}/{title}/{authors}_-_{title}`.
+
+```txt
+thomas_schickinger;_angelika_steger/diskrete_strukturen_2/thomas_schickinger_&_angelika_steger_-_diskrete_strukturen_2.pdf
+```
+
+This assumes the sort author names and sort titles are set as described in
+[the following section](#changing-the-default-author-and-title-sort).
 
 ## Changing the Default Author and Title Sort
 
