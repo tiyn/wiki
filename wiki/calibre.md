@@ -39,3 +39,11 @@ Then press `Recalculate all author sort values` for the change to take effect.
 titles.
 Setting `title_series_sorting = 'strictly_alphabetic'` will use the standard
 title and wont make articles of titles suffixes.
+Afterwards select all books, right-click and select `Edit metadata in bulk`
+under `Edit metadata`.
+Then check the box `update title sort` and press `Ok` to update all sort titles.
+
+This entry is based on two posts on mobileread - one regarding the
+[sort author name](https://www.mobileread.com/forums/showthread.php?t=314663)
+and the other regarding the
+[sort title](https://www.mobileread.com/forums/showthread.php?t=249870).
