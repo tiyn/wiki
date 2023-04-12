@@ -59,3 +59,22 @@ WireGuard clients can be found for many devices.
 For Android for example there is
 [Wireguard for Android in the F-Droid store](https://f-droid.org/de/packages/com.wireguard.android/).
 For most linux distributions there is a package called `wireguard`.
+
+### Usage (WG)
+
+Wireguard clients connect to servers by using a `.conf` file.
+For mobile devices often times a QR-code can also be used.
+
+In Linux based operating systems the `.conf` can be placed at
+the path `/etc/wireguard/wg0.conf`.
+Afterwards wireguard can be started and stopped by running the following
+commands.
+
+```
+wg-quick up wg0
+wg-quick down wg0
+```
+
+When using multiple `.conf` files the number behind `wg` can be incremented.
+When starting and stopping wireguard with `wg-quick` the corresponding number
+should be used.
