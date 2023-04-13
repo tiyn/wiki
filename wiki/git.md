@@ -45,8 +45,6 @@ This section addresses various use cases and problems solvable with git.
 There is also an interactive
 [fixup guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
 
-For Linux specific usage refer to the [corresponding entry](git)
-
 ### Ignore files having local changes
 
 If you need to make changes to a file that are local you can run
