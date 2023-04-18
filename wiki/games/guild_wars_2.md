@@ -26,26 +26,19 @@ One option for this is
 
 Download the current version from the
 [releases page](https://github.com/gw2-addon-loader/loader-core/releases).
-Proceed to place the files in the Guild Wars 2 Directory according to the
-installation instruction.
-This files namely include the following:
+Proceed to place the files and folders from the `.zip` archive into the root
+directory of guild wars 2.
 
-- `gw2_root_directory/addonLoader.dll`
-- `gw2_root_directory/d3d11.dll`
-- `gw2_root_directory/dxgi.dll`
-- `gw2_root_directory/bin64/d3d9.dll`
-
-This add-on loader loads both DX9 and DX11 add-ons.
-[d3d9_wrapper](#d3d9wrapper)  is needed for some functionality of the following
-add-ons.
+This add-on loader is capable of loading both DX9 and DX11 add-ons.
+This functionality can be added with [d3d9\_wrapper](#d3d9wrapper).
 The installation of it is therefore recommended.
 
 This add-on does not need to be updated often.
 It only is required when Guild Wars 2 switches its API.
 
-### d3d9_wrapper
+### d3d9\_wrapper
 
-[d3d9_wrapper](https://github.com/gw2-addon-loader/d3d9_wrapper) is a wrapper
+[d3d9\_wrapper](https://github.com/gw2-addon-loader/d3d9_wrapper) is a wrapper
 to the d3d9 API that includes d3d9 loading.
 
 Download the current version from the
@@ -89,17 +82,6 @@ For this download the current version of
 [gw2-arcdps-mechanics-log](https://github.com/knoxfighter/GW2-ArcDPS-Mechanics-Log/releases)
 and move the downloaded `.dll` file without changing its name to
 `gw2_root_directory/addons/arcdps/d3d9_arcdps_mechanics.dll`.
-This extension can be opened via the extensions menu of the original arcdps
-settings.
-
-#### healing_stats
-
-The following is an extension of the arcdps addon that allows easier readability
-of healing.
-For this download the current version of
-[arcdps_healing_stats](https://github.com/Krappa322/arcdps_healing_stats/releases)
-and move the downloaded `.dll` file without changing its name to
-`gw2_root_directory/addons/arcdps/arcdps_healing_stats.dll`.
 This extension can be opened via the extensions menu of the original arcdps
 settings.
 
