@@ -22,5 +22,12 @@ Note that the server has to be changed for different time zones.
 In this case a german time server is used.
 
 ```sh
-ntpdate -q 0.de.pool.ntp.org
+ntpdate ptbtime1.ptb.de
+```
+
+Alternatively the time can be displayed only - without changing the systems
+time - by using the `-q` flag.
+
+```sh
+ntpdate -q ptbtime1.ptb.de
 ```
