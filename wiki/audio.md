@@ -96,6 +96,8 @@ This way you don't have to search for your CDs all the time.
 
 - [Exact Audio Copy](https://www.exactaudiocopy.de) for windows can rip music
   and automatically tag it with the help of a list of databases.
+- [fre:ac](https://freac.org/downloads-mainmenu-33) is a free cross-platform
+  audio converter and CD ripper with support for various popular formats.
 - [metaflac](./linux/flac_(package).md) for linux is a programm
   to edit the tags of [flac](./flac_(codec).md) files from the command line.
   It is bundled in the `flac` package for debian and arch based systems.
