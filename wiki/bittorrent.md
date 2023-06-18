@@ -12,6 +12,8 @@ The list below shows clients with an existing entry in this wiki.
 
 - [Transmission](/wiki/transmission.md) is an easy to use client
 - [qBittorrent](/wiki/qbittorrent.md) is a very feature rich client
+- [CTorrent](http://www.rahul.net/dholmes/ctorrent/) is a command-line utility
+  that can be used as a client.
 
 ## Personal Video Recorders
 
