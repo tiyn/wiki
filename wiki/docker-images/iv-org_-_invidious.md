@@ -34,6 +34,7 @@ docker-compose file.
 | `domain`               | set domain if using a reverse proxy                        |         |
 | `feed_threads`         | number of threads to use for refreshing subscription feeds | `1`     |
 | `full_refresh`         | refresh all videos of a channel when crawled               | `false` |
+| `hmac_key`             | hmac key that is required and needs to be set (randomly)   |         |
 | `https_only`           | use this flag to configure https reverse proxies           | `false` |
 | `popular_enabled`      | enable the popular section                                 | `true`  |
 | `registration_enabled` | enable registration for new users                          | `true`  |
@@ -90,6 +91,7 @@ services:
         default_user_preferences:
             dark_mode: true
             default_home: "Subscriptions"
+        hmac_key: "hmac_key"
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
       interval: 30m
