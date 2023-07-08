@@ -3,10 +3,17 @@
 [Arch Linux](https://archlinux.org/) is a rolling-release, general-purpose
 [Linux](/wiki/linux/linux.md)
 distribution.
-Arch Linux uses the [pacman](./package_manager.md) package manager.
+
+## Package Manager and AUR
+
+Arch Linux uses the
+[pacman](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay) package
+manager.
+An additional repository for user made software exists.
+It is called Arch User Repository (AUR).
 The Arch User Repositories (AUR) features community-made packages that can be
 installed with different
-[package manager that inlcude access to the AUR](/wiki/linux/arch-linux/package_manager.md).
+[package manager for that purpose](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay).
 
 ## Installation
 
@@ -25,12 +32,17 @@ The iso can be written on an USB-stick using the command
 `dd bs=4M if=<path to ISO> of=/dev/sdx conv=fsync oflag=direct status=progress`.
 `<path to ISO>` points the command to the location of the ISO file
 
-## Recommended Practices
+## Usage
+
+The following section describes various ways to use and improve the usage of
+the Arch Linux operating system.
+
+### Recommended Practices
 
 The following articles describe steps to undertake to harden the system security
 or setups and installation that are recommended for Arch Linux.
 
-## Enable Microcode Updates
+#### Enable Microcode Updates
 
 The microcode of Intel and AMD CPUs can be automatically updated by installing
 the `amd-ucode` or `intel-ucode` package depending on your CPU.

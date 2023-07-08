@@ -14,8 +14,14 @@ Some distributions also feature the `vifm` package.
 
 This section is based on a
 [video by Distrotube](https://www.youtube.com/watch?v=qgxsduCO1pE).
-First you need to install [Ueberzug](https://github.com/seebye/ueberzug)
-on your system.
+First you need to install Überzug on your system.
+Überzug was provided by [seebye](https://github.com/seebye/ueberzug) but this
+project is now unmaintained.
+An alternative to using this project is
+[Überzug++](https://github.com/jstkdng/ueberzugpp) that can be used as a drop-in
+alternative.
+It can be installed by the
+[Arch User Repository package `ueberzugpp`](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay).
 After that you need to add 2 files to your path:
 
 - vifmimg
