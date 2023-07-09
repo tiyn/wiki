@@ -12,8 +12,9 @@ Some distributions also feature the `vifm` package.
 
 #### Image Previews with Ueberzug
 
-This section is based on a
+This section is based on a now outdated
 [video by Distrotube](https://www.youtube.com/watch?v=qgxsduCO1pE).
+This is the updated version that is currently usable.
 First you need to install Überzug on your system.
 Überzug was provided by [seebye](https://github.com/seebye/ueberzug) but this
 project is now unmaintained.
@@ -22,7 +23,8 @@ An alternative to using this project is
 alternative.
 It can be installed by the
 [Arch User Repository package `ueberzugpp`](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay).
-After that you need to add 2 files to your path:
+After that you need to add 2 files to your path which can be found on
+[thimc' Repository](https://github.com/thimc/vifmimg):
 
 - vifmimg
 - vifmrun
@@ -32,199 +34,127 @@ If you want to preview files vifmrun you will start vifmrun instead of vifm.
 vifmrun:
 
 ```sh
-#!/usr/bin/env bash
+#!/bin/sh
 
-# by cirala, checkout github.com/cirala/vifmimg
-
-export FIFO_UEBERZUG="/tmp/vifm-ueberzug-${PPID}"
-
-if [ ! -f "/usr/bin/ueberzug" ]; then
-        vifm
-        exit
+if [ -z "$(command -v vifm)" ]; then
+	printf "vifm isn't installed on your system!\n"
+	exit 1
+elif [ -z "$(command -v ueberzug)" ]; then
+	exec vifm "$@"
+else
+	cleanup() {
+		exec 3>&-
+	    rm "$FIFO_UEBERZUG"
+	}
+	[ ! -d "$HOME/.cache/vifm" ] && mkdir -p "$HOME/.cache/vifm"
+	export FIFO_UEBERZUG="$HOME/.cache/vifm/ueberzug-${$}"
+	mkfifo "$FIFO_UEBERZUG"
+	ueberzug layer -s <"$FIFO_UEBERZUG" -p json &
+	exec 3>"$FIFO_UEBERZUG"
+	trap cleanup EXIT
+	vifm "$@" 3>&-
+	vifmimg clear
 fi
-
-function cleanup {
-    rm "$FIFO_UEBERZUG" 2>/dev/null
-    pkill -P $$ 2>/dev/null
-}
-pkill -P $$ 2>/dev/null
-rm "$FIFO_UEBERZUG" 2>/dev/null
-mkfifo "$FIFO_UEBERZUG" >/dev/null
-trap cleanup EXIT 2>/dev/null
-tail --follow "$FIFO_UEBERZUG" | ueberzug layer --silent --parser bash 2>&1 >/dev/null &
-
-vifm "$@"
-cleanup
 ```
 
 vifmimg:
 
 ```sh
-#!/usr/bin/env bash
-readonly ID_PREVIEW="preview"
+#!/bin/sh
 
-#PLAY_GIF="yes"
-# By enabling this option the GIF will be animated, by leaving it commented like it
-# is now will make the gif previews behave the same way as video previews.
+PCACHE="$HOME/.cache/vifm/thumbnail.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$PWD/$6")" | sha256sum)"
+export PCACHE="${PCACHE%% *}"
 
-#AUTO_REMOVE="yes"
-# By enabling this option the script will remove the preview file after it is drawn
-# and by doing so the preview will always be up-to-date with the file.
-# This however, requires more CPU and therefore affects the overall performance.
-
-# The messy code below is for moving pages in pdf files in the vifm file preview by
-# utilizing the < and > keys which will be bound to `vifmimg inc` or `vifmimg dec`.
-# by cirala, checkout github.com/cirala/vifmimg
-
-PDF_PAGE_CONFIG="$HOME/.config/vifm/vifmimgpdfpage"
-PDF_FILE_CONFIG="$HOME/.config/vifm/vifmimgpdffile"
-PDF_PAGE=1
-PDF_FILE=""
-# Initialize the variables and required files
-[[ -f "$PDF_PAGE_CONFIG" ]] && PDF_PAGE=$(cat $PDF_PAGE_CONFIG) || touch $PDF_PAGE_CONFIG
-[[ -f "$PDF_FILE_CONFIG" ]] && PDF_FILE=$(cat $PDF_FILE_CONFIG) || touch $PDF_FILE_CONFIG
-
-
-# Create temporary working directory if the directory structure doesn't exist
-if [[ ! -d "/tmp$PWD/" ]]; then
-    mkdir -p "/tmp$PWD/"
-fi
-
-function inc() {
-        VAL="$(cat $PDF_PAGE_CONFIG)"
-        echo "$(expr $VAL + 1)" > $PDF_PAGE_CONFIG
+pclear() {
+	printf '{"action": "remove", "identifier": "vifm-preview"}\n' > "$FIFO_UEBERZUG"
 }
 
-function dec() {
-        VAL="$(cat $PDF_PAGE_CONFIG)"
-        echo "$(expr $VAL - 1)" > $PDF_PAGE_CONFIG
-        if [[ $VAL -le 0 ]]; then
-                echo 0 > $PDF_PAGE_CONFIG
-        fi
+image() {
+		printf '{"action": "add", "identifier": "vifm-preview", "x": "%s", "y": "%s", "width": "%s", "height": "%s", "scaler": "contain", "path": "%s"}\n' "$2" "$3" "$4" "$5" "$6" > "$FIFO_UEBERZUG"
 }
 
-function previewclear() {
-    declare -p -A cmd=([action]=remove [identifier]="$ID_PREVIEW") \
-        > "$FIFO_UEBERZUG"
-}
-
-function fileclean() {
-    if [[ -f "/tmp$PWD/$6.png" ]]; then
-        rm -f "/tmp$PWD/$6.png"
-    elif  [[ -d "/tmp$PWD/$6/" ]]; then
-        rm -rf "/tmp$PWD/$6/"
-    fi
-}
-
-function preview() {
-    declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-        [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [path]="$PWD/$6") \
-        > "$FIFO_UEBERZUG"
-}
-
-function previewvideo() {
-    if [[ ! -f "/tmp$PWD/$6.png" ]]; then
-        ffmpegthumbnailer -i "$PWD/$6" -o "/tmp$PWD/$6.png" -s 0 -q 10
-    fi
-    declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-        [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [path]="/tmp$PWD/$6.png") \
-        > "$FIFO_UEBERZUG"
-}
-
-function previewepub() {
-    if [[ ! -f "/tmp$PWD/$6.png" ]]; then
-        epub-thumbnailer "$6" "/tmp$PWD/$6.png" 1024
-    fi
-    declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-        [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [path]="/tmp$PWD/$6.png") \
-        > "$FIFO_UEBERZUG"
-}
-
-function  previewaudio() {
-  if [[ ! -f "/tmp${PWD}/$6.png" ]]; then
-    ffmpeg -i "$6" "/tmp${PWD}/$6.png" -y &> /dev/null
-  fi
-  declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-                     [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-                     [path]="/tmp${PWD}/$6.png") \
-    > "$FIFO_UEBERZUG"
-}
-
-function previewgif() {
-    if [[ ! -d "/tmp$PWD/$6/" ]]; then
-        mkdir -p "/tmp$PWD/$6/"
-        convert -coalesce "$PWD/$6" "/tmp$PWD/$6/$6.png"
-    fi
-    if [[ ! -z "$PLAY_GIF" ]]; then
-        for frame in $(ls -1 /tmp$PWD/$6/$6*.png | sort -V); do
-            declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-                [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-                [path]="$frame") \
-                > "$FIFO_UEBERZUG"
-            # Sleep between frames to make the animation smooth.
-            sleep .07
-        done
-    else
-            declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-                [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-                [path]="/tmp$PWD/$6/$6-0.png") \
-                > "$FIFO_UEBERZUG"
-    fi
-}
-
-function previewpdf() {
-    if [[ ! "$6" == "$PDF_FILE" ]]; then
-        PDF_PAGE=1
-        echo 1 > $PDF_PAGE_CONFIG
-        rm -f "/tmp$PWD/$6.png"
-    fi
-
-    if [[ ! "$PDF_PAGE" == "1" ]] && [[ -f "/tmp$PWD/$6.png" ]]; then
-        rm -f "/tmp$PWD/$6.png"
-    fi
-
-    if [[ ! -f "/tmp$PWD/$6.png" ]]; then
-        pdftoppm -png -f $PDF_PAGE -singlefile "$6" "/tmp$PWD/$6"
-    fi
-    echo "$6" > $PDF_FILE_CONFIG
-
-    declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-        [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [path]="/tmp$PWD/$6.png") \
-        > "$FIFO_UEBERZUG"
-}
-
-
-function previewmagick() {
-    if [[ ! -f "/tmp$PWD/$6.png" ]]; then
-        convert -thumbnail $(identify -format "%wx%h" "$6") "$PWD/$6" "/tmp$PWD/$6.png"
-    fi
-    declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-        [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [path]="/tmp$PWD/$6.png") \
-        > "$FIFO_UEBERZUG"
-}
-
-
-
-function main() {
+main() {
     case "$1" in
-        "inc") inc "$@" ;;
-        "dec") dec "$@" ;;
-        "clear") previewclear "$@" ;;
-        "clean") fileclean "$@" ;;
-        "draw") preview "$@" ;;
-        "videopreview") previewvideo "$@" ;;
-        "epubpreview") previewepub "$@" ;;
-        "gifpreview") previewgif "$@" ;;
-        "pdfpreview") previewpdf "$@" ;;
-        "magickpreview") previewmagick "$@" ;;
-        "audiopreview") previewaudio "$@" ;;
-        "*") echo "Unknown command: '$@'" ;;
+        "clear")
+			pclear "$@"
+			;;
+        "draw")
+			FILE="$PWD/$6"
+			image "$1" "$2" "$3" "$4" "$5" "$FILE"
+			;;
+        "video")
+			[ ! -f "$PCACHE" ] && \
+				ffmpegthumbnailer -i "$6" -o "${PCACHE}.jpg" -s 0 -q 5
+			image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
+			;;
+        "epub")
+			[ ! -f "$PCACHE" ] && \
+				epub-thumbnailer "$6" "$PCACHE" 1024
+			image "$1" "$2" "$3" "$4" "$5" "$PCACHE"
+			;;
+        "pdf")
+			[ ! -f "${PCACHE}.jpg" ] && \
+				pdftoppm -jpeg -f 1 -singlefile "$6" "$PCACHE"
+			image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
+			;;
+        "djvu")
+			[ ! -f "${PCACHE}.jpg" ] && \
+				ddjvu -format=tiff -quality=90 -page=1 "$6" "$PCACHE.jpg"
+			image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
+			;;
+        "audio")
+			[ ! -f "${PCACHE}.jpg" ] && \
+				ffmpeg -hide_banner -i "$6" "${PCACHE}.jpg" -y >/dev/null
+			image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
+			;;
+        "font")
+			[ ! -f "${PCACHE}.jpg" ] && \
+				fontpreview -i "$6" -o "${PCACHE}.jpg"
+			image "$1" "$2" "$3" "$4" "$5" "${PCACHE}.jpg"
+			;;
+        *)
     esac
 }
 main "$@"
+```
+
+Additionally the following lines can be inserted into the configuration of vifm
+`~/.config/vifm/vifmrc` as needed.
+They provide previews for various possible types of file extensions.
+
+```txt
+fileviewer *.pdf
+    \ vifmimg pdf %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer *.djvu
+    \ vifmimg djvu %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer *.epub
+    \ vifmimg epub %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <video/*>
+    \ vifmimg video %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <image/*>
+    \ vifmimg draw %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <audio/*>
+    \ vifmimg audio %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
+
+fileviewer <font/*>
+    \ vifmimg font %px %py %pw %ph %c
+    \ %pc
+    \ vifmimg clear
 ```
