@@ -1,6 +1,7 @@
 # Todoman
 
-[todoman](https://github.com/pimutils/todoman) is a todolist you can use in your terminal.
+[todoman](https://github.com/pimutils/todoman) is a todolist you can use in your
+[terminal](/wiki/system_console.md).
 You can sync it using [vdirsyncer](vdirsyncer.md)
 
 ## Setup

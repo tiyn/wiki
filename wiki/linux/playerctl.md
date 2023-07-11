@@ -32,6 +32,6 @@ playerctl previous
 ## Using Hotkeys
 
 Hotkeys can be more accessible than typing the commands to start or stop music
-in the terminal.
+in the [terminal](/wiki/system_console.md).
 With [SXHKD](/wiki/linux/sxhkd.md#setting-a-hotkey) commands from the CLI can
 be set to a hotkey.

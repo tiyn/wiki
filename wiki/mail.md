@@ -20,5 +20,5 @@ If you don't have a built-in web interface for your mail-server you need some
 software to access your mails.
 And even if you have it can be useful to keep your mails synced locally on your pc.
 
-- [Neomutt](linux/neomutt.md) is a terminal-based mail client for linux, that
-has a simple interface.
+- [Neomutt](linux/neomutt.md) is a [terminal-based](/wiki/system_console.md)
+  mail client for linux, that has a simple interface.

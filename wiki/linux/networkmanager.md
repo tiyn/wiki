@@ -7,7 +7,8 @@ networks by providing options for various configuration.
 
 NetworkManager can be installed with the `networkmanager` package on most linux
 distributions which provides daemon aswell as `nmcli` a command line interface
-and `nmtui` a terminal user interface for configuration.
+and `nmtui` a [terminal](/wiki/system_console.md) user interface for
+configuration.
 Additionally `nm-connection-editor` can be installed for a graphical user
 interface.
 

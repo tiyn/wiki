@@ -3,28 +3,32 @@
 [Firefox](https://www.mozilla.org/en-US/Firefox) is a free and open-source web
 browser.
 
-## Telemetry
-
-Telemetry is the remote measurement and transmission of data.
-To change the telemetry of Firefox navigate to `about:telemetry` and click the
-options to toggle between enabled and disabled.
-
 ## Configuration
 
 Firefox has many possible settings and precerences.
 This section addresses possible settings and preferences for specific use cases.
 
-### Scrolling
+### Telemetry
+
+Telemetry is the remote measurement and transmission of data.
+To change the telemetry of Firefox navigate to `about:telemetry` and click the
+options to toggle between enabled and disabled.
+
+### Enable/Disable Scrolling
 
 On Linux distributions auto scroll is disabled by default.
 This means that you cant click the middle mouse button to use it for scrolling.
 To enable it go into the preferences and check `Use autoscrolling`.
 
-### Sponsorings
+### Enable/Disable Sponsorings
 
 Sponsorings are embedded ads in Firefox.
 After navigating to `about:config` enabling and disabling of sponsorings can be done at
 `browser.newtabpage.activity-stream.showSponsored`.
+
+## Usage
+
+The following section addresses different uses and add-ons of Firefox.
 
 ### Compact Mode
 

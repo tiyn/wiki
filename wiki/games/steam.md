@@ -87,8 +87,8 @@ It will display the list of games inside the wishlist.
 Identify the game that has been removed and is not shown in the wishlist
 anymore.
 Remember the `appid` of the game
-Then run the following command inside the console and change `<appid>`
-accordingly.
+Then run the following command inside the [console](/wiki/system_console.md) and
+change `<appid>` accordingly.
 
 ```js
 $J.post( g_strWishlistBaseURL + 'remove/', {

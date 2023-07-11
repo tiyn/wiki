@@ -9,7 +9,7 @@ Notable works include `dwm` and `dmenu`.
 - dwm is a window manager
 - ii is an IRC client
 - slock is a screen locker
-- st is a terminal
+- st is a [terminal](/wiki/system_console.md)
 
 ## Setup
 

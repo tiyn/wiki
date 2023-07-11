@@ -1,6 +1,6 @@
 # NeoMutt
 
-Neomutt is a mail program that runs in your terminal.
+Neomutt is a mail program that runs in your [terminal](/wiki/system_console.md).
 It can be easily configured using mutt-wizard.
 
 ## Setup
