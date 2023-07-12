@@ -51,7 +51,7 @@ They can be removed and configured under `about:config`.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/Firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
-  usage of [a VPN proxy](/wiki/vpn.md#proxy).
+  usage of [a VPN proxy](/wiki/vpn.md#openvpn).
 - [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
   bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
@@ -70,6 +70,9 @@ They can be removed and configured under `about:config`.
 - [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
   skips YouTube video sponsors automatically, works with
   [invidious](./invidious.md) too.
+- [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is a userscript
+  manager that can be used to bypass
+  [YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass).
 - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.
