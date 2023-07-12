@@ -52,6 +52,9 @@ They can be removed and configured under `about:config`.
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
   usage of [a VPN proxy](/wiki/vpn.md#openvpn).
+  - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
+    opens tabs and websites, that are not already managed by
+    `Firefox Multi-Account Containers` in a new container.
 - [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
   bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
@@ -71,11 +74,11 @@ They can be removed and configured under `about:config`.
   skips YouTube video sponsors automatically, works with
   [invidious](./invidious.md) too.
 - [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is a userscript
-  manager that can be used to bypass
-  [YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass).
-- [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
-  opens tabs and websites, that are not already managed by
-  `Firefox Multi-Account Containers` in a new container.
+  manager that can be used for the following tasks:
+  - [Bypass YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass)
+  - [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/)
+    [search results](/wiki/search_engine.md)
+  - [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
 - [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
   shows tabs like a tree. This is especially useful if many tabs are used.
 - [uBlock Origin](https://addons.mozilla.org/en-GB/Firefox/addon/ublock-origin)
