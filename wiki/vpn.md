@@ -41,6 +41,9 @@ A proxy can be set up via [Docker](/wiki/docker.md) with the
 [WireGuard](https://www.wireguard.com/) is a free and open-source software that
 implements encrypted VPNs.
 It was designed to be especially fast and secure.
+This section including its subsections - especially the [usage](#usage-wg) is
+based on an extensive guide on WireGuard by
+[DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04#step-9-connecting-the-wireguard-peer-to-the-tunnel).
 
 ### Setup (WG)
 
