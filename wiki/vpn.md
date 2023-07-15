@@ -58,7 +58,7 @@ accesses the server.
 WireGuard clients can be found for many devices.
 For Android for example there is
 [Wireguard for Android in the F-Droid store](https://f-droid.org/de/packages/com.wireguard.android/).
-For most linux distributions there is a package called `wireguard`.
+For most linux distributions there is a package called `wireguard-tools`.
 
 ### Usage (WG)
 
@@ -78,3 +78,5 @@ wg-quick down wg0
 When using multiple `.conf` files the number behind `wg` can be incremented.
 When starting and stopping wireguard with `wg-quick` the corresponding number
 should be used.
+Alternatively also other names not including `wg` can be used.
+The term `wg0` the incremented version of it has to be changed accordingly then.
