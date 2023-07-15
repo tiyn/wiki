@@ -80,3 +80,18 @@ When starting and stopping wireguard with `wg-quick` the corresponding number
 should be used.
 Alternatively also other names not including `wg` can be used.
 The term `wg0` the incremented version of it has to be changed accordingly then.
+
+### Troubleshooting (WG)
+
+This section addresses various errors and ways how to troubleshoot them.
+
+#### Unknown Device Type / Protocol Not Supported
+
+Especially when running `wg-quick up wg0` this error can appear.
+The most probable source of this error is that the version of the package
+`linux` doesn't match with the version of the [wireguard package](#client-wg) or
+the system has been updated and the system wasn't restarted causing the same
+problem.
+To fix this `linux` can be reinstalled but a full update of the system is
+recommended.
+Because it changes the kernel the system needs to be restarted afterwards.
