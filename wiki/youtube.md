@@ -15,7 +15,9 @@ available in the [F-Droid Appstore](/wiki/android/f-droid.md).
 YouTube videos can be downloaded.
 Some [alternative frontends](#alternative-frontends) feature downloading of
 videos or making them offline available.
-As a command line utility [yt-dl](https://github.com/ytdl-org/youtube-dl) or its
-fork [yt-dlp](https://github.com/yt-dlp/yt-dlp) can be used.
+As a command line utility [yt-dl](https://github.com/ytdl-org/youtube-dl) can be
+used.
+Since yt-dl is stagnant its fork [yt-dlp](https://github.com/yt-dlp/yt-dlp) is
+recommended.
 [MeTube](/wiki/metube.md) is a self-hostable web user interface for
 [yt-dlp](https://github.com/yt-dlp/yt-dlp).
