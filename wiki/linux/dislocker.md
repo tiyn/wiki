@@ -7,6 +7,8 @@ Bitlocker-ed volumes under Linux systems.
 
 On most of the Linux distributions Dislocker is bundled with the `dislocker`
 package.
+The installation of the `mbedtls2` package as an open-source TLS library can be
+of use.
 
 ## Usage
 
