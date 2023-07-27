@@ -11,25 +11,25 @@ VPNs feature a server and a client side.
 [OpenVPN](https://openvpn.net) is a free software to create a VPN via an
 encrypted TLS connection.
 
-### Set up (OVPN)
+### OVPN Set up
 
 In the following sections the different set ups of OpenVPN usages are described.
 
-#### Server (OVPN)
+#### OVPN Server
 
 The software can be set up via [Docker](/wiki/docker.md) with the
 [kylemanna image](./docker-images/kylemanna_-_openvpn.md).
 Additionally to this a client is needed on the system that need access to the
 server software.
 
-#### Client (OVPN)
+#### OVPN Client
 
 OpenVPN clients can be found for many devices.
 For Android for example there is
 [OpenVPN for Android in the F-Droid store](https://f-droid.org/de/packages/de.blinkt.openvpn/).
 For most linux distributions there is a package called `openvpn`.
 
-#### Proxy (OVPN)
+#### OVPN Proxy
 
 For OpenVPN a proxy acts as an imntermediary between the system communicating
 with the proxy and the OpenVPN server.
@@ -45,25 +45,25 @@ This section including its subsections - especially the [usage](#usage-wg) is
 based on an extensive guide on WireGuard by
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04#step-9-connecting-the-wireguard-peer-to-the-tunnel).
 
-### Setup (WG)
+### WG Setup
 
 In the following sections the different set ups of WireGuard usages are described.
 
-#### Server (WG)
+#### WG Server
 
 The software can be set up via [Docker](/wiki/docker.md) with the
 [linuxserver image](/wiki/docker-images/linuxserver_-_wireguard.md).
 Additionally to this a [client](#client-wg) is needed on the system that
 accesses the server.
 
-#### Client (WG)
+#### WG Client
 
 WireGuard clients can be found for many devices.
 For Android for example there is
 [Wireguard for Android in the F-Droid store](https://f-droid.org/de/packages/com.wireguard.android/).
 For most linux distributions there is a package called `wireguard-tools`.
 
-### Usage (WG)
+### WG Usage
 
 Wireguard clients connect to servers by using a `.conf` file.
 For mobile devices often times a QR-code can also be used.
@@ -84,7 +84,29 @@ should be used.
 Alternatively also other names not including `wg` can be used.
 The term `wg0` the incremented version of it has to be changed accordingly then.
 
-### Troubleshooting (WG)
+#### Setting Up Local DNS
+
+This section focusses on the usage of a [local DNS](/wiki/dns.md) like
+[bind9](/wiki/bind.md#configure-local-dns-server-with-forwarding).
+This can be especially useful for using
+[local domains](/wiki/bind.md#configure-local-domains).
+
+To set up the usage of a local DNS the WireGuard configuration file needs to be
+changed.
+The following lines have to be appended under the `[Interface]` section and the
+DNS IP address (in this case `192.168.178.1`) has to be changed as needed.
+`wg0` is the name of the configuration file (see [the usage section](#wg-usage))
+for reference.
+
+```txt
+PostUp = resolvectl dns wg0 192.168.178.1
+PostDown = resolvconf -d %i -f
+```
+
+The `PostUp` line sets up the DNS while the `PostDown` line shuts it down after
+wireguard is closed.
+
+### WG Troubleshooting
 
 This section addresses various errors and ways how to troubleshoot them.
 
