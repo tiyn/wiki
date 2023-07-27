@@ -90,6 +90,8 @@ This section focusses on the usage of a [local DNS](/wiki/dns.md) like
 [bind9](/wiki/bind.md#configure-local-dns-server-with-forwarding).
 This can be especially useful for using
 [local domains](/wiki/bind.md#configure-local-domains).
+The following guide is based on a comments by the Reddit users
+[orthecreedence and rptb1](https://www.reddit.com/r/WireGuard/comments/cmhap6/use_both_wireguard_and_local_dns_servers/).
 
 To set up the usage of a local DNS the WireGuard configuration file needs to be
 changed.
