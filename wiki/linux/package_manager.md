@@ -30,7 +30,7 @@ This can be fixed by updating it with the following command:
 curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
 ```
 
-#### Error while importing keys
+#### Error While Importing Keys
 
 Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
 right package.
@@ -38,7 +38,7 @@ It is possible that it runs into errors when importing new keys.
 If this happens you should try to restart your gpg key server with
 `gpgconf --kill all`.
 
-#### Unknown public key
+#### Unknown Public Key
 
 If the error `ERROR: One or more PGP signatures could not be verified!`, you
 have to manually receive the key and trust it.
@@ -53,7 +53,7 @@ Where <KEYID> is the placeholder of the identification string of the key.
 It usually gets gets printed in the line above the error looking like
 `FAILED (unknown public key <KEYID>)`.
 
-#### Error while updating `is marginal trust`
+#### Error During Updating `is marginal trust`
 
 Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
 right package.
@@ -67,3 +67,9 @@ pacman -Sy archlinux-keyring
 pacman-key --populate archlinux
 pacman-key --refresh-keys
 ```
+
+#### Error During Updating `the following untracked working tree files would be overwritten`
+
+The error `the following untracked working tree files would be overwritten` can happen when the
+cache features a changed version of the files used by yay to update the package.
+This can easily be fixed by removing the cache of the corresponding package.
