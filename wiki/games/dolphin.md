@@ -49,10 +49,3 @@ preference.
 Check the `Start in Fullscreen` box to start games automatically in fullscreen
 mode.
 To exit it use `Esc`.
-
-### Running a game without selection in the menu
-
-To run a game instantly the path to the [ROM](./emulators.md) needs to be
-appended to the command used for starting Dolphin.
-This should be made in quotation marks as it could contain characters that need
-to be escaped.

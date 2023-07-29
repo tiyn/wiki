@@ -30,6 +30,14 @@ This will open the website with the Steam browser.
 
 ### Setting Icons and Banners for Games
 
+The following paragraph explains the usage of [SteamGridDB](https://www.steamgriddb.com/) in a
+normal Steam installation.
+For [Steam Deck](/wiki/games/steam_deck.md) users the
+[plugin manager Decky](/wiki/games/steam_deck.md#plugin-manager-decky) can be used to install
+SteamGridDB in a package of the same name.
+Icons and Banners can then be changed by opening the menu after selecting a game and selecting
+`Change Artwork...`.
+
 Images for games can be changed by downloading them and applying them manually.
 An easier route can be taken by using
 [SGDBoop](https://www.steamgriddb.com/boop).
@@ -49,13 +57,11 @@ Make sure the game is a Steam game or
 After the installation of the game, the system may need to restart to correctly
 work with [SGDBoop](https://www.steamgriddb.com/boop) for the game.
 
-## Steam Cloud
+### Steam Cloud and Game Synchronization
 
 The [Steam Cloud](https://partner.steamgames.com/doc/features/cloud) allows
-games  and the platform to utilize cloud storage hosted by Steam.
+games and the platform to utilize cloud storage hosted by Steam.
 Games can use this to store data including game settings and saves.
-
-### Synchronize games saves without non-Steam-Cloud
 
 By using [Syncthing](../syncthing.md) game saves can be synchronized without
 the Steam Cloud.

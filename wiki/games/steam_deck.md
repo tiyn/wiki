@@ -18,3 +18,35 @@ software management suite to install additional software.
 
 - Esc: `STEAM + D-Pad Left`
 - Show Keyboard: `STEAM + X`
+
+### Running a Game Directly Through the Interface
+
+Simple programs can be started from inside the gaming mode by adding it as a
+[non-Steam game](/wiki/games/steam.md#adding-non-steam-games).
+
+For [emulator games](/wiki/games/emulators.md) the setup is more complex.
+Firstly the emulator needs to be added as a
+[non-Steam game](/wiki/games/steam.md#adding-non-steam-games).
+To run a game instantly the path to the [ROM](./emulators.md) needs to be
+appended to the command used for starting the emulator needed for it.
+This should be made in quotation marks as it could contain characters that need
+to be escaped.
+
+Afterwards the icons and banners of it can be set using
+[SteamGridDB](/wiki/games/steam.md#setting-icons-and-banners-for-games).
+
+### Plugin Manager Decky
+
+The Steam Deck features a wide variable of customization options.
+Some of these options can be accessed by installing
+[the plugin manager Decky](https://github.com/SteamDeckHomebrew/decky-loader).
+To install it download the setup file from the
+[Github page](https://github.com/SteamDeckHomebrew/decky-loader) and run it.
+Afterwards the plugin manager will be available after pressing the `...` button on the Deck and
+navigating to the bottom of the menu.
+There plugins can be installed and removed aswell as managed.
+
+The following list includes some useful plugins.
+
+- [SteamGridDB](/wiki/games/steam.md#setting-icons-and-banners-for-games): setting new images for
+  games

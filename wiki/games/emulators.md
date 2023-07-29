@@ -7,7 +7,13 @@ another computer.
 Emulators usually need ROMs to run games.
 ROMs are a digital copy of a video game.
 
+Due to its form factor emulators can be installed and used nicely on a
+[Steam Deck](/wiki/games/steam_deck.md).
+Emulator games can even be
+[started through the normal interface](/wiki/games/steam_deck.md#running-a-game-directly-through-the-interface).
+
 ## List of Emulator software
 
-- [PPSSPP](./ppsspp.md) is made to emulate Playstation Portable games
-- [Dolphin](./dolphin.md) is made to emulate GameCube and Wii games
+- [PPSSPP](/wiki/games/ppsspp.md) is made to emulate Playstation Portable games.
+- [Dolphin](/wiki/games/dolphin.md) is made to emulate GameCube and Wii games.
+- [Citra](/wiki/games/citra.md) is made to emulate 3DS games.
