@@ -18,21 +18,7 @@ It is also possible to give a list of clients separated by commas
 The following shows the two options.
 Then run `./rebuild.sh`
 
-## Usage
-
-### Retrieve Client Certificates by QR-Code
-
-The client certificates can be retrieved with the following command.
-`<peer-number>` is the number or identifier of the peer.
-
-```sh
-docker exec -it wireguard /app/show-peer <peer-number>
-```
-
-After running the command a QR-code should be displayed that describes the
-certificate.
-
-## Environment-Variables
+### Environment-Variables
 
 Set the following variables with the -e tag.
 
@@ -44,7 +30,7 @@ Set the following variables with the -e tag.
 | `SERVERURL` | URL of server   |         |
 | `PEERS`     | Number of peers |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -52,7 +38,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ----------------------- |
 | `wireguard`               | `/config`       | Configuration files     |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -60,7 +46,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `51820`        | `51820`                  | UDP      | VPN port    |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -68,7 +54,7 @@ There are some special variables to set.
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -89,3 +75,22 @@ docker run --name=wireguard \
   --restart unless-stopped \
   -d lscr.io/linuxserver/wireguard:latest
 ```
+
+## Usage
+
+### Retrieve Client Certificates by QR-Code
+
+The client certificates can be retrieved with the following command.
+`<peer-number>` is the number or identifier of the peer.
+
+```sh
+docker exec -it wireguard /app/show-peer <peer-number>
+```
+
+After running the command a QR-code should be displayed that describes the
+certificate.
+
+### Add New Client to Existing WireGuard Installation
+
+To add a new client to the existing WireGuard installation increase the number
+of peers or append a peer to the list of peers specified in the [setup section](#set-up) section.
