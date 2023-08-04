@@ -24,6 +24,29 @@ The following is a list of Unix shells that are POSIX compliant.
 This section addresses various different functions by and actions that can be
 taken with shell commands.
 
+### Expansion
+
+This section is based on the 
+[TLDP Bash guide for beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_04.html).
+Although it is centered on Bash it can also be used in other shells (Zsh) while being unsupported 
+by others (DASH).
+
+In most shells curly braces can be used to expand a term.
+Commands can be expanded like the following example.
+
+```sh 
+echo sp{el,il,al}l
+```
+
+The previous command will expand to the following command.
+
+```sh 
+echo spell spill spall
+```
+
+The example shows a brace expansions of depth `1`.
+Using multiple curly brace pairs the depth can be increased as needed.
+
 ### For Loops
 
 For loops can be especially useful when scripting.
