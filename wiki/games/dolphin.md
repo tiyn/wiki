@@ -1,7 +1,6 @@
 # Dolphin
 
-[Dolphin](https://dolphin-emu.org/) is a GameCube and Wii
-[emulator](./emulators.md).
+[Dolphin](https://dolphin-emu.org/) is a Nintendo GameCube and Wii [emulator](./emulators.md).
 
 ## Setup
 
@@ -15,14 +14,12 @@ package is called `org.DolphinEmu.dolphin-emu`.
 The following sections describe specific issues relating to the configuration
 and usage of Dolphin.
 
-### Steam Deck specific settings
+### Steam Deck Specific Settings
 
 The following settings are especially useful when emulating games on the
 [Steam Deck](./steam_deck.md) as pointed out by
 [nchristopher](https://github.com/nchristopher/steamdeck-emulation/blob/main/emulators/dolphin.md).
-But it is a good starting point for other systems aswell.
-It is important to emphasize that the system needs to meet the requirements to
-run Vulkan.
+
 Select the configuration and select the paths tab.
 There the directories for Wii and GameCube [ROMs](./emulators.md) can be added.
 In the audio tab select `Pulse` as your audio backend.
