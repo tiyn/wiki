@@ -1,12 +1,12 @@
 # yuzu
 
-[yuzu](https://yuzu-emu.org/) is a Nintendo Switch [emulator](./emulators.md).
+[yuzu](https://yuzu-emu.org/) is a Nintendo Switch [emulator](/wiki/games/emulators.md).
 
 ## Setup
 
 yuzu can be installed on different systems, a list for this can be found on
 the [yuzu website](https://yuzu-emu.org/downloads/#windows).
-Additionally it can be installed using [Flatpak](../linux/flatpak.md) where the
+Additionally it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
 package is called `org.yuzu_emu.yuzu`.
 
 After installation keys need to be added.
@@ -30,7 +30,7 @@ game that should to be started.
 ### Steam Deck Specific Settings
 
 The following settings are especially useful when emulating games on the
-[Steam Deck](./steam_deck.md) as pointed out by
+[Steam Deck](/wiki/games/steam_deck.md) as pointed out by
 [sofakng](https://www.reddit.com/r/SteamDeck/comments/12ivsky/what_are_the_best_yuzu_settings/).
 
 For a better performance select `Vulkan` under the `Graphics` in `Graphics`.

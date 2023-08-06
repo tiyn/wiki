@@ -1,13 +1,13 @@
 # mGBA
 
 [mGBA](https://mgba.io/) is a Nintendo Game Boy, Game Boy Color and Game Boy Advanced 
-[emulator](./emulators.md).
+[emulator](/wiki/games/emulators.md).
 
 ## Setup
 
 mGBA can be installed on different systems, a list for this can be found on
 the [mGBA website](https://mgba.io/downloads.html).
-Additionally it can be installed using [Flatpak](../linux/flatpak.md) where the
+Additionally it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
 package is called `io.mgba.mgba`.
 
 ## Usage
