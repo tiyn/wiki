@@ -6,6 +6,8 @@ In the gaming context this is mainly used to run games from a console on
 another computer.
 Emulators usually need ROMs to run games.
 ROMs are a digital copy of a video game.
+Please note that downloading ROMs of licensed games is not permitted due to copyright.
+All [emulators](#list-of-emulator-software) should only use non copyright infringing ROMs.
 
 Due to its form factor emulators can be installed and used nicely on a
 [Steam Deck](/wiki/games/steam_deck.md).
