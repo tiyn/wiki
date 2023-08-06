@@ -1,24 +1,24 @@
-# Yuzu
+# yuzu
 
-[Yuzu](https://yuzu-emu.org/) is a Nintendo Switch [emulator](./emulators.md).
+[yuzu](https://yuzu-emu.org/) is a Nintendo Switch [emulator](./emulators.md).
 
 ## Setup
 
-Citra can be installed on different systems, a list for this can be found on
-the [Yuzu website](https://yuzu-emu.org/downloads/#windows).
+yuzu can be installed on different systems, a list for this can be found on
+the [yuzu website](https://yuzu-emu.org/downloads/#windows).
 Additionally it can be installed using [Flatpak](../linux/flatpak.md) where the
 package is called `org.yuzu_emu.yuzu`.
 
 After installation keys need to be added.
 A guide on this can be found on the 
-[Yuzu website](https://yuzu-emu.org/help/quickstart/#setting-up-the-decryption-keys-and-firmware).
+[yuzu website](https://yuzu-emu.org/help/quickstart/#setting-up-the-decryption-keys-and-firmware).
 
 ## Usage
 
 The following sections describe specific issues relating to the configuration
 and usage of Dolphin.
 
-### Start Yuzu Emulated Game in Fullscreen Mode
+### Start Emulated Game in Fullscreen Mode
 
 In different scenarios it can be useful to start directly into a game in fullscreen mode.
 One example would be using the [Steam Deck](/wiki/games/steam_deck.md) to 

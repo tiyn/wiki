@@ -16,7 +16,9 @@ Emulator games can even be
 
 ## List of Emulator software
 
-- [Citra](/wiki/games/citra.md) is made to emulate Nintendo 3DS games.
-- [Dolphin](/wiki/games/dolphin.md) is made to emulate Nintendo GameCube and Wii games.
-- [PPSSPP](/wiki/games/ppsspp.md) is made to emulate Playstation Portable games.
-- [Yuzu](/wiki/games/yuzu.md) is made to emulate Nintendo Switch games.
+- [Citra](/wiki/games/citra.md) emulates Nintendo 3DS games.
+- [Dolphin](/wiki/games/dolphin.md) emulates Nintendo GameCube and Wii games.
+- [mGBA](/wiki/games/mgba.md) emulates Nintendo Game Boy, Game Boy Color and Game Boy Advanced 
+  games.
+- [PPSSPP](/wiki/games/ppsspp.md) emulates Playstation Portable games.
+- [yuzu](/wiki/games/yuzu.md) emulates Nintendo Switch games.
