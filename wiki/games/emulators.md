@@ -18,7 +18,8 @@ Emulator games can even be
 
 - [Citra](/wiki/games/emulators/citra.md) emulates Nintendo 3DS games.
 - [Dolphin](/wiki/games/emulators/dolphin.md) emulates Nintendo GameCube and Wii games.
-- [mGBA](/wiki/games/emulators/mgba.md) emulates Nintendo Game Boy, Game Boy Color and Game Boy Advanced 
+- [melonDS](/wiki/games/emulators/melonds.md) emulates Nintendo DS games.
+- [mGBA](/wiki/games/emulators/mgba.md) emulates Nintendo Game Boy, Game Boy Color and Game Boy Advanced
   games.
 - [Nestopia](/wiki/games/emulators/nestopia.md) emulates Nintendo Entertainment System games.
 - [PPSSPP](/wiki/games/emulators/ppsspp.md) emulates Playstation Portable games.
