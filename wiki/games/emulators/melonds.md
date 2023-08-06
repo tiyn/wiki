@@ -1,7 +1,6 @@
 # melonDS
 
-[melonDS](https://melonds.kuribo64.net/) is a Nintendo Game Boy, Game Boy Color and Game Boy
-Advanced [emulator](/wiki/games/emulators.md).
+[melonDS](https://melonds.kuribo64.net/) is a Nintendo DS [emulator](/wiki/games/emulators.md).
 
 ## Setup
 
