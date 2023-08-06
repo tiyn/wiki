@@ -9,7 +9,7 @@ is a fork of [Subsonic](./subsonic.md).
 ## Setup
 
 The software can be setup via docker with the
-[linuxserver image](./docker-images/linuxserver_-_airsonic-advanced.md).
+[linuxserver image](./docker/linuxserver_-_airsonic-advanced.md).
 
 ### Initial configuration
 

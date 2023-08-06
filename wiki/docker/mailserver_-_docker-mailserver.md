@@ -33,7 +33,7 @@ And finally generate the DCIM keys and rebuild once again.
 `./setup.sh config dkim`
 
 Finally if a reverse proxy is used check the
-[traefik entry](/wiki/docker-images/traefik.md#setup-mailserver) or the
+[traefik entry](/wiki/docker/traefik.md#setup-mailserver) or the
 [nginx entry](./nginx.md).
 
 Afterwards you're ready to go by once again running the `rebuild.sh` file.

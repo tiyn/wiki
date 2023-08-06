@@ -6,4 +6,4 @@ videos in sync with other people.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[rblsb image](./docker-images/rblsb_-_synctube.md).
+[rblsb image](./docker/rblsb_-_synctube.md).

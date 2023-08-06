@@ -6,7 +6,7 @@ unix and unix-like systems.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker-images/linuxserver_-_airsonic.md).
+[linuxserver image](./docker/linuxserver_-_airsonic.md).
 Additionally to this a client is needed on the system that need access to the
 server software.
 

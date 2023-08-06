@@ -6,7 +6,7 @@ bookmarking and archiving service.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[image by sissbrueckner](./docker-images/sissbrueckner_-_linkding.md).
+[image by sissbrueckner](./docker/sissbrueckner_-_linkding.md).
 
 ## Usage
 

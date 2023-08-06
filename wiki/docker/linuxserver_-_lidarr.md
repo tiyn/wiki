@@ -13,7 +13,7 @@ It is recommended to set a download completed folder with the same internal and
 external mounts as your [BitTorent](/wiki/bittorrent.md) client.
 This guide uses the same mounts as used in the
 [Transmission](/wiki/transmission.md)
-[Docker container](/wiki/docker-images/haugene_-_transmission-openvpn.md).
+[Docker container](/wiki/docker/haugene_-_transmission-openvpn.md).
 This namely causes the following line in the
 [`docker-compose.yml`](#docker-composeyml).
 

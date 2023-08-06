@@ -5,7 +5,7 @@
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[searx image](./docker-images/searx_-_searx.md).
+[searx image](./docker/searx_-_searx.md).
 
 ## Usage
 
@@ -20,7 +20,7 @@ Follow the add-on part of the guide and put searx with
 
 ### Route search traffic through tor
 
-You can setup a torproxy with [the dperson image](./docker-images/dperson_-_torproxy.md).
+You can setup a torproxy with [the dperson image](./docker/dperson_-_torproxy.md).
 In the `settings.yml` file locate the section for `proxies :` and
 change it to the following:
 

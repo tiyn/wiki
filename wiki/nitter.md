@@ -6,7 +6,7 @@ Twitter.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[zedeus image](./docker-images/zedeus_-_nitter.md).
+[zedeus image](./docker/zedeus_-_nitter.md).
 
 ## Usage
 

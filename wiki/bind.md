@@ -6,7 +6,7 @@ interacting with the [DNS](./dns.md).
 ## Setup
 
 The software can be setup via docker with the
-[ventz image](./docker-images/ventz_-_bind.md).
+[ventz image](./docker/ventz_-_bind.md).
 
 ## Usage
 

@@ -13,9 +13,9 @@ These applications include but are not limited to
 
 For the different applications there are different [Docker](/wiki/docker.md)
 containers for setup:
-[Linuxservers Sonarr image](/wiki/docker-images/linuxserver_-_sonarr.md),
-[Linuxservers Radarr image](/wiki/docker-images/linuxserver_-_radarr.md) and
-[Linuxservers Lidarr image](/wiki/docker-images/linuxserver_-_lidarr.md).
+[Linuxservers Sonarr image](/wiki/docker/linuxserver_-_sonarr.md),
+[Linuxservers Radarr image](/wiki/docker/linuxserver_-_radarr.md) and
+[Linuxservers Lidarr image](/wiki/docker/linuxserver_-_lidarr.md).
 
 ### Initial Configuration
 

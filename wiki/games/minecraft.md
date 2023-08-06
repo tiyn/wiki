@@ -9,7 +9,7 @@ The following sections address the setup of both server and client software.
 ### Server
 
 A server can be setup via docker with the
-[itzg image](../docker-images/itzg_-_minecraft-server.md).
+[itzg image](../docker/itzg_-_minecraft-server.md).
 
 ### Client
 

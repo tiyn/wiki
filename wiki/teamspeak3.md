@@ -5,7 +5,7 @@
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[teamspeak image](./docker-images/teamspeak.md).
+[teamspeak image](./docker/teamspeak.md).
 
 ## Usage
 

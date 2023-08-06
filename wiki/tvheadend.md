@@ -13,7 +13,7 @@ the help of a plugin.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker-images/linuxserver_-_tvheadend.md).
+[linuxserver image](./docker/linuxserver_-_tvheadend.md).
 For different hardware there may be additional run options needed to get
 TVHeadend working properly.
 Additionally a solid [initial configuration](#initial-configuration) is

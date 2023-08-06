@@ -7,7 +7,7 @@ It includes a web-interface and is mainly used for
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker-images/linuxserver_-_jellyfin.md).
+[linuxserver image](./docker/linuxserver_-_jellyfin.md).
 
 ## Usage
 

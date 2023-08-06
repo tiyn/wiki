@@ -13,4 +13,4 @@ This section features various features of Tor.
 A Tor proxy can be used to access the Tor network via the SOCKS protocol, an
 HTTP tunnel protocol or other ways.
 It can be set up using [docker](/wiki/docker.md) and the
-[dperson image](./docker-images/dperson_-_torproxy.md).
+[dperson image](./docker/dperson_-_torproxy.md).
