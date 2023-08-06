@@ -20,5 +20,6 @@ Emulator games can even be
 - [Dolphin](/wiki/games/emulators/dolphin.md) emulates Nintendo GameCube and Wii games.
 - [mGBA](/wiki/games/emulators/mgba.md) emulates Nintendo Game Boy, Game Boy Color and Game Boy Advanced 
   games.
+- [Nestopia](/wiki/games/emulators/nestopia.md) emulates Nintendo Entertainment System games.
 - [PPSSPP](/wiki/games/emulators/ppsspp.md) emulates Playstation Portable games.
 - [yuzu](/wiki/games/emulators/yuzu.md) emulates Nintendo Switch games.
