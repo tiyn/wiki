@@ -24,23 +24,47 @@ The following is a list of Unix shells that are POSIX compliant.
 This section addresses various different functions by and actions that can be
 taken with shell commands.
 
+### Renaming Files
+
+Files can be renamed by using the `mv` command like in the following example.
+
+```sh
+mv old_name.ext new_name.ext
+```
+
+Another way to rename files that is especially useful if renaming a lot of files is needed is done
+by using the command-line utility `rename`.
+In the following example the string `string1` will be substituted by `string2` for a given file
+`file.ext`.
+
+```sh
+rename 's/string1/string2/g' file.ext
+```
+
+Additionally `find` can be used to recursively substitute substrings in all files inside a folder
+`folder` (including subfolders).
+
+```sh
+find folder -type f -exec rename 's/string1/string2/g' {} +
+```
+
 ### Expansion
 
-This section is based on the 
+This section is based on the
 [TLDP Bash guide for beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_04.html).
-Although it is centered on Bash it can also be used in other shells (Zsh) while being unsupported 
+Although it is centered on Bash it can also be used in other shells (Zsh) while being unsupported
 by others (DASH).
 
 In most shells curly braces can be used to expand a term.
 Commands can be expanded like the following example.
 
-```sh 
+```sh
 echo sp{el,il,al}l
 ```
 
 The previous command will expand to the following command.
 
-```sh 
+```sh
 echo spell spill spall
 ```
 
@@ -136,4 +160,3 @@ Error outputs (stderr) can be silenced by appending `2> /dev/null`.
 The complete output of both stderr and stdout can be silenced by appending
 `> /dev/null 2>&1` to the command.
 A shortened version of it not possible on all shells is `&> /dev/null`.
-
