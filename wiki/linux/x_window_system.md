@@ -49,6 +49,24 @@ Section "ServerFlags"
 EndSection
 ```
 
+#### Adjust DPI and UI Scale
+
+The dots per inch (DPI) is a measurement of spatial video dot density.
+It has effect on the size of UI elements.
+It is recommended to set the DPI inside the file `~/.config/xorg/xpcspec` with the following line.
+The DPI number should be adjusted as needed.
+
+```
+Xft.dpi: 100
+```
+
+Afterwards `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
+For this to work the following line needs to be added into the `~/.xinitrc` file .
+
+```sh
+[ -f "$HOME/.config/xorg/xpcspec" ] && xrdb -merge "$HOME/.config/xorg/xpcspec"
+```
+
 ### Mouse
 
 This section describes the handling of mouse by X.
