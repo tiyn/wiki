@@ -22,5 +22,8 @@ Emulator games can even be
 - [mGBA](/wiki/games/emulators/mgba.md) emulates Nintendo Game Boy, Game Boy Color and Game Boy Advanced
   games.
 - [Nestopia](/wiki/games/emulators/nestopia.md) emulates Nintendo Entertainment System games.
-- [PPSSPP](/wiki/games/emulators/ppsspp.md) emulates Playstation Portable games.
+- [PCSX2](/wiki/games/emulators/pcsx2.md) emulates PlayStation 2 games.
+- [PPSSPP](/wiki/games/emulators/ppsspp.md) emulates PlayStation Portable games.
+- [simple64](/wiki/games/emulators/simple64.md) emulates Nintendo 64 games.
+- [Snes9x](/wiki/games/emulators/snes9x.md) emulates Super Nintendo Entertainment System games.
 - [yuzu](/wiki/games/emulators/yuzu.md) emulates Nintendo Switch games.
