@@ -3,29 +3,6 @@
 [Firefox](https://www.mozilla.org/en-US/Firefox) is a free and open-source web
 browser.
 
-## Configuration
-
-Firefox has many possible settings and precerences.
-This section addresses possible settings and preferences for specific use cases.
-
-### Telemetry
-
-Telemetry is the remote measurement and transmission of data.
-To change the telemetry of Firefox navigate to `about:telemetry` and click the
-options to toggle between enabled and disabled.
-
-### Enable/Disable Scrolling
-
-On Linux distributions auto scroll is disabled by default.
-This means that you cant click the middle mouse button to use it for scrolling.
-To enable it go into the preferences and check `Use autoscrolling`.
-
-### Enable/Disable Sponsorings
-
-Sponsorings are embedded ads in Firefox.
-After navigating to `about:config` enabling and disabling of sponsorings can be done at
-`browser.newtabpage.activity-stream.showSponsored`.
-
 ## Usage
 
 The following section addresses different uses and add-ons of Firefox.
@@ -37,7 +14,7 @@ including bookmarks smaller.
 After navigating to `about:config` the configuration can be done at
 `browser.compactmode.show`.
 
-## List of useful Firefox add-ons
+### List of useful Firefox add-ons
 
 Following is a list of useful Firefox add-ons.
 They can be removed and configured under `about:config`.
@@ -88,7 +65,7 @@ They can be removed and configured under `about:config`.
 - [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables
   vim movement for Firefox.
 
-## Add a new search engine
+### Add a new search engine
 
 You can add a new search engine with the add-on `Add custom search engine`.
 Make sure to replace `<url to search engine>` with the according url.
@@ -96,3 +73,179 @@ Make sure to replace `<url to search engine>` with the according url.
 It is possible to add it without an add-on.
 Navigate to the search engine and click the `...` in the address bar.
 Then click `Add Search Engine`
+
+### Telemetry
+
+Telemetry is the remote measurement and transmission of data.
+To change the telemetry of Firefox navigate to `about:telemetry` and click the
+options to toggle between enabled and disabled.
+
+### Scrolling
+
+On Linux distributions auto scroll is disabled by default.
+This means that you cant click the middle mouse button to use it for scrolling.
+To enable it go into the preferences and check `Use autoscrolling`.
+
+### Sponsorings
+
+Sponsorings are embedded ads in Firefox.
+After navigating to `about:config` enabling and disabling of sponsorings can be done at
+`browser.newtabpage.activity-stream.showSponsored`.
+
+### Disable Unneeded Services and Features
+
+The following section is based on the website
+[privacy-handbuch.de](https://www.privacy-handbuch.de/handbuch_21n.htm) which discusses ways to
+disable often unneeded features in Firefox.
+The way to disable these services is by setting values in `about:config`.
+
+To disable the Pocket expansion set the following config.
+
+```txt
+extensions.pocket.enabled = false
+```
+
+To disable the screenshot expansion set the following config.
+
+```txt
+extensions.screenshots.disabled = true
+```
+
+To disable Firefox Sync set the following config.
+
+```txt
+identity.fxaccounts.enabled = false
+```
+
+To disable form fillings set the following configs.
+
+```txt
+browser.formfill.enable = false
+extensions.formautofill.addresses.enabled =	false
+extensions.formautofill.creditCards.enabled = false
+extensions.formautofill.heuristics.enabled = false
+```
+
+To disable fingerprinting the GPU set the following configs.
+
+```txt
+webgl.enable-debug-renderer-info = false
+webgl.disable-extensions = true
+webgl.min_capability_mode = true
+webgl.disable-fail-if-major-performance-caveat = true
+```
+
+To avoid operating system attacks via WebGL set the following configs.
+
+```txt
+webgl.disabled = true
+webgl.enable-webgl2 = false
+```
+
+To disable speculative loading of websites when hovering over links set the following config.
+
+```txt
+network.http.speculative-parallel-limit = 0
+```
+
+To disable remote deactivation of plugins by firefox aswell as connection of the AMO-servers on a
+daily basis set the following configs.
+
+```txt
+extensions.blocklist.enabled = false
+extensions.getAddons.cache.enabled = false
+```
+
+To disable various health reports and telemetry data set the following configs.
+
+```txt
+browser.tabs.crashReporting.sendReport = false
+datareporting.policy.dataSubmissionEnabled = false
+datareporting.healthreport.uploadEnabled = false
+toolkit.coverage.endpoint.base = ""
+toolkit.coverage.opt-out = true
+toolkit.telemetry.coverage.opt-out = true
+```
+
+To disable the localization done by pinging Mozillas location server set the following configs.
+
+```txt
+browser.region.update.enabled = false
+browser.region.network.url = ""
+```
+
+To disable safebrowsing which grabs block lists by Mozilla every 30 minutes run the set the
+following configs.
+
+```txt
+browser.safebrowsing.phishing.enabled = false
+browser.safebrowsing.malware.enabled = false
+browser.safebrowsing.blockedURIs.enabled = false
+browser.safebrowsing.downloads.enabled = false
+browser.safebrowsing.downloads.remote.enabled = false
+browser.safebrowsing.downloads.remote.block_dangerous = false
+browser.safebrowsing.downloads.remote.block_dangerous_host = false
+browser.safebrowsing.downloads.remote.block_potentially_unwanted = false
+browser.safebrowsing.downloads.remote.block_uncommon = false
+browser.safebrowsing.downloads.remote.url = ""
+browser.safebrowsing.provider.*.gethashURL = ""
+browser.safebrowsing.provider.*.updateURL = ""
+browser.pagethumbnails.capturing_disabled = true
+```
+
+To disable ads after an update set the following config.
+
+```txt
+browser.startup.homepage_override.mstone = ignore
+```
+
+To disable the ad system for Firefox add-ons set the following configs.
+
+```txt
+browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons = false
+browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features = false
+extensions.htmlaboutaddons.recommendations.enabled = false
+extensions.ui.lastCategory = addons://list/extension
+```
+
+To disable [VPN](/wiki/vpn.md) ads set the following config.
+
+```txt
+ browser.vpn_promo.enabled = false
+```
+
+To disable the rating samples set the following config.
+
+```txt
+app.normandy.enabled = false
+```
+
+To always keep add-ons active even on Firefox and Mozilla sites set the following config.
+
+```txt
+extensions.webextensions.restrictedDomains = ""
+```
+
+To avoid the fingerprinting of desktop settings deactive the standard values for system colors by
+setting the following config.
+
+```txt
+ui.use_standins_for_native_colors = true
+```
+
+Firefox contacts Firefox' servers on each start to check IP connections.
+To disable this set the following config.
+
+```txt
+network.connectivity-service.enabled = false
+```
+
+To disable Microsoft Family Safety on [Windows systems](/wiki/windows/windows.md) which can be used
+as a censoring tool set the following config.
+
+```txt
+security.family_safety.mode = 0
+```
+
+Additionally check [the telemetry section](#telemetry) and
+[the sponsoring section](#sponsorings).
