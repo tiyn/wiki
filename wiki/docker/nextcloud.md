@@ -12,6 +12,16 @@ Docker container.
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
+It is recommended to use the versionnumber instead of `:latest` for both the MariaDB and the
+NextCloud image like the following example.
+
+```
+nextcloud:22
+mariadb:9
+```
+
+Make sure to substitute all the occurences of the `:latest` tag accordingly.
+Updating has to be done manually so nothing breaks.
 
 ## Volumes
 
@@ -50,7 +60,7 @@ volumes:
 
 services:
   db:
-    image: mariadb
+    image: mariadb:latest
     restart: always
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     volumes:
@@ -62,7 +72,7 @@ services:
       - MYSQL_USER=nextcloud
 
   app:
-    image: nextcloud
+    image: nextcloud:latest
     restart: always
     ports:
       - 8080:80
@@ -81,5 +91,4 @@ volumes:
         driver: local
     nextcloud:
         driver: local
-
 ```
