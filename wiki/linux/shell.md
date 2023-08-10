@@ -48,6 +48,10 @@ Additionally `find` can be used to recursively substitute substrings in all file
 find folder -type f -exec rename 's/string1/string2/g' {} +
 ```
 
+For renaming many files in bulk the `qmv` to move or `qcp` or copy can be used.
+Usually both of these commands are packaged withing the `renameutils` package.
+For more information visit the [renameutils website](https://www.nongnu.org/renameutils/).
+
 ### Expansion
 
 This section is based on the
