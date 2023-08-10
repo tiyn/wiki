@@ -42,7 +42,7 @@ docker-compose up -d
 
 ## .env
 
-```txt
+```sh
 TZ="Europe/Berlin"
 
 PT_INITIAL_ROOT_PASSWORD=<root password>
