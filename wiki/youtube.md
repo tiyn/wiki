@@ -21,3 +21,10 @@ Since yt-dl is stagnant its fork [yt-dlp](https://github.com/yt-dlp/yt-dlp) is
 recommended.
 [MeTube](/wiki/metube.md) is a self-hostable web user interface for
 [yt-dlp](https://github.com/yt-dlp/yt-dlp).
+
+## Automatically Skip Sponsorships
+
+[SponsorBlock](https://github.com/ajayyy/SponsorBlock) is a [browser](/wiki/web_browser.md)
+expansion.
+It is used to skip sponsorships, paid and unpaid promotions and other labelled data on YouTube and
+[Invidious](/wiki/invidious.md).

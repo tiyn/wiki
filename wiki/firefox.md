@@ -47,9 +47,8 @@ They can be removed and configured under `about:config`.
   frontends.
 - [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
   is a sidebar with treestyle tabs and bookmarks.
-- [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
-  skips YouTube video sponsors automatically, works with
-  [invidious](./invidious.md) too.
+- [SponsorBlock](/wiki/youtube.md#automatically-skip-sponsorships) skips YouTube video sponsors
+  automatically, works with [Invidious](./invidious.md) too.
 - [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is a userscript
   manager that can be used for the following tasks:
   - [Bypass YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass)
