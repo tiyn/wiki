@@ -55,6 +55,8 @@ They can be removed and configured under `about:config`.
   - [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/)
     [search results](/wiki/search_engine.md)
   - [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
+- [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
+  for marked text to display its translation in a pop-up window using DeepL.
 - [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
   shows tabs like a tree. This is especially useful if many tabs are used.
 - [uBlock Origin](https://addons.mozilla.org/en-GB/Firefox/addon/ublock-origin)
