@@ -93,6 +93,19 @@ Sponsorings are embedded ads in Firefox.
 After navigating to `about:config` enabling and disabling of sponsorings can be done at
 `browser.newtabpage.activity-stream.showSponsored`.
 
+### Make Fullscreen Only Window Wide
+
+Firefox' default fullscreen does not only hide UI elements of firefox but also increases Firefox'
+size beyond the borders of the current window to the whole size of the screen.
+By setting the following options in `about:config` the fullscreen and also the kiosk mode will only
+hide the UI of Firefox.
+The expansion of the window will be disabled by it.
+This is often reffered to as fake fullscreen.
+
+```txt
+full-screen-api.ignore-widgets = true
+```
+
 ### Disable Unneeded Services and Features
 
 The following section is based on the website
