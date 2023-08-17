@@ -2,7 +2,7 @@
 
 This is a [Docker](/wiki/docker.md) container for a
 [qBittorrent](../qbittorrent.md) server that is connected to the internet via
-an [openVPN tunnel](/wiki/vpn.md).
+an [openVPN tunnel](/wiki/openvpn.md).
 The official container and documentation was made by
 [dyonr](https://github.com/DyonR/docker-qbittorrentvpn).
 

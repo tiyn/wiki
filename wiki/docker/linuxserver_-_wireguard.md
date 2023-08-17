@@ -1,7 +1,7 @@
 # linuxserver - airsonic-advanced
 
 This is a [Docker](/wiki/docker.md) container for a
-[WireGuard](../vpn.md#WireGuard) server.
+[WireGuard](/wiki/wireguard.md) server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/wireguard).
 
@@ -12,7 +12,7 @@ Change the settings according to your needs.
 Especially change `<VPN.SERVERNAME.COM>` to the URL the VPN is accessible at.
 If not already done set a port forward or something similar.
 `PEERS` is given the number of configs to create for different
-[clients](/wiki/vpn.md#client-wg).
+[clients](/wiki/wireguard.md#client).
 It is also possible to give a list of clients separated by commas
 (`first,second,third`) to create.
 The following shows the two options.

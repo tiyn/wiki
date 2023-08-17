@@ -1,7 +1,7 @@
 # jonohill - docker-openvpn-proxy
 
 This is a [Docker](/wiki/docker.md) container for an
-[OpenVPN proxy](/wiki/vpn.md#proxy-ovpn).
+[OpenVPN proxy](/wiki/openvpn.md#proxy).
 The official container and documentation was made by
 [jonohill](https://github.com/jonohill/docker-openvpn-proxy).
 

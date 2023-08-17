@@ -1,7 +1,7 @@
 # kylemanna - openvpn
 
 This is a [Docker](/wiki/docker.md) container for an
-[OpenVPN server](/wiki/vpn.md).
+[OpenVPN server](/wiki/openvpn.md).
 The official container and documentation was made by
 [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
 
@@ -26,7 +26,7 @@ Afterwards run `./rebuild.sh`.
 
 ### Create Certificates
 
-Each device that connects to the [OpenVPN](/wiki/vpn.md#openvpn) server should
+Each device that connects to the [OpenVPN](/wiki/openvpn.md) server should
 have a certificate to connect by.
 Create a certificate and retrieve it by running the following commands.
 Change all occurences of `<CLIENTNAME>` to the name of the client.

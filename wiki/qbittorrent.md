@@ -7,7 +7,7 @@ open-source [BitTorrent client](/wiki/bittorrent.md#clients).
 
 The software can be setup via [Docker](/wiki/docker.md) with the
 [dyonr image](/wiki/docker/dyonr_-_qbittorrentvpn.md) that
-includes an [OpenVPN](/wiki/vpn.md#openvpn) tunnel.
+includes an [OpenVPN](/wiki/openvpn.md) tunnel.
 
 ## Limiting  Upload and Download
 

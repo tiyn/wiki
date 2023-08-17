@@ -28,7 +28,8 @@ They can be removed and configured under `about:config`.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/Firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
-  usage of [a VPN proxy](/wiki/vpn.md#openvpn).
+  usage of a [VPN](/wiki/vpn.md) that acts as a Proxy like a
+  [OpenVPN Proxy](/wiki/openvpn.md#proxy).
   - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
     opens tabs and websites, that are not already managed by
     `Firefox Multi-Account Containers` in a new container.
