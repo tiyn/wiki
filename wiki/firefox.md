@@ -255,8 +255,8 @@ To disable this set the following config.
 network.connectivity-service.enabled = false
 ```
 
-To disable Microsoft Family Safety on [Windows systems](/wiki/windows/windows.md) which can be used
-as a censoring tool set the following config.
+To disable Microsoft Family Safety on [Windows systems](/wiki/windows.md) which can be used as a
+censoring tool set the following config.
 
 ```txt
 security.family_safety.mode = 0

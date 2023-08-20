@@ -2,16 +2,16 @@
 
 [League of Legends](https://www.leagueoflegends.com/en-us) is a multiplayer
 online battle arena game which is available as a standalone Launcher for
-[Windows](/wiki/windows/windows.md).
+[Windows](/wiki/windows.md).
 It is developed and published by [Riot Games](https://www.riotgames.com/en).
 
 ## Setup
 
 League of Legends is available to download for
-[Windows](/wiki/windows/windows.md) systems on
+[Windows](/wiki/windows.md) systems on
 [the official website](https://signup.leagueoflegends.com/en-us/signup/index#/).
 
-For [Linux](/wiki/linux/linux.md) distributions [Lutris](/wiki/games/lutris.md)
+For [Linux](/wiki/linux.md) distributions [Lutris](/wiki/games/lutris.md)
 and [WINE](/wiki/linux/wine.md) can be used to run the game.
 The correct version can be downloaded using the
 [Lutris website](https://lutris.net/games/league-of-legends/).

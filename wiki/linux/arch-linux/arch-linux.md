@@ -1,7 +1,7 @@
 # Arch Linux
 
 [Arch Linux](https://archlinux.org/) is a rolling-release, general-purpose
-[Linux](/wiki/linux/linux.md)
+[Linux](/wiki/linux.md)
 distribution.
 
 ## Package Manager and AUR

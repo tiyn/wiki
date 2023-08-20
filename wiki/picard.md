@@ -9,7 +9,7 @@ It is able to tag a wide range of [audio codecs](./audio.md#audio-codecs)
 
 Picard is available on the [official website](https://picard.musicbrainz.org/)
 and [github](https://github.com/metabrainz/picard).
-Additionally for some [Linux distributions](/wiki/linux/linux.md#distributions)
+Additionally for some [Linux distributions](/wiki/linux.md#distributions)
 it is available via a package often called `picard`.
 
 Picard can also be virtualized and accessed over [VNC](/wiki/vnc.md) or

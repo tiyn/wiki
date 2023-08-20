@@ -53,7 +53,7 @@ Usually both of these commands are packaged withing the `renameutils` package.
 For more information visit the [renameutils website](https://www.nongnu.org/renameutils/).
 
 Another option for bulk renaming is `vidir` which is part of the `moreutils` package for most
-[distributions](/wiki/linux/linux.md#distributions).
+[distributions](/wiki/linux.md#distributions).
 vidir is able to create folders which qmv is not.
 More information can be found on the [moreutils website](https://joeyh.name/code/moreutils/).
 

@@ -9,7 +9,7 @@ Git consists of two parts: [a client](#client) and [a server](#server).
 
 ### Client
 
-The Git client for [Linux-based operating systems](/wiki/linux/linux.md) has a
+The Git client for [Linux-based operating systems](/wiki/linux.md) has a
 separate article in this wiki which is called
 [Git client](/wiki/linux/git_\(client\).md).
 

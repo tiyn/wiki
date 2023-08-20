@@ -1,11 +1,11 @@
 # Lutris
 
 [Lutris](https://lutris.net/) is a free and open source video game platform for
-[Linux](/wiki/linux/linux.md) systems.
+[Linux](/wiki/linux.md) systems.
 It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),
 [Epic Games](https://www.epicgames.com/), [Steam](/wiki/games/steam.md) and many
-other [Windows](/wiki/windows/windows.md) games via its own installer that uses
+other [Windows](/wiki/windows.md) games via its own installer that uses
 [WINE](/wiki/linux/wine.md). Lutris can also use [Proton](/wiki/games/proton.md)
 - a patched version of WINE developed by
 [Valve](https://www.valvesoftware.com/).
@@ -115,7 +115,7 @@ be selected.
 
 ### Change WINE/Proton Version
 
-[Windows](/wiki/windows/windows.md) games are handled by
+[Windows](/wiki/windows.md) games are handled by
 [WINE](/wiki/linux/wine.md).
 After right-clicking a game and selecting `Configure` the `Wine version` can be
 changed under the `Runner options` tab.
@@ -139,7 +139,7 @@ This can be easily fixed by inserting `-dx11` in `Arguments` under the
 
 ### Crashes for Windows Games
 
-When it comes to crashes for [Windows](/wiki/windows/windows.md) games that get
+When it comes to crashes for [Windows](/wiki/windows.md) games that get
 handled by [WINE](/wiki/linux/wine.md) one point of failure is the selected
 WINE version.
 Change the version used as explained in

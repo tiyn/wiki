@@ -1,7 +1,7 @@
 # Git (Client)
 
 This entry deals with the Git client used in
-[Linux-based systems](/wiki/linux/linux.md).
+[Linux-based systems](/wiki/linux.md).
 The client is pretty simple to understand.
 With only a handfull of commands you should be able to get your versioning going.
 For servers with web interfaces there are different cli tools to control it

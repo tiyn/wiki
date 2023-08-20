@@ -5,4 +5,4 @@ Benchmarks can use a range of criteria to compare programs with one another.
 
 ## Tools
 
-- [Hyperfine](/wiki/linux/hyperfine.md) is a benchmarking tool for [Linux](/wiki/linux/linux.md).
+- [Hyperfine](/wiki/linux/hyperfine.md) is a benchmarking tool for [Linux](/wiki/linux.md).
