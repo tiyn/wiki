@@ -14,33 +14,28 @@ including bookmarks smaller.
 After navigating to `about:config` the configuration can be done at
 `browser.compactmode.show`.
 
-### List of useful Firefox add-ons
+### List of useful Firefox Add-ons
 
 Following is a list of useful Firefox add-ons.
 They can be removed and configured under `about:config`.
+The add-ons are grouped thematically
+
+#### Privacy and Security Add-ons
+
+The following add-ons increase the security or privacy.
 
 - [Cameleon](https://addons.mozilla.org/en-GB/firefox/addon/chameleon-ext/)
   spoofs your browser profile including user agent and screen size.
 - [ClearURLs](https://addons.mozilla.org/en-GB/Firefox/addon/clearurls) removes
   tracking elements from URLs.
-- [Dark Reader](https://addons.mozilla.org/en-GB/Firefox/addon/darkreader) creates
-  an automatic dark mode for sites without native dark mode.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/Firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
   usage of a [VPN](/wiki/vpn.md) that acts as a Proxy like a
   [OpenVPN Proxy](/wiki/openvpn.md#proxy).
-  - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
-    opens tabs and websites, that are not already managed by
-    `Firefox Multi-Account Containers` in a new container.
-- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/reviews/?score=1)
-  is a addon made by Mozilla itself that gives an option for marked text to display its
-  translations quickly from the extension menu but can also translate whole sites.
-  An alternative to this is the addon `To DeepL translation`.
-- [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
-  bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
-- [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
-  hides scrollbars.
+- [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
+  opens tabs and websites, that are not already managed by
+  `Firefox Multi-Account Containers` in a new container.
 - [Never-Consent](https://addons.mozilla.org/en-GB/Firefox/addon/never-consent)
   automatically refuses GDPR consent to a bunch of platforms.
 - [NoScript](https://addons.mozilla.org/en-GB/Firefox/addon/noscript) blocks all
@@ -50,8 +45,6 @@ They can be removed and configured under `about:config`.
 - [Privacy Redirect](https://addons.mozilla.org/en-US/Firefox/addon/privacy-redirect/)
   redirects youtube, instagram, twitter, etc to free alternatives or alternative
   frontends.
-- [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
-  is a sidebar with treestyle tabs and bookmarks.
 - [SponsorBlock](/wiki/youtube.md#automatically-skip-sponsorships) skips YouTube video sponsors
   automatically, works with [Invidious](./invidious.md) too.
 - [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is a userscript
@@ -60,15 +53,37 @@ They can be removed and configured under `about:config`.
   - [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/)
     [search results](/wiki/search_engine.md)
   - [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
-- [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
-  for marked text to display its translation in a pop-up window using DeepL.
-  An alternative to this addon is `Firefox Translations`.
-- [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
-  shows tabs like a tree. This is especially useful if many tabs are used.
 - [uBlock Origin](https://addons.mozilla.org/en-GB/Firefox/addon/ublock-origin)
   blocks unwanted content like ads.
 - [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/Firefox/addon/user-agent-string-switcher)
   spoofs websites that try to gather information about your webbrowser.
+
+#### Style Add-ons
+
+The following add-ons provide changes to the default style.
+
+- [Dark Reader](https://addons.mozilla.org/en-GB/Firefox/addon/darkreader) creates
+  an automatic dark mode for sites without native dark mode.
+- [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
+  hides scrollbars.
+
+#### Tool Add-ons
+
+The following add-ons add various functions.
+
+- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/reviews/?score=1)
+  is a add-on made by Mozilla itself that gives an option for marked text to display its
+  translations quickly from the extension menu but can also translate whole sites.
+  An alternative to this is the add-on `To DeepL translation`.
+- [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
+  bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
+- [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
+  is a sidebar with treestyle tabs and bookmarks.
+- [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
+  for marked text to display its translation in a pop-up window using DeepL.
+  An alternative to this add-on is `Firefox Translations`.
+- [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
+  shows tabs like a tree. This is especially useful if many tabs are used.
 - [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables
   vim movement for Firefox.
 
