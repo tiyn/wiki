@@ -33,6 +33,9 @@ They can be removed and configured under `about:config`.
   - [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
     opens tabs and websites, that are not already managed by
     `Firefox Multi-Account Containers` in a new container.
+- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/reviews/?score=1)
+  is a addon made by Mozilla itself that gives an option for marked text to display its
+  translations quickly from the extension menu.
 - [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
   bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
