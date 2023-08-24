@@ -71,21 +71,27 @@ The following add-ons provide changes to the default style.
 
 The following add-ons add various functions.
 
-- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/reviews/?score=1)
-  is a add-on made by Mozilla itself that gives an option for marked text to display its
-  translations quickly from the extension menu but can also translate whole sites.
-  An alternative to this is the add-on `To DeepL translation`.
 - [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
   bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
   is a sidebar with treestyle tabs and bookmarks.
-- [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
-  for marked text to display its translation in a pop-up window using DeepL.
-  An alternative to this add-on is `Firefox Translations`.
 - [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
   shows tabs like a tree. This is especially useful if many tabs are used.
 - [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables
   vim movement for Firefox.
+
+#### Translation Add-ons
+
+The following add-ons provide translation options.
+
+- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations)
+  is a add-on made by Mozilla itself that gives an option for marked text to display its
+  translations quickly from the extension menu but can also translate whole sites.
+- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is a add-on
+  supporting both DeepL and Google Translate to translate marked text in various different ways that
+  can be automatically displayed.
+- [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
+  for marked text to display its translation in a pop-up window using DeepL.
 
 ### Add a new search engine
 
