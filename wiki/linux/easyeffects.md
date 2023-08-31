@@ -17,6 +17,7 @@ An installation via [Flatpak](./flatpak.md) is also possible.
 Easyeffects can apply `Effects` to input and output sound.
 
 ### Noise cancellation
+
 Setup
 Noise cancellation can be achieved by installing
 Easyeffects.
