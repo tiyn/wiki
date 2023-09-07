@@ -34,7 +34,7 @@ If there are two main layouts are used then the following command can be used to
 them.
 Change `<layout 1>` and `<layout 2>` according to preferences.
 
-`setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <layout 1>,<layout 2>`
+`setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <layout 1>
 
 Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
 layouts.
