@@ -30,6 +30,15 @@ To temporarily change the layout of the keyboard just run
 `setxkbmap <your preferred layout>`.
 For a permanent change run `localectl set-x11-keymap <your preferred layout>`.
 
+If there are two main layouts are used then the following command can be used to switch between
+them.
+Change `<layout 1>` and `<layout 2>` according to preferences.
+
+`setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <layout 1>,<layout 2>`
+
+Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
+layouts.
+
 ### Display
 
 This section describes the handling of displays by X.
