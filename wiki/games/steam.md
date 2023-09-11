@@ -72,7 +72,8 @@ used the
 [user space configuration](../syncthing.md#user-space-configuration-for-linux)
 is recommended.
 Afterwards move the game saves to the directory set up by Syncthing and create
-symbolic links to link them back to the original place.
+[symbolic links](/wiki/linux/shell.md#symbolic-links-using-ln) to link them back to the original
+place.
 
 ## Error Handling
 

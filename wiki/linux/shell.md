@@ -24,6 +24,15 @@ The following is a list of Unix shells that are POSIX compliant.
 This section addresses various different functions by and actions that can be
 taken with shell commands.
 
+### Symbolic Links using `ln`
+
+`ln` is a command to create links between files and folders.
+The most simple way to create a link between two folders or files is running the following
+command.
+Replace `<source folder/file>` and `<target folder/file>` as needed.
+
+`ln -s <source folder/file> <target folder/file>`
+
 ### `ls` and its Alternatives
 
 `ls` is a command to list files and directories.
