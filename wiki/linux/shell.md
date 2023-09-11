@@ -31,7 +31,9 @@ The most simple way to create a link between two folders or files is running the
 command.
 Replace `<source folder/file>` and `<target folder/file>` as needed.
 
-`ln -s <source folder/file> <target folder/file>`
+```sh
+ln -s <source folder/file> <target folder/file>
+```
 
 ### `ls` and its Alternatives
 
@@ -187,3 +189,16 @@ Error outputs (stderr) can be silenced by appending `2> /dev/null`.
 The complete output of both stderr and stdout can be silenced by appending
 `> /dev/null 2>&1` to the command.
 A shortened version of it not possible on all shells is `&> /dev/null`.
+
+## Error solving
+
+This section addresses various problems that can occur and are related to the shell.
+
+### Pressing Enter Produces `^M`
+
+This error can easily be fixed by running the following command.
+It is related to a terminal line setting problem.
+
+```sh
+stty sane
+```
