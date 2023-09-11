@@ -24,6 +24,15 @@ The following is a list of Unix shells that are POSIX compliant.
 This section addresses various different functions by and actions that can be
 taken with shell commands.
 
+### `ls` and its Alternatives
+
+`ls` is a command to list files and directories.
+Its most important flags are the `-l` option to create a list view and `-a` to show files that are
+normally hidden.
+
+A popular alternative until its discontinuation was [exa](https://github.com/ogham/exa).
+A fork of it called [eza](https://github.com/eza-community/eza) is still actively maintained.
+
 ### Renaming Files
 
 Files can be renamed by using the `mv` command like in the following example.
