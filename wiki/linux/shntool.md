@@ -47,7 +47,8 @@ For any of these commands there can be problems with splitting files.
 It then is recommended to convert the file to the also lossless `.wav` format,
 split the files and convert it back to the desired codec.
 
-For `ape` files a special package needs to be installed to be able to split them.
+For `ape` files a special package needs to be installed to be able to split them as explained by
+[Ciro Santilli](https://unix.stackexchange.com/questions/165485/why-can-i-not-split-a-ape-file).
 This package is called `flacon`.
 It is normally used as a GUI for `shntool` but comes with the codecs needed.
 It is usually available in a package of the name `flacon`.
