@@ -15,7 +15,7 @@ yay is also a wrapper for pacman so yay can be used instead of pacman to
 install and update both AUR and main repository programs.
 It features the same syntax.
 
-### Bugfixes
+### Troubleshooting
 
 The following section describes problems that can arise when using pacman or
 yay.
