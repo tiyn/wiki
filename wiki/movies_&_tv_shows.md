@@ -35,10 +35,12 @@ This way you don't have to search for your discs all the time.
 
 - [MKS Extractor GUI](https://www.videohelp.vom/software/MKS-Extractor-GUI)
   for windows can extract subtitles from a `.mkv` file.
-- [Subtitleedit]([https://www.videohelp.vom/software/MKS-Extractor-GUI](https://www.nikse.dk/subtitleedit))
-  for linux can extract subtitles from a `.mkv` file and do ocr.
-- [VidCoder](https://vidcoder.net) for windows can compress `.mkv` files. Its an adapted version of the HandBrake software.
-- [HandBrake]([https://vidcoder.net](https://handbrake.fr/)) for linux can compress `.mkv` files.
+- [Subtitleedit](https://www.nikse.dk/subtitleedit)) for linux can extract subtitles from a `.mkv`
+  file and do ocr.
+- [VidCoder](https://vidcoder.net) for windows can compress video files. Its an adapted version of
+  the HandBrake software.
+- [HandBrake](handbrake.md) is an open-source and multi-platform program that can compress video
+  files.
 
 ## Naming schemes of movies and TV shows
 
