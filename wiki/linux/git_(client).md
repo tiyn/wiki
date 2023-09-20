@@ -7,10 +7,14 @@ With only a handfull of commands you should be able to get your versioning going
 For servers with web interfaces there are different cli tools to control it
 without using a browser.
 
-
 ## Setup
 
-On most linux distributions BlueZ can be installed with the `bluez` package.
+On most linux distributions Git can be installed with the `git` package.
+The package provides a simple command line interface.
+
+An alternative to the classical interface is the [lazygit](https://github.com/jesseduffield/lazygit)
+terminal user interface.
+Though it provides a new user interface it still uses the `git` package as a base.
 
 ## Usage
 
