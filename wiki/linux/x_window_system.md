@@ -6,7 +6,19 @@ protocoll for handling the display of the most unix-like operating systems.
 protocoll.
 It is maintained by the [X.Org Foundation](https://x.org/wiki/).
 
-## Peripheral Devices
+## Usage
+
+This section addresses various usages of the X Window System.
+
+### Kill Windows
+
+Windows can be killed with the utility `xkill`.
+Depending on the [distribution](/wiki/linux.md#distributions) used it maybe has to be installed.
+It often is bundled in a package named `xorg-xkill`.
+By running `xkill` the mouse cursor will turn into an x.
+With the mouse the window to close can then be selected.
+
+### Peripheral Devices
 
 X also handles various options of peripheral devices.
 In the files of the directory `/etc/X11/xorg.conf.d` and the file
@@ -20,11 +32,11 @@ Properties and options of a peripheral device can then be shown by running
 `xinput list-props <id>` where `<id>` is the identifier of the
 device.
 
-### Keyboard
+#### Keyboard
 
 This section describes the handling of keyboards by X.
 
-#### Change Keyboardlayout
+##### Change Keyboardlayout
 
 To temporarily change the layout of the keyboard just run
 `setxkbmap <your preferred layout>`.
@@ -39,14 +51,14 @@ Change `<layout 1>` and `<layout 2>` according to preferences.
 Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
 layouts.
 
-### Display
+#### Display
 
 This section describes the handling of displays by X.
 Additionally to the guides in this section that are independent of the used
 graphics unit special configuration for [Nvidia](/wiki/linux/nvidia.md)
 and [Intel](./intel.md) can be found in their respective entries in this wiki.
 
-#### Screen Blanking
+##### Screen Blanking
 
 To save power the screen is set to turn black after a given amount of time.
 This can be disabled temporarily by running `xset s off` or permanently by
@@ -58,7 +70,7 @@ Section "ServerFlags"
 EndSection
 ```
 
-#### Adjust DPI and UI Scale
+##### Adjust DPI and UI Scale
 
 The dots per inch (DPI) is a measurement of spatial video dot density.
 It has effect on the size of UI elements.
@@ -76,11 +88,11 @@ For this to work the following line needs to be added into the `~/.xinitrc` file
 [ -f "$HOME/.config/xorg/xpcspec" ] && xrdb -merge "$HOME/.config/xorg/xpcspec"
 ```
 
-### Mouse
+#### Mouse
 
 This section describes the handling of mouse by X.
 
-#### Emulation of the Middle Mouse Button
+##### Emulation of the Middle Mouse Button
 
 If middle mouse button emulation is enabled the system will emulate a middle
 mouse button click when clicking both left and right mouse button
