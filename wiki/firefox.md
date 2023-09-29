@@ -75,10 +75,13 @@ The following add-ons add various functions.
   bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
 - [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
   is a sidebar with treestyle tabs and bookmarks.
+- [Surfingkeys](https://github.com/brookhong/Surfingkeys) introduces keyboard-based navigation.
+  It is similar to Vim Vixen, further down this list.
 - [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
   shows tabs like a tree. This is especially useful if many tabs are used.
 - [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables
   vim movement for Firefox.
+  It is similar to Surfingkeys further up this list.
 
 #### Translation Add-ons
 
