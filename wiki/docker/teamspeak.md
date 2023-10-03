@@ -1,9 +1,9 @@
 # teamspeak
 
 This is a [Docker](/wiki/docker.md) container for a
-[teamspeak3](../teamspeak3.md) server.
+[Teamspeak3](/wiki/teamspeak.md) server.
 The official container and documentation was made by
-[teamspeak](https://hub.docker.com/_/teamspeak).
+[Teamspeak](https://hub.docker.com/_/teamspeak).
 
 ## Set-up
 
