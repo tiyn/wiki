@@ -59,6 +59,13 @@ and move the downloaded `.dll` file to
 `gw2_root_directory/addons/arcdps/gw2addon_arcdps.dll`.
 This extension can be opened with the hotkey `Alt-Shift-T`.
 
+arcdps' font can be easily changed.
+For this a `.ttf` file is needed.
+By moving and renaming the file to `gw2_root_directory/addons/arcdps/arcdps_font.ttf` the new font
+will be enabled following the next start of Guild Wars 2.
+A font similar to the default Guild Wars 2 font is Lato.
+Lato can be downloaded from the [Google fonts website](https://fonts.google.com/specimen/Lato).
+
 This add-on and its sub-add-ons needs to be updated regularly to work correctly.
 
 #### boon-tables
