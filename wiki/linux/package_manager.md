@@ -4,7 +4,7 @@ Package managers are important programs to get software onto your system.
 
 ## Arch Linux: Pacman and Yay
 
-In [Arch Linux](/wiki/linux/arch-linux/arch-linux.md) there are 2 main types of
+In [Arch Linux](/wiki/linux/arch-linux.md) there are 2 main types of
 package managers.
 The first is pacman, the default package manager.
 

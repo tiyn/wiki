@@ -34,7 +34,7 @@ For VPN and other applications using a tunnel it can be useful to check the
 outside IP of your system.
 The following command uses the `dig` command.
 It is either bundled in the `dig` package - like in
-[Arch Linux](/wiki/linux/arch-linux/arch-linux.md) - or in the `dnsutils`
+[Arch Linux](/wiki/linux/arch-linux.md) - or in the `dnsutils`
 package - like in Ubuntu - or even another package depending on the distribution
 used.
 After installation the following command can be used to get the outside IP

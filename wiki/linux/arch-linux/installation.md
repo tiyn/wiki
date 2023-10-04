@@ -11,7 +11,7 @@ At the end of this guide a fully functional Arch Linux will be installed.
 ## 1. Preparation
 
 Ahead of the installation an Arch boot-stick has to be created as described in
-[the Arch Linux entry](/wiki/linux/arch-linux/arch-linux.md#installation-medium).
+[the Arch Linux entry](/wiki/linux/arch-linux.md#installation-medium).
 
 After that the USB can be plugged in the system on which Arch should be installed.
 Boot the target system and select `Boot Arch Linux (x86_64)`.
@@ -194,7 +194,7 @@ this will install a bunch of useful base software including
 [a window manager](../suckless.md#programs).
 You can go on to other guides aswell.
 Especially the
-[Recommended practices](/wiki/linux/arch-linux/arch-linux.md#recommended-practices)
+[Recommended practices](/wiki/linux/arch-linux.md#recommended-practices)
 should be checked for further setups.
 
 Additionally if you have a NVidia Graphics Cards you should read

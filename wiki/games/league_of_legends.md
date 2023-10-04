@@ -21,7 +21,7 @@ used named `Lutris-GE` which can be found on
 It is important to set up the game correctly for anti-cheat to work properly.
 By checking the right box at the launch of the games the anti-cheat can be
 enabled to persist through reboots on most Linux distributions.
-For [Arch Linux](/wiki/linux/arch-linux/arch-linux.md) this has to be done
+For [Arch Linux](/wiki/linux/arch-linux.md) this has to be done
 manually as explained by
 [QuinnBorn on Reddit](https://www.reddit.com/r/leagueoflinux/comments/eokiir/anticheat_popup_every_reboot/).
 For that the file `/etc/sysctl.d/vsyscall.conf` has to be created with the
