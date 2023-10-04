@@ -42,3 +42,13 @@ The name of the archive is assumed to be `directory.7z`.
 ```sh
 7z l directory.7z
 ```
+
+### Remove a File from an Existing Archive
+
+To remove a file with the assumed name `file.ext` from an archive called `directory.7z` run the
+following command as explained by
+[user3409415 on stack overflow](https://stackoverflow.com/questions/22344587/how-to-delete-a-file-from-multiple-zip-archives-using-7-zip).
+
+```sh
+7z d -r directory.7z file.ext
+```
