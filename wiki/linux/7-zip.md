@@ -21,11 +21,10 @@ As explained by
 An effective way to compress a directory is the following command where `directory` is the directory
 that is to be compressed.
 The archive will be created by the same name as the directory but with the `.7z` extension.
-This command uses [expansion](/wiki/linux/shell.md#expansion).
 The directory is not deleted automatically afterwards.
 
 ```sh
-7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on directory{.7z,}
+7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on directory
 ```
 
 To uncompress it run the following command.
