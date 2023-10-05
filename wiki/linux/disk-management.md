@@ -49,6 +49,10 @@ The following is a command to unmount a device from a specified directory.
 umount <path to mount point>
 ```
 
+A special case is the `.iso` format.
+It can be mounted too.
+A guide on how this is done can be found in the [ISO entry](/wiki/linux/iso_image.md#mounting).
+
 ## Create Partition
 
 In the following it is assumed that the disk is `/dev/sda`

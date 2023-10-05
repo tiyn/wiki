@@ -21,10 +21,7 @@ For running both Windows applications aswell as games
 By clicking on the `+` in the left upper corner of the Lutris application a new
 game can be manually added.
 
-Mount `.iso` files first using the `mount -o loop <path to iso> <path to mount>`
-command.
-Check the directory the media was mounted to afterwards to select the appropiate
-Option.
+Mount `.iso` files as explained in the [ISO image entry](/wiki/linux/iso_image.md#mounting).
 
 If a setup executable is available select `Install a Windows game from media`.
 Then select the setup executable from the mounted path.
