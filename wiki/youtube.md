@@ -19,8 +19,8 @@ As a command line utility [yt-dl](https://github.com/ytdl-org/youtube-dl) can be
 used.
 Since yt-dl is stagnant its fork [yt-dlp](https://github.com/yt-dlp/yt-dlp) is
 recommended.
-[MeTube](/wiki/metube.md) is a self-hostable web user interface for
-[yt-dlp](https://github.com/yt-dlp/yt-dlp).
+[MeTube](/wiki/metube.md) and [TubeArchivist](/wiki/docker/bbilly1_-_tubearchivist.md) are
+self-hostable web user interfaces for [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
 ## Automatically Skip Sponsorships
 

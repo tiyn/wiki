@@ -2,9 +2,8 @@
 
 This is a [Docker](/wiki/docker.md) container for a [Gramps](../gramps.md)
 server.
-The Server consists of 2 Docker containers, one is the gramps main server and one a redis instance.
-The main server is split into two subcontainers.
-In addition to the main container you need to connect a [redis container](./redis.md) to it.
+The Server consists of 2 Docker containers, one is the gramps main server - split into two
+subcontainers - and one a [redis instance](/wiki/docker/redis.md).
 
 ## Set-up
 
