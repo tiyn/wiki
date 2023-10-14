@@ -5,7 +5,11 @@ This is a [Docker](/wiki/docker.md) container for a [Gameyfin](/wiki/games/gamey
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs.
+Create the volume for the configuration files by running the command `docker volume create
+gameyfin_config`.
+Make sure to run the following command on the config volume `chown -R 1000:root gameyfin_config`.
+Afterwards run `./rebuild.sh`.
 
 ## Environment-variables
 
