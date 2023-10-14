@@ -26,11 +26,11 @@ There is also an interactive
 ### Ignore files having local changes
 
 If you need to make changes to a file that are local you can run
-`config update-index --skip-worktree <file>`.
+`git update-index --skip-worktree <file>`.
 Following this the file won't show up as having changes from the upstream.
 Note that files tagged with this command are checked out sparsly, so you need
 to watch out for changes yourself if there are any.
-To revert this run `config update-index --no-skip-worktree <file>`.
+To revert this run `git update-index --no-skip-worktree <file>`.
 
 ### Authentication via SSH
 
