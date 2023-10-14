@@ -32,6 +32,12 @@ Note that files tagged with this command are checked out sparsly, so you need
 to watch out for changes yourself if there are any.
 To revert this run `git update-index --no-skip-worktree <file>`.
 
+Files that are marked this way can be listed by running the following command.
+
+```sh
+git ls-files -v | grep "^S"
+```
+
 ### Authentication via SSH
 
 Authentication by default is done via a username and a password.
