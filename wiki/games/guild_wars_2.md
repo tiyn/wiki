@@ -122,6 +122,17 @@ and move the downloaded `.dll` file to
 This extension can be opened via the extensions menu of the original arcdps
 settings.
 
+#### know thy enemy
+
+The [know thy enemy extension](https://github.com/typedeck0/Know-thy-enemy)
+provides an overview of the enemies of the last fight in WvW.
+Download the current version of
+[know-thy-enemy](https://github.com/typedeck0/Know-thy-enemy/releases)
+and move the downloaded `.dll` file to
+`gw2_root_directory/addons/arcdps/know_thy_enemy.dll`.
+This extension can be opened via the extensions menu of the original arcdps
+settings.
+
 #### mechanics
 
 The [mechanics extension](https://github.com/knoxfighter/GW2-ArcDPS-Mechanics-Log/) is a log of
