@@ -1,7 +1,7 @@
 # Sid Meier's Civilization VI
 
 [Sid Meier's Civilization VI](https://civilization.com/de-DE/) is a round-based
-strategy game which is available as a standalone Launcher for Windows and on
+strategy [game](/wiki/games.md) which is available as a standalone Launcher for Windows and on
 [Steam](./steam.md) and many other video game distribution services.
 
 ## Troubleshooting
@@ -16,4 +16,3 @@ steams game related settings:
 ```sh
 eval $( echo "%command%" | sed "s/2KLauncher\/LauncherPatcher.exe'.*/Base\/Binaries\/Win64Steam\/CivilizationVI'/" )
 ```
-

@@ -1,6 +1,7 @@
 # melonDS
 
-[melonDS](https://melonds.kuribo64.net/) is a Nintendo DS [emulator](/wiki/games/emulators.md).
+[melonDS](https://melonds.kuribo64.net/) is a [Nintendo DS](/wiki/games.md)
+[emulator](/wiki/games/emulators.md).
 
 ## Setup
 

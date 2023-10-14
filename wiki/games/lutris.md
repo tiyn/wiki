@@ -1,6 +1,6 @@
 # Lutris
 
-[Lutris](https://lutris.net/) is a free and open source video game platform for
+[Lutris](https://lutris.net/) is a free and open source video [game](/wiki/games.md) platform for
 [Linux](/wiki/linux.md) systems.
 It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),

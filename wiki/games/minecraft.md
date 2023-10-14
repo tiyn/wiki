@@ -1,6 +1,6 @@
 # Minecraft
 
-[Minecraft](https://www.minecraft.net) is a sandbox video game created by "Notch".
+[Minecraft](https://www.minecraft.net) is a sandbox [video game](/wiki/games.md) created by "Notch".
 
 ## Setup
 
@@ -19,7 +19,7 @@ There are different Minecraft Clients available:
 - [MultiMC5](./multimc5.md) is a custom Minecraft launcher that allows multiple
   installations at once.
 
-### Usage 
+### Usage
 
 #### Link Minecraft to a Subdomain
 
@@ -41,10 +41,10 @@ target: mine.<domain>.<TLD>
 
 #### Adding Death Count to the Scoreboard
 
-Run the following commands inside the console of minecraft to add death count as a objective in the 
+Run the following commands inside the console of minecraft to add death count as a objective in the
 scoreboard.
 
-```txt 
+```txt
 /scoreboard objectives add Deaths deathCount
 /scoreboard objectives setdisplay list Deaths
 ```

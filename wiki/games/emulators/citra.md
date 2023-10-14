@@ -1,6 +1,7 @@
 # Citra
 
-[Citra](https://citra-emu.org/) is a Nintendo 3DS [emulator](/wiki/games/emulators.md).
+[Citra](https://citra-emu.org/) is a [Nintendo 3DS](/wiki/games.md)
+[emulator](/wiki/games/emulators.md).
 
 ## Setup
 

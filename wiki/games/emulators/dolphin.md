@@ -1,6 +1,7 @@
 # Dolphin
 
-[Dolphin](https://dolphin-emu.org/) is a Nintendo GameCube and Wii [emulator](/wiki/games/emulators.md).
+[Dolphin](https://dolphin-emu.org/) is a [Nintendo GameCube and Wii](/wiki/games.md)
+[emulator](/wiki/games/emulators.md).
 
 ## Setup
 

@@ -1,8 +1,9 @@
 # Proton
 
 [Proton](https://github.com/ValveSoftware/Proton) is a compatibility tool for
-[Steam](./steam.md) by its developers, [Valve](https://www.valvesoftware.com),
-based on [WINE](../linux/wine.md).
+[games](/wiki/games.md) made by the developers of [Steam](./steam.md),
+[Valve](https://www.valvesoftware.com).
+It is based on [WINE](../linux/wine.md).
 
 ## GE-Version
 
@@ -46,4 +47,3 @@ You can remove `<steam location>/steamapps/compatdata/<game id>` to reset the
 Wine prefix completely.
 It is recommended to keep a backup of the folder containing the old Wine prefix
 as it stores game saves and other important data, that can be useful.
-

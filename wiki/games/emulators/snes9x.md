@@ -1,6 +1,6 @@
 # Snes9x
 
-[Snes9x](http://www.snes9x.com/) is a Super Nintendo Entertainment System
+[Snes9x](http://www.snes9x.com/) is a [Super Nintendo Entertainment System](/wiki/games.md)
 [emulator](/wiki/games/emulators.md).
 
 ## Setup

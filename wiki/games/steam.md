@@ -1,6 +1,6 @@
 # Steam
 
-[Steam](https://store.steampowered.com/) is a software for digital game
+[Steam](https://store.steampowered.com/) is a software for digital [game](/wiki/games.md)
 destribution.
 It is developed by [Valve](https://www.valvesoftware.com).
 Steam uses its compatibility layer, [Proton](./proton.md) for running windows
