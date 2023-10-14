@@ -1,6 +1,6 @@
-# Movies & TV Shows
+# Video
 
-It is nice to have some movies saved on your system.
+It is nice to have some movies, tv shows or other videos saved on your system.
 There are multiple different approaches on how to get it working depending on
 your needs.
 In general you need to consider if you want the video directly on your pc or
