@@ -28,10 +28,6 @@ cuebreakpoints '<cue file>' | shnsplit -o '<codec>' '<audio file>'
 Omitting of the `-o` flag will result in output files with the `.wav` filetype.
 Alternatively the usage of `cuebreakpoints` can be avoided with the following
 command.
-Sometimes `cuebreakpoints` outputs incorrect timestamps.
-They are usually missing a `0` at the end.
-To fix this the output of the `cuebreakpoints` command can be piped into `sed s/$/0/` which can be
-piped into shnsplit just as in the example before.
 
 ```sh
  shnsplit -f '<cue file>' -o '<codec>' '<audio file>'
@@ -77,3 +73,7 @@ cuebreakpoints, cue2tracks and shnsplit.
 To get the correct timings the `.cue` file has to be changed to use the format
 `mm:ss:fff`.
 It is recommended to use the shnsplit alternative in this case.
+Sometimes `cuebreakpoints` outputs incorrect timestamps.
+They are usually missing a `0` at the end.
+To fix this the output of the `cuebreakpoints` command can be piped into `sed s/$/0/` which can be
+piped into shnsplit just as in the example before.
