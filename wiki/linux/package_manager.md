@@ -32,32 +32,22 @@ curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
 
 #### Error While Importing Keys
 
-Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
-right package.
+Both `yay` and `pacman` use [GPG keys](/wiki/linux/gpg.md).
 It is possible that it runs into errors when importing new keys.
-If this happens you should try to restart your gpg key server with
-`gpgconf --kill all`.
+If this happens you should try to restart the GPG key server
+[as explained in the GPG entry](/wiki/linux/gpg.md#restart-the-gpg-server).
 
 #### Unknown Public Key
 
 If the error `ERROR: One or more PGP signatures could not be verified!`, you
 have to manually receive the key and trust it.
-This is done by running the following lines:
+This can be done [as explained in the GPG entry](/wiki/linux/gpg.md#receive-a-key-and-trust-it).
 
-```sh
-gpg --recv-key <KEYID>
-gpg --lsign <KEYID>
-```
-
-Where <KEYID> is the placeholder of the identification string of the key.
-It usually gets gets printed in the line above the error looking like
+The identifier of the key usually gets gets printed in the line above the error looking like
 `FAILED (unknown public key <KEYID>)`.
 
 #### Error During Updating `is marginal trust`
 
-Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
-right package.
-It is possible that it runs into errors when importing new keys.
 If the error `[...] Key [...] is marginal trust` occurs while updating the
 system, it can be fixed by running the following commands and then restarting
 the update process of the package manager.
