@@ -15,4 +15,4 @@ Another possible tagging software is [MusicBrainz Picard](../picard.md)
 ### Splitting Flac file according to cue file
 
 `shnsplit` can be used to split flac files.
-In the [shnsplit article](/wiki/linux/shnsplit.md) an explanation on this is given.
+In the [shnsplit article](/wiki/linux/shntool.md) an explanation on this is given.
