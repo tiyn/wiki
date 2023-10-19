@@ -119,8 +119,8 @@ changed under the `Runner options` tab.
 There are many different versions of WINE, WINE-fshack and various
 [Proton](/wiki/games/proton.md) and
 [Proton GE versions](/wiki/games/proton.md#ge-version) to select.
-Using the default runner of [Bottles called Caffe](/wiki/games/bottles.md#caffe)
-is also possible.
+Using the default runner of [Bottles](/wiki/games/bottles.md) - called
+[Caffe](/wiki/games/bottles.md#caffe) - is also possible.
 
 ## Troubleshooting
 
