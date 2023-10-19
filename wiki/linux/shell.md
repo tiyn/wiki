@@ -23,6 +23,7 @@ The following is a list of Unix shells that are POSIX compliant.
 
 This section addresses various different functions by and actions that can be
 taken with shell commands.
+The focus is mostly on POSIX-compliant shells and scripts that are compatible with POSIX.
 
 ### Symbolic Links using `ln`
 
@@ -189,6 +190,18 @@ Error outputs (stderr) can be silenced by appending `2> /dev/null`.
 The complete output of both stderr and stdout can be silenced by appending
 `> /dev/null 2>&1` to the command.
 A shortened version of it not possible on all shells is `&> /dev/null`.
+
+### `cd` Into Next Or Previous Sibling Directory
+
+Quickly switching to the alphabetically next or previous directory can in some cases be useful.
+For this the following commands can be used.
+The first one navigates to the alphabetically previous sibling directory.
+The second one to the next.
+
+```sh
+cd ../"$(ls -F .. | grep '/' | grep -B1 -xF "${PWD##*/}/" | head -n 1)"
+cd ../"$(ls -F .. | grep '/' | grep -A1 -xF "${PWD##*/}/" | tail -n 1)"
+```
 
 ## Error solving
 
