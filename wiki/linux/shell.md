@@ -16,8 +16,9 @@ The following is a list of Unix shells that are POSIX compliant.
   powerful scripting language. It is often set to be the
   [default user shell](#changing-the-default-user-shell) because of its user
   friendliness and a more features like the possibility for
-  [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  and [auto suggestions](https://github.com/zsh-users/zsh-autosuggestions).
+  [syntax highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
+  and [auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) and even an improved
+  version of [auto completion](https://github.com/marlonrichert/zsh-autocomplete).
 
 ## Usage
 
