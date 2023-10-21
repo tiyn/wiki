@@ -7,7 +7,7 @@ The official container and documentation was made by
 
 ## Set-up
 
-Create the file `rebuild.sh`.
+Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ## Volumes
@@ -31,13 +31,27 @@ Set the following ports with the -p tag.
 
 ```sh
 #!/bin/sh
-docker stop searx
-docker rm searx
-docker pull searx/searx
-docker run --name searx \
-    --restart unless-stopped \
-    -v searx_etc:/etc/searx \
-    -v searx_log:/var/log/uwsgi \
-    -p 8080:8080 \
-    -d searx/searx
+docker-compose down
+docker-compose up -d
+```
+
+## docker-compose.yml
+
+```sh
+version: "2.1"
+services:
+  searx:
+    image: searx/searx
+    volumes:
+      - etc:/etc/searx
+      - log:/var/log/uwsgi
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+
+volumes:
+  etc:
+    driver: local
+  log:
+    driver: local
 ```
