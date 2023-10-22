@@ -1,7 +1,7 @@
 # Matrix
 
 [Matrix](https://matrix.org/) is an open network for secure, decentralized
-communication.
+[communication](/wiki/communication.md).
 
 ## Setup
 
