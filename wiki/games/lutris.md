@@ -122,6 +122,15 @@ There are many different versions of WINE, WINE-fshack and various
 Using the default runner of [Bottles](/wiki/games/bottles.md) - called
 [Caffe](/wiki/games/bottles.md#caffe) - is also possible.
 
+### Disable Networking for a Game
+
+For disabling networking for a command the program
+[firejail](https://github.com/netblue30/firejail) can be used.
+In Lutris after the installation of firejail right-click the game to disable networking on.
+Select `Configure` and navigate to `System Options`.
+Enable `Advanced` and insert `firejail --net=none --noprofile` into the `command prefix` field.
+Afterwards all networking of the selected game is disabled.
+
 ## Troubleshooting
 
 This section explains ways of solving various problems that can occur when using
