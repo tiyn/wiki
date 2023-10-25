@@ -26,23 +26,23 @@ The following add-ons increase the security or privacy.
 
 - [Cameleon](https://addons.mozilla.org/en-GB/firefox/addon/chameleon-ext/)
   spoofs your browser profile including user agent and screen size.
-- [ClearURLs](https://addons.mozilla.org/en-GB/Firefox/addon/clearurls) removes
+- [ClearURLs](https://addons.mozilla.org/en-GB/firefox/addon/clearurls) removes
   tracking elements from URLs.
-- [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/Firefox/addon/multi-account-containers)
+- [Consent-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic)
+  automatically refuses GDPR consent to a bunch of platforms.
+- [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
   usage of a [VPN](/wiki/vpn.md) that acts as a Proxy like a
   [OpenVPN Proxy](/wiki/openvpn.md#proxy).
-- [Temporary Containers](https://addons.mozilla.org/en-GB/Firefox/addon/temporary-containers)
+- [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.
-- [Never-Consent](https://addons.mozilla.org/en-GB/Firefox/addon/never-consent)
-  automatically refuses GDPR consent to a bunch of platforms.
-- [NoScript](https://addons.mozilla.org/en-GB/Firefox/addon/noscript) blocks all
+- [NoScript](https://addons.mozilla.org/en-GB/firefox/addon/noscript) blocks all
   javascript so that the parts you need can be reenabled and the rest is not used.
-- [Privacy Badger](https://addons.mozilla.org/en-GB/Firefox/addon/privacy-badger17)
+- [Privacy Badger](https://addons.mozilla.org/en-GB/firefox/addon/privacy-badger17)
   blocks unwanted invisible trackers.
-- [Privacy Redirect](https://addons.mozilla.org/en-US/Firefox/addon/privacy-redirect/)
+- [Privacy Redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/)
   redirects youtube, instagram, twitter, etc to free alternatives or alternative
   frontends.
 - [SponsorBlock](/wiki/youtube.md#automatically-skip-sponsorships) skips YouTube video sponsors
@@ -53,9 +53,9 @@ The following add-ons increase the security or privacy.
   - [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/)
     [search results](/wiki/search_engine.md)
   - [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
-- [uBlock Origin](https://addons.mozilla.org/en-GB/Firefox/addon/ublock-origin)
+- [uBlock Origin](https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin)
   blocks unwanted content like ads.
-- [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/Firefox/addon/user-agent-string-switcher)
+- [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/firefox/addon/user-agent-string-switcher)
   spoofs websites that try to gather information about your webbrowser.
 
 #### Style Add-ons
