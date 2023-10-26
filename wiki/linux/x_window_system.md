@@ -64,24 +64,27 @@ To save power the screen is set to turn black after a given amount of time.
 Adding the following lines to your `/etc/X11/xorg.conf.d/dpms.conf` will permanently enable screen
 blanking.
 
-```txt
-[Monitor]
-Option "DPMS" "true"
-```
-
-Additionally configure the times of the following section (both `0` at the moment) and add it to the
+Configure the times of the following section (both `10` minutes at the moment) and add it to the
 `ServerFlags` option of the file `/etc/X11/xorg.conf.d/dpms.conf` or alternatively add them into the
 file `/etc/X11/xorg.conf`.
+Set the time to `0` for disabling the turning off of the screen.
 
 ```txt
 Section "ServerFlags"
-    Option "OffTime" "0"
-    Option "BlankTime" "0"
+    Option "OffTime" "10"
 EndSection
 ```
 
 This can be disabled temporarily by running `xset s off`.
 The screen can also be turned off instantly with the command `xset dpms force off`.
+
+If `OffTime` does not work add the following to the file `/etc/X11/xorg.conf.d/dpms.conf.
+
+```txt
+Section "ServerFlags"
+  Option "BlankTime" "10"
+EndSection
+```
 
 ##### Adjust DPI and UI Scale
 
