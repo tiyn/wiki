@@ -63,17 +63,8 @@ The [Steam Cloud](https://partner.steamgames.com/doc/features/cloud) allows
 games and the platform to utilize cloud storage hosted by Steam.
 Games can use this to store data including game settings and saves.
 
-By using [Syncthing](../syncthing.md) game saves can be synchronized without
-the Steam Cloud.
-First set up Syncthing as described in the
-[Syncthing entry](../syncthing.md#setup).
-If the [Steam Deck](./steam_deck.md) or another system with only user access is
-used the
-[user space configuration](../syncthing.md#user-space-configuration-for-linux)
-is recommended.
-Afterwards move the game saves to the directory set up by Syncthing and create
-[symbolic links](/wiki/linux/shell.md#symbolic-links-using-ln) to link them back to the original
-place.
+Games can also be synchronized without the Steam Cloud by using [Syncthing](/wiki/syncthing.md) as
+described in [the games entry](/wiki/games.md#syncing-game-saves-across-systems).
 
 ## Error Handling
 
