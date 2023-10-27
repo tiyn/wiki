@@ -205,7 +205,7 @@ UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 ## 12. Further steps and graphical environment
 
 Now you can follow the recommended larbs installation script of this wiki
-(`curl -o larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
+(`curl -LO larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
 this will install a bunch of useful base software including
 [a graphical environment](../x_window_system.md) and
 [a window manager](../suckless.md#programs).
