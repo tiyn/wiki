@@ -1,7 +1,7 @@
 # Home Assistant
 
-[Home Assistant](https://www.home-assistant.io/) is a central control system for smart home and
-other [Internet of Things](/wiki/internet_of_things.md) devices.
+[Home Assistant](https://www.home-assistant.io/) is a central control system for
+[smart home](/wiki/smart_devices.md#smart-home) and other Internet of Things devices.
 
 ## Setup
 

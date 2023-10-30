@@ -2,7 +2,9 @@
 
 [Gadgetbridge](https://codeberg.org/Freeyourgadget/Gadgetbridge/) is a free and open source software
 for [Android](/wiki/android.md) systems.
-It is a cloudless replacement for gadgets proprietary applications.
+It is a cloudless replacement for proprietary software for
+[smart devices](/wiki/smart_devices.md), but is especially designed for
+[smartwatches and smart bands](/wiki/smart_devices.md#smartwatches-and-smart-bands).
 
 ## Setup
 
