@@ -21,7 +21,7 @@ accesses the server.
 ### Client
 
 WireGuard clients can be found for many devices.
-For Android for example there is
+For [Android](/wiki/android.md) for example there is
 [Wireguard for Android in the F-Droid store](https://f-droid.org/de/packages/com.wireguard.android/).
 For most linux distributions there is a package called `wireguard-tools`.
 

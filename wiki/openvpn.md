@@ -17,7 +17,7 @@ server software.
 ### Client
 
 OpenVPN clients can be found for many devices.
-For Android for example there is
+For [Android](/wiki/android.md) for example there is
 [OpenVPN for Android in the F-Droid store](https://f-droid.org/de/packages/de.blinkt.openvpn/).
 For most linux distributions there is a package called `openvpn`.
 

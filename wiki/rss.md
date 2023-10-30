@@ -10,4 +10,4 @@ This sections lists various RSS clients.
 
 - [FreshRSS](/wiki/freshrss.md) is a self-hosted RSS aggregator with a web interface.
 - [Feeder](https://f-droid.org/de/packages/com.nononsenseapps.feeder/) is an RSS reader for
-  Android phones available on [F-Droid](/wiki/android/f-droid.md).
+  [Android](/wiki/android.md) phones available on [F-Droid](/wiki/android/f-droid.md).

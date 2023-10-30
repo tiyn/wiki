@@ -7,7 +7,7 @@
 There are some alternative frontends available that also feature user managament
 including subscriptions.
 A self-hosting alternative is [Invidious](/wiki/invidious.md).
-For Android phones [NewPipe](https://github.com/TeamNewPipe/NewPipe) is
+For [Android](/wiki/android.md) phones [NewPipe](https://github.com/TeamNewPipe/NewPipe) is
 available in the [F-Droid Appstore](/wiki/android/f-droid.md).
 
 ## Downloading YouTube Videos
