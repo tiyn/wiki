@@ -51,3 +51,12 @@ On that website create an API key and paste it into the according setting in the
 notification app.
 Finally set the desired location in the Gadgetbridge app inside the settings.
 Afterwards the weather function will be working.
+
+### Install Watchfaces
+
+Watchfaces can be installed by using Gadgetbridges `File Installer` option that is available in the
+menu of connected devices.
+Watchface files for Xiaomi/Amazfit devices can be downloaded on
+[amazfitwatchfaces.com](https://amazfitwatchfaces.com/).
+The same catalog is also available as an
+[Android app on the Google Play Store](https://play.google.com/store/apps/details?id=com.amazfitwatchfaces.st).
