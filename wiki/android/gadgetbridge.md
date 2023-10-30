@@ -21,7 +21,7 @@ Gadgetbridge.
 Devices can be added to Gadgetbridge by clicking on the `+` in the main screen.
 Afterwards the device can simply be paired.
 
-A special pairing procedure is needed for Huami, Amazfit or Xiaomi devices.
+A special pairing procedure is needed for Amazfit or Xiaomi devices.
 The following describes the steps that need to be done.
 
 - Download the
