@@ -49,4 +49,5 @@ location.
 Finally create an account at [OpenWeather](https://home.openweathermap.org).
 On that website create an API key and paste it into the according setting in the Weather
 notification app.
+Finally set the desired location in the Gadgetbridge app inside the settings.
 Afterwards the weather function will be working.
