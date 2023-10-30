@@ -25,7 +25,7 @@ This command uses [expansion](/wiki/linux/shell.md#expansion).
 The directory is not deleted automatically afterwards.
 
 ```sh
-7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on directory{.7z,}
+7z a -t7z -m0=lzma -mx=9 -mfb=64 -md=32m -ms=on directory
 ```
 
 To uncompress it run the following command.
