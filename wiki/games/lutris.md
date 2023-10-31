@@ -22,6 +22,11 @@ By clicking on the `+` in the left upper corner of the Lutris application a new
 game can be manually added.
 
 Mount `.iso` files as explained in the [ISO image entry](/wiki/linux/iso_image.md#mounting).
+Some installations require the swapping of discs during the installation.
+An easy way around this is to mount the [ISO image](/wiki/linux/iso_image.md#mounting) and copy them
+into another directory.
+This way the files from two discs can be put in one folder.
+Afterwards follow the installation as usual.
 
 If a setup executable is available select `Install a Windows game from media`.
 Then select the setup executable from the mounted path.
