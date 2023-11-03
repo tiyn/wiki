@@ -139,3 +139,13 @@ The audio file can then be split according to the `.cue` file.
 For splitting of `.flac` files on a Linux system check the
 [a flac (package) entry](/wiki/linux/flac_(package).md#splitting-flac-file-according-to-cue-file)
 for further informations.
+
+## Scoring Music
+
+Scoring music has moved more and more into the computer realm.
+An easy and intuitive software that can be used for this is
+[MuseScore](https://musescore.org/).
+MuseScore is free and open-source and is cross-platform.
+On [Linux based systems](/wiki/linux.md) it is available on most distributions via the `musescore`
+package or their [website](https://musescore.org/download) and can be run with the command `mscore`.
+For Windows visit the [download section of the MuseScore website](https://musescore.org/download).
