@@ -149,6 +149,3 @@ MuseScore is free and open-source and is cross-platform.
 On [Linux based systems](/wiki/linux.md) it is available on most distributions via the `musescore`
 package or their [website](https://musescore.org/download) and can be run with the command `mscore`.
 For Windows visit the [download section of the MuseScore website](https://musescore.org/download).
-
-Already scored music can be found freely accessible on the sister site of MuseScore.org also called
-[musescore.com](https://musescore.com/).
