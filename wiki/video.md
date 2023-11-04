@@ -169,3 +169,13 @@ shows
         ├── series_(2010)_s02e01-dvd_un.mkv
         └── series_(2010)_s02e02-dvd_un.mkv
 ```
+
+### Getting Metadata
+
+Using [MediaInfo](https://github.com/MediaArea/MediaInfo) metadata of a file can be obtained.
+A command for this looks like the following.
+In this the file to obtain metadata to is assumed to be `video.mkv`.
+
+```sh
+mediainfo video.mkv
+```

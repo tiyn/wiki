@@ -15,3 +15,13 @@ A popular cross-platform program for this is [GIMP](https://www.gimp.org/).
 
 Another part of image manipulation is the upscaling of low resolution images.
 This can be done by the cross-platform program [upscayl](https://github.com/upscayl/upscayl).
+
+### Getting Metadata
+
+Using [MediaInfo](https://github.com/MediaArea/MediaInfo) metadata of a file can be obtained.
+A command for this looks like the following.
+In this the file to obtain metadata to is assumed to be `image.png`.
+
+```sh
+mediainfo image.png
+```

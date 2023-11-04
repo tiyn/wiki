@@ -149,3 +149,13 @@ MuseScore is free and open-source and is cross-platform.
 On [Linux based systems](/wiki/linux.md) it is available on most distributions via the `musescore`
 package or their [website](https://musescore.org/download) and can be run with the command `mscore`.
 For Windows visit the [download section of the MuseScore website](https://musescore.org/download).
+
+### Getting Metadata
+
+Using [MediaInfo](https://github.com/MediaArea/MediaInfo) metadata of a file can be obtained.
+A command for this looks like the following.
+In this the file to obtain metadata to is assumed to be `audio.flac`.
+
+```sh
+mediainfo audio.flac
+```
