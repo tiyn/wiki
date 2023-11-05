@@ -2,7 +2,27 @@
 
 `mkinitcpio` is a script to create an initial ramdisk environment.
 
+## Usage
+
+### Manually Generate Initial Ramdisk
+
+The following command will (re-)generate the initial ramdisk by a preset, which in this case is
+`linux`.
+
+```sh
+mkinitcpio -p linux
+```
+
+Usually this command is the only one needed.
+But it is also possible to (re-)generate all available presets with the following command.
+
+```sh
+mkinitcpio -P
+```
+
 ## Troubleshooting
+
+This section addresses various errors that can happen when using mkinitcpio.
 
 ### '/lib/modules/xxxxxxx' is not a valid kernel module directory
 

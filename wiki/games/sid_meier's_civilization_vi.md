@@ -6,6 +6,8 @@ strategy [game](/wiki/games.md) which is available as a standalone Launcher for 
 
 ## Troubleshooting
 
+This section addresses various errors that can happen when playing Sid Meier's Civilization VI.
+
 ### Problems launching with [Proton](./steam.md)
 
 Due to the standalone launcher of Civilization VI being used in the startup

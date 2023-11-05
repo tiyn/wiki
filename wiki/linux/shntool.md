@@ -62,6 +62,8 @@ Afterwards `flacon` can be installed like a normal package.
 
 ## Troubleshooting
 
+This section addresses various errors that can happen when using shntool.
+
 ### Unable to Split Audio Files
 
 This error occurs when

@@ -139,3 +139,15 @@ Section "InputClass"
     Option "MiddleEmulation" "true"
 EndSection
 ```
+## Troubleshooting
+
+This section addresses various errors that can happen when using the X window system.
+
+### Error `Failed to initialize the NVIDIA kernel module`
+
+When starting up the X server the error message `Failed to initialize the NVIDIA kernel module` can
+appear.
+This usually means that either the [Nvidia](/wiki/nvidia.md) kernel module is not installed.
+This can be fixed by [installing Nvidia](/wiki/linux/nvidia.md#setup).
+If this is not the problem then the [initial ramdisk](/wiki/linux/mkinitcpio.md) should be
+[regenerated](/wiki/linux/mkinitcpio.md#manually-generate-initial-ramdisk).

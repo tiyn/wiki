@@ -138,8 +138,7 @@ Afterwards all networking of the selected game is disabled.
 
 ## Troubleshooting
 
-This section explains ways of solving various problems that can occur when using
-Lutris.
+This section addresses various errors that can happen when using Lutris.
 
 ### DX12/DX13 is not Supported on Your System
 

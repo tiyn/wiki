@@ -44,6 +44,8 @@ new `feature`
 
 ## Troubleshooting
 
+This section addresses various errors that can happen when using suckless programs.
+
 ### suckless program crashes or struggles with colored emojis
 
 Suckless programs  especially `st` and `dmenu` can not display colored

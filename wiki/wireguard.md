@@ -72,7 +72,7 @@ wireguard is closed.
 
 ## Troubleshooting
 
-This section addresses various errors and ways how to troubleshoot them.
+This section addresses various errors that can happen when using WireGuard.
 
 ### Unknown Device Type / Protocol Not Supported
 

@@ -17,8 +17,8 @@ It features the same syntax.
 
 ### Troubleshooting
 
-The following section describes problems that can arise when using pacman or
-yay.
+This section addresses various errors that can happen when using the package managers yay and
+pacman.
 
 #### Update Mirrorlist
 

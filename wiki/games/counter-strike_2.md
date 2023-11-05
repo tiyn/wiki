@@ -6,6 +6,8 @@ It is distributed via [Steam](./steam.md).
 
 ## Troubleshooting
 
+This section addresses various errors that can happen when playing Counter-Strike 2.
+
 ### Problems launching on [Steam](/wiki/games/steam.md)
 
 On [Linux](/wiki/linux.md) systems launching can run into problems.
