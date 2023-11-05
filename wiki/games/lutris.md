@@ -16,6 +16,8 @@ For running both Windows applications aswell as games
 
 ## Usage
 
+The following section describes the usage of Lutris.
+
 ### Manually Add a Game
 
 By clicking on the `+` in the left upper corner of the Lutris application a new
@@ -135,6 +137,16 @@ In Lutris after the installation of firejail right-click the game to disable net
 Select `Configure` and navigate to `System Options`.
 Enable `Advanced` and insert `firejail --net=none --noprofile` into the `command prefix` field.
 Afterwards all networking of the selected game is disabled.
+
+### Adding and Removing Runners and Sources
+
+Runners are ways to run [games](/wiki/games.md) on [Linux](/wiki/linux.md).
+Examples for runners are [WINE](/wiki/linux/wine.md), [Steams Proton](/wiki/games/proton.md) or
+[Flatpak](/wiki/linux/flatpak.md).
+Sources are platforms for game distributions like [Steam](/wiki/games/steam.md) and Lutris itself.
+
+Both sources and runners can be added and removed as needed by entering `Preferences` through the
+drop-down menu and toggling on or off sources aswell as installing or uninstalling runners.
 
 ## Troubleshooting
 
