@@ -220,3 +220,11 @@ Additionally if you have a NVidia Graphics Cards you should read
 If you are interested in automatic decryption of the dm-crypt encrypted
 partition, take a look at the according section in
 [the dm-crypt article](../dm-crypt.md).
+
+After installing [xorg windows system](/wiki/linux/x_window_system.md) the language of it will be
+english by default.
+To change it - in this example to german - run the following command.
+
+```sh
+localectl --no-convert set-x11-keymap de pc105 deadgraveacute
+```
