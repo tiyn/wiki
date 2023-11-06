@@ -148,6 +148,14 @@ Sources are platforms for game distributions like [Steam](/wiki/games/steam.md) 
 Both sources and runners can be added and removed as needed by entering `Preferences` through the
 drop-down menu and toggling on or off sources aswell as installing or uninstalling runners.
 
+### Minimizing and System Tray
+
+Under `Interface` in the `Preferences` available by selecting the menu there are options available
+to `minimize client when a game is launched`.
+This can be useful to unclutter the workspace selected.
+This option works best with `Show Tray Icon` checked because it will display Lutris inside the
+system tray.
+
 ## Troubleshooting
 
 This section addresses various errors that can happen when using Lutris.
