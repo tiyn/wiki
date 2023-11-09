@@ -10,6 +10,7 @@ or MTGA for short - that has the same rules as the tabletop variant.
 There are many useful resources.
 The following list provides a select few of them.
 
+- [cardmarket](https://www.cardmarket.com/) is a trading post for tabletop cards based in europe.
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
   rules.
