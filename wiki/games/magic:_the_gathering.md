@@ -11,6 +11,8 @@ There are many useful resources.
 The following list provides a select few of them.
 
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
+- [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
+  rules.
 - [MTG Desktop Companion](https://www.mtgcompanion.org/) is a collection manager for MTG that
   includes prices, stats and a deck builder, aswell as the option to import and export to most of
   the used MTG deck formats.
