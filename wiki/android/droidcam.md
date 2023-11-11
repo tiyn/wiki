@@ -13,7 +13,7 @@ On [Android](/wiki/android.md) DroidCam is available on the
 [DroidCam Webcam](https://play.google.com/store/apps/details?id=com.dev47apps.droidcam).
 
 On the computer setup files for both [Linux](/wiki/linux.md) and [Windows](/wiki/windows.md) can be
-found on the [official Dev47Apps](https://www.dev47apps.com/).
+found on the [official website](https://www.dev47apps.com/).
 Alternatively most [Linux systems](/wiki/linux/package_manager.md) feature a package named
 `droidcam`.
 
