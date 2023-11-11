@@ -27,3 +27,5 @@ A [smartphone](/wiki/smart_devices.md) and its camera aswell as flashlight can b
 replacement for a webcam.
 For [Android](/wiki/android.md) smartphones this can be easily achieved by using
 [DroidCam](/wiki/android/droidcam.md).
+An alternative to DroidCam with a with decidedly better resolution is
+[IP Webcam](/wiki/android/ip_webcam.md).
