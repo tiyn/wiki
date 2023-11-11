@@ -8,7 +8,7 @@ It enables a [smartphone](/wiki/smart_devices.md) to be used as [webcam](/wiki/w
 
 DroidCam needs to be set up on the phone aswell as on the computer to be used.
 
-On [Android](/wiki/android.md) Gadgetbridge is available on the
+On [Android](/wiki/android.md) DroidCam is available on the
 [Google Play Store](/wiki/android.md#app-store) in a package called
 [DroidCam Webcam](https://play.google.com/store/apps/details?id=com.dev47apps.droidcam).
 
