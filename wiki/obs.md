@@ -2,8 +2,7 @@
 
 [Open Broadcaster Software](https://obsproject.com) - short OBS - is a free
 and open source software for video recording and live streaming.
-Additionally see the
-[the webcams entry](/wiki/linux/webcams.md#configure-the-webcam) if on Linux.
+For webcams and their configuration see [the webcams entry](/wiki/webcams.md#configure-the-webcam).
 
 ## Plugins
 

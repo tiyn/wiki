@@ -2,8 +2,8 @@
 
 [Magic: The Gathering](https://magic.wizards.com) - often shortened to MTG or Magic - is a tabletop
 collectible card game.
-There is an online version called [Magic: The Gathering Arena](https://magic.wizards.com/mtgarena) -
-or MTGA for short - that has the same rules as the tabletop variant.
+MTG is published by [Wizards of the Coast](https://company.wizards.com) - which are commonly
+reffered to as Wizards.
 
 ## Resources
 
@@ -20,3 +20,19 @@ The following list provides a select few of them.
   It is free and open-source.
   Its source code can be looked at on their
   [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
+
+## Playing Online
+
+There is a fully digital and online version of MTG called
+[Magic: The Gathering Arena](https://magic.wizards.com/mtgarena) - or MTGA for short - that has the
+same rules as the tabletop variant.
+
+It is also possible to remotely play with tabletop cards.
+This is most easily done on [Spelltable](https://spelltable.wizards.com/) which is an official
+website by Wizards.
+For playing Spelltable a [webcam](/wiki/webcams.md) is needed to be set up with a bird's eye view
+over the playing field.
+An alternative to a normal webcam is [DroidCam](/wiki/android/droidcam.md) for
+[Android](/wiki/android.md) which is supported by the website itself.
+
+Both Spelltable and MTGA use the same login credentials.

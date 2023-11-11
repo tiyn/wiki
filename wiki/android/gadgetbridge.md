@@ -8,8 +8,8 @@ It is a cloudless replacement for proprietary software for
 
 ## Setup
 
-To install F-Droid simply download and install the
-[package](https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/).
+Gadgetbridge is available on [F-Droid](/wiki/android/f-droid.md) in a package called
+[gadgetbridge](https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/).
 
 ## Usage
 
