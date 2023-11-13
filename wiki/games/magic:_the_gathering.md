@@ -20,12 +20,15 @@ The following list provides a select few of them.
   It is free and open-source.
   Its source code can be looked at on their
   [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
+- [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
+  the standard format.
 
 ## Playing Online
 
 There is a fully digital and online version of MTG called
-[Magic: The Gathering Arena](https://magic.wizards.com/mtgarena) - or MTGA for short - that has the
-same rules as the tabletop variant.
+[Magic: The Gathering Arena](https://magic.wizards.com/mtgarena) - or MTGA for short - that has
+nearly the same rules as the tabletop variant.
+Another alternative to playing fully digital is [Magic: The Gathering Online](https://www.mtgo.com).
 
 It is also possible to remotely play with tabletop cards.
 This is most easily done on [Spelltable](https://spelltable.wizards.com/) which is an official
