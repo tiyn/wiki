@@ -20,6 +20,8 @@ The following list provides a select few of them.
   It is free and open-source.
   Its source code can be looked at on their
   [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
+- [Tapped Out](https://tappedout.net/) is a website that among other things can suggest decks based
+  on owned cards.
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
   the standard format.
 
