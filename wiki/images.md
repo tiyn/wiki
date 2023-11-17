@@ -13,6 +13,9 @@ In the computer context it is a file with an extension like `png`, `jpg`, `gif` 
 Editing images can be done by various image manipulation software.
 A popular cross-platform program for this is [GIMP](https://www.gimp.org/).
 
+A second cross-platform software suite for displaying, creating and editing (raster) images is
+[ImageMagick](/wiki/imagemagick.md).
+
 Another part of image manipulation is the upscaling of low resolution images.
 This can be done by the cross-platform program [upscayl](https://github.com/upscayl/upscayl).
 
