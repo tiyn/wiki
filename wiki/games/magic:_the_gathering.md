@@ -12,6 +12,9 @@ The following list provides a select few of them.
 
 - [cardmarket](https://www.cardmarket.com/) is a trading post for tabletop cards based in europe.
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
+- [Delver Lens](https://www.delverlab.com/) is an [Android](/wiki/android.md) application for
+  scanning cards and displaying its price.
+  Following scanning the cards can be exported to a CSV file.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
   rules.
 - [MTG Desktop Companion](https://www.mtgcompanion.org/) is a collection manager for MTG that
