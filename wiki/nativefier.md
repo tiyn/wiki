@@ -16,6 +16,10 @@ package often called `nodejs-nativefier`.
 
 ## Usage
 
+This section addresses various usages of Nativefier.
+
+### Creating an Application from a Website
+
 The following command example creates an Electron desktop application in a folder inside the home
 directory.
 The app will be named `Mastodon` will be `x64` compatible with a resolution
@@ -32,3 +36,12 @@ nativefier --name Mastodon \
 --tray --disable-dev-tools \
 --single-instance https://mastodon.technology
 ```
+
+### Navigating Back and Forward
+
+In a normal [browser](/wiki/web_browser.md) there are buttons to navigate back and forth through
+the history of a tab.
+On Nativefier this can be achieved by pressing the `Alt`-key and selecting `View` and `Back` - or
+`Forward`.
+This can also be achieved by pressing `Alt`+`Left Arrow` for going back and `Alt`+`Right Arrow` for
+going forwards.
