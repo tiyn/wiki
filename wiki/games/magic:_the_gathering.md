@@ -15,6 +15,8 @@ The following list provides a select few of them.
 - [Delver Lens](https://www.delverlab.com/) is an [Android](/wiki/android.md) application for
   scanning cards and displaying its price.
   Following scanning the cards can be exported to a CSV file.
+- [Dragon Shield MTG Card Manager](https://mtg.dragonshield.com/) is a collection and deck manager
+  available both as an apple and [Android](/wiki/android.md) app and as a website.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
   rules.
 - [MTG Desktop Companion](https://www.mtgcompanion.org/) is a collection manager for MTG that
@@ -27,6 +29,9 @@ The following list provides a select few of them.
   on owned cards.
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
   the standard format.
+
+Using [Nativefier](/wiki/nativefier.md) a desktop app can be created from all websites listed if
+needed.
 
 ## Playing Online
 
