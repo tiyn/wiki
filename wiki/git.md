@@ -26,7 +26,7 @@ Web interfaces for git are quite useful for easily showing code to other people.
 Additionally it is easy to collaborate together.
 
 - [Gitea](gitea.md) is an open-source and selfhosted and can be dockerized.
-- [Github](https://github.com) is the go to system for many people. Not
+- [GitHub](https://github.com) is the go to system for many people. Not
   selfhosted, owned by microsoft ([cli-tool](https://github.com/github/hub)).
 
 #### Server without graphical interface

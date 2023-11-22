@@ -12,7 +12,7 @@ In addition to the main container you need to connect a
 
 First of all create a folder for your `rebuild.sh`.
 After that clone invidious from
-[github](https://github.com/iv-org/invidious) into a folder within the
+[GitHub](https://github.com/iv-org/invidious) into a folder within the
 just created folder.
 You can find the `docker-compose.yml` in the cloned directory.
 Set the variables, volumes and ports according and run the `rebuild.sh`.

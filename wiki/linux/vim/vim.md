@@ -5,7 +5,7 @@ A good alternative to baseline Vim is Neovim.
 [Neovim](https://github.com/neovim/neovim) is based on Vim and focused
 on extensibility and usability.
 The configuration file is stored in `.config/nvim/init.vim`
-On Github [Vim-Galore](https://github.com/mhinz/vim-galore) gives extensive guides and tips on using
+On GitHub [Vim-Galore](https://github.com/mhinz/vim-galore) gives extensive guides and tips on using
 Vim.
 
 ## Plug-In

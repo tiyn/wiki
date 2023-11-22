@@ -41,7 +41,7 @@ git ls-files -v | grep "^S"
 ### Authentication via SSH
 
 Authentication by default is done via a username and a password.
-For some services such as Github.
+For some services such as GitHub.
 it is not possible to use password as an authentication method.
 The other possibility to authenticate to git is by using
 [SSH](/wiki/linux/ssh.md).
@@ -50,7 +50,7 @@ For this a
 [SSH certificate has to be created](/wiki/linux/ssh.md#generate-new-keys) and
 [added to the authentication agent](/wiki/linux/ssh.md#adding-keys-to-authentication-agent).
 Afterwards it the public SSH key to be added to the git server.
-For Github there is
+For GitHub there is
 [a guide on that topic](https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password).
 
 Following these the git repositories have to be cloned in a special way to use

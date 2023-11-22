@@ -10,7 +10,7 @@ many other different media clients aswell as [browser](/wiki/browser.md).
 On most linux distributions PlayerCTL can be installed with the `playerctl`
 package.
 Alternatively it can be installed via
-[Github](https://github.com/altdesktop/playerctl).
+[GitHub](https://github.com/altdesktop/playerctl).
 
 ## Usage
 

@@ -7,7 +7,7 @@ You can sync it with [vdirsyncer](vdirsyncer.md).
 ## Setup
 
 On most linux distributions Khal can be installed with the `khard` package.
-Alternatively it can be installed via [Github](https://github.com/lucc/khard).
+Alternatively it can be installed via [GitHub](https://github.com/lucc/khard).
 
 ### Configuration
 

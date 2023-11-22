@@ -17,7 +17,7 @@ The correct version can be downloaded using the
 [Lutris website](https://lutris.net/games/league-of-legends/).
 It is recommended that a custom version of [WINE GE](/wiki/linux/wine.md) is
 used named `Lutris-GE` which can be found on
-[the Github page of WINE-GE-custom](https://github.com/GloriousEggroll/wine-ge-custom/releases?q=lol&expanded=true).
+[the GitHub page of WINE-GE-custom](https://github.com/GloriousEggroll/wine-ge-custom/releases?q=lol&expanded=true).
 It is important to set up the game correctly for anti-cheat to work properly.
 By checking the right box at the launch of the games the anti-cheat can be
 enabled to persist through reboots on most Linux distributions.

@@ -41,7 +41,7 @@ The Steam Deck features a wide variable of customization options.
 Some of these options can be accessed by installing
 [the plugin manager Decky](https://github.com/SteamDeckHomebrew/decky-loader).
 To install it download the setup file from the
-[Github page](https://github.com/SteamDeckHomebrew/decky-loader) and run it.
+[GitHub page](https://github.com/SteamDeckHomebrew/decky-loader) and run it.
 Afterwards the plugin manager will be available after pressing the `...` button on the Deck and
 navigating to the bottom of the menu.
 There plugins can be installed and removed aswell as managed.

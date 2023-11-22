@@ -1,7 +1,7 @@
 # Gitea
 
 Gitea is a selfhostable git server with a web interface.
-It is similar to Github but opensource.
+It is similar to GitHub but opensource.
 
 ## Setup
 

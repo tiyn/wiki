@@ -5,7 +5,7 @@
 ## Setup
 
 ViFM can be installed via the
-[github page](https://github.com/vifm/vifm).
+[GitHub page](https://github.com/vifm/vifm).
 Some distributions also feature the `vifm` package.
 
 ### Configuration

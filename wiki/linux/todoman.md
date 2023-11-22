@@ -7,7 +7,7 @@ You can sync it using [vdirsyncer](vdirsyncer.md)
 ## Setup
 
 Todoman can be installed via the
-[github page](https://github.com/pimutils/todoman).
+[GitHub page](https://github.com/pimutils/todoman).
 Some distributions also feature the `todoman` package.
 
 ### Configuration

@@ -8,11 +8,11 @@ It can be easily configured using mutt-wizard.
 ### setup with mutt-wizard
 
 - Install the dependecies: `neomutt`, `isync`, `msmtp`, `pass`
-- Install mutt-wizard from [github](https://github.com/LukeSmithxyz/mutt-wizard)
+- Install mutt-wizard from [GitHub](https://github.com/LukeSmithxyz/mutt-wizard)
   (AUR is not up to date)
 
 After installation you're able to use the commands described on mutt-wizards
-github page.
+GitHub page.
 You need to add the mail accounts you want to have in mutt.
 
 - `mbsync -a` - updates all mail-accounts
