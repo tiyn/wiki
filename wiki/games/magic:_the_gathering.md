@@ -4,6 +4,8 @@
 collectible card game.
 MTG is published by [Wizards of the Coast](https://company.wizards.com) - which are commonly
 reffered to as Wizards.
+In Magic: The Gathering there are many different formats that are all listed on
+[the official website](https://magic.wizards.com/en/formats).
 
 ## Resources
 
