@@ -6,25 +6,34 @@ a standalone Launcher for Windows and on [Steam](./steam.md).
 ## Resources
 
 There are many useful resources.
-The following list provides a select few of them.
+This section provides a select few of them.
+They are grouped for a better overview.
+
+The first group of resources can be used to make money on the trading post.
 
 - [Craft To Gold](https://www.gw2craftgold.com/) analyzes crafting items to sell on the trading
   post.
-- [\[fast\] Farming Community](https://fast.farming-community.eu/) is a guild that provides many
-  useful trackers for items, dailies and more.
-- [Guildwars 2 Wiki](https://wiki.guildwars2.com/wiki/Main_Page) is the official wiki.
 - [GW2BLTC](https://www.gw2bltc.com) is for playing the trading post.
-- [GW2Crafts](https://gw2crafts.net/)  provides guides to level crafting.
 - [GW2TP](https://www.gw2tp.com/) analyzes the trading post.
+
+The second group provides guides and builds.
+
 - [Hardstuck](https://hardstuck.gg/gw2/builds/) provides guides but is most useful for its builds.
   Especially the PvP builds are good and well maintained.
-- [killproof.me](https://killproof.me/) provides killproof for raids or strikes.
-  It is also available as [add-on](#killproofme).
 - [MetaBattle](https://metabattle.com/wiki/MetaBattle_Wiki) provides guides and builds.
   Another interesting page of it is the best
   [spending of WvW points](https://metabattle.com/wiki/Guide:How_to_spend_WvW_Ability_Points).
 - [Snowcrows](https://snowcrows.com/builds) is a guild that provides guides and builds that are
   especially well suited for instanced PvE content.
+
+Finally the this groupd provides various guides and gives information on in-game mechanics.
+
+- [\[fast\] Farming Community](https://fast.farming-community.eu/) is a guild that provides many
+  useful trackers for items, dailies and more.
+- [Guildwars 2 Wiki](https://wiki.guildwars2.com/wiki/Main_Page) is the official wiki.
+- [GW2Crafts](https://gw2crafts.net/)  provides guides to level crafting.
+- [killproof.me](https://killproof.me/) provides killproof for raids or strikes.
+  It is also available as [add-on](#killproofme).
 
 ## Add-ons
 
