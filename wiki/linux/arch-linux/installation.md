@@ -1,7 +1,7 @@
 # Arch installation with LUKS encryption and LVM
 
 This guide is based upon a
-[german arch wiki article](https://wiki.archlinux.de/title/Moderne_Installation_mit_UEFI_und_Verschlüsselung).
+[german arch wiki article](https://wiki.archlinux.de/title/Installation_mit_UEFI_und_Verschl%C3%BCsselung).
 For encryption [dm-crypt](../dm-crypt.md) is used.
 Inside the encrypted partition a logical volume will be created with
 [LVM](../lvm.md).
@@ -11,7 +11,7 @@ At the end of this guide a fully functional Arch Linux will be installed.
 ## 1. Preparation
 
 Ahead of the installation an Arch boot-stick has to be created as described in
-[the Arch Linux entry](/wiki/linux/arch-linux/arch-linux.md#installation-medium).
+[the Arch Linux entry](/wiki/linux/arch-linux.md#installation-medium).
 
 After that the USB can be plugged in the system on which Arch should be installed.
 Boot the target system and select `Boot Arch Linux (x86_64)`.
@@ -19,7 +19,7 @@ Boot the target system and select `Boot Arch Linux (x86_64)`.
 If you need to set the keyboard layout to anything other than english you can
 temporarily do so by using the `loadkeys` command.
 This has to be followed by your country id (for example a german keyboard layout
-would be `de`,`de-latin1` or `de-latin1-nodeadkeys`.
+would be `de`,`de-latin1` or `de-latin1-nodeadkeys`).
 
 ## 2. Formatting of the target drive
 
@@ -33,9 +33,18 @@ be `/dev/sda`.
 
 This step can take quite a while especially for large drives.
 
-- `dd status=progress if=/dev/zero of=/dev/sda`
+```sh
+dd status=progress if=/dev/zero of=/dev/sda
+```
 
 Now all partitions should be removed.
+
+Alternatively the partition table can be cleared by running the following command.
+This will leave old data possibly recoverable.
+
+```sh
+wipefs -fa /dev/sda
+```
 
 ### Create new partitions
 
@@ -66,12 +75,13 @@ Using `blkid | grep /dev/sda` all partitions we created get listed.
 The right partition has the label `Linux filesystem`.
 For this guide this partition is assumed to be `/dev/sda2`.
 
-- `modprobe dm-crypt` - load kernelmodule for encryption
-- `cryptsetup -c aes-xts-plain -y -s 512 luksFormat /dev/sda2` - encryption
-- confirm with `YES`
-- Now you can assign a passphrase.
-  The passphrase has to be entered at boot to decrypt the system.
-  Recovering of this passphrase is **not** possible.
+```sh
+cryptsetup -c aes-xts-plain -y -s 512 luksFormat /dev/sda2
+```
+Afterwards confirm with `YES`.
+Now you can assign a passphrase.
+The passphrase has to be entered at boot to decrypt the system.
+Recovering of this passphrase is **not** possible.
 
 ## 4. Setup LVM
 
@@ -139,14 +149,14 @@ en_US.UTF-8 UTF-8
   - Search the line `MODULES=()` and change it to:
     `MODULES=(ext4)`
   - Search the line `HOOKS=([...])` and change it to:
-    `HOOKS=(base udev autodetect modconf block keyboard keymap encrypt lvm2 filesystems fsck shutdown)`
+    `HOOKS=(base udev autodetect modconf block kms keyboard keymap consolefont encrypt lvm2 filesystems fsck shutdown)`
 
 - `mkinitcpio -p linux` - generate Kernel-Image
 
 ## 9. Install and configure UEFI bootloader
 
 - `bootctl install` - Prepare bootloader
-- `ls -l /dev/disk/by-uuid` - find out the UUID of your root partition
+- `ls -l /dev/disk/by-uuid` - find out the UUID of your root partition.
 - `vim /boot/loader/entries/arch.conf` - Create configuration
 
   - Change the config to look similar to this:
@@ -158,11 +168,18 @@ en_US.UTF-8 UTF-8
     options  cryptdevice=UUID=<enter your uuid here>:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet
     ```
 
-- `cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fallback.conf` -
-  create a fallback
-- `vim /boot/loader/loader.conf` - Create loader configuration
+- `cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fallback.conf` - create a fallback.
+  Change it to the following.
 
-  - Insert the following text
+  ```txt
+  title    Arch Linux Fallback
+  linux    /vmlinuz-linux
+  initrd   /initramfs-linux-fallback.img
+  options  cryptdevice=UUID=<enter your uuid here>:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet
+  ```
+
+- `vim /boot/loader/loader.conf` - Create loader configuration.
+  Insert the following text
 
     ```txt
     timeout 0
@@ -188,13 +205,13 @@ UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 ## 12. Further steps and graphical environment
 
 Now you can follow the recommended larbs installation script of this wiki
-(`curl -o larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
+(`curl -LO larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
 this will install a bunch of useful base software including
 [a graphical environment](../x_window_system.md) and
 [a window manager](../suckless.md#programs).
 You can go on to other guides aswell.
 Especially the
-[Recommended practices](/wiki/linux/arch-linux/arch-linux.md#recommended-practices)
+[Recommended practices](/wiki/linux/arch-linux.md#recommended-practices)
 should be checked for further setups.
 
 Additionally if you have a NVidia Graphics Cards you should read
@@ -203,3 +220,11 @@ Additionally if you have a NVidia Graphics Cards you should read
 If you are interested in automatic decryption of the dm-crypt encrypted
 partition, take a look at the according section in
 [the dm-crypt article](../dm-crypt.md).
+
+After installing [xorg windows system](/wiki/linux/x_window_system.md) the language of it will be
+english by default.
+To change it - in this example to german - run the following command.
+
+```sh
+localectl --no-convert set-x11-keymap de pc105 deadgraveacute
+```

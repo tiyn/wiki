@@ -1,16 +1,20 @@
 # Git (Client)
 
 This entry deals with the Git client used in
-[Linux-based systems](/wiki/linux/linux.md).
+[Linux-based systems](/wiki/linux.md).
 The client is pretty simple to understand.
 With only a handfull of commands you should be able to get your versioning going.
 For servers with web interfaces there are different cli tools to control it
 without using a browser.
 
-
 ## Setup
 
-On most linux distributions BlueZ can be installed with the `bluez` package.
+On most linux distributions Git can be installed with the `git` package.
+The package provides a simple command line interface.
+
+An alternative to the classical interface is the [lazygit](https://github.com/jesseduffield/lazygit)
+terminal user interface.
+Though it provides a new user interface it still uses the `git` package as a base.
 
 ## Usage
 
@@ -22,16 +26,22 @@ There is also an interactive
 ### Ignore files having local changes
 
 If you need to make changes to a file that are local you can run
-`config update-index --skip-worktree <file>`.
+`git update-index --skip-worktree <file>`.
 Following this the file won't show up as having changes from the upstream.
 Note that files tagged with this command are checked out sparsly, so you need
 to watch out for changes yourself if there are any.
-To revert this run `config update-index --no-skip-worktree <file>`.
+To revert this run `git update-index --no-skip-worktree <file>`.
+
+Files that are marked this way can be listed by running the following command.
+
+```sh
+git ls-files -v | grep "^S"
+```
 
 ### Authentication via SSH
 
 Authentication by default is done via a username and a password.
-For some services such as Github.
+For some services such as GitHub.
 it is not possible to use password as an authentication method.
 The other possibility to authenticate to git is by using
 [SSH](/wiki/linux/ssh.md).
@@ -40,7 +50,7 @@ For this a
 [SSH certificate has to be created](/wiki/linux/ssh.md#generate-new-keys) and
 [added to the authentication agent](/wiki/linux/ssh.md#adding-keys-to-authentication-agent).
 Afterwards it the public SSH key to be added to the git server.
-For Github there is
+For GitHub there is
 [a guide on that topic](https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password).
 
 Following these the git repositories have to be cloned in a special way to use

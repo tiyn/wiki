@@ -1,11 +1,11 @@
 # Lutris
 
-[Lutris](https://lutris.net/) is a free and open source video game platform for
-[Linux](/wiki/linux/linux.md) systems.
+[Lutris](https://lutris.net/) is a free and open source video [game](/wiki/games.md) platform for
+[Linux](/wiki/linux.md) systems.
 It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),
 [Epic Games](https://www.epicgames.com/), [Steam](/wiki/games/steam.md) and many
-other [Windows](/wiki/windows/windows.md) games via its own installer that uses
+other [Windows](/wiki/windows.md) games via its own installer that uses
 [WINE](/wiki/linux/wine.md). Lutris can also use [Proton](/wiki/games/proton.md)
 - a patched version of WINE developed by
 [Valve](https://www.valvesoftware.com/).
@@ -16,15 +16,19 @@ For running both Windows applications aswell as games
 
 ## Usage
 
+The following section describes the usage of Lutris.
+
 ### Manually Add a Game
 
 By clicking on the `+` in the left upper corner of the Lutris application a new
 game can be manually added.
 
-Mount `.iso` files first using the `mount -o loop <path to iso> <path to mount>`
-command.
-Check the directory the media was mounted to afterwards to select the appropiate
-Option.
+Mount `.iso` files as explained in the [ISO image entry](/wiki/linux/iso_image.md#mounting).
+Some installations require the swapping of discs during the installation.
+An easy way around this is to mount the [ISO image](/wiki/linux/iso_image.md#mounting) and copy them
+into another directory.
+This way the files from two discs can be put in one folder.
+Afterwards follow the installation as usual.
 
 If a setup executable is available select `Install a Windows game from media`.
 Then select the setup executable from the mounted path.
@@ -115,20 +119,46 @@ be selected.
 
 ### Change WINE/Proton Version
 
-[Windows](/wiki/windows/windows.md) games are handled by
+[Windows](/wiki/windows.md) games are handled by
 [WINE](/wiki/linux/wine.md).
 After right-clicking a game and selecting `Configure` the `Wine version` can be
 changed under the `Runner options` tab.
 There are many different versions of WINE, WINE-fshack and various
 [Proton](/wiki/games/proton.md) and
 [Proton GE versions](/wiki/games/proton.md#ge-version) to select.
-Using the default runner of [Bottles called Caffe](/wiki/games/bottles.md#caffe)
-is also possible.
+Using the default runner of [Bottles](/wiki/games/bottles.md) - called
+[Caffe](/wiki/games/bottles.md#caffe) - is also possible.
+
+### Disable Networking for a Game
+
+For disabling networking for a command the program
+[firejail](https://github.com/netblue30/firejail) can be used.
+In Lutris after the installation of firejail right-click the game to disable networking on.
+Select `Configure` and navigate to `System Options`.
+Enable `Advanced` and insert `firejail --net=none --noprofile` into the `command prefix` field.
+Afterwards all networking of the selected game is disabled.
+
+### Adding and Removing Runners and Sources
+
+Runners are ways to run [games](/wiki/games.md) on [Linux](/wiki/linux.md).
+Examples for runners are [WINE](/wiki/linux/wine.md), [Steams Proton](/wiki/games/proton.md) or
+[Flatpak](/wiki/linux/flatpak.md).
+Sources are platforms for game distributions like [Steam](/wiki/games/steam.md) and Lutris itself.
+
+Both sources and runners can be added and removed as needed by entering `Preferences` through the
+drop-down menu and toggling on or off sources aswell as installing or uninstalling runners.
+
+### Minimizing and System Tray
+
+Under `Interface` in the `Preferences` available by selecting the menu there are options available
+to `minimize client when a game is launched`.
+This can be useful to unclutter the workspace selected.
+This option works best with `Show Tray Icon` checked because it will display Lutris inside the
+system tray.
 
 ## Troubleshooting
 
-This section explains ways of solving various problems that can occur when using
-Lutris.
+This section addresses various errors that can happen when using Lutris.
 
 ### DX12/DX13 is not Supported on Your System
 
@@ -139,7 +169,7 @@ This can be easily fixed by inserting `-dx11` in `Arguments` under the
 
 ### Crashes for Windows Games
 
-When it comes to crashes for [Windows](/wiki/windows/windows.md) games that get
+When it comes to crashes for [Windows](/wiki/windows.md) games that get
 handled by [WINE](/wiki/linux/wine.md) one point of failure is the selected
 WINE version.
 Change the version used as explained in

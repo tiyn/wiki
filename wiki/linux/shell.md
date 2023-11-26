@@ -16,13 +16,91 @@ The following is a list of Unix shells that are POSIX compliant.
   powerful scripting language. It is often set to be the
   [default user shell](#changing-the-default-user-shell) because of its user
   friendliness and a more features like the possibility for
-  [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-  and [auto suggestions](https://github.com/zsh-users/zsh-autosuggestions).
+  [syntax highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
+  and [auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) and even an improved
+  version of [auto completion](https://github.com/marlonrichert/zsh-autocomplete).
 
 ## Usage
 
 This section addresses various different functions by and actions that can be
 taken with shell commands.
+The focus is mostly on POSIX-compliant shells and scripts that are compatible with POSIX.
+
+### Symbolic Links using `ln`
+
+`ln` is a command to create links between files and folders.
+The most simple way to create a link between two folders or files is running the following
+command.
+Replace `<source folder/file>` and `<target folder/file>` as needed.
+
+```sh
+ln -s <source folder/file> <target folder/file>
+```
+
+### `ls` and its Alternatives
+
+`ls` is a command to list files and directories.
+Its most important flags are the `-l` option to create a list view and `-a` to show files that are
+normally hidden.
+
+A popular alternative until its discontinuation was [exa](https://github.com/ogham/exa).
+A fork of it called [eza](https://github.com/eza-community/eza) is still actively maintained.
+
+### Renaming Files
+
+Files can be renamed by using the `mv` command like in the following example.
+
+```sh
+mv old_name.ext new_name.ext
+```
+
+Another way to rename files that is especially useful if renaming a lot of files is needed is done
+by using the command-line utility `rename`.
+In the following example the string `string1` will be substituted by `string2` for a given file
+`file.ext`.
+
+```sh
+rename 's/string1/string2/g' file.ext
+```
+
+Additionally `find` can be used to recursively substitute substrings in all files inside a folder
+`folder` (including subfolders).
+
+```sh
+find folder -type f -exec rename 's/string1/string2/g' {} +
+```
+
+For renaming many files in bulk the `qmv` to move or `qcp` or copy can be used.
+Usually both of these commands are packaged withing the `renameutils` package.
+For more information visit the [renameutils website](https://www.nongnu.org/renameutils/).
+
+Another option for bulk renaming is `vidir` which is part of the `moreutils` package for most
+[distributions](/wiki/linux.md#distributions).
+vidir is able to create folders which qmv is not.
+More information can be found on the [moreutils website](https://joeyh.name/code/moreutils/).
+
+### Expansion
+
+This section is based on the
+[TLDP Bash guide for beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_04.html).
+Although it is centered on Bash it can also be used in other shells (Zsh) while being unsupported
+by others (DASH).
+
+In most shells curly braces can be used to expand a term.
+Commands can be expanded like the following example.
+
+```sh
+echo sp{el,il,al}l
+```
+
+The previous command will expand to the following command.
+
+```sh
+echo spell spill spall
+```
+
+The example shows a brace expansions of depth `1`.
+Using multiple curly brace pairs the depth can be increased as needed.
 
 ### For Loops
 
@@ -114,3 +192,27 @@ The complete output of both stderr and stdout can be silenced by appending
 `> /dev/null 2>&1` to the command.
 A shortened version of it not possible on all shells is `&> /dev/null`.
 
+### `cd` Into Next Or Previous Sibling Directory
+
+Quickly switching to the alphabetically next or previous directory can in some cases be useful.
+For this the following commands can be used.
+The first one navigates to the alphabetically previous sibling directory.
+The second one to the next.
+
+```sh
+cd ../"$(ls -F .. | grep '/' | grep -B1 -xF "${PWD##*/}/" | head -n 1)"
+cd ../"$(ls -F .. | grep '/' | grep -A1 -xF "${PWD##*/}/" | tail -n 1)"
+```
+
+## Error solving
+
+This section addresses various problems that can occur and are related to the shell.
+
+### Pressing Enter Produces `^M`
+
+This error can easily be fixed by running the following command.
+It is related to a terminal line setting problem.
+
+```sh
+stty sane
+```

@@ -6,7 +6,19 @@ protocoll for handling the display of the most unix-like operating systems.
 protocoll.
 It is maintained by the [X.Org Foundation](https://x.org/wiki/).
 
-## Peripheral Devices
+## Usage
+
+This section addresses various usages of the X Window System.
+
+### Kill Windows
+
+Windows can be killed with the utility `xkill`.
+Depending on the [distribution](/wiki/linux.md#distributions) used it maybe has to be installed.
+It often is bundled in a package named `xorg-xkill`.
+By running `xkill` the mouse cursor will turn into an x.
+With the mouse the window to close can then be selected.
+
+### Peripheral Devices
 
 X also handles various options of peripheral devices.
 In the files of the directory `/etc/X11/xorg.conf.d` and the file
@@ -20,40 +32,83 @@ Properties and options of a peripheral device can then be shown by running
 `xinput list-props <id>` where `<id>` is the identifier of the
 device.
 
-### Keyboard
+#### Keyboard
 
 This section describes the handling of keyboards by X.
 
-#### Change Keyboardlayout
+##### Change Keyboardlayout
 
 To temporarily change the layout of the keyboard just run
 `setxkbmap <your preferred layout>`.
 For a permanent change run `localectl set-x11-keymap <your preferred layout>`.
 
-### Display
+If there are two main layouts are used then the following command can be used to switch between
+them.
+Change `<layout 1>` and `<layout 2>` according to preferences.
+
+`setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <layout 1>
+
+Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
+layouts.
+
+#### Display
 
 This section describes the handling of displays by X.
 Additionally to the guides in this section that are independent of the used
 graphics unit special configuration for [Nvidia](/wiki/linux/nvidia.md)
 and [Intel](./intel.md) can be found in their respective entries in this wiki.
 
-#### Screen Blanking
+##### Turning Off the Screen
 
 To save power the screen is set to turn black after a given amount of time.
-This can be disabled temporarily by running `xset s off` or permanently by
-adding the following lines to your `/etc/X11/xorg.conf`:
+Adding the following lines to your `/etc/X11/xorg.conf.d/dpms.conf` will permanently enable screen
+blanking.
+
+Configure the times of the following section (both `10` minutes at the moment) and add it to the
+`ServerFlags` option of the file `/etc/X11/xorg.conf.d/dpms.conf` or alternatively add them into the
+file `/etc/X11/xorg.conf`.
+Set the time to `0` for disabling the turning off of the screen.
 
 ```txt
 Section "ServerFlags"
-    Option "BlankTime" "0"
+    Option "OffTime" "10"
 EndSection
 ```
 
-### Mouse
+This can be disabled temporarily by running `xset s off`.
+The screen can also be turned off instantly with the command `xset dpms force off`.
+
+If `OffTime` does not work add the following to the file `/etc/X11/xorg.conf.d/dpms.conf.
+
+```txt
+Section "ServerFlags"
+  Option "BlankTime" "10"
+EndSection
+```
+
+##### Adjust DPI and UI Scale
+
+The dots per inch (DPI) is a measurement of spatial video dot density.
+It has effect on the size of UI elements.
+It is recommended to set the DPI inside the file `~/.config/xorg/xpcspec` with the following line.
+The DPI number should be adjusted as needed.
+
+```
+Xft.dpi: 100
+```
+
+Afterwards `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
+For this to work the following line needs to be added into the `~/.xinitrc` file .
+
+```sh
+[ -f "$HOME/.config/xorg/xpcspec" ] && xrdb -merge "$HOME/.config/xorg/xpcspec"
+```
+
+#### Mouse
 
 This section describes the handling of mouse by X.
 
-#### Emulation of the Middle Mouse Button
+##### Emulation of the Middle Mouse Button
 
 If middle mouse button emulation is enabled the system will emulate a middle
 mouse button click when clicking both left and right mouse button
@@ -84,3 +139,15 @@ Section "InputClass"
     Option "MiddleEmulation" "true"
 EndSection
 ```
+## Troubleshooting
+
+This section addresses various errors that can happen when using the X window system.
+
+### Error `Failed to initialize the NVIDIA kernel module`
+
+When starting up the X server the error message `Failed to initialize the NVIDIA kernel module` can
+appear.
+This usually means that either the [Nvidia](/wiki/nvidia.md) kernel module is not installed.
+This can be fixed by [installing Nvidia](/wiki/linux/nvidia.md#setup).
+If this is not the problem then the [initial ramdisk](/wiki/linux/mkinitcpio.md) should be
+[regenerated](/wiki/linux/mkinitcpio.md#manually-generate-initial-ramdisk).

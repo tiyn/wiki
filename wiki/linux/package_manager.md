@@ -4,7 +4,7 @@ Package managers are important programs to get software onto your system.
 
 ## Arch Linux: Pacman and Yay
 
-In [Arch Linux](/wiki/linux/arch-linux/arch-linux.md) there are 2 main types of
+In [Arch Linux](/wiki/linux/arch-linux.md) there are 2 main types of
 package managers.
 The first is pacman, the default package manager.
 
@@ -15,10 +15,10 @@ yay is also a wrapper for pacman so yay can be used instead of pacman to
 install and update both AUR and main repository programs.
 It features the same syntax.
 
-### Bugfixes
+### Troubleshooting
 
-The following section describes problems that can arise when using pacman or
-yay.
+This section addresses various errors that can happen when using the package managers yay and
+pacman.
 
 #### Update Mirrorlist
 
@@ -32,32 +32,22 @@ curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
 
 #### Error While Importing Keys
 
-Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
-right package.
+Both `yay` and `pacman` use [GPG keys](/wiki/linux/gpg.md).
 It is possible that it runs into errors when importing new keys.
-If this happens you should try to restart your gpg key server with
-`gpgconf --kill all`.
+If this happens you should try to restart the GPG key server
+[as explained in the GPG entry](/wiki/linux/gpg.md#restart-the-gpg-server).
 
 #### Unknown Public Key
 
 If the error `ERROR: One or more PGP signatures could not be verified!`, you
 have to manually receive the key and trust it.
-This is done by running the following lines:
+This can be done [as explained in the GPG entry](/wiki/linux/gpg.md#receive-a-key-and-trust-it).
 
-```sh
-gpg --recv-key <KEYID>
-gpg --lsign <KEYID>
-```
-
-Where <KEYID> is the placeholder of the identification string of the key.
-It usually gets gets printed in the line above the error looking like
+The identifier of the key usually gets gets printed in the line above the error looking like
 `FAILED (unknown public key <KEYID>)`.
 
 #### Error During Updating `is marginal trust`
 
-Both `yay` and `pacman` use gpg keys to confirm the package manager gets the
-right package.
-It is possible that it runs into errors when importing new keys.
 If the error `[...] Key [...] is marginal trust` occurs while updating the
 system, it can be fixed by running the following commands and then restarting
 the update process of the package manager.

@@ -6,4 +6,4 @@ platform using WebTorrent.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[chocobozzz image](./docker-images/chocobozzz_-_peertube.md).
+[chocobozzz image](./docker/chocobozzz_-_peertube.md).

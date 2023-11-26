@@ -10,7 +10,7 @@ A more modern implementation of it is
 ## Set up
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker-images/linuxserver_-_airsonic.md).
+[linuxserver image](./docker/linuxserver_-_airsonic.md).
 
 ### Clients
 

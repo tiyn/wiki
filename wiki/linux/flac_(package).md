@@ -14,42 +14,5 @@ Another possible tagging software is [MusicBrainz Picard](../picard.md)
 
 ### Splitting Flac file according to cue file
 
-An easy way to split flac files according to a [cue file](../cue_sheet.md) is
-using `cuebreakpoints` and `shnsplit`.
-On most distributions they are in a package with the same name.
-The following line of shell command splits a flac file according to a cue file.
-The `-o` tag specifies the output file format.
-
-```sh
-cuebreakpoints '<cue file>' | shnsplit -o flac '<audio flac file>'
-```
-
-Omitting of the `-o` flag will result in output files with the `.wav` filetype.
-Alternatively the usage of `cuebreakpoints` can be avoided with the following
-command.
-
-```sh
- shnsplit -f '<cue file>' -o flac '<audio flac file>'
-```
-
-Another option is to use [`cue2tracks`](https://github.com/ar-lex/cue2tracks).
-This has the advantage that tags for album title, song name and others are set
-while splitting the files.
-An example command looks like the following.
-The `.flac` file is not mentioned in the command.
-
-```sh
-cue2tracks '<cue file>'
-```
-
-For any of these commands there can be problems with splitting `.flac` files.
-It then is recommended to convert the file to the also lossless `.wav` format,
-split the files and convert it back to `.flac`.
-
-High quality flac files with older `.cue` files that use the format `mm:ss:ff`
-might split the file at the wrong timings.
-The format `mm:ss:ff` is not compatible with the newer versions of
-cuebreakpoints, cue2tracks and shnsplit.
-To get the correct timings the `.cue` file has to be changed to use the format
-`mm:ss:fff`.
-It is recommended to use the shnsplit alternative in this case.
+`shnsplit` can be used to split flac files.
+In the [shnsplit article](/wiki/linux/shntool.md) an explanation on this is given.

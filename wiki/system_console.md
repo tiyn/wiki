@@ -11,4 +11,4 @@ The following section lists different terminals.
 
 - [suckless' st](/wiki/linux/suckless.md#programs) is a simple terminal
   implementation for [X](/wiki/linux/x_window_system.md) on
-  [Linux](/wiki/linux/linux.md).
+  [Linux](/wiki/linux.md).

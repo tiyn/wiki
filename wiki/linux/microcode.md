@@ -12,4 +12,4 @@ manufacturer (on Arch Linux for example `intel-ucode` and `amd-ucode`).
 
 Automatic updates can be enabled depending on bootloader and operating system.
 For Arch Linux a description is given in the
-[Arch Linux entry](/wiki/linux/arch-linux/arch-linux.md#enable-microcode-updates).
+[Arch Linux entry](/wiki/linux/arch-linux.md#enable-microcode-updates).

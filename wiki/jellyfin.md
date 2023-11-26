@@ -2,12 +2,12 @@
 
 [Jellyfin](https://jellyfin.ord) is a suite for multimedia streaming.
 It includes a web-interface and is mainly used for
-[movies and tv shows](./movies_&_tv_shows.md).
+[movies and tv shows](/wiki/video.md).
 
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker-images/linuxserver_-_jellyfin.md).
+[linuxserver image](./docker/linuxserver_-_jellyfin.md).
 
 ## Usage
 

@@ -86,6 +86,8 @@ your liking.
 
 ## Troubleshooting
 
+This section addresses various errors that can happen when using Proxmox.
+
 ### No internet after mainboard swap
 
 If you change the mainboard of your proxmox-virtual-environment it is possible,

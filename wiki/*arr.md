@@ -4,18 +4,18 @@
 the usenet and [BitTorrent](/wiki/bittorrent.md) domain.
 These applications include but are not limited to
 [Sonarr](https://github.com/Sonarr/Sonarr) for
-[TV shows](/wiki/movies_&_tv_shows.md),
+[TV shows](/wiki/video.md),
 [Radarr](https://github.com/Radarr/Radarr) for
-[movies](/wiki/movies_&_tv_shows.md) and
+[movies](/wiki/video.md) and
 [Lidarr](https://github.com/Lidarr/Lidarr) for [music](/wiki/audio.md).
 
 ## Setup
 
 For the different applications there are different [Docker](/wiki/docker.md)
 containers for setup:
-[Linuxservers Sonarr image](/wiki/docker-images/linuxserver_-_sonarr.md),
-[Linuxservers Radarr image](/wiki/docker-images/linuxserver_-_radarr.md) and
-[Linuxservers Lidarr image](/wiki/docker-images/linuxserver_-_lidarr.md).
+[Linuxservers Sonarr image](/wiki/docker/linuxserver_-_sonarr.md),
+[Linuxservers Radarr image](/wiki/docker/linuxserver_-_radarr.md) and
+[Linuxservers Lidarr image](/wiki/docker/linuxserver_-_lidarr.md).
 
 ### Initial Configuration
 

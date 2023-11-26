@@ -7,7 +7,7 @@ specified directories.
 ## Setup
 
 The fdupes program can be installed by going to the
-[github page of it](https://github.com/adrianlopezroche/fdupes/releases).
+[GitHub page of it](https://github.com/adrianlopezroche/fdupes/releases).
 Alternatively many linux package managers package fdupes in the `fdupes`
 package.
 

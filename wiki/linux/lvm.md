@@ -90,7 +90,7 @@ services other than the following commands.
 
 If the volume to shrink is the root volume it has to be done offline.
 For that a simple installation stick is enough.
-[The Arch Linux entry](/wiki/linux/arch-linux/arch-linux.md#installation-medium)
+[The Arch Linux entry](/wiki/linux/arch-linux.md#installation-medium)
 describes the creation of such a boot stick.
 Afterwards the operating system has to be booted from the just created stick or
 a comparable device.
@@ -164,4 +164,3 @@ Afterwards the file system can be matched to the logical volume so it takes up
 the full new size.
 This is explained in the
 [entry about disk management](/wiki/linux/disk-management.md#growing-a-file-system).
-

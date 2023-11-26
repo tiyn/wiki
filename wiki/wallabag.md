@@ -5,7 +5,7 @@
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[wallabag image](./docker-images/wallabag_-_wallabag.md).
+[wallabag image](./docker/wallabag_-_wallabag.md).
 
 ## Usage
 

@@ -8,7 +8,7 @@
 On most linux distributions SXHKD can be installed with the `sxhkd`
 package.
 Alternatively it can be installed via
-[Github](https://github.com/baskerville/sxhkd).
+[GitHub](https://github.com/baskerville/sxhkd).
 
 ## Usage
 

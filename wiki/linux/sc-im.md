@@ -1,6 +1,7 @@
 # SC-IM
 
-[sc-im](https://github.com/andmarti1424/sc-im) is a program to view and edit tables especially in csv-format.
+[sc-im](https://github.com/andmarti1424/sc-im) is a program to view and edit tables especially in
+CSV-format.
 
 ## Setup
 

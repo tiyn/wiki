@@ -6,7 +6,7 @@ Twitter.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[zedeus image](./docker-images/zedeus_-_nitter.md).
+[zedeus image](./docker/zedeus_-_nitter.md).
 
 ## Usage
 
@@ -19,5 +19,5 @@ Nitter instance.
 For Firefox for example there is
 [nitter redirect](https://addons.mozilla.org/en-US/firefox/addon/nitter-redirect/)
 or [privacy redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/).
-For Android there is
+For [Android](/wiki/android.md) there is
 [the UntrackMe app](https://framagit.org/tom79/nitterizeme) (available at [f-droid](./android/f-droid.md)).

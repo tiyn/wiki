@@ -63,3 +63,20 @@ Note that the bitrate for videos is split amongst a bitrate for video and a
 bitrate for audio.
 The target bitrate has to be equal to or greater than the sum of both video
 bitrate and audio bitrate.
+
+### Create a Virtual Camera Using an IP Video Stream
+
+The following section will create a virtual [webcam](/wiki/webcams.md) from an IP video stream like
+the one provided by [IP Webcam](/wiki/android/ip_webcam.md) [Android](/wiki/android.md) app.
+For this a free [V4L2](/wiki/linux/v4l2.md) video device will be needed.
+To information on how to create it navigate to the V4L2 entry and its sections on
+[permanent](/wiki/linux/v4l2.md#create-permanent-v4l2-devices) and
+[temporary creation of V4L2 video devices](/wiki/linux/v4l2.md#create-temporary-v4l2-devices).
+The following command will create a video device  using the pixel format planar YUV 4:2:0.
+In this example it is assumed that the IP link is `http://192.168.178.66:8080/videofeed` and the
+V4L2 video device that is not used but exists is `/dev/video8`.
+If any of those differs on a given system adjustments are needed.
+
+```sh
+ffmpeg -i http://192.168.178.66:8080/videofeed -f v4l2 -pix_fmt yuv420p /dev/video8
+```

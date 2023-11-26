@@ -6,7 +6,7 @@ use bookmarks and run different searches by prefixes.
 ## Server
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[prologic image](./docker-images/prologic_-_golinks.md).
+[prologic image](./docker/prologic_-_golinks.md).
 
 ## Usage
 

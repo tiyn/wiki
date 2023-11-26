@@ -1,6 +1,6 @@
 # Steam
 
-[Steam](https://store.steampowered.com/) is a software for digital game
+[Steam](https://store.steampowered.com/) is a software for digital [game](/wiki/games.md)
 destribution.
 It is developed by [Valve](https://www.valvesoftware.com).
 Steam uses its compatibility layer, [Proton](./proton.md) for running windows
@@ -38,7 +38,7 @@ SteamGridDB in a package of the same name.
 Icons and Banners can then be changed by opening the menu after selecting a game and selecting
 `Change Artwork...`.
 
-Images for games can be changed by downloading them and applying them manually.
+[Images](/wiki/images.md) for games can be changed by downloading them and applying them manually.
 An easier route can be taken by using
 [SGDBoop](https://www.steamgriddb.com/boop).
 To use it, you first need to install it.
@@ -63,16 +63,8 @@ The [Steam Cloud](https://partner.steamgames.com/doc/features/cloud) allows
 games and the platform to utilize cloud storage hosted by Steam.
 Games can use this to store data including game settings and saves.
 
-By using [Syncthing](../syncthing.md) game saves can be synchronized without
-the Steam Cloud.
-First set up Syncthing as described in the
-[Syncthing entry](../syncthing.md#setup).
-If the [Steam Deck](./steam_deck.md) or another system with only user access is
-used the
-[user space configuration](../syncthing.md#user-space-configuration-for-linux)
-is recommended.
-Afterwards move the game saves to the directory set up by Syncthing and create
-symbolic links to link them back to the original place.
+Games can also be synchronized without the Steam Cloud by using [Syncthing](/wiki/syncthing.md) as
+described in [the games entry](/wiki/games.md#syncing-game-saves-across-systems).
 
 ## Error Handling
 

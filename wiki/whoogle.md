@@ -6,7 +6,7 @@ metasearch engine.
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[image by benbusby](./docker-images/benbusby_-_whoogle-search.md)
+[image by benbusby](./docker/benbusby_-_whoogle-search.md)
 
 ## Usage
 

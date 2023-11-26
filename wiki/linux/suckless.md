@@ -1,15 +1,17 @@
 # Suckless
 
-Suckless is a community that is best known for minimalist free software.
-Notable works include `dwm` and `dmenu`.
+[Suckless](https://suckless.org/) is a community that is best known for minimalist free software.
+Notable works of Suckless are the following.
 
-## Programs
+- [dmenu](https://tools.suckless.org/dmenu/) is a menu with prgram launcher functionality
+- [dwm](https://dwm.suckless.org/) is a window manager
+- [ii](https://tools.suckless.org/ii/) is an IRC client
+- [slock](https://tools.suckless.org/slock/) is a screen locker
+- [st](https://st.suckless.org/) is a [terminal](/wiki/system_console.md)
 
-- dmenu is a menu with prgram launcher functionality
-- dwm is a window manager
-- ii is an IRC client
-- slock is a screen locker
-- st is a [terminal](/wiki/system_console.md)
+Additionally to this Suckless maintains a list of free and open-source software that is endorsed by
+Suckless.
+This list can be found on [Suckless' Website](https://suckless.org/rocks/).
 
 ## Setup
 
@@ -40,8 +42,9 @@ new `feature`
   - Get the `config.def.h` of `master` into `config` with
   `git checkout master config.def.h`
 
-
 ## Troubleshooting
+
+This section addresses various errors that can happen when using suckless programs.
 
 ### suckless program crashes or struggles with colored emojis
 

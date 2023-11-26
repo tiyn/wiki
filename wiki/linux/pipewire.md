@@ -19,9 +19,9 @@ For simple sound processing in the form of volume adjustment as well as setting
 the default input and output devices
 [`pavucontrol`](https://freedesktop.org/software/pulseaudio/pavucontrol/) can be
 used as a simple mixer.
-For more advanced routing [`qpwgraph`](https://github.com/rncbc/qpwgraph) is
-recommended.
-`qpwgraph` is a graph-based interface using the Qt interface.
+For more advanced routing [qpwgraph](https://github.com/rncbc/qpwgraph) can be used, but the
+GTK-based [Helvum](https://gitlab.freedesktop.org/pipewire/helvum) is recommended.
+Both are graph-based interface also called patchbays.
 For further sound processing the easiest way to do so is using
 [easyeffects](/wiki/linux/easyeffects.md) which features a wide range of effects
 to apply to sound streams including noise reduction.

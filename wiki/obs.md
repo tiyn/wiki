@@ -2,8 +2,7 @@
 
 [Open Broadcaster Software](https://obsproject.com) - short OBS - is a free
 and open source software for video recording and live streaming.
-Additionally see the
-[the webcams entry](/wiki/linux/webcams.md#configure-the-webcam) if on Linux.
+For webcams and their configuration see [the webcams entry](/wiki/webcams.md#configure-the-webcam).
 
 ## Plugins
 
@@ -35,7 +34,7 @@ The removed background can be replaced with color key filters.
 #### Installation
 
 Made by royshil
-[the github page](https://github.com/royshil/obs-backgroundremoval#linux)
+[the GitHub page](https://github.com/royshil/obs-backgroundremoval#linux)
 describes various possibilities to install the background removal for OBS on
 different systems.
 On Linux systems background removal is often contained in a package named

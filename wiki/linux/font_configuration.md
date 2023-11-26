@@ -1,12 +1,12 @@
 # Font Configuration
 
 This entry addresses the handling of [fonts](/wiki/font.md) for
-[Linux-based](/wiki/linux/linux.md) operating systems.
+[Linux-based](/wiki/linux.md) operating systems.
 
 ## Setup
 
 Fontconfig is the standard library used to customize and configure.
-On most [Linux](/wiki/linux/linux.md) distributions fontconfig can be setup by
+On most [Linux](/wiki/linux.md) distributions fontconfig can be setup by
 installing the package `fontconfig`.
 
 ### Configuration
@@ -101,7 +101,7 @@ The repository is split into
 On some [package managers](/wiki/linux/package_manager.md) the fonts are further
 split depending on [typeface](/wiki/font.md#typefaces) and language.
 The following list shows the name of the
-[Arch Linux packages](/wiki/linux/arch-linux/arch-linux.md).
+[Arch Linux packages](/wiki/linux/arch-linux.md).
 The names on other distributions can vary slightly.
 
 - `adobe-source-han-sans-jp-fonts` is for japanese sans style fonts.

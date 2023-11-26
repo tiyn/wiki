@@ -1,7 +1,7 @@
 # Font
 
 A fonts is the particular size, weight and style of a typeface.
-Operating systems based on [Linux](/wiki/linux/linux.md) handle fonts by the
+Operating systems based on [Linux](/wiki/linux.md) handle fonts by the
 [fontconfig package](/wiki/linux/font_configuration.md).
 
 ## Typefaces

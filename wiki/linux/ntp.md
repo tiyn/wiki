@@ -2,7 +2,7 @@
 
 [NTP](https://www.rfc-editor.org/rfc/rfc5905) - short for Network Time Protocol
 - is the most common method to synchronize the software clock of a
-[Linux](/wiki/linux/linux.md) system.
+[Linux](/wiki/linux.md) system.
 
 ## Setup
 

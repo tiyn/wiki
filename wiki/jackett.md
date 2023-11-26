@@ -8,7 +8,7 @@ One of its main usecases is in feeding indexers to the
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[DyonR image](/wiki/docker-images/dyonr_-_jackettvpn.md) which also features a
+[DyonR image](/wiki/docker/dyonr_-_jackettvpn.md) which also features a
 VPN tunnel.
 
 ## Usage

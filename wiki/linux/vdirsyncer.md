@@ -6,7 +6,7 @@ contacts using the caldav and carddav protocol.
 ## Setup
 
 Vdirsyncer can be installed via the
-[github page](https://github.com/pimutils/vdirsyncer).
+[GitHub page](https://github.com/pimutils/vdirsyncer).
 Some distributions also feature the `vdirsyncer` package.
 
 ### Configuration
