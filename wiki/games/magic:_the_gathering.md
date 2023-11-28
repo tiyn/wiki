@@ -36,6 +36,9 @@ The first group of websites and apps provide a management interface aswell as a 
 functionality.
 Many of them also feature public decks.
 
+- [Archidekt](https://archidekt.com/) is another popular deck building site.
+  With the option to build commander decks based on a specific commander.
+  It additionally features the display of public decks.
 - [deckbox](https://deckbox.org/) is a very clean deck builder website.
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
 - [Delver Lens](https://www.delverlab.com/) is an [Android](/wiki/android.md) application for
@@ -44,6 +47,9 @@ Many of them also feature public decks.
 - [Dragon Shield MTG Card Manager](https://mtg.dragonshield.com/) is a collection and deck manager
   available both as an apple and [Android](/wiki/android.md) app and as a website.
   It features a card scanner for easy population of the collection
+- [MTG Collection Builder](https://mtgcollectionbuilder.com/) is a website to organize and analyze
+  your magic cards.
+  It was specially made for collectors rather than players.
 - [MTG Desktop Companion](https://www.mtgcompanion.org/) is a collection manager for MTG that
   includes prices, stats and a deck builder, aswell as the option to import and export to most of
   the used MTG deck formats.
@@ -52,9 +58,6 @@ Many of them also feature public decks.
   [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
 - [Moxfield](https://www.moxfield.com/) is a popular deck building site.
   It also displays public decks.
-- [Archidekt](https://archidekt.com/) is another popular deck building site.
-  With the option to build commander decks based on a specific commander.
-  It additionally features the display of public decks.
 
 The second group is about giving resources for building decks.
 This can be done by providing public decks or showing which decks or cards are popular in which
