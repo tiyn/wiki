@@ -74,6 +74,8 @@ The following websites provide useful information on cards or rulings of MTG.
 
 - [EDHREC](https://edhrec.com/) is a website that can recommend cards based on an already existing
   commander or improve existing commander decks.
+- [Hyperlinked Magic](https://yawgatog.com/resources/magic-rules/) is a website that features a
+  hyperlinked HTML-version of MTG rules.
 - [Scryfall](https://scryfall.com/) is a website to search and display Magic cards in specific
   printings.
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
