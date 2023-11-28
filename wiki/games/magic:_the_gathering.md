@@ -101,9 +101,10 @@ This group of resources are websites on which MTG cards and supply can be bought
 - [TCGPlayer](https://www.tcgplayer.com) is a trading post for tabletop cards that is used
   world-wide.
 
-The following sites sell MTGO tix and rent cards.
+The following sites sell MTGO tix and sell or rent cards.
 
-- [Cardhoarder](https://www.cardhoarder.com/) is a MTGO card renting service.
+- [Cardhoarder](https://www.cardhoarder.com/) is a MTGO card selling site with renting service.
+- [Goatbots](https://www.goatbots.com) is an MTGO website that sells cards and tix.
 - [Mana Traders](https://www.manatraders.com/) is a renting service for MTGO cards, aswell as a way
   to buy tix.
 
