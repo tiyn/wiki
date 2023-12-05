@@ -30,11 +30,14 @@ The following add-ons increase the security or privacy.
   tracking elements from URLs.
 - [Consent-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic)
   automatically refuses GDPR consent to a bunch of platforms.
+  An alternative to this is an addon named I don't care about cookies.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
   usage of a [VPN](/wiki/vpn.md) that acts as a Proxy like a
   [OpenVPN Proxy](/wiki/openvpn.md#proxy).
+- [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
+  is an even faster alternative to Consent-O-Matic.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.
