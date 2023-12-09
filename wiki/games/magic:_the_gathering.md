@@ -121,7 +121,7 @@ A central part of MTG is the composition of cards to a deck.
 This section addresses the act of building a deck and important topics regarding deck composition.
 Starting with the general topics of deck building this section will then split into multiple
 subsections for building decks of different deck size.
-This following general part is mainly based on a
+This following general part is mainly based on a [YouTube](/wiki/youtube.md)
 [video by Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
 
 It is generally recommended to stick with the minimum number of allowed cards in a format for a
@@ -186,8 +186,8 @@ Approximately 1/3 of a deck should be reserved for land cards.
 
 This section will focus on the building of a 60 card modern, pauper or standard deck.
 60 cards per deck is the minimum requirement for most formats like standard, modern and more.
-This section is also mainly based on a
-[video by german YouTuber Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
+This section is also mainly based on a [YouTube](/wiki/youtube.md)
+[video by Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
 
 All tipps that are in the [above section](#deck-building) are to be considered in this section too.
 
@@ -254,7 +254,8 @@ categories with 5 cards are considered to make 1 card of that category appear in
 
 #### The Command Zone Deck Template
 
-The fourth template is a template made by [Command Zone](https://www.youtube.com/@commandcast).
+The fourth template is a template made by the [YouTube](/wiki/youtube.md) channel named
+[Command Zone](https://www.youtube.com/@commandcast).
 This section is therefore based on the corresponding
 [video by Command Zone](https://www.youtube.com/watch?v=3K9PEeLG_6M).
 
@@ -272,7 +273,8 @@ Staples are cards that are generally considered to be good in a given format.
 This section addresses staples in the format commander.
 
 This section will be divided by the colors of the cards.
-It is based on a [video by VEX MTG](https://www.youtube.com/watch?v=hTzKOoQjfW4) on YouTube.
+It is based on a [video by VEX MTG](https://www.youtube.com/watch?v=hTzKOoQjfW4) on
+[YouTube](/wiki/youtube.md).
 
 ##### White Mana Commander Staples
 
@@ -420,13 +422,14 @@ The base of this build is
 The following resources have been used.
 
 - 1:CMD Mishra's Burnished Banner Upgrade by The Command Zone
-  - [YouTube](https://www.youtube.com/watch?v=6rSkge558Ts)
+  - [Guide](https://www.youtube.com/watch?v=6rSkge558Ts) on [YouTube](/wiki/youtube.md)
 - 2:CMD Mishra's Better Banner by Scrap Trawlers
-  - [EDHREC](https://edhrec.com/articles/mishras-burnished-banner-upgrade-guide/)
+  - [Guide](https://edhrec.com/articles/mishras-burnished-banner-upgrade-guide/) on EDHREC
 - 3:CMD Mishra's Burnished Banner Precon Upgrade by TCGPlayers
-  - [TCGPlayers](https://infinite.tcgplayer.com/article/Mishra-s-Burnished-Banner-MTG-Commander-Precon-Upgrade-Guide/6d6442ca-a7e4-4223-9014-2f8fd36d5dd5/)
+  - [Guide](https://infinite.tcgplayer.com/article/Mishra-s-Burnished-Banner-MTG-Commander-Precon-Upgrade-Guide/6d6442ca-a7e4-4223-9014-2f8fd36d5dd5/)
+    on TCGPlayer
 - 4:CMD Mishra's Burnished Banner | Precon Upgrade Guide by Grazzet MTG
-  - [YouTube](https://www.youtube.com/watch?v=JoY_GkKKqps)
+  - [Guide](https://www.youtube.com/watch?v=JoY_GkKKqps) on YouTube
 
 The following changes to the deck have been made:
 
@@ -445,26 +448,28 @@ The following changes to the deck are currently being considered:
 This section focusses on decks made for the format modern.
 
 - MDN Budget Mono Green Tron by AffinityforMTG
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/4103362#paper)
+  - [Decklist](https://www.mtggoldfish.com/deck/4103362#paper) on MTGGoldFish
 - MDN Gondor Starter Precon by WotC
-  - [Wizards](https://magic.wizards.com/en/news/announcements/the-lord-of-the-rings-tales-of-middle-earth-starter-kit-decklists)
+  - [Decklist](https://magic.wizards.com/en/news/announcements/the-lord-of-the-rings-tales-of-middle-earth-starter-kit-decklists)
+    on Wizards
 - MDN Izzet Prowess (Budget) by Xaranthilurozox
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/3311260#paper)
+  - [Decklist](https://www.mtggoldfish.com/deck/3311260#paper) on MTGGoldFish
 - MDN Izzet Prowess by MoreTimes
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5888133#paper)
+  - [Decklist](https://www.mtggoldfish.com/deck/5888133#paper) on MTGGoldFish
 - MDN Izzet Prowess by IslandGoSAMe
-  - [YouTube](https://www.youtube.com/watch?v=htwBuoGM4b8)
+  - [Guide](https://www.youtube.com/watch?v=htwBuoGM4b8) on [YouTube](/wiki/youtube.md)
 - MDN Mono-Red Burn by xxxpyro
-  - [MTGGoldFish](https://www.mtggoldfish.com/archetype/modern-mono-red-burn#paper)
+  - [Decklist](https://www.mtggoldfish.com/archetype/modern-mono-red-burn#paper) on MTGGoldFish
 - MDN Mono-Red Prowess by Nicholas Miller
-  - [MTGGoldFish](https://www.mtggoldfish.com/archetype/modern-mono-red-prowess#paper)
+  - [Decklist](https://www.mtggoldfish.com/archetype/modern-mono-red-prowess#paper) on MTGGoldFish
 - MDN Mordor Starter Precon by WotC
-  - [Wizards](https://magic.wizards.com/en/news/announcements/the-lord-of-the-rings-tales-of-middle-earth-starter-kit-decklists)
+  - [Decklist](https://magic.wizards.com/en/news/announcements/the-lord-of-the-rings-tales-of-middle-earth-starter-kit-decklists)
+    on Wizards
 - MDN Orzhov Nazgul Ring Bearer by JayVillain
-  - [Aetherhub](https://aetherhub.com/Deck/nazgul-knights-orzhov-ring-bearer)
-  - [YouTube](https://www.youtube.com/watch?v=HizzkL6Sxdg)
+  - [Decklist](https://aetherhub.com/Deck/nazgul-knights-orzhov-ring-bearer) on Aetherhub
+  - [Guide](https://www.youtube.com/watch?v=HizzkL6Sxdg) on YouTube
 - MDN Ultra-Budget Real Affinity by SaffronOlive
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/4061013)
+  - [Decklist](https://www.mtggoldfish.com/deck/4061013) on MTGGoldFish
 
 ##### MDN Izzet Prowess by tiyn
 
@@ -475,11 +480,11 @@ The base of this build is
 The following resources have been used.
 
 - 1:MDN Izzet Prowess by MoreTimes
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5888133#paper)
+  - [Decklist](https://www.mtggoldfish.com/deck/5888133#paper) on MTGGoldFish
 - 2:MDN Izzet Prowess by IslandGoSAMe
-  - [YouTube](https://www.youtube.com/watch?v=htwBuoGM4b8)
+  - [Guide](https://www.youtube.com/watch?v=htwBuoGM4b8) on [YouTube](/wiki/youtube.md)
 - 3:MDN Mono-Red Prowess by Nicholas Miller
-  - [MTGGoldFish](https://www.mtggoldfish.com/archetype/modern-mono-red-prowess#paper)
+  - [Decklist](https://www.mtggoldfish.com/archetype/modern-mono-red-prowess#paper) on MTGGoldFish
 
 The following changes to the deck have been made:
 
@@ -508,10 +513,11 @@ The following changes to the sideboard are currently being considered:
 This section focusses on decks made for the format pauper.
 
 - PAU Rakdos Burn by TiagoFuguete
-  - [MTGDecks](https://mtgdecks.net/Pauper/rakdos-burn-decklist-by-tiagofuguete-1797900)
+  - [Decklist](https://mtgdecks.net/Pauper/rakdos-burn-decklist-by-tiagofuguete-1797900) on MTGDecks
 - PAU Rakdos Madness by AndreaMengucci
-  - [Cardboard](https://app.cardboard.live/shared-deck/3283f313-d5c2-11ec-8b34-12f15ef2af51?channel_id=85959522)
-  - [YouTube](https://www.youtube.com/watch?v=RqsXghL1nAg)
+  - [Decklist](https://app.cardboard.live/shared-deck/3283f313-d5c2-11ec-8b34-12f15ef2af51?channel_id=85959522)
+    on Cardboard
+  - [Guide](https://www.youtube.com/watch?v=RqsXghL1nAg) on [YouTube](/wiki/youtube.md)
 
 ##### PAU Rakdos Burn by tiyn
 
@@ -522,8 +528,9 @@ The base of this build is
 The following resources have been used.
 
 - 1:PAU Rakdos Madness by AndreaMengucci
-  - [Cardboard](https://app.cardboard.live/shared-deck/3283f313-d5c2-11ec-8b34-12f15ef2af51?channel_id=85959522)
-  - [YouTube](https://www.youtube.com/watch?v=RqsXghL1nAg)
+  - [Decklist](https://app.cardboard.live/shared-deck/3283f313-d5c2-11ec-8b34-12f15ef2af51?channel_id=85959522)
+    on Cardboard
+  - [Guide](https://www.youtube.com/watch?v=RqsXghL1nAg) on [YouTube](/wiki/youtube.md)
 
 The following changes to the deck have been made:
 
@@ -552,10 +559,11 @@ The following changes to the sideboard are currently being considered:
 This section focusses on decks made for the format standard.
 
 - STD Izzet Burn Bright by RookerKdag
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5070060#paper)
+  - [Decklist](https://www.mtggoldfish.com/deck/5070060#paper) on MTGGoldFish
 - STD Mono-Blue Tempo by LabroNico
-  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5977587#paper)
+  - [Decklist](https://www.mtggoldfish.com/deck/5977587#paper) on MTGGoldFish
 - STD Mono-Red Burn by Untapped
-  - [Untapped](https://mtga.untapped.gg/meta/decks/193/mono-red-burn/AAQAAQLiqiGHmgQBoN8lAAmy0wLbEtbIHZV8SR3GWq2-A9waARTiCQA?tab=overview)
+  - [Decklist](https://mtga.untapped.gg/meta/decks/193/mono-red-burn/AAQAAQLiqiGHmgQBoN8lAAmy0wLbEtbIHZV8SR3GWq2-A9waARTiCQA?tab=overview)
+    on Untapped
 - STD Zero Rare Rakdos Sacrifice by TheMTGArtisan
-  - [Aetherhub](https://aetherhub.com/Deck/zero-rare-rakdos-sacrifice-842594)
+  - [Decklist](https://aetherhub.com/Deck/zero-rare-rakdos-sacrifice-842594) on Aetherhub
