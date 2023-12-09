@@ -17,6 +17,6 @@ The following are program types that are generally considered useful.
     Linux-based systems.
 - Time-tracking software includes programs that allow its user to track the time they spent working
   on a specific task or project.
-  - [Watson](https://tailordev.github.io/Watson/) is a free and open-source time-tracker that uses
+  - [Watson](/wiki/linux/watson.md) is a free and open-source time-tracker that uses
     the [command-line interface](/wiki/linux/shell.md).
     It is designed for Linux-based systems.
