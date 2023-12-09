@@ -397,3 +397,165 @@ Other good cards to always be considered are the following.
 - Exotic Orchard
 - Path of Ancestry- Field of the Dead
 - Field of the Dead
+
+### Example Decks and Updates
+
+The following sections contain decks that have been made for various formats.
+They are sectioned by the format they are intended for though they maybe are legal in other formats
+aswell.
+
+#### Commander
+
+This section focusses on decks made for the format commander.
+
+- CMD Mishra's Burnished Banner Precon by WotC
+  - [Moxfield](https://www.moxfield.com/decks/2SN7rtbtuEy6rydE2U55gA)
+
+##### CMD Mishra's Burnished Banner Upgraded by tiyn
+
+This deck is put together by tiyn.
+The base of this build is
+[CMD Mishra's Burnished Banner Precon by WotC](https://www.moxfield.com/decks/2SN7rtbtuEy6rydE2U55gA).
+
+The following resources have been used.
+
+- 1:CMD Mishra's Burnished Banner Upgrade by The Command Zone
+  - [YouTube](https://www.youtube.com/watch?v=6rSkge558Ts)
+- 2:CMD Mishra's Better Banner by Scrap Trawlers
+  - [EDHREC](https://edhrec.com/articles/mishras-burnished-banner-upgrade-guide/)
+- 3:CMD Mishra's Burnished Banner Precon Upgrade by TCGPlayers
+  - [TCGPlayers](https://infinite.tcgplayer.com/article/Mishra-s-Burnished-Banner-MTG-Commander-Precon-Upgrade-Guide/6d6442ca-a7e4-4223-9014-2f8fd36d5dd5/)
+- 4:CMD Mishra's Burnished Banner | Precon Upgrade Guide by Grazzet MTG
+  - [YouTube](https://www.youtube.com/watch?v=JoY_GkKKqps)
+
+The following changes to the deck have been made:
+
+- 1 Dragonspark Reactor <- Slobad, Goblin Tinkerer (according to self)
+- 1 Masterful Replication <- Thran Dynamo (according to self)
+- 1 Obeka, Brute Chronologist <- Silas Renn, Seeker Adept (according to 4)
+- 1 Scrap Trawler <- Metalwork Colossus (according to 4)
+- 1 Wedding Invitation <- Faithless Looting (according to self)
+
+The following changes to the deck are currently being considered:
+
+- None
+
+#### Modern
+
+This section focusses on decks made for the format modern.
+
+- MDN Budget Mono Green Tron by AffinityforMTG
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/4103362#paper)
+- MDN Gondor Starter Precon by WotC
+  - [Wizards](https://magic.wizards.com/en/news/announcements/the-lord-of-the-rings-tales-of-middle-earth-starter-kit-decklists)
+- MDN Izzet Prowess (Budget) by Xaranthilurozox
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/3311260#paper)
+- MDN Izzet Prowess by MoreTimes
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5888133#paper)
+- MDN Izzet Prowess by IslandGoSAMe
+  - [YouTube](https://www.youtube.com/watch?v=htwBuoGM4b8)
+- MDN Mono-Red Burn by xxxpyro
+  - [MTGGoldFish](https://www.mtggoldfish.com/archetype/modern-mono-red-burn#paper)
+- MDN Mono-Red Prowess by Nicholas Miller
+  - [MTGGoldFish](https://www.mtggoldfish.com/archetype/modern-mono-red-prowess#paper)
+- MDN Mordor Starter Precon by WotC
+  - [Wizards](https://magic.wizards.com/en/news/announcements/the-lord-of-the-rings-tales-of-middle-earth-starter-kit-decklists)
+- MDN Orzhov Nazgul Ring Bearer by JayVillain
+  - [Aetherhub](https://aetherhub.com/Deck/nazgul-knights-orzhov-ring-bearer)
+  - [YouTube](https://www.youtube.com/watch?v=HizzkL6Sxdg)
+- MDN Ultra-Budget Real Affinity by SaffronOlive
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/4061013)
+
+##### MDN Izzet Prowess by tiyn
+
+This deck is put together by tiyn.
+The base of this build is
+[MDN Izzet Prowess (Budget) by Xaranthilurozox](https://www.mtggoldfish.com/deck/3311260#paper).
+
+The following resources have been used.
+
+- 1:MDN Izzet Prowess by MoreTimes
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5888133#paper)
+- 2:MDN Izzet Prowess by IslandGoSAMe
+  - [YouTube](https://www.youtube.com/watch?v=htwBuoGM4b8)
+- 3:MDN Mono-Red Prowess by Nicholas Miller
+  - [MTGGoldFish](https://www.mtggoldfish.com/archetype/modern-mono-red-prowess#paper)
+
+The following changes to the deck have been made:
+
+- 2 Dragon's Rage Channeler <- Bedlam Reveler
+- 2 Dragon's Rage Channeler <- Stormwing Entity
+- 3 Expressive Iteration <- Light Up the Stage
+- 1 Expressive Iteration <- Opt
+- 2 Mishra's Bauble <- Gut Shot
+- 2 Mishra's Bauble <- Opt
+- 2 Unholy Heat <- Burst Lightning
+
+The following changes to the sideboard have been made:
+
+- 2 Shattering Spree <- 2 Abrade
+
+The following changes to the deck are currently being considered:
+
+- None
+
+The following changes to the sideboard are currently being considered:
+
+- None
+
+#### Pauper
+
+This section focusses on decks made for the format pauper.
+
+- PAU Rakdos Burn by TiagoFuguete
+  - [MTGDecks](https://mtgdecks.net/Pauper/rakdos-burn-decklist-by-tiagofuguete-1797900)
+- PAU Rakdos Madness by AndreaMengucci
+  - [Cardboard](https://app.cardboard.live/shared-deck/3283f313-d5c2-11ec-8b34-12f15ef2af51?channel_id=85959522)
+  - [YouTube](https://www.youtube.com/watch?v=RqsXghL1nAg)
+
+##### PAU Rakdos Burn by tiyn
+
+This deck is put together by tiyn.
+The base of this build is
+[PAU Rakdos Burn by TiagoFuguete](https://mtgdecks.net/Pauper/rakdos-burn-decklist-by-tiagofuguete-1797900).
+
+The following resources have been used.
+
+- 1:PAU Rakdos Madness by AndreaMengucci
+  - [Cardboard](https://app.cardboard.live/shared-deck/3283f313-d5c2-11ec-8b34-12f15ef2af51?channel_id=85959522)
+  - [YouTube](https://www.youtube.com/watch?v=RqsXghL1nAg)
+
+The following changes to the deck have been made:
+
+- 1 Bump in the Night <- Sovereign's Bite
+- 1 Bump in the Night <- End the Festivities
+- 1 Bump in the Night <- Duress
+- 1 Drossforge Bridge <- Bloodfell Caves
+- 1 Drossforge Bridge <- Swamp
+- 2 Drossforge Bridge <- Mountain
+- 2 Gurmag Angler <- Chain Lightning
+
+The following changes to the sideboard have been made:
+
+- None
+
+The following changes to the deck are currently being considered:
+
+- None
+
+The following changes to the sideboard are currently being considered:
+
+- None
+
+#### Standard
+
+This section focusses on decks made for the format standard.
+
+- STD Izzet Burn Bright by RookerKdag
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5070060#paper)
+- STD Mono-Blue Tempo by LabroNico
+  - [MTGGoldFish](https://www.mtggoldfish.com/deck/5977587#paper)
+- STD Mono-Red Burn by Untapped
+  - [Untapped](https://mtga.untapped.gg/meta/decks/193/mono-red-burn/AAQAAQLiqiGHmgQBoN8lAAmy0wLbEtbIHZV8SR3GWq2-A9waARTiCQA?tab=overview)
+- STD Zero Rare Rakdos Sacrifice by TheMTGArtisan
+  - [Aetherhub](https://aetherhub.com/Deck/zero-rare-rakdos-sacrifice-842594)
