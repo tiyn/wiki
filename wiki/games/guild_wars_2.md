@@ -23,7 +23,7 @@ The second group provides guides and builds.
 - [MetaBattle](https://metabattle.com/wiki/MetaBattle_Wiki) provides guides and builds.
   Another interesting page of it is the best
   [spending of WvW points](https://metabattle.com/wiki/Guide:How_to_spend_WvW_Ability_Points).
-- [Snowcrows](https://snowcrows.com/builds) is a guild that provides guides and builds that are
+- [Snow Crows](https://snowcrows.com/builds) is a guild that provides guides and builds that are
   especially well suited for instanced PvE content.
 
 Finally the this groupd provides various guides and gives information on in-game mechanics.
@@ -214,6 +214,9 @@ mounts are added.
 The following sections contain builds that have been made for various game modes and roles.
 They are sectioned by the game mode and role they are intended for though they maybe are playable in
 other modes aswell.
+This section focusses on specific builds and guides.
+For more general guides on game modes or general tipps and tricks navigate to the
+[resources section](#resources).
 
 ### WvW Builds
 
@@ -224,29 +227,45 @@ This section features builds for the WvW game mode.
 The following list provides balanced builds for roaming.
 
 - [Elemenatalist/Catalyst - WvW-Roam (Power Condition) Scepter+Dagger Celestial](https://guildjen.com/scepter-catalyst-roaming-build/)
+  on GuildJen
 - [Guardian/Willbender - WvW-Roam (Power Condition) Sword+Sword/Axe+Torch Celestial](https://guildjen.com/celestial-willbender-roaming-build/)
+  on GuildJen
 - [Necromancer/Core - WvW-Roam (Condition) Scepter+Warhorn/Staff Trailblazer](https://metabattle.com/wiki/Build:Necromancer_-_Core_Condi_Roamer)
+  on MetaBattle
 - [Ranger/Soulbeast - WvW-Roam (Power) Longbow/Greatsword Berserker](https://guildjen.com/sic-em-soulbeast-roaming-build/)
+  on GuildJen
 - [Revenant/Renegade - WvW-Roam (Power Condition Alacrity) Shortbow/Staff Celestial](https://metabattle.com/wiki/Build:Renegade_-_Shortbow_Shiro_Roamer)
+  on MetaBattle
 - [Thief/Core - WvW-Roam (Condition) Pistol+Dagger/Shortbow Trailblazer/Dire](https://metabattle.com/wiki/Build:Thief_-_Core_P/D_Roamer)
+  on MetaBattle
 
 #### WvW Zerg Builds
 
 The following list provides damage based builds for zerging.
 
 - [Elementalist/Weaver - WvW-Zerg (Power) Staff/Staff Marauder](https://metabattle.com/wiki/Build:Weaver_-_Staff_Backline)
+  on MetaBattle
 - [Guardian/Dragonhunter - WvW-Zerg (Power) Longbow/Scepter+Focus Berserker/Marauder](https://hardstuck.gg/gw2/builds/guardian/power-dragonhunter-wvw/)
+  on Hardstuck
 - [Guardian/Willbender - WvW-Zerg (Power) Greatsword/Scepter+Focus Berserker](https://hardstuck.gg/gw2/builds/guardian/power-willbender-2/)
+  on Hardstuck
 - [Necromancer/Reaper - WvW-Zerg (Power) Axe+Focus/Greatsword Marauder](https://hardstuck.gg/gw2/builds/necromancer/power-reaper-2/)
+  on Hardstuck
 - [Necromancer/Scourge - WvW-Zerg (Power Alacrity) Axe+Focus/Greatsword Berserker](https://hardstuck.gg/gw2/builds/necromancer/boonstrip-scourge/)
+  on Hardstuck
 - [Revenant/Vindicator - WvW-Zerg (Power) Hammer/Greatsword Berserker](https://metabattle.com/wiki/Build:Vindicator_-_Hammer_Vindicator)
+  on MetaBattle
 - [Warrior/Berserker - WvW-Zerg (Power) Greatsword/Longbow Marauder/Dragon](https://hardstuck.gg/gw2/builds/warrior/power-berserker-warrior/)
+  on Hardstuck
 
 The following list provides heal based builds for zerging.
 
 - [Engineer/Scrapper - WvW-Zerg (Heal Stability) Hammer Minstrel](https://hardstuck.gg/gw2/builds/engineer/support-scrapper/)
+  on Hardstuck
 - [Guardian/Firebrand - WvW-Zerg (Heal Stability) Mace+Shield/Staff Minstrel](https://hardstuck.gg/gw2/builds/guardian/firebrand/)
+  on Hardstuck
 - [Ranger/Druid - WvW-Zerg (Heal) Staff/Staff Minstrel](https://metabattle.com/wiki/Build:Druid_-_Support_Druid)
+  on MetaBattle
 
 ### PvE Builds
 
@@ -257,34 +276,51 @@ This section features builds for the PvE game mode.
 The following list provides balanced builds for the open world.
 
 - [Thief/Daredevil - PvE-Openworld (Power) Staff Berserker](https://hardstuck.gg/gw2/builds/thief/power-daredevil/)
+  on Hardstuck
 
 #### PvE Group Builds
 
 The following list provides damage based builds for the group content.
 
 - [Elementalist/Weaver - PvE-Group (Power) Sword+Dagger Berserker](https://hardstuck.gg/gw2/builds/elementalist/power-weaver/?v=optimized)
+  on Hardstuck
 - [Engineer/Mechanist - PvE-Group (Power) Hammer/Rifle Berserker](https://www.youtube.com/watch?v=c7kpR9uPIOk)
+  on [YouTube](/wiki/youtube.md)
 - [Guardian/Firebrand - PvE-Group (Condition) Axe+Torch Viper](https://snowcrows.com/builds/guardian/firebrand/condition-firebrand)
+  on Snow Crows
 - [Ranger/Soulbeast - PvE-Group (Condition) Longbow/Dagger+Dagger Viper](https://snowcrows.com/builds/ranger/soulbeast/condition-soulbeast)
+  on Snow Crows
 - [Revenant/Vindicator - PvE-Group (Power) Hammer/Greatsword Berserker](https://hardstuck.gg/gw2/builds/revenant/power-vindicator-2/)
+  on Hardstuck
 - [Thief/Deadeye - PvE-Group (Power) Dagger+Dagger Berserker](https://www.youtube.com/watch?v=aBcc4isREJY)
+  on YouTube
 - [Warrior/Bladesworn - PvE-Group (Power) Axe+Pistol Berserker](https://snowcrows.com/builds/warrior/bladesworn/power-bladesworn)
+  on Snow Crows
 - [Warrior/Spellbreaker - PvE-Group (Power) Dagger+Axe Berserker](https://www.youtube.com/watch?v=CsRR39wPZdc)
 
 The following list provides utility and damage based builds for the group content.
 
 - [Engineer/Mechanist - PvE-Group (Power Alacrity) Rifle Berserker/Diviner](https://snowcrows.com/builds/engineer/mechanist/power-alacrity-mechanist)
+  on Snow Crows
 - [Mesmer/Chronomancer - PvE-Group (Power Quickness) Dagger+Sword/Greatsword Berserker](https://snowcrows.com/builds/mesmer/chronomancer/power-boon-chronomancer)
+  on Snow Crows
 - [Mesmer/Mirage - PvE-Group (Condition Alacrity) Staff/Staff Ritualist/Viper](https://snowcrows.com/builds/mesmer/mirage/condition-alacrity-mirage)
+  on Snow Crows
 - [Necromancer/Harbinger - PvE-Group (Condition Quickness) Pistol+Dagger/Scepter+Warhorn Viper](https://snowcrows.com/builds/necromancer/harbinger/condition-quickness-harbinger)
+  on Snow Crows
 - [Revenant/Herald - PvE-Group (Power Quickness) Greatsword/Staff Berserker](https://snowcrows.com/builds/revenant/herald/power-quickness-herald)
+  on Snow Crows
 - [Revenant/Renegade - PvE-Group (Power Alacrity) Greatsword/Staff Diviner/Berserker](https://snowcrows.com/builds/revenant/renegade/power-alacrity-renegade)
+  on Snow Crows
 - [Thief/Specter - PvE-Group (Condition Alacrity) Scepter+Dagger Viper](https://snowcrows.com/builds/thief/specter/condition-alacrity-spectre)
+  on Snow Crows
 
 The following list provides heal and utility based builds for the group content.
 
 - [Engineer/Mechanist - PvE-Group (Heal Alacrity) Mace+Shield Harrier](https://snowcrows.com/builds/engineer/mechanist/heal-alacrity-mechanist)
+  on Snow Crows
 - [Ranger/Druid - PvE-Group (Heal Alacrity) Axe+Warhorn/Staff Giver/Harrier/Magi](https://snowcrows.com/builds/ranger/druid/heal-druid)
+  on Snow Crows
 
 ### PvP Builds
 
@@ -295,18 +331,24 @@ This section features builds for the PvP game mode.
 The following list provides damage based builds for roaming.
 
 - [Engineer/Scrapper - PvP-Roam (Power) Hammer Berserker](https://hardstuck.gg/gw2/builds/engineer/grenade-scrapper/)
+  on Hardstuck
 - [Thief/Daredevil - PvP-Roam (Condition Power) Pistol+Dagger/Shortbow Carrion](https://metabattle.com/wiki/Build:Daredevil_-_Carrion_P/D)
+  on MetaBattle
 
 #### PvP Side Node Builds
 
 The following list provides damage based builds for side noding.
 
 - [Ranger/Druid - PvP-Sidenode (Power) Greatsword/Longbow Avatar](https://hardstuck.gg/gw2/builds/ranger/decap-druid/)
+  on Hardstuck
 - [Warrior/Bladesworn - PvP-Sidenode (Power) Axe+Pistol Soldier](https://metabattle.com/wiki/Build:Bladesworn_-_Defense_Bladesworn)
+  on MetaBattle
 
 #### PvP Team Builds
 
 The following list provides damage based builds for team figh situations.
 
 - [Necromancer/Core - PvP-Team (Condition Power) Scepter+Warhorn/Staff Carrion](https://hardstuck.gg/gw2/builds/necromancer/terrormancer/)
+  on Hardstuck
 - [Revenant/Herald - PvP-Team (Power) Sword+Sword/Staff Berserker](https://hardstuck.gg/gw2/builds/revenant/power-herald/)
+  on Hardstuck
