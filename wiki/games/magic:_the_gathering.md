@@ -182,11 +182,10 @@ game to ensure they can be played.
 In non-mono decks double lands are useful but their restrictions they come with should be noted.
 Approximately 1/3 of a deck should be reserved for land cards.
 
-### Building a 60 Card Deck
+### Tipps on Building a Modern, Pauper or Standard Deck
 
-This section will focus on the building of a 60 card deck.
+This section will focus on the building of a 60 card modern, pauper or standard deck.
 60 cards per deck is the minimum requirement for most formats like standard, modern and more.
-For 100 card decks navigate to the [following section](#building-a-100-card-deck)
 This section is also mainly based on a
 [video by german YouTuber Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
 
@@ -198,12 +197,11 @@ As a rule of thumb the number of lands in a 60 card deck should be around
 It is recommended to use playsets (4 cards) of cards or use multiple cards that are similar to
 reduce the possibilities of draws.
 
-### Building a 100 Card Deck
+### Tipps on Building a Commander Deck
 
-This section will focus on the building of a 100 card deck.
+This section will focus on the building of a 100 card commander deck.
 100 cards per deck is most notably the minimum requirement for the commander format.
 Therefor this section will mostly focus on commander
-For 60 card decks navigate to the [previous section](#building-a-60-card-deck)
 
 All tipps that are in the [above section](#deck-building) are to be considered in this section too.
 
@@ -267,3 +265,135 @@ The first card is the commander.
 10 cards are used for card draw.
 5 cards each are used for targeted removal and board wipes.
 The remaining 31 to 33 cards are used for the intended game strategy and deck plan.
+
+#### Commander Staples
+
+Staples are cards that are generally considered to be good in a given format.
+This section addresses staples in the format commander.
+
+This section will be divided by the colors of the cards.
+It is based on a [video by VEX MTG](https://www.youtube.com/watch?v=hTzKOoQjfW4) on YouTube.
+
+##### White Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing enough white mana.
+
+In the top tier are the following.
+
+- Swords to Plowshares
+
+Other good cards to always be considered are the following.
+
+- Smothering Tithe
+- Vanquish the Horde
+- Farewell
+- Teferi's Protection
+- Esper Sentinel
+
+##### Blue Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing enough blue mana.
+
+In the top tier are the following.
+
+- Cyclonic Rift
+
+Other good cards to always be considered are the following.
+
+- Rhystic Study
+- Fierce Guardianship
+- Mana Drain
+
+##### Black Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing enough black mana.
+
+In the top tier are the following.
+
+- Bojuka Bog
+- Toxic Deluge
+
+Other good cards to always be considered are the following.
+
+- Demonic Tutor
+- Agadeem's Awakening
+
+##### Red Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing enough red mana.
+
+In the top tier are the following.
+
+- Blasphemous Act
+
+Other good cards to always be considered are the following.
+
+- Dockside Extortionist
+- Deflecting Swat
+- Jeska's Will
+
+##### Green Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing enough green mana.
+
+In the top tier are the following.
+
+- Bala Ged Recovery
+
+Other good cards to always be considered are the following.
+
+- Boseiju, Who Endures
+- Cultivate
+- Kodama's Reach
+- Farseek
+- Rampant Growth
+- Nature's Lore
+- Three Visits
+- Yavimaya, Cradle of Growth
+
+Green has many different options for mana ramp.
+It is recommended to check for green mana ramp in the good cards category before going for the good
+cards category in [the colorless staples section](#colorless-mana-commander-staples)
+
+##### Multiple Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing multiple different colors of
+mana.
+These cards are only staples in decks which feature enough of these mana colors.
+For easier navigation and organization the colors of the cards mana price are included in brackets
+behind their names.
+
+In the top tier are the following.
+
+- Assasing's Trophy (cast for Black/Green)
+- Anguished Unmaking (cast for White/Black)
+- Ruinous Ultimatum (cast for White/Black/Red)
+- The World Tree (taps for Green or any color; has a spell with White/Blue/Black/Red/Green)
+
+Other good cards to always be considered are the following.
+
+- Boros Charm (cast for White/Red)
+- Rakdos Charm (cast for Black/Red)
+- Rhythm of the Wild (cast for Red/Green)
+
+##### Colorless Mana Commander Staples
+
+The following cards are considered to be staples in a deck containing enough colorless mana.
+Most cards in this deck can also be casted using no mana or any mana color which makes them staples
+in all colors.
+
+In the top tier are the following.
+
+- Sol Ring
+- Soul-Guide Lantern
+- Vesuva
+- Thespian's Stage
+
+Other good cards to always be considered are the following.
+
+- Arcane Signet
+- Mana Crypt
+- Command Tower
+- Exotic Orchard
+- Path of Ancestry- Field of the Dead
+- Field of the Dead
