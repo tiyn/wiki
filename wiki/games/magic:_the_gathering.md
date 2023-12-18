@@ -441,7 +441,16 @@ The following changes to the deck have been made:
 
 The following changes to the deck are currently being considered:
 
-- None
+- 1 Hoard Hauler <- Mnemonic Sphere (according to 3)
+- 1 Saheeli, Filigree Master <- Hellkite Igniter (according to 3)
+- 1 Night Scythe <- Wayfarer's Bauble (according to 3)
+- 1 The Stasis Coffin <- Herald of Anguish (according to 3)
+- 1 Terminate <- Bedevil (according to 3)
+- 1 Scrap Welder <- Scavenged Brawler (according to 3)
+- 1 Shivan Reef <- Temple of Epiphany (according to 3)
+- 1 Spire of Industry <- Path of Ancestry (according to 3)
+- 1 Darksteel Citadel <- Terramorphic Expanse (according to 3)
+- 1 Power Depot <- Myriad Landscape (according to 3)
 
 #### Modern
 
@@ -512,6 +521,10 @@ The following changes to the sideboard are currently being considered:
 
 This section focusses on decks made for the format pauper.
 
+- PAU Mono Red 2020 by Luca Gottardi
+  - [Decklist](https://www.mtggoldfish.com/deck/6034447#paper)
+- PAU Mono-Blue Delver by billster47
+  - [Decklist](https://www.mtggoldfish.com/deck/5934456#paper)
 - PAU Rakdos Burn by TiagoFuguete
   - [Decklist](https://mtgdecks.net/Pauper/rakdos-burn-decklist-by-tiagofuguete-1797900) on MTGDecks
 - PAU Rakdos Madness by AndreaMengucci
