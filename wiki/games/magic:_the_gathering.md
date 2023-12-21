@@ -103,6 +103,8 @@ This group of resources are websites on which MTG cards and supply can be bought
 - [Card Kingdom](https://www.cardkingdom.com/) is a website to shop MTG cards and supply.
   It ships from the united states of america.
 - [cardmarket](https://www.cardmarket.com/) is a trading post for tabletop cards based in europe.
+- [Printers Studio](https://www.printerstudio.de/machen/komplett-individualisierbare-spielkarten-geschenke.html)
+  and [Card Conjurer](https://cardconjurer.onrender.com/) can be used to print custom proxies.
 - [TCGPlayer](https://www.tcgplayer.com) is a trading post for tabletop cards that is used
   world-wide.
 
