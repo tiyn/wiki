@@ -58,6 +58,7 @@ Many of them also feature public decks.
   [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
 - [Moxfield](https://www.moxfield.com/) is a popular deck building site.
   It also displays public decks.
+  If a deck is entered into Moxfield tokens that are needed to play the deck can be displayed.
 
 The second group is about giving resources for building decks.
 This can be done by providing public decks or showing which decks or cards are popular in which
@@ -78,6 +79,9 @@ The following websites provide useful information on cards or rulings of MTG.
   hyperlinked HTML-version of MTG rules.
 - [Scryfall](https://scryfall.com/) is a website to search and display Magic cards in specific
   printings.
+  This site can be used to check for cards that create tokens.
+  An example for this is running a search with the term `o:create o:golem` to find cards that
+  create a golem token.
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
   the standard format.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
@@ -103,10 +107,17 @@ This group of resources are websites on which MTG cards and supply can be bought
 - [Card Kingdom](https://www.cardkingdom.com/) is a website to shop MTG cards and supply.
   It ships from the united states of america.
 - [cardmarket](https://www.cardmarket.com/) is a trading post for tabletop cards based in europe.
-- [Printers Studio](https://www.printerstudio.de/machen/komplett-individualisierbare-spielkarten-geschenke.html)
-  and [Card Conjurer](https://cardconjurer.onrender.com/) can be used to print custom proxies.
 - [TCGPlayer](https://www.tcgplayer.com) is a trading post for tabletop cards that is used
   world-wide.
+
+The following websites can be used to design or obtain images for proxies or print them.
+
+- [Printers Studio](https://www.printerstudio.de/machen/komplett-individualisierbare-spielkarten-geschenke.html)
+  can be used to print custom proxies.
+- [Card Conjurer](https://cardconjurer.onrender.com/) is a website to design custom MTG-style
+  cards.
+- [MPC Fill](https://mpcfill.com/) can be used to obtain front and back images for non-custom proxy
+  cards.
 
 The following sites sell MTGO tix and sell or rent cards.
 
