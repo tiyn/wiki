@@ -22,6 +22,11 @@ Furthermore [Gameyfin](/wiki/games/gameyfin.md) is a game manager that can be ea
 through a web interface.
 Games can then be downloaded from the website.
 
+Some online and mostly multiplayer games can be played via the [web browser](/wiki/web_browser.md).
+A notable amount of this group of games uses the top-level domain `.io`.
+Some examples for these are [territorial.io](https://territorial.io/) and
+[slither.io](http://slither.io/).
+
 ## Syncing Game Saves Across Systems
 
 By using [Syncthing](../syncthing.md) game saves can be synchronized.
