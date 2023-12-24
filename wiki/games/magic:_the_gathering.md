@@ -66,7 +66,7 @@ format.
 
 - [Tapped Out](https://tappedout.net/) is a website that among other things can suggest decks based
   on owned cards.
-- [MTGGOLDFISH](https://www.mtggoldfish.com/) is a website for different topics regarding MTG.
+- [MTGGoldFish](https://www.mtggoldfish.com/) is a website for different topics regarding MTG.
   It features various decks including budget variants of it.
   Additionally it lists tournaments with decks played which can be a useful resource to understand
   the metagame.
@@ -195,7 +195,7 @@ game to ensure they can be played.
 In non-mono decks double lands are useful but their restrictions they come with should be noted.
 Approximately 1/3 of a deck should be reserved for land cards.
 A guide for a budget mana base in the modern format was written by
-[SaffronOlive on MTGGOLDFISH](https://www.mtggoldfish.com/articles/brewer-s-minute-building-a-budget-mana-base-in-modern).
+[SaffronOlive on MTGGoldFish](https://www.mtggoldfish.com/articles/brewer-s-minute-building-a-budget-mana-base-in-modern).
 
 ### Tipps on Building a Modern, Pauper or Standard Deck
 
