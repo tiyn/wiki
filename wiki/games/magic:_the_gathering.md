@@ -194,6 +194,8 @@ Sometimes it can be useful to increase the mana color of cards that are needed v
 game to ensure they can be played.
 In non-mono decks double lands are useful but their restrictions they come with should be noted.
 Approximately 1/3 of a deck should be reserved for land cards.
+A guide for a budget mana base in the modern format was written by
+[SaffronOlive on MTGGOLDFISH](https://www.mtggoldfish.com/articles/brewer-s-minute-building-a-budget-mana-base-in-modern).
 
 ### Tipps on Building a Modern, Pauper or Standard Deck
 
