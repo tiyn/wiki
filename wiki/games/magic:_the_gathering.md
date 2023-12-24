@@ -79,9 +79,12 @@ The following websites provide useful information on cards or rulings of MTG.
   hyperlinked HTML-version of MTG rules.
 - [Scryfall](https://scryfall.com/) is a website to search and display Magic cards in specific
   printings.
-  This site can be used to check for cards that create tokens.
+  Scryfall can query advanced patterns using
+  [their specific syntax](https://scryfall.com/docs/syntax).
+  Among others this site can be used to check for cards that create tokens.
   An example for this is running a search with the term `o:create o:golem` to find cards that
   create a golem token.
+  For other advan
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
   the standard format.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
