@@ -64,6 +64,8 @@ The second group is about giving resources for building decks.
 This can be done by providing public decks or showing which decks or cards are popular in which
 format.
 
+- [CubeCobra](https://cubecobra.com/explore) is a website that is based around the creation of
+  draft cubes.
 - [Tapped Out](https://tappedout.net/) is a website that among other things can suggest decks based
   on owned cards.
 - [MTGGoldFish](https://www.mtggoldfish.com/) is a website for different topics regarding MTG.
