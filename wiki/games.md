@@ -27,6 +27,8 @@ A notable amount of this group of games uses the top-level domain `.io`.
 Some examples for these are [territorial.io](https://territorial.io/) and
 [slither.io](http://slither.io/).
 
+Another online game is [Massive Decks](/wiki/massivedecks.md) which is the online take on a similar popular tabletop game.
+
 ## Syncing Game Saves Across Systems
 
 By using [Syncthing](../syncthing.md) game saves can be synchronized.
