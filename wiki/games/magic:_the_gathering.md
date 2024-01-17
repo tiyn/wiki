@@ -7,6 +7,8 @@ reffered to as Wizards.
 In Magic: The Gathering there are many different formats that are all listed on
 [the official website](https://magic.wizards.com/en/formats).
 Rules can also be found on [Wizards website](https://magic.wizards.com/en/rules).
+MTG is a notoriously complex game and proven to be
+[Turing Complete](https://arxiv.org/pdf/1904.09828.pdf).
 
 ## Playing Online
 
