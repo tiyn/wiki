@@ -69,6 +69,9 @@ The following add-ons provide changes to the default style.
   an automatic dark mode for sites without native dark mode.
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
   hides scrollbars.
+- [Midnight Lizard](https://addons.mozilla.org/de/firefox/addon/midnight-lizard-quantum/) is a
+  add-on similar to Dark Reader.
+  It is slightly more customizable but has worse default settings.
 
 #### Tool Add-ons
 
