@@ -22,6 +22,8 @@ This section addresses various use cases of git.
 
 There is also an interactive
 [fixup guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
+Robertson also made guides on [post production](https://github.com/SethRobertson/GitPostProduction)
+and [best practices](http://sethrobertson.github.io/GitBestPractices).
 
 ### Ignore files having local changes
 

@@ -1,7 +1,8 @@
 # Git
 
 Git is probably the best version control system (VCS) there is.
-It's easy and can be lightweight, but also has tons of possibilities for using graphical (/web) user interfaces.
+It's easy and can be lightweight, but also has tons of possibilities for using graphical (including
+web) user interfaces.
 
 ## Setup
 
