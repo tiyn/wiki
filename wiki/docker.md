@@ -32,7 +32,7 @@ After that relog into your machine and you should be able to run
 The programs below are useful docker-management systems in different style.
 
 - [ctop](https://github.com/bcicen/ctop): top-like cli interface for containers
-- [portainer](./docker/portainer.md): web ui for managing docker and kubernetes
+- [portainer](https://www.portainer.io/): web ui for managing docker and kubernetes
 
 ### Enable Nvidia GPUs
 
@@ -57,7 +57,7 @@ publish ports to reverse proxy them.
 ### Dockerize a graphical application
 
 A graphical application can easily be dockerized and made available over both
-the [web browser](/wiki/browser.md) or [VNC](/wiki/vnc.md).
+the [web browser](/wiki/web_browser.md) or [VNC](/wiki/vnc.md).
 For this
 [jlesages baseimage-gui container](https://hub.docker.com/r/jlesage/baseimage-gui)
 can be used.
