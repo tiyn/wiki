@@ -234,10 +234,12 @@ All tipps that are in the [above section](#deck-building) are to be considered i
 For commander decks it is also important to select a commander to build the deck around.
 Selecting the commander should be done in a step before choosing the strategy.
 
-There are four main templates to build a commander.
+There are five main templates to build a commander.
 The first three templates are fairly similar and will be explained as one in the
 [following section](#9x7-8x8-and-7x9-deck-templates).
 The last in the [section thereafter](#the-command-zone-deck-template).
+The last template is based on an article by
+[Tomer Abramovici on MTGGoldFish](https://www.mtggoldfish.com/articles/the-power-of-a-deckbuilding-checklist-commander-quickie).
 
 #### 9x7, 8x8 and 7x9 Deck Templates
 
