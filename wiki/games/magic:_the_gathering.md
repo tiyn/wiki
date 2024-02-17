@@ -134,7 +134,7 @@ The following sites sell MTGO tix and sell or rent cards.
 - [Mana Traders](https://www.manatraders.com/) is a renting service for MTGO cards, aswell as a way
   to buy tix.
 
-Lastly [decklist.org](https://decklist.org/) can be used to neatly print out decklists.
+Lastly [decklist.org](https://decklist.org/) can be used to neatly print out deck lists.
 
 ## Deck Building
 
