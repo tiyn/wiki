@@ -47,10 +47,19 @@ to it and run `pipreqs` (install it if not already done).
 
 There are various modules and package managers to install these for python like
 `pip`.
+For this usually a virtual environment is needed - as it is described in
+[the setup section](#setup).
+Alternatively local package manager like the
+[ones of various Linux distributions](/wiki/linux/package_manager.md) can sometimes be used to
+install packages globally.
+Due to different package versions (especially on rolling release distributions) this can fail.
+If it doesnt work the packages can be installed globally using `pip` together with the
+`--break-system-packages` flag.
+This flag is to be used with care.
 
-## Pytorch
+### Pytorch
 
-### Setup Pytorch with Cuda for GPU usage
+#### Setup Pytorch with Cuda for GPU usage
 
 If you are on Arch Linux or a distribution based on it install
 `python-pytorch-cuda` via `pacman -S python-pytorch-cuda`.
