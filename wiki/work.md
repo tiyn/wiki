@@ -14,7 +14,8 @@ The following are program types that are generally considered useful.
   - [Apaches OpenOffice](https://www.openoffice.org/) is an open-source office suite for Windows
     and [Linux](/wiki/linux.md).
   - [LibreOffice](https://libreoffice.org/) is a free and open-source office suite for Windows and
-    Linux-based systems.
+    Linux-based systems. LibreOffice can have problems with hardware-acceleration.
+    If it doesn't start due to it being enabled start LibreOffice in safe mode and disable it.
 - Time-tracking software includes programs that allow its user to track the time they spent working
   on a specific task or project.
   - [Watson](/wiki/linux/watson.md) is a free and open-source time-tracker that uses
