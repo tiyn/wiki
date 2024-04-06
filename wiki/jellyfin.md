@@ -11,7 +11,7 @@ The software can be setup via [Docker](/wiki/docker.md) with the
 
 ## Usage
 
-This section addresses various features of invidious.
+This section addresses various features of Jellyfin.
 
 ### Live TV and DVR
 

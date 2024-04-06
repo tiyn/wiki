@@ -11,13 +11,17 @@ your needs.
 In general you need to consider if you want the video directly on your pc or
 access a server for it.
 
-## Server/Client
+## Players
 
 If you want to keep your system clean of much data, you can use this kind of setup.
 There are differences depending on your preffered client interface.
 
 - [Plex](https://www.plex.tv) is a dockerizable media streaming service with web-interface.
 - [Jellyfin](./jellyfin.md) is a foss dockerizable media streaming service with web-interface.
+
+For local video files a simple video player can be used.
+
+- [mpv](./mpv.md) is a cross-platform command line video player.
 
 ## Scan DVDs/Blu-Rays
 
