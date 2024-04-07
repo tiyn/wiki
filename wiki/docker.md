@@ -5,7 +5,7 @@ Due to easy handling and reproducable environments it is a useful tool.
 
 ## Setup
 
-- Arch linux: run `pacman -S docker` to install docker
+- [Arch Linux](/wiki/linux/arch-linux.md): run `pacman -S docker` to install docker
 - Ubuntu: visit [the official installation guide](https://docs.docker.com/engine/install/ubuntu/)
 
 Another possibility is to try the official convenience script.
@@ -18,6 +18,14 @@ sudo sh get-docker.sh
 ```
 
 ## Usage
+
+This section addresses various features of Docker.
+
+### virtualize Operating Systems
+
+Docker is a tool that can be used to virtualize different programs and softwares.
+Especially for containerizing and virtualizing operating systems (mostly based on
+[Linux](/wiki/linux.md)) can be handled by [distrobox](https://github.com/89luca89/distrobox).
 
 ### Run Docker as non-root user
 
