@@ -164,6 +164,18 @@ http:
         users:
           - "username:htpasswd"
 
+    redirect-non-www-to-www:
+      redirectregex:
+        permanent: true
+        regex: "^https?://(?:www\\.)?(.+)"
+        replacement: "https://www.${1}"
+
+    redirect-www-to-non-www:
+      redirectregex:
+        permanent: true
+        regex: "^https?://www\\.(.+)"
+        replacement: "https://${1}"
+
 tls:
   options:
     default:
@@ -176,6 +188,10 @@ tls:
         - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
       minVersion: VersionTLS12
 ```
+
+The sections called `redirect-non-www-to-www` and `redirect-www-to-non-www` are adapted from a
+article by Benjamin Rancourt on his
+[website](https://www.benjaminrancourt.ca/how-to-redirect-from-non-www-to-www-with-traefik/).
 
 ## Create reverse proxies
 
@@ -195,6 +211,29 @@ This configuration automatically redirects http to https.
 When using this configuration the port specified in the latter lines can be
 ommitted in the `ports:` section if not used directly.
 This ensures access only via https and restricts access via ip and port.
+Change `<service name>` according to the service you want to publish and `<subdomain>` aswell as
+`<domain>` to the domain you intent to publish the service to.
+Additionally if you want to redirect domains not starting with `www` to one that does not append
+the following line.
+
+```yml
+  - "traefik.http.routers.<service name>.middlewares=redirect-non-www-to-www"
+```
+
+If the opposite is the case and it should always be redirected to a domain not starting with `www`
+add the following line.
+
+```yml
+  - "traefik.http.routers.<service name>.middlewares=redirect-www-to-non-www"
+```
+
+In both of those cases the line of the first code block in this section that specifies the domain
+and subdomain needs to include both the www and the non-www domains.
+This should look something like the following
+
+```yml
+  - "traefik.http.routers.<service name>-secure.rule=Host(`www.<subdomain>.<domain>`, `<subdomain>.<domain>`)"
+```
 
 ## Setup Mailserver
 
