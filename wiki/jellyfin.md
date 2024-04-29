@@ -59,3 +59,11 @@ Finally run `Refresh Guide Data` under `Dashboard > Live TV > Live TV` to load
 the guide data for the next 7 days aswell as to refresh the TV channels.
 Afterwards the channels [mapped in TVHeadend](./tvheadend.md#adding-channels)
 should appear in the `Live TV` Library.
+
+### Client
+
+It is possible to use different clients.
+The following list contains a selection of clients.
+
+- [Feishin](https://github.com/jeffvli/feishin) will be a free and open-source client for MacOS,
+  [Linux](/wiki/linux.md) that also features a web ui.
