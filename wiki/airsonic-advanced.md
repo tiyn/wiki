@@ -36,7 +36,8 @@ Log in with the clients now works correctly.
 
 It is possible to use many different clients because the server is compatible
 with all the Subsonic clients.
-These can be found in the [Subsonic entry](./subsonic.md#clients).
+These can be found in the [Subsonic entry](./subsonic.md#clients) and the [Airsonic
+entry](/wiki/airsonic.md#clients).
 
 ## Scrobbling with Last.fm
 
