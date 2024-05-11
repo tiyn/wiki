@@ -19,6 +19,8 @@ As a command line utility [yt-dl](https://github.com/ytdl-org/youtube-dl) can be
 used.
 Since yt-dl is stagnant its fork [yt-dlp](https://github.com/yt-dlp/yt-dlp) is
 recommended.
+Another alternative is [streamrip](https://github.com/nathom/streamrip).
+It should only be used  for YouTube and other freely available sources like SoundCloud.
 [MeTube](/wiki/metube.md) and [TubeArchivist](/wiki/docker/bbilly1_-_tubearchivist.md) are
 self-hostable web user interfaces for [yt-dlp](https://github.com/yt-dlp/yt-dlp).
 
