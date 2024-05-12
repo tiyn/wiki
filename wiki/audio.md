@@ -13,6 +13,12 @@ For Linux specific music software navigate to the corresponding
 For voice based communication navigate to the [Communication article](/wiki/communication.md) and
 the corresponding [VoIP section](/wiki/communication.md#voip).
 
+## Headphone Audio Profiles
+
+Headphones have different frequency responses.
+[AutoEq](https://github.com/jaakkopasanen/AutoEq/tree/master) can be used to normalize these to a
+harman curve.
+
 ## Media Software
 
 If you want to keep your system clean of much data, you can use this kind of
