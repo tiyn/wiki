@@ -37,6 +37,22 @@ nativefier --name Mastodon \
 --single-instance https://mastodon.technology
 ```
 
+By default URLs that are not belonging to the one that is given by `--single-instance` will be
+blocked.
+There is an unchangeable whitelist.
+Single URLs that are not on the whitelist can be excluded and so not be blocked by using the
+`--internal-urls` flag.
+A complete example using this flag can look like the following.
+
+```sh
+nativefier --name Mastodon \
+--platform linux --arch x64 \
+--width 1024 --height 768 \
+--tray --disable-dev-tools \
+--internal-urls 'outlook.office365.com/*' \
+--single-instance https://mastodon.technology
+```
+
 ### Navigating Back and Forward
 
 In a normal [browser](/wiki/web_browser.md) there are buttons to navigate back and forth through
