@@ -18,6 +18,8 @@ the corresponding [VoIP section](/wiki/communication.md#voip).
 Headphones have different frequency responses.
 [AutoEq](https://github.com/jaakkopasanen/AutoEq/tree/master) can be used to normalize these to a
 harman curve.
+AutoEq also has a [website](https://autoeq.app/) on which headsets can be searched and equalizer
+presets can be exported more easily.
 
 ## Media Software
 
