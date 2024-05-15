@@ -49,6 +49,8 @@ cd Python-3.9.1
 
 Afterwards if OpenSSL should be enabled for Python uncomment all the corresponding lines in
 `Modules/Setup`.
+This part of the guide is taken from a
+[StackOverflow post by Ironman](https://stackoverflow.com/questions/58309485/modulenotfounderror-no-module-named-ssl).
 
 Then proceed with the installation.
 
