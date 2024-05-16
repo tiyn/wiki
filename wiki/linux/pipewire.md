@@ -25,3 +25,36 @@ Both are graph-based interface also called patchbays.
 For further sound processing the easiest way to do so is using
 [easyeffects](/wiki/linux/easyeffects.md) which features a wide range of effects
 to apply to sound streams including noise reduction.
+
+### Get ID of an Input or Output
+
+Using the following command a list of all connected input and output aswell as streams and devices
+can be displayed.
+
+```sh
+wpctl status
+```
+
+Under the `Sinks` the outputs are displayed and under `Sources` the inputs.
+Defaults are noted with an asterix.
+The identificator is displayed prior to the name of the input, output, device or stream.
+
+If a device name is known (in this case `"Starship/Matisse HD Audio Controller Analog Stereo"`).
+The following command will return its identificator.
+
+```sh
+NAME=$(wpctl status | grep "Starship/Matisse HD Audio Controller Analog Stereo")
+ID=$( echo $NAME | cut -d '.' -f 1 | cut -c 11-)
+
+echo ID: $ID
+```
+
+### Loopback Input
+
+An input can be output to the default output by using the following command.
+In that command `<id>` is the identificator of the input that should be looped back.
+It needs to be set accordingly.
+
+```sh
+pw-loopback -C <id>
+```
