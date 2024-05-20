@@ -10,18 +10,29 @@ For clients that use the [PulseAudio](/wiki/linux/pulseaudio.md) API
 packages on other distros) can be installed.
 It will automatically remove unneeded and conflicting PulseAudio packages.
 Additionally `pipewire-alsa` and `pipewire-jack` for JACK and Alsa clients are
-available.
+available and recommended to install for full compatibility with most software.
 Make sure to restart to be sure everything is running correctly.
 
 ## Usage
 
 For simple sound processing in the form of volume adjustment as well as setting
 the default input and output devices
+
+### Volume Control
+
 [`pavucontrol`](https://freedesktop.org/software/pulseaudio/pavucontrol/) can be
 used as a simple mixer.
+
+### Routing
+
+This section focusses on graph-based interfaces also called patchbays.
 For more advanced routing [qpwgraph](https://github.com/rncbc/qpwgraph) can be used, but the
-GTK-based [Helvum](https://gitlab.freedesktop.org/pipewire/helvum) is recommended.
-Both are graph-based interface also called patchbays.
+GTK-based [Helvum](https://gitlab.freedesktop.org/pipewire/helvum) is also available.
+The third available option is [Patchance](https://github.com/Houston4444/Patchance) - this is the
+currently recommended software of this wiki.
+
+### Equalizer, Noise Reduction, etc
+
 For further sound processing the easiest way to do so is using
 [easyeffects](/wiki/linux/easyeffects.md) which features a wide range of effects
 to apply to sound streams including noise reduction.
