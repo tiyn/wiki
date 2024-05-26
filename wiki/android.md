@@ -10,6 +10,10 @@ The most used app store of android is the [Google Play Store](https://play.googl
 A free and open-source alternative to it is [F-Droid](/wiki/android/f-droid.md) which only features
 open-source software.
 
+A list of open-source software options is also available on Alberto Mosconis
+[Github](/wiki/git.md#server-with-web-interface) repository
+[foss apps](https://github.com/albertomosconi/foss-apps/tree/main).
+
 ## Multi-Factor Authentication
 
 [Multi-factor authentication](/wiki/multi-factor_authentication.md) can easily be set up on android
@@ -21,3 +25,48 @@ This app is available at [F-Droid](/wiki/android/f-droid.md) as
 [FreeOTP+](https://f-droid.org/de/packages/org.liberty.android.freeotpplus/) and on
 [Google Play Store](#app-store) by the
 [same name](https://f-droid.org/de/packages/org.liberty.android.freeotpplus/).
+
+## Custom ROMs
+
+Besites the stock-firmware of vendors there are also custom ROMs.
+These are alternative firmware variants made by third party providers.
+A well known custom ROM is [LineageOS](/wiki/android/lineageos.md).
+
+It is possible that some custom ROMs require the user to
+[unlock the bootloader](#unlocking-the-bootloader) before the installation can happen.
+
+## Unlocking the Bootloader
+
+Unlocking the bootloader can be a bit challenging for some vendors especially.
+
+For [smartphones and tablets](/wiki/smart_devices.md#smartphones-and-tablet-computers) made by
+Xiaomi there are some steps that have to be done to unlock the bootloader.
+This section is based on an
+[article about unlocking the bootloader](https://new.c.mi.com/global/post/101245) on Xiaomi
+Community aswell as another
+[article on specifics for HyperOS](https://xiaomiui.net/how-unlock-bootloader-xiaomi-hyperos-53493/).
+First the user has to apply to unlock the bootloader.
+For this open the Xiaomi Community app, navigate to the "Settings" and select "Change region".
+Select the region "Global".
+A new option called "Unlock bootloader" now appears in the settings.
+Select "Unlock bootloader" and "Apply for unlocking".
+It may be possible that a specified time has to be waited for the application process to happen.
+Next go to the phones settings.
+Navigate to "About Phone" and "MIUI Version", repeatedly tap on "MIUI version" to get into
+developer mode if the phone is not already in developer mode.
+Navigate to "Additional settings" and "Developer options".
+Enable "OEM unlocking" and "USB debugging".
+Now add your Xiaomi account to your device.
+To do so navigate to "Mi Unlock status" and agree then "Add account and device".
+Shutdown your phone and boot into "Fastboot" by holding down the volume down button and the power
+button.
+Then connect it to a computer via USB.
+The following steps have to take place on a [Windows](/wiki/windows.md) system or an emulation or
+virtualization of it.
+Download and start "Mi Unlock" - it is available on the
+[article mentioned prior in this section](https://new.c.mi.com/global/post/101245).
+Follow the steps of the software, select "Unlock" and confirm it multiple times.
+It is possible that now 72 hours have to pass for the unlocking process to continue.
+If that is the case wait the specified amount of time and repeat the last step.
+Make sure to not apply for unlocking again and do not add your account to your phone again as this
+will reset the timer.

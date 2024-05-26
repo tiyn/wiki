@@ -13,13 +13,18 @@ For Linux specific music software navigate to the corresponding
 For voice based communication navigate to the [Communication article](/wiki/communication.md) and
 the corresponding [VoIP section](/wiki/communication.md#voip).
 
-## Headphone Audio Profiles
+## Headphone/In-Ear Monitor Audio Profiles and Reviews
 
 Headphones have different frequency responses.
 [AutoEq](https://github.com/jaakkopasanen/AutoEq/tree/master) can be used to normalize these to a
 harman curve.
 AutoEq also has a [website](https://autoeq.app/) on which headsets can be searched and equalizer
 presets can be exported more easily.
+
+An extensive list of in-ear monitor reviews was made by crinacle.
+It is called [crinacle's ranking list IEMs & Earphones](https://crinacle.com/rankings/iems/).
+A similar list for headphones was also made by crinacle.
+It is called [crinacle's ranking list Headphones](https://crinacle.com/rankings/headphones/).
 
 ## Media Software
 
