@@ -14,6 +14,16 @@ A list of open-source software options is also available on Alberto Mosconis
 [Github](/wiki/git.md#server-with-web-interface) repository
 [foss apps](https://github.com/albertomosconi/foss-apps/tree/main).
 
+Additionally open-source apps can be installed from source using
+[Obtainium](https://github.com/ImranR98/Obtainium).
+
+### Useful Applications
+
+This section addresses various useful applications.
+
+- [disky](https://github.com/newhinton/disky) is a filesystem analyzer that shows usage of the
+  storage.
+
 ## Multi-Factor Authentication
 
 [Multi-factor authentication](/wiki/multi-factor_authentication.md) can easily be set up on android
