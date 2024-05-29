@@ -21,8 +21,11 @@ Additionally open-source apps can be installed from source using
 
 This section addresses various useful applications.
 
+- [Arcticons](https://github.com/Donnnno/Arcticons) a mono-color line-based icon pack
 - [disky](https://github.com/newhinton/disky) is a filesystem analyzer that shows usage of the
   storage.
+- [Markor](https://github.com/gsantner/markor) is a text editor supporting
+  [Markdown](/wiki/markup_language.md)
 
 ## Multi-Factor Authentication
 
