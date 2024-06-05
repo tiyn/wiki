@@ -28,6 +28,6 @@ aswell as the left and right side to avoid having to resolder any connection.
 The following is a list of resources that can be used to mod headphones.
 
 - Balanced conversion (includes detachable cable) on a Beyerdynamic Pro X DT900:
-  A short example and explanation video can be found in
-  [a video by Custom Cans](https://www.youtube.com/watch?v=JhieszLgGbM) on
+  A detailed example and explanation video can be found in
+  [a video by Custom Cans](https://www.youtube.com/watch?v=HLfxeyZOQW0) on
   [YouTube](/wiki/youtube.md).
