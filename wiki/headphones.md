@@ -20,7 +20,14 @@ It is called [crinacle's ranking list Headphones](https://crinacle.com/rankings/
 ## Modifications
 
 Headphones can be modified.
-The most done modifications include detachable cables or a balanced conversion.
-An example for a detachable cable mod aswell as a balanced conversion can be found in
-[a video by Custom Cans](https://www.youtube.com/watch?v=JhieszLgGbM) on
-[YouTube](/wiki/youtube.md).
+The most done modifications include detachable cables or a
+[balanced](/wiki/audio.md#balanced-unbalanced-audio) conversion.
+For every modification that changes the wires on the driver it is important to check the polarity,
+aswell as the left and right side to avoid having to resolder any connection.
+
+The following is a list of resources that can be used to mod headphones.
+
+- Balanced conversion (includes detachable cable) on a Beyerdynamic Pro X DT900:
+  A short example and explanation video can be found in
+  [a video by Custom Cans](https://www.youtube.com/watch?v=JhieszLgGbM) on
+  [YouTube](/wiki/youtube.md).
