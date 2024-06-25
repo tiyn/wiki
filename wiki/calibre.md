@@ -31,6 +31,10 @@ thomas_schickinger;_angelika_steger/diskrete_strukturen_2/thomas_schickinger_&_a
 This assumes the sort author names and sort titles are set as described in
 [the following section](#changing-the-default-author-and-title-sort).
 
+In the same view only the boxes `Save cover separately`, `Save metadata in a separate OPF file` and
+`Save data file as well` should be unchecked.
+All others are used to ensure a lowercase directory and file name without special characters.
+
 ## Changing the Default Author and Title Sort
 
 Under `Preferences` and `Tweaks` the corresponding settings to change the title
