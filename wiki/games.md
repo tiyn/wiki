@@ -33,7 +33,7 @@ Another online game is [Massive Decks](/wiki/massivedecks.md) which is the onlin
 popular tabletop game.
 
 For Windows there is the popular old-school pinball game 3d Pinball Space Cadet.
-This game has been [reverse engineered and ported](https://github.com/k4zmu2a/SpaceCadetPinball) to 
+This game has been [reverse engineered and ported](https://github.com/k4zmu2a/SpaceCadetPinball) to
 various platforms and operating systems.
 
 ## Syncing Game Saves Across Systems
