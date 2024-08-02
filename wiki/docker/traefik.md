@@ -231,9 +231,14 @@ In both of those cases the line of the first code block in this section that spe
 and subdomain needs to include both the www and the non-www domains.
 This should look something like the following
 
+Make sure to add the domain that will be redirected to the labels aswell.
+For redirection to www domains this will look something like the following.
+
 ```yml
-  - "traefik.http.routers.<service name>-secure.rule=Host(`www.<subdomain>.<domain>`, `<subdomain>.<domain>`)"
+  - "traefik.http.routers.<service name>.rule=Host(`<subdomain>.<domain>`)"
 ```
+
+In the opposite case the domain will be `www.<subdomain>.<domain>`.
 
 ## Setup Mailserver
 
