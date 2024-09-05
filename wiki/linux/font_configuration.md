@@ -53,6 +53,15 @@ Follow the section on [adding new fonts](#adding-new-font-to-configuration) and
 This section addresses important commands and packages for the configuration of
 fonts.
 
+### Show Characters Of A Font
+
+Using [FontForge](https://fontforge.org/en-US/) all characters of a given `.ttf` file can be shown.
+The following shows the structure of a command to call FontForge with a file.
+
+```ssh
+fontforge arial.ttf
+```
+
 ### Add TTF Font
 
 A font can be added to the local users fonts using a `.ttf` file.
