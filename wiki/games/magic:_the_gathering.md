@@ -61,6 +61,8 @@ Many of them also feature public decks.
 - [Moxfield](https://www.moxfield.com/) is a popular deck building site.
   It also displays public decks.
   If a deck is entered into Moxfield tokens that are needed to play the deck can be displayed.
+- [MTG CSV Helper](https://stepkie.github.io/MtgCsvHelper/) is a CSV format conversion tool to
+  convert between the different formats used by collection managers.
 
 The second group is about giving resources for building decks.
 This can be done by providing public decks or showing which decks or cards are popular in which
