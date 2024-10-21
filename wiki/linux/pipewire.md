@@ -69,3 +69,8 @@ It needs to be set accordingly.
 ```sh
 pw-loopback -C <id>
 ```
+
+### Virtual devices
+
+A guide on how to create and configure virtual device permanently can be found on the
+[Pipewire Gitlab site](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Virtual-Devices#behringer-umc404hd-speakersheadphones-virtual-sinks).
