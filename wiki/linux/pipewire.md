@@ -70,7 +70,49 @@ It needs to be set accordingly.
 pw-loopback -C <id>
 ```
 
-### Virtual devices
+### Virtual Devices
 
-A guide on how to create and configure virtual device permanently can be found on the
+The source for this section of the entry is derived by
 [Pipewire Gitlab site](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Virtual-Devices#behringer-umc404hd-speakersheadphones-virtual-sinks).
+
+#### Creating a Null Device
+
+A dummy device, or null sink, can be created permanently by creating a `.conf` file inside the
+`~/.config/pipewire/pipewire.conf.d` directory with the following lines.
+
+```txt
+context.objects = [
+    {   factory = adapter
+        args = {
+            factory.name     = support.null-audio-sink
+            node.name        = "null-sink-0"
+            node.description = "Null Sink 0"
+            media.class      = Audio/Sink
+            audio.position   = [ FL FR ]
+            monitor.channel-volumes = true
+            monitor.passthrough = true
+            adapter.auto-port-config = {
+                mode = dsp
+                monitor = true
+                position = preserve
+            }
+        }
+    }
+]
+```
+
+Multiple devices can be created by creating different files in the directory.
+
+If the null sink is only needed temporarily (until the next restart) the following line can be used
+to create it.
+Use different `sink_name`s to create multiple dummy devices.
+
+```sh
+pactl load-module module-null-sink media.class=Audio/Sink sink_name=null-sink-0 channel_map=stereo
+```
+
+This will return an id that can be used to remove the sink with the following command.
+
+```sh 
+pactl unload-module <id>
+```
