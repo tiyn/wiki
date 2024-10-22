@@ -9,7 +9,7 @@ This article bundles all of them.
 This section lists some of the most common Voice over IP (VoIP) platforms.
 
 - [Matrix](/wiki/matrix.md) is a decentralized and open-source social platform.
-- [Discord](https://discord.com/) is a widely used, proprietary social platform.
+- [Discord](/wiki/discord.md) is a widely used, proprietary social platform.
 
 ### Soundboards
 
