@@ -11,6 +11,14 @@ your needs.
 In general you need to consider if you want the video directly on your pc or
 access a server for it.
 
+## Video Editing
+
+There are various programs that can be used to edit videos.
+The following is a list of programs that are deemed useful by this guide.
+
+- [Kdenlive](https://kdenlive.org/) is a is a free and open-source video editing software that is
+  available on [Windows](/wiki/windows.md), Mac and [Linux-based Systems](/wiki/linux.md).
+
 ## Players
 
 If you want to keep your system clean of much data, you can use this kind of setup.
@@ -34,7 +42,7 @@ This way you don't have to search for your discs all the time.
   On Linux it is possible that the drive is not detected in MakeMKV.
   To fix this issue run the following lines and reboot afterwards.
 
-  ```
+  ```sh
   su
   echo sg > /etc/modules-load.d/sg.conf
   ```
@@ -124,7 +132,7 @@ expressions for extras from the [extras section](#naming-extras).
 The `movies` folder is a folder containing all movies.
 An example looks like the following:
 
-```
+```txt
 movies
 └── best_movie_ever_(2019)
     ├── best_movie_ever_(2019)-brd_uu.mp4
@@ -159,7 +167,7 @@ Specify the extras inside the `season_0` folder with the expressions from
 The `shows` folder is a folder containing all tv shows.
 An example looks like the following.
 
-```
+```txt
 shows
 └── series_(2010)
     ├── season_0
