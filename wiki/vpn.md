@@ -4,6 +4,8 @@ A VPN is a virtual private network.
 It uses a secure connection between a computer and a network or two networks.
 It can be used to display another IP address but does not make tracking or
 fingerprinting of the device impossible.
+For the latter a plugin like [Chameleon for Firefox](/wiki/firefox.md#privacy-and-security-add-ons)
+can be used.
 VPNs feature a server and a client side.
 
 ## VPN implementations
