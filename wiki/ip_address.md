@@ -14,3 +14,9 @@ Geo-blocking can be evaded by using a [VPN service](/wiki/vpn.md).
 Sometimes the IP addresses that are used by VPNs are blocked by websites.
 To avoid this a spoofing tool like [Chameleon](/wiki/chameleon.md) for [Firefox](/wiki/firefox.md)
 can be used.
+[cybernews](https://cybernews.com)
+describes this in an
+[article](https://cybernews.com/de/online-schauen/bundesliga-auf-onefootball-brasilien-streamst/)
+using the German Bundesliga in Brazil as an example.
+Please note that using the VPN for this may violate terms and services accepted by subscribing to
+a VPN service.
