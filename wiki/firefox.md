@@ -24,11 +24,8 @@ The add-ons are grouped thematically
 
 The following add-ons increase the security or privacy.
 
-- [Chameleon](https://addons.mozilla.org/en-GB/firefox/addon/chameleon-ext/)
+- [Chameleon](/wiki/chameleon.md)
   spoofs your browser profile including user agent and screen size.
-  This add-on can also be used to avoid region locking by selecting IP ranges in the `Headers` tab.
-  An example for this is the range `124.81.64.0` to `124.81.127.255` that is assigned to brazilian
-  IP addresses.
 - [ClearURLs](https://addons.mozilla.org/en-GB/firefox/addon/clearurls) removes
   tracking elements from URLs.
 - [Consent-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic)

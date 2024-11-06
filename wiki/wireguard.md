@@ -58,7 +58,7 @@ The following guide is based on a comments by the Reddit users
 To set up the usage of a local DNS the WireGuard configuration file needs to be
 changed.
 The following lines have to be appended under the `[Interface]` section and the
-DNS IP address (in this case `192.168.178.1`) has to be changed as needed.
+DNS [IP address](/wiki/ip_address.md) (in this case `192.168.178.1`) has to be changed as needed.
 `wg0` is the name of the configuration file (see [the usage section](#wg-usage))
 for reference.
 
