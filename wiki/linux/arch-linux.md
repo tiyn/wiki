@@ -85,7 +85,13 @@ Now the command line of the system can be accessed for troubleshooting.
 After troubleshooting `exit` the system and [unmount](/wiki/linux/disk-management.md#mounting) all previously
 mounted file systems and try to boot back into the system.
 
-Probably the most common source for not bootable systems is
+If the system broke during an update then the easiest way to fix it, is by running the same update
+command again.
+The used command can be found in `/var/log/pacman.log`.
+Make sure to run exactly this command.
+Afterwards try to reboot into the system.
+
+Another common source for not bootable systems is
 [the initial ramdisk](#problems-with-the-initial-ramdisk).
 
 ### Problems with the Initial Ramdisk
