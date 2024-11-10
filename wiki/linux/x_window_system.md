@@ -162,7 +162,9 @@ If it is installed check if it starts up correctly by using the command
 `systemctl --user status xdg-desktop-portal` as described in the
 [SystemD entry](/wiki/linux/systemd.md#startstopenabledisable-a-service-and-retrieve-its-logs).
 
-A possible error is `cannot open display`.
+A possible error is `cannot open display` as it was described and fixed by rockzombie2 and V1del in
+an [Arch Linux](/wiki/linux/arch-linux.md)
+[forum post](https://bbs.archlinux.org/viewtopic.php?id=294808).
 To fix this you can run the following commands to temporarily make the file picker work.
 
 ```sh 
