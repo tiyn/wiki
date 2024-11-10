@@ -151,3 +151,34 @@ This usually means that either the [Nvidia](/wiki/nvidia.md) kernel module is no
 This can be fixed by [installing Nvidia](/wiki/linux/nvidia.md#setup).
 If this is not the problem then the [initial ramdisk](/wiki/linux/mkinitcpio.md) should be
 [regenerated](/wiki/linux/mkinitcpio.md#manually-generate-initial-ramdisk).
+
+### File Picker Doesn't Work
+
+If the file picker doesn't work in applications like [Discord](/wiki/discord.md) for example first
+check if the desktop portal is installed.
+For that search for the package `xdg-desktop-portal` or a similar named one using your
+[package manager](/wiki/linux/package_manager.md).
+If it is installed check if it starts up correctly by using the command
+`systemctl --user status xdg-desktop-portal` as described in the
+[SystemD entry](/wiki/linux/systemd.md#startstopenabledisable-a-service-and-retrieve-its-logs).
+
+A possible error is `cannot open display`.
+To fix this you can run the following commands to temporarily make the file picker work.
+
+```sh 
+systemctl --user import-environment DISPLAY XAUTHORITY
+systemctl --user restart xdg-desktop-portal
+```
+
+If that works make sure the Xorg configs are sourced for users aswell.
+It is possible that the following code block is missing in the local `.xinitrc`.
+This would create similar errors to the ones experienced.
+
+```sh
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+    for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
+fi
+```

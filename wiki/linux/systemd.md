@@ -43,7 +43,7 @@ Alternatively it can be enabled to start at every boot by running:
 sudo systemctl enable unturned
 ```
 
-### Start/Stop/Enable/Disable a service
+### Start/Stop/Enable/Disable a service and Retrieve its Logs
 
 Services can be started by running `systemctl start <service-name>`.
 They respectively can be stopped by replacing the `start`
@@ -51,6 +51,8 @@ keyword for `stop`.
 To start the service after boot it has to be enabled.
 This works accordingly with the keyword `enable`.
 The `disable` keyword stops the service from starting automatically.
+
+Logs of the last start of the service can be found by running `systemctl status <service-name>`. 
 
 ### Retrieving the SystemD Logs
 
