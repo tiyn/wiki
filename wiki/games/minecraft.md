@@ -18,9 +18,8 @@ There are different Minecraft Clients available:
 - The standard (Java) Minecraft Client can be downloaded at the [official website](https://minecraft.net/en-us/get-minecraft)
 - [MultiMC5](./multimc5.md) is a custom Minecraft launcher that allows multiple
   installations at once.
-- [Prism Launcher](./multimc5.md) is another custom Minecraft launcher that is very similar to
-  MultiMC5.
-  Settings and usage should be similar for the most part.
+  This entry also addresses forks of MultiMC5 like Prism Launcher that are similar in usage and
+  settings for the most part.
 
 ### Usage
 
