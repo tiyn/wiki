@@ -94,13 +94,22 @@ The following add-ons add various functions.
 The following add-ons provide translation options.
 
 - [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations)
-  is a add-on made by Mozilla itself that gives an option for marked text to display its
+  is an add-on made by Mozilla itself that gives an option for marked text to display its
   translations quickly from the extension menu but can also translate whole sites.
-- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is a add-on
+- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is an add-on
   supporting both DeepL and Google Translate to translate marked text in various different ways that
   can be automatically displayed.
 - [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
   for marked text to display its translation in a pop-up window using DeepL.
+
+#### Shopping Add-ons
+
+The following add-ons add information to online shops.
+
+- [Fakespot](https://www.fakespot.com/) is an add-on made by Mozilla which displays additional
+  information on online shops, ebay and amazon. 
+  It can give shops, vendors and products a trust score which can be used as an alternative to
+  reviews, which might be fake.
 
 ### Add a new search engine
 
