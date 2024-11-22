@@ -30,3 +30,19 @@ OptiFine available.
   to your Minecraft version
 - Navigate to `Loader Mods` and press `Add`, then select the downloaded
   OptiFine file
+
+OptiFine works best on older [Minecraft](/wiki/games/minecraft.md) versions.
+Some people recommend [Sodium](https://modrinth.com/mod/sodium/versions) or other optimization mods
+to use on newer versions.
+
+## Troubleshooting
+
+This section addresses various errors that can happen when using MultiMC5 and its forks.
+
+### Narrator not Available
+
+Sometimes when running MultiMC5 on [Linux](/wiki/linux.md)-based operating systems an error occurs
+in the logs saying `Error while loading the narrator`.
+To fix this a package is needed called `flite` on most Linux-distributions.
+This solution was provided on Github by
+[Mephodio](https://github.com/PrismLauncher/PrismLauncher/issues/2683).
