@@ -11,7 +11,7 @@ Change the settings according to your needs and run `./start.sh` to start
 the server.
 With `stop.sh` you can stop it.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -30,7 +30,7 @@ Set the following variables with the -e tag.
 | `SERVER_PASSWORD` | set a password                              |         |
 | `ADMIN_PASSWORD`  | set an admin password                       |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -39,7 +39,7 @@ Set the following volumes with the -v tag.
 | `mordhau`                 | `/serverdata/mordhau`  | storage for mordhau server relevant data |
 | `mordhau_steamcmd`        | `/serverdata/steamcmd` | storage for steam related data           |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 | Container Port | Recommended outside port | Protocol | Description |
@@ -48,7 +48,7 @@ Set the following ports with the -p tag.
 | `15000` | `15000` | UDP | mordhau internal |
 | `27015` | `27015` | UDP | mordhau internal |
 
-## start.sh
+### start.sh
 
 ```sh
 #!/bin/sh
@@ -75,7 +75,7 @@ docker run --name=mordhau \
  tetricz/mordhau-server
 ```
 
-## stop.sh
+### stop.sh
 
 ```sh
 #/bin/sh

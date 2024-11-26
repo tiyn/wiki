@@ -15,7 +15,7 @@ Then build the image inside the git folder with `docker build -t synctube .`.
 Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -23,7 +23,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | ------------------- | ------------------- |
 | `synctube`                | `/usr/src/app/user` | Configuration files |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -31,7 +31,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `4200`         | `4200`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

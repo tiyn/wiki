@@ -10,7 +10,7 @@ The container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -24,7 +24,7 @@ Set the following variables with the -e tag.
 | `ICON`        | Link the Icon of the Server                                    |                                              |
 | `MOTD`        | Set the Message of the day                                     | "A Paper Minecraft Server powered by Docker" |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -32,7 +32,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------------------ |
 | `minecraft`               | `/data`         | location for all relevant data |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -40,7 +40,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | --------- | ------------------ |
 | `25565`        | `25565`                  | Minecraft | Port for Minecraft |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

@@ -11,7 +11,7 @@ Create the file `rebuild.sh`, `docker-compose.yml` and `nitter.conf` at the same
 place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -19,7 +19,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------------- |
 | `nitter`                  | `/data`         | storage for all of nitter |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -27,7 +27,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -36,7 +36,7 @@ docker pull awesometechnologies/synapse-admin:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```txt
 version: "3"
@@ -89,7 +89,7 @@ volumes:
 ```
 
 
-## nitter.conf
+### nitter.conf
 
 ```txt
 [Server]

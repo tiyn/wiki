@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -19,7 +19,7 @@ Set the following volumes with the -v tag.
 | `bind_cache`              | `/var/cache/bind` | cache for DNS         |
 | `bind_etc`                | `/etc/bind`       | configuration for DNS |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -28,7 +28,7 @@ Set the following ports with the -p tag.
 | `53`           | `53`                     | TCP      | DNS protocol port |
 | `53`           | `53`                     | UDP      | DNS protocol port |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -36,7 +36,7 @@ There are some special variables to set.
 | ------- | ------------------------------------------------------- |
 | `--dns` | set two of these flags for specific DNS forward servers |
 
-## Rebuild
+### rebuild.sh
 
 ```sh
 #!/bin/sh

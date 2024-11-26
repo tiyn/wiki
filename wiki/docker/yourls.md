@@ -11,7 +11,7 @@ In addition to the main container you need to connect a
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -22,7 +22,7 @@ Set the following variables with the -e tag.
 | `YOURLS_USER`    | username for yourls admin  |         |
 | `YOURLS_PASS`    | password for yourls admin  |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -30,7 +30,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | -------------------- |
 | `yourls`                  | `/var/www/html` | yourls specific html |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -38,7 +38,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------------- |
 | `80`           | `80`                     | TCP      | dns protocol port |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -46,7 +46,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3.1"

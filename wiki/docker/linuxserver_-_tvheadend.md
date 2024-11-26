@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -22,7 +22,7 @@ docker-compose file.
 | `TZ`                  | specify the timezone        | `Europe/London`         |
 | `RUN_OPTS`          | specify the timezone          | ` `                     |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -31,7 +31,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `config`                  | `/config`       | directory for config              |
 | `tvdvr`                   | `/recordings`   | directory for storage             |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -49,7 +49,7 @@ docker pull lscr.io/linuxserver/tvheadend:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2.1"

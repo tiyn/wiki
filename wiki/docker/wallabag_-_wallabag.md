@@ -12,7 +12,7 @@ and a [redis container](./redis.md) to it.
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -34,7 +34,7 @@ docker-compose file.
 | `SYMFONY__ENV__DOMAIN_NAME`       | URL to wallabag instance                 | `https://your-wallabag-url-instance.com` |
 | `SYMFONY__ENV__SERVER_NAME`       | Name for the wallabag server             | `Your wallabag instance`                 |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -42,7 +42,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | ------------------------------------- | -------------------------------- |
 | `wallabag_wallabag`       | `/var/www/wallabag/web/assets/images` | storage for wallabag config data |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -50,7 +50,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -61,7 +61,7 @@ docker pull redis:alpine
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: '3'

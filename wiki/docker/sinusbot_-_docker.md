@@ -42,7 +42,7 @@ The Teamspeak server can then be found by Sinusbot under host `ts3.docker.local`
 
 Change the other settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -52,7 +52,7 @@ docker-compose file.
 | `UID`       | User userid to run gitea       |         |
 | `GID`       | User groupid to run gitea      |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -61,7 +61,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `sinusbot_scripts`        | `/opt/sinusbot/scripts` | storage for the sinusbot scripts      |
 | `sinusbot_data`           | `/opt/sinusbot/data`    | storage for the most of sinusbot data |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -69,7 +69,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ---------------------- |
 | `8087`         | `8087`                   | TCP      | WebUI                  |
 
-## Networks
+### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
 
@@ -78,7 +78,7 @@ Set the following networks in the `networks:` section of the docker-compose file
 | `teamspeak` | connect with local teamspeak |
 
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -87,7 +87,7 @@ docker pull sinusbot/docker:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3.3"

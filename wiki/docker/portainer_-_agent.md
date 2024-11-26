@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -19,7 +19,7 @@ Set the following volumes with the -v tag.
 | `/var/run/docker.sock`    | `/var/run/docker.sock`    | connect your running docker containers |
 | `/var/lib/docker/volumes` | `/var/lib/docker/volumes` | connect running docker volumes         |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -27,7 +27,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | -------------------- |
 | `9001`         | `9001`                   | TCP      | Portainer agent port |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

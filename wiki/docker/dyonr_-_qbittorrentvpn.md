@@ -14,7 +14,7 @@ The default username of the web interface is `admin`.
 The default password is `adminadmin`.
 Both can be changed in the web interface after setup.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -25,7 +25,7 @@ Set the following variables with the -e tag.
 | `VPN_PASSWORD`      | Password for OpenVPN        | ` `     |
 | `LAN_NETWORK`       | Subnet of the local network | ` `     |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -34,7 +34,7 @@ Set the following volumes with the -v tag.
 | `qbittorrentvpn_config`   | `/config`           | Configuration files     |
 | `qbittorrentvpn_data`     | `/downloads`        | Storage for data        |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -42,7 +42,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `9091`         | `8080`                   | TCP      | WebUI       |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -52,7 +52,7 @@ There are some special variables to set.
 | `--device`  | connect devices        |
 | `--sysctl`  | configure systemctl    |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

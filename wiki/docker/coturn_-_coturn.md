@@ -20,7 +20,7 @@ To get the local IP the command `ip route get 1` can be used.
 For the public IP the command `curl api.ipify.org` can be used.
 
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -30,7 +30,7 @@ Set the following ports in the `ports:` section.
 | `5349`         | `5349`                   | TCP/UDP  | TURN/STUN   |
 | `49152-65535`  | `49152-65535`            | UDP      | TURN/STUN   |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -39,7 +39,7 @@ docker pull coturn/coturn:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2"
@@ -55,7 +55,7 @@ services:
       - "5349:5349"
 ```
 
-## data/matrix/coturn/turnserver.conf
+### data/matrix/coturn/turnserver.conf
 
 ```txt
 use-auth-secret

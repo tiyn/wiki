@@ -11,7 +11,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -22,7 +22,7 @@ Set the following variables with the -e tag.
 | `DISPLAY_WIDTH`  | Width of software   | `1280`  |
 | `DISPLAY_HEIGHT` | Height of software  | `768`   |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -31,7 +31,7 @@ Set the following volumes with the -v tag.
 | `config`                  | `/config`       | Configuration files       |
 | `media_music`             | `/storage`      | Location for audio files  |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -41,7 +41,7 @@ Set the following ports with the -p tag.
 | `5900`         | `5900`                   | TCP      | VNC                        |
 | `8000`         | `8000`                   | TCP      | Picard browser integration |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

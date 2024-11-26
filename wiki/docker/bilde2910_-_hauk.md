@@ -23,7 +23,7 @@ htpasswd -BC 10 /etc/hauk/users.htpasswd <other user name>
 
 Finally run `./rebuild.sh`.
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -31,7 +31,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | ------------------ | ------------------------------ |
 | `./config/hauk`           | `/etc/hauk`        | config and password location   |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -39,7 +39,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ---------------------- |
 | `80`           | `80`                     | TCP      | Basic service          |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -48,7 +48,7 @@ docker pull bilde2910/hauk
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2"

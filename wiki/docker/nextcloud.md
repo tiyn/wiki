@@ -23,7 +23,7 @@ mariadb:9
 Make sure to substitute all the occurences of the `:latest` tag accordingly.
 Updating has to be done manually so nothing breaks.
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -31,7 +31,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | --------------- | ---------------------------------------- |
 | `nextcloud`               | `/var/www/html` | storage for nextcloud plugins and config |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -39,7 +39,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -49,7 +49,7 @@ docker pull mariadb:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: '2'

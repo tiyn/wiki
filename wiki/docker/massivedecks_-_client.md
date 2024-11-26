@@ -16,7 +16,7 @@ place.
 Make sure to set `POSTGRES_PASSWORD`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -24,7 +24,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -33,7 +33,7 @@ docker-compose file.
 | ----------- | ----------------------- | ----------------- |
 | `NODE_ENV`  | Setting the environment | `production`      |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -44,7 +44,7 @@ docker pull ghcr.io/lattyware/massivedecks/client:latest-release
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3.3"

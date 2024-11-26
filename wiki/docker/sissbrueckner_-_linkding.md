@@ -18,7 +18,7 @@ docker exec -it linkding python manage.py createsuperuser --username=joe --email
 
 You will be asked for a password via the commandline.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -26,7 +26,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | ---------------------- | --------------------------- |
 | `linkding`                | `/etc/linkding/data`   | storage for persistent data |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -34,7 +34,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `9090`         | `9090`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

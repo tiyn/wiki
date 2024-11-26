@@ -15,7 +15,7 @@ place.
 Make sure to set `SECRET_KEY` and `POSTGRES_PASSWORD`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -23,7 +23,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8083`         | `8080`                   | TCP      | WebUI       |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -32,7 +32,7 @@ Set the following volumes with the -v tag.
 | `staticfiles`             | `/opt/recipes/staticfiles` | storage for static files |
 | `mediafiles`              | `/opt/recipes/mediafiles`  | storage for media files  |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -42,7 +42,7 @@ docker pull postgres:15-alpine
 docker-compose up -d
 ```
 
-## .env
+### .env
 
 ```sh
 # only set this to true when testing/debugging
@@ -218,7 +218,7 @@ REVERSE_PROXY_AUTH=0
 # EXPORT_FILE_CACHE_DURATION=600
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3"

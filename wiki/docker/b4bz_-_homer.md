@@ -11,7 +11,7 @@ Place the file `config.yml` in the `homer` docker volume and change it to your
 needs.
 After that rerun `./rebuild.sh` to make update your config.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -19,7 +19,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ---------------------- |
 | `homer`                   | `/www/assets`   | storage for icons, etc |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -27,7 +27,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -41,7 +41,7 @@ docker run --name homer \
     -d b4bz/homer:latest
 ```
 
-## config.yml
+### config.yml
 
 ```yml
 title: "tmp"

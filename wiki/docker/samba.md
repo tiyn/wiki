@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -23,7 +23,7 @@ Set the following volumes with the -v tag.
 | `samba_etc`               | `/etc`             | etc directory of samba server |
 | `samba_log`               | `/var/log/samba`   | storage for samba logs        |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -32,7 +32,7 @@ Set the following ports with the -p tag.
 | `139`          | `139`                    | TCP      | Samba internal |
 | `445`          | `445`                    | TCP      | Samba internal |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -42,7 +42,7 @@ There are some special variables to set.
 | `-w \<workgroup\>`                                                        | define workgroup |
 | `-s \<name;path\>(;browse;readonly;guest;users;admins;writelist;comment)` | define shares    |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

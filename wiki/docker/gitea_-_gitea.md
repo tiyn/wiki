@@ -11,7 +11,7 @@ to it.
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -26,7 +26,7 @@ docker-compose file.
 | `DB_USER`   | Username for the database      |         |
 | `DB_PASSWD` | Password for the database      |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -36,7 +36,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `/etc/timezone`           | `/etc/timezone:ro` | link timezone                  |
 | `/etc/localtime`          | `/etc/localtime`   | link localtime                 |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -45,7 +45,7 @@ Set the following ports in the `ports:` section.
 | `3000`         | `3000`                   | TCP      | WebUI                  |
 | `22`           | `222`                    | TCP      | ssh port of git server |
 
-## Networks
+### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
 
@@ -53,7 +53,7 @@ Set the following networks in the `networks:` section of the docker-compose file
 | ------- | --------------------- |
 | `gitea` | connect db with gitea |
 
-## Dependencies
+### Dependencies
 
 Set the following dependencies in the `depends_on:` section of the
 docker-compose file.
@@ -62,7 +62,7 @@ docker-compose file.
 | ---- | -------------------- |
 | `db` | Ensure db is running |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -70,7 +70,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2"

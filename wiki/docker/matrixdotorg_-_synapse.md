@@ -11,7 +11,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -24,7 +24,7 @@ docker-compose file.
 | `GID`                 | group id for synapse user | `1000`                  |
 | `TZ`                  | specify the timezone      | `Europe/London`         |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -32,7 +32,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | --------------- | --------------------------------- |
 | `synapse`                 | `/data`         | directory for storage and configs |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -40,7 +40,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ---------------------- |
 | `8008`         | `443`                    | TCP      | matrix homeserver port |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -49,7 +49,7 @@ docker pull matrixdotorg/synapse:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 services:

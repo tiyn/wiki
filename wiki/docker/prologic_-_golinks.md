@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -18,7 +18,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | -------------------------- |
 | `golinks`                 | `/search.db`    | database with all commands |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -26,7 +26,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8000`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -35,7 +35,7 @@ docker pull prologic/golinks:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3.1"

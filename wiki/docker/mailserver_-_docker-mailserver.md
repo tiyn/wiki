@@ -38,7 +38,7 @@ Finally if a reverse proxy is used check the
 
 Afterwards you're ready to go by once again running the `rebuild.sh` file.
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

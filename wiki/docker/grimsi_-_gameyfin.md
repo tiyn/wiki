@@ -11,7 +11,7 @@ gameyfin_config`.
 Make sure to run the following command on the config volume `chown -R 1000:root gameyfin_config`.
 Afterwards run `./rebuild.sh`.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -23,7 +23,7 @@ docker-compose file.
 | `GAMEYFIN_IGDB_API_CLIENT_ID`     | id of twitch internet game database     |         |
 | `GAMEYFIN_IGDB_API_CLIENT_SECRET` | secret of twitch internet game database |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -31,7 +31,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | ----------------------- | ------------------------------ |
 | `media_games`             | `/opt/gameyfin-library` | storage for games and configs  |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -40,7 +40,7 @@ Set the following ports in the `ports:` section.
 | `8080`         | `8093`                   | TCP      | WebUI                  |
 
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -48,7 +48,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3"

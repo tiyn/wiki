@@ -22,21 +22,7 @@ docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
 
 Afterwards run `./rebuild.sh`.
 
-## Usage
-
-### Create Certificates
-
-Each device that connects to the [OpenVPN](/wiki/openvpn.md) server should
-have a certificate to connect by.
-Create a certificate and retrieve it by running the following commands.
-Change all occurences of `<CLIENTNAME>` to the name of the client.
-
-```sh
-docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full <CLIENTNAME> nopass
-docker run -v openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <CLIENTNAME> > <CLIENTNAME>.ovpn
-```
-
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -44,7 +30,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------------ |
 | `ovpn`                    | `/etc/openvpn`  | storage for openvpn data |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -52,7 +38,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------ |
 | `1194`         | `1194`                   | UDP      | openvpn port |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -60,7 +46,7 @@ There are some special variables to set.
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -73,4 +59,18 @@ docker run --name openvpn \
     -p 1194:1194/udp \
     -v ovpn:/etc/openvpn \
     -d kylemanna/openvpn
+```
+
+## Usage
+
+### Create Certificates
+
+Each device that connects to the [OpenVPN](/wiki/openvpn.md) server should
+have a certificate to connect by.
+Create a certificate and retrieve it by running the following commands.
+Change all occurences of `<CLIENTNAME>` to the name of the client.
+
+```sh
+docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full <CLIENTNAME> nopass
+docker run -v openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient <CLIENTNAME> > <CLIENTNAME>.ovpn
 ```

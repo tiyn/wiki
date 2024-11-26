@@ -13,7 +13,7 @@ To see which providers are supported take a look at the
 [official documentation](https://haugene.github.io/docker-transmission-openvpn/supported-providers/).
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -26,7 +26,7 @@ Set the following variables with the -e tag.
 | `CREATE_TUN_DEVICE` | Use a tunnel device         | ` `     |
 | `WEBPROXY_ENABLES`  | Use a webproxy              | ` `     |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -36,7 +36,7 @@ Set the following volumes with the -v tag.
 | `transmission data`       | `/data`         | Storage for data        |
 | `/etc/localtime`          | `/etc/localtime:ro` | Link to the systemtime  |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -44,7 +44,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `9091`         | `9091`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

@@ -1,6 +1,6 @@
 # tombursch - kitchenowl
 
-This is a [Docker](/wiki/docker.md) container for a [kitchenowl](kitchenowl)
+This is a [Docker](/wiki/docker.md) container for a [kitchenowl](/wiki/kitchenowl.md)
 server.
 The official container and documentation was made by
 [tombursch](https://github.com/tombursch/kitchenowl).
@@ -14,7 +14,7 @@ place.
 Make sure to change `JWT_SECRET_KEY`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -22,7 +22,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `7890`         | `80`                     | TCP      | WebUI       |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -30,7 +30,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | -------------------------- | ------------------------ |
 | `kitchenowl_data`         | `/data`                    | storage for all data     |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -40,7 +40,7 @@ docker pull tombursch/kitchenowl:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3"

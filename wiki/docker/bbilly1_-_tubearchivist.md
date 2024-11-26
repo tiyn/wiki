@@ -10,7 +10,7 @@ TubeArchivist specific version of Elasticsearch and one a [redis](/wiki/docker/r
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -36,7 +36,7 @@ The following table lists the environment variables for the image `bbilly1/tubea
 | `ELASTIC_PASSWORD` | Password for Elasticsearch                  | ``      |
 | `ES_JAVA_OPTS`     | Additional Java options                     | ``      |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -53,7 +53,7 @@ The following table lists the environment variables for the image `bbilly1/tubea
 | ------------------------- | ------------------------------- | --------------------------- |
 | `es`                      | `/usr/share/elasticsearch/data` | storage for elasticsearch   |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -61,7 +61,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8881`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -69,7 +69,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: '3.3'
