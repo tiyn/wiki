@@ -13,7 +13,7 @@ Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -21,7 +21,7 @@ Set the following variables with the -e tag.
 | ---------- | ------------- | ------- |
 | `/name/`   | /description/ |         |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -29,7 +29,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | --------- | ------------- |
 | `/port/`       | `/port/`                 | /TCP/UDP/ | /description/ |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -37,17 +37,17 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------- |
 | `/volume name/`           | `/mount point/` | /description/ |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 ```
 
-## .env
+### .env
 
 ```sh
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 ```
