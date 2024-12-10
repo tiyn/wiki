@@ -7,6 +7,8 @@ It contains a processor, memory and programmable in- and output.
 
 The ESP32 is a cheap and low-energy microcontroller made by Espressif Systems.
 It features Wi-Fi and [Bluetooth](/wiki/bluetooth.md).
+Some variants of this chip also include LoRa-capability and can be used to communicate via
+[Meshtastic](/wiki/meshtastic.md).
 
 ### Flash Firmware on the ESP32 
 
