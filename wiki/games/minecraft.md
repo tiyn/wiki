@@ -50,3 +50,10 @@ scoreboard.
 /scoreboard objectives add Deaths deathCount
 /scoreboard objectives setdisplay list Deaths
 ```
+
+#### Updating a Server World to a New Version
+
+An existing Minecraft world of a server can be updated simply by updating the server itself.
+Chunks that have been loaded will not be affected by the update, but blocks that have not been
+loaded will be.
+For safety reasons it is advised to back up the instance before updating the version number.
