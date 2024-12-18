@@ -27,3 +27,16 @@ For other microcontroller of the ESP32-xx family the process should be similar.
   - Click `Load Bin`
   - After the upload of the data a completion message should appear
 - The ESP32S3 is completely flashed
+
+### Programming Mode  
+
+When connecting an ESP32 to the computer it needs to be in programming mode.
+If it is not in programming mode it will show up as port but will encounter `Write Timeout` Errors
+when trying to flash programs or firmware onto it.
+To put the ESP32 in the programming mode press and hold the Boot-Button (usually labeled `B`).
+Then press and release the Reset-Button (usually labeled `R`).
+Afterwards release the Boot-Button.
+The board now should be in programming mode and it should be possible to upload and flash programs
+or firmware onto it.
+This section is based on a Reddit
+[comment by cmatkin](https://www.reddit.com/r/esp32/comments/1g8gerg/getting_a_write_timeout_error_on_my_esp32s3/).
