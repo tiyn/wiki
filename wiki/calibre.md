@@ -59,3 +59,20 @@ This entry is based on two posts on mobileread - one regarding the
 [sort author name](https://www.mobileread.com/forums/showthread.php?t=314663)
 and the other regarding the
 [sort title](https://www.mobileread.com/forums/showthread.php?t=249870).
+
+## Transfer Books to a Device
+
+To transfer books to a device connect a e-reader to the computer.
+After a while calibre should recognize the device which will be apparent by the appearance of
+additional buttons on the top menu like the `Send to device`- and the `Device`-Button.
+First make sure only the formats you want will be transfered.
+This can be done by selecting `Device`, `File formats` and checking the formats as needed.
+Afterwards select the books and press `Send to device` to start the process of transfering the
+devices.
+Alternatively only specific formats of the books can be send to the device by selecting
+`Send specific format to` and `Main memory` under the `Send to device` menu.
+If there are books that contain series metadata make sure to disconnect the e-reader once and
+reconnect it.
+Afterwards select `Update cached metadata on device` under `Device` to update the metadata
+including the series.
+Finally disconnect the device.
