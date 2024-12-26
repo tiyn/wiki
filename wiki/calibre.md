@@ -76,3 +76,12 @@ reconnect it.
 Afterwards select `Update cached metadata on device` under `Device` to update the metadata
 including the series.
 Finally disconnect the device.
+
+## KEPUB Format
+
+The `.kepub` format is a format that is similar to a normal epub but has some performance
+improvements for Kobo devices.
+It is recommended to convert `.mobi` and `.epub` files to a `.kepub` file before
+[transfering it to a Kobo device](#transfer-books-to-a-device).
+For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin).
+Afterwards books can be converted the normal way, but now the output format `.kepub` is available.
