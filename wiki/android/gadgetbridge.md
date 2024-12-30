@@ -69,3 +69,6 @@ Watchface files for Xiaomi/Amazfit devices can be downloaded on
 [amazfitwatchfaces.com](https://amazfitwatchfaces.com/).
 The same catalog is also available as an
 [Android app on the Google Play Store](https://play.google.com/store/apps/details?id=com.amazfitwatchfaces.st).
+
+This section is based on a 
+[Reddit post by myhairisawesome](https://www.reddit.com/r/Huawei/comments/1dexenl/watch_fit_3_is_there_a_way_to_create_custom_watch/).
