@@ -106,6 +106,18 @@ The corresponding client software is handled in the server softwares wiki entry.
   It is self-hostable and can be dockerized.
   It has a web-interface and does not feature client software.
 
+#### Obtaining Audio Files from Different Services
+
+[YouTube](/wiki/youtube.md) features a wide variety of uploaded music and audiobooks.
+Using programs like [yt-dl](/wiki/youtube.md#downloading-youtube-videos) they can be downloaded.
+
+[Audible](https://www.audible.de/) is a popular service that makes sells audibooks.
+After purchasing an audiobook it can be downloaded directly from Audible after navigating to the
+`Library` tab and selecting `Download`.
+Another option is to use [OpenAudible](/wiki/openaudible.md).
+This program features various functions to manage Audible audiobooks that include download,
+converting and splitting.
+
 ## Digitalizing and Analyzing Physical Mediums
 
 This section focusses on physical audio mediums like CDs, their digitalization to a digital audio

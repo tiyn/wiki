@@ -15,6 +15,32 @@ yay is also a wrapper for pacman so yay can be used instead of pacman to
 install and update both AUR and main repository programs.
 It features the same syntax.
 
+### Usage
+
+This section addresses various usages of the arch linux package managers.
+
+#### Manual Installation of a `PKGBUILD` File
+
+A `PKGBUILD` file is a [shell](/wiki/linux/shell.md) script that contains the installation 
+information that is required by the Arch Linux.
+Using the `makepkg` command it can be installed like the following command shows.
+
+```sh
+makepkg -sirc
+```
+
+Afterwards it is installed on the system and can be further managed (especially uninstalled) by the
+Pacman package manager.
+
+#### Installing an AUR Program with a Specific Version
+
+The installation of a specific version of an AUR program can be easily achieved.
+For this navigate to the AUR page of the program to install.
+On the right-hand side click on `View Changes` and select the version you want to install in the
+commit list.
+Next to `download` a `.tar.gz` file can be downloaded which includes a `PKGBUILD` file.
+Afterwards it needs to be [uncompressed](/wiki/linux/tar.md#uncompressing-a-tar-archive).
+
 ### Troubleshooting
 
 This section addresses various errors that can happen when using the package managers yay and

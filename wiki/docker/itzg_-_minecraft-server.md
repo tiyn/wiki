@@ -60,3 +60,21 @@ docker run --name minecraft \
     -e MOTD="Message of the day" \
     -d itzg/minecraft-server
 ```
+
+## Usage
+
+This section addresses the usage of the minecraft-server container.
+
+### Installation of Mods
+
+Mods can be installed as described in the
+[corresponding article of the official documentation](https://github.com/itzg/docker-minecraft-server/blob/master/docs/mods-and-plugins/index.md).
+Especially the `MODS` variable is noted.
+the variable can be set to the URL of a jar file, a container path to a jar file or a container
+path to a directory containing jar files.
+The following line shows an example that could be added to the [`rebuild.sh`](#rebuildsh) to 
+install some mods.
+
+```sh 
+-e MODS=https://www.example.com/mods/mod1.jar,/plugins/common,/plugins/special/mod2.jar
+```
