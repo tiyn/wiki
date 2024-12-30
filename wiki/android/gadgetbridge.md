@@ -42,15 +42,24 @@ Afterwards the device will be paired and connected.
 ### Add Weather Function
 
 For correct displaying of weather data an additional app is needed.
-An example for this is the
-[Weather notification app](https://f-droid.org/en/packages/ru.gelin.android.weather.notification/).
-Install it, check the Gadgetbridge option inside the Weather notification app to on and set the
-location.
-Finally create an account at [OpenWeather](https://home.openweathermap.org).
-On that website create an API key and paste it into the according setting in the Weather
-notification app.
-Finally set the desired location in the Gadgetbridge app inside the settings.
+This section is based on the official documentation and recommendation that can be found on
+[Gadgetbridges Codeberg page](https://codeberg.org/Freeyourgadget/Gadgetbridge/wiki/Weather#user-content-install-and-configure-openweatherprovider).
+
+An example for this is the [Breezy Weather app](https://github.com/breezy-weather/breezy-weather)
+which is available on the F-Droid store.
+Install and configure it to your needs.
+Then check the Gadgetbridge option insdie the Breezy Weather app.
 Afterwards the weather function will be working.
+
+In the past an application named
+[Weather Notification](https://f-droid.org/en/packages/ru.gelin.android.weather.notification/)
+was often used.
+The installation and configuration process was similar but an
+[OpenWeather](https://home.openweathermap.org)  API key had to be specified in the Weather
+Notification app.
+For this an account on [OpenWeather](https://home.openweathermap.org) was needed.
+Due to different API versions Weather Notification currently does not work.
+However it is possible that an update to the application will bring a fix in the future.
 
 ### Install Watchfaces
 
