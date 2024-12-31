@@ -60,6 +60,17 @@ This entry is based on two posts on mobileread - one regarding the
 and the other regarding the
 [sort title](https://www.mobileread.com/forums/showthread.php?t=249870).
 
+## Changing the Cover of a Book
+
+Changing covers of a book can be done by editing the metadata available via the right-click menu.
+However this is not enough in some cases.
+`.pdf` in contrast to `.epub` files won't save the cover just by this action.
+After changing the cover in the metadata screen `.pdf` files have to be converted to correctly
+display the cover since the first page of such a file is generally considered the cover.
+An alternative to this is the `PDF Cover` Plugin which allows the insertion of the cover before all
+other pages without an extra conversion.
+Please note that it prepends the cover and does not delete any pages.
+
 ## Transfer Books to a Device
 
 To transfer books to a device connect a e-reader to the computer.
