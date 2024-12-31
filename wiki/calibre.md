@@ -89,4 +89,4 @@ Afterwards books can be converted the normal way, but now the output format `.ke
 Additionally the `Kobo Touch Extended` plugin is recommended to use since it makes sending books to
 Kobo e-readers easier.
 Finally `KePub Metadata Reader` and `KePub Metadata Reader` make it possible to read and write
-metadata to `.kepub` files which is especially useful
+metadata to `.kepub` files which is especially useful.
