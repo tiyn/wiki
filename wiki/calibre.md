@@ -85,3 +85,5 @@ It is recommended to convert `.mobi` and `.epub` files to a `.kepub` file before
 [transfering it to a Kobo device](#transfer-books-to-a-device).
 For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin).
 Afterwards books can be converted the normal way, but now the output format `.kepub` is available.
+Additionally the `KoboTouchExtended` plugin is recommended to use since it makes sending books to
+Kobo e-readers easier.
