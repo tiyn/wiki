@@ -83,7 +83,10 @@ The `.kepub` format is a format that is similar to a normal epub but has some pe
 improvements for Kobo devices.
 It is recommended to convert `.mobi` and `.epub` files to a `.kepub` file before
 [transfering it to a Kobo device](#transfer-books-to-a-device).
-For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin).
+For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin) can be
+installed.
 Afterwards books can be converted the normal way, but now the output format `.kepub` is available.
-Additionally the `KoboTouchExtended` plugin is recommended to use since it makes sending books to
+Additionally the `Kobo Touch Extended` plugin is recommended to use since it makes sending books to
 Kobo e-readers easier.
+Finally `KePub Metadata Reader` and `KePub Metadata Reader` make it possible to read and write
+metadata to `.kepub` files which is especially useful
