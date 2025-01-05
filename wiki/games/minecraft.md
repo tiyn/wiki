@@ -57,3 +57,26 @@ An existing Minecraft world of a server can be updated simply by updating the se
 Chunks that have been loaded will not be affected by the update, but blocks that have not been
 loaded will be.
 For safety reasons it is advised to back up the instance before updating the version number.
+
+#### Installing Mods
+
+Mods can be installed client- and server-side.
+For client-side mods most [up-to-date clients](#client) feature an easy installation process.
+Especially [MultiMC5 and its derivatives](/wiki/games/multimc5.md) have an easy way to achieve
+this.
+For the installation of server-side mods the process can vary slightly depending on the
+[server host](#server).
+For the [itzgs minecraft server](/wiki/docker/itzg_-_minecraft-server.md) running on
+[Docker](/wiki/docker.md) visit the
+[mod section of that entry](/wiki/docker/itzg_-_minecraft-server.md#installation-of-mods).
+
+#### Installing Datapacks
+
+The installation of datapacks is to be done for a specific world or a specific server.
+This section will describe a process that works for both single-player worlds aswell as multiplayer
+servers.
+First navigate to minecrafts folder that corresponds to the world you want to add the datapack to.
+Then place the `.zip` archive containing the datapack inside the `datapacks` folder.
+The resulting path is either `world/datapacks` for multiplayer servers like 
+[itzgs minecraft server](/wiki/docker/itzg_-_minecraft-server.md) or `saves/<world name>/datapacks`
+where `<world name>` is the name of the single player world.
