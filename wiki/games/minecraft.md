@@ -84,3 +84,58 @@ For the installation of datapacks on servers please navigate to the entry of the
 can be differences.
 Most notably itzgs minecraft server is mentioned here which features a
 [section regarding datapacks](/wiki/docker/itzg_-_minecraft-server.md#installing-datapacks).
+
+#### Recommended Mods and Ressource Packs
+
+This section addresses modifications and ressource packs that are recommended or were tested and
+found to be useful or good.
+This section will be split into two categories.
+First the performance mods and secondly the gameplay mods.
+At last there will be a list of useful ressources to find or browse mods and data packages.
+The installation of [mods](#installing-mods) and [datapacks](#installing-datapacks) is addressed
+in the corresponding sections.
+
+The first category that will be discussed are used to improve the performance.
+The following changes are recommended to install on the server.
+
+- "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk
+  management engine.
+- "Clumps" is a mod that groups together experience orbs that are close to another.
+- "Get It Together, Drops!" is a mod that groups together items that are close to another.
+- "FerriteCore" is a mod that reduces memory usage.
+- "Krypton" is a mod that optimizes minecrafts networking stack.
+- "Let Me Despawn" is a mod that enables mods with a picked up or equipped item to despawn to
+  reduce entity lag.
+- "Lithium" is a mod that introduces various general optimizations.
+- "ModernFix" is a mod that introduces more general optimizations.
+- "Noisium" is a mod that speeds up the world generation function.
+
+The following modifications are recommended client-side performance mods.
+
+- "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk 
+  management engine.
+- "Dynamic FPS" is a mod that reduces the FPS when the program is running in the background. 
+- "EntityCulling" is a mod that disables the rendering of hidden entities.
+- "FerriteCore" is a mod that reduces memory usage.
+- "ImmediatelyFast" is a mod that optimizes rendering.
+- "Lithium" is a mod that introduces various general optimizations.
+- "Sodium" is a mod that optimizes the rendering engine. This is a common and with newer versions more popular
+  alternative to OptiFine.
+- "Sodium Extra" is a mod that introduces an extension to Sodiums optimizations.
+- "Reese's Sodium Options" is a mod that displays improved options for Sodium.
+
+After the performance mods have been listed the next mods that will be discussed are focussed on
+gameplay.
+The following changes are recommended to install on the server.
+
+- "Anti Enderman Grief" is a datapack that stops the endermen from picking up and setting down any
+  blocks.
+
+Finally the following ressources are useful to browse for new mods to install.
+
+- [The UsefulMods list](https://github.com/TheUsefulLists/UsefulMods/blob/main/Performance/Performance121.md)
+  is a list of useful performance mods for the 1.21.x.
+  Newer and older versions could be found in the file browser on the left side of the website.
+- [Vanilla Tweaks](https://vanillatweaks.net/) is a website that provides various ressource packs
+  to improve the quality of life in minecraft.
+  Goal of these is a slight change of the vanilla experience.
