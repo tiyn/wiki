@@ -65,16 +65,20 @@ docker run --name minecraft \
 
 This section addresses the usage of the minecraft-server container.
 
-### Installation of Mods
+### Installing Mods
 
 Mods can be installed as described in the
 [corresponding article of the official documentation](https://github.com/itzg/docker-minecraft-server/blob/master/docs/mods-and-plugins/index.md).
-Especially the `MODS` variable is noted.
-the variable can be set to the URL of a jar file, a container path to a jar file or a container
-path to a directory containing jar files.
-The following line shows an example that could be added to the [`rebuild.sh`](#rebuildsh) to 
-install some mods.
+For this set the server type by using the `-e TYPE=<type>` flag.
+`<type>` is the API that is used as the core library.
+Most notably this value could be `FABRIC` or `FORGE`.
+After this the mods (as `.jar` files) can be placed in the `mods` directory of the
+[Docker](/wiki/docker.md) volume.
+Afterwards run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded mods.
 
-```sh 
--e MODS=https://www.example.com/mods/mod1.jar,/plugins/common,/plugins/special/mod2.jar
-```
+#### Installing Datapacks
+
+The installation of datapacks is done similar to the described process in the
+[corresponding section of the minecraft entry](/wiki/games/minecraft.md#installing-datapacks).
+The only difference is the path to place the `.zip` datapack files in which is `world/datapacks` in
+case of this [Docker](/wiki/docker.md) image.

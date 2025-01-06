@@ -68,15 +68,19 @@ For the installation of server-side mods the process can vary slightly depending
 [server host](#server).
 For the [itzgs minecraft server](/wiki/docker/itzg_-_minecraft-server.md) running on
 [Docker](/wiki/docker.md) visit the
-[mod section of that entry](/wiki/docker/itzg_-_minecraft-server.md#installation-of-mods).
+[mod section of that entry](/wiki/docker/itzg_-_minecraft-server.md#installing-mods).
 
 #### Installing Datapacks
 
 The installation of datapacks is to be done for a specific world or a specific server.
 This section will describe a process that works for both single-player worlds aswell as multiplayer
 servers.
-First navigate to minecrafts folder that corresponds to the world you want to add the datapack to.
+First the installation of datapacks on single player worlds will the addressed.
+Navigate to minecrafts folder that corresponds to the world you want to add the datapack to.
 Then place the `.zip` archive containing the datapack inside the `datapacks` folder.
-The resulting path is either `world/datapacks` for multiplayer servers like 
-[itzgs minecraft server](/wiki/docker/itzg_-_minecraft-server.md) or `saves/<world name>/datapacks`
-where `<world name>` is the name of the single player world.
+The resulting path is `saves/<world name>/datapacks` where `<world name>` is the name of the single
+player world.
+For the installation of datapacks on servers please navigate to the entry of the server since there
+can be differences.
+Most notably itzgs minecraft server is mentioned here which features a
+[section regarding datapacks](/wiki/docker/itzg_-_minecraft-server.md#installing-datapacks).
