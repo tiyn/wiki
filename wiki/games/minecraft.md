@@ -185,6 +185,13 @@ The following are recommended client-side graphic mods.
   suspicious sand and gravel.
 - "White Enchantment Glint" from Vanilla Tweaks is a ressource pack that changes the default
   enchantment glint to a white one.
+- "Alternative Bedrock" from Vanilla Tweaks is a ressource pack that changes the look of bedrock.
+- "Circular Log Tops" from Vanilla Tweaks is a ressource pack that changes the look of logs to be
+  more circular.
+- "Golden Crown" from Vanilla Tweaks is a ressource pack that changes the look of golden helmets to
+  crowns.
+- "Moss Carpet Overhang" from Vanilla Tweaks is a ressource pack that changes the look of moss
+  carpets slightly so that they overhang a bit on the sides.
 
 The following are recommended client-side audio mods.
 
