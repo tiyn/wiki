@@ -123,6 +123,9 @@ The following changes are recommended to install on the server for gameplay reas
 
 - "Anti Enderman Grief" is a datapack that stops the endermen from picking up and setting down any
   blocks.
+- "Audarki Cart Engine (Fast Minecarts)" is a mod that enables the operators of a server to change
+  the minecarts speed.
+  This can be done for different types of minecarts (player, non-player, etc).
 
 Finally for the server-side mods the following ones are focussed on graphical changes.
 
