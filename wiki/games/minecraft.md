@@ -85,20 +85,20 @@ can be differences.
 Most notably itzgs minecraft server is mentioned here which features a
 [section regarding datapacks](/wiki/docker/itzg_-_minecraft-server.md#installing-datapacks).
 
-#### Recommended Mods and Ressource Packs
+#### Recommended Mods and Resource Packs
 
-This section addresses modifications and ressource packs that are recommended or were tested and
+This section addresses modifications and resource packs that are recommended or were tested and
 found to be useful or good.
 This section will be split into two categories.
 These are client-side and server-side mods.
 The installation of [mods](#installing-mods) and [datapacks](#installing-datapacks) is addressed
 in the corresponding sections.
-The following ressources have been used to find and select modifications and ressource packs.
+The following resources have been used to find and select modifications and resource packs.
 
 - [The UsefulMods list](https://github.com/TheUsefulLists/UsefulMods/blob/main/Performance/Performance121.md)
   is a list of useful performance mods for the 1.21.x.
   Newer and older versions could be found in the file browser on the left side of the website.
-- [Vanilla Tweaks](https://vanillatweaks.net/) is a website that provides various ressource packs
+- [Vanilla Tweaks](https://vanillatweaks.net/) is a website that provides various resource packs
   to improve the quality of life in minecraft.
   Goal of these is a slight change of the vanilla experience.
 
@@ -155,59 +155,61 @@ The following are recommended client-side graphic mods.
 - "Make Bubbles Pop" is a mod that lets water bubbles - like the ones above soulsand - pop at the
   surface.
 - "Visuality" is a mod that adds various particles to entities.
-- "Better Hoppers" is a ressource pack that adds arrows to hoppers.
-- "Blobs Enchant Icons" is a ressource pack that adds small icons to the tooltip of enchanted
+- "Better Hoppers" is a resource pack that adds arrows to hoppers.
+- "Blobs Enchant Icons" is a resource pack that adds small icons to the tooltip of enchanted
   icons.
-- "Consistent Blank Decorated Pot" from Vanilla Tweaks is a ressource pack that fixes the decorated
+- "Consistent Blank Decorated Pot" from Vanilla Tweaks is a resource pack that fixes the decorated
   pot skin to use the decoration on all sides.
-- "Consistent Buckets" from Vanilla Tweaks is a ressource pack that fixes the bucket icon to be in
+- "Consistent Buckets" from Vanilla Tweaks is a resource pack that fixes the bucket icon to be in
   line for filled and empty buckets.
-- "Directional Dispensers" from Vanilla Tweaks is a ressource pack that adds arrows to dispensers.
-- "Directional Observers" from Vanilla Tweaks is a ressource pack that adds arrows to observers.
-- "Double Slab Fix" from Vanilla Tweaks is a ressource pack that fixes the double slabs look to
+- "Directional Dispensers" from Vanilla Tweaks is a resource pack that adds arrows to dispensers.
+- "Directional Observers" from Vanilla Tweaks is a resource pack that adds arrows to observers.
+- "Double Slab Fix" from Vanilla Tweaks is a resource pack that fixes the double slabs look to
   look like two slabs in contrast to a normal block.
-- "Even Better Enchants" is a ressource pack that changes the look of enchanted books to be more
+- "Even Better Enchants" is a resource pack that changes the look of enchanted books to be more
   unique and easily recognizable.
-- "Groovy Levers" from Vanilla Tweaks is a ressource pack that adds a groove to indicate the state
+- "Groovy Levers" from Vanilla Tweaks is a resource pack that adds a groove to indicate the state
   to levers.
-- "Lower Shield" from Vanilla Tweaks is a ressource pack that lowers the shield to increase the
+- "Lower Shield" from Vanilla Tweaks is a resource pack that lowers the shield to increase the
   players vision.
-- "Mob Crates" is a ressource pack that changes the icon of spawn eggs.
-- "Nautilus 3D" is a ressource pack that completely retextures all blocks in the game.
-- "No More Christmas Chests" is a ressource pack that disables the christmas chests.
-- "No Java Subtitle" from Vanilla Tweaks is a ressource pack that hides the Java Version-Subtitle
+- "Mob Crates" is a resource pack that changes the icon of spawn eggs.
+- "Nautilus 3D" is a resource pack that completely retextures all blocks in the game.
+- "No More Christmas Chests" is a resource pack that disables the christmas chests.
+- "No Java Subtitle" from Vanilla Tweaks is a resource pack that hides the Java Version-Subtitle
   in the title screen.
-- "Pumpkin or Melon" is a ressource pack that makes the stem of melons and pumpkins easily
+- "Pumpkin or Melon" is a resource pack that makes the stem of melons and pumpkins easily
   distinguishable.
-- "Redstone Power Levels" from Vanilla Tweaks is a ressource pack that displays the level of
+- "Redstone Power Levels" from Vanilla Tweaks is a resource pack that displays the level of
   redstone signal on the dust.
-- "Rethoughted Infested Stones" is a ressource pack that slightly changes the skin of infested
+- "Rethoughted Infested Stones" is a resource pack that slightly changes the skin of infested
   stones.
-- "Slightly Improved Font" is a ressource pack that makes the font a bit smoother.
-- "Sticky Piston Sides" is a ressource pack that makes the slime on sticky pistons visible from the
+- "Slightly Improved Font" is a resource pack that makes the font a bit smoother.
+- "Sticky Piston Sides" is a resource pack that makes the slime on sticky pistons visible from the
   side.
-- "Subtle Suspicious Sand and Gravel" is a ressource pack that slightly changes the skin of
+- "Subtle Suspicious Sand and Gravel" is a resource pack that slightly changes the skin of
   suspicious sand and gravel.
-- "White Enchantment Glint" from Vanilla Tweaks is a ressource pack that changes the default
+- "White Enchantment Glint" from Vanilla Tweaks is a resource pack that changes the default
   enchantment glint to a white one.
-- "Alternative Bedrock" from Vanilla Tweaks is a ressource pack that changes the look of bedrock.
-- "Circular Log Tops" from Vanilla Tweaks is a ressource pack that changes the look of logs to be
+- "Alternative Bedrock" from Vanilla Tweaks is a resource pack that changes the look of bedrock.
+- "Circular Log Tops" from Vanilla Tweaks is a resource pack that changes the look of logs to be
   more circular.
-- "Golden Crown" from Vanilla Tweaks is a ressource pack that changes the look of golden helmets to
+- "Golden Crown" from Vanilla Tweaks is a resource pack that changes the look of golden helmets to
   crowns.
-- "Moss Carpet Overhang" from Vanilla Tweaks is a ressource pack that changes the look of moss
+- "Moss Carpet Overhang" from Vanilla Tweaks is a resource pack that changes the look of moss
   carpets slightly so that they overhang a bit on the sides.
 - "Skin Shuffle" is a mod that allows you to change your skin in-game.
   Please note that for this mod to work on servers the same mod needs to be installed on the server
   too, otherwise you will need to log out and reconnect.
+- "Visible Powdered Snow" slightly changes the texture of powdered snow to distinguish between it
+  and normal snow.
 
 The following are recommended client-side audio mods.
 
-- "No Cave Ambience" is a ressource pack that disables the ambience sounds in caves.
-- "Quieter Dispensers" from Vanilla Tweaks is a ressource pack that reduces the volume of
+- "No Cave Ambience" is a resource pack that disables the ambience sounds in caves.
+- "Quieter Dispensers" from Vanilla Tweaks is a resource pack that reduces the volume of
   dispensers.
-- "Quieter Minecarts" from Vanilla Tweaks is a ressource pack that reduces the volume of minecarts.
-- "Quieter Pistons" from Vanilla Tweaks is a ressource pack that reduces the volume of pistons.
+- "Quieter Minecarts" from Vanilla Tweaks is a resource pack that reduces the volume of minecarts.
+- "Quieter Pistons" from Vanilla Tweaks is a resource pack that reduces the volume of pistons.
 
 The following are recommended client-side HUD modifications 
 
@@ -227,8 +229,8 @@ The following are recommended client-side HUD modifications
 - "Simple armor hud" is a mod that adds a HUD to show the durability and type of armor that the
   player wears.
 - "Status Effect Bars" is a mod that adds status effect bars to the screen.
-- "Better Boss Bars" is a ressource pack that improves the look of boss bars.
-- "NH-Just a numbered hotbar" is a ressource pack that shows numbers on the hotbar.
+- "Better Boss Bars" is a resource pack that improves the look of boss bars.
+- "NH-Just a numbered hotbar" is a resource pack that shows numbers on the hotbar.
 
 The following are possible client-side mods that change the gameplay or give other information in
 the game.
@@ -243,5 +245,7 @@ that server.
 - "Replanter Plus" is a mod that makes it possible to simultaneously harvest and replant plants.
 - "Xaero's Minimap" is a mod that adds a minimap to the screen.
 - "Xaero's World Map" is a mod that adds a map to the game that can be viewed at any time.
-- "Brewing Guide" from Vanilla Tweaks is a ressource pack that adds an easy brewing guide to the UI
+- "Brewing Guide" from Vanilla Tweaks is a resource pack that adds an easy brewing guide to the UI
   of the brewing stand.
+- "GUIdes" is a mod resource similar to "Brewing Guide" that adds guides to many menus like
+  brewing menus and more.
