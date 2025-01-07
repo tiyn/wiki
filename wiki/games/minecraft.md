@@ -207,7 +207,8 @@ The following are recommended client-side HUD modifications
 - "BetterF3" is a mod that makes the F3-menu more customizable and more easily readable.
 - "Bundle Inventory" is a mod that improves the usability of bundles.
 - "Durability Tooltip" is a mod that adds a durability number to the tooltip of items.
-- "FPS-Display" is a mod that displays the FPS on the screen.
+- "FPS Display" is a mod that displays the FPS on the screen.
+  When using "Sodium" this mod is not needed as it adds the same functionality.
 - "Inventory Profiles Next" is a mod that adds inventory profiles and allows to lock specific item
   slots.
   It also replaces placed blocks in the inventory or replaces used tools.
