@@ -124,6 +124,11 @@ The following changes are recommended to install on the server for gameplay reas
 - "Anti Enderman Grief" is a datapack that stops the endermen from picking up and setting down any
   blocks.
 
+Finally for the server-side mods the following ones are focussed on graphical changes.
+
+- "Skin Shuffle" is a mod that allows players to instantly change the skin they use.
+  Please note that the same mod needs to be installed on the client too.
+
 The client-side mods are now being discussed.
 The following modifications are recommended client-side performance mods.
 
@@ -192,6 +197,9 @@ The following are recommended client-side graphic mods.
   crowns.
 - "Moss Carpet Overhang" from Vanilla Tweaks is a ressource pack that changes the look of moss
   carpets slightly so that they overhang a bit on the sides.
+- "Skin Shuffle" is a mod that allows you to change your skin in-game.
+  Please note that for this mod to work on servers the same mod needs to be installed on the server
+  too, otherwise you will need to log out and reconnect.
 
 The following are recommended client-side audio mods.
 
