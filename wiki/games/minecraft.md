@@ -90,13 +90,20 @@ Most notably itzgs minecraft server is mentioned here which features a
 This section addresses modifications and ressource packs that are recommended or were tested and
 found to be useful or good.
 This section will be split into two categories.
-First the performance mods and secondly the gameplay mods.
-At last there will be a list of useful ressources to find or browse mods and data packages.
+These are client-side and server-side mods.
 The installation of [mods](#installing-mods) and [datapacks](#installing-datapacks) is addressed
 in the corresponding sections.
+The following ressources have been used to find and select modifications and ressource packs.
 
-The first category that will be discussed are used to improve the performance.
-The following changes are recommended to install on the server.
+- [The UsefulMods list](https://github.com/TheUsefulLists/UsefulMods/blob/main/Performance/Performance121.md)
+  is a list of useful performance mods for the 1.21.x.
+  Newer and older versions could be found in the file browser on the left side of the website.
+- [Vanilla Tweaks](https://vanillatweaks.net/) is a website that provides various ressource packs
+  to improve the quality of life in minecraft.
+  Goal of these is a slight change of the vanilla experience.
+
+The first category that will be discussed are the server mods.
+The following changes are recommended to install on the server to improve performance.
 
 - "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk
   management engine.
@@ -110,6 +117,14 @@ The following changes are recommended to install on the server.
 - "ModernFix" is a mod that introduces more general optimizations.
 - "Noisium" is a mod that speeds up the world generation function.
 
+After the performance mods have been listed the next mods that will be discussed are focussed on
+gameplay.
+The following changes are recommended to install on the server for gameplay reasons.
+
+- "Anti Enderman Grief" is a datapack that stops the endermen from picking up and setting down any
+  blocks.
+
+The client-side mods are now being discussed.
 The following modifications are recommended client-side performance mods.
 
 - "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk 
@@ -124,18 +139,93 @@ The following modifications are recommended client-side performance mods.
 - "Sodium Extra" is a mod that introduces an extension to Sodiums optimizations.
 - "Reese's Sodium Options" is a mod that displays improved options for Sodium.
 
-After the performance mods have been listed the next mods that will be discussed are focussed on
-gameplay.
-The following changes are recommended to install on the server.
+The following are recommended client-side graphic mods.
 
-- "Anti Enderman Grief" is a datapack that stops the endermen from picking up and setting down any
-  blocks.
+- "3d-Skin-Layers" is a mod that makes the outer layers of skins look more 3-dimensional.
+- "Blur+" is a mod that adds blur to the background when opening a chest.
+- "Bobby" is a mod that caches chunks to increase the render distance beyond the maximum server
+  distance of servers.
+- "Chat Heads" is a mod that adds an image of the players head to chat messages.
+- "Dark Loading Screen" is a mod that changes the mojang loading screen into dark mode.
+- "Make Bubbles Pop" is a mod that lets water bubbles - like the ones above soulsand - pop at the
+  surface.
+- "Visuality" is a mod that adds various particles to entities.
+- "Better Hoppers" is a ressource pack that adds arrows to hoppers.
+- "Blobs Enchant Icons" is a ressource pack that adds small icons to the tooltip of enchanted
+  icons.
+- "Consistent Blank Decorated Pot" from Vanilla Tweaks is a ressource pack that fixes the decorated
+  pot skin to use the decoration on all sides.
+- "Consistent Buckets" from Vanilla Tweaks is a ressource pack that fixes the bucket icon to be in
+  line for filled and empty buckets.
+- "Directional Dispensers" from Vanilla Tweaks is a ressource pack that adds arrows to dispensers.
+- "Directional Observers" from Vanilla Tweaks is a ressource pack that adds arrows to observers.
+- "Double Slab Fix" from Vanilla Tweaks is a ressource pack that fixes the double slabs look to
+  look like two slabs in contrast to a normal block.
+- "Even Better Enchants" is a ressource pack that changes the look of enchanted books to be more
+  unique and easily recognizable.
+- "Groovy Levers" from Vanilla Tweaks is a ressource pack that adds a groove to indicate the state
+  to levers.
+- "Lower Shield" from Vanilla Tweaks is a ressource pack that lowers the shield to increase the
+  players vision.
+- "Mob Crates" is a ressource pack that changes the icon of spawn eggs.
+- "Nautilus 3D" is a ressource pack that completely retextures all blocks in the game.
+- "No More Christmas Chests" is a ressource pack that disables the christmas chests.
+- "No Java Subtitle" from Vanilla Tweaks is a ressource pack that hides the Java Version-Subtitle
+  in the title screen.
+- "Pumpkin or Melon" is a ressource pack that makes the stem of melons and pumpkins easily
+  distinguishable.
+- "Redstone Power Levels" from Vanilla Tweaks is a ressource pack that displays the level of
+  redstone signal on the dust.
+- "Rethoughted Infested Stones" is a ressource pack that slightly changes the skin of infested
+  stones.
+- "Slightly Improved Font" is a ressource pack that makes the font a bit smoother.
+- "Sticky Piston Sides" is a ressource pack that makes the slime on sticky pistons visible from the
+  side.
+- "Subtle Suspicious Sand and Gravel" is a ressource pack that slightly changes the skin of
+  suspicious sand and gravel.
+- "White Enchantment Glint" from Vanilla Tweaks is a ressource pack that changes the default
+  enchantment glint to a white one.
 
-Finally the following ressources are useful to browse for new mods to install.
+The following are recommended client-side audio mods.
 
-- [The UsefulMods list](https://github.com/TheUsefulLists/UsefulMods/blob/main/Performance/Performance121.md)
-  is a list of useful performance mods for the 1.21.x.
-  Newer and older versions could be found in the file browser on the left side of the website.
-- [Vanilla Tweaks](https://vanillatweaks.net/) is a website that provides various ressource packs
-  to improve the quality of life in minecraft.
-  Goal of these is a slight change of the vanilla experience.
+- "No Cave Ambience" is a ressource pack that disables the ambience sounds in caves.
+- "Quieter Dispensers" from Vanilla Tweaks is a ressource pack that reduces the volume of
+  dispensers.
+- "Quieter Minecarts" from Vanilla Tweaks is a ressource pack that reduces the volume of minecarts.
+- "Quieter Pistons" from Vanilla Tweaks is a ressource pack that reduces the volume of pistons.
+
+The following are recommended client-side HUD modifications 
+
+- "AppleSkin" is a mod that adds the saturation information to the hunger HUD.
+- "BetterF3" is a mod that makes the F3-menu more customizable and more easily readable.
+- "Bundle Inventory" is a mod that improves the usability of bundles.
+- "Durability Tooltip" is a mod that adds a durability number to the tooltip of items.
+- "FPS-Display" is a mod that displays the FPS on the screen.
+- "Inventory Profiles Next" is a mod that adds inventory profiles and allows to lock specific item
+  slots.
+  It also replaces placed blocks in the inventory or replaces used tools.
+- "MiniHUD" is a mod that adds the possibility to show various information on screen or render
+  chunks, light levels, etc in game.
+- "Show Durability" is a mod that shows the durability as a number additionally to the bar.
+- "Shulker Box Tooltip" is a mod that more easily shows the contents of a shulker box.
+- "Simple armor hud" is a mod that adds a HUD to show the durability and type of armor that the
+  player wears.
+- "Status Effect Bars" is a mod that adds status effect bars to the screen.
+- "Better Boss Bars" is a ressource pack that improves the look of boss bars.
+- "NH-Just a numbered hotbar" is a ressource pack that shows numbers on the hotbar.
+
+The following are possible client-side mods that change the gameplay or give other information in
+the game.
+Please note that these can possibly lead to a ban on a server depending on the prohibited mods of
+that server.
+
+- "Bridging Mod" is a mod that allows to place blocks under, next to and above a block despite not
+  seeing this side of the block.
+- "Freecam" is a mod that allows to move the cam freely similar to the spectator mode.
+- "Fullbright" is a mod that increases brightness at night or in caves.
+- "Mob Health Indicators" is a mod that displays the health of mobs above their head.
+- "Replanter Plus" is a mod that makes it possible to simultaneously harvest and replant plants.
+- "Xaero's Minimap" is a mod that adds a minimap to the screen.
+- "Xaero's World Map" is a mod that adds a map to the game that can be viewed at any time.
+- "Brewing Guide" from Vanilla Tweaks is a ressource pack that adds an easy brewing guide to the UI
+  of the brewing stand.
