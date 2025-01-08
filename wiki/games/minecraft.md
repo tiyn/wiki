@@ -145,7 +145,14 @@ The following modifications are recommended client-side performance mods.
 - "Sodium" is a mod that optimizes the rendering engine. This is a common and with newer versions more popular
   alternative to OptiFine.
 - "Sodium Extra" is a mod that introduces an extension to Sodiums optimizations.
-- "Reese's Sodium Options" is a mod that displays improved options for Sodium.
+- "Reese's Sodium Options" is a (sub-)mod for Sodium that adds functions to the video options like
+  a search bar.
+  A similar mod to this is "Xander's Sodium Options".
+- "Xander's Sodium Options" is a (sub-)mod  for Sodium that adds functions to the video options
+  like a search bar.
+  Additionally it changes the look of the video options to be more in line with Minecrafts other
+  options.
+  A similar mod to this is "Reese's Sodium Options".
 
 The following are recommended client-side graphic mods.
 
