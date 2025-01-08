@@ -237,6 +237,9 @@ The following are recommended client-side HUD modifications
 - "Status Effect Bars" is a mod that adds status effect bars to the screen.
 - "Better Boss Bars" is a resource pack that improves the look of boss bars.
 - "NH-Just a numbered hotbar" is a resource pack that shows numbers on the hotbar.
+- "Boss Crosshair" is a collection of resource packs that changes the look of the crosshair.
+- "GUI Perfected" is a resource pack that changes the look of the buttons aswell as crafting
+  tables, anvils and more to be more unique.
 
 The following are possible client-side mods that change the gameplay or give other information in
 the game.
