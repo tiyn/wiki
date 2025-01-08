@@ -223,6 +223,9 @@ The following are recommended client-side HUD modifications
 - "BetterF3" is a mod that makes the F3-menu more customizable and more easily readable.
 - "Bundle Inventory" is a mod that improves the usability of bundles.
 - "Durability Tooltip" is a mod that adds a durability number to the tooltip of items.
+  It is similar to "Durability Plus" but doesn't feature color.
+- "Durability Plus" is a mod that shows the durability as a number.
+  It is similar to "Durability Tooltip" but has color.
 - "FPS Display" is a mod that displays the FPS on the screen.
   When using "Sodium" this mod is not needed as it adds the same functionality.
 - "Inventory Profiles Next" is a mod that adds inventory profiles and allows to lock specific item
@@ -231,6 +234,10 @@ The following are recommended client-side HUD modifications
 - "MiniHUD" is a mod that adds the possibility to show various information on screen or render
   chunks, light levels, etc in game.
 - "Show Durability" is a mod that shows the durability as a number additionally to the bar.
+  It is similar to "Till It Breaks" but is more lightweight and has less options.
+- "Till It Breaks" is a mod that shows the durability as a number.
+  It is similar to "Show Durability" but has more features like color, the displaying of the number
+  of arrows or the option to hide of the durability bar.
 - "Shulker Box Tooltip" is a mod that more easily shows the contents of a shulker box.
 - "Simple armor hud" is a mod that adds a HUD to show the durability and type of armor that the
   player wears.
