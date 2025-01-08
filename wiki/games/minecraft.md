@@ -205,6 +205,9 @@ The following are recommended client-side graphic mods.
   too, otherwise you will need to log out and reconnect.
 - "Visible Powdered Snow" slightly changes the texture of powdered snow to distinguish between it
   and normal snow.
+- "Variants-CIT" is a mod that allows to change the look of variants of the same item like potions
+  or enchanted books.
+  This mod needs corresponding resource packs that can be found on the mod page to download.
 
 The following are recommended client-side audio mods.
 
