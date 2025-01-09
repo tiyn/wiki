@@ -154,7 +154,7 @@ The following modifications are recommended client-side performance mods.
   options.
   A similar mod to this is "Reese's Sodium Options".
 
-The following are recommended client-side graphic mods.
+The following are recommended client-side graphical mods.
 
 - "3d-Skin-Layers" is a mod that makes the outer layers of skins look more 3-dimensional.
 - "Blur+" is a mod that adds blur to the background when opening a chest.
@@ -215,6 +215,14 @@ The following are recommended client-side graphic mods.
 - "Variants-CIT" is a mod that allows to change the look of variants of the same item like potions
   or enchanted books.
   This mod needs corresponding resource packs that can be found on the mod page to download.
+- "3D Crops Revamped" is a resource pack that changes the look of crops to be more 3 dimensional.
+  It is similar to "Florescent" but focusses only on crops.
+- "Florescent" is a resource pack that changes the look of flowers, crops and mushrooms to be more
+  3 dimensional.
+  It is similar to "3D Crops Revamped" which only includes crops.
+- "Continuity" is a mod that enables connected textures like glass without borders and more.
+- "Better Statistics Screen" is a mod that changes the look and feel of the statistics screen to
+  make it more intuitive.
 
 The following are recommended client-side audio mods.
 
@@ -224,7 +232,7 @@ The following are recommended client-side audio mods.
 - "Quieter Minecarts" from Vanilla Tweaks is a resource pack that reduces the volume of minecarts.
 - "Quieter Pistons" from Vanilla Tweaks is a resource pack that reduces the volume of pistons.
 
-The following are recommended client-side HUD modifications 
+The following are recommended client-side HUD and other UI modifications 
 
 - "AppleSkin" is a mod that adds the saturation information to the hunger HUD.
 - "BetterF3" is a mod that makes the F3-menu more customizable and more easily readable.
@@ -254,6 +262,12 @@ The following are recommended client-side HUD modifications
 - "Boss Crosshair" is a collection of resource packs that changes the look of the crosshair.
 - "GUI Perfected" is a resource pack that changes the look of the buttons aswell as crafting
   tables, anvils and more to be more unique.
+  It is similar to "Colorful Containers GUI" but doesn't include chests, etc.
+- "Colorful Containers GUI" is a resource pack that changes the look of the buttons aswell as crafting
+  tables, anvils and more to be more unique.
+  It is similar to "GUI Perfected" but also includes chests, etc.
+- "Scribble" is a mod that makes editing books easier by adding buttons for color, bold font and
+  more.
 
 The following are possible client-side mods that change the gameplay or give other information in
 the game.
