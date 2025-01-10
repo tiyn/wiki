@@ -223,6 +223,8 @@ The following are recommended client-side graphical mods.
 - "Continuity" is a mod that enables connected textures like glass without borders and more.
 - "Better Statistics Screen" is a mod that changes the look and feel of the statistics screen to
   make it more intuitive.
+- "Remove Reloading Screen" is a mod that removes the loading screen and instead display only the
+  additional loading bar.
 
 The following are recommended client-side audio mods.
 
@@ -265,6 +267,7 @@ The following are recommended client-side HUD and other UI modifications
   It is similar to "Colorful Containers GUI" but doesn't include chests, etc.
 - "Colorful Containers GUI" is a resource pack that changes the look of the buttons aswell as crafting
   tables, anvils and more to be more unique.
+  This also has a dark mode named "Colourful Containers Dark Mode GUI".
   It is similar to "GUI Perfected" but also includes chests, etc.
 - "Scribble" is a mod that makes editing books easier by adding buttons for color, bold font and
   more.
@@ -284,5 +287,9 @@ that server.
 - "Xaero's World Map" is a mod that adds a map to the game that can be viewed at any time.
 - "Brewing Guide" from Vanilla Tweaks is a resource pack that adds an easy brewing guide to the UI
   of the brewing stand.
+  It is similar to "GUIdes" but is only made for brewing.
 - "GUIdes" is a mod resource similar to "Brewing Guide" that adds guides to many menus like
   brewing menus and more.
+  It is similar to "Brewing Guid" and "Smelting Guide" but is adds guides for more tools.
+- "Smelting Guide" is a resource pack that adds a guide to all types of furnaces that shows the
+  usability of items as fuel.
