@@ -116,6 +116,7 @@ The following changes are recommended to install on the server to improve perfor
 - "Lithium" is a mod that introduces various general optimizations.
 - "ModernFix" is a mod that introduces more general optimizations.
 - "Noisium" is a mod that speeds up the world generation function.
+- "spark" is a mod that does not improve performance but enables operators to monitor it.
 
 After the performance mods have been listed the next mods that will be discussed are focussed on
 gameplay.
@@ -126,6 +127,10 @@ The following changes are recommended to install on the server for gameplay reas
 - "Audarki Cart Engine (Fast Minecarts)" is a mod that enables the operators of a server to change
   the minecarts speed.
   This can be done for different types of minecarts (player, non-player, etc).
+- "Sit!" is a mod that enables players to sit on specific blocks.
+  The key to use can be changed on a per user basis by installing the mod client-side.
+- "Cycle Paintings" is a mod that lets player cycle through the motifs of a painting by
+  right-clicking it with another painting.
 
 Finally for the server-side mods the following ones are focussed on graphical changes.
 
@@ -225,6 +230,8 @@ The following are recommended client-side graphical mods.
   make it more intuitive.
 - "Remove Reloading Screen" is a mod that removes the loading screen and instead display only the
   additional loading bar.
+- "More Heart Types" is a mod that changes the heart style based on the type of damage the player
+  is taking.
 
 The following are recommended client-side audio mods.
 
