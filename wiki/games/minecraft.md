@@ -103,7 +103,7 @@ The following resources have been used to find and select modifications and reso
   Goal of these is a slight change of the vanilla experience.
 
 The first category that will be discussed are the server mods.
-The following changes are recommended to install on the server to improve performance.
+The following changes are recommended to install server-side to improve performance.
 
 - "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk
   management engine.
@@ -117,6 +117,7 @@ The following changes are recommended to install on the server to improve perfor
 - "ModernFix" is a mod that introduces more general optimizations.
 - "Noisium" is a mod that speeds up the world generation function.
 - "spark" is a mod that does not improve performance but enables operators to monitor it.
+- "Chunky" is a mod that adds commands to pregenerate chunks.
 
 After the performance mods have been listed the next mods that will be discussed are focussed on
 gameplay.
@@ -131,6 +132,14 @@ The following changes are recommended to install on the server for gameplay reas
   The key to use can be changed on a per user basis by installing the mod client-side.
 - "Cycle Paintings" is a mod that lets player cycle through the motifs of a painting by
   right-clicking it with another painting.
+- "NetherPortalFix" is a mod that fixes some behaviour for Nether Portals that overlap.
+- "Beautified Chat (Server)" is a mod that changes style and color of the chat.
+- "AfkPlus" is a mod that adds AFK functionality that allows ignoring AFK players in the sleep
+  percentage.
+- "Scaffolding Drops Nearby" is a mod that makes all scaffolding be dropped on the place of the
+  broken scaffolding.
+- "Glowing Eyeblossom" is a mod that makes eyeblossoms glow.
+- "Glowing Torchflower" is a mod that makes torchflowers glow.
 
 Finally for the server-side mods the following ones are focussed on graphical changes.
 
@@ -158,6 +167,7 @@ The following modifications are recommended client-side performance mods.
   Additionally it changes the look of the video options to be more in line with Minecrafts other
   options.
   A similar mod to this is "Reese's Sodium Options".
+- "More Culling" is a mod that introduces more culling.
 
 The following are recommended client-side graphical mods.
 
@@ -232,6 +242,27 @@ The following are recommended client-side graphical mods.
   additional loading bar.
 - "More Heart Types" is a mod that changes the heart style based on the type of damage the player
   is taking.
+- "Endless End Rods" from Vanilla Tweaks is a resource pack that removes the base off of end rods.
+- "Brighter Nether" from Vanilla Tweaks is a resource pack that increases the brightness of the
+  nether blocks.
+- "Variated Villagers" from Vanilla Tweaks is a resource pack that changes the skin of villagers
+  depending on the biome.
+- "Quieter Villagers" from Vanilla Tweaks is a resource pack that sets the volume of villagers
+  much lower.
+- "Clear Banner Patterns" from Vanilla Tweaks is a resource pack that changes the appearance of
+  banner patterns to be more clear.
+- "Music Disc Redstone Level Preview" from Vanilla Tweaks is a resource pack that displays the
+  redstone level of a music disc in game.
+- "Rename 'Stem' to 'Log'" from Vanilla Tweaks is a resource pack that changes the Nether woods to
+  use 'Stem' instead of 'Log'.
+- "Icons" is a ressource pack that adds icons into the menu and game.
+  Additionally "Icons Advertisement Removal" removes the logo of the "Icons" ressource pack.
+- "Hoffen's Minimal Armor" is a ressource pack that minimizes the look of armor.
+- "Vertical Nuggets" is a ressource pack that flips all nuggets to be vertical.
+- "Colorful Canines" is a ressource pack that makes dog armor more colorful.
+- "Colorful Sheared Sheep" is a ressource pack that makes the color of sheep wool visible even
+  after the shearing.
+- "Real Arrrow Tip" is a ressource pack that makes the look of arrows correct ingame.
 
 The following are recommended client-side audio mods.
 
@@ -278,6 +309,9 @@ The following are recommended client-side HUD and other UI modifications
   It is similar to "GUI Perfected" but also includes chests, etc.
 - "Scribble" is a mod that makes editing books easier by adding buttons for color, bold font and
   more.
+- "Chat Patches" is a mod that extends the chat history and adds some more tweaks.
+- "Armor Chroma for Fabric" is a ressource pack that shows the type of armor in the bar.
+- "Colorful Ping" is a ressource pack that shows the ping symbol in color.
 
 The following are possible client-side mods that change the gameplay or give other information in
 the game.
