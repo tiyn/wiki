@@ -249,6 +249,9 @@ The following are recommended client-side graphical mods.
   depending on the biome.
 - "Quieter Villagers" from Vanilla Tweaks is a resource pack that sets the volume of villagers
   much lower.
+- "Quieter Cows" from Vanilla Tweaks is a resource pack that sets the volume of cows much lower.
+- "Quieter chicken" from Vanilla Tweaks is a resource pack that sets the volume of chicken much
+  lower.
 - "Clear Banner Patterns" from Vanilla Tweaks is a resource pack that changes the appearance of
   banner patterns to be more clear.
 - "Music Disc Redstone Level Preview" from Vanilla Tweaks is a resource pack that displays the
