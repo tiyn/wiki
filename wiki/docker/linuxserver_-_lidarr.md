@@ -21,7 +21,7 @@ This namely causes the following line in the
       - /var/lib/docker/volumes/transmission_data/_data/completed:/data/completed #optional
 ```
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -32,7 +32,7 @@ docker-compose file.
 | `PGID`                | group id for container user | `1000`                  |
 | `TZ`                  | specify the timezone        | `Etc/UTC`               |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -41,7 +41,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `config`                  | `/config`         | directory for config              |
 | `complete`                | `/music`          | directory for music               |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -49,7 +49,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ------------ |
 | `8686`         | `8686`                   | TCP      | webUI        |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -58,7 +58,7 @@ docker pull lscr.io/linuxserver/lidarr:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2.1"

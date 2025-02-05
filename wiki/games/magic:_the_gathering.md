@@ -7,6 +7,8 @@ reffered to as Wizards.
 In Magic: The Gathering there are many different formats that are all listed on
 [the official website](https://magic.wizards.com/en/formats).
 Rules can also be found on [Wizards website](https://magic.wizards.com/en/rules).
+MTG is a notoriously complex game and proven to be
+[Turing Complete](https://arxiv.org/pdf/1904.09828.pdf).
 
 ## Playing Online
 
@@ -36,6 +38,9 @@ The first group of websites and apps provide a management interface aswell as a 
 functionality.
 Many of them also feature public decks.
 
+- [Archidekt](https://archidekt.com/) is another popular deck building site.
+  With the option to build commander decks based on a specific commander.
+  It additionally features the display of public decks.
 - [deckbox](https://deckbox.org/) is a very clean deck builder website.
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
 - [Delver Lens](https://www.delverlab.com/) is an [Android](/wiki/android.md) application for
@@ -44,6 +49,9 @@ Many of them also feature public decks.
 - [Dragon Shield MTG Card Manager](https://mtg.dragonshield.com/) is a collection and deck manager
   available both as an apple and [Android](/wiki/android.md) app and as a website.
   It features a card scanner for easy population of the collection
+- [MTG Collection Builder](https://mtgcollectionbuilder.com/) is a website to organize and analyze
+  your magic cards.
+  It was specially made for collectors rather than players.
 - [MTG Desktop Companion](https://www.mtgcompanion.org/) is a collection manager for MTG that
   includes prices, stats and a deck builder, aswell as the option to import and export to most of
   the used MTG deck formats.
@@ -52,17 +60,20 @@ Many of them also feature public decks.
   [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
 - [Moxfield](https://www.moxfield.com/) is a popular deck building site.
   It also displays public decks.
-- [Archidekt](https://archidekt.com/) is another popular deck building site.
-  With the option to build commander decks based on a specific commander.
-  It additionally features the display of public decks.
+  If a deck is entered into Moxfield tokens that are needed to play the deck can be displayed.
+- [MTG CSV Helper](https://stepkie.github.io/MtgCsvHelper/) is a CSV format conversion tool to
+  convert between the different formats used by collection managers.
 
 The second group is about giving resources for building decks.
 This can be done by providing public decks or showing which decks or cards are popular in which
 format.
 
+- [CubeCobra](https://cubecobra.com/explore) is a website that is based around the creation of
+  draft cubes.
+  For booster box alternatives cassete cases can be used.
 - [Tapped Out](https://tappedout.net/) is a website that among other things can suggest decks based
   on owned cards.
-- [MTGGOLDFISH](https://www.mtggoldfish.com/) is a website for different topics regarding MTG.
+- [MTGGoldFish](https://www.mtggoldfish.com/) is a website for different topics regarding MTG.
   It features various decks including budget variants of it.
   Additionally it lists tournaments with decks played which can be a useful resource to understand
   the metagame.
@@ -71,8 +82,16 @@ The following websites provide useful information on cards or rulings of MTG.
 
 - [EDHREC](https://edhrec.com/) is a website that can recommend cards based on an already existing
   commander or improve existing commander decks.
+- [Hyperlinked Magic](https://yawgatog.com/resources/magic-rules/) is a website that features a
+  hyperlinked HTML-version of MTG rules.
 - [Scryfall](https://scryfall.com/) is a website to search and display Magic cards in specific
   printings.
+  Scryfall can query advanced patterns using
+  [their specific syntax](https://scryfall.com/docs/syntax).
+  Among others this site can be used to check for cards that create tokens.
+  An example for this is running a search with the term `o:create o:golem` to find cards that
+  create a golem token.
+  For other advan
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
   the standard format.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
@@ -101,13 +120,23 @@ This group of resources are websites on which MTG cards and supply can be bought
 - [TCGPlayer](https://www.tcgplayer.com) is a trading post for tabletop cards that is used
   world-wide.
 
-The following sites sell MTGO tix and rent cards.
+The following websites can be used to design or obtain images for proxies or print them.
 
-- [Cardhoarder](https://www.cardhoarder.com/) is a MTGO card renting service.
+- [Printers Studio](https://www.printerstudio.de/machen/komplett-individualisierbare-spielkarten-geschenke.html)
+  can be used to print custom proxies.
+- [Card Conjurer](https://cardconjurer.onrender.com/) is a website to design custom MTG-style
+  cards.
+- [MPC Fill](https://mpcfill.com/) can be used to obtain front and back images for non-custom proxy
+  cards.
+
+The following sites sell MTGO tix and sell or rent cards.
+
+- [Cardhoarder](https://www.cardhoarder.com/) is a MTGO card selling site with renting service.
+- [Goatbots](https://www.goatbots.com) is an MTGO website that sells cards and tix.
 - [Mana Traders](https://www.manatraders.com/) is a renting service for MTGO cards, aswell as a way
   to buy tix.
 
-Lastly [decklist.org](https://decklist.org/) can be used to neatly print out decklists.
+Lastly [decklist.org](https://decklist.org/) can be used to neatly print out deck lists.
 
 ## Deck Building
 
@@ -115,7 +144,7 @@ A central part of MTG is the composition of cards to a deck.
 This section addresses the act of building a deck and important topics regarding deck composition.
 Starting with the general topics of deck building this section will then split into multiple
 subsections for building decks of different deck size.
-This following general part is mainly based on a
+This following general part is mainly based on a [YouTube](/wiki/youtube.md)
 [video by Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
 
 It is generally recommended to stick with the minimum number of allowed cards in a format for a
@@ -175,14 +204,18 @@ Sometimes it can be useful to increase the mana color of cards that are needed v
 game to ensure they can be played.
 In non-mono decks double lands are useful but their restrictions they come with should be noted.
 Approximately 1/3 of a deck should be reserved for land cards.
+A guide for a budget mana base in the modern format was written by
+[SaffronOlive on MTGGoldFish](https://www.mtggoldfish.com/articles/brewer-s-minute-building-a-budget-mana-base-in-modern).
 
-### Building a 60 Card Deck
+For many archetypes of decks in most formats there are staples.
+Staples are cards of a given color or type that are generally considered good in a deck.
 
-This section will focus on the building of a 60 card deck.
+### Tipps on Building a Modern, Pauper or Standard Deck
+
+This section will focus on the building of a 60 card modern, pauper or standard deck.
 60 cards per deck is the minimum requirement for most formats like standard, modern and more.
-For 100 card decks navigate to the [following section](#building-a-100-card-deck)
-This section is also mainly based on a
-[video by german YouTuber Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
+This section is also mainly based on a [YouTube](/wiki/youtube.md)
+[video by Pompeius IIb.](https://www.youtube.com/watch?v=a37dLTiV58o).
 
 All tipps that are in the [above section](#deck-building) are to be considered in this section too.
 
@@ -192,22 +225,23 @@ As a rule of thumb the number of lands in a 60 card deck should be around
 It is recommended to use playsets (4 cards) of cards or use multiple cards that are similar to
 reduce the possibilities of draws.
 
-### Building a 100 Card Deck
+### Tipps on Building a Commander Deck
 
-This section will focus on the building of a 100 card deck.
+This section will focus on the building of a 100 card commander deck.
 100 cards per deck is most notably the minimum requirement for the commander format.
 Therefor this section will mostly focus on commander
-For 60 card decks navigate to the [previous section](#building-a-60-card-deck)
 
 All tipps that are in the [above section](#deck-building) are to be considered in this section too.
 
 For commander decks it is also important to select a commander to build the deck around.
 Selecting the commander should be done in a step before choosing the strategy.
 
-There are four main templates to build a commander.
+There are five main templates to build a commander.
 The first three templates are fairly similar and will be explained as one in the
 [following section](#9x7-8x8-and-7x9-deck-templates).
 The last in the [section thereafter](#the-command-zone-deck-template).
+The last template is based on an article by
+[Tomer Abramovici on MTGGoldFish](https://www.mtggoldfish.com/articles/the-power-of-a-deckbuilding-checklist-commander-quickie).
 
 #### 9x7, 8x8 and 7x9 Deck Templates
 
@@ -250,7 +284,8 @@ categories with 5 cards are considered to make 1 card of that category appear in
 
 #### The Command Zone Deck Template
 
-The fourth template is a template made by [Command Zone](https://www.youtube.com/@commandcast).
+The fourth template is a template made by the [YouTube](/wiki/youtube.md) channel named
+[Command Zone](https://www.youtube.com/@commandcast).
 This section is therefore based on the corresponding
 [video by Command Zone](https://www.youtube.com/watch?v=3K9PEeLG_6M).
 

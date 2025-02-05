@@ -17,3 +17,6 @@ The software can be setup via [Docker](/wiki/docker.md) with the
 It is possible to use many different clients because the server is compatible
 with all the Subsonic clients.
 These can be found in the [Subsonic entry](./subsonic.md#clients).
+
+Additionally to these clients there is an improved web user interface made by tamland called
+[airsonic-refix](https://github.com/tamland/airsonic-refix).

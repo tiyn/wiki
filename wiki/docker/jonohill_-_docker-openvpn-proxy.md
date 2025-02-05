@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -18,7 +18,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------------ |
 | `ovpn-proxy`              | `/config`       | storage for openvpn data |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -26,7 +26,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------ |
 | `9050`         | `8080`                   | HTTP     | proxy port   |
 
-## Environment-Variables
+### Environment-Variables
 
 Set the following variables with the -e tag.
 
@@ -36,7 +36,7 @@ Set the following variables with the -e tag.
 | `OPENVPN_USERNAME`  | username for OpenVPN        | ` `     |
 | `OPENVPN_PASSWORD`  | password for OpenVPN        | ` `     |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -46,7 +46,7 @@ There are some special variables to set.
 | `--device`  | connect devices        |
 | `--sysctl`  | configure systemctl    |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

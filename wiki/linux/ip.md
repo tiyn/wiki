@@ -28,10 +28,10 @@ Disabling works accordingly by running:
 ip link set wlan0 down
 ```
 
-### Get Outside IP
+### Get Outside IP Address
 
 For VPN and other applications using a tunnel it can be useful to check the
-outside IP of your system.
+outside [IP address](/wiki/ip_address.md) of your system.
 The following command uses the `dig` command.
 It is either bundled in the `dig` package - like in
 [Arch Linux](/wiki/linux/arch-linux.md) - or in the `dnsutils`

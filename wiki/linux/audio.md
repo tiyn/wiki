@@ -34,3 +34,11 @@ With additional software it can also be used to control audio/music by pressing
 hotkeys.
 This is explained in the
 [PlayerCTL entry](/wiki/linux/playerctl.md#using-hotkeys).
+
+## Sound Board
+
+There are various available software solutions for sound boards.
+One option is [CasterSoundboard](https://github.com/JupiterBroadcasting/CasterSoundboard).
+Another is the cue player
+[Linux Show Player](https://linux-show-player-users.readthedocs.io/en/latest/index.html) which
+should be installed using [flatpak](/wiki/linux/flatpak.md) (`org.linuxshowplayer.LinuxShowPlayer`).

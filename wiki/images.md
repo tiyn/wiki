@@ -2,11 +2,13 @@
 
 An image is a visual representation of something.
 In the computer context it is a file with an extension like `png`, `jpg`, `gif` among others.
+This entry also features medicinal image and visual formats such as DICOM.
 
 ## Clients
 
 - [sxiv](https://github.com/xyb3rt/sxiv) is an image viewer for [Linux'](/wiki/linux.md)
   [X window system](/wiki/linux/x_window_system.md).
+- [Weasis](https://github.com/nroduit/Weasis) is a cross-platform DICOM viewer.
 
 ## Editing
 

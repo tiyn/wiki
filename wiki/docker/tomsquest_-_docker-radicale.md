@@ -14,7 +14,7 @@ Create a volume with the name `radicale_config`.
 Then create the `config` file in the volume `radicale_config`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -23,7 +23,7 @@ Set the following volumes with the -v tag.
 | `radicale_data`           | `/data`         | storage for caldav          |
 | `radicale_config`         | `/config`       | storage for radicale config |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -31,7 +31,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ------------- |
 | `5232`         | `5232`                   | TCP      | WebUI, caldav |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -39,7 +39,7 @@ There are some special variables to set.
 | ------------- | ---------------------------------------------------------------------- |
 | `--read-only` | make radicale read-only, caldav can still be changed and used normally |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #/bin/sh
@@ -55,7 +55,7 @@ docker run --name radicale \
     -d tomsquest/docker-radicale:2.1.11.4
 ```
 
-## radicale\_config/\_data/config
+### radicale\_config/\_data/config
 
 ```txt
 # -*- mode: conf -*-

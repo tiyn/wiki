@@ -10,7 +10,7 @@ The container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -24,7 +24,7 @@ Set the following variables with the -e tag.
 | `ICON`        | Link the Icon of the Server                                    |                                              |
 | `MOTD`        | Set the Message of the day                                     | "A Paper Minecraft Server powered by Docker" |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -32,7 +32,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------------------ |
 | `minecraft`               | `/data`         | location for all relevant data |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -40,7 +40,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | --------- | ------------------ |
 | `25565`        | `25565`                  | Minecraft | Port for Minecraft |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -60,3 +60,25 @@ docker run --name minecraft \
     -e MOTD="Message of the day" \
     -d itzg/minecraft-server
 ```
+
+## Usage
+
+This section addresses the usage of the minecraft-server container.
+
+### Installing Mods
+
+Mods can be installed as described in the
+[corresponding article of the official documentation](https://github.com/itzg/docker-minecraft-server/blob/master/docs/mods-and-plugins/index.md).
+For this set the server type by using the `-e TYPE=<type>` flag.
+`<type>` is the API that is used as the core library.
+Most notably this value could be `FABRIC` or `FORGE`.
+After this the mods (as `.jar` files) can be placed in the `mods` directory of the
+[Docker](/wiki/docker.md) volume.
+Afterwards run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded mods.
+
+#### Installing Datapacks
+
+The installation of datapacks is done similar to the described process in the
+[corresponding section of the minecraft entry](/wiki/games/minecraft.md#installing-datapacks).
+The only difference is the path to place the `.zip` datapack files in which is `world/datapacks` in
+case of this [Docker](/wiki/docker.md) image.

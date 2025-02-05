@@ -8,7 +8,7 @@ The official container and documentation was made by [oznu](https://hub.docker.c
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -17,7 +17,7 @@ Set the following variables with the -e tag.
 | `PUID` | UserID  |         |
 | `PGID` | GroupID |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -26,7 +26,7 @@ Set the following volumes with the -v tag.
 | `onedrive_config`         | `/config`       | configuration storage for the server connection |
 | `onedrive_doc`            | `/documents`    | storage for downloaded documents                |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -18,7 +18,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------------------- |
 | `homeassistant_data`      | `/config`       | configuration for devices, etc  |
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -27,12 +27,12 @@ docker-compose file.
 | --------------------- | --------------------------- | ----------------------- |
 | `TZ`                  | specify the timezone        | ``                      |
 
-## Additional
+### Additional
 
 The container needs acces to the host network.
 This will at the same time expose port 8123 as web interface.
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 docker run --name homeassistant \

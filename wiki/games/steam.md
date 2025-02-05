@@ -62,6 +62,8 @@ work with [SGDBoop](https://www.steamgriddb.com/boop) for the game.
 The [Steam Cloud](https://partner.steamgames.com/doc/features/cloud) allows
 games and the platform to utilize cloud storage hosted by Steam.
 Games can use this to store data including game settings and saves.
+The data stored this way can be accessed on the
+[corresponding website](https://store.steampowered.com/account/remotestorage).
 
 Games can also be synchronized without the Steam Cloud by using [Syncthing](/wiki/syncthing.md) as
 described in [the games entry](/wiki/games.md#syncing-game-saves-across-systems).

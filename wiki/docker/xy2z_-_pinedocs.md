@@ -9,7 +9,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -17,7 +17,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | -------------------- |
 | `pinedocs`                | `/data`         | storage for pinedocs |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -25,7 +25,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

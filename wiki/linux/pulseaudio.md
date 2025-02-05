@@ -6,8 +6,10 @@
 
 ## Usage
 
+This section will discuss the usage of PulseAudio.
+
 ### Mixing
 
 For simple sound processing in the form of volume adjustment as well as setting
-the default input and output devices `pavucontrol` can be used as a simple
-mixer.
+the default input and output devices [`pavucontrol`](/wiki/linux/pipewire.md#mixing) can be
+used as a simple mixer.

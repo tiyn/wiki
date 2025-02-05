@@ -10,7 +10,7 @@ subcontainers - and one a [redis instance](/wiki/docker/redis.md).
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -22,7 +22,7 @@ docker-compose file.
 | `GRAMPSWEB_CELERY_CONFIG__result_backend` | Redis backend URL                    | ``      |
 | `GRAMPSWEB_RATELIMIT_STORAGE_URI`         | Storage URI                          | ``      |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -37,7 +37,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `gramps_media`            | `/app/media`             | storage for media           |
 | `gramps_tmp`              | `/tmp`                   | storage for temporary files |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -45,7 +45,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `5000`         | `80`                     | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -55,7 +55,7 @@ docker pull redis:alpine
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3"

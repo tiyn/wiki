@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -19,7 +19,7 @@ Set the following volumes with the -v tag.
 | `searx_etc`               | `/etc/searx`     | storage for etc  |
 | `searx_log`               | `/var/log/uwsgi` | storage for logs |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -27,7 +27,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -35,7 +35,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```sh
 version: "2.1"

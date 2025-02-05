@@ -24,7 +24,7 @@ This configuration includes the setup of different types of tuners.
 
 Using a Fritzbox as the router the build in SAT>IP tuner can be used.
 For this `--satip_xml http://192.168.178.1:49000/satipdesc.xml` needs to be
-added as a run option with the IP address matching the one of your Fritzbox.
+added as a run option with the [IP address](/wiki/ip_address.md) matching the one of your Fritzbox.
 
 For multiple tuners to work the hosting system has to have multiple IP addresses
 as only one address can be bound to one tuner at the time.
@@ -71,7 +71,7 @@ Select them one-by-one, check `Enabled`, select your just set up network in
 `Networks` aswell as `DVB-C` as the network type.
 Set `Next tune delay in ms (0-2000)` to `200` and select `On` for
 `Pass specinv`.
-Then put in one of the IP addresses added to your system in the previous step
+Then put in one of the [IP addresses](/wiki/ip_address.md) added to your system in the previous step
 under `Tuner bind IP address`.
 Then click `Save`.
 

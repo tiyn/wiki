@@ -14,15 +14,19 @@ This setup guide follows a modified version of the
 Furthermore this guide will assume you already have a
 [traefik v2.4](./traefik.md) instance setup as described in the
 [traefik docker image article](./docker/traefik.md).
+The Matrix server created by this article will be able to use federation, VoIP using the
+[TURN/STUN protocoll from a self-hosted server](#coturn), screen share and video telephony using
+jitsi, [a web client using a self-hosted Element server](#element-web-client) and an
+[administration interface thats also self-hosted](#administration-interface).
 
-### DNS records
+### DNS Records
 
 You will need to create some [DNS](./dns.md) entries in order for synapse to
 function correctly.
 Additionally you will need 2 subdomains (this guide will assume you use the
 domain `example.com` with the subdomains `matrix` and `synapse`).
 
-Create the following DNS records:
+Create the following DNS records.
 
 ```txt
 example.com.        A      <ip of your server>
@@ -37,7 +41,7 @@ The docker-image used for the synapse matrix server can be found in the
 [docker-image directory](./docker/matrixdotorg_-_synapse.md).
 Create the `docker-compose.yml` file at a location of your choice (this guide
 will assume and recommend the file lies in a directory called matrix) with the
-following contents:
+following contents.
 
 ```yml
 version: "3.4"
@@ -71,11 +75,14 @@ volumes:
     driver: local
 ```
 
-Now manually create the synapse volume you referenced in this file by running:
-`docker volume create matrix_synapse`
+Now manually create the synapse volume you referenced in this file by running.
+
+```txt
+docker volume create matrix_synapse
+```
 
 After that you will need to create the basic configuration files for synapse by
-running:
+running.
 
 ```bash
 docker run -it --rm \
@@ -88,10 +95,13 @@ docker run -it --rm \
 ```
 
 If you want to enable/disable registration go to the `homeserver.yaml`
-and add the following line either set to `true` or `false`:
-`enable_registration: true`.
+and add the following line either set to `true` or `false`.
 
-Additionally create the following lines:
+```txt
+enable_registration: true
+```
+
+Additionally create the following lines.
 
 ```
 federation_ip_range_blacklist:
@@ -126,7 +136,7 @@ The docker-image used for the nginx instance can be found in the
 [docker-image directory](./docker/nginx.md).
 For federation to work properly an nginx container is needed aswell.
 In the directory containing your `docker-compose.yml` create the file
-`data/matrix/nginx/matrix.conf` and fill in the following lines:
+`data/matrix/nginx/matrix.conf` and fill in the following lines.
 
 ```txt
 server {
@@ -149,7 +159,7 @@ server {
 ```
 
 Create the file `data/matrix/nginx/www/.well-known/matrix/client` and set the
-contents as follows:
+contents as follows.
 
 ```json
 {
@@ -160,7 +170,7 @@ contents as follows:
 ```
 
 Create the file `data/matrix/nginx/www/.well-known/matrix/server` and set the
-contents as follows:
+contents as follows.
 
 ```json
 {
@@ -169,7 +179,7 @@ contents as follows:
 ```
 
 After that add the following lines in the `service` section in your
-`docker-compse.yml`:
+`docker-compse.yml`.
 
 ```yml
 nginx:
@@ -204,21 +214,21 @@ You should see a green sign that indicates success.
 If one of these does not work (but synapse works) your nginx configuration is
 not correctly set up.
 
-### Element web client
+### Element Web Client
 
 The docker-image used for the web client can be found in the
 [docker-image directory](./docker/vectorim_-_riot-web.md).
 This section will add a self hosted Matrix web client in form of `Element`
 (which was previously called `riot`).
 
-First you will need to create another DNS record:
+First you will need to create another DNS record.
 
 ```txt
 chat.            A      <ip of your server>
 ```
 
 In the directory containing your `docker-compose.yml` file create the file
-`data/matrix/element/config.json` with the contents as follows:
+`data/matrix/element/config.json` with the contents as follows.
 
 ```json
 {
@@ -288,7 +298,7 @@ In the directory containing your `docker-compose.yml` file create the file
 ```
 
 After that add the following lines to your `docker-compose.yml` in the `service`
-section:
+section.
 
 ```yml
   element:
@@ -307,8 +317,11 @@ section:
 ```
 
 Add the following line to the `homeserver.yaml` of the synapse server to
-indicate your element domain:
-`web_client_location: https://chat.example.com`.
+indicate your element domain.
+
+```txt
+web_client_location: https://chat.example.com
+```
 
 Start the container.
 You should now be able to navigate to `https://chat.example.com` where you are
@@ -316,7 +329,7 @@ prompted with a log in window.
 If you already created an account you should be able to log in.
 If any of that is not working there is something wrong with your configuration.
 
-### Administration interface
+### Administration Interface
 
 The docker-image used for the administration interface can be found in the
 [docker-image directory](./docker/awesometechnologies_-_synapse-admin.md).
@@ -324,13 +337,13 @@ This section will add a self hosted Matrix administration interface.
 This is especially useful if you have `enable_registration` set to `false`
 because you can dynamically create and administrate users and rooms.
 
-First you will need to create another DNS record:
+First you will need to create another DNS record.
 
 ```txt
 matrixadmin.            A      <ip of your server>
 ```
 
-Add the following lines in the `service` section to your `docker-compose.yml`:
+Add the following lines in the `service` section to your `docker-compose.yml`.
 
 ```yml
   synapse-admin:
@@ -350,3 +363,68 @@ Start the container.
 After that you should be able to navigate to `https://matrixadmin.example.com`
 and log into the interface with your administration account.
 Your `Homeserver URL` in that case is `https://synapse.example.com`.
+
+### Coturn
+
+The docker-image used for the TURN/STUN Server can be found in the
+[docker-image directory](./docker/coturn_-_coturn.md).
+This section will add a self hosted TURN/STUN VoIP server.
+
+In the directory containing your `docker-compose.yml` create the file
+`data/matrix/coturn/turnserver.conf` and fill in the following lines.
+
+```txt
+use-auth-secret
+static-auth-secret=SomeSecretPasswordForMatrix
+realm=matrix.example.com
+listening-port=3478
+tls-listening-port=5349
+min-port=49160
+max-port=49200
+verbose
+allow-loopback-peers
+cli-password=SomePasswordForCLI
+external-ip=192.168.0.2/123.123.123.123
+```
+
+Make sure to change the values for `static-auth-secret`, `realm`, `cli-password` and `external-ip`.
+For the passwords [OpenSSL](/wiki/linux/openssl.md#password-generator) can be used to create a
+sufficiently random password.
+The value of `external-ip` consists of the local IP (left side) and the public IP (right side).
+To get the local IP the command `ip route get 1` can be used.
+For the public IP the command `curl api.ipify.org` can be used.
+
+Then navigate to the `homeserver.yaml` inside the [Synapse volume](#synapse).
+Add the following lines.
+
+```txt
+turn_uris:
+  - "turn:matrix.example.com:3478?transport=udp"
+  - "turn:matrix.example.com:3478?transport=tcp"
+  - "turns:matrix.example.com:3478?transport=udp"
+  - "turns:matrix.example.com:3478?transport=tcp"
+
+turn_shared_secret: "SomeSecretPasswordForMatrix"
+turn_user_lifetime: 86400000
+turn_allow_guests: True
+```
+
+Change `matrix.example.com` to match the value of `realm` in `data/matrix/coturn/turnserver.conf`.
+Do the same for `turn_shared_secret` with the value of `static-auth-secret` in
+`data/matrix/coturn/turnserver.conf`.
+
+Finally add the following lines in the `service` section to your `docker-compose.yml`.
+
+```yml
+  coturn:
+    image: "instrumentisto/coturn:latest"
+    restart: "unless-stopped"
+    volumes:
+      - "./data/matrix/coturn/turnserver.conf:/etc/coturn/turnserver.conf"
+    ports:
+      - "49160-49200:49160-49200/udp"
+      - "3478:3478"
+      - "5349:5349"
+```
+
+Afterwards if not done already restart the Matrix server and all its services.

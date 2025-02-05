@@ -8,7 +8,7 @@ linux system via YAML files.
 ### Add more IP addresses to a system
 
 In the file `/etc/netplan/50-cloud-init.yaml` create an `addresses:` section
-for a device (for example an ethernet device) and list the IP addresses you
+for a device (for example an ethernet device) and list the [IP addresses](/wiki/ip_address.md) you
 want to add to the system to it.
 It has to be noted, that the added addresses should be outside of the DHCP
 range of your router.

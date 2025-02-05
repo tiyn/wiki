@@ -11,6 +11,8 @@ from the [AUR](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay).
 
 ## Usage
 
+The following section describes various ways of usage of 7-zip.
+
 ### Compressing and Uncompressing a Directory
 
 For directories to be compressed the Lempel–Ziv–Markov chain algorithm is recommended.

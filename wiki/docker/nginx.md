@@ -11,7 +11,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -19,7 +19,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | -------------------- | --------------------------- |
 | `nginx`                   | `/etc/nginx/conf.d/` | directory for nginx configs |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -28,7 +28,7 @@ Set the following ports in the `ports:` section.
 | `80`           | `80`                     | TCP      | http port   |
 | `443`          | `443`                    | TCP      | https port  |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -37,7 +37,7 @@ docker pull nginx:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2"

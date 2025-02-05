@@ -22,6 +22,20 @@ Furthermore [Gameyfin](/wiki/games/gameyfin.md) is a game manager that can be ea
 through a web interface.
 Games can then be downloaded from the website.
 
+## Selection of Cross Platform Games
+
+Some online and mostly multiplayer games can be played via the [web browser](/wiki/web_browser.md).
+A notable amount of this group of games uses the top-level domain `.io`.
+Some examples for these are [territorial.io](https://territorial.io/) and
+[slither.io](http://slither.io/).
+
+Another online game is [Massive Decks](/wiki/massivedecks.md) which is the online take on a similar
+popular tabletop game.
+
+For Windows there is the popular old-school pinball game 3d Pinball Space Cadet.
+This game has been [reverse engineered and ported](https://github.com/k4zmu2a/SpaceCadetPinball) to
+various platforms and operating systems.
+
 ## Syncing Game Saves Across Systems
 
 By using [Syncthing](../syncthing.md) game saves can be synchronized.

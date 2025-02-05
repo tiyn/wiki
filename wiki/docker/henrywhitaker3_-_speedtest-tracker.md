@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -19,7 +19,7 @@ Set the following variables with the -e tag.
 | `OOKLA_EULA_GDPR` | set to `true` to accept EULA  |         |
 | `AUTH`            | set to `true` to enable login |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -27,7 +27,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | --------------- | ------------------ |
 | `speedtest`               | `/config`       | storage for config |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -35,7 +35,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `8765`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

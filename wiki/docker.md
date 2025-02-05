@@ -5,7 +5,7 @@ Due to easy handling and reproducable environments it is a useful tool.
 
 ## Setup
 
-- Arch linux: run `pacman -S docker` to install docker
+- [Arch Linux](/wiki/linux/arch-linux.md): run `pacman -S docker` to install docker
 - Ubuntu: visit [the official installation guide](https://docs.docker.com/engine/install/ubuntu/)
 
 Another possibility is to try the official convenience script.
@@ -18,6 +18,14 @@ sudo sh get-docker.sh
 ```
 
 ## Usage
+
+This section addresses various features of Docker.
+
+### virtualize Operating Systems
+
+Docker is a tool that can be used to virtualize different programs and softwares.
+Especially for containerizing and virtualizing operating systems (mostly based on
+[Linux](/wiki/linux.md)) can be handled by [distrobox](https://github.com/89luca89/distrobox).
 
 ### Run Docker as non-root user
 
@@ -32,7 +40,7 @@ After that relog into your machine and you should be able to run
 The programs below are useful docker-management systems in different style.
 
 - [ctop](https://github.com/bcicen/ctop): top-like cli interface for containers
-- [portainer](./docker/portainer.md): web ui for managing docker and kubernetes
+- [portainer](https://www.portainer.io/): web ui for managing docker and kubernetes
 
 ### Enable Nvidia GPUs
 
@@ -57,7 +65,7 @@ publish ports to reverse proxy them.
 ### Dockerize a graphical application
 
 A graphical application can easily be dockerized and made available over both
-the [web browser](/wiki/browser.md) or [VNC](/wiki/vnc.md).
+the [web browser](/wiki/web_browser.md) or [VNC](/wiki/vnc.md).
 For this
 [jlesages baseimage-gui container](https://hub.docker.com/r/jlesage/baseimage-gui)
 can be used.

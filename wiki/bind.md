@@ -95,7 +95,7 @@ $TTL 1D
 
 
 To make the server you operate on the nameserver select a subdomain for it and
-subsitute `<servername>` for it and its IP address `<ip of server>`.
+subsitute `<servername>` for it and its [IP address](/wiki/ip_address.md) `<ip of server>`.
 The following uses a filled in example with multiple subdomains.
 It uses CNAME records as a placeholder for the ip.
 In the last section the domain itself `home.server` is mapped to the ip

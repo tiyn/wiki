@@ -59,3 +59,12 @@ For Teamspeak3 on [Linux](/wiki/linux.md) systems this folder can be found at
 `/opt/teamspeak3/sound`.
 For Teamspeak5 on Linux the folder is available at `/opt/teamspeak/html/client_ui/sound`.
 Following this the sound pack is available after the next (re-)start of teamspeak.
+
+### Setting Up a Music Bot
+
+For Teamspeak there are various bots capable of playing music.
+The following is a list of bots featured in this wiki that can do this.
+
+- [Sinusbot](/wiki/sinusbot.md) is a self-hosted bot for Teamspeak that can play music and sounds. 
+  It's closed-source and free of charge.
+  It also features [Discord](/wiki/discord.md) support.

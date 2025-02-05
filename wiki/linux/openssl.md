@@ -25,3 +25,13 @@ where `plaintext.txt` is the message to encrypt and `encrypted.txt` is the
 encrypted message.
 You can decrypt the message using the private key `private.key` as follows
 `openssl rsautl -decrypt -inkey private.key -in encrypted.txt -out plaintext.txt`.
+
+### Password Generator
+
+OpenSSL can be used to create a password.
+For this use the following command.
+It will create a hexadecimal password with 32 characters.
+
+```ssh
+openssl rand -hex 32
+```

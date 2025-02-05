@@ -26,6 +26,12 @@ This section addresses various different functions by and actions that can be
 taken with shell commands.
 The focus is mostly on POSIX-compliant shells and scripts that are compatible with POSIX.
 
+A helpful resource for shell scripts is
+[the pure sh bible](https://github.com/dylanaraps/pure-sh-bible).
+There are similar repositories and resources for functions that are outside the scope of POSIX
+shells.
+Because of that and their issue regarding compatibility they will not be mentioned here.
+
 ### Symbolic Links using `ln`
 
 `ln` is a command to create links between files and folders.

@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment variables
+### Environment variables
 
 Set the following variables with the -e tag.
 
@@ -20,7 +20,7 @@ Set the following variables with the -e tag.
 | `ZONE=`       | append your domain (for example `main.com`)            |
 | `SUBDOMAIN`   | append your subdomain (for example `dynamic`)          |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

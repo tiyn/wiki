@@ -10,14 +10,80 @@ Podcasts need a so called Podcatcher.
 A Podcatcher is used to subscribe to podcasts and download them automatically.
 For Linux specific music software navigate to the corresponding
 [wiki entry](/wiki/linux/audio.md).
-For voice based communication navigate to the [Communication article](/wiki/communication.md) and
+For voice based communication navigate to the [communication article](/wiki/communication.md) and
 the corresponding [VoIP section](/wiki/communication.md#voip).
+For headphones navigate to the [headphones article](/wiki/headphones.md):
+
+## Technical Specifications
+
+This section aswell as its subsections address all technical things about audio, like connections,
+cables and devices.
+The most frequently used audio formats are also addressed.
+
+### Balanced & Unbalanced Audio
+
+Unbalanced audio uses a wire for the positive signal for audio transmission and one for ground.
+This is the most frequently used type of cable bound audio transmission.
+Usually they are connected with jack connections like 3.5mm and 6.25mm.
+
+Balanced audio uses one wire for the positive signal, one for negative and another one for the
+ground.
+Due to this extra cable a balanced connection can cancel out noise that entered the cable and
+affected both the positive and the negative signal.
+Balanced uses connectors like 4-pin XLR aswell as 2.5mm and 4.4mm jacks
+
+### Audio Formats and Encoding
+
+An audio format is an encoding of an audio file.
+There are lossy and lossless formats, the latter not compromising quality for
+smaller file sizes.
+Following is a list of often used formats:
+
+- wav is an uncompressed lossless format
+- aiff is an uncompressed lossless format
+- [flac](./flac_(codec).md) is a compressed lossless format
+- alac is a compressed lossless format
+- ape is a compressed lossless format
+- mp3 is a compressed lossy codec
+- aac is a compressed lossy codec
+- wma is a compressed lossy codec
+- ac3 is a compressed lossy codec usually found in DVDs
+- dts is a compressed lossy codec usually found in DVDs
+
+Music files can either be encoded lossy or lossless.
+Lossless formats can be converted from and to each other without loosing
+information.
+Lossless formats can also be converted to lossy formats to make the files
+smaller and save space.
+Files should not be converted to lossy formats more than once.
+Additionally lossy formats should not be converted to lossless formats as it
+increases the file size without adding any audio information.
+These not recommended conversions are called bad conversions.
+
+### Cue Files
+
+`.cue` files act as a table of contents for a CD rip.
+These can be created when the
+[audio of a CD is extracted](#extract-audio-files-from-cds).
+Usually this appears together with a single file for the whole CD.
+The audio file can then be split according to the `.cue` file.
+For splitting of `.flac` files on a Linux system check the
+[a flac (package) entry](/wiki/linux/flac_(package).md#splitting-flac-file-according-to-cue-file)
+for further informations.
 
 ## Media Software
 
 If you want to keep your system clean of much data, you can use this kind of
 setup.
 There are differences depending on your preffered software interface.
+
+### Digital Audio Workstations
+
+Digital Audio Workstations - short DAWs - is an application that can be used to record, edit or
+produce audio files.
+
+- [LMMS](https://lmms.io/) is a free and cross-platform DAW that is highly compatible with
+  [Linux-based systems](/wiki/linux.md).
 
 ### Software for Music/Podcasts/Audiobooks
 
@@ -40,37 +106,24 @@ The corresponding client software is handled in the server softwares wiki entry.
   It is self-hostable and can be dockerized.
   It has a web-interface and does not feature client software.
 
-## Audio Formats
+#### Obtaining Audio Files from Different Services
 
-An audio format is an encoding of an audio file.
-There are lossy and lossless formats, the latter not compromising quality for
-smaller file sizes.
-Following is a list of often used formats:
+[YouTube](/wiki/youtube.md) features a wide variety of uploaded music and audiobooks.
+Using programs like [yt-dl](/wiki/youtube.md#downloading-youtube-videos) they can be downloaded.
 
-- wav is an uncompressed lossless format
-- aiff is an uncompressed lossless format
-- [flac](./flac_(codec).md) is a compressed lossless format
-- alac is a compressed lossless format
-- ape is a compressed lossless format
-- mp3 is a compressed lossy codec
-- aac is a compressed lossy codec
-- wma is a compressed lossy codec
-- ac3 is a compressed lossy codec usually found in DVDs
-- dts is a compressed lossy codec usually found in DVDs
+[Audible](https://www.audible.de/) is a popular service that makes sells audibooks.
+After purchasing an audiobook it can be downloaded directly from Audible after navigating to the
+`Library` tab and selecting `Download`.
+Another option is to use [OpenAudible](/wiki/openaudible.md).
+This program features various functions to manage Audible audiobooks that include download,
+converting and splitting.
 
-### Lossy and Lossless Formats and Their Conversion
+## Digitalizing and Analyzing Physical Mediums
 
-Music files can either be encoded lossy or lossless.
-Lossless formats can be converted from and to each other without loosing
-information.
-Lossless formats can also be converted to lossy formats to make the files
-smaller and save space.
-Files should not be converted to lossy formats more than once.
-Additionally lossy formats should not be converted to lossless formats as it
-increases the file size without adding any audio information.
-These not recommended conversions are called bad conversions.
+This section focusses on physical audio mediums like CDs, their digitalization to a digital audio
+file of [specific format](#audio-formats-and-encoding) and conversions between them.
 
-#### Detect Bad Conversions
+### Detect Bad Conversions
 
 The bitrate, format and the sample rate can be usually checked with simple
 tools.
@@ -78,7 +131,7 @@ For Linux a simple software solution for this is the `file` command.
 Running it will display these features of a given audio file.
 This will however only display the format features.
 Bad convserions as described in
-[the previous section](#lossy-and-lossless-formats-and-their-conversion) can not
+[the previous section](#audio-formats-and-encoding) can not
 be detected by this.
 A spectral analysis can detect bad conversions.
 For this a audio analyzer like
@@ -91,7 +144,7 @@ If the frequency extends up to at least 22kHz the file is lossless for sure.
 If the frequency is cut before and the file is encoded in a lossless file it has
 undergone a bad conversion and is not really lossless.
 
-## Extract Audio Files from CDs
+### Extract Audio Files from CDs
 
 You can convert your CDs to files on your computer.
 This way you don't have to search for your CDs all the time.
@@ -106,20 +159,20 @@ This way you don't have to search for your CDs all the time.
 - [MusicBrainz Picard](./picard.md) for linux is a
   graphical user interface for tagging files of many different formats.
 
-## Analysis of Different Versions of an Album
+### Analysis of Different Versions of an Album
 
 While deciding on what version of an album is the best visit
 [Dynamic Range DB](https://dr.loudness-war.info).
 It shows dynamic range scorings of each version.
 
-## Get Additional Data to an Album/Single
+### Get Additional Data to an Album/Single
 
 If additional information for an album is needed, visit
 [Discogs](https://www.discogs.com).
 Discogs has tracklists, dates and more information to nearly all versions of
 albums and singles.
 
-## Naming Convention
+### Naming Convention
 
 It is suggested to place the audio files in a directory named after the album they
 belong to.
@@ -129,18 +182,7 @@ Files can be named in the following scheme:
 - music: `[<discnumber>.]<tracknumber>._<artist>_-_<title>`
 - audiobooks: `[<discnumber>.]<tracknumber>._<artist>_-_<album>_<tracknumber>`
 
-## Cue Files
-
-`.cue` files act as a table of contents for a CD rip.
-These can be created when the
-[audio of a CD is extracted](#extract-audio-files-from-cds).
-Usually this appears together with a single file for the whole CD.
-The audio file can then be split according to the `.cue` file.
-For splitting of `.flac` files on a Linux system check the
-[a flac (package) entry](/wiki/linux/flac_(package).md#splitting-flac-file-according-to-cue-file)
-for further informations.
-
-## Scoring Music
+### Scoring Music
 
 Scoring music has moved more and more into the computer realm.
 An easy and intuitive software that can be used for this is

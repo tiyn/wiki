@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following variables with the -e tag.
 
@@ -18,7 +18,7 @@ Set the following variables with the -e tag.
 | ------------------- | ---------------------------- | ------- |
 | `TS3SERVER_LICENSE` | accept the license agreement |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -26,7 +26,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | ---------------- | --------------------------- |
 | `teamspeak3`              | `/var/ts3server` | storage for ts3-server data |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -36,7 +36,7 @@ Set the following ports with the -p tag.
 | `10011`        | `10011`                  | TCP      | ts3-intern  |
 | `30033`        | `30033`                  | TCP      | ts3-intern  |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

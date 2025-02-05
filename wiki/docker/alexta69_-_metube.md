@@ -11,7 +11,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -19,7 +19,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | ------------------------- | --------------- | ------------------------------------ |
 | `downloads`               | `/downloads`    | folder to download data to           |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -27,7 +27,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8881`         | `8081`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -36,7 +36,7 @@ docker pull vim alexta69/metube
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3"

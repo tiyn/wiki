@@ -13,7 +13,7 @@ Place the files `data/traefik.yml` and `data/config/dynamic.yml` in the
 according directories.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -25,7 +25,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `./data/acme.json`        | `/acme.json`              | place to store certificates for https   |
 | `./data/config`           | `/configurations`         | place for dynamically changable configs |
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -34,7 +34,7 @@ Set the following ports in the `ports:` section.
 | `80`           | `80`                     | TCP      | http        |
 | `443`          | `443`                    | TCP      | https       |
 
-## Networks
+### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
 
@@ -42,7 +42,7 @@ Set the following networks in the `networks:` section of the docker-compose file
 | ------- | -------------------------------------- |
 | `proxy` | network to expose http and https ports |
 
-## Labels
+### Labels
 
 Set the following labels in the `labels:` section.
 
@@ -58,7 +58,7 @@ Set the following labels in the `labels:` section.
 The first five lines are for publishing traefik under `traefik.<domain>`.
 The last line is to add authentication.
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -67,7 +67,7 @@ docker pull traefik:v2.4
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3"
@@ -104,7 +104,7 @@ networks:
 
 ```
 
-## data/traefik.yml
+### data/traefik.yml
 
 ```yml
 api:
@@ -143,7 +143,7 @@ certificatesResolvers:
         entryPoint: web
 ```
 
-## data/config/dynamic.yml
+### data/config/dynamic.yml
 
 In the config replace `username:htpasswd` with the output of
 `echo $(htpasswd -nb <user> <pasword>) | sed -e s/\\$/\\$\\$/g`.
@@ -164,6 +164,18 @@ http:
         users:
           - "username:htpasswd"
 
+    redirect-non-www-to-www:
+      redirectregex:
+        permanent: true
+        regex: "^https?://(?:www\\.)?(.+)"
+        replacement: "https://www.${1}"
+
+    redirect-www-to-non-www:
+      redirectregex:
+        permanent: true
+        regex: "^https?://www\\.(.+)"
+        replacement: "https://${1}"
+
 tls:
   options:
     default:
@@ -177,7 +189,13 @@ tls:
       minVersion: VersionTLS12
 ```
 
-## Create reverse proxies
+The sections called `redirect-non-www-to-www` and `redirect-www-to-non-www` are adapted from a
+article by Benjamin Rancourt on his
+[website](https://www.benjaminrancourt.ca/how-to-redirect-from-non-www-to-www-with-traefik/).
+
+## Usage
+
+### Create reverse proxies
 
 To create a reverse proxy from a docker container add the following lines in the
 `labels:` section of the `docker-compose.yml` of the service to proxy.
@@ -195,8 +213,36 @@ This configuration automatically redirects http to https.
 When using this configuration the port specified in the latter lines can be
 ommitted in the `ports:` section if not used directly.
 This ensures access only via https and restricts access via ip and port.
+Change `<service name>` according to the service you want to publish and `<subdomain>` aswell as
+`<domain>` to the domain you intent to publish the service to.
+Additionally if you want to redirect domains not starting with `www` to one that does not append
+the following line.
 
-## Setup Mailserver
+```yml
+  - "traefik.http.routers.<service name>.middlewares=redirect-non-www-to-www"
+```
+
+If the opposite is the case and it should always be redirected to a domain not starting with `www`
+add the following line.
+
+```yml
+  - "traefik.http.routers.<service name>.middlewares=redirect-www-to-non-www"
+```
+
+In both of those cases the line of the first code block in this section that specifies the domain
+and subdomain needs to include both the www and the non-www domains.
+This should look something like the following
+
+Make sure to add the domain that will be redirected to the labels aswell.
+For redirection to www domains this will look something like the following.
+
+```yml
+  - "traefik.http.routers.<service name>.rule=Host(`<subdomain>.<domain>`)"
+```
+
+In the opposite case the domain will be `www.<subdomain>.<domain>`.
+
+### Setup Mailserver
 
 If setting up a
 [docker-mailserver by mailserver](./mailserver_-_docker-mailserver.md) no http

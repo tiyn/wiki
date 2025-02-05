@@ -15,7 +15,7 @@ Place the openvpn certificate in the `jacket_config` docker volume inside the
 `openvpn` folder.
 After that rerun `./rebuild.sh` to make update your config.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -24,7 +24,7 @@ Set the following volumes with the -v tag.
 | `jackett_config`          | `/config`       | storage for configs    |
 | `jackett_blackhole`       | `/blackhole`    | storage for magnets    |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -32,7 +32,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `9117`         | `9117`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 docker stop jackett

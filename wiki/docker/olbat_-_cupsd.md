@@ -9,7 +9,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -18,7 +18,7 @@ Set the following volumes with the -v tag.
 | `cups`                    | `/etc/cups`     | configuration for printers, etc |
 | `/var/run/dbus`           | `/var/run/dbus` | connection to host dbus         |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -26,11 +26,11 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------------- |
 | `631`          | `631`                    | TCP      | cups server webui |
 
-## Additional
+### Additional
 
 The default username is `print`, the default password is `print`.
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

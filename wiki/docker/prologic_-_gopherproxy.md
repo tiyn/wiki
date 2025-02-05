@@ -9,7 +9,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -17,7 +17,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ---------------------------------------- |
 | `8000`         | `8000`                   | TCP      | port to proxy the gopher site as http to |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -25,7 +25,7 @@ There are some special variables to set.
 | ------ | ------------------------------------------------------------- |
 | `-uri` | define the gopher site to proxy (just 'domain.tld' is enough) |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

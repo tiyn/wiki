@@ -14,7 +14,7 @@ just created folder.
 You can find the `docker-compose.yml` in the cloned directory.
 Set the variables, volumes and ports according and run the `rebuild.sh`.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -22,7 +22,7 @@ Set the following volumes with the -v tag.
 | ------------------------- | ---------------- | ---------------- |
 | `searx_config`            | `/config`        | configurations   |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -30,7 +30,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `5000`         | `8000`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -40,7 +40,7 @@ docker-compose up -d
 cd ..
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2.2"

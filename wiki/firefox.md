@@ -24,17 +24,20 @@ The add-ons are grouped thematically
 
 The following add-ons increase the security or privacy.
 
-- [Cameleon](https://addons.mozilla.org/en-GB/firefox/addon/chameleon-ext/)
+- [Chameleon](/wiki/chameleon.md)
   spoofs your browser profile including user agent and screen size.
 - [ClearURLs](https://addons.mozilla.org/en-GB/firefox/addon/clearurls) removes
   tracking elements from URLs.
 - [Consent-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic)
   automatically refuses GDPR consent to a bunch of platforms.
+  An alternative to this is an addon named I don't care about cookies.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables
   usage of a [VPN](/wiki/vpn.md) that acts as a Proxy like a
   [OpenVPN Proxy](/wiki/openvpn.md#proxy).
+- [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
+  is an even faster alternative to Consent-O-Matic.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers)
   opens tabs and websites, that are not already managed by
   `Firefox Multi-Account Containers` in a new container.
@@ -66,6 +69,9 @@ The following add-ons provide changes to the default style.
   an automatic dark mode for sites without native dark mode.
 - [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
   hides scrollbars.
+- [Midnight Lizard](https://addons.mozilla.org/de/firefox/addon/midnight-lizard-quantum/) is a
+  add-on similar to Dark Reader.
+  It is slightly more customizable but has worse default settings.
 
 #### Tool Add-ons
 
@@ -88,13 +94,22 @@ The following add-ons add various functions.
 The following add-ons provide translation options.
 
 - [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations)
-  is a add-on made by Mozilla itself that gives an option for marked text to display its
+  is an add-on made by Mozilla itself that gives an option for marked text to display its
   translations quickly from the extension menu but can also translate whole sites.
-- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is a add-on
+- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is an add-on
   supporting both DeepL and Google Translate to translate marked text in various different ways that
   can be automatically displayed.
 - [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
   for marked text to display its translation in a pop-up window using DeepL.
+
+#### Shopping Add-ons
+
+The following add-ons add information to online shops.
+
+- [Fakespot](https://www.fakespot.com/) is an add-on made by Mozilla which displays additional
+  information on online shops, ebay and amazon. 
+  It can give shops, vendors and products a trust score which can be used as an alternative to
+  reviews, which might be fake.
 
 ### Add a new search engine
 

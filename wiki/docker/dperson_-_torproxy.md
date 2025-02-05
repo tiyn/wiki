@@ -8,7 +8,7 @@ The container and documentation was made by [dperson](https://hub.docker.com/r/d
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -17,7 +17,7 @@ Set the following volumes with the -v tag.
 | `tor_var`                 | `/var/lib/tor`  | Location for various files |
 | `tor_etc`                 | `/etc/tor`      | Various other config       |
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -26,7 +26,7 @@ Set the following ports with the -p tag.
 | `8118`         | `8118`                   | HTTP     | privoxy web proxy    |
 | `9050`         | `9050`                   | SOCKS    | socks protocol proxy |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh

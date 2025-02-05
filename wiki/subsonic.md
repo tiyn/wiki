@@ -30,3 +30,7 @@ The following list contains a selection of clients.
 - [Sonixd](https://github.com/jeffvli/sonixd) is a
   free and open-source cross-plattform subsonic- and jellyfin-compatible client.
   It uses a look and feel similar to the spotify client.
+- [Feishin](https://github.com/jeffvli/feishin) will be a free and open-source client for MacOS,
+  [Linux](/wiki/linux.md) that also features a web ui.
+  Currently it only supports Navidrome and Jellyfin.
+  The Subsonic functionality is curently being worked on.

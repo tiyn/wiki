@@ -23,7 +23,7 @@ The second group provides guides and builds.
 - [MetaBattle](https://metabattle.com/wiki/MetaBattle_Wiki) provides guides and builds.
   Another interesting page of it is the best
   [spending of WvW points](https://metabattle.com/wiki/Guide:How_to_spend_WvW_Ability_Points).
-- [Snowcrows](https://snowcrows.com/builds) is a guild that provides guides and builds that are
+- [Snow Crows](https://snowcrows.com/builds) is a guild that provides guides and builds that are
   especially well suited for instanced PvE content.
 
 Finally the this groupd provides various guides and gives information on in-game mechanics.

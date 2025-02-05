@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Ports
+### Ports
 
 Set the following ports with the -p tag.
 
@@ -18,7 +18,7 @@ Set the following ports with the -p tag.
 | -------------- | ------------------------ | -------- | ----------- |
 | `7396`         | `7396`                   | TCP      | WebUI       |
 
-## Additional
+### Additional
 
 There are some special variables to set.
 
@@ -28,11 +28,7 @@ There are some special variables to set.
 | `--power` | set the default power to fold at home |
 | `--team`  | set your teamid to contribute points  |
 
-### GPU
-
-GPU support is documented in [the docker article](../docker.md).
-
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -48,3 +44,9 @@ docker run --name folding-at-home \
     --power=full \
     --team=000000
 ```
+
+## Usage
+
+### GPU-Support
+
+GPU support is documented in [the docker article](../docker.md).

@@ -11,7 +11,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Environment-variables
+### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
@@ -22,7 +22,7 @@ docker-compose file.
 | `PGID` | Groupid to run the container |         |
 | `TZ`   | specify the timezone         |         |
 
-## Volumes
+### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
@@ -40,7 +40,7 @@ it is recommended to use them as external volumes (volumes section:
 To use the rebuild the volumes have to exist before creating the container
 (`docker volume create media_movies` and tvshows accordingly).
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -48,7 +48,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `8096`         | `8096`                   | TCP      | WebUI       |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -57,7 +57,7 @@ docker pull linuxserver/jellyfin:latest
 docker-compose up -d
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "2"

@@ -14,7 +14,7 @@ Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
-## Ports
+### Ports
 
 Set the following ports in the `ports:` section.
 
@@ -22,7 +22,7 @@ Set the following ports in the `ports:` section.
 | -------------- | ------------------------ | -------- | ----------- |
 | `9000`         | `9000`                   | TCP      | WebUI       |
 
-## Volumes
+### Volumes
 
 Set the following volumes with the -v tag.
 
@@ -32,7 +32,7 @@ Set the following volumes with the -v tag.
 | `config`                  | `/config`                  | configuration data     |
 | `data`                    | `/data`                    | further data storage   |
 
-## rebuild.sh
+### rebuild.sh
 
 ```sh
 #!/bin/sh
@@ -40,7 +40,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-## .env
+### .env
 
 ```sh
 TZ="Europe/Berlin"
@@ -75,7 +75,7 @@ PEERTUBE_SMTP_TLS=false
 PEERTUBE_SMTP_DISABLE_STARTTLS=false
 ```
 
-## docker-compose.yml
+### docker-compose.yml
 
 ```yml
 version: "3.3"
