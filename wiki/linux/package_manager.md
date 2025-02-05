@@ -15,10 +15,17 @@ yay is also a wrapper for pacman so yay can be used instead of pacman to
 install and update both AUR and main repository programs.
 It features the same syntax.
 
-### Troubleshooting
+### Usage
 
-This section addresses various errors that can happen when using the package managers yay and
-pacman.
+This section addresses various uses of the pacman and yay package managers.
+
+#### Clean Cache
+
+The cache of all packages except the one installed can be deleted by running the following command.
+
+```sh
+pacman -Sc
+```
 
 #### Update Mirrorlist
 
@@ -29,6 +36,11 @@ This can be fixed by updating it with the following command:
 ```sh
 curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
 ```
+
+### Troubleshooting
+
+This section addresses various errors that can happen when using the package managers yay and
+pacman.
 
 #### Error While Importing Keys
 
