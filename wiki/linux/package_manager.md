@@ -41,10 +41,17 @@ commit list.
 Next to `download` a `.tar.gz` file can be downloaded which includes a `PKGBUILD` file.
 Afterwards it needs to be [uncompressed](/wiki/linux/tar.md#uncompressing-a-tar-archive).
 
+#### Clear Cache
+
+The cache of all packages except the one installed can be deleted by running the following command.
+
+```sh
+pacman -Sc
+```
+
 ### Troubleshooting
 
-This section addresses various errors that can happen when using the package managers yay and
-pacman.
+This section addresses various uses of the pacman and yay package managers.
 
 #### Update Mirrorlist
 
@@ -55,6 +62,11 @@ This can be fixed by updating it with the following command:
 ```sh
 curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
 ```
+
+### Troubleshooting
+
+This section addresses various errors that can happen when using the package managers yay and
+pacman.
 
 #### Error While Importing Keys
 
