@@ -28,6 +28,8 @@ Another alternative is [streamrip](https://github.com/nathom/streamrip).
 It should only be used  for YouTube and other freely available sources like SoundCloud.
 [MeTube](/wiki/metube.md) and [TubeArchivist](/wiki/docker/bbilly1_-_tubearchivist.md) are
 self-hostable web user interfaces for [yt-dlp](https://github.com/yt-dlp/yt-dlp).
+Using the flag like the following `--download-sections "*5:01-16:43"` downloads only a part of the
+video.
 
 ## Automatically Skip Sponsorships
 
