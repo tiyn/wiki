@@ -158,3 +158,13 @@ fileviewer <font/*>
     \ %pc
     \ vifmimg clear
 ```
+
+## Usage
+
+This section focusses on the usage and on commands used in ViFM.
+
+### Empty Trash
+
+By default ViFM moves the deleted files to the configured trash folder.
+This is usually `~/.local/share/vifm/Trash`.
+This can easily be emptied by running `:empty` inside the ViFM user interface.

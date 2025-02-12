@@ -4,7 +4,11 @@ This article focusses on non-LVM and non-MDADM storage.
 For [LVM](lvm.md), [NTFS](./ntfs.md), [Samba](./samba.md), [MDADM](./mdadm.md) and [LUKS volumes](./dm-crypt.md) there
 are separate entries.
 
-## Universally Unique identifier
+## Usage
+
+This section focusses on various usages for disk management related topics.
+
+### Universally Unique identifier
 
 Universally Unique identifier (UUID) are identifiers for informations on
 computer systems.
@@ -15,7 +19,7 @@ This way the UUID of a file system can be used to identify and
 By listing the directory `/dev/disk/by-partuuid` all mappings of devices to a
 UUID are displayed.
 
-## Mounting
+### Mounting
 
 Mounting a file system makes the files of it accessible to the user.
 The command `mount` is used to manually and temporarily mount file systems.
@@ -53,7 +57,7 @@ A special case is the `.iso` format.
 It can be mounted too.
 A guide on how this is done can be found in the [ISO entry](/wiki/linux/iso_image.md#mounting).
 
-## Create Partition
+### Create Partition
 
 In the following it is assumed that the disk is `/dev/sda`
 
@@ -65,7 +69,7 @@ In the following it is assumed that the disk is `/dev/sda`
 `<path to partition>` points to the partition that will be enlarged (for
 example `/dev/sda2`).
 
-## Grow non-LVM partition
+### Grow non-LVM partition
 
 ATTENTION: Please note that the partition to enlarge has to be the last one with
 the free space after it.
@@ -83,7 +87,7 @@ the available free space to the partition)
 Afterwards the file system need to be resized as described in a
 [later section](#growing-a-file-system).
 
-## Growing a File System
+### Growing a File System
 
 A file system can easily be resized if free space is available on the partition
 it is stored in.
@@ -94,7 +98,7 @@ This can be done by running the following command:
 sudo resize2fs <path to partition>
 ```
 
-## Shrinking a File System
+### Shrinking a File System
 
 To shrink a file system the `resize2fs` command will be used aswell as `e2fsck`.
 First the file system needs to be checked for size aswell as data distribution.
@@ -107,6 +111,22 @@ Afterwards the file system can be shrinked with the command
 `<new size of the file system>` is the size that the file system will be
 shrunken to in the usual notation (for example `12G`).
 Especially for large file systems this might take a while.
+
+### Clearing System Trash Bin
+
+The system trash bin by default can be found at `~/.local/share/Trash`.
+The system moves deleted files there automatically.
+It can be deleted by hand, deleting all files from the subdirectories of the trash folder
+Another option is to use the tool `trash-cli` with the command `trash-empty`.
+
+### Removing Unused Files
+
+There are various files that are unused but saved by default.
+The following list shows some options to quickly clean up space.
+
+- [System Trash](#clearing-system-trash-bin)
+- [Arch Linux/Pacman/Yay Cache](/wiki/linux/package_manager.md#clear-cache)
+- [ViFM Trash Bin](/wiki/linux/vifm.md#empty-trash)
 
 ## Error solving
 
