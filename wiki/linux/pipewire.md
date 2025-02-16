@@ -13,6 +13,21 @@ Additionally `pipewire-alsa` and `pipewire-jack` for JACK and Alsa clients are
 available and recommended to install for full compatibility with most software.
 Make sure to restart to be sure everything is running correctly.
 
+### Configuration
+
+Pipewire has a few config files.
+The needed folder structure can be created by the following command for a global setup.
+
+```sh 
+sudo mkdir -p /etc/pipewire/ && sudo mkdir -p /etc/wireplumber/wireplumber.conf.d/ && sudo cp /usr/share/pipewire/*.conf /etc/pipewire/ && sudo cp /usr/share/wireplumber/wireplumber.conf.d/* /etc/wireplumber/wireplumber.conf.d/ 
+```
+
+It can also be done locally for the user with the following, alternative setup.
+
+```sh 
+mkdir -p ~/.config/pipewire/ && mkdir -p ~/.config/wireplumber/wireplumber.conf.d/ && cp /usr/share/pipewire/*.conf ~/.config/pipewire/ && cp /usr/share/wireplumber/wireplumber.conf.d/* ~/.config/wireplumber/wireplumber.conf.d/ 
+```
+
 ## Usage
 
 This section will focus on the usage of Pipewire.
@@ -219,3 +234,72 @@ The second part called `Application-Loopback 1 Playback` is available under the 
 allows to switch the selection of the output device.
 Also in the `Playback` tab `Application-Loopback 1 Sink` can be selected as an output for currently
 running applications which will loopback the sound to the selected output device.
+
+## Troubleshooting
+
+This section will focus on errors and the fixing of errors of Pipewire.
+
+### Fix Crackling
+
+Crackling can occur in various situations.
+There is a [post by rabcor](https://forum.manjaro.org/t/howto-troubleshoot-crackling-in-pipewire/82442) that features multiple possibilities to fix this.
+This section will list a few of them.
+
+Firstly suspend can be deactivated to try to fix crackling.
+In `alsa-vm.conf` the `suspend_timeout_seconds` have to be set to `0` like the following lines
+show.
+This also shows the general structure but only the line starting with `session` is to be added.
+
+```txt 
+
+monitor.alsa.rules = [
+  { 
+    actions = { 
+      update-props = { 
+        session.suspend-timeout-seconds = 0
+  }
+]
+```
+
+Another possibility for crackling to occur is when the allowed rates are mismatched.
+In `pipewire.conf` locate the following line.
+
+```txt 
+#default.clock.allowed-rates = [ 48000 ]
+```
+
+Change this line to look like the following.
+
+```txt 
+default.clock.allowed-rates = [ 44100 48000 ]
+```
+
+A third possibility to fix crackling is by adjusting the alsa headroom.
+In `alsa-vm.conf` the locate the following line.
+
+```txt
+api.alsa.headroom      = 2048
+```
+
+Change it to look like the following line.
+
+```txt 
+api.alsa.headroom      = 0
+```
+
+If this doesn't work values like 2048, 512, 256, 128, 64, 32 can also be tried.
+
+A fourth possibility to fix crackling is by adjusting the alsa period size.
+In `alsa-vm.conf` the locate the following line.
+
+```txt
+api.alsa.period-size   = 1024
+```
+
+Change it to look like the following line.
+
+```txt 
+api.alsa.period-size   = 256
+```
+
+If this doesn't work values like 2048, 512, 128, 64 can also be tried.
