@@ -49,6 +49,12 @@ The cache of all packages except the one installed can be deleted by running the
 pacman -Sc
 ```
 
+Since `yay` mirrors the usage of `pacman` it can be used the same way and will clean both caches.
+
+```sh 
+yay -Sc
+```
+
 ### Troubleshooting
 
 This section addresses various uses of the pacman and yay package managers.
