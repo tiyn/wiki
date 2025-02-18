@@ -6,7 +6,7 @@ utility similar to [Nvidia ShadowPlay](/wiki/nvidia.md#screen-capture).
 ## Setup
 
 GPU Screen Recorder can be installed on some distributions by installing the
-`gpu-screen-recorder-git` package.
+`gpu-screen-recorder` package.
 An installation via [git](https://git.dec05eba.com/gpu-screen-recorder/about/)
 is always possible.
 
@@ -27,6 +27,14 @@ To stop the recording `Ctrl-C` the previous command or use the command below.
 
 ```sh
 killall -SIGINT gpu-screen-recorder
+```
+
+Please note that `gpu-screen-recorder` always uses the GPU by default.
+Systems without a GPU will fail to record if not changed to CPU.
+This can be done by using the following flag and option.
+
+```txt
+-encoder cpu
 ```
 
 For the replay mode the recording can be started the following way.
