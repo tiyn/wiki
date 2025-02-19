@@ -12,9 +12,9 @@ At the end of this guide a fully functional Arch Linux will be installed.
 
 The following is a list of installations using this guide and if it is working.
 
-| Date     | Device                          | Working     |
-| -------- | ------------------------------- | ----------- |
-| 25.02.19 | Lenovo Thinkpad E14 AMD Version | No Problems |
+| Commit  | Date       | Device                          | Working     |
+| ------- | ---------- | ------------------------------- | ----------- |
+| f8b83cf | 19.02.2025 | Lenovo Thinkpad E14 AMD Version | No Problems |
 
 ## 1. Preparation
 
