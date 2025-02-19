@@ -8,6 +8,14 @@ Inside the encrypted partition a logical volume will be created with
 
 At the end of this guide a fully functional Arch Linux will be installed.
 
+## Test 
+
+The following is a list of installations using this guide and if it is working.
+
+| Date     | Device              | Working     |
+| -------- | ------------------- | ----------- |
+| 25.02.19 | Lenovo Thinkpad E14 | No Problems |
+
 ## 1. Preparation
 
 Ahead of the installation an Arch boot-stick has to be created as described in
@@ -159,13 +167,13 @@ en_US.UTF-8 UTF-8
 - `ls -l /dev/disk/by-uuid` - find out the UUID of your root partition.
 - `vim /boot/loader/entries/arch.conf` - Create configuration
 
-  - Change the config to look similar to this:
+- Change the config to look similar to this:
 
-    ```txt
-    title    Arch Linux
-    linux    /vmlinuz-linux
-    initrd   /initramfs-linux.img
-    options  cryptdevice=UUID=<enter your uuid here>:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet
+  ```txt
+  title    Arch Linux
+  linux    /vmlinuz-linux
+  initrd   /initramfs-linux.img
+  options  cryptdevice=UUID=<enter your uuid here>:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet
     ```
 
 - `cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fallback.conf` - create a fallback.
