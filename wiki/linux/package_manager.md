@@ -55,6 +55,17 @@ Since `yay` mirrors the usage of `pacman` it can be used the same way and will c
 yay -Sc
 ```
 
+#### Enabling `multilib`
+
+`multilib` is a repository that contains 32-bit software and libraries.
+By default it is not enabled.
+To enable it search and uncomment the following lines in the file `/etc/pacman.conf`.
+
+```txt
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
 ### Troubleshooting
 
 This section addresses various uses of the pacman and yay package managers.

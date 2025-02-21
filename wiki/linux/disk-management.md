@@ -8,6 +8,24 @@ are separate entries.
 
 This section focusses on various usages for disk management related topics.
 
+### Benchmarking Data Transfer Rates
+
+Real data transfer rates can easily be checked using the program `pv`.
+The following command will create a file on the target drive and show the data transfer rate while
+writing.
+In the following case `/mnt/usb1/tmp` is the path of the target file.
+
+```sh 
+cat /dev/zero | pv > /mnt/usb1/tmp
+```
+
+After this the read speed can be checked by using the just created temporary file.
+The following command will display the read speed.
+
+```sh 
+cat /mnt/usb1/tmp | pv > /dev/zero
+```
+
 ### Universally Unique identifier
 
 Universally Unique identifier (UUID) are identifiers for informations on

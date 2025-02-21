@@ -199,7 +199,20 @@ en_US.UTF-8 UTF-8
 - `passwd` - set password for the root account
 - `systemctl enable NetworkManager.service`
 
-## 11. Finish the setup
+## 11. Optional Steps
+
+In [Arch Linux](/wiki/linux/arch-linux.md) 32-bit software is managed via the `multilib`
+repository, which is for example needed for the `steam` package.
+Due to it not being enabled by default, this has to be
+[done manually](/wiki/linux/package_manager.md#enabling-multilib).
+For this navigate to `/etc/pacman.conf` and find and uncomment the following lines.
+
+```txt 
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
+## 12. Finish the setup
 
 - `exit` - exit the installed system
 - `umount /mnt/{boot,}` - unmount all partitions
@@ -210,7 +223,7 @@ en_US.UTF-8 UTF-8
 If the system is installed in a virtual environment or a system with deactivated
 UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 
-## 12. Further steps and graphical environment
+## 13. Further steps and graphical environment
 
 Now you can follow the recommended larbs installation script of this wiki
 (`curl -LO larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)

@@ -6,6 +6,14 @@ It is developed by [Valve](https://www.valvesoftware.com).
 Steam uses its compatibility layer, [Proton](./proton.md) for running windows
 games on linux based operating systems.
 
+## Installation
+
+The Steam software suite is available on [Linux](/wiki/linux.md) and [Windows](/wiki/windows.md)
+systems.
+For Linux-based operating systems there often exists a package named `steam`.
+For [Arch Linux](/wiki/linux/arch-linux.md) the
+[multilib repository](/wiki/linux/package_manager.md#enabling-multilib) needs to be enabled.
+
 ## Usage
 
 ### Adding non-Steam Games
