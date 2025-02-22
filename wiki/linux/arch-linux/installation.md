@@ -98,7 +98,7 @@ Recovering of this passphrase is **not** possible.
 - `pvcreate /dev/mapper/lvm` - Create a LVM physical volume
 - `vgcreate main /dev/mapper/lvm` - Create LVM Volume Group
 - `lvcreate -L 16G -n swap main` - Create Swap in LVM (recommended: swap size
-  is equal to ram size)
+  is equal to ram size to enable hibernation)
 - `lvcreate -l 100%FREE -n root main` - Create LVM Logical Volume for /
 
 ## 5. Create filesystems and mounting them temporarily
@@ -157,7 +157,7 @@ en_US.UTF-8 UTF-8
   - Search the line `MODULES=()` and change it to:
     `MODULES=(ext4)`
   - Search the line `HOOKS=([...])` and change it to:
-    `HOOKS=(base udev autodetect modconf block kms keyboard keymap consolefont encrypt lvm2 filesystems fsck shutdown)`
+    `HOOKS=(base udev autodetect modconf block kms keyboard keymap consolefont encrypt lvm2 filesystems resume fsck shutdown)`
 
 - `mkinitcpio -p linux` - generate Kernel-Image
 
