@@ -7,7 +7,7 @@ DM-Crypt can create and manage encrypted devices.
 ### Creating an Encrypted Devices
 
 To create a encrypted device simply run:
-`cryptsetup -y -v luksFormat /dev/sda2`.
+`cryptsetup -c aes-xts-plain -s 512 -y -v luksFormat /dev/sda2`.
 Where `/dev/sda2` is the device to be created.
 
 ### Create/Add a Key File to an encrypted volume
