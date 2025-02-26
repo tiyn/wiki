@@ -84,7 +84,7 @@ The right partition has the label `Linux filesystem`.
 For this guide this partition is assumed to be `/dev/sda2`.
 
 ```sh
-cryptsetup -c aes-xts-plain -y -s 512 luksFormat /dev/sda2
+cryptsetup -c aes-xts-plain -s 512 -y -v luksFormat /dev/sda2
 ```
 Afterwards confirm with `YES`.
 Now you can assign a passphrase.

@@ -10,6 +10,30 @@ It is maintained by the [X.Org Foundation](https://x.org/wiki/).
 
 This section addresses various usages of the X Window System.
 
+### Screen Locker
+
+The X Window System allows various screen lockers to be used.
+One of them is `slock` by [suckless](/wiki/linux/suckless.md).
+This will stand in as a screen locker for this section.
+The screen can be run by simply running the following command.
+
+```sh 
+slock
+```
+
+By default this will not be run automatically when the computer goes into sleep.
+This can be changed by installing and using `xss-lock` like the following example shows.
+
+```sh 
+xss-lock -- slock &
+```
+
+Run this command at startup if the automatic locking is wanted.
+
+In this context it can be useful to enable the screensaver or set the computer to automatically go
+to sleep after a certain amount of time.
+For this navigate to the [corresponding section](#turning-off-the-screen).
+
 ### Kill Windows
 
 Windows can be killed with the utility `xkill`.
@@ -85,6 +109,18 @@ Section "ServerFlags"
   Option "BlankTime" "10"
 EndSection
 ```
+
+Another option to do this is by using the command `xset`.
+An example for this are the follwing commands which will enable the screensaver to act upon 10
+minutes of inactivity.
+
+```sh 
+xset s on 
+xset s 600
+```
+
+For more informations on this visit the
+[Arch wiki](https://wiki.archlinux.org/title/Session_lock#DPMS).
 
 ##### Adjust DPI and UI Scale
 
