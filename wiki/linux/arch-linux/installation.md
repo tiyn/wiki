@@ -15,6 +15,7 @@ The following is a list of installations using this guide and if it is working.
 | Commit  | Date       | Device                 | Working     |
 | ------- | ---------- | ---------------------- | ----------- |
 | f8b83cf | 19.02.2025 | Lenovo E14 AMD Version | No Problems |
+| 033ad68 | 02.03.2025 | Acer Switch Alpha 12   | No Problems |
 
 ## 1. Preparation
 
@@ -122,7 +123,10 @@ Now the created filesystems will be mounted for the installation.
 ## 6. Starting base installation
 
 Now you need a working internet connection.
-Plug in your lan cable or use `wifi-menu` to get a wireless connection.
+If a wireless internet connection is needed start `iwctl`, scan (`station wlan0 scan`) and connect
+to the router (`station wlan0 connect <router ssid>`).
+Afterwards the internet connection will be established.
+Exit `iwctl`.
 
 - `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager ntp`
 - `genfstab -Up /mnt > /mnt/etc/fstab` - creation of fstab
@@ -157,14 +161,14 @@ en_US.UTF-8 UTF-8
   - Search the line `MODULES=()` and change it to:
     `MODULES=(ext4)`
   - Search the line `HOOKS=([...])` and change it to:
-    `HOOKS=(base udev autodetect modconf block kms keyboard keymap consolefont encrypt lvm2 filesystems resume fsck shutdown)`
+    `HOOKS=(base udev autodetect microcode modconf block kms keyboard keymap consolefont encrypt lvm2 filesystems resume fsck shutdown)`
 
 - `mkinitcpio -p linux` - generate Kernel-Image
 
 ## 9. Install and configure UEFI bootloader
 
 - `bootctl install` - Prepare bootloader
-- `ls -l /dev/disk/by-uuid` - find out the UUID of your root partition.
+- `ls -l /dev/disk/by-uuid` - find out the UUID of your root partition (matching `/dev/sda2`).
 - `vim /boot/loader/entries/arch.conf` - Create configuration
 
 - Change the config to look similar to this:
@@ -225,6 +229,9 @@ UEFI, don't forget to enable the EFI option, otherwise the system won't boot.
 
 ## 13. Further steps and graphical environment
 
+For the following steps to work you may need to repeat the network setup if you use WLAN.
+This can easily be done by using `nmtui`.
+
 Now you can follow the recommended larbs installation script of this wiki
 (`curl -LO larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
 this will install a bunch of useful base software including
@@ -234,6 +241,10 @@ You can go on to other guides aswell.
 Especially the
 [Recommended practices](/wiki/linux/arch-linux.md#recommended-practices)
 should be checked for further setups.
+
+In some cases the Arch keyring needs to be repopulated.
+This is discussed in
+[the package manager entry](/wiki/linux/package_manager.md#error-during-updating-is-marginal-trust).
 
 Additionally if you have a NVidia Graphics Cards you should read
 [the NVidia article](../nvidia.md) too.
