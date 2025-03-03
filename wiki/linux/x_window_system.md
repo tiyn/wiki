@@ -56,6 +56,31 @@ Properties and options of a peripheral device can then be shown by running
 `xinput list-props <id>` where `<id>` is the identifier of the
 device.
 
+#### Touchpad
+
+This section describes the handling of touchpads by X.
+
+##### Toggle the touchpad
+
+To toggle the touchpad on or off
+[a simple script](https://github.com/tiyn/dotfiles/blob/master/.local/bin/tools/dwm/toggletouchpad)
+can be used that uses `synclient TouchpadOff=1` or `synclient TouchpadOff=0`.
+This requires `xf86-input-synaptics` which is a synaptics driver for
+notebook touchpads.
+
+##### Enable Tap to Click 
+
+On Touchpads the tap to click option can be enabled by adding the following lines to the config
+file `/etc/X11/xorg.conf.d/99-synaptics-overrides.conf`.
+
+```txt
+Section "InputClass"
+    Identifier  "touchpad overrides"
+    MatchDriver "synaptics"
+    Option      "TapButton1"            "1"
+EndSection
+```
+
 #### Keyboard
 
 This section describes the handling of keyboards by X.
