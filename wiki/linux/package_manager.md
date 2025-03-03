@@ -103,8 +103,8 @@ The identifier of the key usually gets gets printed in the line above the error 
 
 #### Error During Updating `is marginal trust`
 
-If the error `[...] Key [...] is marginal trust` occurs while updating the
-system, it can be fixed by running the following commands and then restarting
+If the error `[...] Key [...] is marginal trust` (also `of unknown trust`) occurs while updating
+the system, it can be fixed by running the following commands and then restarting
 the update process of the package manager.
 
 ```sh
