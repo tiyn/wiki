@@ -14,13 +14,15 @@ On [Arch Linux](/wiki/linux/arch-linux.md) systems this can be done by editing t
 In the options line append `quiet` if you want to use the quiet-mode and `splash` if you want to 
 add a splash screen.
 
-If the splash screen option was selected edit the file `/etc/plymouth/plymouthd.conf` and ensure it
-looks like the following lines.
+If the splash screen option was selected set a default theme.
+A more detailed guide on this is available in [another section](#list-install-and-set-themes).
 
-```txt
-[Daemon]
-Theme=fade-in
+```sh
+plymouth-set-default-theme bgrt
 ```
+
+Alternatively another theme than `fade-in` can be set.
+The listing of installed themes is featured in a [latter section](#list-available-themes).
 
 Then inside the file `/etc/mkinitcpio.conf` add the hook under the `HOOKS` section.
 Add `plymouth` after `systemd` (if available) and before `encrypt` and `lvm2` (if available.)
@@ -32,3 +34,25 @@ For this run the following command.
 ```sh
 mkinitcpio -p linux
 ```
+
+## Usage
+
+This section addresses the location and 
+
+### List, Install and Set Themes
+
+A list of installed themes can be listed by running the following.
+
+```sh
+plymouth-set-default-theme --list
+```
+
+One of the listed themes can then be installed like the following command does.
+
+```sh
+plymouth-set-default-theme fade-in
+```
+
+Other themes can be found in online sources like the
+[AUR](/wiki/linux/arch-linux.md#package-manager-and-aur) or websites like
+[Gnome-Look.org](https://www.gnome-look.org/browse?cat=108).
