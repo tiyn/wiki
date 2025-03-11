@@ -10,6 +10,12 @@ It is maintained by the [X.Org Foundation](https://x.org/wiki/).
 
 This section addresses various usages of the X Window System.
 
+### Display Managers
+
+[Display managers](/wiki/linux/display_managers.md) are user interfaces displayed after booting.
+They are featured in a [separate entry](/wiki/linux/display_managers.md).
+This also includes any configuration needed for it like `xsession`.
+
 ### Screen Locker
 
 The X Window System allows various screen lockers to be used.
