@@ -63,3 +63,17 @@ This can be achieved by running the following command.
 ```sh
 journalctl -b-1
 ```
+
+## Troubleshooting
+
+This section focusses on errors that correspond to the SystemD software.
+
+### Timed Out Waiting for Device `/dev/tpmrm0`
+
+This error signals problems with the trusted platform module.
+This however usually can be fixed easily by masking the service and is done like the following
+command shows.
+
+```sh 
+systemctl mark dev-tpmrm0.device
+```
