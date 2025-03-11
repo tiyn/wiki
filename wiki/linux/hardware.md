@@ -13,3 +13,8 @@ It will show the state, voltage, percentage and many other information about a g
 ```sh
 upower -i /org/freedesktop/UPower/devices/battery_BAT0
 ```
+
+## (Liquid) Coolers
+
+The viewing of temperatures of coolers aswell as the selection of RGB-settings can be achieved by
+using [liquidctl](https://github.com/liquidctl/liquidctl).
