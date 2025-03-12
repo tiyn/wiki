@@ -70,7 +70,8 @@ for LightDM.
 
 ### LightDM-Mini-Greeter
 
-[LightDM-Mini-Greeter](https://github.com/prikhi/lightdm-mini-greeter) is a minimal greeter.
+[LightDM-Mini-Greeter](https://github.com/prikhi/lightdm-mini-greeter) is a minimal, single-user
+greeter.
 
 For the LightDM-Mini-Greeter to work correctly some settings have to be set in the file
 `/etc/lightdm/lightdm-mini-greeter.conf`.
