@@ -9,6 +9,7 @@ The following display managers are featured in this wiki.
 
 - [LightDM](/wiki/linux/lightdm.md) is a lightweight GUI display manager.
 - [Lemurs](/wiki/linux/lemurs.md) is a lightweight TUI display manager.
+- [Ly](/wiki/linux/ly.md) is a lightweight display manager with consolue UI.
 
 ## Use `xinitrc` as `xsession`
 
