@@ -25,3 +25,12 @@ The file names have to be changed according to the situation.
 ```sh
 bchunk IMAGE.bin IMAGE.cue IMAGE.iso
 ```
+
+### Linux Boot Stick
+
+Many [Linux distributions](/wiki/linux.md), but also [Windows](/wiki/windows.md) use boot sticks
+to install or repair the system.
+The [Arch Linux entry](/wiki/linux/arch-linux.md) contains a section on the
+[creation of such a stick](/wiki/linux/arch-linux.md#create-installation-medium).
+An alternative to this is [Ventoy](/wiki/ventoy.md) which is cross-platform and can contain
+multiple `.iso` files at the same time.

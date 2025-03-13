@@ -22,7 +22,7 @@ The installation of a basic Arch Linux system is described in the
 The entry features a guide to install a system with a X server setup aswell as
 programs for the most used tasks on a system.
 
-### ISO Medium
+### Create Installation Medium
 
 For the installation usage of a simple USB key is advised.
 This has to be flashed with the Arch ISO.
@@ -30,7 +30,10 @@ The ISO file can be found on the
 [official website](https://www.archlinux.org/download/).
 The iso can be written on an USB-stick using the command
 `dd bs=4M if=<path to ISO> of=/dev/sdx conv=fsync oflag=direct status=progress`.
-`<path to ISO>` points the command to the location of the ISO file
+`<path to ISO>` points the command to the location of the ISO file.
+
+Alternatively a [Ventoy stick can be created](/wiki/ventoy.md) which can contain multiple
+[ISO images](/wiki/linux/iso_image.md) without flashing.
 
 ## Usage
 
@@ -70,7 +73,7 @@ This section addresses problems that can occur when using Arch Linux.
 
 This section focusses on a basic guide to troubleshoot systems that are not bootable.
 To access the files of the system an Arch Linux boot stick has to be created as explained in
-[a previous section](#iso-medium).
+[a previous section](#create-installation-medium).
 After booting into it set your keymap layout using the `loadkeys` setup similar to
 [the installation preparation](/wiki/linux/arch-linux/installation.md#1-preparation).
 Afterwards [mount](/wiki/linux/disk-management.md#mounting) the partition that contains the root

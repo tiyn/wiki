@@ -28,5 +28,5 @@ This is not a legal advice.
 Take your local laws into account when downloading torrents.
 Some torrents can be copyright infringing and therefor illegal to download.
 Only download legal and safe torrents like the
-[Arch Linux ISO](/wiki/linux/arch-linux.md#iso-medium).
+[Arch Linux ISO](/wiki/linux/arch-linux.md#create-installation-medium).
 Seeding it can help the community.
