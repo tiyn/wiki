@@ -19,6 +19,19 @@ It features the same syntax.
 
 This section addresses various usages of the arch linux package managers.
 
+### Downgrading Packages 
+
+Packages of the AUR can be downgraded by using the
+[Downgrade](https://github.com/archlinux-downgrade/downgrade) program.
+This program can then easily be used to an AUR package.
+This works like the following assuming the package `v4l2loopback-dmks` needs to be downgraded.
+
+```sh 
+sudo downgrade v4l2loopback-dmks
+```
+
+Afterwards the target version can be selected and the downgrading process will conclude.
+
 #### Manual Installation of a `PKGBUILD` File
 
 A `PKGBUILD` file is a [shell](/wiki/linux/shell.md) script that contains the installation 
