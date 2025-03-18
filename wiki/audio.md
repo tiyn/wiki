@@ -10,8 +10,9 @@ Podcasts need a so called Podcatcher.
 A Podcatcher is used to subscribe to podcasts and download them automatically.
 For Linux specific music software navigate to the corresponding
 [wiki entry](/wiki/linux/audio.md).
-For voice based communication navigate to the [communication article](/wiki/communication.md) and
-the corresponding [VoIP section](/wiki/communication.md#voip).
+For voice based communication, social platforms or messengers navigate to the
+[communication article](/wiki/communication.md) and the corresponding
+[section](/wiki/communication.md#social-platforms-messengers-and-voip-services).
 For headphones navigate to the [headphones article](/wiki/headphones.md):
 
 ## Technical Specifications
