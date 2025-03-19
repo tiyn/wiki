@@ -4,6 +4,23 @@
 [Linux](/wiki/linux.md) kernel.
 It is designed primarily for mobile devices with touch screens like tablets or smart phones.
 
+## Managing the Data
+
+The data and files stored on Android
+[smart devices](/wiki/smart_devices.md#smartphones-and-tablet-computers) are sometimes needed on
+computers.
+
+For [Windows](/wiki/windows.md) this can easily be achieved by connecting it via USB.
+No further software is needed as the device manager handles the phone correctly most of the times.
+
+For [Linux-based systems](/wiki/linux.md) the
+[device](/wiki/smart_devices.md#smartphones-and-tablet-computers) also has to be connected to the
+computer.
+But in this case also a software is needed to [mount it](/wiki/linux/disk-management.md#mounting),
+this software/program is called [android-file-transfer](/wiki/linux/android-file-transfer.md).
+For further information and a guide on how to mount a Android device correctly navigate to the
+[corresponding section](/wiki/linux/android-file-transfer.md#mounting-and-unmounting-android-device).
+
 ## App Store
 
 The most used app store of android is the [Google Play Store](https://play.google.com/).
