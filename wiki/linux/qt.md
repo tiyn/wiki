@@ -25,3 +25,22 @@ To make this config apply for all Qt applications the following line needs to be
 ```sh
 export QT_QPA_PLATFORMTHEME="qt6ct"
 ```
+
+Afterwards `qt6ct` can be used to enable the dark mode or change other configurations.
+
+#### Achieving a System-Wide Uniform Look
+
+[GTK](/wiki/linux/gtk.md) is the other big widget toolkit in use.
+An easy way to achieve a uniform look of GTK and Qt is the usage of the Adwaita theme in both
+toolkits.
+This is also described in the 
+[official Arch wiki](https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Styles_for_both_Qt_and_GTK).
+
+A simple way to achieve this in Qt is the installation of
+[adwaita-qt6](https://github.com/FedoraQt/adwaita-qt) which is also available as an
+[AUR](/wiki/linux/package_manager.md#installing-an-aur-program-with-a-specific-version) package.
+After the installation it can be selected by `qt6ct` as described in the
+[configuration section](#configuration).
+
+For setting the same theme for GTK refer to the
+[corresponding entry](/wiki/linux/gtk.md#achieving-a-system-wide-uniform-look).

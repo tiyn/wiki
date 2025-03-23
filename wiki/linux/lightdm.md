@@ -8,9 +8,9 @@ It is available for both [X](/wiki/linux/x_window_system.md) and Wayland.
 
 On most linux distributions LightDM can be installed with the `lightdm` package.
 Additionally `lightdm-gtk-greeter` and `xorg-server-xephyr` are recommended.
-This setup will work with [LightDM-GTK-Greeter](#lightdm-gtk-greeter) which is the default 
-[greeter](#greeters) but others may be chosen.
-If that is the case `lightdm-gtk-greeter` does not have to be installed, but another one.
+This setup will work with [LightDM-GTK-Greeter](#lightdm-gtk-greeter) which is the default greeter. 
+If another greeter is to be chosen `lightdm-gtk-greeter` does not have to be installed, but an
+alternative for it.
 For a guide on how to set the greeter navigate to the [greeter section](#greeters).
 This section will also discuss various other greeters like the
 [LightDM-Mini-Greeter](#lightdm-mini-greeter).
@@ -67,6 +67,7 @@ If no `greeter-session` is set the default will fall back to the
 
 The [LightDM-GTK-Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) is the default greeter 
 for LightDM.
+This is the default [greeter](#greeters) of [GTK](/wiki/linux/gtk.md) but others may be chosen.
 
 ### LightDM-Mini-Greeter
 

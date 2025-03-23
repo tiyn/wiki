@@ -4,12 +4,14 @@ Computer communication can have multiple different forms.
 There are voice and video calls aswell as text based messaging.
 This article bundles all of them.
 
-## VoIP
+## Social Platforms, Messengers and VoIP Services
 
-This section lists some of the most common Voice over IP (VoIP) platforms.
+This section lists some of the most common Voice over IP (VoIP) services, messengers and other
+social platforms.
 
-- [Matrix](/wiki/matrix.md) is a decentralized and open-source social platform.
 - [Discord](/wiki/discord.md) is a widely used, proprietary social platform.
+- [Matrix](/wiki/matrix.md) is a decentralized and open-source social platform.
+- [Signal](/wiki/signal.md) is an open-source, encrypted messaging service.
 
 ### Soundboards
 

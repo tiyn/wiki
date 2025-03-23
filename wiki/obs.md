@@ -20,10 +20,6 @@ camera.
 First of all [V4L2](./linux/v4l2.md) needs to be set up.
 This guide assumes it is set up according to the section in the
 [V4L2 entry](./linux/v4l2.md#v4l2loopback).
-Make sure to
-[start the service](/wiki/linux/systemd.md#startstopenabledisable-a-service) by
-running `systemctl start v4l2loopback.service` or enable it to start after each
-boot with `systemctl enable v4l2loopback.service`.
 Afterwards the virtual camera can be started.
 
 ### Background Removal
@@ -39,3 +35,16 @@ describes various possibilities to install the background removal for OBS on
 different systems.
 On Linux systems background removal is often contained in a package named
 `obs-backgroundremoval` or similarly.
+
+## Troubleshooting
+
+This section focusses on various errors that can appear by using OBS.
+
+### `Output Failed: If you are using NVENC or AMD encoders, make sure the video drivers are up to date`
+
+This error does occur most of the time when trying to start
+[OBS' virtual camera](/wiki/obs.md#virtual-camera).
+If all the drivers are up to date there is a chance that it is caused by a bug or error in the code
+of [V4L2](/wiki/linux/v4l2.md).
+A possible fix is described in a 
+[corresponding section of the V4L2 entry](/wiki/linux/v4l2.md#failed-to-start-streaming-on-devvideo2-invalid-argument).
