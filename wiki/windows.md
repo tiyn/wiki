@@ -26,3 +26,14 @@ reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
 ```
 
 Disabling of UTC time is done with the same command with a `0` instead of a `1`.
+
+## Installation
+
+This section focusses on topics that are related to the installation of Windows.
+
+### Bypass Network Setup During Installation 
+
+To bypass the setup of a network during the installation process `Shift` and `F10` need to be
+pressed.
+By putting in `oobe/bypassnro` into the command line and pressing `Enter` the computer will restart
+and will display an option to bypass the network setup during the corresponding step.
