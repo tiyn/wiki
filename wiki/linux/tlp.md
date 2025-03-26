@@ -1,7 +1,7 @@
 # TLP
 
-[TLP](https://linrunner.de/tlp) is a linux command line utility for saving
-laptop battery power aswell as optimizing battery life.
+[TLP](https://linrunner.de/tlp) is a linux command line utility for
+[saving laptop battery power](/wiki/linux/battery_saving.md) aswell as optimizing battery life.
 
 ## Setup
 
@@ -11,7 +11,7 @@ Afterwards the TLP
 started and enabled.
 In contrast to other
 [SystemD services](/wiki/linux/systemd.md#startstopenabledisable-a-service) this
-can be done by running `sudo tlp start`.
+can be done by running `sudo tlp start` and running `systemctl enable tlp.service`.
 
 ## Configure Battery Charge Thresholds
 
@@ -30,3 +30,5 @@ Search and edit the following lines according to your needs.
 START_CHARGE_THRESH_BAT0=75
 STOP_CHARGE_THRESH_BAT0=80
 ```
+
+This can also be achieved by using [tp-battery-mode](/wiki/linux/battery_saving.md#programs)
