@@ -15,7 +15,3 @@ export PATH="${GOBIN}:${PATH}"
 ```
 
 You can move the `GOPATH` where you want.
-
-## Vim
-
-The steps to make Vim a Go IDE are described in [the vim section of this wiki](../linux/vim/golang.md).

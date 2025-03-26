@@ -7,10 +7,6 @@ VHDL is a hardware description language.
 To simulate a VHDL project get [GHDL](https://github.com/ghdl/ghdl).
 After simulating you can view the simulation with [GTKWave](https://github.com/gtkwave/gtkwave).
 
-### Vim
-
-The steps to make Vim VHDL-ready are described in [the vim section of this wiki](../linux/vim/vhdl.md).
-
 ## Usage
 
 ### Makefile for basic project

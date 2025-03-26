@@ -66,20 +66,6 @@ Afterwards you can check if the Pyhton version is installed using the following 
 python3.9 --version
 ```
 
-### Vim
-
-The steps to make Vim a python IDE are described in
-[the vim section of this wiki](../linux/vim/python.md).
-
-Additionally make sure to add
-
-```vimscript
-let g:python_host_prog = "/usr/bin/python2"
-let g:python3_host_prog = "/usr/bin/python3"
-```
-
-to your `init.vim` to avoid usage of `pyenv`s version of python in autocompletion.
-
 ## Usage
 
 ### Create a requirements file
