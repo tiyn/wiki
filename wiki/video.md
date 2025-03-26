@@ -11,6 +11,16 @@ your needs.
 In general you need to consider if you want the video directly on your pc or
 access a server for it.
 
+## Television 
+
+The following is a list of programs that can be used to watch, record and/or download television
+series or movies.
+
+- [MediathekView](https://github.com/mediathekview/mediathekview) is an open-source, cross-platform 
+  software to view and download media from the mediathek of german, austrian and swiss television.
+- [TVHeadend](/wiki/tvheadend.md) is a server-software that makes it possible to stream and record
+  tv shows and movies via a web interface.
+
 ## Video Editing
 
 There are various programs that can be used to edit videos.

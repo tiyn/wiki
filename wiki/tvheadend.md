@@ -1,6 +1,6 @@
 # TVHeadend
 
-[TVHeadend](https://tvheadend.org/) is a server application that forwards video
+[TVHeadend](https://tvheadend.org/) is a server application that forwards [video](/wiki/video.md)
 streams to internet streams.
 It supports multiple dvb tuners and tuner sticks aswell as Sat>IP tuners.
 It also has the ability to record programs like a digital video recorder.
