@@ -14,7 +14,7 @@ The following display managers are featured in this wiki.
 ## Use `xinitrc` as `xsession`
 
 Often a display manager needs a `xsession` to work.
-For this `init-xsession` needs to be installed which is available on most
+For this `xinit-xsession` needs to be installed which is available on most
 [Linux distributions](/wiki/linux.md#distributions) in a package of the same name.
 When setting this up there should be no `~/.xsession` available.
 If it is please use another setup or backup this file.
