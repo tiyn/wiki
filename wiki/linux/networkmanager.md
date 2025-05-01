@@ -2,6 +2,7 @@
 
 NetworkManager - short NM - is a program to automatically detect and connect to
 networks by providing options for various configuration.
+It is used to set up [Wi-Fi](/wiki/linux/wi-fi.md).
 
 ## Setup
 
@@ -26,3 +27,18 @@ This plugin can be installed with the `networkmanager-openvpn` package.
 OpenVPNs `.ovpn` files can then be imported by running
 `nmcli connection import type openvpn file <openvpn-file>`.
 Afterwards they can be modified accordingly.
+
+## Troubleshooting
+
+This section focusses on the troubleshooting of situations where the system does not connect
+correctly.
+
+### Restarting and Reenabling Wi-Fi
+
+A useful chain of commands is the following.
+It will restart the [SystemD](/wiki/linux/systemd.md) service and enable the Wi-Fi device.
+
+```sh
+systemctl restart NetworkManager
+nmcli radio wifi on
+```
