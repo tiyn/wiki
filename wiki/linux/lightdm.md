@@ -172,3 +172,8 @@ password-border-width = 2px
 # The border radius of the password input.
 password-border-radius = 0.341125em
 ```
+
+## Troubleshooting
+
+If it comes to problems that deny the login it can be useful to switch to another tty.
+This can be done by hitting the key combination `CTRL+ALT+F2`.
