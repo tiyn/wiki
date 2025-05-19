@@ -9,6 +9,8 @@ For webcams and their configuration see [the webcams entry](/wiki/webcams.md#con
 There are several plugins made by non-obs developers.
 The plugins introduce different and new features.
 
+On [Linux](/wiki/linux.md) devices using Wayland the additional package `wlrobs` is needed.
+
 ### Virtual Camera
 
 By using a virtual camera the views of OBS can be used as an additional camera
