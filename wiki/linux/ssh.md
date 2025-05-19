@@ -61,3 +61,44 @@ Host server
 	HostName server.tld
 	User user
 ```
+
+### Server Setup 
+
+[Source](https://tutorials.rc.nectar.org.au/x11forwarding/02-enable-x11-on-virtual-machine)
+For the server setup edit the file `/etc/ssh/sshd_config` and make sure X-Forwarding is enabled by
+editing a line to look like the following.
+
+```txt
+X11Forwarding yes
+```
+
+Make sure to restart the SSH daemon afterwards by running the following command.
+
+```sh
+service sshd restart
+```
+
+Afterwards X-Forwarding should be enabled on the server.
+For full functionality install the `x11-apps` package aswell.
+
+#### Client Setup
+
+Auf dem Server ist das so genannte X-Forwarding aktiviert.
+Das bedeutet, dass es möglich ist, graphische Programme aufzurufen und diese über eine SSH-Verbindung darstellen zu lassen.
+Bei einem klassischen Login mittels des Terminals und dem `ssh`-Befehl kann dieser um die Flag `-C` erweitert werden
+Der komplette Befehl sieht dann wie folgt aus, wobei sich der Name für `<host>` aus dem [Setup-Abschnitt](#setup) ergibt.
+
+```sh
+ssh -C <host>
+```
+
+Die `-C`-Flag kann in der [`config`-Datei](#setup) vermerkt werden, sodass sie nicht extra angeführt werden muss.
+Dafür müssen die beiden folgenden Zeilen in die `config` unter dem entsprechenden Eintrag eingefügt werden.
+
+```
+    ForwardX11 yes
+    ForwardX11Trusted yes
+``` 
+
+Die Funktion des X-Forwardings kann geprüft werden, indem man sich beim Server einloggt und dann `xclock` aufruft.
+Bei korrekter Konfiguration sollte sich nun eine graphische Oberfläche öffnen, die die Uhrzeit anzeigt.
