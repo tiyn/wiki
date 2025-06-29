@@ -53,6 +53,15 @@ nativefier --name Mastodon \
 --single-instance https://mastodon.technology
 ```
 
+Afterwards if a [Linux](/wiki/linux.md)-based system is used the created app can be added to the
+profile.
+An example for this is the following command which links the applicatoin to a specifically created
+directory.
+
+```sh
+ln -s mastodon-linux-x64/mastodon ~/.local/bin/links
+```
+
 ### Navigating Back and Forward
 
 In a normal [browser](/wiki/web_browser.md) there are buttons to navigate back and forth through
