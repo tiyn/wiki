@@ -54,8 +54,9 @@ nativefier --name Mastodon \
 ```
 
 Afterwards if a [Linux](/wiki/linux.md)-based system is used the created app can be added to the
-profile.
-An example for this is the following command which links the applicatoin to a specifically created
+path.
+An example for this is the following command which
+[links](/wiki/linux/shell.md#symbolic-links-using-ln) the applicatoin to a specifically created
 directory.
 
 ```sh
