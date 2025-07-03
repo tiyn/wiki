@@ -174,3 +174,39 @@ Additionally the following lines has to be adapted and added to the file
 of the volume.
 `<location of key file>` describes the location where to find the key file
 created in the previous step (for example `/root/key.bin`).
+
+### Use FIDO2 to Unlock a Volume
+
+To use a FIDO2-Stick on [Linux-based systems](/wiki/linux.md) with
+[DM-Crypt](/wiki/linux/dm-crypt.md) first set up the FIDO2 stick and add it to the encrypted
+volume.
+
+```sh
+ll /dev/hidraw0
+fido2-token -S /dev/hidraw0
+sudo systemd-cryptenroll --fido2-device=auto /dev/nvme0n1p1
+sudo cryptsetup open --token-only /dev/nvme1n1p2 test
+```
+
+Next the hooks in the file `/etc/mkinitcpio.conf` need to be changed.
+It is recommended to set up [Plymouth]() so that the login screen is clean.
+Switch `udev` and other `HOOKS` to `systemd`.
+
+Next remove the UDEV-rules for usb-decryption in `FILES`.
+For this switch `udev keymap consolefont encrypt` to `systemd sd-vconsole sd-encrypt`.
+
+Then the file `/boot/loader/entries/arch.conf` and `/boot/loader/entries/arch-fallback.conf` needs
+to be changed.
+For this the following example is given.
+Notice that `cryptdevice=UUID=` is switched to `rd.luks.name=` aswell as various options.
+
+```txt
+options		cryptdevice=UUID=3c306b1b-49a5-48c1-b93f-a619b96d6855:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet splash cryptdevice=/dev/usbkey:14848:2048
+```
+
+```txt
+options		rd.luks.name=3c306b1b-49a5-48c1-b93f-a619b96d6855=lvm rd.luks.options=discard,fido2-device=auto root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet splash
+```
+
+Finally rebuild the initramfs `sudo mkinitcpio -p linux` and `reboot`.
+Make sure to touch FIDO2-key during boot to make it work.

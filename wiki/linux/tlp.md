@@ -6,6 +6,8 @@
 ## Setup
 
 TLP can be installed on most distributions by installing the `tlp` package.
+Additionally the installation of `tlp-rdw` is recommended, which is used to get better control over
+radio devices.
 Afterwards the TLP
 [service](/wiki/linux/systemd.md#startstopenabledisable-a-service) needs to be
 started and enabled.

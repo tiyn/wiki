@@ -21,3 +21,11 @@ its supported counterpart [DeDRM by noDRM](https://github.com/noDRM/DeDRM_tools)
 Due to legal issues in many places it is recommended to not use these or
 similar software.
 If the software is to be used by you check your local laws first.
+
+## Tracking
+
+Many e-book readers include a feature to keep track of read books.
+However they do not track the time that was needed to finish them or the number of e-books read in 
+a specific timeframe.
+This can be done by using a special tracker like [Jelu](/wiki/jelu.md) which can be used to keep
+track of e-books and normal books at the same time which is a feature no e-book reader has.

@@ -122,3 +122,13 @@ For this type in user name and password some moments after the perceived freeze 
 would do if the login screen came up.
 If the graphical interface still does not work, the command to start the graphical interface (like 
 `startx` for [X11](/wiki/linux/x_window_system.md) systems) can also work.
+
+### `/usr/lib/firmware/nvidia/ad104` exists in filesystem linux-firmware-nvidia
+
+This error comes from a decision to split the firmware modules into different parts.
+An easy way to fix it is by simply reinstalling the `linux-firmware` package and updating the
+packages of the system.
+
+```sh 
+pacman -Syu linux-firmware
+```
