@@ -6,6 +6,8 @@ It supports various formats aswell as conversion between them.
 
 ## Usage
 
+This section addresses various features of Calibre.
+
 ## Adding a Plugin
 
 A plugin by a third party can be added by selecting a `.zip` archive - usually
