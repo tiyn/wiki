@@ -10,4 +10,5 @@ package.
 
 ## Usage
 
+This section addresses the usage of /name/.
 /basic description for usage/
