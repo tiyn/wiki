@@ -1,6 +1,6 @@
 # immich-app - immich-server
 
-This is a [Docker](/wiki/docker.md) container for a /service/ server.
+This is a [Docker](/wiki/docker.md) container for a [immich](/wiki/immich.md) server.
 The official container and documentation was made by
 [immich](https://github.com/immich-app/immich).
 This docker-rebuild is made up by a `docker-compose.yml` file.
@@ -17,11 +17,8 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ### Environment-variables
 
-Set the following variables with the -e tag.
-
-| Name       | Usage         | Default |
-| ---------- | ------------- | ------- |
-| `/name/`   | /description/ |         |
+The environment variables are set via the `.env` file and listed in the
+[corresponding section](#env).
 
 ### Ports
 

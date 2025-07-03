@@ -21,6 +21,11 @@ Set the following variables with the -e tag.
 | ---------- | ------------- | ------- |
 | `/name/`   | /description/ |         |
 
+<!-- ### Environment-variables -->
+<!---->
+<!-- The environment variables are set via the `.env` file and listed in the -->
+<!-- [corresponding section](#env). -->
+
 ### Ports
 
 Set the following ports in the `ports:` section.

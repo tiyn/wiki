@@ -1,6 +1,6 @@
 # wabayang - jelu
 
-This is a [Docker](/wiki/docker.md) container for a Jelu server.
+This is a [Docker](/wiki/docker.md) container for a [Jelu](/wiki/jelu.md) server.
 The official container and documentation was made by
 [wabayang](https://github.com/bayang/jelu).
 This docker-rebuild is made up by a `docker-compose.yml` file.
@@ -9,6 +9,11 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
+
+### Environment-variables
+
+The environment variables are set via the `.env` file and listed in the
+[corresponding section](#env).
 
 ### Ports
 
