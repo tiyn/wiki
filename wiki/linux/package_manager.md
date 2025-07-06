@@ -134,6 +134,9 @@ This can easily be fixed by removing the cache of the corresponding package.
 
 #### Python `ModuleNotFoundError: No module named...`
 
+This section is based on a
+[StackOverflow post by Helen](https://stackoverflow.com/questions/55923868/how-to-fix-modulenotfounderror-no-module-named-setuptools).
+
 In this case the error stems from a missing package.
 Normally it can easily be fixed by installing that corresponding package.
 But please note that `pyenv` can hide packages if the global Python version is set to something
