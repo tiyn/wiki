@@ -3,7 +3,7 @@
 xss-lock is an external screen locker for [X11 Window Systems](/wiki/linux/x_window_system.md).
 Using xwayland it can also be used for [Wayland](/wiki/linux/wayland.md) systems.
 
-## Installation
+## Setup
 
 On most Linux distributions swayidle can be installed with the `xss-lock` package.
 

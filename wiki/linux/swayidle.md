@@ -2,7 +2,7 @@
 
 swayidle is an idle manager for [Wayland](/wiki/linux/wayland.md).
 
-## Installation
+## Setup
 
 On most Linux distributions swayidle can be installed with the `swayidle` package.
 
