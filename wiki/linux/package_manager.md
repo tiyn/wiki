@@ -131,3 +131,14 @@ pacman-key --refresh-keys
 The error `the following untracked working tree files would be overwritten` can happen when the
 cache features a changed version of the files used by yay to update the package.
 This can easily be fixed by removing the cache of the corresponding package.
+
+#### Python `ModuleNotFoundError: No module named...`
+
+In this case the error stems from a missing package.
+Normally it can easily be fixed by installing that corresponding package.
+But please note that `pyenv` can hide packages if the global Python version is set to something
+other than `system`.
+This is especially the case on [Arch Linux-systems](/wiki/linux/arch-linux.md) because Python
+packages are also installed via [Pacman or Yay](#arch-linux-pacman-and-yay).
+In this case the global Version has to be changed to `system` or the package installed to the
+non-system Python version.
