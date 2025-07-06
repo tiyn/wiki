@@ -64,6 +64,39 @@ This can be achieved by running the following command.
 journalctl -b-1
 ```
 
+### Change Suspend and Hibernate Behaviour
+
+The behaviour of suspend and hibernation can be changed in the file `/etc/systemd/sleep.conf`.
+One of the most important variables is the one to set the hibernation delay time.
+This time will be used to determine the time that is taken from suspend to hibernation if
+suspend-to-hibernate is called.
+The following line will set this to 10 minutes.
+
+```txt 
+HibernateDelaySec=10min
+```
+
+### Handle Power Key and Lid Seitch
+
+The management of power keys and lid switches is handled in the file `/etc/systemd/logind.conf`.
+The following line will set the behaviour of the power key to hibernate. The default for this would
+be to shutdown the system.
+
+```txt
+HandlePowerKey=hibernate
+```
+
+The same can also be done to determine the action taken when the lid is closed.
+By default the closing of the lid will result in suspending the system.
+The following lines will change this to suspend-then-hibernate.
+
+```txt
+HandleLidSwitch=suspend-then-hibernate
+```
+
+For further behaviour of the suspend and hibernate actions check the
+[corresponding section](#change-suspend-and-hibernate-behaviour).
+
 ## Troubleshooting
 
 This section focusses on errors that correspond to the SystemD software.
