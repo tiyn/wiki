@@ -21,6 +21,11 @@ For this run the following command.
 acpi -b
 ```
 
+## Power Management
+
+Tools, programs and guides to manage the power usage and improve battery life are described in the
+[power management entry](/wiki/linux/power_management.md).
+
 ## (Liquid) Coolers
 
 The viewing of temperatures of coolers aswell as the selection of RGB-settings can be achieved by

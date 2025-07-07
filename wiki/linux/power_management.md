@@ -1,6 +1,7 @@
 # Power Management
 
-This entry addresses the saving of battery usage aswell as battery care.
+This entry addresses the saving of [battery](/wiki/linux/hardware.md#battery) usage aswell as
+battery care.
 Other than this it also focusses on the general management and usage of power.
 
 ## Programs
