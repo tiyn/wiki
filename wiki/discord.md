@@ -21,3 +21,8 @@ The following is a list of bots featured in this wiki that can do this.
 - [Sinusbot](/wiki/sinusbot.md) is a self-hosted bot for Discord that can play music and sounds. 
   It's closed-source and free of charge.
   It also features [Teamspeak](/wiki/teamspeak.md) support.
+
+### Themes and Plugins
+
+By default Discord has no option to use themes or plugins.
+This however can be changed by using [BetterDiscord](/wiki/betterdiscord.md).
