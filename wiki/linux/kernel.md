@@ -36,4 +36,6 @@ linux /vmlinuz-linux-zen
 initrd /initramfs-linux-zen.img
 ```
 
+If you want to switch the backup to Zen too, the backup file in `boot/loader/entries/` has to be
+changed too.
 Afterwards the system should be rebooted for the change to take effect.
