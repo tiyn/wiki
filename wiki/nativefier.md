@@ -78,6 +78,9 @@ This section focusses on various errors that can appear by using Nativefier.
 
 ### `Skia shader compilation error` When Starting an Application
 
+This section is based on
+[a GitHub issue by RJVB](https://github.com/ferdium/ferdium-app/issues/1265).
+
 When starting an application that has been set up using nativefier it is possible that the error
 `Skia shader compilation error` or a similar error regarding Skia can occur.
 An easy way to fix this is by clearing the GPU cache which can be found inside the `~/.config`
