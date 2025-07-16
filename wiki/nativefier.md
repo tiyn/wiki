@@ -71,3 +71,18 @@ On Nativefier this can be achieved by pressing the `Alt`-key and selecting `View
 `Forward`.
 This can also be achieved by pressing `Alt`+`Left Arrow` for going back and `Alt`+`Right Arrow` for
 going forwards.
+
+## Troubleshooting
+
+This section focusses on various errors that can appear by using Nativefier.
+
+### `Skia shader compilation error` When Starting an Application
+
+When starting an application that has been set up using nativefier it is possible that the error
+`Skia shader compilation error` or a similar error regarding Skia can occur.
+An easy way to fix this is by clearing the GPU cache which can be found inside the `~/.config`
+directory.
+For example a nativefied app named [mtg-companion](/wiki/games/magic%3A_the_gathering.md#resources)
+can be found in the directory `~/.config/mtg-companion-nativefier-8fcad7` and its GPU cache inside
+the directory named `~/.config/mtg-companion-nativefier-8fcad7/GPUCache`.
+The whole directory `GPUCache` can just be moved or removed to clear the cache.
