@@ -1,12 +1,12 @@
-# Calibre
+# calibre
 
-[Calibre](https://calibre-ebook.com/) is a cross-platform, free and open-source
+[calibre](https://calibre-ebook.com/) is a cross-platform, free and open-source
 software suite for [e-book](/wiki/e-books.md) management.
 It supports various formats aswell as conversion between them.
 
 ## Usage
 
-This section addresses various features of Calibre.
+This section addresses various features of calibre.
 
 ## Adding a Plugin
 
@@ -103,3 +103,17 @@ Additionally the `Kobo Touch Extended` plugin is recommended to use since it mak
 Kobo e-readers easier.
 Finally `KePub Metadata Reader` and `KePub Metadata Reader` make it possible to read and write
 metadata to `.kepub` files which is especially useful.
+
+## Exporting and Importing Settings and Libraries
+
+This section explains how to export and import the settings of one calibre instance to another.
+It is based on a
+[reddit comment by dwhitzzz](https://www.reddit.com/r/Calibre/comments/1313kix/comment/mo4b9rn).
+
+To export the settings and libraries of a calibre instance open the corresponding instance and then
+right-click the `calibre` Button on the top menu.
+Select `Export/import all calibre data`, select the export or import option and then follow the
+instructions.
+Please note that the export only works when an empty folder is selected.
+All calibre data will then be exported into the selected directory.
+For the import process the folder that includes the calibre data has to be selected.
