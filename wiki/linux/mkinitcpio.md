@@ -24,7 +24,7 @@ mkinitcpio -P
 
 This section addresses various errors that can happen when using mkinitcpio.
 
-### '/lib/modules/xxxxxxx' is not a valid kernel module directory
+### `'/lib/modules/xxxxxxx' is not a valid kernel module directory`
 
 When you encounter an error like the header of this section when running
 `mkinitcpio` try first to reinstall the `linux`, `linux-headers` and
@@ -37,3 +37,13 @@ to the correct location `/boot/initramfs-linux.img` in the boot directory (back
 up the old one).
 After that reboot and it should again work fine (Source:
 [Unix Stackexchange](https://unix.stackexchange.com/questions/395402/lib-modules-4-9-8-1-arch-is-not-a-valid-kernel-module-directory)).
+
+### `WARNING: Possibly missing firmware for module: ...`
+
+If the warning `WARNING: Possibly missing firmware for module: ...` is shown during the process of
+rebuilding the initramfs there is a firmware package missing.
+It is not necessarily needed to install them but is recommended for the hardware to run correctly.
+A simple table that shows firmware modules and corresponding
+[Arch Linux](/wiki/linux/arch-linux.md) packages is shown on the
+[Arch Linux wiki](https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX).
+
