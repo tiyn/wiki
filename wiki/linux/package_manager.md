@@ -19,7 +19,7 @@ It features the same syntax.
 
 This section addresses various usages of the arch linux package managers.
 
-### Downgrading Packages 
+#### Downgrading Packages 
 
 Packages of the AUR can be downgraded by using the
 [Downgrade](https://github.com/archlinux-downgrade/downgrade) program.
@@ -62,11 +62,33 @@ The cache of all packages except the one installed can be deleted by running the
 pacman -Sc
 ```
 
+Alternatively the pacman cache can be deleted partly by running the following command which will
+clear the cache of pacman except for the latest version.
+The amount of versions to keep can be specified by changing the number in the following command
+accordingly.
+
+```sh
+paccache -rvk1
+```
+
+And finally the following command will remove all cached files that belong to uninstalled packages.
+Again the number can be changed to keep a specific number of versions.
+
+```sh
+paccache -rvuk0
+```
+
 Since `yay` mirrors the usage of `pacman` it can be used the same way and will clean both caches.
 
 ```sh 
 yay -Sc
 ```
+
+Similar to `paccache` a command called [yaycache](https://github.com/aokellermann/yaycache) can be
+used.
+It follows the same options as `paccache`.
+
+The clearing of the cache can be automated by using a [hook](#hook-clear-cache).
 
 #### Enabling `multilib`
 
@@ -77,6 +99,129 @@ To enable it search and uncomment the following lines in the file `/etc/pacman.c
 ```txt
 [multilib]
 Include = /etc/pacman.d/mirrorlist
+```
+
+#### Hooks
+
+Hooks are commands that are run before or after installation of one or more packages.
+They are needed to have the `.hook` extension and can be found inside two directories.
+The first one is `/usr/share/libalpm/hooks/`.
+The second one is defined in `HookDir` inside the file `/etc/pacman.conf`.
+By default it points towards `/etc/pacman.d/hooks`.
+
+Examples of hooks can be found in the following sections.
+
+##### Hook: List Orphans
+
+The following hook will display orphans after any package is update.
+It was found in a
+[reddit post by IBNash](https://www.reddit.com/r/archlinux/comments/dsnu81/hear_ye_archers_share_your_pacman_hooks/)
+which references a
+[gist by Strykar](https://gist.github.com/Strykar/3b3cd5bbdabe7e5c77f9414b2b4fe7e8).
+
+```txt
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Searching for orphaned packages...
+When = PostTransaction
+Exec = /usr/bin/bash -c "/usr/bin/pacman -Qtd || /usr/bin/echo '==> no orphans found.'"
+```
+
+##### Hook: Clear Cache
+
+The following hook will [clear the pacman cache](#clear-cache) except for the last version of a package.
+It was found in a
+[reddit post by IBNash](https://www.reddit.com/r/archlinux/comments/dsnu81/hear_ye_archers_share_your_pacman_hooks/)
+which references an
+[AUR comment by itaranto](https://aur.archlinux.org/packages/pacman-cleanup-hook).
+
+```txt
+[Trigger]
+Type = Package
+Operation = Remove
+Operation = Install
+Operation = Upgrade
+Target = *
+
+[Action]
+Description = Removing unnecessary cached files (keeping the latest one)...
+When = PostTransaction
+Exec = /usr/bin/paccache -rvk1 && paccache -ruvk0
+```
+
+##### Hook: Informant
+
+The following hook will use [informant](https://github.com/bradford-smith94/informant) to check for
+Arch News that may require manual intervention and not allow the update if there are news unread.
+It was found in a
+[reddit post by IBNash](https://www.reddit.com/r/archlinux/comments/dsnu81/hear_ye_archers_share_your_pacman_hooks/)
+which references the
+[informant Github](https://github.com/bradford-smith94/informant/blob/master/informant.hook).
+
+```txt
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = *
+Target = !informant
+
+[Action]
+Description = Checking Arch News with Informant...
+When = PreTransaction
+Exec = /usr/bin/informant check
+Depends = informant
+AbortOnFail
+```
+
+##### Hook: Update Package Mirrorlist
+
+The following hook will use [reflector](https://xyne.dev/projects/reflector/) to update the pacman
+mirrorlist.
+It will use german mirrors (`-c de`), will list the fastest 15 mirrors (`-n 15`) and only do so if
+the mirror was online in the last 24 hours (`-a 24`).
+It was found in a
+[reddit post by IBNash](https://www.reddit.com/r/archlinux/comments/dsnu81/hear_ye_archers_share_your_pacman_hooks/)
+which references the
+[pacman-hooks Github](https://github.com/desbma/pacman-hooks/blob/master/reflector/reflector.hook).
+
+```txt
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = pacman-mirrorlist
+
+[Action]
+Description = Updating pacman-mirrorlist with reflector...
+When = PostTransaction
+Depends = reflector
+Exec = /bin/bash -c 'reflector -c de -n 15 -a 24 > /etc/pacman.d/mirrorlist ; test -f /etc/pacman.d/mirrorlist.pacnew && mv -v /etc/pacman.d/mirrorlist.{pacnew,orig} || true'
+```
+
+##### Hook: Kernel Reboot Needed
+
+The following hook will use determine if a reboot is needed because the kernel was updated.
+It was found in a
+[reddit commend by progandy](https://www.reddit.com/r/archlinux/comments/dsnu81/comment/f6sogat).
+
+```txt
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Type = File
+Target = usr/lib/modules/*
+
+[Action]
+Description = Check for upgrade of running kernel...
+When = PostTransaction
+Exec = /bin/bash -c "[[ -f \"/proc/modules\" && ! -d \"/usr/lib/modules/$(uname -r)\" ]] && printf '==> WARNING: %s\n  -> %s\n' 'Running kernel has been updated or removed!' 'A reboot is required!' || true"
 ```
 
 ### Troubleshooting
