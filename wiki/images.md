@@ -5,23 +5,23 @@ In the computer context it is a file with an extension like `png`, `jpg`, `gif` 
 vector graphics but there are many more.
 This entry also features medicinal image and visual formats such as DICOM.
 
-## Clients
+## Viewer
 
 - [sxiv](https://github.com/xyb3rt/sxiv) is an image viewer for [Linux'](/wiki/linux.md)
   [X window system](/wiki/linux/x_window_system.md).
 - [Weasis](https://github.com/nroduit/Weasis) is a cross-platform DICOM viewer.
-- [Inkscape](/wiki/inkscape.md) is a cross-platform vector graphic editor.
 
-## Editing
+## Editors
 
 Editing images can be done by various image manipulation software.
-A popular cross-platform program for this is [GIMP](https://www.gimp.org/).
 
-A second cross-platform software suite for displaying, creating and editing (raster) images is
-[ImageMagick](/wiki/imagemagick.md).
-
-Another part of image manipulation is the upscaling of low resolution images.
-This can be done by the cross-platform program [upscayl](https://github.com/upscayl/upscayl).
+- [GIMP](https://www.gimp.org/) is a popular cross-platform program for editing pictures.
+- [ImageMagick](/wiki/imagemagick.md) is another cross-platform software suite for creating and
+- editing (raster) images.
+- [upscayl](https://github.com/upscayl/upscayl) is an upscaler that can be used cross-platform.
+- [Inkscape](/wiki/inkscape.md) is a cross-platform vector graphic editor.
+- [draw.io](/wiki/drawio.md) is a cross-platform program and web application for creating and
+  editing diagrams.
 
 ### Getting Metadata
 
