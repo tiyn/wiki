@@ -69,6 +69,19 @@ This way you don't have to search for your discs all the time.
 - [HandBrake](handbrake.md) is an open-source and multi-platform program that can compress video
   files.
 
+For all of this a Blu-Ray or DVD drive is needed that are compatible with MakeMKV.
+DVD-drives usually work out of the box as expected with MakeMKV.
+Normal Blu-Ray drives are the same.
+However for UHD-Blu-Ray drives vendors use special firmwares to prohibit the extraction of video
+files from the discs using the drives.
+For example: if you use a "Verbatim 43888" as described in a
+[reddit comment by billycar11](https://www.reddit.com/r/makemkv/comments/1ize3vg/comment/mf2d5f4)
+the drive has to be flashed.
+This specific drive uses a BU40N (the drive can be found in the Drive Information under
+"Product").
+A guide on how to flash UHD drives (including the BU40N) can be found in the
+[MakeMKV forum post by billycar11](https://forum.makemkv.com/forum/viewtopic.php?f=16&t=19634).
+
 ## Naming schemes of movies and TV shows
 
 This section describes how to name and how to place movies and TV shows and
