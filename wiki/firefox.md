@@ -2,6 +2,8 @@
 
 [Firefox](https://www.mozilla.org/en-US/Firefox) is a free and open-source web
 browser.
+There are browsers that are based on Firefox and expand on its features like Zen browser.
+For this the usage is mostly the same.
 
 ## Usage
 
@@ -137,6 +139,14 @@ To enable it go into the preferences and check `Use autoscrolling`.
 Sponsorings are embedded ads in Firefox.
 After navigating to `about:config` enabling and disabling of sponsorings can be done at
 `browser.newtabpage.activity-stream.showSponsored`.
+
+### Gestures
+
+By default gestures are enabled by default.
+This can be annoying especially on laptops when using the touchpad.
+But the gestures can easily be disabled.
+For this go to `about:config` and clear the preferences for `browser.gesture.swipe.left` and
+`browser.gesture.swite.right`.
 
 ### Make Fullscreen Only Window Wide
 
