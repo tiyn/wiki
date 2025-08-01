@@ -15,3 +15,4 @@ This section lists various VPN implementations.
 - [OpenVPN](/wiki/openvpn.md) is probably the most well known VPN implementation.
 - [WireGuard](/wiki/wireguard.md) is a modern, fast and secure implementation of the VPN protocol.
   It is free and open-source.
+- Global Protect is a proprietary VPN that is mostly used by corporation and learning facilities.
