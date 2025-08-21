@@ -33,6 +33,7 @@ using [liquidctl](https://github.com/liquidctl/liquidctl).
 
 ## Temperature 
 
-To check the temperature the command `sensors` can be used.
+To check the temperature the command `sensors` can be used which (on most distributions) is a part
+of the `lm_sensors` package.
 It will then display all the available temperature sensors available aswell as many other sensors
 like the RPM for fans.
