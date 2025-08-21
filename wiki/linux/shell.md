@@ -222,3 +222,12 @@ It is related to a terminal line setting problem.
 ```sh
 stty sane
 ```
+
+### Error `cannot open shared object file: No such file or directory`
+
+This section is based on a
+[Github issue by stephenson](https://github.com/rubygems/rubygems/issues/7523).
+This error can occur for many different programs and with many different commands which is why it
+is listed in the shell entry.
+To fix it the most common and most effective way is to [reinstall](/wiki/linux/package_manager.md)
+the program that throws the error.
