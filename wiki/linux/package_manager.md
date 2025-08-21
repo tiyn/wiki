@@ -19,22 +19,36 @@ It features the same syntax.
 
 This section addresses various usages of the arch linux package managers.
 
-#### Downgrading Packages 
+#### Ignoring Packages
+
+Packages can be ignored by adding the package in `/etc/pacman.conf` under `IgnorePkg`.
+In the following example `waybar` is ignored from updates.
+To add more packages just add them separated by spaces.
+
+```txt
+IgnorePkg = waybar
+```
+
+To unignore the package from updates remove it from this line.
+
+#### Downgrading Packages
 
 Packages of the AUR can be downgraded by using the
 [Downgrade](https://github.com/archlinux-downgrade/downgrade) program.
 This program can then easily be used to an AUR package.
 This works like the following assuming the package `v4l2loopback-dmks` needs to be downgraded.
 
-```sh 
+```sh
 sudo downgrade v4l2loopback-dmks
 ```
 
 Afterwards the target version can be selected and the downgrading process will conclude.
+After the downgrade of a package you will get asked if you want to
+[ignore future updates](#ignoring-packages).
 
 #### Manual Installation of a `PKGBUILD` File
 
-A `PKGBUILD` file is a [shell](/wiki/linux/shell.md) script that contains the installation 
+A `PKGBUILD` file is a [shell](/wiki/linux/shell.md) script that contains the installation
 information that is required by the Arch Linux.
 Using the `makepkg` command it can be installed like the following command shows.
 
@@ -80,7 +94,7 @@ paccache -rvuk0
 
 Since `yay` mirrors the usage of `pacman` it can be used the same way and will clean both caches.
 
-```sh 
+```sh
 yay -Sc
 ```
 
