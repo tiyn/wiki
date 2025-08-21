@@ -2,8 +2,10 @@
 
 [Firefox](https://www.mozilla.org/en-US/Firefox) is a free and open-source web
 browser.
-There are browsers that are based on Firefox and expand on its features like Zen browser.
-For this the usage is mostly the same.
+There are browsers that are based on Firefox and expand on its features like
+[Zen browser](/wiki/zen_browser.md).
+For this the usage is mostly the same except for the parts noted in the
+[Zen Browser entry](/wiki/zen_browser.md).
 
 ## Usage
 
@@ -109,7 +111,7 @@ The following add-ons provide translation options.
 The following add-ons add information to online shops.
 
 - [Fakespot](https://www.fakespot.com/) is an add-on made by Mozilla which displays additional
-  information on online shops, ebay and amazon. 
+  information on online shops, ebay and amazon.
   It can give shops, vendors and products a trust score which can be used as an alternative to
   reviews, which might be fake.
 
