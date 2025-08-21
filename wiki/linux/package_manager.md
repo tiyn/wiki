@@ -304,3 +304,18 @@ This is especially the case on [Arch Linux-systems](/wiki/linux/arch-linux.md) b
 packages are also installed via [Pacman or Yay](#arch-linux-pacman-and-yay).
 In this case the global Version has to be changed to `system` or the package installed to the
 non-system Python version.
+
+#### Error `exists in filesystem`
+
+This section is based on a
+[reddit post by 194668PT](https://www.reddit.com/r/archlinux/comments/17jempk/pacman_exists_in_filesystem_errors/).
+
+If an error shows up that describes that a file of a package `exists in filesystem` usually a
+permission/owner error happened.
+This can happen when running `pacman -Syyu`.
+To update the package either way the following command can be used.
+`<package name>` should be exchanged for the package that throws the error.
+
+```sh
+sudo pacman -S --overwrite "*" <package name>
+```
