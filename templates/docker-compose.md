@@ -15,7 +15,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 ### Environment-variables
 
-Set the following variables with the -e tag.
+Set the following variables in the `environment:` section.
 
 | Name       | Usage         | Default |
 | ---------- | ------------- | ------- |
@@ -25,7 +25,7 @@ Set the following variables with the -e tag.
 <!---->
 <!-- The environment variables are set via the `.env` file and listed in the -->
 <!-- [corresponding section](#env). -->
-
+<!---->
 ### Ports
 
 Set the following ports in the `ports:` section.
@@ -47,11 +47,11 @@ Set the following volumes with the -v tag.
 ```sh
 ```
 
-### .env
-
-```sh
-```
-
+<!-- ### .env -->
+<!---->
+<!-- ```sh -->
+<!-- ``` -->
+<!---->
 ### docker-compose.yml
 
 ```yml
