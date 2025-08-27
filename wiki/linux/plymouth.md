@@ -65,3 +65,9 @@ plymouth-set-default-theme -R <theme>
 Other themes can be found in online sources like the
 [AUR](/wiki/linux/arch-linux.md#package-manager-and-aur) or websites like
 [Gnome-Look.org](https://www.gnome-look.org/browse?cat=108).
+
+The following are recommended themes.
+
+- [Arch10](https://github.com/eromatiya/plymouth-theme-arch10) is a theme for
+  [Arch Linux](/wiki/linux/arch-linux.md) similar to the boot splash screen of
+  [Windows](/wiki/windows.md) 10.
