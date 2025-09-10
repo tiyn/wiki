@@ -23,6 +23,32 @@ Afterwards BetterDiscord can be kept up to date with the following command.
 betterdiscordctl self-upgrade
 ```
 
+### Pacman Hook
+
+When using [Arch Linux](/wiki/linux/arch-linux.md) and its package managers
+[Pacman and Yay](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay) a hook can be set that
+automatically updates the discord installation to setup betterdiscord using betterdiscordctl.
+The following is a [pacman hook](/wiki/linux/package_manager.md#hooks) that can be used to update
+betterdiscord automatically.
+Make sure to change the three occurences of `<username>` to the name of the user to install
+betterdiscord for.
+
+```sh 
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = discord*
+
+[Action]
+Description = Rebuild BetterDiscord after Discord update
+When = PostTransaction
+Exec = /usr/bin/sh -c 'sudo -u <username> betterdiscordctl reinstall >/dev/null 2>&1; sudo -u <username> xvfb-run -a discord --help >/dev/null 2>&1; sudo -u <username> betterdiscordctl install >/dev/null 2>&1; true'
+Depends = xorg-server-xvfb
+Depends = betterdiscordctl
+NeedsTargets
+```
+
 ## Usage 
 
 This section addresses the usage of BetterDiscord.
