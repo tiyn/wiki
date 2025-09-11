@@ -238,11 +238,6 @@ This can be fixed by updating it with the following command:
 curl -o /etc/pacman.d/mirrorlist https://archlinux.org/mirrorlist/all/
 ```
 
-### Troubleshooting
-
-This section addresses various errors that can happen when using the package managers yay and
-pacman.
-
 #### Error While Importing Keys
 
 Both `yay` and `pacman` use [GPG keys](/wiki/linux/gpg.md).
