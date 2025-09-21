@@ -240,7 +240,7 @@ Exec = /bin/bash -c "[[ -f \"/proc/modules\" && ! -d \"/usr/lib/modules/$(uname 
 
 ### Troubleshooting
 
-This section addresses various uses of the pacman and yay package managers.
+This section will focus on errors and the fixing of errors of package managers.
 
 ### `/usr/lib/firmware/nvidia/ad104` exists in filesystem linux-firmware-nvidia
 

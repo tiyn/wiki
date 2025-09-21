@@ -19,6 +19,8 @@ This also has to be set up in the admin settings.
 
 ## Usage
 
+This section addresses the usage of the Open WebUI.
+
 ### Downloading and Selecting New Models
 
 Models are not downloaded via the Open Webui directly.
