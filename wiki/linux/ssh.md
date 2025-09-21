@@ -62,11 +62,17 @@ Host server
 	User user
 ```
 
-### Server Setup 
+### X-Forwarding 
 
-[Source](https://tutorials.rc.nectar.org.au/x11forwarding/02-enable-x11-on-virtual-machine)
-For the server setup edit the file `/etc/ssh/sshd_config` and make sure X-Forwarding is enabled by
-editing a line to look like the following.
+The following sections address the usage of X-forwarding which makes it possible to use graphical
+programs remotely over SSH.
+
+#### Enabling X-Forwarding on a Server
+
+This section is based on a
+[blog by rc nectar](https://tutorials.rc.nectar.org.au/x11forwarding/02-enable-x11-on-virtual-machine).
+For the server setup of X-forwarding edit the file `/etc/ssh/sshd_config` and make sure 
+X-forwarding is enabled by editing a line to look like the following.
 
 ```txt
 X11Forwarding yes
@@ -78,27 +84,28 @@ Make sure to restart the SSH daemon afterwards by running the following command.
 service sshd restart
 ```
 
-Afterwards X-Forwarding should be enabled on the server.
+Afterwards X-forwarding should be enabled on the server.
 For full functionality install the `x11-apps` package aswell.
 
-#### Client Setup
+#### Enabling X-Forwarding on a Client
 
-Auf dem Server ist das so genannte X-Forwarding aktiviert.
-Das bedeutet, dass es möglich ist, graphische Programme aufzurufen und diese über eine SSH-Verbindung darstellen zu lassen.
-Bei einem klassischen Login mittels des Terminals und dem `ssh`-Befehl kann dieser um die Flag `-C` erweitert werden
-Der komplette Befehl sieht dann wie folgt aus, wobei sich der Name für `<host>` aus dem [Setup-Abschnitt](#setup) ergibt.
+To use X-forwarding when connecting use the `-C` flag as shown in the following example.
 
 ```sh
 ssh -C <host>
 ```
 
-Die `-C`-Flag kann in der [`config`-Datei](#setup) vermerkt werden, sodass sie nicht extra angeführt werden muss.
-Dafür müssen die beiden folgenden Zeilen in die `config` unter dem entsprechenden Eintrag eingefügt werden.
+The `-C` flag can also be noted in the config file so that it does not have to be specified each
+time.
+This can be achieved by editing the config file which is located at `~/.ssh/config` and include the
+following lines.
 
 ```
     ForwardX11 yes
     ForwardX11Trusted yes
 ``` 
 
-Die Funktion des X-Forwardings kann geprüft werden, indem man sich beim Server einloggt und dann `xclock` aufruft.
-Bei korrekter Konfiguration sollte sich nun eine graphische Oberfläche öffnen, die die Uhrzeit anzeigt.
+The functionality of X-forwarding can easily be tested by running a graphical program when remotely
+connected.
+An example for this could be the simple clock program `xclock`.
+
