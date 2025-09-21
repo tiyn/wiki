@@ -7,7 +7,7 @@
 
 On most Linux distributions Watson can be installed with the `watson` package.
 Additionally Watson can be installed using Pythons pip package manager.
-The pip package is called ´td-watson`.
+The pip package is called `td-watson`.
 Alternatively it can be installed via [GitHub](https://github.com/TailorDev/Watson).
 
 ## Usage
