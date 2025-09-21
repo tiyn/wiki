@@ -10,6 +10,8 @@ On most linux distributions GPG can be installed with the `gnupg` package.
 
 ## Usage
 
+This section addresses the usage of the Open GPG.
+
 ### Generating a Key Pair
 
 A fast way to generate a key pair is by running the following command.
@@ -99,4 +101,34 @@ Replace `<id>` with the identifier of the key that should be received and truste
 ```sh
 gpg --recv-key <id>
 gpg --lsign <id>
+```
+
+## Troubleshooting 
+
+This section will focus on errors and the fixing of errors of GPG.
+
+### `keyblock resource '.../pubring.kbx': No such file or directory`
+
+This error mostly occurs when updating packages via various
+[package managers](/wiki/linux/package_manager.md).
+It can easily be fixed by running the following command.
+Which will (re-)generate the needed files and directories for GPG.
+
+```sh 
+dirmngr
+```
+
+### `gpg: keyserver receive failed: No data`
+
+This error mostly occurs when updating packages via various
+[package managers](/wiki/linux/package_manager.md).
+It prevents specific packages from installing after the PGP key is not imported correctly.
+This can be fixed by importing the PGP key manually by the following command.
+In this command `<key-id>` is the id for the PGP key given by the package manager before the error
+occurs.
+`hkp://pgp.rediris.es` is a key server that can be used but other possibilities are available and
+can and should be used depending on the location.
+
+```sh 
+gpg --keyserver hkp://pgp.rediris.es --recv-key <key-id>
 ```
