@@ -137,5 +137,20 @@ it is running at.
 ssh -f -N -L <local port>:<local address>:<port of service> <address of server>
 ```
 
+After running the command the tunnel will stay established until the process is killed.
+This can be done by running a command identical or similar to the following which is used to find
+the process.
+
+```sh 
+ps aux | grep "ssh -f -N -L <local port>"
+```
+
+Afterwards it can be killed by running the follwing command where `<process-id>` is the id of the
+process found with the previous command.
+
+```sh 
+kill <process-id>
+```
+
 Files that are based on a remote server can be mounted as described in
 [the corresponding section](#mount-directory-with-sshfs) to setup complete remote development.
