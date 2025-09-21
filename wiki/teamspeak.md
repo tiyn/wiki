@@ -25,11 +25,7 @@ The server software can be setup via [Docker](/wiki/docker.md) with the
 [teamspeak image](./docker/teamspeak.md).
 This image can setup a Teamspeak3 server.
 
-## Usage
-
-This section addresses various features of Teamspeak3.
-
-### Link Teamspeak3 to a subdomain
+#### Link Teamspeak3 to a subdomain
 
 To link Teamspeak3 to one of your subdomains you need to add a
 [DNS SRV-record](./dns.md#srv-record):
@@ -46,6 +42,10 @@ weight: 5
 port: 9987 (or your teamspeak3 port)
 target: ts3.<domain>.<TLD>
 ```
+
+## Usage
+
+This section addresses various features of Teamspeak3.
 
 ### Installing a Sound Pack
 
@@ -68,3 +68,13 @@ The following is a list of bots featured in this wiki that can do this.
 - [Sinusbot](/wiki/sinusbot.md) is a self-hosted bot for Teamspeak that can play music and sounds. 
   It's closed-source and free of charge.
   It also features [Discord](/wiki/discord.md) support.
+
+### Channel Visibility
+
+As explained by
+[guisinho_DBR on the Teamspeak forums](https://community.teamspeak.com/t/room-that-nobody-can-see-only-some-people-with-powers/20471)
+there is no way to hide a channel completely from view.
+It is however possible to set the subscription and description view power of a channel to a high
+value.
+This will permit only users with higher powers to see who is connected to the channel and view the
+description of a channel.

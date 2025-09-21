@@ -48,11 +48,26 @@ plymouth-set-default-theme --list
 ```
 
 One of the listed themes can then be installed like the following command does.
+`<theme>` needs to be replaced with a theme that is included in the listed themes (like `fade-in`).
 
 ```sh
-plymouth-set-default-theme fade-in
+plymouth-set-default-theme <theme>
+```
+
+If this command is run the
+[initramfs needs to be rebuild](/wiki/linux/mkinitcpio.md#manually-generate-initial-ramdisk).
+A command that includes the rebuilding process is the following.
+
+```sh
+plymouth-set-default-theme -R <theme>
 ```
 
 Other themes can be found in online sources like the
 [AUR](/wiki/linux/arch-linux.md#package-manager-and-aur) or websites like
 [Gnome-Look.org](https://www.gnome-look.org/browse?cat=108).
+
+The following are recommended themes.
+
+- [Arch10](https://github.com/eromatiya/plymouth-theme-arch10) is a theme for
+  [Arch Linux](/wiki/linux/arch-linux.md) similar to the boot splash screen of
+  [Windows](/wiki/windows.md) 10.

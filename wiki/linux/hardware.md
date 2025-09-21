@@ -30,3 +30,10 @@ Tools, programs and guides to manage the power usage and improve battery life ar
 
 The viewing of temperatures of coolers aswell as the selection of RGB-settings can be achieved by
 using [liquidctl](https://github.com/liquidctl/liquidctl).
+
+## Temperature 
+
+To check the temperature the command `sensors` can be used which (on most distributions) is a part
+of the `lm_sensors` package.
+It will then display all the available temperature sensors available aswell as many other sensors
+like the RPM for fans.

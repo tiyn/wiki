@@ -25,6 +25,8 @@ This section addresses various features of picard.
 
 To enable the file renaming on saving check `Rename files when saving` in the
 preferences.
+Alternatively the box under `Options` called `Rename Files` can be checked to produce the same
+outcome.
 Under `Options` you can `Open file naming script editor` to change the script.
 The tags described used are based on the audio codec.
 In this section it is assumed the standard
