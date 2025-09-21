@@ -43,6 +43,9 @@ cat ~/.ssh/id_rsa.pub | ssh username@server 'cat >> ~/.ssh/authorized_keys'
 
 ### Mount Directory With SSHFS
 
+This section is loosely based on
+[a GitHub comment by mlopezgva](https://github.com/VSCodium/vscodium/discussions/693).
+
 To mount a directory (in this case called `directory`) from a remote server
 (in this case called `server` also can be substituted by something like
 `user@server-ip`) on a local mount (in this case `mountpoint`) run:
@@ -50,6 +53,12 @@ To mount a directory (in this case called `directory`) from a remote server
 ```sh
 sshfs server:/directory mountpoint
 ```
+
+This can be very useful when trying to code on a remote machine but wanting to use the local
+instance of a text editor.
+
+Services that are hosted and use ports on a remote server can be tunneled as described in
+[the corresponding section](#port-tunneling) to setup complete remote development.
 
 ### Shorten SSH Connection Commands
 
@@ -109,3 +118,24 @@ The functionality of X-forwarding can easily be tested by running a graphical pr
 connected.
 An example for this could be the simple clock program `xclock`.
 
+### Port Tunneling
+
+This section is based on the 
+[documentation of PostgreSQL](https://www.postgresql.org/docs/current/ssh-tunnels.html).
+
+A specific port can be tunneled from a remote host to a client via SSH.
+This could be especially useful when coding remotely and wanting to access a database like
+PostgreSQL or other services.
+For the forwarding of a port run the following command. 
+`<local address>` (for example `localhost`) and  `<local port>` (for example `63333`) are the
+target (and most of the time local) address and port to tunnel the service to.
+`<address of server>` (for example `joe@foo.com` or an alias) specifies the address and username of
+the server that hosts the service and `<port of service>` (for example `5432`) describes the port
+it is running at.
+
+```sh
+ssh -f -N -L <local port>:<local address>:<port of service> <address of server>
+```
+
+Files that are based on a remote server can be mounted as described in
+[the corresponding section](#mount-directory-with-sshfs) to setup complete remote development.
