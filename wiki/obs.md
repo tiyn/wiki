@@ -31,12 +31,11 @@ The removed background can be replaced with color key filters.
 
 #### Installation
 
-Made by royshil
-[the GitHub page](https://github.com/royshil/obs-backgroundremoval#linux)
-describes various possibilities to install the background removal for OBS on
-different systems.
-On Linux systems background removal is often contained in a package named
-`obs-backgroundremoval` or similarly.
+Made by royshil [the GitHub page](https://github.com/royshil/obs-backgroundremoval#linux) describes
+various possibilities to install the background removal for OBS on different systems.
+On Linux systems background removal is often contained in a package named `obs-backgroundremoval`
+or similarly.
+Afterwards the background removal can be added as a filter on a input source.
 
 ## Troubleshooting
 
