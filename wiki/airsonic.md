@@ -7,7 +7,7 @@ Airsonic is not maintained anymore and therefore deprecated.
 A more modern implementation of it is
 [Airsonic-Advanced](./airsonic-advanced.md).
 
-## Set up
+## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
 [linuxserver image](./docker/linuxserver_-_airsonic.md).
