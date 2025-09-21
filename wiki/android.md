@@ -44,6 +44,36 @@ This section addresses various useful applications.
 - [Markor](https://github.com/gsantner/markor) is a text editor supporting
   [Markdown](/wiki/markup_language.md)
 
+## Improve Security and Privacy
+
+Security and privacy are important topics, especially so when dealing with mobile phones.
+This section focusses on improving them on a standard Android system.
+
+The Elecronic Frontier Foundation recommends the following changes in their guide 
+[Guide](https://ssd.eff.org/module/how-to-get-to-know-android-privacy-and-security-settings).
+
+- [2FA](#multi-factor-authentication)
+- A strong password (though the usage of biometrics is not recommended due to the possibility of
+  being physically forced to unlock a phone with them)
+- Privacy permission
+- Find my device
+- Theft protection
+- Google privacy checkup
+- Backups (though the usage of them gives data to Google, so it may rather be turned off)
+- Disable WEP networks
+- Obscure lockscreen notifications
+
+The YouTube Channel 9to5Google also has a 
+[video on security and privcacy](https://www.youtube.com/watch?v=eswIeNxSIqo) which additionally
+suggest the following changes.
+
+- Alert when clipboard is accessed
+- Enable app pinnig
+
+Another option to add which may not improve security or privacy but improves usability - especially
+if a difficult passphrase is used - is the enabling of "Extend Unlock".
+There "Trusted Devices" can be set or the "On-body Detection" can be enabled.
+
 ## Multi-Factor Authentication
 
 [Multi-factor authentication](/wiki/multi-factor_authentication.md) can easily be set up on android
