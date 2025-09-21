@@ -12,3 +12,7 @@ package.
 
 This section addresses the usage of /name/.
 /basic description for usage/
+
+## Troubleshooting 
+
+This section will focus on errors and the fixing of errors of /name/.
