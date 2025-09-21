@@ -228,6 +228,16 @@ Exec = /bin/bash -c "[[ -f \"/proc/modules\" && ! -d \"/usr/lib/modules/$(uname 
 
 This section addresses various uses of the pacman and yay package managers.
 
+### `/usr/lib/firmware/nvidia/ad104` exists in filesystem linux-firmware-nvidia
+
+This error comes from a decision to split the firmware modules into different parts.
+An easy way to fix it is by simply reinstalling the `linux-firmware` package and updating the
+packages of the system.
+
+```sh 
+pacman -Syu linux-firmware
+```
+
 #### Update Mirrorlist
 
 After a while not updating the system it is possible for the mirrorlist to be
