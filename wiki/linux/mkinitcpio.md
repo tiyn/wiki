@@ -129,3 +129,11 @@ If this error or one similar to this is shown the boot partition is filled up co
 generation of the initial ramdisk.
 This can be fixed by either [compressing the image](#enabledisable-compression) or by 
 [disabling unused fallbacks](#default-and-fallback-images).
+
+### `WARNING: Possibly missing firmware for module`
+
+If the warning `WARNING: Possibly missing firmware for module` is shown a firmware package is
+missing for the hardware of the system.
+Though it is not neccessary it is recommended to install ist.
+To check which firmware package is needed for which firmware module check
+[the Arch Linux wiki](https://wiki.archlinux.org/title/Mkinitcpio#Possibly_missing_firmware_for_module_XXXX).
