@@ -37,3 +37,21 @@ To check the temperature the command `sensors` can be used which (on most distri
 of the `lm_sensors` package.
 It will then display all the available temperature sensors available aswell as many other sensors
 like the RPM for fans.
+
+## ThinkPad TrackPoint
+
+This section is based on a
+[Reddit comment by zedbraxmen](https://www.reddit.com/r/thinkpad/comments/wjb8qz/configuring_trackpoint_in_wayland/).
+
+The sensitivity and speed of the classic trackpoint on ThinkPads can be changed using UDEV rules.
+The following lines are an example for a potential file `.rules` located at `/etc/udev/rules.d/`.
+It could look something like the following.
+The values for sensitivity and speed could be adjusted.
+
+```txt
+ACTION=="add",    
+SUBSYSTEM=="input",    
+ATTR{name}=="TPPS/2 IBM TrackPoint",    
+ATTR{device/sensitivity}="275",
+ATTR{device/speed}="215",
+```
