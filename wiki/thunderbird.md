@@ -28,3 +28,10 @@ The following is a list of useful extensions for Thunderbird.
 - "Send Later" is an extension which allows for the scheduling of mails.
 - "Signature Switch" is an extension which adds different signatures for different purposes and
   allows easy and automatic switching between them.
+
+### Hide Completed Tasks
+
+Under the tasks tab it is possible to show only incomplete tasks aswell as other specific tasks
+using the selection on the left hand site of the screen.
+Alternatively complete tasks can be hidden by selecting "View" in the top bar, then "Tasks" and
+finally "Incomplete Tasks".
