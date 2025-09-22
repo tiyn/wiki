@@ -41,6 +41,9 @@ You can use the modified command below for ease of use:
 cat ~/.ssh/id_rsa.pub | ssh username@server 'cat >> ~/.ssh/authorized_keys'
 ```
 
+This can also be more or less fully automated using the `-G` flag of SSH as described in 
+[a YouTube video by nixhero](https://www.youtube.com/watch?v=xCX14u9XzE8).
+
 ### Mount Directory With SSHFS
 
 This section is loosely based on
@@ -71,7 +74,7 @@ Host server
 	User user
 ```
 
-### X-Forwarding 
+### X-Forwarding
 
 The following sections address the usage of X-forwarding which makes it possible to use graphical
 programs remotely over SSH.
@@ -80,7 +83,7 @@ programs remotely over SSH.
 
 This section is based on a
 [blog by rc nectar](https://tutorials.rc.nectar.org.au/x11forwarding/02-enable-x11-on-virtual-machine).
-For the server setup of X-forwarding edit the file `/etc/ssh/sshd_config` and make sure 
+For the server setup of X-forwarding edit the file `/etc/ssh/sshd_config` and make sure
 X-forwarding is enabled by editing a line to look like the following.
 
 ```txt
@@ -112,7 +115,7 @@ following lines.
 ```
     ForwardX11 yes
     ForwardX11Trusted yes
-``` 
+```
 
 The functionality of X-forwarding can easily be tested by running a graphical program when remotely
 connected.
@@ -120,13 +123,13 @@ An example for this could be the simple clock program `xclock`.
 
 ### Port Tunneling
 
-This section is based on the 
+This section is based on the
 [documentation of PostgreSQL](https://www.postgresql.org/docs/current/ssh-tunnels.html).
 
 A specific port can be tunneled from a remote host to a client via SSH.
 This could be especially useful when coding remotely and wanting to access a database like
 PostgreSQL or other services.
-For the forwarding of a port run the following command. 
+For the forwarding of a port run the following command.
 `<local address>` (for example `localhost`) and  `<local port>` (for example `63333`) are the
 target (and most of the time local) address and port to tunnel the service to.
 `<address of server>` (for example `joe@foo.com` or an alias) specifies the address and username of
@@ -141,14 +144,14 @@ After running the command the tunnel will stay established until the process is 
 This can be done by running a command identical or similar to the following which is used to find
 the process.
 
-```sh 
+```sh
 ps aux | grep "ssh -f -N -L <local port>"
 ```
 
 Afterwards it can be killed by running the follwing command where `<process-id>` is the id of the
 process found with the previous command.
 
-```sh 
+```sh
 kill <process-id>
 ```
 
