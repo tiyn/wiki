@@ -76,7 +76,7 @@ The following line will set this to 10 minutes.
 HibernateDelaySec=10min
 ```
 
-### Handle Power Key and Lid Seitch
+### Handle Power Key and Lid Switching
 
 The management of power keys and lid switches is handled in the file `/etc/systemd/logind.conf`.
 The following line will set the behaviour of the power key to hibernate. The default for this would
@@ -96,6 +96,24 @@ HandleLidSwitch=suspend-then-hibernate
 
 For further behaviour of the suspend and hibernate actions check the
 [corresponding section](#change-suspend-and-hibernate-behaviour).
+
+When wanting to work with a closed lid some of the settings in the config file have to be set to
+ignore.
+As [machetie writes on Reddit](https://www.reddit.com/r/framework/comments/185035i/how_to_use_the_laptop_with_lid_closed_linux/)
+the following settings need to be set.
+
+```txt 
+HandleLidSwitch=ignore
+HandleLidSwitchExternalPower=ignore
+HandleLidSwitchDocked=ignore
+```
+
+Afterwards the logind service has to be restarted
+[as described on a later section](#startstopenabledisable-a-service-and-retrieve-its-logs).
+
+```sh
+sudo systemctl restart systemd-logind
+```
 
 ## Troubleshooting
 
