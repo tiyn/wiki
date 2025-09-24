@@ -46,6 +46,9 @@ The examples using the Brother printer are taken from a
 
 ### Custom Formats For Brother Printers 
 
+This section is based on an entry in the
+[german FAQ on the brother website](https://support.brother.com/g/b/faqend.aspx?c=de&lang=de&prod=lpql1110nwbeuk&faqid=faqp00100409_000).
+
 Especially when using continuos-length Brother label printers it can be useful to set up custom
 formats.
 After setting up the CUPS install the package that provides
