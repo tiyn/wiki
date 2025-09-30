@@ -72,3 +72,10 @@ The same catalog is also available as an
 
 This section is based on a 
 [Reddit post by myhairisawesome](https://www.reddit.com/r/Huawei/comments/1dexenl/watch_fit_3_is_there_a_way_to_create_custom_watch/).
+
+### Download Maps
+
+To download one or more map files to display them for activity GPS data on the mobile phone
+navigate to the main `Settings`.
+Then Select `Maps` and set the `Folder` aswell as download the map and move it into the selected
+folder.
