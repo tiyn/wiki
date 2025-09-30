@@ -43,6 +43,8 @@ This section addresses various useful applications.
   storage.
 - [Markor](https://github.com/gsantner/markor) is a text editor supporting
   [Markdown](/wiki/markup_language.md)
+- [SystemUI Tuner](https://play.google.com/store/apps/details?id=com.zacharee1.systemuituner) is an
+  application that allows various small tweaks for the Android user interface.
 
 ## Improve Security and Privacy
 
