@@ -36,6 +36,6 @@ screen and allow controlling it by a [Windows](/wiki/windows.md) or [Linux](/wik
 
 Smartphones and Tablet computers usually are equipped with a decent camera.
 If a [Linux](/wiki/linux.md) or [Windows](/wiki/windows.md) system is missing a
-[webcam](/wiki/webcams.md) which is only rarely used it can be useful to repurpose the smart device
+[webcam](/wiki/webcam.md) which is only rarely used it can be useful to repurpose the smart device
 as a webcam.
-This can be done as explained in the [webcam entry](/wiki/webcams.md#using-a-smartphone-as-webcam).
+This can be done as explained in the [webcam entry](/wiki/webcam.md#using-a-smartphone-as-webcam).

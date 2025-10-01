@@ -2,7 +2,7 @@
 
 [Open Broadcaster Software](https://obsproject.com) - short OBS - is a free
 and open source software for video recording and live streaming.
-For webcams and their configuration see [the webcams entry](/wiki/webcams.md#configure-the-webcam).
+For webcams and their configuration see [the webcams entry](/wiki/webcam.md#configure-the-webcam).
 
 ## Plugins
 

@@ -21,7 +21,7 @@ This is also known as MTG Online or MTGO.
 It is also possible to remotely play with tabletop cards.
 This is most easily done on [Spelltable](https://spelltable.wizards.com/) which is an official
 website by Wizards.
-For playing Spelltable a [webcam](/wiki/webcams.md) is needed to be set up with a bird's eye view
+For playing Spelltable a [webcam](/wiki/webcam.md) is needed to be set up with a bird's eye view
 over the playing field.
 An alternative to a normal webcam is [DroidCam](/wiki/android/droidcam.md) for
 [Android](/wiki/android.md) which is supported by the website itself.

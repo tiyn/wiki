@@ -66,7 +66,7 @@ bitrate and audio bitrate.
 
 ### Create a Virtual Camera Using an IP Video Stream
 
-The following section will create a virtual [webcam](/wiki/webcams.md) from an IP video stream like
+The following section will create a virtual [webcam](/wiki/webcam.md) from an IP video stream like
 the one provided by [IP Webcam](/wiki/android/ip_webcam.md) [Android](/wiki/android.md) app.
 For this a free [V4L2](/wiki/linux/v4l2.md) video device will be needed.
 To information on how to create it navigate to the V4L2 entry and its sections on
