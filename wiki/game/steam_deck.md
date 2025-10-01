@@ -49,4 +49,4 @@ There plugins can be installed and removed aswell as managed.
 The following list includes some useful plugins.
 
 - [SteamGridDB](/wiki/game/steam.md#setting-icons-and-banners-for-games) can be used for setting
-  new and better [images](/wiki/images.md) for games.
+  new and better [images](/wiki/image.md) for games.

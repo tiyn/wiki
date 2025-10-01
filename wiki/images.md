@@ -1,4 +1,4 @@
-# Images
+# Image
 
 An image is a visual representation of something.
 In the computer context it is a file with an extension like `png`, `jpg`, `gif` and `svg` for

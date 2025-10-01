@@ -46,7 +46,7 @@ SteamGridDB in a package of the same name.
 Icons and Banners can then be changed by opening the menu after selecting a game and selecting
 `Change Artwork...`.
 
-[Images](/wiki/images.md) for games can be changed by downloading them and applying them manually.
+[Images](/wiki/image.md) for games can be changed by downloading them and applying them manually.
 An easier route can be taken by using
 [SGDBoop](https://www.steamgriddb.com/boop).
 To use it, you first need to install it.
