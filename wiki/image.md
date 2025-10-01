@@ -23,6 +23,11 @@ Editing images can be done by various image manipulation software.
 - [draw.io](/wiki/drawio.md) is a cross-platform program and web application for creating and
   editing diagrams.
 
+## Management
+
+Digital images can be stored and managed.
+A software that has a similar look and feel to Google Photos is [Immich](/wiki/immich.md).
+
 ### Getting Metadata
 
 Using [MediaInfo](https://github.com/MediaArea/MediaInfo) metadata of a file can be obtained.
