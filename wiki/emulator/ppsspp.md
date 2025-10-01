@@ -1,7 +1,7 @@
 # PPSSPP
 
 [PPSSPP](https://ppsspp.org/) is a [PlayStation Portable](/wiki/game.md)
-[emulator](/wiki/game/emulators.md).
+[emulator](/wiki/emulator.md).
 
 ## Setup
 

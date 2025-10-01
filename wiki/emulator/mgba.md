@@ -1,14 +1,15 @@
-# melonDS
+# mGBA
 
-[melonDS](https://melonds.kuribo64.net/) is a [Nintendo DS](/wiki/game.md)
-[emulator](/wiki/game/emulators.md).
+[mGBA](https://mgba.io/) is a
+[Nintendo Game Boy, Game Boy Color and Game Boy Advanced](/wiki/game.md)
+[emulator](/wiki/emulator.md).
 
 ## Setup
 
-melonDS can be installed on different systems, a list for this can be found on
-the [melonDS website](https://melonds.kuribo64.net/downloads.php).
+mGBA can be installed on different systems, a list for this can be found on
+the [mGBA website](https://mgba.io/downloads.html).
 Additionally it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
-package is called `net.kuribo64.melonDS`.
+package is called `io.mgba.mgba`.
 
 ## Usage
 

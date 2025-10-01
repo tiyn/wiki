@@ -10,7 +10,7 @@ other [Windows](/wiki/windows.md) games via its own installer that uses
 - a patched version of WINE developed by
 [Valve](https://www.valvesoftware.com/).
 Additionally to that Lutris supports many different
-[emulators](/wiki/game/emulators.md).
+[emulators](/wiki/emulator.md).
 For running both Windows applications aswell as games
 [Bottles](/wiki/game/bottles.md) can be used.
 

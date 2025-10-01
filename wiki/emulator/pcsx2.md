@@ -1,7 +1,7 @@
 # PCSX2
 
 [PCSX2](https://pcsx2.net/) is a [PlayStation 2](/wiki/game.md)
-[emulator](/wiki/game/emulators.md).
+[emulator](/wiki/emulator.md).
 
 ## Setup
 

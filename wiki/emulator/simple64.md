@@ -1,7 +1,7 @@
 # simple64
 
 [simple64](https://simple64.github.io/) is a [Nintendo 64](/wiki/game.md)
-[emulator](/wiki/game/emulators.md).
+[emulator](/wiki/emulator.md).
 
 ## Setup
 

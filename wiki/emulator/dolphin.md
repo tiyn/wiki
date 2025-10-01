@@ -1,7 +1,7 @@
 # Dolphin
 
 [Dolphin](https://dolphin-emu.org/) is a [Nintendo GameCube and Wii](/wiki/game.md)
-[emulator](/wiki/game/emulators.md).
+[emulator](/wiki/emulator.md).
 
 ## Setup
 
@@ -22,7 +22,7 @@ The following settings are especially useful when emulating games on the
 [nchristopher](https://github.com/nchristopher/steamdeck-emulation/blob/main/emulators/dolphin.md).
 
 Select the configuration and select the paths tab.
-There the directories for Wii and GameCube [ROMs](/wiki/game/emulators.md) can be added.
+There the directories for Wii and GameCube [ROMs](/wiki/emulator.md) can be added.
 In the audio tab select `Pulse` as your audio backend.
 In the interface tab select `Confirm to Stop` to avoid prompts when closing the
 game.
