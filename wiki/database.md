@@ -1,6 +1,6 @@
-# Databases
+# Database
 
-Databases are data collections of a computer system.
+A database is a data collections of a computer system.
 Most prominent type of database are SQL databases.
 
 ## Database management systems (DBMS)
