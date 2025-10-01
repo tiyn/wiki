@@ -210,6 +210,17 @@ cd ../"$(ls -F .. | grep '/' | grep -B1 -xF "${PWD##*/}/" | head -n 1)"
 cd ../"$(ls -F .. | grep '/' | grep -A1 -xF "${PWD##*/}/" | tail -n 1)"
 ```
 
+### Replacing All Occurences in a Directory
+
+To all occurences of a given string for all files recursively in a given directory run the
+following command, where `<directory>` is the directory to replace in.
+`<query>` is the string to replace and `<replacement>` is the string it should replaced with; both
+of these may be escaped if special signs are contained in them.
+
+```sh
+find <directory> -type f -exec sed -i "s/<query>/<replacement>/g" {} \;
+```
+
 ## Error solving
 
 This section addresses various problems that can occur and are related to the shell.
