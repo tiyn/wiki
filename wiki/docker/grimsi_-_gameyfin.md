@@ -1,6 +1,6 @@
 # grimsi - gameyfin
 
-This is a [Docker](/wiki/docker.md) container for a [Gameyfin](/wiki/games/gameyfin.md).
+This is a [Docker](/wiki/docker.md) container for a [Gameyfin](/wiki/game/gameyfin.md).
 
 ## Set-up
 

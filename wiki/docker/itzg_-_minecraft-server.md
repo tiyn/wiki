@@ -1,7 +1,7 @@
 # itzg - minecraft-server
 
 This is a [Docker](/wiki/docker.md) container for a
-[Minecraft](/wiki/games/minecraft.md) server.
+[Minecraft](/wiki/game/minecraft.md) server.
 The container and documentation was made by
 [itzg](https://hub.docker.com/r/itzg/minecraft-server).
 
@@ -79,6 +79,6 @@ Afterwards run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded 
 #### Installing Datapacks
 
 The installation of datapacks is done similar to the described process in the
-[corresponding section of the minecraft entry](/wiki/games/minecraft.md#installing-datapacks).
+[corresponding section of the minecraft entry](/wiki/game/minecraft.md#installing-datapacks).
 The only difference is the path to place the `.zip` datapack files in which is `world/datapacks` in
 case of this [Docker](/wiki/docker.md) image.

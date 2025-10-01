@@ -1,7 +1,7 @@
 # Dolphin
 
 [Dolphin](https://dolphin-emu.org/) is a [Nintendo GameCube and Wii](/wiki/game.md)
-[emulator](/wiki/games/emulators.md).
+[emulator](/wiki/game/emulators.md).
 
 ## Setup
 
@@ -18,11 +18,11 @@ and usage of Dolphin.
 ### Steam Deck Specific Settings
 
 The following settings are especially useful when emulating games on the
-[Steam Deck](/wiki/games/steam_deck.md) as pointed out by
+[Steam Deck](/wiki/game/steam_deck.md) as pointed out by
 [nchristopher](https://github.com/nchristopher/steamdeck-emulation/blob/main/emulators/dolphin.md).
 
 Select the configuration and select the paths tab.
-There the directories for Wii and GameCube [ROMs](/wiki/games/emulators.md) can be added.
+There the directories for Wii and GameCube [ROMs](/wiki/game/emulators.md) can be added.
 In the audio tab select `Pulse` as your audio backend.
 In the interface tab select `Confirm to Stop` to avoid prompts when closing the
 game.

@@ -4,15 +4,15 @@
 [Linux](/wiki/linux.md) systems.
 It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),
-[Epic Games](https://www.epicgames.com/), [Steam](/wiki/games/steam.md) and many
+[Epic Games](https://www.epicgames.com/), [Steam](/wiki/game/steam.md) and many
 other [Windows](/wiki/windows.md) games via its own installer that uses
-[WINE](/wiki/linux/wine.md). Lutris can also use [Proton](/wiki/games/proton.md)
+[WINE](/wiki/linux/wine.md). Lutris can also use [Proton](/wiki/game/proton.md)
 - a patched version of WINE developed by
 [Valve](https://www.valvesoftware.com/).
 Additionally to that Lutris supports many different
-[emulators](/wiki/games/emulators.md).
+[emulators](/wiki/game/emulators.md).
 For running both Windows applications aswell as games
-[Bottles](/wiki/games/bottles.md) can be used.
+[Bottles](/wiki/game/bottles.md) can be used.
 
 ## Usage
 
@@ -124,10 +124,10 @@ be selected.
 After right-clicking a game and selecting `Configure` the `Wine version` can be
 changed under the `Runner options` tab.
 There are many different versions of WINE, WINE-fshack and various
-[Proton](/wiki/games/proton.md) and
-[Proton GE versions](/wiki/games/proton.md#ge-version) to select.
-Using the default runner of [Bottles](/wiki/games/bottles.md) - called
-[Caffe](/wiki/games/bottles.md#caffe) - is also possible.
+[Proton](/wiki/game/proton.md) and
+[Proton GE versions](/wiki/game/proton.md#ge-version) to select.
+Using the default runner of [Bottles](/wiki/game/bottles.md) - called
+[Caffe](/wiki/game/bottles.md#caffe) - is also possible.
 
 ### Disable Networking for a Game
 
@@ -141,9 +141,9 @@ Afterwards all networking of the selected game is disabled.
 ### Adding and Removing Runners and Sources
 
 Runners are ways to run [games](/wiki/game.md) on [Linux](/wiki/linux.md).
-Examples for runners are [WINE](/wiki/linux/wine.md), [Steams Proton](/wiki/games/proton.md) or
+Examples for runners are [WINE](/wiki/linux/wine.md), [Steams Proton](/wiki/game/proton.md) or
 [Flatpak](/wiki/linux/flatpak.md).
-Sources are platforms for game distributions like [Steam](/wiki/games/steam.md) and Lutris itself.
+Sources are platforms for game distributions like [Steam](/wiki/game/steam.md) and Lutris itself.
 
 Both sources and runners can be added and removed as needed by entering `Preferences` through the
 drop-down menu and toggling on or off sources aswell as installing or uninstalling runners.
@@ -174,6 +174,6 @@ handled by [WINE](/wiki/linux/wine.md) one point of failure is the selected
 WINE version.
 Change the version used as explained in
 [the regarding section](#change-wineproton-version).
-Especially trying [Proton GE versions](/wiki/games/proton.md#ge-version) or
+Especially trying [Proton GE versions](/wiki/game/proton.md#ge-version) or
 WINE fshack versions can lead to successful running of the game.
-Specific games also benefit from running [Caffe](/wiki/games/bottles.md#caffe).
+Specific games also benefit from running [Caffe](/wiki/game/bottles.md#caffe).

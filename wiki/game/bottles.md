@@ -1,7 +1,7 @@
 # Bottles
 
 [Bottles](https://usebottles.com/) is an application similar to
-[Lutris](/wiki/games/lutris.md) that focusses on running both
+[Lutris](/wiki/game/lutris.md) that focusses on running both
 [Windows](/wiki/windows.md) applications aswell as [games](/wiki/game.md) through
 [WINE](/wiki/linux/wine.md) or their own runner [Caffe](#caffe).
 

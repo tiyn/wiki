@@ -1,7 +1,7 @@
 # yuzu
 
 [yuzu](https://yuzu-emu.org/) is a [Nintendo Switch](/wiki/game.md)
-[emulator](/wiki/games/emulators.md).
+[emulator](/wiki/game/emulators.md).
 
 ## Setup
 
@@ -22,8 +22,8 @@ and usage of Dolphin.
 ### Start Emulated Game in Fullscreen Mode
 
 In different scenarios it can be useful to start directly into a game in fullscreen mode.
-One example would be using the [Steam Deck](/wiki/games/steam_deck.md) to
-[set up a game in the Steam UI](/wiki/games/steam_deck.md#running-a-game-directly-through-the-interface)
+One example would be using the [Steam Deck](/wiki/game/steam_deck.md) to
+[set up a game in the Steam UI](/wiki/game/steam_deck.md#running-a-game-directly-through-the-interface)
 so it can be run directly without switching to the desktop mode.
 For this add the `-f` flag for fullscreen mode aswell as the `-g` flag in front of the path to the
 game that should to be started.
@@ -31,7 +31,7 @@ game that should to be started.
 ### Steam Deck Specific Settings
 
 The following settings are especially useful when emulating games on the
-[Steam Deck](/wiki/games/steam_deck.md) as pointed out by
+[Steam Deck](/wiki/game/steam_deck.md) as pointed out by
 [sofakng](https://www.reddit.com/r/SteamDeck/comments/12ivsky/what_are_the_best_yuzu_settings/).
 
 For a better performance select `Vulkan` under the `Graphics` in `Graphics`.

@@ -85,7 +85,7 @@ When starting an application that has been set up using nativefier it is possibl
 `Skia shader compilation error` or a similar error regarding Skia can occur.
 An easy way to fix this is by clearing the GPU cache which can be found inside the `~/.config`
 directory.
-For example a nativefied app named [mtg-companion](/wiki/games/magic%3A_the_gathering.md#resources)
+For example a nativefied app named [mtg-companion](/wiki/game/magic%3A_the_gathering.md#resources)
 can be found in the directory `~/.config/mtg-companion-nativefier-8fcad7` and its GPU cache inside
 the directory named `~/.config/mtg-companion-nativefier-8fcad7/GPUCache`.
 The whole directory `GPUCache` can just be moved or removed to clear the cache.

@@ -31,7 +31,7 @@ OptiFine available.
 - Navigate to `Loader Mods` and press `Add`, then select the downloaded
   OptiFine file
 
-OptiFine works best on older [Minecraft](/wiki/games/minecraft.md) versions.
+OptiFine works best on older [Minecraft](/wiki/game/minecraft.md) versions.
 Some people recommend [Sodium](https://modrinth.com/mod/sodium/versions) or other optimization mods
 to use on newer versions.
 

@@ -22,7 +22,7 @@ can be installed through [Flatpak](../linux/flatpak.md) or the package manager
 of the distribution.
 ProtonUp is usually bundled in a package named `protonup-qt`.
 It can be used to install Proton GE versions for both
-[Steam](/wiki/games/steam.md) and [Lutris](/wiki/games/lutris.md).
+[Steam](/wiki/game/steam.md) and [Lutris](/wiki/game/lutris.md).
 
 ## Troubleshooting
 

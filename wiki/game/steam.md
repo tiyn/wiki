@@ -40,8 +40,8 @@ This will open the website with the Steam browser.
 
 The following paragraph explains the usage of [SteamGridDB](https://www.steamgriddb.com/) in a
 normal Steam installation.
-For [Steam Deck](/wiki/games/steam_deck.md) users the
-[plugin manager Decky](/wiki/games/steam_deck.md#plugin-manager-decky) can be used to install
+For [Steam Deck](/wiki/game/steam_deck.md) users the
+[plugin manager Decky](/wiki/game/steam_deck.md#plugin-manager-decky) can be used to install
 SteamGridDB in a package of the same name.
 Icons and Banners can then be changed by opening the menu after selecting a game and selecting
 `Change Artwork...`.

@@ -26,4 +26,4 @@ or files into your home directory
 
 WINE is able to run many Windows games.
 An easy way to create WINE prefixes for different games and managing the
-installations of them is [Lutris](/wiki/games/lutris.md).
+installations of them is [Lutris](/wiki/game/lutris.md).

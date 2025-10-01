@@ -22,18 +22,18 @@ software management suite to install additional software.
 ### Running a Game Directly Through the Interface
 
 Simple programs can be started from inside the gaming mode by adding it as a
-[non-Steam game](/wiki/games/steam.md#adding-non-steam-games).
+[non-Steam game](/wiki/game/steam.md#adding-non-steam-games).
 
-For [emulator games](/wiki/games/emulators.md) the setup is more complex.
+For [emulator games](/wiki/game/emulators.md) the setup is more complex.
 Firstly the emulator needs to be added as a
-[non-Steam game](/wiki/games/steam.md#adding-non-steam-games).
+[non-Steam game](/wiki/game/steam.md#adding-non-steam-games).
 To run a game instantly the path to the [ROM](./emulators.md) needs to be
 appended to the command used for starting the emulator needed for it.
 This should be made in quotation marks as it could contain characters that need
 to be escaped.
 
 Afterwards the icons and banners of it can be set using
-[SteamGridDB](/wiki/games/steam.md#setting-icons-and-banners-for-games).
+[SteamGridDB](/wiki/game/steam.md#setting-icons-and-banners-for-games).
 
 ### Plugin Manager Decky
 
@@ -48,5 +48,5 @@ There plugins can be installed and removed aswell as managed.
 
 The following list includes some useful plugins.
 
-- [SteamGridDB](/wiki/games/steam.md#setting-icons-and-banners-for-games) can be used for setting
+- [SteamGridDB](/wiki/game/steam.md#setting-icons-and-banners-for-games) can be used for setting
   new and better [images](/wiki/images.md) for games.

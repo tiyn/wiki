@@ -1,7 +1,7 @@
 # PPSSPP
 
 [PPSSPP](https://ppsspp.org/) is a [PlayStation Portable](/wiki/game.md)
-[emulator](/wiki/games/emulators.md).
+[emulator](/wiki/game/emulators.md).
 
 ## Setup
 
@@ -18,13 +18,13 @@ and usage of PPSSPP.
 ### Steam Deck specific settings
 
 The following settings are especially useful when emulating PSP games on the
-[Steam Deck](/wiki/games/steam_deck.md) as pointed out by
+[Steam Deck](/wiki/game/steam_deck.md) as pointed out by
 [nchristopher](https://github.com/nchristopher/steamdeck-emulation/blob/main/emulators/ppsspp.md).
 But it is a good starting point for other systems aswell.
 It is important to emphasize that the system needs to meet the requirements to
 run Vulkan.
 The Device name will change if you are not using a
-[Steam Deck](/wiki/games/steam_deck.md).
+[Steam Deck](/wiki/game/steam_deck.md).
 
 - Backend: `Vulkan`
 - Device: `AMD RADV VANGOGH`

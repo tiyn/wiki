@@ -62,7 +62,7 @@ For safety reasons it is advised to back up the instance before updating the ver
 
 Mods can be installed client- and server-side.
 For client-side mods most [up-to-date clients](#client) feature an easy installation process.
-Especially [MultiMC5 and its derivatives](/wiki/games/multimc5.md) have an easy way to achieve
+Especially [MultiMC5 and its derivatives](/wiki/game/multimc5.md) have an easy way to achieve
 this.
 For the installation of server-side mods the process can vary slightly depending on the
 [server host](#server).

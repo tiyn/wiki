@@ -8,18 +8,18 @@ To create games [game engines](/wiki/game_engine.md) can be used.
 ## Game Platforms, Distributors and Managers
 
 There are various platforms for managing games.
-[Steam](/wiki/games/steam.md) is a gaming a platform for games that distributes games at the same
+[Steam](/wiki/game/steam.md) is a gaming a platform for games that distributes games at the same
 time.
 Games bought in the Steam shop but also third party games can be added to the game list.
 It is very popular and cross platform capable.
 
 For [Linux-based systems](/wiki/linux.md) the most used platform is a game manager called
-[Lutris](/wiki/games/lutris.md).
+[Lutris](/wiki/game/lutris.md).
 Lutris can incorporate local games, aswell as games from various big platforms including steam.
 It is especially popular on Linux because it can manage [WINE](/wiki/linux/wine.md) prefixes and
 thus is able to easily run [Windows](/wiki/windows.md) games on Linux.
 
-Furthermore [Gameyfin](/wiki/games/gameyfin.md) is a game manager that can be easily accessed
+Furthermore [Gameyfin](/wiki/game/gameyfin.md) is a game manager that can be easily accessed
 through a web interface.
 Games can then be downloaded from the website.
 
@@ -49,8 +49,8 @@ Afterwards move the game saves to the directory set up by Syncthing and create
 [symbolic links](/wiki/linux/shell.md#symbolic-links-using-ln) to link them back to the original
 place.
 
-For games on [Steam](/wiki/games/steam.md) it is possible that they are automatically synchronized
-by [Steam Cloud](/wiki/games/steam.md#steam-cloud-and-game-synchronization).
+For games on [Steam](/wiki/game/steam.md) it is possible that they are automatically synchronized
+by [Steam Cloud](/wiki/game/steam.md#steam-cloud-and-game-synchronization).
 
 ## Speedrunning
 

@@ -11,7 +11,7 @@ League of Legends is available to download for
 [Windows](/wiki/windows.md) systems on
 [the official website](https://signup.leagueoflegends.com/en-us/signup/index#/).
 
-For [Linux](/wiki/linux.md) distributions [Lutris](/wiki/games/lutris.md)
+For [Linux](/wiki/linux.md) distributions [Lutris](/wiki/game/lutris.md)
 and [WINE](/wiki/linux/wine.md) can be used to run the game.
 The correct version can be downloaded using the
 [Lutris website](https://lutris.net/games/league-of-legends/).
