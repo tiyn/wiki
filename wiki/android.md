@@ -7,14 +7,14 @@ It is designed primarily for mobile devices with touch screens like tablets or s
 ## Managing the Data
 
 The data and files stored on Android
-[smart devices](/wiki/smart_devices.md#smartphones-and-tablet-computers) are sometimes needed on
+[smart devices](/wiki/smart_device.md#smartphones-and-tablet-computers) are sometimes needed on
 computers.
 
 For [Windows](/wiki/windows.md) this can easily be achieved by connecting it via USB.
 No further software is needed as the device manager handles the phone correctly most of the times.
 
 For [Linux-based systems](/wiki/linux.md) the
-[device](/wiki/smart_devices.md#smartphones-and-tablet-computers) also has to be connected to the
+[device](/wiki/smart_device.md#smartphones-and-tablet-computers) also has to be connected to the
 computer.
 But in this case also a software is needed to [mount it](/wiki/linux/disk-management.md#mounting),
 this software/program is called [android-file-transfer](/wiki/linux/android-file-transfer.md).
@@ -101,7 +101,7 @@ It is possible that some custom ROMs require the user to
 
 Unlocking the bootloader can be a bit challenging for some vendors especially.
 
-For [smartphones and tablets](/wiki/smart_devices.md#smartphones-and-tablet-computers) made by
+For [smartphones and tablets](/wiki/smart_device.md#smartphones-and-tablet-computers) made by
 Xiaomi there are some steps that have to be done to unlock the bootloader.
 This section is based on an
 [article about unlocking the bootloader](https://new.c.mi.com/global/post/101245) on Xiaomi

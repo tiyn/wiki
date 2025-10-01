@@ -2,7 +2,7 @@
 
 [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=de&gl=US) is an App
 developed and published by Pavel Khlebovich for [Android](/wiki/android.md) systems.
-It enables a [smartphone](/wiki/smart_devices.md) to be used as [webcam](/wiki/webcam.md).
+It enables a [smartphone](/wiki/smart_device.md) to be used as [webcam](/wiki/webcam.md).
 
 When wanting to stream the screen and not the camera the application
 [ScreenStream](/wiki/android/screenstream.md) can be used.
@@ -15,7 +15,7 @@ On [Android](/wiki/android.md) IP Webcam is available on the
 
 ## Usage
 
-To initiate a connection between the [smartphone](/wiki/smart_devices.md) and the computer first
+To initiate a connection between the [smartphone](/wiki/smart_device.md) and the computer first
 start the app on the smartphone.
 Make sure to be connected to the same W-LAN as the computer or alternatively connect them with an
 USB-cable.

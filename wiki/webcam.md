@@ -23,7 +23,7 @@ and enable a few effects on top of it.
 
 ## Using a Smartphone as Webcam
 
-A [smartphone](/wiki/smart_devices.md) and its camera aswell as flashlight can be used as a simple
+A [smartphone](/wiki/smart_device.md) and its camera aswell as flashlight can be used as a simple
 replacement for a webcam.
 For [Android](/wiki/android.md) smartphones this can be easily achieved by using
 [DroidCam](/wiki/android/droidcam.md).

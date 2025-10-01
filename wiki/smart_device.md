@@ -1,6 +1,6 @@
-# Smart Devices
+# Smart Device
 
-Smart devices are electronic devices that are interconnected, connected to a local network or
+A smart device is an electronic device that is interconnected, connected to a local network or
 connected to the internet.
 Smart devices include smart home devices aswell as smartphones, smartwatches and more.
 They can often be considered to be part of the Internet of Things (IoT).

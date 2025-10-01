@@ -1,6 +1,6 @@
-# E-books
+# E-book
 
-E-books are digital publications of books.
+An E-book is a digital publication of a book.
 They can be read with specific hardware - an e-reader - or on a personal
 computer.
 E-books are usually available in `.epub` or `.pdf` files.
