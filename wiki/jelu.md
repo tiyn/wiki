@@ -1,7 +1,7 @@
 # Jelu
 
 [Jelu](https://github.com/bayang/jelu) is a tracking software for books and
-[e-books](/wiki/e-books.md).
+[e-books](/wiki/e-book.md).
 It includes locally stored subscription management.
 
 ## Setup
