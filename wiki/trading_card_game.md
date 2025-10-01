@@ -1,7 +1,7 @@
-# Trading Card Games
+# Trading Card Game
 
-Trading card games - short TCG - sometimes also named collectible card game - short CCG - is a card
-game that is based on strategic deck building but also features elements of trading cards.
+A trading card game - short TCG - sometimes also named collectible card game - short CCG - is a
+card game that is based on strategic deck building but also features elements of trading cards.
 
 ## Popular Trading Card Games
 

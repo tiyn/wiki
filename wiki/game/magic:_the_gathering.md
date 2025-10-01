@@ -1,7 +1,7 @@
 # Magic: The Gathering
 
 [Magic: The Gathering](https://magic.wizards.com) - often shortened to MTG or Magic - is a tabletop
-[collectible card game](/wiki/game/trading_card_games.md).
+[collectible card game](/wiki/game/trading_card_game.md).
 MTG is published by [Wizards of the Coast](https://company.wizards.com) - which are commonly
 reffered to as Wizards.
 In Magic: The Gathering there are many different formats that are all listed on

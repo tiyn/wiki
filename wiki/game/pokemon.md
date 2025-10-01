@@ -2,7 +2,7 @@
 
 [Pokemon](https://www.pokemon.com/) is a multi-media franchise owned by Nintendo.
 It consists of video games, animated series, films, a
-[trading card game](/wiki/game/trading_card_games.md) and more.
+[trading card game](/wiki/game/trading_card_game.md) and more.
 
 ## Resources
 
