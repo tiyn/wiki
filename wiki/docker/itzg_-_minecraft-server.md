@@ -1,7 +1,7 @@
 # itzg - minecraft-server
 
 This is a [Docker](/wiki/docker.md) container for a
-[Minecraft](../games/minecraft.md) server.
+[Minecraft](/wiki/games/minecraft.md) server.
 The container and documentation was made by
 [itzg](https://hub.docker.com/r/itzg/minecraft-server).
 
