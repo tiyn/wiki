@@ -1,7 +1,7 @@
 # League of Legends
 
 [League of Legends](https://www.leagueoflegends.com/en-us) is a multiplayer
-online battle arena [game](/wiki/games.md) which is available as a standalone Launcher for
+online battle arena [game](/wiki/game.md) which is available as a standalone Launcher for
 [Windows](/wiki/windows.md).
 It is developed and published by [Riot Games](https://www.riotgames.com/en).
 

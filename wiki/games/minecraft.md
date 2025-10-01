@@ -1,6 +1,6 @@
 # Minecraft
 
-[Minecraft](https://www.minecraft.net) is a sandbox [video game](/wiki/games.md) created by "Notch".
+[Minecraft](https://www.minecraft.net) is a sandbox [video game](/wiki/game.md) created by "Notch".
 
 ## Setup
 

@@ -1,6 +1,6 @@
 # Medieval 2: Total War
 
-Medieval 2: Total War is a [game](/wiki/games.md) from the [Total War](https://www.totalwar.com)
+Medieval 2: Total War is a [game](/wiki/game.md) from the [Total War](https://www.totalwar.com)
 series.
 
 ## Mods

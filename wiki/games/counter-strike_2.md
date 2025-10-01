@@ -1,7 +1,7 @@
 # Counter-Strike 2
 
 [Counter-Strike 2](https://www.counter-strike.net/cs2) is a tactical first-person shooter
-[game](/wiki/games.md) developed by [Valve](https://www.valvesoftware.com/en/).
+[game](/wiki/game.md) developed by [Valve](https://www.valvesoftware.com/en/).
 It is distributed via [Steam](./steam.md).
 
 ## Troubleshooting

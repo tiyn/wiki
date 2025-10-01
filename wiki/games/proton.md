@@ -1,7 +1,7 @@
 # Proton
 
 [Proton](https://github.com/ValveSoftware/Proton) is a compatibility tool for
-[games](/wiki/games.md) made by the developers of [Steam](./steam.md),
+[games](/wiki/game.md) made by the developers of [Steam](./steam.md),
 [Valve](https://www.valvesoftware.com).
 It is based on [WINE](../linux/wine.md).
 

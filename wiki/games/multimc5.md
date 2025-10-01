@@ -1,7 +1,7 @@
 # MultiMC5
 
 [MultiMC5](https://multimc.org) is a custom launcher that allows multiple instances of the
-[game](/wiki/games.md) [Minecraft](./minecraft.md) to be installed at once.
+[game](/wiki/game.md) [Minecraft](./minecraft.md) to be installed at once.
 In recent times there have been problems with the maintainer of MultiMC5. 
 Due to this similar launchers like the [Prism Launcher](https://prismlauncher.org/) have gotten
 popular.

@@ -1,6 +1,6 @@
 # Guild Wars 2
 
-[Guild Wars 2](https://www.guildwars2.com) is a MMORPG [game](/wiki/games.md) which is available as
+[Guild Wars 2](https://www.guildwars2.com) is a MMORPG [game](/wiki/game.md) which is available as
 a standalone Launcher for Windows and on [Steam](./steam.md).
 
 ## Resources

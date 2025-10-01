@@ -290,7 +290,7 @@ Another possible preset is the following.
 
 Another possible preset is the following.
 
-```json 
+```json
 {
     "PresetList": [
         {

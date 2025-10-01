@@ -1,6 +1,6 @@
 # Nestopia
 
-[Nestopia](http://0ldsk00l.ca/nestopia/) is a [Nintendo Entertainment System](/wiki/games.md)
+[Nestopia](http://0ldsk00l.ca/nestopia/) is a [Nintendo Entertainment System](/wiki/game.md)
 [emulator](/wiki/games/emulators.md).
 
 ## Setup

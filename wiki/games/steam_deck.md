@@ -1,6 +1,6 @@
 # Steam Deck
 
-The [Steam Deck](https://store.steampowered.com/steamdeck) is a handheld [gaming](/wiki/games.md)
+The [Steam Deck](https://store.steampowered.com/steamdeck) is a handheld [gaming](/wiki/game.md)
 computer made by the same developers as [Steam](./steam.md),
 [Valve](https://www.valvesoftware.com).
 Due to its form factor it can be used especially well to play games that need a

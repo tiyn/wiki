@@ -1,6 +1,6 @@
 # simple64
 
-[simple64](https://simple64.github.io/) is a [Nintendo 64](/wiki/games.md)
+[simple64](https://simple64.github.io/) is a [Nintendo 64](/wiki/game.md)
 [emulator](/wiki/games/emulators.md).
 
 ## Setup

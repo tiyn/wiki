@@ -1,6 +1,6 @@
 # yuzu
 
-[yuzu](https://yuzu-emu.org/) is a [Nintendo Switch](/wiki/games.md)
+[yuzu](https://yuzu-emu.org/) is a [Nintendo Switch](/wiki/game.md)
 [emulator](/wiki/games/emulators.md).
 
 ## Setup

@@ -1,6 +1,7 @@
 # Hardware 
 
-This entry focusses on various hardware components of a desktop PC or a laptop.
+This entry focusses on various hardware components of a [Linux](/wiki/linux.md) desktop PC or a
+laptop.
 
 ## Battery 
 

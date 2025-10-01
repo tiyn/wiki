@@ -1,7 +1,7 @@
 # mGBA
 
 [mGBA](https://mgba.io/) is a
-[Nintendo Game Boy, Game Boy Color and Game Boy Advanced](/wiki/games.md)
+[Nintendo Game Boy, Game Boy Color and Game Boy Advanced](/wiki/game.md)
 [emulator](/wiki/games/emulators.md).
 
 ## Setup

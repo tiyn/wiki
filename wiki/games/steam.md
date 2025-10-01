@@ -1,6 +1,6 @@
 # Steam
 
-[Steam](https://store.steampowered.com/) is a software for digital [game](/wiki/games.md)
+[Steam](https://store.steampowered.com/) is a software for digital [game](/wiki/game.md)
 destribution.
 It is developed by [Valve](https://www.valvesoftware.com).
 Steam uses its compatibility layer, [Proton](./proton.md) for running windows
@@ -74,7 +74,7 @@ The data stored this way can be accessed on the
 [corresponding website](https://store.steampowered.com/account/remotestorage).
 
 Games can also be synchronized without the Steam Cloud by using [Syncthing](/wiki/syncthing.md) as
-described in [the games entry](/wiki/games.md#syncing-game-saves-across-systems).
+described in [the games entry](/wiki/game.md#syncing-game-saves-across-systems).
 
 ## Error Handling
 

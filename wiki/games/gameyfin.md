@@ -1,6 +1,6 @@
 # Gameyfin
 
-[Gameyfin](https://github.com/grimsi/gameyfin) is a simple [game](/wiki/games.md) library manager
+[Gameyfin](https://github.com/grimsi/gameyfin) is a simple [game](/wiki/game.md) library manager
 with a web interface to browse and download games.
 
 ## Setup

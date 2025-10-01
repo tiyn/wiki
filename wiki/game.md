@@ -1,8 +1,9 @@
-# Games
+# Game
 
 A video game - short game - is an electronic game that features interation and input from the user
 to generate a feedback.
 Games can be played on different platforms.
+To create games [game engines](/wiki/game_engine.md) can be used.
 
 ## Game Platforms, Distributors and Managers
 

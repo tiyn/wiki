@@ -1,6 +1,6 @@
 # Lutris
 
-[Lutris](https://lutris.net/) is a free and open source video [game](/wiki/games.md) platform for
+[Lutris](https://lutris.net/) is a free and open source video [game](/wiki/game.md) platform for
 [Linux](/wiki/linux.md) systems.
 It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/),
@@ -140,7 +140,7 @@ Afterwards all networking of the selected game is disabled.
 
 ### Adding and Removing Runners and Sources
 
-Runners are ways to run [games](/wiki/games.md) on [Linux](/wiki/linux.md).
+Runners are ways to run [games](/wiki/game.md) on [Linux](/wiki/linux.md).
 Examples for runners are [WINE](/wiki/linux/wine.md), [Steams Proton](/wiki/games/proton.md) or
 [Flatpak](/wiki/linux/flatpak.md).
 Sources are platforms for game distributions like [Steam](/wiki/games/steam.md) and Lutris itself.
