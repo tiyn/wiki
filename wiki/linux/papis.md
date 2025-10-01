@@ -9,7 +9,7 @@ for LaTeX using the BibTeX format.
 Papis can be installed on most [Linux](/wiki/linux.md) distributions by acquiring the `papis`
 package.
 On some distributions there may be problems installing this from the official repository.
-Another option to install papis is to use [pip](/wiki/programming_languages/python.md).
+Another option to install papis is to use [pip](/wiki/programming_language/python.md).
 Alternatively it can be downloaded from [the GitHub page](https://github.com/papis/papis).
 
 ### Configuration
