@@ -1,7 +1,9 @@
-# Hardware 
+# Hardware (Linux)
 
 This entry focusses on various hardware components of a [Linux](/wiki/linux.md) desktop PC or a
 laptop.
+For non-Linux specific or general topics in hardware see the
+[correspoding entry](/wiki/hardware_%28general%29.md)
 
 ## Battery 
 

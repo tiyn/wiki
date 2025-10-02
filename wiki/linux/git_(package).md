@@ -2,6 +2,9 @@
 
 This entry deals with the Git client used in
 [Linux-based systems](/wiki/linux.md).
+For a basic overview and the server setup of git see the
+[corresponding entry](/wiki/git_%28general%29.md)
+
 The client is pretty simple to understand.
 With only a handfull of commands you should be able to get your versioning going.
 For servers with web interfaces there are different cli tools to control it

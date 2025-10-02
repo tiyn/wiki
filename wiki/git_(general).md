@@ -1,4 +1,4 @@
-# Git
+# Git (Server)
 
 Git is probably the best version control system (VCS) there is.
 It's easy and can be lightweight, but also has tons of possibilities for using graphical (including
@@ -10,9 +10,8 @@ Git consists of two parts: [a client](#client) and [a server](#server).
 
 ### Client
 
-The Git client for [Linux-based operating systems](/wiki/linux.md) has a
-separate article in this wiki which is called
-[Git client](/wiki/linux/git_\(client\).md).
+The Git package which can be used as a client for [Linux-based operating systems](/wiki/linux.md)
+has a [separate article](/wiki/linux/git_%28package%29.md).
 
 ### Server
 
