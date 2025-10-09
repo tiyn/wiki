@@ -221,6 +221,29 @@ of these may be escaped if special signs are contained in them.
 find <directory> -type f -exec sed -i "s/<query>/<replacement>/g" {} \;
 ```
 
+### Using ANSI Color
+
+ANSI-Colors can easily be used in the shell by using the control sequences as described by
+[techstop](https://techstop.github.io/bash-script-colors).
+Each color has an own sequence and can be combined to affect the background.
+Additionally the font can also be changed using these control sequences.
+The following code displays the sequences and makes the control sequences be available from
+variables.
+
+```sh
+red="\e[0;91m"
+blue="\e[0;94m"
+expand_bg="\e[K"
+blue_bg="\e[0;104m${expand_bg}"
+red_bg="\e[0;101m${expand_bg}"
+green_bg="\e[0;102m${expand_bg}"
+green="\e[0;92m"
+white="\e[0;97m"
+bold="\e[1m"
+uline="\e[4m"
+reset="\e[0m"
+```
+
 ## Error solving
 
 This section addresses various problems that can occur and are related to the shell.
