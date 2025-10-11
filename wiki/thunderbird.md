@@ -35,3 +35,10 @@ Under the tasks tab it is possible to show only incomplete tasks aswell as other
 using the selection on the left hand site of the screen.
 Alternatively complete tasks can be hidden by selecting "View" in the top bar, then "Tasks" and
 finally "Incomplete Tasks".
+
+### Hide Local Folders
+
+This section is based on a
+[forum post by Mapenzi](https://www.thunderbird-mail.de/forum/thread/92315-115-lokale-ordner-ausblenden/?postID=518346#post518346).
+The local folders can be hidden by opening the meatballs menu to the immediate right of the `New
+Message`-button and selecting `Hide Local Folders`.
