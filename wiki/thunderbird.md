@@ -42,3 +42,19 @@ This section is based on a
 [forum post by Mapenzi](https://www.thunderbird-mail.de/forum/thread/92315-115-lokale-ordner-ausblenden/?postID=518346#post518346).
 The local folders can be hidden by opening the meatballs menu to the immediate right of the `New
 Message`-button and selecting `Hide Local Folders`.
+
+### Revert to Default Folder Order
+
+The order of the folders of an account can be reset by right-clicking the account in the Mail-tab
+and then selecting `Reset Folder Order`.
+
+### Hide Default Address Book
+
+This section is based on a
+[blog post by Attiks](https://tips.attiks.com/2018/05/03/thunderbird-hide-default-address-book).
+By default thunderbird uses an address book called `Personal Address Book`.
+When using a remote address book which is synced the default address book is often not needed.
+It can be hidden by selecting `Edit` (if the top bar is not visible `Alt` can be pressed to display
+it), `Settings` and `Config Editor...`.
+In the config editor search for the value `ldap_2.servers.pab.dirType` and set the value from the
+default (which is `101`) to `-1` to hide the default address book.
