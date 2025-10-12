@@ -2,7 +2,7 @@
 
 [IR Remote](https://gitlab.com/divested-mobile/irremote) is a free and open-source App developed
 for [Android](/wiki/android.md) systems.
-It can use a [smartphone](/wiki/smart_devices.md#smartphones-and-tablet-computers) that is capable
+It can use a [smartphone](/wiki/smart_device.md#smartphones-and-tablet-computers) that is capable
 of sending [infrared](/wiki/infrared.md) signals to be used as an
 [infrared remote control](/wiki/infrared.md#remote-controls)
 

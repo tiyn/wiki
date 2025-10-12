@@ -3,7 +3,7 @@
 Video is an electronic medium of visual media.
 This entry will mostly be focused on movies, tv shows an other media such as
 [YouTube](/wiki/youtube.md) aswell as its metadata.
-For webcams navigate to the [webcams entry](/wiki/webcams.md).
+For webcams navigate to the [webcams entry](/wiki/webcam.md).
 
 It is nice to have some movies, tv shows or other videos saved on your system.
 There are multiple different approaches on how to get it working depending on

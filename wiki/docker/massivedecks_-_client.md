@@ -1,6 +1,6 @@
 # massivedecks - client
 
-This is a [Docker](/wiki/docker.md) container for a [Massive Deecks](/wiki/games/massive_decks.md)
+This is a [Docker](/wiki/docker.md) container for a [Massive Deecks](/wiki/game/massive_decks.md)
 client.
 Due to ease of use this entry will also feature the server container.
 The official container and documentation was made by

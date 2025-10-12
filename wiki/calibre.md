@@ -1,7 +1,7 @@
 # calibre
 
 [calibre](https://calibre-ebook.com/) is a cross-platform, free and open-source
-software suite for [e-book](/wiki/e-books.md) management.
+software suite for [e-book](/wiki/e-book.md) management.
 It supports various formats aswell as conversion between them.
 
 ## Usage

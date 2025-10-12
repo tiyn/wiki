@@ -1,6 +1,6 @@
 # Immich
 
-[Immich](https://immich.app/) is a management software for [digital images](/wiki/images.md).
+[Immich](https://immich.app/) is a management software for [digital images](/wiki/image.md).
 
 ## Setup
 

@@ -2,7 +2,7 @@
 
 [DroidCam](https://www.dev47apps.com/) is an App developed and published
 by Dev47Apps for [Android](/wiki/android.md) systems.
-It enables a [smartphone](/wiki/smart_devices.md) to be used as [webcam](/wiki/webcams.md).
+It enables a [smartphone](/wiki/smart_device.md) to be used as [webcam](/wiki/webcam.md).
 
 ## Setup
 
@@ -19,7 +19,7 @@ Alternatively most [Linux systems](/wiki/linux/package_manager.md) feature a pac
 
 ## Usage
 
-To initiate a connection between the [smartphone](/wiki/smart_devices.md) and the computer first
+To initiate a connection between the [smartphone](/wiki/smart_device.md) and the computer first
 start the app on the smartphone.
 Make sure to be connected to the same W-LAN as the computer or alternatively connect them with an
 USB-cable.
@@ -27,7 +27,7 @@ After starting the application an IP and a port will be displayed.
 These have to be pasted into the form that is shown on the computer after starting the corresponding
 program.
 After pressing `Connect` the link will be established.
-The [video feed](/wiki/webcams.md) can then be used in other programs such as Discord or
+The [video feed](/wiki/webcam.md) can then be used in other programs such as Discord or
 [Matrix](/wiki/matrix.md).
 Additionally it can be piped into [OBS](/wiki/obs.md) to edit it more or create a scene.
 Despite the option the separate app [DroidCam OBS](https://www.dev47apps.com/obs/) is not

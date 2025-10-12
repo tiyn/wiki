@@ -33,7 +33,7 @@ betterdiscord automatically.
 Make sure to change the three occurences of `<username>` to the name of the user to install
 betterdiscord for.
 
-```sh 
+```sh
 [Trigger]
 Type = Package
 Operation = Install
@@ -49,7 +49,7 @@ Depends = betterdiscordctl
 NeedsTargets
 ```
 
-## Usage 
+## Usage
 
 This section addresses the usage of BetterDiscord.
 
@@ -58,11 +58,11 @@ This section addresses the usage of BetterDiscord.
 The following themes are recommended by the author of this wiki.
 
 - `midnight` is a dark, customizable discord theme.
-- `system24` is a tui-like discord theme. 
+- `system24` is a tui-like discord theme.
 
 ### Recommended Plugins
 
-The following plugins are recommended by the author of this wiki. 
+The following plugins are recommended by the author of this wiki.
 
 - `BetterChatNames` improves chat names by removing dashes in chat channels.
 - `BetterFriendList` adds extra controls to the friend page.
@@ -72,7 +72,7 @@ The following plugins are recommended by the author of this wiki.
 - `GameActivityToggle` adds a quick-toggle game activity button.
 - `HideDisabledEmojis` hides disabled emojis form the emoji picker.
 - `ImageUtilities` adds several utilities for images/videos.
-- `InterTimestamps` allows you to insert timestamp markdown. 
+- `InterTimestamps` allows you to insert timestamp markdown.
 - `InvisibleTyping` is an enhanced version of silent typing.
 - `MoreRoleColors` adds role colors to usernames.
 - `OnlineFriendCount` adds the old online friend count.
@@ -84,5 +84,3 @@ The following plugins are recommended by the author of this wiki.
   several smaller messages.
 - `StaffTag` adds a crown to server owners (or admins/management).
 - `Uncompressed Images` will improve image quality of previews.
-
-

@@ -303,7 +303,7 @@ This section is based on a
 
 In this case the error stems from a missing package.
 Normally it can easily be fixed by installing that corresponding package.
-But please note that [pyenv](/wiki/programming_languages/golang.md#setup) can hide packages if the
+But please note that [pyenv](/wiki/programming_language/golang.md#setup) can hide packages if the
 global Python version is set to something other than `system`.
 This is especially the case on [Arch Linux-systems](/wiki/linux/arch-linux.md) because Python
 packages are also installed via [Pacman or Yay](#arch-linux-pacman-and-yay).

@@ -2,7 +2,7 @@
 
 [LineageOS](https://lineageos.org/) - or short Lineage - is a custom
 [Android](/wiki/android.md)-ROM and operating system for
-[Smartphones and Tablets](/wiki/smart_devices.md#smartphones-and-tablet-computers) with mostly free
+[Smartphones and Tablets](/wiki/smart_device.md#smartphones-and-tablet-computers) with mostly free
 and open-source software.
 It was formerly known as CyanogenMod.
 

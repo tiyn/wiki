@@ -155,6 +155,6 @@ intended to be used as day-to-day font.
 
 - [MagicMedieval & MagicSymbols](http://www.thealmightyguru.com/GameFonts/Series-MagicTheGathering.html)
   are fonts that are similar to the font used in the game
-  [Magic: The Gathering](/wiki/games/magic%3A_the_gathering.md).
+  [Magic: The Gathering](/wiki/game/magic%3A_the_gathering.md).
   An overview of the glyphs can be found in a
   [StackExchange post by Cicada](https://tex.stackexchange.com/questions/570890/how-can-i-typeset-magic-the-gathering-symbols-using-the-pifont-package-in-latex).

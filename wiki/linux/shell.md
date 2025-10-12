@@ -210,6 +210,131 @@ cd ../"$(ls -F .. | grep '/' | grep -B1 -xF "${PWD##*/}/" | head -n 1)"
 cd ../"$(ls -F .. | grep '/' | grep -A1 -xF "${PWD##*/}/" | tail -n 1)"
 ```
 
+### Replacing All Occurences in a Directory
+
+To all occurences of a given string for all files recursively in a given directory run the
+following command, where `<directory>` is the directory to replace in.
+`<query>` is the string to replace and `<replacement>` is the string it should replaced with; both
+of these may be escaped if special signs are contained in them.
+
+```sh
+find <directory> -type f -exec sed -i "s/<query>/<replacement>/g" {} \;
+```
+
+### Using ANSI Color
+
+ANSI-Colors can easily be used in the shell by using the control sequences as described by
+[techstop](https://techstop.github.io/bash-script-colors).
+Each color has an own sequence and can be combined to affect the background.
+Additionally the font can also be changed using these control sequences.
+
+The following tables display these sequences.
+
+The first table displays regular colors.
+
+| Value      | Color  |
+| ---------- | ------ |
+| `\e[0;30m` | Black  |
+| `\e[0;31m` | Red    |
+| `\e[0;32m` | Green  |
+| `\e[0;33m` | Yellow |
+| `\e[0;34m` | Blue   |
+| `\e[0;35m` | Purple |
+| `\e[0;36m` | Cyan   |
+| `\e[0;37m` | White  |
+
+The second table is for the bold colors.
+
+| Value      | Color    |
+| ---------- | -------- |
+| `\e[1;30m` | Black    |
+| `\e[1;31m` | Red      |
+| `\e[1;32m` | Green    |
+| `\e[1;33m` | Yellow   |
+| `\e[1;34m` | Blue     |
+| `\e[1;35m` | Purple   |
+| `\e[1;36m` | Cyan     |
+| `\e[1;37m` | White    |
+| `\e[1m`    | No Color |
+
+The third table is for the underline colors.
+
+| Value      | Color    |
+| ---------- | -------- |
+| `\e[4;30m` | Black    |
+| `\e[4;31m` | Red      |
+| `\e[4;32m` | Green    |
+| `\e[4;33m` | Yellow   |
+| `\e[4;34m` | Blue     |
+| `\e[4;35m` | Purple   |
+| `\e[4;36m` | Cyan     |
+| `\e[4;37m` | White    |
+| `\e[4m`    | No Color |
+
+The fourth table is for the underline colors.
+
+| Value    | Color  |
+| -------- | ------ |
+| `\e[40m` | Black  |
+| `\e[41m` | Red    |
+| `\e[42m` | Green  |
+| `\e[43m` | Yellow |
+| `\e[44m` | Blue   |
+| `\e[45m` | Purple |
+| `\e[46m` | Cyan   |
+| `\e[47m` | White  |
+
+The fifth table is for horizontally expanded backgrounds.
+
+| Value   |   Color  |
+| ------- | -------- |
+| `\e[K`  | No Color |
+
+The sixth table is for high intensity colors.
+
+| Value      | Color  |
+| ---------- | ------ |
+| `\e[0;90m` | Black  |
+| `\e[0;91m` | Red    |
+| `\e[0;92m` | Green  |
+| `\e[0;93m` | Yellow |
+| `\e[0;94m` | Blue   |
+| `\e[0;95m` | Purple |
+| `\e[0;96m` | Cyan   |
+| `\e[0;97m` | White  |
+
+The seventh table is for bold high intensity colors.
+
+| Value      | Color  |
+| ---------- | ------ |
+| `\e[1;90m` | Black  |
+| `\e[1;91m` | Red    |
+| `\e[1;92m` | Green  |
+| `\e[1;93m` | Yellow |
+| `\e[1;94m` | Blue   |
+| `\e[1;95m` | Purple |
+| `\e[1;96m` | Cyan   |
+| `\e[1;97m` | White  |
+
+The eight table is for high intensity background colors.
+
+| Value       | Color  |
+| ----------- | ------ |
+| `\e[0;100m` | Black  |
+| `\e[0;101m` | Red    |
+| `\e[0;102m` | Green  |
+| `\e[0;103m` | Yellow |
+| `\e[0;104m` | Blue   |
+| `\e[0;105m` | Purple |
+| `\e[0;106m` | Cyan   |
+| `\e[0;107m` | White  |
+
+The ninth and final table is for the reset sequence.
+
+| Value   | Color  |
+| ------- | ------ |
+| `\e[0m` | Reset  |
+
 ## Error solving
 
 This section addresses various problems that can occur and are related to the shell.
