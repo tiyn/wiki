@@ -43,6 +43,8 @@ This section addresses various useful applications.
   storage.
 - [Markor](https://github.com/gsantner/markor) is a text editor supporting
   [Markdown](/wiki/markup_language.md)
+- [SimpleMarkdown](https://f-droid.org/packages/com.wbrawner.simplemarkdown.free/) is another text
+  editor made for Markdown. It does work a bit better with a [NextCloud](/wiki/nextcloud.md).
 
 ## Improve Security and Privacy
 
