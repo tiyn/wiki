@@ -320,3 +320,17 @@ security.family_safety.mode = 0
 
 Additionally check [the telemetry section](#telemetry) and
 [the sponsoring section](#sponsorings).
+
+## Troubleshooting
+
+This section will focus on errors and the fixing of errors of Firefox.
+
+### Dark Mode Not Used For File Picker
+
+It is possible and a known problem on [Linux-based systems](/wiki/linux.md) that Firefox may not
+recognize the system dark mode correctly.
+This can result in a light themed file picker despite all other programs on the system like
+[GTK](/wiki/linux/gtk.md) or [Qt](/wiki/linux/qt.md) using the dark mode already.
+To fix this simply navigate to `about:config` and - if not already existing - create the value for
+`ui.systemUsesDarkTheme` and set it to `1`.
+This should immediately and without rebooting switch the file picker to use dark mode.

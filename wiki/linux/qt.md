@@ -44,3 +44,16 @@ After the installation it can be selected by `qt6ct` as described in the
 
 For setting the same theme for GTK refer to the
 [corresponding entry](/wiki/linux/gtk.md#achieving-a-system-wide-uniform-look).
+
+## Troubleshooting 
+
+This section will focus on errors and the fixing of errors of Qt.
+
+### Incorrect Configuration: `The libqt6ct.so plugin is compiled against incompatible Qt version`
+
+When updating the system it is possible that the theme will not work correctly anymore.
+Often the error `The libqt6ct.so plugin is compiled against incompatible Qt version` is responsible
+for this.
+To fix it most of the time it is enough to recompile the `qt6ct` package.
+Afterwards a reboot might be needed for the theme to be displayed correctly again.
+
