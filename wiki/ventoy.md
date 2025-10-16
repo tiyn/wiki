@@ -23,9 +23,28 @@ ventoy -i /dev/sdg
 
 ## Usage
 
+This section addresses the usage of Ventoy.
+
+### Adding and Removing Boot Images
+
 The most important steps to use a Ventoy stick is the adding and removal of image files to the
 stick.
 Unlike the usual flashing that is for example shown in the
 [Linux ISO Image entry](/wiki/linux/iso_image.md) `.iso` or other image files can just be moved or
 copied to the empty partition of a Ventoy installed USB stick.
 Using this partition the image files can also be removed.
+
+## Troubleshooting 
+
+This section will focus on errors and the fixing of errors of ventoy.
+
+### `Error: Verification failed: (0x1A) Security Violation`
+
+This section is based on a
+[StackExchange comment by Pablo Bianchi](https://askubuntu.com/questions/1456460/verification-failed-0x1a-security-violation-while-installing-ubuntu).
+When the message `Error: Verification failed: (0x1A) Security Violation` is shown after booting the
+Ventoy stick it can easily be fixed.
+For this press `OK`, then press any key to perform MOK management.
+Select `Enroll key from disk`, `VTOYEFI` and `ENROLL_THIS_KEY_IN_MOKMANAGER.cer`.
+Afterwards select `Continue`, `Yes` and finally reboot by selecting `Reboot`.
+After performing these steps the Ventoy key should work as usual.
