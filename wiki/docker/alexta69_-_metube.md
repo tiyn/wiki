@@ -32,7 +32,7 @@ Set the following ports in the `ports:` section.
 ```sh
 #!/bin/sh
 docker-compose down
-docker pull vim alexta69/metube
+docker pull alexta69/metube
 docker-compose up -d
 ```
 
