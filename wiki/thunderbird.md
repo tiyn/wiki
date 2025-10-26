@@ -67,3 +67,10 @@ By default Thunderbird will show a preview for mails on the right hand side when
 This is called the message pane.
 It can be hidden by drag and drop or by pressing the F8-key.
 Using the same key it can also be shown again.
+
+### Collect All Addresses of Mail Account
+
+To collect all the addresses of one mail account a plugin can be used.
+One plugin that achieves this is `CollectAddresses`.
+It can easily be used by right-clicking the account or a folder within an account.
+Then an address book has to be selected to save the addresses to.
