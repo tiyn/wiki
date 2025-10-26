@@ -8,7 +8,7 @@ Linux-based systems.
 The LibreOffice program can be installed from source as described
 [on the official website](https://www.libreoffice.org/about-us/source-code/).
 Alternatively many [Linux](/wiki/linux.md) [package managers](/wiki/linux/package_manager.md) 
-package LibreOffice in the `libreoffice`.
+package LibreOffice in the `libreoffice` package.
 
 ## Usage
 
