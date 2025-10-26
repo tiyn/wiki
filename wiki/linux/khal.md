@@ -1,7 +1,7 @@
 # Khal
 
 [Khal](https://github.com/pimutils/khal) is a calendar you can use in your
-[terminal](/wiki/system_console.md).
+[terminal](/wiki/linux/shell.md).
 You can sync it with [vdirsyncer](vdirsyncer.md)
 
 ## Setup
