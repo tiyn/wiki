@@ -1,6 +1,6 @@
 # postgres
 
-This is a [Docker](/wiki/docker.md) container for a postgresql database.
+This is a [Docker](/wiki/docker.md) container for a [postgresql database](/wiki/postgresql.md).
 The official container and documentation was made by
 [Postgres](https://hub.docker.com/_/postgres).
 The Docker container is mainly used in combination with other containers.
