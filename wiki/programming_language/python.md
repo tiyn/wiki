@@ -127,7 +127,9 @@ If it doesnt work the packages can be installed globally using `pip` together wi
 `--break-system-packages` flag.
 This flag is to be used with care.
 
-### Pytorch
+### PyTorch
+
+This section addresses the [PyTorch module](https://pytorch.org/).
 
 #### Setup Pytorch with Cuda for GPU usage
 
@@ -147,3 +149,17 @@ torch.cuda.is_available()
 ```
 
 This should give back `True`.
+
+### TensorFlow
+
+This section addresses the [TensorFlow module](https://www.tensorflow.org/).
+
+#### Basic Usage of TensorFlow 
+
+The basic usage of TensorFlow is described in
+[the official guide](https://www.tensorflow.org/guide/keras/serialization_and_saving).
+Additionally it is noted that the dataset may have to be shuffled manually as described in a
+[comment by Y. Luo on StackOverflow](https://stackoverflow.com/questions/50184144/shuffle-in-the-model-fit-of-keras).
+Finally
+[a Medium blog post](https://medium.com/@danielonugha0/how-to-change-the-learning-rate-of-tensorflow-b5d854819050)
+describes how to easily change the learning rate.
