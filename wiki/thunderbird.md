@@ -22,6 +22,9 @@ The following is a list of useful extensions for Thunderbird.
 - "*cloud - FileLink for Nextcloud and ownCloud" is an extension which allows the easy creation and
   sharing of file links to a custom [Nextcloud](/wiki/nextcloud.md) or
   [ownCloud](/wiki/owncloud.md) instance.
+- ["CollectAddresses"](#collect-all-addresses-of-mail-account) can be used to save all addresses in
+  an account or folder to an address book.
+  This is achieved by right-clicking the account or a folder within it.
 - "Dark Reader" is an extension similar to
   [Firefox'](/wiki/firefox.md#list-of-useful-firefox-add-ons) "Dark Reader" extension that adds
   a dark mode for websites.
@@ -67,10 +70,3 @@ By default Thunderbird will show a preview for mails on the right hand side when
 This is called the message pane.
 It can be hidden by drag and drop or by pressing the F8-key.
 Using the same key it can also be shown again.
-
-### Collect All Addresses of Mail Account
-
-To collect all the addresses of one mail account a plugin can be used.
-One plugin that achieves this is `CollectAddresses`.
-It can easily be used by right-clicking the account or a folder within an account.
-Then an address book has to be selected to save the addresses to.
