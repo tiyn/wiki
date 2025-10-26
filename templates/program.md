@@ -4,7 +4,7 @@
 
 ## Setup
 
-The /name/ program can be installed [/via GitHub/]().
+The /name/ program can be installed from source as described [/on GitHub-the official website/]().
 Alternatively many [Linux](/wiki/linux.md) [package managers](/wiki/linux/package_manager.md) 
 package /name/ in the `/package/`.
 The software can be setup via [Docker](/wiki/docker.md) with the [/docker name/ image]().
