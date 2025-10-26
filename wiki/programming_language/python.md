@@ -6,7 +6,10 @@ language.
 ## Setup
 
 You can install python using various ways.
-With `pyenv` you can switch between different versions.
+
+### pyenv Installation
+
+With [pyenv](https://github.com/pyenv/pyenv) you can easily switch between different versions.
 Install `pyenv` and `pyenv-virtualenv` and proceed with adding
 
 ```txt
@@ -72,6 +75,43 @@ python3.9 --version
 
 To automatically create a `requirements.txt` of your current project, navigate
 to it and run `pipreqs` (install it if not already done).
+
+### Using Virtual Environments
+
+[venv](https://docs.python.org/3/library/venv.html) can be used to create a virtual environment.
+
+```
+python -m venv <project-path>
+```
+
+When inside the project folder the virtual environment can then be acivated by running the
+following command.
+
+```sh
+source ./bin/activate
+```
+ 
+And it can be disabled by running the following.
+
+```sh 
+deactivate
+```
+
+If pyenv is installed as described in [the setup section](#pyenv-installation) pyenv can be used to
+manage virtual environments.
+However pyenv won't create environment directories like venv does.
+To fix this the following command can be used to simply link them both as described
+[on StackOverflow by Jakob Guldberg Aaes](https://stackoverflow.com/questions/30407446/pyenv-choose-virtualenv-directory).
+For this to work a virtual environment already has to be set up using venv as described before.
+`<local-venv>` is the full path of the local virtual environment just created and `<venv-name>` the
+name the venv should have in pyenv.
+
+```sh
+ln -s <local-venv> ~/.pyenv/versions/<venv-name>
+```
+
+Using this setup the python version will automatically change when navigating into the project
+directory.
 
 ## Modules
 
