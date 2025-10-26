@@ -25,8 +25,6 @@ curl -u <user>:<password> -X PUT <radicale-calendar> --data-binary @<ical-file>
 ```
 
 Similar to this a remote iCal file can be pushed to a Radicale server.
-When using another calendar as iCal file and a cronjob this can be used to sync a calendar to a
-Radicale calendar.
 For this it is recommended to use a small python script like the following.
 
 ```py 
@@ -84,3 +82,5 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+By using this and a cronjob a remote calendar can be synced to a Radicale calendar.
