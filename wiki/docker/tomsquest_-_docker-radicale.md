@@ -37,7 +37,7 @@ There are some special variables to set.
 
 | Flag          | Usage                                                                  |
 | ------------- | ---------------------------------------------------------------------- |
-| `--read-only` | make radicale read-only, caldav can still be changed and used normally |
+| `--read-only` | make Radicale read-only, caldav can still be changed and used normally |
 
 ### rebuild.sh
 
