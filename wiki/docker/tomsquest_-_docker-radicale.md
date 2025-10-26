@@ -1,6 +1,6 @@
 # tomsquest - docker-radicale
 
-This is a [Docker](/wiki/docker.md) container for a radicale CalDAV server.
+This is a [Docker](/wiki/docker.md) container for a [Radicale](/wiki/radicale.md) server.
 The official container and documentation was made by
 [tomsquest](https://hub.docker.com/r/tomsquest/docker-radicale).
 
