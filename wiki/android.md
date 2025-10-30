@@ -47,6 +47,8 @@ This section addresses various useful applications.
   application that allows various small tweaks for the Android user interface.
 - [SimpleMarkdown](https://f-droid.org/packages/com.wbrawner.simplemarkdown.free/) is another text
   editor made for Markdown. It does work a bit better with a [NextCloud](/wiki/nextcloud.md).
+- [Fossify](https://github.com/FossifyOrg) is a suite of open-source apps that among other include
+  apps like calendar, file-manager, phone, messages and more.
 
 ## Improve Security and Privacy
 

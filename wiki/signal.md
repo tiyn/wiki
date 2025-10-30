@@ -19,3 +19,5 @@ export or backup messages.
   MacOS.
 - [sigtop](https://github.com/tbvdm/sigtop) is a utility that allows exporting messages and
   attachments by communicating with a Signal Desktop instance on the same device.
+- [Molly IM](https://github.com/mollyim/mollyim-android) is a security-focussed fork of Signal for
+  [Android](/wiki/android.md).
