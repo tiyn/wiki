@@ -10,14 +10,30 @@ For non-Linux specific or general topics in hardware see the
 The battery of a notebook can be inspected by using the `upower` command.
 To use it the tool needs to be installed.
 In most [Linux](/wiki/linux.md) distributions this is bundled in a package of the same name.
-A usage example is shown in the following command.
-It will show the state, voltage, percentage and many other information about a given battery.
+
+This section is based on [a video by eKiwi](https://youtu.be/t9KMFDTb79E) which addresses battery
+health.
+
+To find out about a battery, its name needs to be known, which can be done using the following
+command.
 
 ```sh
-upower -i /org/freedesktop/UPower/devices/battery_BAT0
+upower -e
 ```
 
-Alternatively `acpi` can be used to achieve the same.
+Afterwards different values like the state, voltage, percentage and many other can be displayed.
+Additionally it will show the original capacity (`energy-full-design`) and the current capacity
+(`energy-full`), which can be used to determine the health of the battery.
+The following is an example command where `<battery-name>` is the name of the batter returned from
+the previous step.
+This might by similar to `/org/freedesktop/UPower/devices/battery_BAT0`.
+
+```sh
+upower -i <battery-name>
+```
+
+Alternatively `acpi` can be used to achieve similar but less information.
+It will show the state, the percentage and the time to load or unload.
 For this run the following command.
 
 ```sh
