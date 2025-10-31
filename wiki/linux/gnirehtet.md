@@ -12,11 +12,11 @@ package Gnirehtet in the `gnirehtet` package.
 
 This section addresses the usage of Gnirehtet.
 
-## Usage
+## Setting Up and Running Reverse Tethering
 
 The following command can be used to setup the reverse tethering and also run it.
-For it to work the mobile device has to enable `USB Tethering` so the corresponding app can be
-automatically installed (which is internally done using `adb`).
+For it to work the mobile device has to enable `USB Debugging` so Gnirehtet can automatically be
+installed (which is internally done using `adb`).
 
 ```sh 
 gnirehtet run

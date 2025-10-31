@@ -12,3 +12,7 @@ and is usually available in the settings of [Android](/wiki/android.md) and iOS 
 Reverse Tethering describes the sharing of a computers network with a
 [mobile device](/wiki/smart_device.md#smartphones-and-tablet-computers).
 For [Linux](/wiki/linux.md) this can be achieved using [Gnirehtet](/wiki/linux/gnirehtet.md).
+
+When using USB- and Reverse Tethering make sure that the host machine does not recognize the USB
+connection towards the mobile device as eithernet connection.
+Otherwise none of the two devices will be able to connect to local or internet pages.
