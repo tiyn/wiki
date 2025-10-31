@@ -1,6 +1,8 @@
 # Screen Capture
 
 Screen capture describes the process of recording a computer screen.
+For the remotely displaying the screen to another device the
+[corresponding entry](/wiki/screen_sharing.md) contains tips and tricks.
 
 ## Screen Capture options
 
