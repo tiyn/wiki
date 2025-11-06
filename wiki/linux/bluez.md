@@ -25,6 +25,6 @@ The Bluetooth features can be managed by different types of front-ends.
 - `bluetoothctl` is a command-line interface included in the `bluez-utils`
   package
 - `bluetuith` can be used as a bluetooth manager with a
-  [terminal](/wiki/system_console.md) user interface.
+  [terminal](/wiki/linux/system_console.md) user interface.
   It is included in a package of the same name, that needs to be installed
   before usage.

@@ -2,7 +2,7 @@
 
 A shell is a command-line interpreter that provides a command-line interface to
 interact with the many unix-like system.
-It is usually used in the [system console](/wiki/system_console.md)
+It is usually used in the [system console](/wiki/linux/system_console.md)
 
 ## Unix Shells
 

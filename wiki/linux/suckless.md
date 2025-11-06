@@ -7,7 +7,7 @@ Notable works of Suckless are the following.
 - [dwm](https://dwm.suckless.org/) is a window manager
 - [ii](https://tools.suckless.org/ii/) is an IRC client
 - [slock](https://tools.suckless.org/slock/) is a screen locker
-- [st](https://st.suckless.org/) is a [terminal](/wiki/system_console.md)
+- [st](https://st.suckless.org/) is a [terminal](/wiki/linux/system_console.md)
 
 Additionally to this Suckless maintains a list of free and open-source software that is endorsed by
 Suckless.

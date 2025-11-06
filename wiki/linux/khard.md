@@ -1,7 +1,7 @@
 # Khard
 
 [Khard](https://github.com/lucc/khard) is a adressbook that runs in your
-[terminal](/wiki/system_console.md).
+[terminal](/wiki/linux/system_console.md).
 You can sync it with [vdirsyncer](vdirsyncer.md).
 
 ## Setup

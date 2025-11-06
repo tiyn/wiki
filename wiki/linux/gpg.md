@@ -6,7 +6,8 @@ It is used to savely encrypt and decrypt messages or files using assymetric encr
 
 ## Setup
 
-On most linux distributions GPG can be installed with the `gnupg` package.
+On most linux distributions GPG can be installed with the `gnupg` package. 
+Sometimes it is also called `gnupg2`.
 
 ## Usage
 

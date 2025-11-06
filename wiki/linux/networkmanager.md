@@ -8,7 +8,7 @@ It is used to set up [Wi-Fi](/wiki/linux/wi-fi.md).
 
 NetworkManager can be installed with the `networkmanager` package on most linux
 distributions which provides daemon aswell as `nmcli` a command line interface
-and `nmtui` a [terminal](/wiki/system_console.md) user interface for
+and `nmtui` a [terminal](/wiki/linux/system_console.md) user interface for
 configuration.
 Additionally `nm-connection-editor` can be installed for a graphical user
 interface.

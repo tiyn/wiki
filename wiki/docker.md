@@ -10,7 +10,7 @@ Due to easy handling and reproducable environments it is a useful tool.
 
 Another possibility is to try the official convenience script.
 To get and execute it run the following in your
-[terminal](/wiki/system_console.md).
+[terminal](/wiki/linux/system_console.md).
 
 ```sh
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -21,7 +21,7 @@ sudo sh get-docker.sh
 
 This section addresses various features of Docker.
 
-### virtualize Operating Systems
+### Virtualize Operating Systems
 
 Docker is a tool that can be used to virtualize different programs and softwares.
 Especially for containerizing and virtualizing operating systems (mostly based on
@@ -69,3 +69,22 @@ the [web browser](/wiki/web_browser.md) or [VNC](/wiki/vnc.md).
 For this
 [jlesages baseimage-gui container](https://hub.docker.com/r/jlesage/baseimage-gui)
 can be used.
+
+## Troubleshooting 
+
+This section will focus on errors and the fixing of errors of docker.
+
+### `Error saving credentials: 'Cannot autolaunch D-Bus without X11 $DISPLAY'`
+
+As explained by 
+[gotam19 in a Docker forum post](https://forums.docker.com/t/docker-login-fails-with-error-message-saving-credentials-cannot-autolaunch-d-bus-without-x11-display/77789)
+this error message only occurs on [Linux](/wiki/linux.md) when trying to login or pulling a Docker
+image.
+To fix it install  [GPG](/wiki/linux/gpg.md) and the `pass`
+[package](/wiki/linux/package_manager.md).
+Afterwards running the following command should will perform the login to the Docker servers and
+the error message should not come up again.
+
+```sh 
+docker login
+```

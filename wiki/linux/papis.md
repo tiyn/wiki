@@ -84,7 +84,7 @@ The command-line output will show the address to reach the service.
 papis serve
 ```
 
-### Create a BibTeX file
+### Export Library to BibTeX file
 
 A BibTeX file containing all the entries of all the libraries can be created by running the
 following command.
@@ -99,7 +99,7 @@ papis export --all --format bibtex --out lib.bib
 The cache of Papis can be cleared by running the following command.
 
 ```sh
-papis --cc
+papis cache clear
 ```
 
 ### Import Entries from a BibTeX File
@@ -126,11 +126,33 @@ The path for that can be found in the [config file](#configuration).
 mv tmp-db/* /path/to/your/library/folder/
 ```
 
-Finally the cache needs to be cleared for Papis to display the new entries correctly.
+Finally the cache needs to be cleared
+[as described in the corresponding section](#clearing-the-cache) for Papis to display the new
+entries correctly.
 
-```sh
-papis --cc
+### Changing the Default Names of the Library
+
+The changing of the default names is done by changing the [config file](#configuration).
+The following lines are an example which will change the default file, folder and reference names.
+
+```txt
+add-file-name = {doc[author_list][0][family]}_{doc[year]}_-_{doc[title]}
+add-folder-name = {doc[author_list][0][family]}_{doc[year]}_-_{doc[title]}
+ref-format = {doc[author_list][0][family]}{doc[year]}
 ```
 
-Finally the cache needs to be [cleared](#clearing-the-cache) for Papis to display the new entries
-correctly.
+Doing this the existing entries, its files, folders and references will not be renamed.
+To achieve a factual renaming of all the entries in a library,
+[export the library](#export-library-to-bibtex-file), remove all entries from within it and then 
+[import the entries](#import-entries-from-a-bibtex-file) into it again.
+
+### Adding Files to Existing Entry
+
+To add files - for example PDF files to an existing entry run the following command.
+`<file>` is the path to the (PDF-)file and `<library>` is the name of the library to add to.
+After running the command a [TUI](comm) will open to select the entry to which the file will be
+added.
+
+```sh
+papis addto --files <file> <library>
+```

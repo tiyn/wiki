@@ -6,7 +6,7 @@ displaying, creating and editing (raster) images.
 ## Usage
 
 The following section addresses different uses ImageMagick.
-For most of ImageMagicks features the [command-line interface](/wiki/system_console.md) can be used.
+For most of ImageMagicks features the [command-line interface](/wiki/linux/system_console.md) can be used.
 
 ## Rotate an Image
 
