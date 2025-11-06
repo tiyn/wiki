@@ -60,8 +60,7 @@ The following add-ons increase the security or privacy.
   - [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/)
     [search results](/wiki/search_engine.md)
   - [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
-- [uBlock Origin](https://addons.mozilla.org/en-GB/firefox/addon/ublock-origin)
-  blocks unwanted content like ads.
+- [uBlock Origin](/wiki/ublock_origin.md) is an ad blocker.
 - [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/firefox/addon/user-agent-string-switcher)
   spoofs websites that try to gather information about your webbrowser.
 
