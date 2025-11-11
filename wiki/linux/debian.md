@@ -17,6 +17,10 @@ cat /etc/os-release
 
 ### Upgrading to a Higher Major Version
 
+The first step for a major upgrade usually is
+[retrieving the current version](#retrieve-debian-version) to check the version that should be
+installed.
+
 If the user of the system to perform a major version upgrade on is using [Docker](/wiki/docker.md)
 some additional steps have to be taken before the upgrade.
 It is generally recommended to hold the Docker upgrade and performing it later.
@@ -26,8 +30,6 @@ For this reason the following command has to be run first.
 apt-mark hold docker-ce docker-ce-cli containerd.io
 ```
 
-The first step for a major upgrade usually is
-[retrieving the current version](#retrieve-debian-version).
 Afterward the packages of the current major release version have to be
 [upgrading](/wiki/linux/package_manager/apt.md#updating-upgrading) using APTs `full-upgrade`
 option.
