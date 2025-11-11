@@ -7,7 +7,7 @@ It places files or directories in an archive and is able to compress them.
 
 7-zip can be installed by installing the packages `p7zip-full` and `p7zip-rar` on Ubuntu systems.
 On [Arch Linux](/wiki/linux/arch-linux.md) it can be installed with the package `7-zip`
-from the [AUR](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay).
+from the [AUR](/wiki/linux/package_manager/pacman_and_aur.md).
 
 ## Usage
 

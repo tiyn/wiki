@@ -26,10 +26,10 @@ betterdiscordctl self-upgrade
 ### Pacman Hook
 
 When using [Arch Linux](/wiki/linux/arch-linux.md) and its package managers
-[Pacman and Yay](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay) a hook can be set that
+[Pacman and Yay](/wiki/linux/package_manager/pacman_and_aur.md) a hook can be set that
 automatically updates the discord installation to setup betterdiscord using betterdiscordctl.
-The following is a [pacman hook](/wiki/linux/package_manager.md#hooks) that can be used to update
-betterdiscord automatically.
+The following is a [pacman hook](/wiki/linux/package_manager/pacman_and_aur.md#hooks) that can be
+used to update betterdiscord automatically.
 Make sure to change the three occurences of `<username>` to the name of the user to install
 betterdiscord for.
 

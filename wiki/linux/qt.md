@@ -38,7 +38,8 @@ This is also described in the
 
 A simple way to achieve this in Qt is the installation of
 [adwaita-qt6](https://github.com/FedoraQt/adwaita-qt) which is also available as an
-[AUR](/wiki/linux/package_manager.md#installing-an-aur-program-with-a-specific-version) package.
+[AUR](/wiki/linux/package_manager/pacman_and_aur.md#installing-an-aur-program-with-a-specific-version)
+package.
 After the installation it can be selected by `qt6ct` as described in the
 [configuration section](#configuration).
 

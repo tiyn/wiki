@@ -12,7 +12,8 @@ The Steam software suite is available on [Linux](/wiki/linux.md) and [Windows](/
 systems.
 For Linux-based operating systems there often exists a package named `steam`.
 For [Arch Linux](/wiki/linux/arch-linux.md) the
-[multilib repository](/wiki/linux/package_manager.md#enabling-multilib) needs to be enabled.
+[multilib repository](/wiki/linux/package_manager/pacman_and_aur.md#enabling-multilib) needs to be
+enabled.
 
 ## Usage
 

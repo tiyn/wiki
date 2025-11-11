@@ -3,17 +3,19 @@
 [Arch Linux](https://archlinux.org/) is a rolling-release, general-purpose
 [Linux](/wiki/linux.md)
 distribution.
+The package manager of Arch Linux is generally
+[Pacman and various possible AUR ones](/wiki/linux/package_manager/pacman_and_aur.md).
 
 ## Package Manager and AUR
 
 Arch Linux uses the
-[pacman](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay) package
+[pacman](/wiki/linux/package_manager/pacman_and_aur.md) package
 manager.
 An additional repository for user made software exists.
 It is called Arch User Repository (AUR).
 The Arch User Repositories (AUR) features community-made packages that can be
 installed with different
-[package manager for that purpose](/wiki/linux/package_manager.md#arch-linux-pacman-and-yay).
+[package manager for that purpose](/wiki/linux/package_manager/pacman_and_aur.md).
 
 ## Installation
 

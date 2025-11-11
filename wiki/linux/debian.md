@@ -1,6 +1,7 @@
 # Debian
 
 [Debian](https://www.debian.org/) is a free and open-source [Linux](/wiki/linux.md) distribution.
+Debian uses the [APT](/wiki/linux/package_manager/apt.md) package manager.
 
 ## Usage
 
@@ -28,7 +29,7 @@ apt-mark hold docker-ce docker-ce-cli containerd.io
 The first step for a major upgrade usually is
 [retrieving the current version](#retrieve-debian-version).
 Afterward the packages of the current major release version have to be
-[upgrading](/wiki/linux/package_manager.md#debian-updating-upgrading) using APTs `full-upgrade`
+[upgrading](/wiki/linux/package_manager/apt.md#updating-upgrading) using APTs `full-upgrade`
 option.
 Then a reboot is recommended.
 
@@ -43,7 +44,7 @@ deb http://deb.debian.org/debian bookworm-updates main contrib non-free
 deb http://security.debian.org/debian-security bookworm-security main contrib non-free
 ```
 
-Following this a [full upgrade](/wiki/linux/package_manager.md#debian-updating-upgrading) has to be
+Following this a [full upgrade](/wiki/linux/package_manager/apt.md#updating-upgrading) has to be
 performed.
 Sometimes this process asks if the user wants to replace the local configuration files with newer
 ones.

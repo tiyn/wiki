@@ -208,7 +208,7 @@ en_US.UTF-8 UTF-8
 In [Arch Linux](/wiki/linux/arch-linux.md) 32-bit software is managed via the `multilib`
 repository, which is for example needed for the `steam` package.
 Due to it not being enabled by default, this has to be
-[done manually](/wiki/linux/package_manager.md#enabling-multilib).
+[done manually](/wiki/linux/package_manager/pacman_and_aur.md#enabling-multilib).
 For this navigate to `/etc/pacman.conf` and find and uncomment the following lines.
 
 ```txt 
@@ -244,7 +244,7 @@ should be checked for further setups.
 
 In some cases the Arch keyring needs to be repopulated.
 This is discussed in
-[the package manager entry](/wiki/linux/package_manager.md#error-during-updating-is-marginal-trust).
+[the package manager entry](/wiki/linux/package_manager/pacman_and_aur.md#error-during-updating-is-marginal-trust).
 
 Additionally if you have a NVidia Graphics Cards you should read
 [the NVidia article](../nvidia.md) too.

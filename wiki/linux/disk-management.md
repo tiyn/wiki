@@ -143,7 +143,7 @@ There are various files that are unused but saved by default.
 The following list shows some options to quickly clean up space.
 
 - [System Trash](#clearing-system-trash-bin)
-- [Arch Linux/Pacman/Yay Cache](/wiki/linux/package_manager.md#clear-cache)
+- [Package Mangers](/wiki/linux/package_manager.md)
 - [ViFM Trash Bin](/wiki/linux/vifm.md#empty-trash)
 
 ## Error solving
