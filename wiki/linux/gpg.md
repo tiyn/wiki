@@ -1,7 +1,7 @@
 # GPG
 
 [GNU Privacy Guard](https://gnupg.org/) - short GnuPG or just GPG - is a free and open-source
-implementation of OpenPGP from [RFC 4880](https://datatracker.ietf.org/doc/html/rfc4880).
+implementation of [OpenPGP](/wiki/openpgp.md).
 It is used to savely encrypt and decrypt messages or files using assymetric encryption.
 
 ## Setup
@@ -12,6 +12,15 @@ Sometimes it is also called `gnupg2`.
 ## Usage
 
 This section addresses the usage of the Open GPG.
+
+### List or Find a Key
+
+To find a key use the following command.
+`<query>` is a search string and is optional.
+
+```sh
+gpg --list-keys <query>
+```
 
 ### Generating a Key Pair
 
@@ -103,6 +112,27 @@ Replace `<id>` with the identifier of the key that should be received and truste
 gpg --recv-key <id>
 gpg --lsign <id>
 ```
+
+### Managing Multiple Users and E-Mails of an Existing Secret Key
+
+A secret key can have more than one e-mail assigned to it.
+After generating the key however only a single user is added by default.
+
+To add another one use the following command where `<key-id>` is the id of the key to add the
+e-mail to.
+
+```sh 
+gpg --edit-key <key-id>
+```
+
+Afterwards a console will open.
+Using `adduid` another user can be added by following the on-screen instructions.
+Afterwards `save` will save the progress and exit from the console.
+
+To delete an existing user and e-mail also open the edit-console.
+Then list the existing users using the command `uid` and select the user id of the key to delete
+with `uid <id>` where `<id>` is the key to delete.
+Then delete it with `deluid` and save with `save`.
 
 ## Troubleshooting 
 

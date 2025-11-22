@@ -7,7 +7,25 @@ numerous e-mail addresses, calendars, todos and contacts.
 
 The following section addresses different uses and add-ons of Thunderbird.
 
-### Changing the (dark/light) Theme
+### Use PGP Key for Encryption, Decryption and Signing
+
+Thunderbird can use [OpenPGP](/wiki/openpgp.md) to sign, encrypt or decrypt mails.
+To add this navigate to the `Account Settings` under `Edit` and then select the mail to add the PGP
+key to and `End-to-End Encryption`.
+There keys can be added by selecting `Add Keys...` and afterwards the private key can be selected
+for encryption, decryption and signing.
+This however is only possible if the key is issued to the same e-mail it should be added to.
+
+### Enable Spell Checking of a Specific Language
+
+Spell checking can be changed in the `Settings` from the `Edit` tab.
+The configuration can be done under `Composition` in the `Spelling` section.
+There are two checkboxes to specify when the spell checking should occur.
+And under `Languages:` various and also multiple languages can be checked.
+To add another language follow the link and navigate to the language to install.
+Then install only dictionary since the language pack is not needed.
+
+### Changing the (Dark/Light) Theme
 
 This section is based on a
 [superuser comment by blnks](https://superuser.com/questions/1757333/how-can-i-view-thunderbird-in-full-dark-mode).
