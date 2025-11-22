@@ -78,13 +78,15 @@ If you want to keep your system clean of much data, you can use this kind of
 setup.
 There are differences depending on your preffered software interface.
 
-### Digital Audio Workstations
+### Digital Audio Workstations and Recording Software
 
 Digital Audio Workstations - short DAWs - is an application that can be used to record, edit or
 produce audio files.
 
 - [LMMS](https://lmms.io/) is a free and cross-platform DAW that is highly compatible with
   [Linux-based systems](/wiki/linux.md).
+- [Audacity](https://www.audacityteam.org/) is an open source and cross-platform software to record
+  and edit audio.
 
 ### Software for Music/Podcasts/Audiobooks
 
