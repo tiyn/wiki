@@ -1,12 +1,42 @@
 # Disk Management
 
-This article focusses on non-LVM and non-MDADM storage.
+This article focusses on non-LVM and non-MDADM storage including swap.
 For [LVM](lvm.md), [NTFS](./ntfs.md), [Samba](./samba.md), [MDADM](./mdadm.md) and [LUKS volumes](./dm-crypt.md) there
 are separate entries.
 
 ## Usage
 
 This section focusses on various usages for disk management related topics.
+
+### Increasing Swap File Size
+
+The size of a swap file can easily be increased using the following steps.
+Using the following commands currently active swaps can be shown and the usage of them can be
+checked.
+
+```sh 
+swapon --show
+free -h 
+```
+
+Then the swap file can be changed using the following commands.
+`<location>` is the location of the swap file (for example `/swap.img`).
+`<size>` describes the new size of the swap file (for example `16G`)
+
+
+```sh 
+swapoff <location>
+fallocate -l <size> <location> 
+chmod 600 <location> 
+mkswap <location> 
+swapon <location> 
+```
+
+Finally the swap can be checked again to confirm that it is online and has the correct size
+
+```sh 
+swapon --show
+```
 
 ### Benchmarking Data Transfer Rates
 
