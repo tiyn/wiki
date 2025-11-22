@@ -71,6 +71,38 @@ python3.9 --version
 
 ## Usage
 
+This section addresses the usage of Python.
+
+### Convert `.ipynb` Files to `.py` Files and Back
+
+Jupyter notebooks in the `.ipynb` format can easily be converted to normal Python files using
+[jupytext](https://jupytext.readthedocs.io/en/latest/).
+This can sometimes be useful when trying to avoid using notebooks.
+
+The following command will convert the file `<file>.ipynb` to a normal Python file.
+`<input-file>` describes the path without the file extension.
+
+```sh
+jupytext --to py <input-file>.ipynb
+```
+
+The same also works the other way around.
+
+```sh
+jupytext --to ipynb <input-file>.py
+```
+
+Using `md` in the `--to` option the notebook can also be converted to a
+[markdown](/wiki/markup_language.md) file and back.
+
+Alternatively [notedown](https://pypi.org/project/notedown/) can also convert to markdown using the
+following commands. 
+`<output-file>` is the path to the output file again without the extension.
+
+```sh
+notedown <input-file>.ipynb --to markdown > <output-file>.md
+```
+
 ### Create a requirements file
 
 To automatically create a `requirements.txt` of your current project, navigate
@@ -90,10 +122,10 @@ following command.
 ```sh
 source ./bin/activate
 ```
- 
+
 And it can be disabled by running the following.
 
-```sh 
+```sh
 deactivate
 ```
 
@@ -154,7 +186,7 @@ This should give back `True`.
 
 This section addresses the [TensorFlow module](https://www.tensorflow.org/).
 
-#### Basic Usage of TensorFlow 
+#### Basic Usage of TensorFlow
 
 The basic usage of TensorFlow is described in
 [the official guide](https://www.tensorflow.org/guide/keras/serialization_and_saving).
