@@ -15,6 +15,9 @@ The following is a list of VNC clients.
 
 - [AVNC](https://github.com/gujjwal00/avnc) is a VNC client for [Android](/wiki/android.md)
   devices.
+- bvnc is a VNC client for [Linux](/wiki/linux.md).
+- Vinagre is a VNC client for [Linux](/wiki/linux.md).
+- gvnc is a VNC client for [Linux](/wiki/linux.md).
 
 ## VNC Server
 
