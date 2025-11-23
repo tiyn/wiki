@@ -84,6 +84,9 @@ highlighting and a side-by-side view.
 delta also improves the `git blame` command, which is another reason why it is widely more popular
 then diff-so-fancy.
 
+A more or less complete overview of the options was performed in an
+[Article on Medium by Maxim Smolin](https://maximsmol.medium.com/improving-git-diffs-4519a6541cd1).
+
 #### `git diff`: Delta
 
 [delta](https://github.com/dandavison/delta) first needs to be installed.
