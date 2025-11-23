@@ -77,11 +77,44 @@ Set `Host` to `github`, `HostName` to `github.com` and `User` to `git`.
 
 ### Improved `git diff`
 
-[Diff So Fancy](https://github.com/so-fancy/diff-so-fancy) is a drop in
-replacement for the default `git diff` look.
-It can be installed via the
-[repository](https://github.com/so-fancy/diff-so-fancy) or the `diff-so-fancy`
-package.
+There are different possibilities to improve the diff of git.
+One of them is [diff-so-fancy](#git-diff-diff-so-fancy) which allows word specific `git diff`.
+A second and more modern option is [delta](#git-diff-delta) which additionally allows syntax
+highlighting and a side-by-side view.
+delta also improves the `git blame` command, which is another reason why it is widely more popular
+then diff-so-fancy.
+
+#### `git diff`: Delta
+
+[delta](https://github.com/dandavison/delta) first needs to be installed.
+Most [package managers](/wiki/linux/package_manager.md) package it in the package `git-delta`.
+
+Afterwards it needs to be enabled.
+To do this globally add the following lines to the configuration file of git, which can be found in 
+`~/.gitconfig`.
+Depending on the system settings and preferences the dark-mode (`dark`) and the side-by-side view
+(`side-by-side`) can and should be disabled.
+
+```txt
+[core]
+        pager = delta
+[interactive]
+        diffFilter = delta --color-only
+[delta]
+        navigate = true
+        dark = true
+        side-by-side = true
+        show-syntax-themes = true
+[merge]
+        conflictStyle = zdiff3
+```
+
+#### `git diff`: diff-so-fancy
+
+[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is a drop in replacement for the default
+`git diff` look.
+It can be installed via most [package managers](/wiki/linux/package_manager.md) using the
+`diff-so-fancy` package.
 Afterwards the following lines need to be run to complete the configuration.
 
 ```sh
