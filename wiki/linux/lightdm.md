@@ -175,5 +175,9 @@ password-border-radius = 0.341125em
 
 ## Troubleshooting
 
+This section will focus on errors and the fixing of errors of LightDM.
+
+### Bypass LightDM on Error
+
 If it comes to problems that deny the login it can be useful to switch to another tty.
 This can be done by hitting the key combination `CTRL+ALT+F2`.
