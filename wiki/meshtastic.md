@@ -10,7 +10,7 @@ To setup a Meshtastic Node a device that is capable of communicating via LoRa is
 Often used devices are [microcontrollers](/wiki/microcontroller.md) based on the
 [ESP32-chip](/wiki/microcontroller.md#esp32) like the LILYGO TTGO T-BEAM or the Heltec V3, devices
 based on the nRF52-chip like the RAK4631 and the LILYGO TTGO T-Echo or devices based on the
-RP2040-chip like the Raspberry Pi Pico or the RAK11310 are needed.
+RP2040-chip like the [Raspberry Pi](/wiki/linux/raspberry_pi.md) Pico or the RAK11310 are needed.
 
 After the device acquisition the meshtastic firmware needs to be flashed on the device.
 This can be done using the [official Meshtastic Web Flasher](https://flasher.meshtastic.org/).
