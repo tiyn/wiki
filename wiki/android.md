@@ -94,7 +94,7 @@ This app is available at [F-Droid](/wiki/android/f-droid.md) as
 
 ## Custom ROMs
 
-Besites the stock-firmware of vendors there are also custom ROMs.
+Besides the stock-firmware of vendors there are also custom ROMs.
 These are alternative firmware variants made by third party providers.
 A well known custom ROM is [LineageOS](/wiki/android/lineageos.md).
 
