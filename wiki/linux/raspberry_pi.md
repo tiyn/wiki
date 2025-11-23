@@ -28,7 +28,7 @@ This section assumes the neural network is using
 
 To convert TensorFlow models first the Hailo 8 Software Suite needs to be downloaded.
 This can be done from the [official website](https://hailo.ai/developer-zone/software-downloads/)
-altough an account is used to be able to download the software.
+altough an account is needed for it.
 
 After downloading, extracting and then navigating into the folder a heavily customized
 [Docker](/wiki/docker.md) container can be started by running the following command.
