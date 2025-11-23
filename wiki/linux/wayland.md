@@ -15,3 +15,13 @@ For this to work the compositor needs to use wlroots.
 ```sh
 wlr-randr
 ```
+
+## Troubleshooting
+
+This section addresses problems that can occur when using Wayland and ways to solve them.
+
+### Invisible Notifications and Pop-Ups
+
+There is a chance that notifications and pop-ups are not displayed correctly at some time when
+using Wayland.
+To fix this the most simple way is to just restart the compositor that is currently used.
