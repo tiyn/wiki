@@ -48,12 +48,13 @@ git ls-files -v | grep "^S"
 Authentication by default is done via a username and a password.
 For some services such as GitHub.
 it is not possible to use password as an authentication method.
-The other possibility to authenticate to git is by using
-[SSH](/wiki/linux/ssh.md).
+The other possibility to authenticate to git is by using [SSH](/wiki/ssh.md).
 
+The following sections assumes using a [Linux-based system](/wiki/linux.md) using
+[OpenSSH](/wiki/linux/openssh.md).
 For this a
-[SSH certificate has to be created](/wiki/linux/ssh.md#generate-new-keys) and
-[added to the authentication agent](/wiki/linux/ssh.md#adding-keys-to-authentication-agent).
+[SSH certificate has to be created](/wiki/linux/openssh.md#generate-new-keys) and
+[added to the authentication agent](/wiki/linux/openssh.md#adding-keys-to-authentication-agent).
 Afterwards it the public SSH key to be added to the git server.
 For GitHub there is
 [a guide on that topic](https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password).
@@ -71,7 +72,7 @@ git clone https://github.com/tiyn/wiki
 By using the SSH config file the clone command can be shortened to
 `git clone github:tiyn/wiki`.
 For this follow the
-[corresponding section in the SSH entry](/wiki/linux/ssh.md#shorten-ssh-connection-commands).
+[corresponding section in the SSH entry](/wiki/linux/openssh.md#shorten-ssh-connection-commands).
 Set `Host` to `github`, `HostName` to `github.com` and `User` to `git`.
 
 ### Improved `git diff`

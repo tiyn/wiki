@@ -1,9 +1,10 @@
-# SSH
+# OpenSSH
 
-SSH is a network protocoll to securely connect to a computer.
-In this article it is assumed that `openssh` is used.
+[OpenSSH](https://www.openssh.com) is an implementation of the [SSH protocol](/wiki/ssh.md).
 
 ## Usage
+
+This section addresses the usage of OpenSSH.
 
 ### Generate New Keys
 
@@ -35,14 +36,29 @@ to `PermitRootLogin yes`.
 To enable easy login without password you can add the contents of the file
 `~/.ssh/id_rsa.pub` from your local machine to the file `~/.ssh/authorized_keys`
 on the machine you want to log into.
-You can use the modified command below for ease of use:
+
+There are two options to add the public key to the remote machine.
+The first is a more manual approach.
+`<path-to-public-key>` is the path to the public key (for example `~/.ssh/id_rsa.pub`) and `<host>`
+is the (user and) server to add the key to (for example `user@192.168.178.16`).
 
 ```sh
-cat ~/.ssh/id_rsa.pub | ssh username@server 'cat >> ~/.ssh/authorized_keys'
+cat <path-to-public-key> | ssh <host> 'cat >> ~/.ssh/authorized_keys'
 ```
 
 This can also be more or less fully automated using the `-G` flag of SSH as described in 
 [a YouTube video by nixhero](https://www.youtube.com/watch?v=xCX14u9XzE8).
+
+The second option is a bit safer, due to using OpenSSHs tools, was described in a
+[StackOverflow comment by Boy](https://stackoverflow.com/questions/18690691/how-to-add-a-ssh-key-to-remote-server).
+It functions similar to the first and uses the following command.
+
+```sh 
+ssh-copy-id -f -i <path-to-public-key> <host>
+```
+
+The `-f` flag can alos be omittet to check if the key is already installed.
+For being very safe is important, a dry run can be performed using the `-n` flag.
 
 ### Mount Directory With SSHFS
 
