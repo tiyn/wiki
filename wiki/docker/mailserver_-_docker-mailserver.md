@@ -38,6 +38,21 @@ Finally if a reverse proxy is used check the
 
 Afterwards you're ready to go by once again running the `rebuild.sh` file.
 
+If setting up this mailserver with [Traefik](/wiki/traefik.md) as a reverse proxy some additional
+steps should be taken.
+No http or https is needed.
+But a certificate for the mailserver is needed regardless.
+In this case add the following lines to the file `docker-compose.yml` in the
+`services:` section and adapt them.
+
+```yml
+  whoami:
+    image: docker.io/traefik/whoami:latest
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.whoami.rule=Host(`<subdomain>.<domain>`)"
+```
+
 ### rebuild.sh
 
 ```sh

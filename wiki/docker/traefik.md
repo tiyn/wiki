@@ -1,6 +1,6 @@
 # traefik
 
-This is a [Docker](/wiki/docker.md) container for a traefik edge router.
+This is a [Docker](/wiki/docker.md) container for a [Traefik](/wiki/traefik.md) edge router.
 The official container and documentation was made by
 [traefik](https://hub.docker.com/_/traefik).
 This docker-rebuild is made up by a `docker-compose.yml` file.
@@ -12,6 +12,8 @@ In that folder create the directories `data/config`.
 Place the files `data/traefik.yml` and `data/config/dynamic.yml` in the
 according directories.
 Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Additional guides on the usage of Traefik for [Docker](/wiki/docker.md) services can be found in
+the [Traefik wiki entry](/wiki/traefik.md#usage).
 
 ### Volumes
 
@@ -145,7 +147,7 @@ certificatesResolvers:
 
 ### data/config/dynamic.yml
 
-In the config replace `username:htpasswd` with the output of
+In the config replace `<username:htpasswd>` with the output of
 `echo $(htpasswd -nb <user> <pasword>) | sed -e s/\\$/\\$\\$/g`.
 
 ```yml
@@ -162,19 +164,7 @@ http:
     user-auth:
       basicAuth:
         users:
-          - "username:htpasswd"
-
-    redirect-non-www-to-www:
-      redirectregex:
-        permanent: true
-        regex: "^https?://(?:www\\.)?(.+)"
-        replacement: "https://www.${1}"
-
-    redirect-www-to-non-www:
-      redirectregex:
-        permanent: true
-        regex: "^https?://www\\.(.+)"
-        replacement: "https://${1}"
+          - "<username:htpasswd>"
 
 tls:
   options:
@@ -187,74 +177,4 @@ tls:
         - TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
         - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305
       minVersion: VersionTLS12
-```
-
-The sections called `redirect-non-www-to-www` and `redirect-www-to-non-www` are adapted from a
-article by Benjamin Rancourt on his
-[website](https://www.benjaminrancourt.ca/how-to-redirect-from-non-www-to-www-with-traefik/).
-
-## Usage
-
-### Create reverse proxies
-
-To create a reverse proxy from a docker container add the following lines in the
-`labels:` section of the `docker-compose.yml` of the service to proxy.
-
-```yml
-  - "traefik.enable=true"
-  - "traefik.docker.network=proxy"
-  - "traefik.http.routers.<service name>-secure.entrypoints=websecure"
-  - "traefik.http.routers.<service name>-secure.rule=Host(`<subdomain>.<domain>`)"
-  - "traefik.http.routers.<service name>-secure.service=<service name>"
-  - "traefik.http.services.<service name>.loadbalancer.server.port=<port>"
-```
-
-This configuration automatically redirects http to https.
-When using this configuration the port specified in the latter lines can be
-ommitted in the `ports:` section if not used directly.
-This ensures access only via https and restricts access via ip and port.
-Change `<service name>` according to the service you want to publish and `<subdomain>` aswell as
-`<domain>` to the domain you intent to publish the service to.
-Additionally if you want to redirect domains not starting with `www` to one that does not append
-the following line.
-
-```yml
-  - "traefik.http.routers.<service name>.middlewares=redirect-non-www-to-www"
-```
-
-If the opposite is the case and it should always be redirected to a domain not starting with `www`
-add the following line.
-
-```yml
-  - "traefik.http.routers.<service name>.middlewares=redirect-www-to-non-www"
-```
-
-In both of those cases the line of the first code block in this section that specifies the domain
-and subdomain needs to include both the www and the non-www domains.
-This should look something like the following
-
-Make sure to add the domain that will be redirected to the labels aswell.
-For redirection to www domains this will look something like the following.
-
-```yml
-  - "traefik.http.routers.<service name>.rule=Host(`<subdomain>.<domain>`)"
-```
-
-In the opposite case the domain will be `www.<subdomain>.<domain>`.
-
-### Setup Mailserver
-
-If setting up a
-[docker-mailserver by mailserver](./mailserver_-_docker-mailserver.md) no http
-or https is needed.
-But a certificate for the mailserver is needed regardless.
-In this case add the following lines to the file `docker-compose.yml` in the
-`services:` section and adapt them.
-
-```yml
-  whoami:
-    image: docker.io/traefik/whoami:latest
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.whoami.rule=Host(`<subdomain>.<domain>`)"
 ```
