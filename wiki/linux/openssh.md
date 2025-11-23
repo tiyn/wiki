@@ -10,6 +10,8 @@ This section addresses the usage of OpenSSH.
 
 To generate new ssh keys simply run `ssh-keygen -t ed25519` or
 `ssh-keygen -t rsa -b 4096`.
+For security reasons the Ed25519 is more secure, even if the key length is far smaller than its RSA
+counterpart.
 
 The keys can then be added to the authentication agent by as described in the
 [corresponding article](#adding-keys-to-authentication-agent)
@@ -46,14 +48,14 @@ is the (user and) server to add the key to (for example `user@192.168.178.16`).
 cat <path-to-public-key> | ssh <host> 'cat >> ~/.ssh/authorized_keys'
 ```
 
-This can also be more or less fully automated using the `-G` flag of SSH as described in 
+This can also be more or less fully automated using the `-G` flag of SSH as described in
 [a YouTube video by nixhero](https://www.youtube.com/watch?v=xCX14u9XzE8).
 
 The second option is a bit safer, due to using OpenSSHs tools, was described in a
 [StackOverflow comment by Boy](https://stackoverflow.com/questions/18690691/how-to-add-a-ssh-key-to-remote-server).
 It functions similar to the first and uses the following command.
 
-```sh 
+```sh
 ssh-copy-id -f -i <path-to-public-key> <host>
 ```
 
@@ -173,3 +175,18 @@ kill <process-id>
 
 Files that are based on a remote server can be mounted as described in
 [the corresponding section](#mount-directory-with-sshfs) to setup complete remote development.
+
+### Specify Key Exchange Algorithms
+
+It can be useful to specify the key exchange algorithms in the OpenSSH config file `~/.ssh/config`.
+Some key exchange algorithms are more secure regarding post-quantum attacks.
+The following configuration prefers and enforces hybrid post-quantum–resistant key exchange
+algorithms (`mlkem768x25519-sha256` and  `sntrup761x25519-sha512`).
+A modern classical fallback (`curve25519-sha256`) is included for compatibility.
+This can be considered a form on
+[system hardening](/wiki/linux/system-hardening.md#specific-steps-to-harden-a-system).
+
+```
+Host *
+    KexAlgorithms mlkem768x25519-sha256,sntrup761x25519-sha512,curve25519-sha256
+```
