@@ -1,10 +1,10 @@
-# E-mail
+# Email
 
-E-mail is a method of exchanging electronic messages.
+Email is a method of exchanging electronic messages.
 
 ## Setup
 
-E-mail usually consists of a [server](#server) and a [client](#client).
+Email usually consists of a [server](#server) and a [client](#client).
 
 ## Server
 

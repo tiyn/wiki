@@ -1,7 +1,7 @@
 # Thunderbird
 
 [Thunderbird](https://www.thunderbird.net/en-US/) is a free and open-source program to manage
-numerous e-mail addresses, calendars, todos and contacts.
+numerous [email](/wiki/email.md) addresses, calendars, todos and contacts.
 
 ## Usage
 

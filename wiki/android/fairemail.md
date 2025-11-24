@@ -1,7 +1,7 @@
 # FairEmail
 
-[FairEmail](https://email.faircode.eu/) is a free and open-source email client for
-[Android](/wiki/android.md).
+[FairEmail](https://email.faircode.eu/) is a free and open-source
+[email client](/wiki/email.md#client) for [Android](/wiki/android.md).
 
 ## Setup
 

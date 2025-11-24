@@ -1,7 +1,7 @@
 # Office Suite
 
 An office Suite are bundled programs that usually include productivity tools like word processing,
-spreadsheet editing, presentations aswell as e-mail and calendar software.
+spreadsheet editing, presentations aswell as [email](/wiki/email.md) and calendar software.
 
 ## Programs
 
@@ -18,3 +18,8 @@ The following is a list of programs that are popular.
   and [Linux](/wiki/linux.md).
   Most of the time this suite is not used anymore in favor for LibreOffice due to lackluster
   development.
+
+Additionally to the full fledged office suites programs such as
+[email clients](/wiki/email.md#client) exist.
+Those are not part of the office suite category by definition but are at least adjacent and have to
+be mentioned here aswell.
