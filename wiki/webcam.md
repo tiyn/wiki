@@ -21,11 +21,8 @@ This program provides a simple interface for capturing and viewing video from a
 Additionally guvcview provides an interface to configure various webcam settins
 and enable a few effects on top of it.
 
-## Using a Smartphone as Webcam
+## Using a Smart Device as a Webcam
 
-A [smartphone](/wiki/smart_device.md) and its camera aswell as flashlight can be used as a simple
-replacement for a webcam.
-For [Android](/wiki/android.md) smartphones this can be easily achieved by using
-[DroidCam](/wiki/android/droidcam.md).
-An alternative to DroidCam with a with decidedly better resolution is
-[IP Webcam](/wiki/android/ip_webcam.md).
+It is possible to use [smart devices](/wiki/smart_device.md) as a webcam.
+For [Android](/wiki/android.md) devices the guide to achieve this, can be found in the
+[corresponding section of the Android entry](/wiki/android.md#usage-as-a-webcam.)

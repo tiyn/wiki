@@ -4,23 +4,6 @@
 [Linux](/wiki/linux.md) kernel.
 It is designed primarily for mobile devices with touch screens like tablets or smart phones.
 
-## Managing the Data
-
-The data and files stored on Android
-[smart devices](/wiki/smart_device.md#smartphones-and-tablet-computers) are sometimes needed on
-computers.
-
-For [Windows](/wiki/windows.md) this can easily be achieved by connecting it via USB.
-No further software is needed as the device manager handles the phone correctly most of the times.
-
-For [Linux-based systems](/wiki/linux.md) the
-[device](/wiki/smart_device.md#smartphones-and-tablet-computers) also has to be connected to the
-computer.
-But in this case also a software is needed to [mount it](/wiki/linux/disk-management.md#mounting),
-this software/program is called [android-file-transfer](/wiki/linux/android-file-transfer.md).
-For further information and a guide on how to mount a Android device correctly navigate to the
-[corresponding section](/wiki/linux/android-file-transfer.md#mounting-and-unmounting-android-device).
-
 ## App Store
 
 The most used app store of android is the [Google Play Store](https://play.google.com/).
@@ -50,12 +33,33 @@ This section addresses various useful applications.
 - [Fossify](https://github.com/FossifyOrg) is a suite of open-source apps that among other include
   apps like calendar, file-manager, phone, messages and more.
 
-## Improve Security and Privacy
+## Usage
+
+This section addresses the usage of Android.
+
+### Managing the Data
+
+The data and files stored on Android
+[smart devices](/wiki/smart_device.md#smartphones-and-tablet-computers) are sometimes needed on
+computers.
+
+For [Windows](/wiki/windows.md) this can easily be achieved by connecting it via USB.
+No further software is needed as the device manager handles the phone correctly most of the times.
+
+For [Linux-based systems](/wiki/linux.md) the
+[device](/wiki/smart_device.md#smartphones-and-tablet-computers) also has to be connected to the
+computer.
+But in this case also a software is needed to [mount it](/wiki/linux/disk-management.md#mounting),
+this software/program is called [android-file-transfer](/wiki/linux/android-file-transfer.md).
+For further information and a guide on how to mount a Android device correctly navigate to the
+[corresponding section](/wiki/linux/android-file-transfer.md#mounting-and-unmounting-android-device).
+
+### Improve Security and Privacy
 
 Security and privacy are important topics, especially so when dealing with mobile phones.
 This section focusses on improving them on a standard Android system.
 
-The Elecronic Frontier Foundation recommends the following changes in their guide 
+The Elecronic Frontier Foundation recommends the following changes in their guide
 [Guide](https://ssd.eff.org/module/how-to-get-to-know-android-privacy-and-security-settings).
 
 - [2FA](#multi-factor-authentication)
@@ -69,7 +73,7 @@ The Elecronic Frontier Foundation recommends the following changes in their guid
 - Disable WEP networks
 - Obscure lockscreen notifications
 
-The YouTube Channel 9to5Google also has a 
+The YouTube Channel 9to5Google also has a
 [video on security and privcacy](https://www.youtube.com/watch?v=eswIeNxSIqo) which additionally
 suggest the following changes.
 
@@ -80,7 +84,7 @@ Another option to add which may not improve security or privacy but improves usa
 if a difficult passphrase is used - is the enabling of "Extend Unlock".
 There "Trusted Devices" can be set or the "On-body Detection" can be enabled.
 
-## Multi-Factor Authentication
+### Multi-Factor Authentication
 
 [Multi-factor authentication](/wiki/multi-factor_authentication.md) can easily be set up on android
 systems.
@@ -92,7 +96,7 @@ This app is available at [F-Droid](/wiki/android/f-droid.md) as
 [Google Play Store](#app-store) by the
 [same name](https://f-droid.org/de/packages/org.liberty.android.freeotpplus/).
 
-## Custom ROMs
+### Custom ROMs
 
 Besides the stock-firmware of vendors there are also custom ROMs.
 These are alternative firmware variants made by third party providers.
@@ -101,7 +105,7 @@ A well known custom ROM is [LineageOS](/wiki/android/lineageos.md).
 It is possible that some custom ROMs require the user to
 [unlock the bootloader](#unlocking-the-bootloader) before the installation can happen.
 
-## Unlocking the Bootloader
+### Unlocking the Bootloader
 
 Unlocking the bootloader can be a bit challenging for some vendors especially.
 
@@ -136,3 +140,19 @@ It is possible that now 72 hours have to pass for the unlocking process to conti
 If that is the case wait the specified amount of time and repeat the last step.
 Make sure to not apply for unlocking again and do not add your account to your phone again as this
 will reset the timer.
+
+### Remote Control and Screen Mirroring
+
+[Android](/wiki/android.md) based devices can use [scrcpy](/wiki/scrcpy.md) to mirror the screen
+and allow controlling it by a [Windows](/wiki/windows.md) or [Linux-based](/wiki/linux.md) system.
+
+### Usage as a Webcam
+
+Most Android devices are equipped with a decent camera and a flashlight.
+If a [Linux](/wiki/linux.md) or [Windows](/wiki/windows.md) system is missing a
+[webcam](/wiki/webcam.md) which is only rarely used it can be useful to repurpose the
+[smart device](/wiki/smart_device.md) as a webcam.
+
+For this there are multiple options.
+One of them is [DroidCam](/wiki/android/droidcam.md).
+Another option with a decidedly better resolution is [IP Webcam](/wiki/android/ip_webcam.md).

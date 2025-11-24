@@ -23,19 +23,7 @@ an alternative to proprietary applications by the smart devices' vendor.
 
 ## Smartphones and Tablet Computers
 
-Smartphones and Tablet computers are among the most used electronic devices.
+Smartphones and tablet computers are among the most used electronic devices.
 They are often used to [communicate](/wiki/communication.md) or
 [surfing the internet](/wiki/web_browser.md).
-
-### Remote Control and Screen Mirroring
-
-[Android](/wiki/android.md) based devices can use [scrcpy](/wiki/android/scrcpy.md) to mirror the
-screen and allow controlling it by a [Windows](/wiki/windows.md) or [Linux](/wiki/linux.md) system.
-
-### Usage as a Webcam
-
-Smartphones and Tablet computers usually are equipped with a decent camera.
-If a [Linux](/wiki/linux.md) or [Windows](/wiki/windows.md) system is missing a
-[webcam](/wiki/webcam.md) which is only rarely used it can be useful to repurpose the smart device
-as a webcam.
-This can be done as explained in the [webcam entry](/wiki/webcam.md#using-a-smartphone-as-webcam).
+Most of the time smartphones and tablets also feature a [webcam](/wiki/webcam.md).
