@@ -30,7 +30,7 @@ A guide and description of the usage can be found on [gioele.io](https://gioele.
 This section is based on a guide by [Linuxize](https://linuxize.com/post/how-to-install-python-3-9-on-ubuntu-20-04/).
 
 On [Linux-based systems](/wiki/linux.md) Python can be easily installed using make.
-The following shows a process of installing Python 3.9.1.
+The following shows a process of installing Python `3.9.1`.
 When another Python version is needed the version number has to be adapted accordingly.
 
 First make sure all the dependencies are installed.
@@ -164,6 +164,11 @@ This flag is to be used with care.
 This section addresses the [PyTorch module](https://pytorch.org/).
 
 #### Setup Pytorch with Cuda for GPU usage
+
+Please note that according to
+[various sources](https://www.reddit.com/r/archlinux/comments/1nxipcu/nvidia_pascal/gpu_not_supporting_cuda_13_can_i)
+Cuda 13 does not support nVidia Pascal GPUs.
+In this case an earlier version of Cuda has to be used.
 
 If you are on Arch Linux or a distribution based on it install
 `python-pytorch-cuda` via `pacman -S python-pytorch-cuda`.
