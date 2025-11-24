@@ -16,6 +16,20 @@ It features the same syntax.
 
 This section addresses various usages of the arch linux package managers.
 
+### Yay: Remove Make Dependencies 
+
+This section is based on a
+[Reddit comment by AnalShart](https://www.reddit.com/r/archlinux/comments/116dd58/is_it_possible_to_default_remove_make).
+The default behavious of Yay is not to remove the make dependencies.
+This can be changed by adding the following lines to the config file `~/.config/yay/config.json` or
+by editing it accordingly.
+
+```json 
+{
+	"removemake": "yes"
+}
+```
+
 ### Ignoring Packages
 
 Packages can be ignored by adding the package in `/etc/pacman.conf` under `IgnorePkg`.
