@@ -16,6 +16,12 @@ There keys can be added by selecting `Add Keys...` and afterwards the private ke
 for encryption, decryption and signing.
 This however is only possible if the key is issued to the same e-mail it should be added to.
 
+In the `Account Settings` of emails with set up PGP key the default options can be set up.
+Under `Deault settings for sending messages` it can be set to encrypt or not encrypt mails by
+default.
+Emails can also be signed by default if not encrypted (for this select
+`Sign unencrypted messages`).
+
 ### Enable Spell Checking of a Specific Language
 
 Spell checking can be changed in the `Settings` from the `Edit` tab.

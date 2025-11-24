@@ -22,6 +22,8 @@ And even if you have it can be useful to keep your mails synced locally on your 
 
 - [Neomutt](linux/neomutt.md) is a [terminal-based](/wiki/linux/system_console.md)
   mail client for linux, that has a simple interface.
-- [Thunderbird](/wiki/thunderbird.md) is a free and open source mail client which is cross
-  platform.
+- [Thunderbird](/wiki/thunderbird.md) is a free and open-source mail client which is
+  cross-platform.
   It also features, contact, todo and calendar management.
+- [FairEmail](/wiki/android/fairemail.md) is a free and open-source mail client for
+  [Android](/wiki/android.md).
