@@ -35,6 +35,8 @@ This section will focus on errors and the fixing of errors of Discord.
 ### Streaming Audio not Possible
 
 Using the default client when sharing the screen the audio might not be streamed aswell.
+this section is based on a
+[Reddit comment by Malo1301](https://www.reddit.com/r/linux_gaming/comments/1kbplea/no_audio_when_sharing_screen_on_discord_for_linux/).
 This can happen with both [Wayland](/wiki/linux/wayland.md) and
 [X11](/wiki/linux/x_window_system.md).
 The simplest way to fix is to use [Vesktop](https://github.com/Vencord/Vesktop).
