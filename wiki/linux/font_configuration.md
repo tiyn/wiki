@@ -53,7 +53,17 @@ Follow the section on [adding new fonts](#adding-new-font-to-configuration) and
 This section addresses important commands and packages for the configuration of
 fonts.
 
-### Show Characters Of A Font
+### Display Available Fonts for Character 
+
+To list all fonts that are able to display a specific unicode character use the following command.
+`<unicode>` is the code for one (for example `26AA`) or more (for example `26AA,26AB`) unicode
+characters.
+
+```sh 
+fc-list :charset=<unicode>
+```
+
+### Show Characters of a Font
 
 Using [FontForge](https://fontforge.org/en-US/) all characters of a given `.ttf` file can be shown.
 The following shows the structure of a command to call FontForge with a file.
