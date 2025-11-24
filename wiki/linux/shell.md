@@ -14,12 +14,14 @@ The following is a list of Unix shells that are POSIX compliant.
   `/bin/sh`. It is significantly faster than Bash and it is recommende to set
   DASH to be [the system shell](#changing-the-system-shell-binsh).
 - [Zsh](https://www.zsh.org/) is a shell designed to be interactive but also a
-  powerful scripting language. It is often set to be the
-  [default user shell](#changing-the-default-user-shell) because of its user
-  friendliness and a more features like the possibility for
+  powerful scripting language.
+  It is often set to be the [default user shell](#changing-the-default-user-shell) because of its
+  user friendliness and a more features like the possibility for
   [syntax highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
   and [auto suggestions](https://github.com/zsh-users/zsh-autosuggestions) and even an improved
   version of [auto completion](https://github.com/marlonrichert/zsh-autocomplete).
+  For basic usage check [bash2zsh](https://www.bash2zsh.com/zsh_refcard/refcard.pdf) or
+  [zsh-lovers](https://grml.org/zsh/zsh-lovers.html).
 
 ## Usage
 
