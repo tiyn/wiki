@@ -2,6 +2,8 @@
 
 [Discord](https://discord.com/) is an social platform that combines voice and video conferences as
 well as instant messaging chats.
+Additionally to the default website Discord also features a desktop client in the form of an
+[Electron-based app](/wiki/electron.md).
 
 ## Usage
 
