@@ -20,8 +20,8 @@ This section addresses the usage of the
 
 #### Preparing TensorFlow Models for the AI HAT+
 
-For neural networks to run on the Hailo AI module and the AI HAT+ they have to be converted to the
-`.hef` format.
+For [neural networks](/wiki/neural_network.md) to run on the Hailo AI module and the AI HAT+ they
+have to be converted to the `.hef` format.
 This section assumes the neural network is using
 [TensorFlow](/wiki/programming_language/python.md#tensorflow) and is available as a `.tf` or
 `.tflite` file.
