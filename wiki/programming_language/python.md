@@ -96,7 +96,7 @@ Using `md` in the `--to` option the notebook can also be converted to a
 [markdown](/wiki/markup_language.md) file and back.
 
 Alternatively [notedown](https://pypi.org/project/notedown/) can also convert to markdown using the
-following commands. 
+following commands.
 `<output-file>` is the path to the output file again without the extension.
 
 ```sh
