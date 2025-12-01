@@ -11,7 +11,7 @@ Email usually consists of a [server](#server) and a [client](#client).
 If you want to host your own mail-server there are solutions with and without
 interfaces.
 
-- [Dovecot](./docker/tvial_-_docker-mailserver.md) is a simple dockerized
+- [Dovecot](/wiki/docker/mailserver_-_docker-mailserver.md) is a simple dockerized
   mail server that has no interface.
 
 ## Client

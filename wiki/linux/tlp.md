@@ -1,15 +1,15 @@
 # TLP
 
-[TLP](https://linrunner.de/tlp) is a linux command line utility for
-[saving laptop battery power](/wiki/linux/battery_saving.md) aswell as optimizing battery life.
+[TLP](https://linrunner.de/tlp) is a [Linux command](/wiki/linux.md) line utility for
+[saving laptop battery power](/wiki/linux/hardware_%28linux%29.md#power-management) as well as
+optimizing battery life.
 
 ## Setup
 
 TLP can be installed on most distributions by installing the `tlp` package.
-Additionally the installation of `tlp-rdw` is recommended, which is used to get better control over
+Additionally, the installation of `tlp-rdw` is recommended, which is used to get better control over
 radio devices.
-Afterwards the TLP
-[service](/wiki/linux/systemd.md#startstopenabledisable-a-service) needs to be
+Afterward the TLP [service](/wiki/linux/systemd.md#startstopenabledisable-a-service) needs to be
 started and enabled.
 In contrast to other
 [SystemD services](/wiki/linux/systemd.md#startstopenabledisable-a-service) this
