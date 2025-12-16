@@ -30,7 +30,7 @@ A notable amount of this group of games uses the top-level domain `.io`.
 Some examples for these are [territorial.io](https://territorial.io/) and
 [slither.io](http://slither.io/).
 
-Another online game is [Massive Decks](/wiki/massivedecks.md) which is the online take on a similar
+Another online game is [Massive Decks](/wiki/game/massive_decks.md) which is the online take on a similar
 popular tabletop game.
 
 For Windows there is the popular old-school pinball game 3d Pinball Space Cadet.
@@ -39,10 +39,10 @@ various platforms and operating systems.
 
 ## Syncing Game Saves Across Systems
 
-By using [Syncthing](../syncthing.md) game saves can be synchronized.
+By using [Syncthing](/wiki/syncthing.md) game saves can be synchronized.
 First set up Syncthing as described in the
 [Syncthing entry](../syncthing.md#setup).
-If a system with only user access - like the [Steam Deck](./steam_deck.md) - is used the
+If a system with only user access - like the [Steam Deck](/wiki/game/steam_deck.md) - is used the
 [user space configuration](../syncthing.md#user-space-configuration-for-linux)
 is recommended.
 Afterwards move the game saves to the directory set up by Syncthing and create

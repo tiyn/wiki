@@ -12,7 +12,7 @@ done via the official Anki website.
 
 The default Anki client is made for computer systems and can be installed from source as described
 [on GitHub](https://github.com/ankitects/anki).
-Alternatively some [Linux](/wiki/linux.md) [package managers](/wiki/linux/package_manager.md) 
+Alternatively some [Linux](/wiki/linux.md) [package managers](/wiki/linux/package_manager.md)
 package the Anki client in the `anki` package.
 
 Adding to the Computer clients there are various possible clients for other platforms.

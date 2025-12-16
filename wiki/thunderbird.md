@@ -94,3 +94,29 @@ By default Thunderbird will show a preview for mails on the right hand side when
 This is called the message pane.
 It can be hidden by drag and drop or by pressing the F8-key.
 Using the same key it can also be shown again.
+
+### Downgrading Profile
+
+Sometimes - mostly for [troubleshooting reasons](#troubleshooting) - it can be useful to downgrade
+Thunderbird (for example using
+[downgrade](/wiki/linux/package_manager/pacman_and_aur.md#downgrading-packages) on
+[Arch Linux](/wiki/linux/arch-linux.md)).
+If this is done the profile will not be downwards compatible by default.
+On [Linux](/wiki/linux.md) systems the following command can be used to safely downgrade the
+profile.
+
+```sh
+thunderbird -profilemanager --allow-downgrade
+```
+
+## Troubleshooting
+
+This section will focus on errors and the fixing of errors of Thunderbird.
+
+### Not Displaying Profile Images Correctly
+
+On version 145 of Thunderbird the profile pictures of contacts from a CardDAV-synced addressbook
+may not be correctly displayed.
+This bug was reported by [Andrewhotlab](https://bugzilla.mozilla.org/show_bug.cgi?id=2001944).
+An easy fix for this and similar bugs is to [downgrade Thunderbird](#downgrading-profile) to the
+last version which was not affected by the bug.

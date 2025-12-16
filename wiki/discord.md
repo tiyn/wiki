@@ -2,6 +2,21 @@
 
 [Discord](https://discord.com/) is an social platform that combines voice and video conferences as
 well as instant messaging chats.
+Additionally to the default website Discord also features a desktop client in the form of an
+[Electron-based app](/wiki/electron.md).
+
+## Alternatives
+
+There are some alernative frontends and modifications available for Discord.
+
+- [BetterDiscord](/wiki/betterdiscord.md) is a modification for Discord on
+  [Linux-based systems](/wiki/linux.md), which changes an existing installation of Discord.
+  It supports a wide range of plugins and themes.
+- [Vesktop](https://github.com/Vencord/Vesktop) is a standalone custom Discord App.
+  It supports a wide range of plugins and themes.
+- [Revenge](https://github.com/revenge/revenge-manager) is a standalone client modification of
+  Discord for [Android](/wiki/android.md).
+  It supports a wide range of plugins and themes.
 
 ## Usage
 
@@ -25,8 +40,8 @@ The following is a list of bots featured in this wiki that can do this.
 ### Themes and Plugins
 
 By default Discord has no option to use themes or plugins.
-This however can be changed by using [BetterDiscord](/wiki/betterdiscord.md).
-Another option is using [Vesktop](https://github.com/Vencord/Vesktop).
+To use themes or plugins [alternative frontends or client modifications](#alternatives) have to be
+used.
 
 ## Troubleshooting
 

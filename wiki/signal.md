@@ -2,6 +2,7 @@
 
 [Signal](https://signal.org) is an encrypted, open-source messenger that allows voice and video
 calls as well as instant messaging chats.
+ahe desktop client comes in the form of an [Electron based-app](/wiki/electron.md).
 
 ## Usage
 

@@ -3,6 +3,7 @@
 [BetterDiscord](https://betterdiscord.app) is an unofficial extension to
 [Discord](/wiki/discord.md) which allows to add various functionality through plugins and new
 themes.
+It is not a standalone client.
 
 ## Setup
 

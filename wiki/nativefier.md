@@ -4,8 +4,7 @@
 apps from websites.
 This way a single website can be used as an application in contrast to opening it in a
 [browser](/wiki/web_browser.md).
-It uses [Electron](https://www.electronjs.org/) which in turn uses
-[Chromium](https://www.chromium.org/).
+Nativefier creates [Electron-based web-apps](/wiki/electron.md).
 
 ## Setup
 

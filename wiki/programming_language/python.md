@@ -96,7 +96,7 @@ Using `md` in the `--to` option the notebook can also be converted to a
 [markdown](/wiki/markup_language.md) file and back.
 
 Alternatively [notedown](https://pypi.org/project/notedown/) can also convert to markdown using the
-following commands. 
+following commands.
 `<output-file>` is the path to the output file again without the extension.
 
 ```sh
@@ -162,6 +162,8 @@ This flag is to be used with care.
 ### PyTorch
 
 This section addresses the [PyTorch module](https://pytorch.org/).
+Pytorch is a machine learning resource which is often used for
+[neural networks](/wiki/neural_network.md).
 
 #### Setup Pytorch with Cuda for GPU usage
 
@@ -190,6 +192,8 @@ This should give back `True`.
 ### TensorFlow
 
 This section addresses the [TensorFlow module](https://www.tensorflow.org/).
+Tensorflos is a machine learning resource which is often used for
+[neural networks](/wiki/neural_network.md).
 
 #### Basic Usage of TensorFlow
 

@@ -3,7 +3,7 @@
 [PlayerCTL](https://github.com/altdesktop/playerctl) is a MPRIS (Media Player
 Remote Interfacing Specification) [media player](/wiki/audio.md#media-software)
 command-line controller for Spotify, [Sonixd](/wiki/subsonic.md#client), MPV and
-many other different media clients aswell as [browser](/wiki/browser.md).
+many other different media clients aswell as [browser](/wiki/web_browser.md).
 
 ## Setup
 

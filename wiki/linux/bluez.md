@@ -6,7 +6,7 @@ This entry features the BlueZ package and all software that is based on it.
 
 ## Setup
 
-On most linux distributions BlueZ can be installed with the `bluez` package.
+On most [Linux](/wiki/linux.md) distributions BlueZ can be installed with the `bluez` package.
 Additionally the `bluez-utils` package needs to be installed.
 To load the kernel module `modprobe btusb` needs to be run.
 Afterwards the
@@ -28,3 +28,6 @@ The Bluetooth features can be managed by different types of front-ends.
   [terminal](/wiki/linux/system_console.md) user interface.
   It is included in a package of the same name, that needs to be installed
   before usage.
+  Using `bluetuith` the [Bluetooth](/wiki/bluetooth.md) can be turned on (or off) by pressing `o`,
+  devices can be searched for by pressing `s`, a selected device can be paired by pressing `p` and
+  finally connected by pressing `c` before `bluetuith` can be left with `Q`.

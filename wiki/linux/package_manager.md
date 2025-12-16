@@ -1,4 +1,4 @@
-# Package Managers
+# Package Manager
 
 Package managers are important programs to get software onto your system.
 
