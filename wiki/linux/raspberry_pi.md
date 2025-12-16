@@ -56,3 +56,16 @@ hailo parser tf <path-to-tf-model>
 hailo optimize --use-random-calib-set <path-to-har-model>
 hailo compiler <path-to-optimized-har-model>
 ```
+
+Note that the user in the Docker container usually uses anothr UID and GID.
+To make the volume and files accessible inside the container the IDs of the files in the volume
+should be changed accordingly - for example as shown in the following example.
+`<volume-path>` is the path that points to the volume
+`<uid>` is the UID of the Docker user - which can be found using `id -u` (for example `10642`) -
+and `<gid>` the GID of the Docker user - which can be found using `id -g` (for example `10600`).
+
+```sh 
+chown -R <uid>:<gid> <volume-path>
+```
+
+After the models have been converted it can be reversed using the systems user UID and GID.
