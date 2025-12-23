@@ -5,12 +5,14 @@ or Stack Overflow locally and for offline usage.
 
 ## Setup
 
-The software can be setup via [Docker](/wiki/docker.md) with the 
+Kiwix is available for different operating systems and can be installed as described
+[on the official website](https://kiwix.org/en/applications).
+The software can also be setup via [Docker](/wiki/docker.md) with the 
 [kiwix image](/wiki/docker/kiwix_-_kiwix-serve.md).
 
 ## Usage
 
-This section addresses the usage of kiwix.
+This section addresses the usage of Kiwix.
 
 ### Download content
 
