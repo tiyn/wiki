@@ -189,6 +189,20 @@ torch.cuda.is_available()
 
 This should give back `True`.
 
+### Hailo
+
+The package for [Hailo chips](/wiki/hailo.md) has to be downloaded from the
+[official website](https://hailo.ai/developer-zone/software-downloads).
+
+Hailo chips can be used to run converted [TensorFlow](#tensorflow) models.
+The conversion process is explained in the
+[Hailo article](/wiki/hailo.md#preparing-tensorflow-models-for-the-ai-hat)
+
+To run the inference using Python on ARM boards like the
+[Raspberry Pi AI Hat +](/wiki/linux/raspberry_pi.md#ai-hat)
+[zlodeibaal's article in Medium](https://medium.com/@zlodeibaal/how-to-run-hailo-on-arm-boards-d2ad599311fa)
+can be referenced.
+
 ### TensorFlow
 
 This section addresses the [TensorFlow module](https://www.tensorflow.org/).
