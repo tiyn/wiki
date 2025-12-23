@@ -35,3 +35,13 @@ This section addresses them.
 The [AI HAT](https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html) is an
 extension which uses the [Hailo AI module](/wiki/hailo.md) for use with the
 [Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5).
+
+## Troubleshooting
+
+This section addresses the usage of Raspberry Pi systems.
+
+### SSH Servera Not Starting for Imager Setups
+
+Sometimes the [imager](#setup) can run into errors which does not set up the
+[SSH](/wiki/linux/openssh.md) server on the Pi correctly.
+In this case the SSH server needs to be started manually by display and keyboard.
