@@ -135,7 +135,7 @@ EndSection
 This can be disabled temporarily by running `xset s off`.
 The screen can also be turned off instantly with the command `xset dpms force off`.
 
-If `OffTime` does not work add the following to the file `/etc/X11/xorg.conf.d/dpms.conf.
+If `OffTime` does not work add the following to the file `/etc/X11/xorg.conf.d/dpms.conf`.
 
 ```txt
 Section "ServerFlags"
