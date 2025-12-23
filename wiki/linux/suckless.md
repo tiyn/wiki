@@ -8,6 +8,9 @@ Notable works of Suckless are the following.
 - [ii](https://tools.suckless.org/ii/) is an IRC client
 - [slock](https://tools.suckless.org/slock/) is a screen locker
 - [st](https://st.suckless.org/) is a [terminal](/wiki/linux/system_console.md)
+- [dwl](https://codeberg.org/dwl/dwl) is a window manager similar to dwm that can be used on
+  [Wayland](/wiki/linux/wayland.md) systems.
+  For the IPC-patch [dwlmsg](https://codeberg.org/notchoc/dwlmsg) can also be used.
 
 Additionally to this Suckless maintains a list of free and open-source software that is endorsed by
 Suckless.
