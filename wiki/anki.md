@@ -57,7 +57,19 @@ To change this the `New card gather order` can also be set to `Random notes` or 
 ### Change Card Style
 
 The layout and the style of the cards can be changed using CSS and HTML.
-There are various ressources that can be used for this.
+There are various resources that can be used for this.
 One of them is [anki-prettify](https://github.com/pranavdeshai/anki-prettify).
 The exact CSS an HTML has to be changed on a per-note base under `Tools`, `Manage Note Types`, and
 `Cards` after selecting the corresponding note.
+
+### Resources
+
+The following are useful resources and (shared) decks for learning various languages with Anki.
+
+#### French Resources 
+
+The following is a list of French resources.
+
+- [French A0/A1 Anki Deck + Images/Audio/Explanations](https://ankiweb.net/shared/info/1070709392)
+  is a shared deck for various French grammar and idioms.
+  It is especially useful since it contains a practical note type for grammar questions.
