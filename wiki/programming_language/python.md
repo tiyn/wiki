@@ -218,3 +218,18 @@ Additionally it is noted that the dataset may have to be shuffled manually as de
 Finally
 [a Medium blog post](https://medium.com/@danielonugha0/how-to-change-the-learning-rate-of-tensorflow-b5d854819050)
 describes how to easily change the learning rate.
+
+#### Combining Models
+
+Models that are normally run in sequence but trained and saved separately can be easily be combined
+into a single model.
+This can have some advantages, for example when using inteference for deep learning on Edge TPUs
+like the [Hailo chips](/wiki/hailo.md) or the [EPS32S3](/wiki/microcontroller.md#esp32).
+
+A simple example for the combination of two models (`model1` and `model2`) into a new model
+(`combined_model`) is the following code.
+
+```sh 
+output = model2(model1.output)
+combined_model = tf.keras.models.Model(inputs=model1.input, outputs=output)
+```
