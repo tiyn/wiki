@@ -62,7 +62,7 @@ should be changed accordingly - for example as shown in the following example.
 `<uid>` is the UID of the Docker user - which can be found using `id -u` (for example `10642`) -
 and `<gid>` the GID of the Docker user - which can be found using `id -g` (for example `10600`).
 
-```sh 
+```sh
 chown -R <uid>:<gid> <volume-path>
 ```
 

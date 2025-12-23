@@ -147,7 +147,7 @@ directory.
 
 ## Modules
 
-There are various modules and package managers to install these for python like
+There are various modules and package managers to install these for Python like
 `pip`.
 For this usually a virtual environment is needed - as it is described in
 [the setup section](#setup).
@@ -158,6 +158,8 @@ Due to different package versions (especially on rolling release distributions) 
 If it doesnt work the packages can be installed globally using `pip` together with the
 `--break-system-packages` flag.
 This flag is to be used with care.
+
+This section addresses various different modules.
 
 ### PyTorch
 
