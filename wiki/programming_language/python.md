@@ -193,6 +193,8 @@ This should give back `True`.
 
 The package for [Hailo chips](/wiki/hailo.md) has to be downloaded from the
 [official website](https://hailo.ai/developer-zone/software-downloads).
+Additionally additional setup may be required as explained in the
+[Hailo article](/wiki/hailo.md#setup)
 
 Hailo chips can be used to run converted [TensorFlow](#tensorflow) models.
 The conversion process is explained in the

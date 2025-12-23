@@ -4,6 +4,14 @@
 An example for a system that uses it is
 [Raspberry Pi's AI Hat +](/wiki/linux/raspberry_pi.md#ai-hat).
 
+## Setup
+
+Depending on the system and the type of access various things may have to be setup.
+For Ubuntu systems like the [Raspberry Pi](/wiki/linux/raspberry_pi.md) these are often named
+`hailort-pcie-driver` and `hailort`.
+When using the [Python prorgamming language](/wiki/programming_language/python.md) refer to the
+[Hailo section](/wiki/programming_language/python.md#hailo).
+
 ## Usage
 
 This section addresses various usages of the Hailo software.
