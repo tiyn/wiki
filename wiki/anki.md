@@ -53,3 +53,11 @@ for example.
 To change this navigate to the `Options` of a deck and then change `New card sort order` to
 `Random` to randomize them before showing them without gathering them randomly.
 To change this the `New card gather order` can also be set to `Random notes` or `Random cards`.
+
+### Change Card Style
+
+The layout and the style of the cards can be changed using CSS and HTML.
+There are various ressources that can be used for this.
+One of them is [anki-prettify](https://github.com/pranavdeshai/anki-prettify).
+The exact CSS an HTML has to be changed on a per-note base under `Tools`, `Manage Note Types`, and
+`Cards` after selecting the corresponding note.
