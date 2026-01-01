@@ -32,3 +32,19 @@ In `nvidia-settings` under
 `X Server Display Configuration` select your display and click on `Advanced`
 and select either `Force Composition Timeline` or
 `Force Full Composition Timeline`.
+
+### Pascal-GPUs and New Drivers
+
+On some operating systems like [Arch Linux](/wiki/linux/arch-linux.md) the newer versions of
+drivers are not compatible with Pascal GPUs anymore as explained in
+[the german Arch forum](https://www.archlinux.de/news/35689-Nvidia-Treiber-ab-Version-590-stellen-den-Support-fuer-Pascal-GPUs-ein).
+This is due to the drop of support for these cards from Nvidias site.
+If Pascal-GPUs are still used some minor changes need to be performed and some packets need to be
+replaced.
+On Arch Linux-based systems this can be achieved by replacing the packages `nvidia-open` and
+`nvidia-open-utils` with `nvidia-580xx-dkms`, `nvidia-580xx-utils` and  `lib32-nvidia-580xx-utils`.
+If upgrading from a Pascal-GPU to a newer version this change needs to be undone.
+
+After the packages are changed it is important to
+[rebuild the initial ramdisk](/wiki/linux/mkinitcpio.md#manually-generate-initial-ramdisk) and
+reboot the system.
