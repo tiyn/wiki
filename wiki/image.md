@@ -15,7 +15,7 @@ This entry also features medicinal image and visual formats such as DICOM.
 
 Editing images can be done by various image manipulation software.
 
-- [GIMP](https://www.gimp.org/) is a popular cross-platform program for editing pictures.
+- [GIMP](/wiki/gimp.md) is a popular cross-platform program for editing pictures.
 - [ImageMagick](/wiki/imagemagick.md) is another cross-platform software suite for creating and
 - editing (raster) images.
 - [upscayl](https://github.com/upscayl/upscayl) is an upscaler that can be used cross-platform.
