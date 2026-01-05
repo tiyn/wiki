@@ -12,7 +12,7 @@ There are some alernative frontends and modifications available for Discord.
 - [BetterDiscord](/wiki/betterdiscord.md) is a modification for Discord on
   [Linux-based systems](/wiki/linux.md), which changes an existing installation of Discord.
   It supports a wide range of plugins and themes.
-- [Vesktop](https://github.com/Vencord/Vesktop) is a standalone custom Discord App.
+- [Vencord](/wiki/vencord.md) is a standalone custom Discord App.
   It supports a wide range of plugins and themes.
 - [Revenge](https://github.com/revenge/revenge-manager) is a standalone client modification of
   Discord for [Android](/wiki/android.md).
