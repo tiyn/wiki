@@ -40,3 +40,20 @@ The following list contains some examples of it.
 
 - [ZUGFeRD](https://ctan.org/pkg/zugferd) is a package for creating invoices.
 - [Awesome-CV](https://github.com/posquit0/Awesome-CV) is a package for creating job applications.
+
+#### Usage
+
+This section addresses the usage of LaTeX.
+
+##### Set Background Color
+
+The background color can be set using the `xcolor` package and the `\pagecolor` command.
+The following lines show a working example where the background color is set to the hexadecimal
+color `<hexcol>`.
+This needs to be changed (for example to `E0D6C0` for a parchment like color).
+
+```tex
+\usepackage{xcolor}
+\definecolor{background}{HTML}{<hexcol>}
+\pagecolor{background}
+```
