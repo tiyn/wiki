@@ -2,7 +2,8 @@
 
 [LTeX](https://valentjn.github.io/ltex/index.html) is an offline grammar checking tool that can use
 the Language Server Protocol - short LSP.
-It is supports various [Markup languages](/wiki/markup_language.md) like LaTeX and Markdown.
+It is supports various [Markup languages](/wiki/markup_language.md) like
+[LaTeX](/wiki/markup_language.md#latex) and Markdown.
 
 ## Setup
 
@@ -48,8 +49,8 @@ onwards.
 ```
 
 However this can be difficult when only using a few words.
-Another easy and generally recommended way to change the language inside LaTeX documents is using
-the babel package.
+Another easy and generally recommended way to change the language inside
+[LaTeX](/wiki/markup_language.md#latex) documents is using the babel package.
 In the following examples `<language>` is the language indicator that babel uses (for example
 `english`, `american`, `ngerman`).
 

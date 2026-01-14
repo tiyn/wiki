@@ -14,27 +14,26 @@ The size of a swap file can easily be increased using the following steps.
 Using the following commands currently active swaps can be shown and the usage of them can be
 checked.
 
-```sh 
+```sh
 swapon --show
-free -h 
+free -h
 ```
 
 Then the swap file can be changed using the following commands.
 `<location>` is the location of the swap file (for example `/swap.img`).
 `<size>` describes the new size of the swap file (for example `16G`)
 
-
-```sh 
+```sh
 swapoff <location>
-fallocate -l <size> <location> 
-chmod 600 <location> 
-mkswap <location> 
-swapon <location> 
+fallocate -l <size> <location>
+chmod 600 <location>
+mkswap <location>
+swapon <location>
 ```
 
 Finally the swap can be checked again to confirm that it is online and has the correct size
 
-```sh 
+```sh
 swapon --show
 ```
 
@@ -45,14 +44,14 @@ The following command will create a file on the target drive and show the data t
 writing.
 In the following case `/mnt/usb1/tmp` is the path of the target file.
 
-```sh 
+```sh
 cat /dev/zero | pv > /mnt/usb1/tmp
 ```
 
 After this the read speed can be checked by using the just created temporary file.
 The following command will display the read speed.
 
-```sh 
+```sh
 cat /mnt/usb1/tmp | pv > /dev/zero
 ```
 
@@ -126,10 +125,10 @@ In the following it is assumed that the partition to enlarge is `/dev/sda2`
 
 - change the size of the partition with `parted /dev/sda`
 - inside of parted run `print free` and check where the free space after your
-partition ends
+  partition ends
 - run `resizepart` and follow the instructions; End is the number you checked in
-the last step (alternatively you can insert `100%` as end, if you want to add all
-the available free space to the partition)
+  the last step (alternatively you can insert `100%` as end, if you want to add all
+  the available free space to the partition)
 - `quit` parted
 
 Afterwards the file system need to be resized as described in a
@@ -176,12 +175,25 @@ The following list shows some options to quickly clean up space.
 - [Package Mangers](/wiki/linux/package_manager.md)
 - [ViFM Trash Bin](/wiki/linux/vifm.md#empty-trash)
 
+## Accessing Disks as User
+
+Sometimes - for example when flashing an SD card for a
+[Raspberry Pi](/wiki/linux/raspberry_pi.md#setup) - it may be useful to do so with your default
+user and not using the root user.
+For this to work the user can be added to the `disk` group permanently.
+Please note that this however reduces the systems security.
+A command to do so, may look like the following (given the `$USER` variable is set correctly).
+
+```sh 
+usermod -a -G disk $USER
+```
+
 ## Error solving
 
 This section addresses various problems that can occur and are related to
 disk-management.
 
-### sudo: unable to open ... Read-only file system
+### `sudo: unable to open ... Read-only file system`
 
 Ususally the filesystem will go into read-only mode whe the system is running
 and there is a consistency error.
@@ -193,7 +205,7 @@ To fix it run:
   you may want to try using the ext4-specific fsck:
 - `fsck.ext4 -f /dev/sda1`
 
-###  cannot access: Transport endpoint is not connected
+### `cannot access: Transport endpoint is not connected`
 
 This error message can occur if a mounted directory is left mounted due to a
 crash of the filesystem but not accessible anymore.

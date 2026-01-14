@@ -335,3 +335,16 @@ To update the package either way the following command can be used.
 ```sh
 sudo pacman -S --overwrite "*" <package name>
 ```
+
+### Error `error: could not open file /var/lib/pacman/sync/core.db: Unrecognized archive format`
+
+If the error `error: could not open file /var/lib/pacman/sync/core.db: Unrecognized archive format`
+or a similar one with another database file is thrown it can mostly be easily fixed by removing the
+database file with the following command.
+
+```txt 
+rm -rf /var/lib/pacman/sync/*
+```
+
+Alternatively - and this is probably a bit safer - the files can be temporarily be moved somewhere
+else and removed after confirming the error was fixed.

@@ -258,14 +258,14 @@ The following are recommended client-side graphical mods.
   redstone level of a music disc in game.
 - "Rename 'Stem' to 'Log'" from Vanilla Tweaks is a resource pack that changes the Nether woods to
   use 'Stem' instead of 'Log'.
-- "Icons" is a ressource pack that adds icons into the menu and game.
-  Additionally "Icons Advertisement Removal" removes the logo of the "Icons" ressource pack.
-- "Hoffen's Minimal Armor" is a ressource pack that minimizes the look of armor.
-- "Vertical Nuggets" is a ressource pack that flips all nuggets to be vertical.
-- "Colorful Canines" is a ressource pack that makes dog armor more colorful.
-- "Colorful Sheared Sheep" is a ressource pack that makes the color of sheep wool visible even
+- "Icons" is a resource pack that adds icons into the menu and game.
+  Additionally "Icons Advertisement Removal" removes the logo of the "Icons" resource pack.
+- "Hoffen's Minimal Armor" is a resource pack that minimizes the look of armor.
+- "Vertical Nuggets" is a resource pack that flips all nuggets to be vertical.
+- "Colorful Canines" is a resource pack that makes dog armor more colorful.
+- "Colorful Sheared Sheep" is a resource pack that makes the color of sheep wool visible even
   after the shearing.
-- "Real Arrrow Tip" is a ressource pack that makes the look of arrows correct ingame.
+- "Real Arrrow Tip" is a resource pack that makes the look of arrows correct ingame.
 
 The following are recommended client-side audio mods.
 
@@ -313,8 +313,8 @@ The following are recommended client-side HUD and other UI modifications
 - "Scribble" is a mod that makes editing books easier by adding buttons for color, bold font and
   more.
 - "Chat Patches" is a mod that extends the chat history and adds some more tweaks.
-- "Armor Chroma for Fabric" is a ressource pack that shows the type of armor in the bar.
-- "Colorful Ping" is a ressource pack that shows the ping symbol in color.
+- "Armor Chroma for Fabric" is a resource pack that shows the type of armor in the bar.
+- "Colorful Ping" is a resource pack that shows the ping symbol in color.
 
 The following are possible client-side mods that change the gameplay or give other information in
 the game.

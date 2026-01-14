@@ -23,14 +23,14 @@ One of them is `slock` by [suckless](/wiki/linux/suckless.md).
 This will stand in as a screen locker for this section.
 The screen can be run by simply running the following command.
 
-```sh 
+```sh
 slock
 ```
 
 By default this will not be run automatically when the computer goes into sleep.
 This can be changed by installing and using `xss-lock` like the following example shows.
 
-```sh 
+```sh
 xss-lock -- slock &
 ```
 
@@ -74,7 +74,7 @@ can be used that uses `synclient TouchpadOff=1` or `synclient TouchpadOff=0`.
 This requires `xf86-input-synaptics` which is a synaptics driver for
 notebook touchpads.
 
-##### Enable Tap to Click 
+##### Enable Tap to Click
 
 On Touchpads the tap to click option can be enabled by adding the following lines to the config
 file `/etc/X11/xorg.conf.d/99-synaptics-overrides.conf`.
@@ -108,6 +108,25 @@ setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <la
 Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
 layouts.
 
+##### Write Diacritics and Ligatures
+
+In many languages there are ligatures (for example `œ`) and diacritics (for example `ç`).
+An easy way to write them is by using the compose button.
+Using the compose button these special symbols can be composed from their parts.
+The `ç` can be written by chaining compose with `,` and `c`.
+The `œ` can be written by chaining compose with `o` and `e`.
+There are many other diacritics and ligatures that can be written this way.
+
+To temporarily set up a compose key the following command can be used.
+It will set the given key `<compose>` (for example the right control key with `rctrl`) to act as
+the compose key when tapped.
+`<layout>` specifies the layout of the keymap (for example german with `de`).
+If it is omitted the english `en` layout will be set.
+
+```sh
+setxkbmap -layout <layout> -option compose:<compose>
+```
+
 #### Display
 
 This section describes the handling of displays by X.
@@ -135,7 +154,7 @@ EndSection
 This can be disabled temporarily by running `xset s off`.
 The screen can also be turned off instantly with the command `xset dpms force off`.
 
-If `OffTime` does not work add the following to the file `/etc/X11/xorg.conf.d/dpms.conf.
+If `OffTime` does not work add the following to the file `/etc/X11/xorg.conf.d/dpms.conf`.
 
 ```txt
 Section "ServerFlags"
@@ -147,8 +166,8 @@ Another option to do this is by using the command `xset`.
 An example for this are the follwing commands which will enable the screensaver to act upon 10
 minutes of inactivity.
 
-```sh 
-xset s on 
+```sh
+xset s on
 xset s 600
 ```
 
@@ -236,7 +255,7 @@ an [Arch Linux](/wiki/linux/arch-linux.md)
 [forum post](https://bbs.archlinux.org/viewtopic.php?id=294808).
 To fix this you can run the following commands to temporarily make the file picker work.
 
-```sh 
+```sh
 systemctl --user import-environment DISPLAY XAUTHORITY
 systemctl --user restart xdg-desktop-portal
 ```

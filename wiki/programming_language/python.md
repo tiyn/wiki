@@ -154,7 +154,7 @@ directory.
 
 ## Modules
 
-There are various modules and package managers to install these for python like
+There are various modules and package managers to install these for Python like
 `pip`.
 For this usually a virtual environment is needed - as it is described in
 [the setup section](#setup).
@@ -165,6 +165,8 @@ Due to different package versions (especially on rolling release distributions) 
 If it doesnt work the packages can be installed globally using `pip` together with the
 `--break-system-packages` flag.
 This flag is to be used with care.
+
+This section addresses various different modules.
 
 ### PyTorch
 
@@ -196,6 +198,22 @@ torch.cuda.is_available()
 
 This should give back `True`.
 
+### Hailo
+
+The package for [Hailo chips](/wiki/hailo.md) has to be downloaded from the
+[official website](https://hailo.ai/developer-zone/software-downloads).
+Additionally additional setup may be required as explained in the
+[Hailo article](/wiki/hailo.md#setup)
+
+Hailo chips can be used to run converted [TensorFlow](#tensorflow) models.
+The conversion process is explained in the
+[Hailo article](/wiki/hailo.md#preparing-tensorflow-models-for-the-ai-hat)
+
+To run the inference using Python on ARM boards like the
+[Raspberry Pi AI Hat +](/wiki/linux/raspberry_pi.md#ai-hat)
+[zlodeibaal's article in Medium](https://medium.com/@zlodeibaal/how-to-run-hailo-on-arm-boards-d2ad599311fa)
+can be referenced.
+
 ### TensorFlow
 
 This section addresses the [TensorFlow module](https://www.tensorflow.org/).
@@ -211,3 +229,18 @@ Additionally it is noted that the dataset may have to be shuffled manually as de
 Finally
 [a Medium blog post](https://medium.com/@danielonugha0/how-to-change-the-learning-rate-of-tensorflow-b5d854819050)
 describes how to easily change the learning rate.
+
+#### Combining Models
+
+Models that are normally run in sequence but trained and saved separately can be easily be combined
+into a single model.
+This can have some advantages, for example when using inteference for deep learning on Edge TPUs
+like the [Hailo chips](/wiki/hailo.md) or the [EPS32S3](/wiki/microcontroller.md#esp32).
+
+A simple example for the combination of two models (`model1` and `model2`) into a new model
+(`combined_model`) is the following code.
+
+```sh 
+output = model2(model1.output)
+combined_model = tf.keras.models.Model(inputs=model1.input, outputs=output)
+```
