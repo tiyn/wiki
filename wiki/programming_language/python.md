@@ -42,6 +42,13 @@ sudo apt update
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
 ```
 
+For Tk programs (like matplotlib) to work correctly the following dependencies need to be installed
+aswell.
+
+```sh 
+sudo apt install tk-dev tcl-dev
+```
+
 Afterwards the python source code can be downloaded.
 
 ```sh
