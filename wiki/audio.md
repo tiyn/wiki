@@ -78,6 +78,13 @@ If you want to keep your system clean of much data, you can use this kind of
 setup.
 There are differences depending on your preffered software interface.
 
+### Import Playlist to Spotify
+
+Importing a playlist to Spotify can be challenging.
+An easy way to do it is using [Spotlistr](https://www.spotlistr.com/search/textbox) using the
+Textbox function.
+A List of Songs can be input and after connecting to Spotify, it will be imported automatically.
+
 ### Digital Audio Workstations and Recording Software
 
 Digital Audio Workstations - short DAWs - is an application that can be used to record, edit or
