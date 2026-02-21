@@ -194,3 +194,16 @@ Find them with `find /etc -change '*eth0*'` and move them to the new name.
 After that `reboot` and the internet should be up again.
 (sources: [debian website](https://wiki.debian.org/NetworkInterfaceNames) and
 [proxmox forum](https://forum.proxmox.com/threads/upgrade-motherboard-reinstall.48630))
+
+### Balooning RAM and Resulting Problems
+
+When using a balooning device for RAM error messages - for example by [Docker](/wiki/docker.md) can
+be hidden.
+It is then more difficult to find the out-of-memory error that makes a program crash.
+Problems with balooning RAM can be found using the following command.
+
+```sh 
+journalctl -k
+```
+
+A typical error message for this type of issue is `Out of puff!`.
