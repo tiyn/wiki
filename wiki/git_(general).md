@@ -25,9 +25,23 @@ A distinction can be made between
 Web interfaces for git are quite useful for easily showing code to other people.
 Additionally it is easy to collaborate together.
 
-- [Gitea](gitea.md) is an open-source and selfhosted and can be dockerized.
-- [GitHub](https://github.com) is the go to system for many people. Not
-  selfhosted, owned by microsoft ([cli-tool](https://github.com/github/hub)).
+- [Gitea](gitea.md) is an open-source and selfhosted git instance which can be dockerized.
+- [GitHub](https://github.com) is a popular git server. 
+  It is not selfhosted and owned by microsoft ([cli-tool](https://github.com/github/hub)).
+- [GitLab](https://gitlab.com) is a self-hostable git instance which also has a default version
+  available via their website.
+
+#### Git Apps
+
+Depending on the [specific server](#server-with-web-interface) used there are many different apps
+that can be used.
+
+- For [GitHub](https://github.com) there is app with the same name for
+  [Android](/wiki/android.md) devices and iOS devices.
+- For [Gitea](/wiki/gitea.md) and Forgejo there is an app called [GitNex](https://gitnex.com) which
+  is available for [Android](/wiki/android.md) devices.
+- For [GitLab](https://gitlab.com) there is an app called [LabNex](https://labnex.app) which is
+  available for [Android](/wiki/android.md) devices.
 
 #### Server without graphical interface
 

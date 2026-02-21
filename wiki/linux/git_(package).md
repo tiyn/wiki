@@ -93,7 +93,7 @@ A more or less complete overview of the options was performed in an
 Most [package managers](/wiki/linux/package_manager.md) package it in the package `git-delta`.
 
 Afterwards it needs to be enabled.
-To do this globally add the following lines to the configuration file of git, which can be found in 
+To do this globally add the following lines to the configuration file of git, which can be found in
 `~/.gitconfig`.
 Depending on the system settings and preferences the dark-mode (`dark`) and the side-by-side view
 (`side-by-side`) can and should be disabled.
@@ -141,3 +141,20 @@ git config --global color.diff.old        "red bold"
 git config --global color.diff.new        "green bold"
 git config --global color.diff.whitespace "red reverse"
 ```
+
+### Save HTTPS Credentials
+
+The credentials used for HTTPS authorization can be saved with the following command.
+
+```sh
+git config --global credential.helper store
+```
+
+They can also be cached with the following command.
+
+```sh
+git config --global credential.helper cache
+```
+
+Both of these commands work globally.
+For local storing or caching of credentials the commands have to be adapted.
