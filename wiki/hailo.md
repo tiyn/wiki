@@ -55,6 +55,16 @@ hailo optimize --use-random-calib-set <path-to-har-model>
 hailo compiler <path-to-optimized-har-model>
 ```
 
+If a calibration data set is available the following command can be used to optimize the model using
+this data set.
+`<data-set>` is the path of the data set.
+This is a directory containing `.npy` files that store single data points (for example images) in
+the input format.
+
+```sh
+hailo optimize --calib-set-path <data-set> <path-to-har-model>
+```
+
 Note that the user in the Docker container usually uses anothr UID and GID.
 To make the volume and files accessible inside the container the IDs of the files in the volume
 should be changed accordingly - for example as shown in the following example.
