@@ -100,7 +100,8 @@ This app is available at [F-Droid](/wiki/android/f-droid.md) as
 
 Besides the stock-firmware of vendors there are also custom ROMs.
 These are alternative firmware variants made by third party providers.
-A well known custom ROM is [LineageOS](/wiki/android/lineageos.md).
+Well known custom ROMs [LineageOS](/wiki/android/lineageos.md) and
+[GrapheneOS](/wiki/android/grapheneos.md).
 
 It is possible that some custom ROMs require the user to
 [unlock the bootloader](#unlocking-the-bootloader) before the installation can happen.
