@@ -12,3 +12,6 @@ The following is a list of STT programs.
 
 - [Nerd Dictation](https://github.com/ideasman42/nerd-dictation/) is an offline speech recognition
     software for [Linux](/wiki/linux.md)-based operating systems.
+
+Some alternatives mostly for Linux systems were listed in a
+[Reddit post by tuananh_org](https://www.reddit.com/r/archlinux/comments/1j77921/speech_to_text_app/).
