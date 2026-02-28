@@ -15,6 +15,11 @@ For voice based communication, social platforms or messengers navigate to the
 [section](/wiki/communication.md#social-platforms-messengers-and-voip-services).
 For headphones navigate to the [headphones article](/wiki/headphones.md):
 
+## Speech Recognition and Synthesis
+
+[Speech recognition and synthesis](/wiki/speech_recognition_and_synthesis.md) describe processes to 
+understand and convert spoken language to text aswell as the reverse process.
+
 ## Technical Specifications
 
 This section aswell as its subsections address all technical things about audio, like connections,
