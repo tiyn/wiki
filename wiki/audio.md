@@ -128,6 +128,10 @@ Another option is to use [OpenAudible](/wiki/openaudible.md).
 This program features various functions to manage Audible audiobooks that include download,
 converting and splitting.
 
+[SpotiFLAC](https://github.com/afkarxyz/SpotiFLAC) is a software that is able to download Spotify
+tracks, albums, artists and playlists as `.flac`-files from Tidal, Qobuz, Amazon Music and Deezer.
+An account on any of these services - or any account at all - is not required.
+
 ## Digitalizing and Analyzing Physical Mediums
 
 This section focusses on physical audio mediums like CDs, their digitalization to a digital audio
