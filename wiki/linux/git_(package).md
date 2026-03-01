@@ -40,6 +40,33 @@ This command will look like the following.
 git commit --amend --no-edit
 ```
 
+A graphic that visualizes the way amending works was made by
+[jubb0bs in a Stackoverflow comment](https://stackoverflow.com/questions/26050327/how-does-git-commit-amend-work-exactly).
+
+After amending a normal `git push` will not work as a commit was removed.
+In this case to [push it has to be done forcefully](#force-pushing).
+
+### Force Pushing
+
+Force pushing in Git allows you to overwrite the history of a remote branch.
+Using the following command replaces the remote branch with your local state, even if other commits 
+have been pushed in the meantime, which can in turn permanently remove these commits.
+
+```sh
+git push --force
+```
+
+Using the force command with the `--force-with-lease` flag, as shown in the following command, 
+performs a safety check before overwriting.
+It only proceeds if the remote branch is still in the expected state and rejects the push 
+otherwise. 
+Most of the time, especially when using shared branches, this is generally considered the safer and
+preferred option.
+
+```sh
+git push --force-with-lease
+```
+
 ### Visualize Commit Graph 
 
 The commit history of a Git repository can best be visualized using a graph.
