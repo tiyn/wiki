@@ -28,6 +28,31 @@ There is also an interactive
 Robertson also made guides on [post production](https://github.com/SethRobertson/GitPostProduction)
 and [best practices](http://sethrobertson.github.io/GitBestPractices).
 
+### Modify a Commit Already Done 
+
+In Git it is possible to alter a commit.
+This can be done by using the `--amend` flag in the `commit` option.
+Together with the `--no-edit` flag it will create a new commit that will replace the old one with
+the same message and the newly changed files.
+This command will look like the following.
+
+```sh 
+git commit --amend --no-edit
+```
+
+### Visualize Commit Graph 
+
+The commit history of a Git repository can best be visualized using a graph.
+This can be done by using the default `git` command as the following command shows.
+
+```sh 
+git log --graph
+```
+
+This however is a bit hard to read.
+Therefore other tools have been created, that display the graph a bit more intuitively.
+One of this tools is called [keifu](https://github.com/trasta298/keifu).
+
 ### Ignore files having local changes
 
 If you need to make changes to a file that are local you can run
