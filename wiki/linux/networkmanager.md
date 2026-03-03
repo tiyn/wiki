@@ -19,7 +19,7 @@ After installation `networkmanager.service` has to be enabled by the used
 [init-system](/wiki/linux/init.md) (for example
 [systemD](/wiki/linux/systemd.md#startstopenabledisable-a-service)).
 
-### OpenVPN
+### OpenVPN Integration
 
 NetworkManager needs a plugin to work with openvpn configurations.
 This plugin can be installed with the `networkmanager-openvpn` package.
@@ -27,6 +27,14 @@ This plugin can be installed with the `networkmanager-openvpn` package.
 OpenVPNs `.ovpn` files can then be imported by running
 `nmcli connection import type openvpn file <openvpn-file>`.
 Afterwards they can be modified accordingly.
+
+### Prioritize Connections
+
+Connections can be prioritized making NetworkManager chose specific ones over others.
+This can be done using `nm-connection-editor`.
+Select the connection and navigate to `General`.
+Then set the priority under `Connect automaticcally with priority` where `0` is the highest
+priority, `1` being the next highest and so on.
 
 ## Troubleshooting
 

@@ -96,12 +96,15 @@ This app is available at [F-Droid](/wiki/android/f-droid.md) as
 [Google Play Store](#app-store) by the
 [same name](https://f-droid.org/de/packages/org.liberty.android.freeotpplus/).
 
-### Custom ROMs
+### Android-based Operating Systems
 
-Besides the stock-firmware of vendors there are also custom ROMs.
+Besides the stock-firmware of vendors there are also so called custom ROMs.
 These are alternative firmware variants made by third party providers.
 Well known custom ROMs [LineageOS](/wiki/android/lineageos.md) and
 [GrapheneOS](/wiki/android/grapheneos.md).
+
+A general comparison of different operating systems based on Android can be found in a
+[table by eylenburg](https://eylenburg.github.io/android_comparison.htm).
 
 It is possible that some custom ROMs require the user to
 [unlock the bootloader](#unlocking-the-bootloader) before the installation can happen.

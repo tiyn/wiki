@@ -15,6 +15,11 @@ For voice based communication, social platforms or messengers navigate to the
 [section](/wiki/communication.md#social-platforms-messengers-and-voip-services).
 For headphones navigate to the [headphones article](/wiki/headphones.md):
 
+## Speech Recognition and Synthesis
+
+[Speech recognition and synthesis](/wiki/speech_recognition_and_synthesis.md) describe processes to 
+understand and convert spoken language to text aswell as the reverse process.
+
 ## Technical Specifications
 
 This section aswell as its subsections address all technical things about audio, like connections,
@@ -127,6 +132,10 @@ After purchasing an audiobook it can be downloaded directly from Audible after n
 Another option is to use [OpenAudible](/wiki/openaudible.md).
 This program features various functions to manage Audible audiobooks that include download,
 converting and splitting.
+
+[SpotiFLAC](https://github.com/afkarxyz/SpotiFLAC) is a software that is able to download Spotify
+tracks, albums, artists and playlists as `.flac`-files from Tidal, Qobuz, Amazon Music and Deezer.
+An account on any of these services - or any account at all - is not required.
 
 ## Digitalizing and Analyzing Physical Mediums
 

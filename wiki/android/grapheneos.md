@@ -21,3 +21,12 @@ This section addresses the usage of GrapheneOS.
 GrapheneOS features various settings and possibilities for configurations.
 A general overview of this was give in a
 [Reddit post by Tryptamine9](https://www.reddit.com/r/GrapheneOS/comments/18te8no/my_ride_through_grapheneos_what_works_and_guide/).
+Another recommendation on settings for GrapheneOS can be found in 
+[a post by ventral digital](https://ventral.digital/posts/2024/12/9/practical-grapheneos-for-the-paranoid/).
+
+### Backup
+
+GrapheneOS features a built-in backup utility.
+It can be found in the settings under `System` and `Backup`.
+When enabled a recovery code made up by mutliple words have to be stored to be able to restore the
+backed up data.

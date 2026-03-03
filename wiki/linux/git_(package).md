@@ -28,6 +28,58 @@ There is also an interactive
 Robertson also made guides on [post production](https://github.com/SethRobertson/GitPostProduction)
 and [best practices](http://sethrobertson.github.io/GitBestPractices).
 
+### Modify a Commit Already Done 
+
+In Git it is possible to alter a commit.
+This can be done by using the `--amend` flag in the `commit` option.
+Together with the `--no-edit` flag it will create a new commit that will replace the old one with
+the same message and the newly changed files.
+This command will look like the following.
+
+```sh 
+git commit --amend --no-edit
+```
+
+A graphic that visualizes the way amending works was made by
+[jubb0bs in a Stackoverflow comment](https://stackoverflow.com/questions/26050327/how-does-git-commit-amend-work-exactly).
+
+After amending a normal `git push` will not work as a commit was removed.
+In this case to [push it has to be done forcefully](#force-pushing).
+
+### Force Pushing
+
+Force pushing in Git allows you to overwrite the history of a remote branch.
+Using the following command replaces the remote branch with your local state, even if other commits 
+have been pushed in the meantime, which can in turn permanently remove these commits.
+
+```sh
+git push --force
+```
+
+Using the force command with the `--force-with-lease` flag, as shown in the following command, 
+performs a safety check before overwriting.
+It only proceeds if the remote branch is still in the expected state and rejects the push 
+otherwise. 
+Most of the time, especially when using shared branches, this is generally considered the safer and
+preferred option.
+
+```sh
+git push --force-with-lease
+```
+
+### Visualize Commit Graph 
+
+The commit history of a Git repository can best be visualized using a graph.
+This can be done by using the default `git` command as the following command shows.
+
+```sh 
+git log --graph
+```
+
+This however is a bit hard to read.
+Therefore other tools have been created, that display the graph a bit more intuitively.
+One of this tools is called [keifu](https://github.com/trasta298/keifu).
+
 ### Ignore files having local changes
 
 If you need to make changes to a file that are local you can run
