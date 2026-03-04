@@ -174,21 +174,20 @@ This section addresses the [PyTorch module](https://pytorch.org/).
 Pytorch is a machine learning resource which is often used for
 [neural networks](/wiki/neural_network.md).
 
-#### Setup Pytorch with Cuda for GPU usage
+#### Setup Pytorch with CUDA for GPU usage
 
-Please note that according to
-[various sources](https://www.reddit.com/r/archlinux/comments/1nxipcu/nvidia_pascal/gpu_not_supporting_cuda_13_can_i)
-Cuda 13 does not support nVidia Pascal GPUs.
-In this case an earlier version of Cuda has to be used.
+CUDA is also only available for Nvidia GPUs.
+For AMD GPUs refer to [the ROCm section](#setup-pytorch-with-rocm-for-gpu-usage).
 
 If you are on Arch Linux or a distribution based on it install
 `python-pytorch-cuda` via `pacman -S python-pytorch-cuda`.
 
 After that visit
-[the official pytorch website](https://pytorch.org/get-started/locally/) and
-install pytorch for your custom configuration.
+[the official PyTorch website](https://pytorch.org/get-started/locally) and
+install PyTorch for your custom configuration.
 
-After that try to run the following python script:
+After that try to run the following python script.
+This should give back `True` if the setup was successful and the GPU is available.
 
 ```python
 import torch
@@ -196,7 +195,66 @@ import torch
 torch.cuda.is_available()
 ```
 
-This should give back `True`.
+Please note that according to
+[various sources](https://www.reddit.com/r/archlinux/comments/1nxipcu/nvidia_pascal/gpu_not_supporting_cuda_13_can_i)
+CUDA 13 does not support nVidia Pascal GPUs.
+In this case an earlier version of CUDA has to be used.
+
+#### Setup PyTorch with ROCm for GPU usage
+
+ROCm is also only available for AMD GPUs.
+For Nvidia GPUs refer to [the CUDA section](#setup-pytorch-with-cuda-for-gpu-usage).
+
+For ROCm to work some system packages have to be installed.
+For Linux refer to the
+[official Linux guide](https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/docs/install/installrad/native_linux/install-radeon.html).
+For [Arch Linux](/wiki/linux/arch-linux.md) although it is not listed the required
+[AUR packages](/wiki/linux/package_manager.md) include `rocm-core`, `rocminfo`, `roctracer` and
+`rccl`.
+For Windows refer to the
+[official Windows guide](https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/docs/install/installrad/windows/howto_windows.html).
+
+After the systemwide setup the project environment can be setup.
+It is recommended to use [virtual environments](#using-virtual-environments).
+The easiest way to achieve ROCm support is by using [pip](#modules).
+As explained in the 
+[official PyTorch guide](https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/docs/install/installrad/native_linux/install-pytorch.html)
+the following example can be used inside the environment to install all needed ROCm packages.
+In this example the version `7.2` is installed.
+Adjustments to the command may have to be done in case another version should be installed.
+
+```sh 
+wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/torch-2.9.1%2Brocm7.2.0.lw.git7e1940d4-cp312-cp312-linux_x86_64.whl
+wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/torchvision-0.24.0%2Brocm7.2.0.gitb919bd0c-cp312-cp312-linux_x86_64.whl
+wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/triton-3.5.1%2Brocm7.2.0.gita272dfa8-cp312-cp312-linux_x86_64.whl
+wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/torchaudio-2.9.0%2Brocm7.2.0.gite3c6ee2b-cp312-cp312-linux_x86_64.whl
+pip install \
+torch-2.9.1+rocm7.2.0.lw.git7e1940d4-cp312-cp312-linux_x86_64.whl \
+torchvision-0.24.0+rocm7.2.0.gitb919bd0c-cp312-cp312-linux_x86_64.whl \
+torchaudio-2.9.0+rocm7.2.0.gite3c6ee2b-cp312-cp312-linux_x86_64.whl \
+triton-3.5.1+rocm7.2.0.gita272dfa8-cp312-cp312-linux_x86_64.whl
+```
+
+If old versions of `torch`, `torchvision`, `torchaudio` or `triton` are installed inside the
+environment they may need to be removed.
+
+After this installation for some GPUs - especially integrated GPUs like the Radeon 660M - an
+additional step has to be taken.
+In this case the following global shell variable has to be set.
+
+```sh 
+export HSA_OVERRIDE_GFX_VERSION=10.3.0
+```
+
+After that try to run the following python script.
+Since ROCm uses a bridge to access CUDA it should give back `True` if the setup was successful and
+the GPU is available.
+
+```python
+import torch
+
+torch.cuda.is_available()
+```
 
 ### Hailo
 
