@@ -14,3 +14,5 @@ The following is a list of programming languages that are featured in this wiki.
 - [Rust](/wiki/programming_language/rust.md)
 - [VHDL](/wiki/programming_language/vhdl.md)
 - [Viper](/wiki/programming_language/viper.md)
+<!-- TODO: add short sentences -->
+<!-- TODO: add SHELL script? -->
