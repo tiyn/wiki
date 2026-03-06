@@ -41,8 +41,9 @@ drivers are not compatible with Pascal GPUs anymore as explained in
 This is due to the drop of support for these cards from Nvidias site.
 If Pascal-GPUs are still used some minor changes need to be performed and some packets need to be
 replaced.
-On Arch Linux-based systems this can be achieved by replacing the packages `nvidia-open` and
-`nvidia-open-utils` with `nvidia-580xx-dkms`, `nvidia-580xx-utils` and  `lib32-nvidia-580xx-utils`.
+On Arch Linux-based systems this can be achieved by replacing the packages `lib32-nvidia-utils`,
+`nvidia-open` and `nvidia-open-utils` with `nvidia-580xx-dkms`, `nvidia-580xx-utils` and
+`lib32-nvidia-580xx-utils`.
 If upgrading from a Pascal-GPU to a newer version this change needs to be undone.
 
 After the packages are changed it is important to
