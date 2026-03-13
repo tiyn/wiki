@@ -40,6 +40,9 @@ variable `DOCKER_ARGS` which is set in the file `hailo_ai_sw_suite_docker_run.sh
 
 Using the tools which come in this container a `.tf` or `.tflite` model can be converted to the
 `.hef` format.
+At the current time only models using `float32` or `float16` are supported.
+`int8` and  `int32` are not supported.
+Mixed precision models are not supported aswell.
 
 For this to work run the following commands inside the Docker container.
 The first command takes the path to the tensorflow model (`<path-to-tf-model>`) and will output a
