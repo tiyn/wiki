@@ -49,7 +49,7 @@ new `feature`
 
 This section addresses various errors that can happen when using suckless programs.
 
-### suckless program crashes or struggles with colored emojis
+### Suckless Program Crashes Or Struggles With Colored Emojis
 
 Suckless programs  especially `st` and `dmenu` can not display colored
 emojis.
@@ -58,3 +58,13 @@ libxft is the client side font rendering library to display anti-aliased text.
 To change this [libxft-bgra](https://github.com/uditkarode/libxft-bgra) needs
 to be installed.
 This is a patched version especially for running with the suckless programs.
+
+### Display Manager Problems with Full Screen Windows
+
+Using `dwm` or its [Wayland](/wiki/linux/wayland.md) counterpart `dwl` there may be some problems
+with full screen programs.
+Some of these programs (especially [Steam](/wiki/game/steam.md) [Games](/wiki/game.md)) might
+apparently freeze.
+However, this may be not the case as they may be only displaying a freeze frame.
+This can sometimes be fixed by navigating out of the window managers full screen, then making it a
+floating window and then setting it to be full screen again.
