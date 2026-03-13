@@ -77,7 +77,7 @@ The data stored this way can be accessed on the
 Games can also be synchronized without the Steam Cloud by using [Syncthing](/wiki/syncthing.md) as
 described in [the games entry](/wiki/game.md#syncing-game-saves-across-systems).
 
-## Error Handling
+## Troubleshooting
 
 The following section addresses errors that can handle inside Steam or game
 errors that are specific to Steam.
