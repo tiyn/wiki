@@ -17,7 +17,7 @@ For headphones navigate to the [headphones article](/wiki/headphones.md):
 
 ## Speech Recognition and Synthesis
 
-[Speech recognition and synthesis](/wiki/speech_recognition_and_synthesis.md) describe processes to 
+[Speech recognition and synthesis](/wiki/speech_recognition_and_synthesis.md) describe processes to
 understand and convert spoken language to text aswell as the reverse process.
 
 ## Technical Specifications
@@ -105,21 +105,21 @@ produce audio files.
 The following is a list of server software, that is featured in this wiki.
 The corresponding client software is handled in the server softwares wiki entry.
 
-- [Subsonic](./subsonic.md) is a media streamer for music, podcasts and
-  audiobooks.
-  Subsonic is self-hostable.
-  Subsonic that can be dockerized and has a web-interface aswell as several
-  clients that can be used.
-  There are also the free and open-source implementations - that feature all the
-  same features and using its API - named [Airsonic](./airsonic.md) (no longer
-  maintained) and its inofficial successor [Airsonic-advanced](./airsonic.md).
+- [Subsonic](./subsonic.md) is a media streamer for music, podcasts and   
+    audiobooks.
+    Subsonic is self-hostable.
+    Subsonic that can be dockerized and has a web-interface aswell as several
+    clients that can be used.
+    There are also the free and open-source implementations - that feature all the
+    same features and using its API - named [Airsonic](./airsonic.md) (no longer
+    maintained) and its inofficial successor [Airsonic-advanced](./airsonic.md).
 
 ### Software for Podcasts
 
 - [Podgrab](./podgrab.md) is a free and open-source podcatcher that can also be
-  used to listen to them.
-  It is self-hostable and can be dockerized.
-  It has a web-interface and does not feature client software.
+    used to listen to them.
+    It is self-hostable and can be dockerized.
+    It has a web-interface and does not feature client software.
 
 #### Obtaining Audio Files from Different Services
 
@@ -169,14 +169,14 @@ You can convert your CDs to files on your computer.
 This way you don't have to search for your CDs all the time.
 
 - [Exact Audio Copy](https://www.exactaudiocopy.de) for windows can rip music
-  and automatically tag it with the help of a list of databases.
+    and automatically tag it with the help of a list of databases.
 - [fre:ac](https://freac.org/downloads-mainmenu-33) is a free cross-platform
-  audio converter and CD ripper with support for various popular formats.
+    audio converter and CD ripper with support for various popular formats.
 - [metaflac](./linux/flac_(package).md) for linux is a programm
-  to edit the tags of [flac](./flac_(codec).md) files from the command line.
-  It is bundled in the `flac` package for debian and arch based systems.
+    to edit the tags of [flac](./flac_(codec).md) files from the command line.
+    It is bundled in the `flac` package for debian and arch based systems.
 - [MusicBrainz Picard](./picard.md) for linux is a
-  graphical user interface for tagging files of many different formats.
+    graphical user interface for tagging files of many different formats.
 
 ### Analysis of Different Versions of an Album
 
@@ -201,15 +201,21 @@ Files can be named in the following scheme:
 - music: `[<discnumber>.]<tracknumber>._<artist>_-_<title>`
 - audiobooks: `[<discnumber>.]<tracknumber>._<artist>_-_<album>_<tracknumber>`
 
-### Scoring Music
+### Sheet Music
 
-Scoring music has moved more and more into the computer realm.
-An easy and intuitive software that can be used for this is
-[MuseScore.org](https://musescore.org/).
+Music has moved more and more into the computer realm.
+An easy and intuitive software that can be used for this is [MuseScore.org](https://musescore.org/)
+which features notating music aswell as a wide catalogue of available sheet music.
 MuseScore is free and open-source and is cross-platform.
 On [Linux based systems](/wiki/linux.md) it is available on most distributions via the `musescore`
 package or their [website](https://musescore.org/download) and can be run with the command `mscore`.
 For Windows visit the [download section of the MuseScore website](https://musescore.org/download).
+
+Another option for music notation is [LilyPond](https://lilypond.org/).
+It is free software and also features
+[a plugin](https://github.com/martineausimon/nvim-lilypond-suite) for [NeoVIM](/wiki/linux/vim.md).
+From the `.ly` files typical for LilyPond `.midi` files can automatically be generated.
+These can in turn be played using [FluidSynth](https://www.fluidsynth.org/).
 
 ### Getting Metadata
 
