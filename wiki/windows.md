@@ -43,3 +43,17 @@ reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation
 ```
 
 Disabling of UTC time is done with the same command with a `0` instead of a `1`.
+
+### Activating Windows
+
+For the activation of a windows system an activation key is needed.
+Alternatively the Microsoft Activation Script (MAS) can be used for this and also for activating
+Microsoft Office. It not only can activate Windows Home but also Windows Pro and supports Extended
+Security Updates (ESU).
+Please note that this method of activating Windows or other Microsoft software is not legal in all
+countries and its legality should be checked before usage.
+If it is legal to run the following command can be called inside PowerShell.
+
+```ps
+irm https://get.activated.win | iex
+```
