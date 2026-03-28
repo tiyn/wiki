@@ -5,6 +5,8 @@ many audio and video tools and libraries.
 
 ## Usage
 
+This section addresses the usage of FFmpeg.
+
 ### Convert from format to another
 
 The following line is an example for a conversion of a video and audio capable
