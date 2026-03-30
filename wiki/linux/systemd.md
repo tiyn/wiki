@@ -52,7 +52,7 @@ To start the service after boot it has to be enabled.
 This works accordingly with the keyword `enable`.
 The `disable` keyword stops the service from starting automatically.
 
-Logs of the last start of the service can be found by running `systemctl status <service-name>`. 
+Logs of the last start of the service can be found by running `systemctl status <service-name>`.
 
 ### Retrieving the SystemD Logs
 
@@ -72,7 +72,7 @@ This time will be used to determine the time that is taken from suspend to hiber
 suspend-to-hibernate is called.
 The following line will set this to 10 minutes.
 
-```txt 
+```txt
 HibernateDelaySec=10min
 ```
 
@@ -102,7 +102,7 @@ ignore.
 As [machetie writes on Reddit](https://www.reddit.com/r/framework/comments/185035i/how_to_use_the_laptop_with_lid_closed_linux/)
 the following settings need to be set.
 
-```txt 
+```txt
 HandleLidSwitch=ignore
 HandleLidSwitchExternalPower=ignore
 HandleLidSwitchDocked=ignore
@@ -125,6 +125,6 @@ This error signals problems with the trusted platform module.
 This however usually can be fixed easily by masking the service and is done like the following
 command shows.
 
-```sh 
+```sh
 systemctl mark dev-tpmrm0.device
 ```
