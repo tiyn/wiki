@@ -1,7 +1,7 @@
 # BlueZ
 
-[BlueZ](http://www.bluez.org/) is an implementation of the
-[Bluetooth](/wiki/bluetooth.md) standard.
+[BlueZ](http://www.bluez.org/) is an implementation of the [Bluetooth](/wiki/bluetooth.md)
+standard.
 This entry features the BlueZ package and all software that is based on it.
 
 ## Setup
@@ -19,6 +19,10 @@ systemctl enable bluetooth.service
 ```
 
 ## Usage
+
+This section addresses the usage of Bluez.
+
+### Connecting and Pairing of Devices
 
 The Bluetooth features can be managed by different types of front-ends.
 

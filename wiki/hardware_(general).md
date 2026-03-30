@@ -4,7 +4,21 @@ This entry focusses on various hardware components of a general desktop PC or a 
 For [Linux](/wiki/linux.md) Systems see
 [the corresponding entry](/wiki/linux/hardware_%28linux%29.md).
 
-## Contents of Technic Bag
+## Hardware Functionality
+
+The following subsections address functions that rely on dedicated hardware modules or adapters.
+
+### Bluetooth
+
+Configuration and troubleshooting for Bluetooth functionality are described in the
+[corresponding Bluetooth entry](/wiki/bluetooth.md).
+
+### Wi-Fi
+
+Configuration and troubleshooting for Wi-Fi functionality are described in the
+[corresponding Wi-Fi entry](/wiki/wi-fi.md).
+
+## Technic Bag
 
 The following are components that are useful to be included in cable- and technic bags to.
 For power banks and power supplies it is useful to check for the power delivery standard.
