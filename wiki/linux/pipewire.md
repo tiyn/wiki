@@ -18,14 +18,14 @@ Make sure to restart to be sure everything is running correctly.
 Pipewire has a few config files.
 The needed folder structure can be created by the following command for a global setup.
 
-```sh 
-sudo mkdir -p /etc/pipewire/ && sudo mkdir -p /etc/wireplumber/wireplumber.conf.d/ && sudo cp /usr/share/pipewire/*.conf /etc/pipewire/ && sudo cp /usr/share/wireplumber/wireplumber.conf.d/* /etc/wireplumber/wireplumber.conf.d/ 
+```sh
+sudo mkdir -p /etc/pipewire/ && sudo mkdir -p /etc/wireplumber/wireplumber.conf.d/ && sudo cp /usr/share/pipewire/*.conf /etc/pipewire/ && sudo cp /usr/share/wireplumber/wireplumber.conf.d/* /etc/wireplumber/wireplumber.conf.d/
 ```
 
 It can also be done locally for the user with the following, alternative setup.
 
-```sh 
-mkdir -p ~/.config/pipewire/ && mkdir -p ~/.config/wireplumber/wireplumber.conf.d/ && cp /usr/share/pipewire/*.conf ~/.config/pipewire/ && cp /usr/share/wireplumber/wireplumber.conf.d/* ~/.config/wireplumber/wireplumber.conf.d/ 
+```sh
+mkdir -p ~/.config/pipewire/ && mkdir -p ~/.config/wireplumber/wireplumber.conf.d/ && cp /usr/share/pipewire/*.conf ~/.config/pipewire/ && cp /usr/share/wireplumber/wireplumber.conf.d/* ~/.config/wireplumber/wireplumber.conf.d/
 ```
 
 ## Usage
@@ -91,6 +91,12 @@ pw-loopback -C <id>
 This section focusses on the temporary and permanent creation and removal of virtual devices like
 virtual sinks and sources aswell as coupled nodes like loopbacks.
 
+Please note that problems may occur if [EasyEffects](/wiki/linux/easyeffects.md) is used in
+combination with virtual devices.
+This mostly is based upon standard configuration.
+Most importantly stream devices may have problems as explained in the
+[corresponding section](#problems-with-input-an-output-of-loopback-devices).
+
 #### Creating a Null Device
 
 This section will focus on the creation of a dummy device.
@@ -140,7 +146,7 @@ pactl load-module module-null-sink media.class=Audio/Sink sink_name=null-sink-0 
 
 This will return an id that can be used to remove the sink with the following command.
 
-```sh 
+```sh
 pactl unload-module <id>
 ```
 
@@ -207,7 +213,7 @@ and [the official website](https://docs.pipewire.org/page_module_loopback.html).
 An application loopback can be created permanently by creating a `.conf` file inside the
 `~/.config/pipewire/pipewire.conf.d` directory with the following lines.
 
-```txt 
+```txt
 context.modules = [{
     name = libpipewire-module-loopback
     args = {
@@ -239,6 +245,17 @@ running applications which will loopback the sound to the selected output device
 
 This section will focus on errors and the fixing of errors of Pipewire.
 
+### Problems with Input an Output of Loopback Devices
+
+If the input and output of devices of the types `Stream/Output/Audio` and `Stream/Input/Audio`
+automatically switches back to [EasyEffects](/wiki/linux/easyeffects.md) then EasyEffects is not
+configured correctly to use with such devices.
+This also can lead to problems with using [loopback](#loopback-input) and other
+[virtual devices](#virtual-devices).
+It can easily be fixed by not processing inputs and outputs automatically.
+This is described in depth
+[the corresponding section of the EasyEffects entry](/wiki/linux/easyeffects.md#process-all-input-and-output-streams).
+
 ### Fix Crackling
 
 Crackling can occur in various situations.
@@ -250,12 +267,12 @@ In `alsa-vm.conf` the `suspend_timeout_seconds` have to be set to `0` like the f
 show.
 This also shows the general structure but only the line starting with `session` is to be added.
 
-```txt 
+```txt
 
 monitor.alsa.rules = [
-  { 
-    actions = { 
-      update-props = { 
+  {
+    actions = {
+      update-props = {
         session.suspend-timeout-seconds = 0
   }
 ]
@@ -264,13 +281,13 @@ monitor.alsa.rules = [
 Another possibility for crackling to occur is when the allowed rates are mismatched.
 In `pipewire.conf` locate the following line.
 
-```txt 
+```txt
 #default.clock.allowed-rates = [ 48000 ]
 ```
 
 Change this line to look like the following.
 
-```txt 
+```txt
 default.clock.allowed-rates = [ 44100 48000 ]
 ```
 
@@ -283,7 +300,7 @@ api.alsa.headroom      = 2048
 
 Change it to look like the following line.
 
-```txt 
+```txt
 api.alsa.headroom      = 0
 ```
 
@@ -298,7 +315,7 @@ api.alsa.period-size   = 1024
 
 Change it to look like the following line.
 
-```txt 
+```txt
 api.alsa.period-size   = 256
 ```
 
