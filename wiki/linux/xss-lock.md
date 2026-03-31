@@ -12,7 +12,7 @@ On most Linux distributions swayidle can be installed with the `xss-lock` packag
 To run xss-lock it has to be called - preferably after the boot process.
 An example of this will look like the following.
 This command makes the system use `swaylock` if the system is put to
-[sleep](/wiki/linux/systemd.md#change-suspend-and-hibernate-behaviour).
+[sleep](/wiki/linux/systemd.md#change-suspend-and-hibernate-behavior).
 
 ```sh
 xss-lock -- swaylock

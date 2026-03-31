@@ -91,11 +91,17 @@ pw-loopback -C <id>
 This section focusses on the temporary and permanent creation and removal of virtual devices like
 virtual sinks and sources aswell as coupled nodes like loopbacks.
 
-#### Creating a Null Device
+Please note that problems may occur if [EasyEffects](/wiki/linux/easyeffects.md) is used in
+combination with virtual devices.
+This mostly is based upon standard configuration.
+Most importantly stream devices may have problems as explained in the
+[corresponding section](#problems-with-input-an-output-of-loopback-devices).
 
-This section will focus on the creation of a dummy device.
+#### Creating a Virtual Sinks
+
+This section will focus on the creation of a virtual sink.
 That is a virtual device that can be selected as output but is not used by default.
-This can be useful to record applications as their sound can cleanly be passed to the dummy device
+This can be useful to record applications as their sound can cleanly be passed to the virtual sink
 which will eliminate other applications sounds.
 If the goal is to record and listen to an application at the same time navigate to
 [the application loopback section](#creating-an-application-loopback)
@@ -103,7 +109,7 @@ If the goal is to record and listen to an application at the same time navigate 
 The source for this section of the entry is derived by
 [Pipewire Gitlab site](https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/Virtual-Devices#single-nodes).
 
-A dummy device, or null sink, can be created permanently by creating a `.conf` file inside the
+A virtual sink can be created permanently by creating a `.conf` file inside the
 `~/.config/pipewire/pipewire.conf.d` directory with the following lines.
 
 
@@ -112,8 +118,8 @@ context.objects = [
     {   factory = adapter
         args = {
             factory.name     = support.null-audio-sink
-            node.name        = "null-sink-0"
-            node.description = "Null Sink 0"
+            node.name        = "virtual-sink-0"
+            node.description = "Virtual Sink 0"
             media.class      = Audio/Sink
             audio.position   = [ FL FR ]
             monitor.channel-volumes = true
@@ -132,13 +138,15 @@ Multiple devices can be created by creating different files in the directory.
 
 If the null sink is only needed temporarily (until the next restart) the following line can be used
 to create it.
-Use different `sink_name`s to create multiple dummy devices.
+To create multiple virtual sinks different values for the name of the sink have to be used.
+In the following example `<sink-name>` is a placeholder for the name of the sink.
 
 ```sh
-pactl load-module module-null-sink media.class=Audio/Sink sink_name=null-sink-0 channel_map=stereo
+pactl load-module module-null-sink media.class=Audio/Sink sink_name=<sink-name> channel_map=stereo
 ```
 
-This will return an id that can be used to remove the sink with the following command.
+This will return an ID that can be used to remove the sink with the following command.
+`<id>` is the placeholder for the ID.
 
 ```sh
 pactl unload-module <id>
@@ -166,12 +174,12 @@ context.modules = [
       capture.props = {
         media.class = "Stream/Input/Audio"
         node.name = "device-loopback-1-recording"
-        node.description = "Device-Loopback 1 Recording"
+        node.description = "Device Loopback 1 Recording"
       }
       playback.props = {
         media.class = "Stream/Output/Audio"
         node.name = "device-loopback-1-playback"
-        node.description = "Device-Loopback 1 Playback"
+        node.description = "Device Loopback 1 Playback"
       }
       audio.volume = 0.5
       audio.mute = true
@@ -186,7 +194,7 @@ The part called `Device-Loopback 1 Recording` in the example config can be found
 tab.
 There the device to loopback can be selected.
 The second part called `Device-Loopback 1 Playback` is available under the `Playback` tab and
-allows to switch the selection of the output device.
+allows switching the selection of the output device.
 
 #### Creating an Application Loopback
 
@@ -195,7 +203,7 @@ In this section an application loopback is defined as a loopback that takes an a
 This can be useful to record applications as their sound can cleanly be passed to the sink sink of
 the applicatino loopback which will eliminate other applications sounds.
 If the goal is to record and not listen to the application at the same time navigate to
-[the null device section](#creating-a-null-device).
+[the null device section](#creating-a-virtual-sinks).
 Alternatively the null device can also be selected as a output device for the playback part of the
 application loopback which makes it easily and seemlessly possible to switch between listening in
 and not listening without changing the device that is recorded by the capturing program.
@@ -215,12 +223,12 @@ context.modules = [{
         capture.props = {
             media.class = "Audio/Sink"
             node.name = "application-loopback-1-sink"
-            node.description = "Application-Loopback 1 Sink"
+            node.description = "Application Loopback 1 Sink"
         }
         playback.props = {
             media.class = "Stream/Output/Audio"
             node.name = "application-loopback-1-playback"
-            node.description = "Application-Loopback 1 Playback"
+            node.description = "Application Loopback 1 Playback"
         }
     }
 }]
@@ -231,13 +239,69 @@ mixer like [pavucontrol](#volume-control).
 The part called `Application-Loopback 1 Sink` in the example config can be found in the `Output
 Devices` tab.
 The second part called `Application-Loopback 1 Playback` is available under the `Playback` tab and
-allows to switch the selection of the output device.
+allows switching the selection of the output device.
 Also in the `Playback` tab `Application-Loopback 1 Sink` can be selected as an output for currently
 running applications which will loopback the sound to the selected output device.
+
+#### Creating Virtual Sources
+
+This section will focus on the creation of a virtual source.
+That is a virtual device that can be selected as input but is not used by default.
+This can be useful to pass sound to a program that only accepts microphones by default.
+If different sources have to be bundled first an application loopback can be used.
+A guide on the creation of it is in
+[the application loopback section](#creating-an-application-loopback).
+
+A virtual source can be created permanently by creating a `.conf` file inside the
+`~/.config/pipewire/pipewire.conf.d` directory with the following lines.
+
+
+```txt
+context.modules = [
+  {
+    name = libpipewire-module-loopback
+    args = {
+      audio.position = [ FL FR ]
+
+      capture.props = {
+        media.class = "Stream/Input/Audio"
+        node.name = "virtual-source-1-recording"
+        node.description = "Virtual Source 1 Recording"
+      }
+
+      playback.props = {
+        media.class = "Audio/Source"
+        node.name = "virtual-source-1-source"
+        node.description = "Virtual Source 1 Source"
+      }
+    }
+  }
+]
+```
+
+Multiple devices can be created by creating different files in the directory.
+
+The created virtual source is made up by two parts that can be found in different places inside a
+mixer like [pavucontrol](#volume-control).
+The part called `Virtual Source 1 Source` in the example config can be found in the `Input Devices`
+tab.
+The second part called `Virtual Source 1 Recording` is available under the `Recording` tab and
+allows switching the selection of the output or input to feed into the virtual microphone.
 
 ## Troubleshooting
 
 This section will focus on errors and the fixing of errors of Pipewire.
+
+### Problems with Input an Output of Loopback Devices
+
+If the input and output of devices of the types `Stream/Output/Audio` and `Stream/Input/Audio`
+automatically switches back to [EasyEffects](/wiki/linux/easyeffects.md) then EasyEffects is not
+configured correctly to use with such devices.
+This also can lead to problems with using [loopback](#loopback-input) and other
+[virtual devices](#virtual-devices).
+It can easily be fixed by not processing inputs and outputs automatically.
+This is described in depth
+[the corresponding section of the EasyEffects entry](/wiki/linux/easyeffects.md#process-all-input-and-output-streams).
 
 ### Fix Crackling
 

@@ -5,7 +5,11 @@ laptop.
 For non-Linux specific or general topics in hardware see the
 [corresponding entry](/wiki/hardware_%28general%29.md)
 
-## Battery
+## Hardware Functionality
+
+The following subsections address functions that rely on dedicated hardware modules or adapters.
+
+### Battery
 
 The battery of a notebook can be inspected by using the `upower` command.
 To use it the tool needs to be installed.
@@ -40,24 +44,34 @@ For this run the following command.
 acpi -b
 ```
 
-## Power Management
+### Bluetooth
+
+[Bluetooth](/wiki/bluetooth.md) on [Linux](/wiki/linux.md) is generally managed by
+[Bluez](/wiki/linux/bluez.md).
+
+### Wi-Fi
+
+Wi-Fi functionality on [Linux](/wiki/linux.md) is handled by various tools such as
+[WPA Supplicant](/wiki/linux/wpa_supplicant.md) or [NetworkManager](/wiki/linux/networkmanager.md).
+
+### Power Management
 
 Tools, programs and guides to manage the power usage and improve battery life are described in the
 [power management entry](/wiki/linux/power_management.md).
 
-## (Liquid) Coolers
+### (Liquid) Coolers
 
 The viewing of temperatures of coolers as well as the selection of RGB-settings can be achieved by
 using [liquidctl](https://github.com/liquidctl/liquidctl).
 
-## Temperature
+### Temperature
 
 To check the temperature the command `sensors` can be used which (on most distributions) is a part
 of the `lm_sensors` package.
 It will then display all the available temperature sensors available as well as many other sensors
 like the RPM for fans.
 
-## ThinkPad TrackPoint
+### ThinkPad TrackPoint
 
 This section is based on a
 [Reddit comment by zedbraxmen](https://www.reddit.com/r/thinkpad/comments/wjb8qz/configuring_trackpoint_in_wayland/).
@@ -75,7 +89,7 @@ ATTR{device/sensitivity}="275",
 ATTR{device/speed}="215",
 ```
 
-## Fingerprint Readers
+### Fingerprint Readers
 
 Many modern laptops include fingerprint sensors which can be used for authentication on
 [Linux](/wiki/linux.md).

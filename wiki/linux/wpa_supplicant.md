@@ -3,7 +3,7 @@
 `wpa_supplicant` is a free implementation of an IEEE 802.11i supplicant.
 It is especially interesting due to its WPA2 and WPA3 capabilities in contrast
 to other networking software.
-It is used to set up [Wi-Fi](/wiki/linux/wi-fi.md).
+It is used to set up [Wi-Fi](/wiki/linux/hardware_%28linux%29.md#wi-fi).
 
 ## Usage
 
@@ -32,3 +32,7 @@ Most of the problems regarding WPA Supplicant can be fixed by restarting the
 ```sh
 systemctl restart wpa_supplicant
 ```
+
+Afterwards - if the error still persists - it may be useful to reenable the Wi-Fi device as
+explained in the 
+[section of the NetworkManager entry](/wiki/linux/networkmanager.md#restarting-and-reenabling-wi-fi).

@@ -2,7 +2,7 @@
 
 NetworkManager - short NM - is a program to automatically detect and connect to
 networks by providing options for various configuration.
-It is used to set up [Wi-Fi](/wiki/linux/wi-fi.md).
+It is used to set up [Wi-Fi](/wiki/linux/hardware_%28linux%29.md#wi-fi).
 
 ## Setup
 
@@ -50,3 +50,6 @@ It will restart the [SystemD](/wiki/linux/systemd.md) service and enable the Wi-
 systemctl restart NetworkManager
 nmcli radio wifi on
 ```
+
+If the error still persists afterwards it may be useful to also restart WPA Supplicant as explained
+[in the corresponding section of its entry](/wiki/linux/wpa_supplicant.md#restarting-wpa-supplicant).

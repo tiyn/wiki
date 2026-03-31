@@ -1,8 +1,8 @@
 # Bluetooth
 
-[Bluetooth](https://www.bluetooth.com/) is a short-range technology for wireless
-data transfer.
+[Bluetooth](https://www.bluetooth.com/) is a short-range technology for wireless data transfer.
+From a [hardware](/wiki/hardware_%28general%29.md) perspective Bluetooth requires a compatible
+adapter to work which may be integrated or external.
 
-For [Linux](/wiki/linux.md) based operating systems the
-[bluez package](/wiki/linux/bluez.md) is used as the implementation of the
-bluetooth standard.
+Informations on Bluetooth usage on [Linux](/wiki/linux.md)-based operating systems are described in
+the [Bluetooth section of the Linux hardware entry](/wiki/linux/hardware_%28linux%29.md#bluetooth).
