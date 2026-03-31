@@ -11,6 +11,8 @@ To run a command (in this case `/bin/bash /root/run.sh`) create the following
 file at `/etc/systemd/system/` with a name ending on `.service`.
 In this case it is called `unturned.service`.
 Alternatively to creating the command manually the following command can be used.
+The `--user` flag may be useful as explained in the
+[corresponding section](#startstopenabledisable-a-service-and-retrieve-its-logs).
 
 ```sh
 systemctl edit --force --full unturned.service
