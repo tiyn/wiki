@@ -13,6 +13,53 @@ An installation via [Flatpak](./flatpak.md) is also possible.
 
 Easyeffects can apply `Effects` to input and output sound.
 
+### Autostart
+
+Easyeffects can be started in various ways.
+
+The service can be started including the window with the following.
+It will have to be called each startup.
+
+```sh
+easyeffects
+```
+
+Alternatively it can be started in the background with the following command.
+This command also has to be called each time the system starts.
+
+```sh
+easyeffects --gapplication-service
+```
+
+The two former commands will only work if called on each startup.
+The easiest way to do this is by using [SystemD](/wiki/linux/systemd.md).
+The following will work analogously to the path explained in
+[the corresponding section of the SystemD entry](/wiki/linux/systemd.md#run-command-on-boot).
+
+Run the following command to edit the configuration file for the newly created EasyEffect service.
+
+```sh
+systemctl --user edit --force -full easyeffects.service
+```
+
+Afterward set the contents of this file to the following.
+Due to EasyEffect working together with [Pipewire and Wireplumber](/wiki/linux/pipewire.md) some
+precautions have to be taken to start it before these two.
+
+```sh
+[Unit]
+Description=EasyEffects (GApplication Service)
+After=pipewire.service wireplumber.service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/easyeffects --gapplication-service
+Restart=on-failure
+
+[Install]
+WantedBy=graphical-session.target
+```
+
 ### Noise cancellation
 
 Setup

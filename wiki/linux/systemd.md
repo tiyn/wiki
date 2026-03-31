@@ -10,6 +10,13 @@ It is used for service configuration and startup.
 To run a command (in this case `/bin/bash /root/run.sh`) create the following
 file at `/etc/systemd/system/` with a name ending on `.service`.
 In this case it is called `unturned.service`.
+Alternatively to creating the command manually the following command can be used.
+
+```sh
+systemctl edit --force --full unturned.service
+```
+
+And set the contents to the following.
 
 ```txt
 [Unit]
@@ -31,17 +38,8 @@ initializing.
 After=pve-guests.service
 ```
 
-Such a service can be started by running:
-
-```sh
-sudo systemctl start unturned
-```
-
-Alternatively it can be enabled to start at every boot by running:
-
-```sh
-sudo systemctl enable unturned
-```
+A service that was created this way can then be started as explained in
+[the corresponding section](#startstopenabledisable-a-service-and-retrieve-its-logs).
 
 ### Start/Stop/Enable/Disable a service and Retrieve its Logs
 
@@ -52,7 +50,9 @@ To start the service after boot it has to be enabled.
 This works accordingly with the keyword `enable`.
 The `disable` keyword stops the service from starting automatically.
 
-Logs of the last start of the service can be found by running `systemctl status <service-name>`. 
+Logs of the last start of the service can be found by running `systemctl status <service-name>`.
+
+Additionally the `--user` flag can be set to start the service only for the current user.
 
 ### Retrieving the SystemD Logs
 
@@ -72,7 +72,7 @@ This time will be used to determine the time that is taken from suspend to hiber
 suspend-to-hibernate is called.
 The following line will set this to 10 minutes.
 
-```txt 
+```txt
 HibernateDelaySec=10min
 ```
 
@@ -102,7 +102,7 @@ ignore.
 As [machetie writes on Reddit](https://www.reddit.com/r/framework/comments/185035i/how_to_use_the_laptop_with_lid_closed_linux/)
 the following settings need to be set.
 
-```txt 
+```txt
 HandleLidSwitch=ignore
 HandleLidSwitchExternalPower=ignore
 HandleLidSwitchDocked=ignore
@@ -125,6 +125,6 @@ This error signals problems with the trusted platform module.
 This however usually can be fixed easily by masking the service and is done like the following
 command shows.
 
-```sh 
+```sh
 systemctl mark dev-tpmrm0.device
 ```
