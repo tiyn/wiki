@@ -202,7 +202,7 @@ be hidden.
 It is then more difficult to find the out-of-memory error that makes a program crash.
 Problems with balooning RAM can be found using the following command.
 
-```sh 
+```sh
 journalctl -k
 ```
 

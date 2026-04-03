@@ -10,6 +10,15 @@ It is used for service configuration and startup.
 To run a command (in this case `/bin/bash /root/run.sh`) create the following
 file at `/etc/systemd/system/` with a name ending on `.service`.
 In this case it is called `unturned.service`.
+Alternatively to creating the command manually the following command can be used.
+The `--user` flag may be useful as explained in the
+[corresponding section](#startstopenabledisable-a-service-and-retrieve-its-logs).
+
+```sh
+systemctl edit --force --full unturned.service
+```
+
+And set the contents to the following.
 
 ```txt
 [Unit]
@@ -31,17 +40,8 @@ initializing.
 After=pve-guests.service
 ```
 
-Such a service can be started by running:
-
-```sh
-sudo systemctl start unturned
-```
-
-Alternatively it can be enabled to start at every boot by running:
-
-```sh
-sudo systemctl enable unturned
-```
+A service that was created this way can then be started as explained in
+[the corresponding section](#startstopenabledisable-a-service-and-retrieve-its-logs).
 
 ### Start/Stop/Enable/Disable a service and Retrieve its Logs
 
@@ -54,6 +54,8 @@ The `disable` keyword stops the service from starting automatically.
 
 Logs of the last start of the service can be found by running `systemctl status <service-name>`.
 
+Additionally, the `--user` flag can be set to start the service only for the current user.
+
 ### Retrieving the SystemD Logs
 
 SystemD logs can easily be found using the `journalctl` command.
@@ -64,9 +66,9 @@ This can be achieved by running the following command.
 journalctl -b-1
 ```
 
-### Change Suspend and Hibernate Behaviour
+### Change Suspend and Hibernate Behavior
 
-The behaviour of suspend and hibernation can be changed in the file `/etc/systemd/sleep.conf`.
+The behavior of suspend and hibernation can be changed in the file `/etc/systemd/sleep.conf`.
 One of the most important variables is the one to set the hibernation delay time.
 This time will be used to determine the time that is taken from suspend to hibernation if
 suspend-to-hibernate is called.
@@ -79,7 +81,7 @@ HibernateDelaySec=10min
 ### Handle Power Key and Lid Switching
 
 The management of power keys and lid switches is handled in the file `/etc/systemd/logind.conf`.
-The following line will set the behaviour of the power key to hibernate. The default for this would
+The following line will set the behavior of the power key to hibernate. The default for this would
 be to shutdown the system.
 
 ```txt
@@ -94,8 +96,8 @@ The following lines will change this to suspend-then-hibernate.
 HandleLidSwitch=suspend-then-hibernate
 ```
 
-For further behaviour of the suspend and hibernate actions check the
-[corresponding section](#change-suspend-and-hibernate-behaviour).
+For further behavior of the suspend and hibernate actions check the
+[corresponding section](#change-suspend-and-hibernate-behavior).
 
 When wanting to work with a closed lid some of the settings in the config file have to be set to
 ignore.
