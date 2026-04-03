@@ -1,7 +1,7 @@
 # E-book
 
 An E-book is a digital publication of a book.
-They can be read with specific hardware - an e-reader - or on a personal
+They can be read with specific hardware - an [e-reader](#e-reader) - or on a personal
 computer.
 E-books are usually available in `.epub` or `.pdf` files.
 Amazon (`.azw`), Mobi (`.mobi`) and other brands selling e-readers have
@@ -29,3 +29,12 @@ However they do not track the time that was needed to finish them or the number 
 a specific timeframe.
 This can be done by using a special tracker like [Jelu](/wiki/jelu.md) which can be used to keep
 track of e-books and normal books at the same time which is a feature no e-book reader has.
+
+## E-Reader 
+
+An e-reader is a device that is designed for reading digital e-books.
+Some of them also feature [annotation tools](/wiki/note-taking.md).
+
+- [Episteme Reader](https://github.com/Aryan-Raj3112/episteme) is a native
+- [Android](/wiki/android.md) [e-book](/wiki/e-book.md) reader, that is capable of annotations.
+    In contrast to [Saber](/wiki/note-taking.md#software) it is able to handle large PDF-files.
