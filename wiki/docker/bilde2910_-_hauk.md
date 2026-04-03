@@ -1,6 +1,6 @@
 # bilde2910 - Hauk
 
-This is a docker container for a [Hauk](../hauk.md).
+This is a docker container for a [Hauk](/wiki/hauk.md).
 
 ## Set-up
 

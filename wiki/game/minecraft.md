@@ -9,14 +9,14 @@ The following sections address the setup of both server and client software.
 ### Server
 
 A server can be setup via docker with the
-[itzg image](../docker/itzg_-_minecraft-server.md).
+[itzg image](/wiki/docker/itzg_-_minecraft-server.md).
 
 ### Client
 
 There are different Minecraft Clients available:
 
 - The standard (Java) Minecraft Client can be downloaded at the [official website](https://minecraft.net/en-us/get-minecraft)
-- [MultiMC5](./multimc5.md) is a custom Minecraft launcher that allows multiple
+- [MultiMC5](/wiki/game/multimc5.md) is a custom Minecraft launcher that allows multiple
   installations at once.
   This entry also addresses forks of MultiMC5 like Prism Launcher that are similar in usage and
   settings for the most part.
@@ -25,7 +25,7 @@ There are different Minecraft Clients available:
 
 #### Link Minecraft to a Subdomain
 
-To link Minecraft to one of your subdomains you need to add a [DNS](../dns.md)
+To link Minecraft to one of your subdomains you need to add a [DNS](/wiki/dns.md)
 SRV-record:
 
 ```txt

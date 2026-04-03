@@ -24,7 +24,7 @@ dd bs=512 count=4 if=/dev/random of=<path to destination>
 ```
 
 It is possible to increase the length to get a stronger key file.
-Alternatively strong LUKS keys can be created using [OpenSSL](./openssl.md)
+Alternatively strong LUKS keys can be created using [OpenSSL](/wiki/linux/openssl.md)
 using  a bitlength of 4096:
 `openssl genrsa -out <path to destination> 4096`.
 The key file will then be saved  to `<path to destination>`.
@@ -50,7 +50,7 @@ Open the encrypted volume:
 Now resize the encrypted volume to all available space of the partition.
 If the encrypted volume should not be extended to the whole partition
 or the partition is too small for its intended purposes, make sure to resize the
-partition first accordingly (see [disk management](./disk-management.md)).
+partition first accordingly (see [disk management](/wiki/linux/disk-management.md)).
 `cryptsetup resize crypt-volume`
 
 ### Open/Close an Encrypted Volume
@@ -73,7 +73,7 @@ Afterwards it can be closed by running `cryptsetup close /dev/mapper/crypt0`.
 ### Creating/Add a USB Decryption Key
 
 This guide assumes an Arch Linux System, as installed in
-[this wikis arch linux installation](./arch-linux/installation.md).
+[this wikis arch linux installation](/wiki/linux/arch-linux/installation.md).
 This section is based on entries from the
 [arch linux forum](https://forum.archlinux.de/d/28886-systementschluesselung-per-usb-stick).
 It uses a similar technique to the decryption of the encrypted volume via

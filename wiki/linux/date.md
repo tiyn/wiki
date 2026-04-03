@@ -1,7 +1,7 @@
 # Date
 
 `date` is a program to show and edit the date and time of a system.
-To change the hardware clock look at the [according article](./hwclock.md)
+To change the hardware clock look at the [according article](/wiki/linux/hwclock.md)
 
 ## Display time and date
 

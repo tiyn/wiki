@@ -1,7 +1,7 @@
 # haugene - transmission-openvpn
 
 This is a [Docker](/wiki/docker.md) container for a
-[transmission](../transmission.md) server that is connected to the internet via
+[transmission](/wiki/transmission.md) server that is connected to the internet via
 an [openVPN tunnel](/wiki/openvpn.md).
 The official container and documentation was made by
 [haugene](https://github.com/haugene/docker-transmission-openvpn).

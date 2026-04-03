@@ -1,10 +1,9 @@
 # gitea - gitea
 
-This is a [Docker](/wiki/docker.md) container for a [Gitea](../gitea.md).
-The Server consists of 2 Docker containers, one is the gitea main server and one
-is a database.
-In addition to the main container you need to connect a [mySQL container](./mysql.md)
-to it.
+This is a [Docker](/wiki/docker.md) container for a [Gitea](/wiki/gitea.md).
+The Server consists of 2 Docker containers, one is the gitea main server and one is a database.
+In addition to the main container you need to connect a [mySQL container](/wiki/docker/mysql.md) to
+it.
 
 ## Set-up
 

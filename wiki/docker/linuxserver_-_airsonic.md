@@ -1,6 +1,6 @@
 # linuxserver - airsonic
 
-This is a [Docker](/wiki/docker.md) container for a [airsonic](../airsonic.md)
+This is a [Docker](/wiki/docker.md) container for a [airsonic](/wiki/airsonic.md)
 server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/airsonic).

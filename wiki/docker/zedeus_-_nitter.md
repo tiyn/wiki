@@ -1,7 +1,7 @@
 # zedeus - nitter
 
 This is a [Docker](/wiki/docker.md) container for the alternative Twitter
-frontend [nitter](../nitter.md).
+frontend [nitter](/wiki/nitter.md).
 The official container and documentation was made by
 [zedeus](https://github.com/zedeus/nitter).
 

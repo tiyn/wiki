@@ -1,12 +1,11 @@
 # chocobozz - peertube
 
-This is a [Docker](/wiki/docker.md) container for a [PeerTube](../peertube.md)
-server.
+This is a [Docker](/wiki/docker.md) container for a [PeerTube](/wiki/peertube.md) server.
 The official container and documentation was made by
 [chocobozz](https://github.com/chocobozzz/peertube).
 This docker-rebuild is made up by a `docker-compose.yml` file.
-In addition to the main container you need to connect a
-[redis container](./redis.md) to it.
+In addition to the main container you need to connect a [redis container](/wiki/docker/redis.md) to
+it.
 
 ## Set-up
 

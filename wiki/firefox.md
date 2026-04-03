@@ -53,7 +53,7 @@ The following add-ons increase the security or privacy.
   redirects youtube, instagram, twitter, etc to free alternatives or alternative
   frontends.
 - [SponsorBlock](/wiki/youtube.md#automatically-skip-sponsorships) skips YouTube video sponsors
-  automatically, works with [Invidious](./invidious.md) too.
+  automatically, works with [Invidious](/wiki/invidious.md) too.
 - [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is a userscript
   manager that can be used for the following tasks:
   - [Bypass YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass)

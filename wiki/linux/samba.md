@@ -1,6 +1,6 @@
 # Samba
 
-[Samba](../samba.md) is the standard Windows interoperability suite for linux
+[Samba](/wiki/samba.md) is the standard Windows interoperability suite for linux
 and unix.
 
 ## Usage

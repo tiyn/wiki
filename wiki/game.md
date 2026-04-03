@@ -41,9 +41,9 @@ various platforms and operating systems.
 
 By using [Syncthing](/wiki/syncthing.md) game saves can be synchronized.
 First set up Syncthing as described in the
-[Syncthing entry](../syncthing.md#setup).
+[Syncthing entry](/wiki/syncthing.md#setup).
 If a system with only user access - like the [Steam Deck](/wiki/game/steam_deck.md) - is used the
-[user space configuration](../syncthing.md#user-space-configuration-for-linux)
+[user space configuration](/wiki/syncthing.md#user-space-configuration-for-linux)
 is recommended.
 Afterwards move the game saves to the directory set up by Syncthing and create
 [symbolic links](/wiki/linux/shell.md#symbolic-links-using-ln) to link them back to the original

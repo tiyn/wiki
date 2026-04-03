@@ -1,10 +1,9 @@
-# yourls
+# YOURLS
 
-This is a [Docker](/wiki/docker.md) container for the URl shortener yourls.
-The official container and documentation was made by
-[yourls](https://hub.docker.com/_/yourls).
-In addition to the main container you need to connect a
-[mySQL container](./mysql.md) to it.
+This is a [Docker](/wiki/docker.md) container for the URL shortener YOURLS.
+The official container and documentation was made by [YOURLS](https://hub.docker.com/_/yourls).
+In addition to the main container you need to connect a [mySQL container](/wiki/docker/mysql.md) to
+it.
 
 ## Set-up
 
@@ -18,9 +17,9 @@ Set the following variables with the -e tag.
 | Name             | Usage                      | Default |
 | ---------------- | -------------------------- | ------- |
 | `YOURLS_DB_PASS` | database password          |         |
-| `YOURLS_SITE`    | domain/site name of yourls |         |
-| `YOURLS_USER`    | username for yourls admin  |         |
-| `YOURLS_PASS`    | password for yourls admin  |         |
+| `YOURLS_SITE`    | domain/site name of YOURLS |         |
+| `YOURLS_USER`    | username for YOURLS admin  |         |
+| `YOURLS_PASS`    | password for YOURLS admin  |         |
 
 ### Volumes
 
@@ -28,7 +27,7 @@ Set the following volumes with the -v tag.
 
 | Outside mount/volume name | Container mount | Description          |
 | ------------------------- | --------------- | -------------------- |
-| `yourls`                  | `/var/www/html` | yourls specific html |
+| `yourls`                  | `/var/www/html` | YOURLS specific HTML |
 
 ### Ports
 

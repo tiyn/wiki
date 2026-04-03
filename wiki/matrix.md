@@ -12,8 +12,8 @@ Therefore a shared `docker-compose.yml` file is used.
 This setup guide follows a modified version of the
 [guide by matusnovak](https://gist.github.com/matusnovak/37109e60abe79f4b59fc9fbda10896da).
 Furthermore this guide will assume you already have a
-[traefik v2.4](./traefik.md) instance setup as described in the
-[traefik docker image article](./docker/traefik.md).
+[traefik v2.4](/wiki/traefik.md) instance setup as described in the
+[traefik docker image article](/wiki/docker/traefik.md).
 The Matrix server created by this article will be able to use federation, VoIP using the
 [TURN/STUN protocoll from a self-hosted server](#coturn), screen share and video telephony using
 jitsi, [a web client using a self-hosted Element server](#element-web-client) and an
@@ -21,7 +21,7 @@ jitsi, [a web client using a self-hosted Element server](#element-web-client) an
 
 ### DNS Records
 
-You will need to create some [DNS](./dns.md) entries in order for synapse to
+You will need to create some [DNS](/wiki/dns.md) entries in order for synapse to
 function correctly.
 Additionally you will need 2 subdomains (this guide will assume you use the
 domain `example.com` with the subdomains `matrix` and `synapse`).
@@ -38,7 +38,7 @@ _matrix._tcp.matrix. <TTL> class SRV 1 10 443 synapse.example.com
 ### Synapse
 
 The docker-image used for the synapse matrix server can be found in the
-[docker-image directory](./docker/matrixdotorg_-_synapse.md).
+[docker-image directory](/wiki/docker/matrixdotorg_-_synapse.md).
 Create the `docker-compose.yml` file at a location of your choice (this guide
 will assume and recommend the file lies in a directory called matrix) with the
 following contents.
@@ -133,7 +133,7 @@ following the guide (this applies to any following step).
 ### Nginx
 
 The docker-image used for the nginx instance can be found in the
-[docker-image directory](./docker/nginx.md).
+[docker-image directory](/wiki/docker/nginx.md).
 For federation to work properly an nginx container is needed aswell.
 In the directory containing your `docker-compose.yml` create the file
 `data/matrix/nginx/matrix.conf` and fill in the following lines.
@@ -217,7 +217,7 @@ not correctly set up.
 ### Element Web Client
 
 The docker-image used for the web client can be found in the
-[docker-image directory](./docker/vectorim_-_riot-web.md).
+[docker-image directory](/wiki/docker/vectorim_-_riot-web.md).
 This section will add a self hosted Matrix web client in form of `Element`
 (which was previously called `riot`).
 
@@ -332,7 +332,7 @@ If any of that is not working there is something wrong with your configuration.
 ### Administration Interface
 
 The docker-image used for the administration interface can be found in the
-[docker-image directory](./docker/awesometechnologies_-_synapse-admin.md).
+[docker-image directory](/wiki/docker/awesometechnologies_-_synapse-admin.md).
 This section will add a self hosted Matrix administration interface.
 This is especially useful if you have `enable_registration` set to `false`
 because you can dynamically create and administrate users and rooms.
@@ -367,7 +367,7 @@ Your `Homeserver URL` in that case is `https://synapse.example.com`.
 ### Coturn
 
 The docker-image used for the TURN/STUN Server can be found in the
-[docker-image directory](./docker/coturn_-_coturn.md).
+[docker-image directory](/wiki/docker/coturn_-_coturn.md).
 This section will add a self hosted TURN/STUN VoIP server.
 
 In the directory containing your `docker-compose.yml` create the file

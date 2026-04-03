@@ -1,7 +1,7 @@
 # coturn - coturn
 
 This is a [Docker](/wiki/docker.md) container for a TURN/STUN server.
-A server like this can be used in a [Matrix](../matrix.md) server configuration.
+A server like this can be used in a [Matrix](/wiki/matrix.md) server configuration.
 The official container and documentation was made by
 [coturn](https://github.com/coturn/coturn).
 This docker-rebuild is made up by a `docker-compose.yml` file.

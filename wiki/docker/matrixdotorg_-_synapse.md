@@ -1,7 +1,7 @@
 # matrixdotorg - synapse
 
 This is a [Docker](/wiki/docker.md) container for a synapse server using the
-[matrix](../matrix.md) protocol.
+[matrix](/wiki/matrix.md) protocol.
 The official container and documentation was made by
 [matrixdotorg](https://hub.docker.com/matrixdotorg/synapse).
 This docker-rebuild is made up by a `docker-compose.yml` file.

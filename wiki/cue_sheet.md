@@ -1,7 +1,7 @@
 # Cue sheet
 
 A cue sheet is a metadata file containing information for the tracks of a CD or
-a file [ripped](./audio.md#extract-audio-files-from-cds) from it.
+a file [ripped](/wiki/audio.md#extract-audio-files-from-cds) from it.
 
 ## Example file
 

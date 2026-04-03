@@ -1,12 +1,11 @@
-# owncloud
+# ownCloud
 
-This is a [Docker](/wiki/docker.md) container for a [owncloud](../owncloud.md) server.
-The official container and documentation was made by
-[owncloud](https://hub.docker.com/_/owncloud).
+This is a [Docker](/wiki/docker.md) container for a [owncloud](/wiki/owncloud.md) server.
+The official container and documentation was made by [ownCloud](https://hub.docker.com/_/owncloud).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The services in this files are explained seperately.
-The main Docker container needs a database in form of a [MariaDB](./mariadb.md)
-Docker container.
+The main Docker container needs a database in form of a [MariaDB](/wiki/docker/mariadb.md) Docker
+container.
 
 ## Set-up
 
@@ -19,8 +18,8 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 
 | Outside mount/volume name | Container mount        | Description                  |
 | ------------------------- | ---------------------- | ---------------------------- |
-| `owncloud`                | `/var/www/html`        | storage for owncloud plugins |
-| `config`                  | `/var/www/html/config` | storage for owncloud config  |
+| `owncloud`                | `/var/www/html`        | storage for ownCloud plugins |
+| `config`                  | `/var/www/html/config` | storage for ownCloud config  |
 
 ### Ports
 

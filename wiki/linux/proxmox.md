@@ -110,7 +110,7 @@ After that follow the instructions and fill in the fields to your liking.
 ### Enlarging Disk of a VM
 
 Make sure there is enough disk space available.
-For further information see [the disk management article](./disk-management.md)
+For further information see [the disk management article](/wiki/linux/disk-management.md)
 
 SSH into Proxmox.
 Enlarge a disk by using:

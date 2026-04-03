@@ -1,6 +1,6 @@
 # SystemD
 
-SystemD is an [init system](./init.md) for Linux systems.
+SystemD is an [init system](/wiki/linux/init.md) for Linux systems.
 It is used for service configuration and startup.
 
 ## Usage
@@ -32,9 +32,8 @@ ExecStart=/bin/bash /root/run.sh
 Type=simple
 ```
 
-For [Proxmox](./proxmox.md) you can add the following line under the `[Unit]`
-section to make sure the service is started after Proxmox has finished
-initializing.
+For [Proxmox](/wiki/linux/proxmox.md) you can add the following line under the `[Unit]` section to
+make sure the service is started after Proxmox has finished initializing.
 
 ```txt
 After=pve-guests.service
@@ -46,8 +45,7 @@ A service that was created this way can then be started as explained in
 ### Start/Stop/Enable/Disable a service and Retrieve its Logs
 
 Services can be started by running `systemctl start <service-name>`.
-They respectively can be stopped by replacing the `start`
-keyword for `stop`.
+They respectively can be stopped by replacing the `start` keyword for `stop`.
 To start the service after boot it has to be enabled.
 This works accordingly with the keyword `enable`.
 The `disable` keyword stops the service from starting automatically.

@@ -2,14 +2,14 @@
 
 [Airsonic-Advanced](https://github.com/airsonic-advanced/airsonic-advanced) is
 a free and open-source personal media streamer used for
-[music, podcasts and audiobooks](./audio.md).
-It is a more modern implementation of [Airsonic](./airsonic.md) which in turn
-is a fork of [Subsonic](./subsonic.md).
+[music, podcasts and audiobooks](/wiki/audio.md).
+It is a more modern implementation of [Airsonic](/wiki/airsonic.md) which in turn
+is a fork of [Subsonic](/wiki/subsonic.md).
 
 ## Setup
 
 The software can be setup via docker with the
-[linuxserver image](./docker/linuxserver_-_airsonic-advanced.md).
+[linuxserver image](/wiki/docker/linuxserver_-_airsonic-advanced.md).
 
 ### Initial configuration
 
@@ -36,7 +36,7 @@ Log in with the clients now works correctly.
 
 It is possible to use many different clients because the server is compatible
 with all the Subsonic clients.
-These can be found in the [Subsonic entry](./subsonic.md#clients) and the [Airsonic
+These can be found in the [Subsonic entry](/wiki/subsonic.md#clients) and the [Airsonic
 entry](/wiki/airsonic.md#clients).
 
 ## Scrobbling with Last.fm

@@ -7,13 +7,13 @@ It also has the ability to record programs like a digital video recorder.
 TVHeadend has an
 [official documentation](https://docs.tvheadend.org/webui/config_dvr/) on its
 website.
-TVHeadend is compatible with [jellyfin](./jellyfin.md#connect-tvheadend) with
+TVHeadend is compatible with [jellyfin](/wiki/jellyfin.md#connect-tvheadend) with
 the help of a plugin.
 
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker/linuxserver_-_tvheadend.md).
+[linuxserver image](/wiki/docker/linuxserver_-_tvheadend.md).
 For different hardware there may be additional run options needed to get
 TVHeadend working properly.
 Additionally a solid [initial configuration](#initial-configuration) is
@@ -29,7 +29,7 @@ added as a run option with the [IP address](/wiki/ip_address.md) matching the on
 For multiple tuners to work the hosting system has to have multiple IP addresses
 as only one address can be bound to one tuner at the time.
 Setting up a linux system with additional IP addresses is described in
-[the netplan entry](./linux/netplan.md#add-more-ip-addresses-to-a-system).
+[the netplan entry](/wiki/linux/netplan.md#add-more-ip-addresses-to-a-system).
 
 The still needed setup is equal to the [setup for DVB-C Tuners](#dvb-c).
 
@@ -53,7 +53,7 @@ It will create a folder with the same name as the show for each show.
 The containing files are named with the title, the possible episode aswell as
 the date the show was recorded.
 If two files feature the same name an ascending number is added.
-This naming scheme is compatible with [Jellyfins](./jellyfin.md) `Other`
+This naming scheme is compatible with [Jellyfins](/wiki/jellyfin.md) `Other`
 content type.
 
 #### DVB-C

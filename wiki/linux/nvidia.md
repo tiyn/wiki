@@ -23,7 +23,7 @@ Most configuration and changes require the use of `nvidia-settings`.
 
 In `nvidia-setting` monitors can be dragged and dropped to your liking.
 After that you have to save the configuration to the
-[X window manager](./x_window_system.md) configuration file
+[X window manager](/wiki/linux/x_window_system.md) configuration file
 `/etc/X11/xorg.conf`.
 
 ### Avoid screen tearing

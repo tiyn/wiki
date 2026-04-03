@@ -12,7 +12,7 @@ shntool can be installed on most distributions by installing the `shntool` packa
 
 ### Splitting Audio Files According to a CUE File
 
-An easy way to split audio files according to a [cue file](../cue_sheet.md) is
+An easy way to split audio files according to a [cue file](/wiki/cue_sheet.md) is
 using `shnsplit`.
 Alternatively the interface `cuebreakpoints` can be used which uses `shnsplit`.
 Note that some codecs require special setup.

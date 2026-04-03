@@ -19,9 +19,9 @@ camera.
 
 #### Installation (Linux)
 
-First of all [V4L2](./linux/v4l2.md) needs to be set up.
+First of all [V4L2](/wiki/linux/v4l2.md) needs to be set up.
 This guide assumes it is set up according to the section in the
-[V4L2 entry](./linux/v4l2.md#v4l2loopback).
+[V4L2 entry](/wiki/linux/v4l2.md#v4l2loopback).
 Afterwards the virtual camera can be started.
 
 ### Background Removal

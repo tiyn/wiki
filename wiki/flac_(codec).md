@@ -2,9 +2,9 @@
 
 This article describes the `flac` codec.
 For the linux `flac` package see the
-[flac package entry](./linux/flac_(package).md.
+[flac package entry](/wiki/linux/flac_%28package%29.md).
 
-`flac` - short for Free Lossless Audio Codec - is a [audio](./audio.md) codec
+`flac` - short for Free Lossless Audio Codec - is a [audio](/wiki/audio.md) codec
 without compression losses.
 
 ## Tagging
@@ -22,6 +22,5 @@ The following explains the most general tags in short.
 - `totaldiscs` is the amount of discs of the album
 - `totaltracks` is the amount of tracks in the disc of the music piece
 - `front` is an image of the front cover
-- `performer` is used in classical music and defines the artist that
-  played the piece. In audiobooks it can be used to signal the reader of the
-  book.
+- `performer` is used in classical music and defines the artist that played the piece.
+    In audiobooks it can be used to signal the reader of the book.

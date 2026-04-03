@@ -9,9 +9,9 @@ For non-Linux specific audio software navigate to the corresponding
 A sound server is software that manages use and access of audio devices.
 The following is a list of available sound servers.
 
-- [PulseAudio](./pulseaudio.md) is the go-to sound server program used for
-  linux.
-- [Pipewire](./pipewire.md) is a modern graph based sound server.
+- [PulseAudio](/wiki/linux/pulseaudio.md) is the go-to sound server program used for
+    linux.
+- [Pipewire](/wiki/linux/pipewire.md) is a modern graph based sound server.
 
 ## Noise cancellation
 

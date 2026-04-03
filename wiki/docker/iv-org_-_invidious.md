@@ -1,19 +1,18 @@
 # iv-org - invidious
 
-This is a [Docker](/wiki/docker.md) container for [Invidious](../invidious.md).
+This is a [Docker](/wiki/docker.md) container for [Invidious](/wiki/invidious.md).
 The official container and documentation was made by
 [invidious](https://github.com/iv-org/invidious).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 There is no official pre-build on docker-hub.
 In addition to the main container you need to connect a
-[postgres container](./postgres.md) to it.
+[postgres container](/wiki/docker/postgres.md) to it.
 
 ## Set-up
 
 First of all create a folder for your `rebuild.sh`.
-After that clone invidious from
-[GitHub](https://github.com/iv-org/invidious) into a folder within the
-just created folder.
+After that clone invidious from [GitHub](https://github.com/iv-org/invidious) into a folder within
+the just created folder.
 You can find the `docker-compose.yml` in the cloned directory.
 Set the variables, volumes and ports according and run the `rebuild.sh`.
 

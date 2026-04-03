@@ -22,13 +22,13 @@ On most Linux distributions it can be installed with the `teamspeak` package.
 ### Server
 
 The server software can be setup via [Docker](/wiki/docker.md) with the
-[teamspeak image](./docker/teamspeak.md).
+[TeamSpeak image](/wiki/docker/teamspeak.md).
 This image can setup a TeamSpeak3 server.
 
 #### Link TeamSpeak3 to a subdomain
 
 To link TeamSpeak3 to one of your subdomains you need to add a
-[DNS SRV-record](./dns.md#srv-record):
+[DNS SRV-record](/wiki/dns.md#srv-record):
 
 ```txt
 type: SRV
@@ -66,8 +66,8 @@ For TeamSpeak there are various bots capable of playing music.
 The following is a list of bots featured in this wiki that can do this.
 
 - [Sinusbot](/wiki/sinusbot.md) is a self-hosted bot for TeamSpeak that can play music and sounds. 
-  It's closed-source and free of charge.
-  It also features [Discord](/wiki/discord.md) support.
+    It's closed-source and free of charge.
+    It also features [Discord](/wiki/discord.md) support.
 
 ### Channel Visibility
 

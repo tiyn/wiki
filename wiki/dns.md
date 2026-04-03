@@ -9,7 +9,7 @@ It associates various information with domain names.
 The following list shows possible DNS software suites that can be used to set
 up a DNS server.
 
-- [Bind](./bind.md) is a open source package for setting up DNS
+- [Bind](/wiki/bind.md) is a open source package for setting up DNS
 
 ## Records
 

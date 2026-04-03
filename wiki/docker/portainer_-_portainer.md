@@ -1,6 +1,6 @@
 # portainer - portainer
 
-This is a [Docker](/wiki/docker.md) container for a [portainer](../portainer.md)
+This is a [Docker](/wiki/docker.md) container for a [portainer](/wiki/portainer.md)
 server.
 The official container and documentation was made by
 [portainer](https://hub.docker.com/r/portainer/portainer).

@@ -63,7 +63,7 @@ This can be changed at the forwarded docker-service by replacing for example
 This forces the docker container to only expose the port in the docker bridge
 network, effectively banning remote access.
 
-If you use [Traefik](./traefik.md) it is not needed, because you don't have to
+If you use [Traefik](/wiki/traefik.md) it is not needed, because you don't have to
 publish ports to reverse proxy them.
 
 ### Containerize a graphical application

@@ -1,6 +1,6 @@
 # samba
 
-This is a [Docker](/wiki/docker.md) container for a [Samba](../samba.md)
+This is a [Docker](/wiki/docker.md) container for a [Samba](/wiki/samba.md)
 server.
 The official container and documentation was made by
 [dperson](https://hub.docker.com/r/samba).

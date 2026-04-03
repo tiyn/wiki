@@ -1,7 +1,7 @@
 # nginx
 
 This is a [Docker](/wiki/docker.md) container for an
-[nginx server](../nginx.md).
+[nginx server](/wiki/nginx.md).
 The official container and documentation was made by
 [nginx](https://hub.docker.com/_/nginx).
 This docker-rebuild is made up by a `docker-compose.yml` file.

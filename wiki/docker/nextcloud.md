@@ -1,11 +1,11 @@
 # NextCloud
 
-This is a [Docker](/wiki/docker.md) container for [NextCloud](../nextcloud.md).
+This is a [Docker](/wiki/docker.md) container for [NextCloud](/wiki/nextcloud.md).
 The official container and documentation was made by
 [NextCloud](https://hub.docker.com/_/nextcloud).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The services in this files are explained seperately.
-The main Docker container needs a database in form of a [MariaDB](./mariadb.md)
+The main Docker container needs a database in form of a [MariaDB](/wiki/docker/mariadb.md)
 Docker container.
 
 ## Set-up

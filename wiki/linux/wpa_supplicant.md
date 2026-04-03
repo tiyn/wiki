@@ -12,12 +12,11 @@ It is used to set up [Wi-Fi](/wiki/linux/hardware_%28linux%29.md#wi-fi).
 This part assumes that your network interface is called `wlan0`
 (change it accordingly).
 
-- First make sure that your [network interface is up](./ip.md).
+- First make sure that your [network interface is up](/wiki/linux/ip.md).
 - Save the authentication details to a file by running
-  `wpa_passphrase <SSID> >> /etc/wpa_supplicant.conf`
-- Connect to the WLAN by running
-  `wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant.conf`
-  (`-B` is optional for running the process in the background)
+    `wpa_passphrase <SSID> >> /etc/wpa_supplicant.conf`
+- Connect to the WLAN by running `wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant.conf`
+    (`-B` is optional for running the process in the background)
 
 ## Troubleshooting
 
@@ -34,5 +33,5 @@ systemctl restart wpa_supplicant
 ```
 
 Afterwards - if the error still persists - it may be useful to reenable the Wi-Fi device as
-explained in the 
+explained in the
 [section of the NetworkManager entry](/wiki/linux/networkmanager.md#restarting-and-reenabling-wi-fi).

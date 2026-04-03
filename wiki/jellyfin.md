@@ -7,7 +7,7 @@ It includes a web-interface and is mainly used for
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[linuxserver image](./docker/linuxserver_-_jellyfin.md).
+[linuxserver image](/wiki/docker/linuxserver_-_jellyfin.md).
 
 ## Usage
 
@@ -27,11 +27,11 @@ After that make sure to setup `DVR` to your liking to record.
 
 #### Live TV and DVR with TVHeadend
 
-This section explains the steps neccessary to make [TVHeadend](./tvheadend.md)
+This section explains the steps neccessary to make [TVHeadend](/wiki/tvheadend.md)
 work with a jellyfin server according to the
 [official documentation](https://jellyfin.org/docs/general/server/plugins/tvheadend/).
 It is assumed a working TVHeadend instance is up and running.
-In the [TVHeadend entry](./tvheadend.md) a guide to run an instance is given.
+In the [TVHeadend entry](/wiki/tvheadend.md) a guide to run an instance is given.
 In the admin dashboard install the
 [TVHeadend plugin](https://jellyfin.org/docs/general/server/plugins/tvheadend/)
 and restart the server.
@@ -57,7 +57,7 @@ the `TVHeadend Hostname or IP Address`, the `HTTP Port` and `HTSP Port`, the
 
 Finally run `Refresh Guide Data` under `Dashboard > Live TV > Live TV` to load
 the guide data for the next 7 days aswell as to refresh the TV channels.
-Afterwards the channels [mapped in TVHeadend](./tvheadend.md#adding-channels)
+Afterwards the channels [mapped in TVHeadend](/wiki/tvheadend.md#adding-channels)
 should appear in the `Live TV` Library.
 
 ### Client

@@ -1,14 +1,14 @@
 # flac (Package)
 
 This article describes the `flac` package on linux.
-For the audio codec see the [flac entry](../flac_(codec).md)
-`flac` is a package to work with the [flac codec](../flac_(codec).md).
+For the audio codec see the [flac entry](/wiki/flac_%28codec%29.md)
+`flac` is a package to work with the [flac codec](/wiki/flac_%28codec%29.md).
 
 ## Setup
 
 On most distributions it is bundled together with the command line tagging
 software `metaflac` and other auxiliary tools in the `flac` package.
-Another possible tagging software is [MusicBrainz Picard](../picard.md)
+Another possible tagging software is [MusicBrainz Picard](/wiki/picard.md)
 
 ## Usage
 
@@ -37,6 +37,7 @@ recompressed in one command.
 According to a
 [Reddit comment by berdmayne](https://www.reddit.com/r/foobar2000/comments1m3634l/best_way_to_reduce_flac_file_size_without_losing)
 the compression rates of the different levels are the following.
+
 
 | Level            | Saving to level 0   | Saving to previous level |
 | ---------------- | ------------------- | ------------------------ |

@@ -1,21 +1,22 @@
-# Easyeffects
+# EasyEffects
 
-[Easyeffects](https://github.com/wwmm/easyeffects) is a free and open-source GUI-software for
+[EasyEffects](https://github.com/wwmm/easyeffects) is a free and open-source GUI-software for
 applying sound effects and filters on input and output audio streams.
-Easyeffects uses [Pipewire](./pipewire.md) as [sound server](/wiki/linux/audio.md#sound-server).
+EasyEffects uses [Pipewire](/wiki/linux/pipewire.md) as
+[sound server](/wiki/linux/audio.md#sound-server).
 
 ## Setup
 
-Easyeffects can be installed on most distributions by installing the `easyeffects` package.
-An installation via [Flatpak](./flatpak.md) is also possible.
+EasyEffects can be installed on most distributions by installing the `easyeffects` package.
+An installation via [Flatpak](/wiki/linux/flatpak.md) is also possible.
 
 ## Usage
 
-Easyeffects can apply `Effects` to input and output sound.
+EasyEffects can apply `Effects` to input and output sound.
 
 ### Autostart
 
-Easyeffects can be started in various ways.
+EasyEffects can be started in various ways.
 
 The service can be started including the window with the following.
 It will have to be called each startup.
@@ -62,11 +63,10 @@ WantedBy=graphical-session.target
 
 ### Noise cancellation
 
-Setup
-Noise cancellation can be achieved by installing Easyeffects.
+Noise cancellation can be achieved by installing EasyEffects.
 Make sure to check the box `Process all Inputs` and `Process all Outputs` to route everything
 through `easyeffects`.
-Make log out of your system afterwards.
+Make log out of your system afterward.
 To enable noise cancellation navigate `Inputs` and click `Plugins`.
 After that click `Add Plugin` and select `Noise Reduction`.
 

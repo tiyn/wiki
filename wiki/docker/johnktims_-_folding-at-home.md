@@ -49,4 +49,4 @@ docker run --name folding-at-home \
 
 ### GPU-Support
 
-GPU support is documented in [the docker article](../docker.md).
+GPU support is documented in [the docker article](/wiki/docker.md).

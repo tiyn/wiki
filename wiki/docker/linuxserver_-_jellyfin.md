@@ -1,6 +1,6 @@
 # linuxserver - jellyfin
 
-This is a [Docker](/wiki/docker.md) container for a [jellyfin](../jellyfin.md)
+This is a [Docker](/wiki/docker.md) container for a [jellyfin](/wiki/jellyfin.md)
 server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/jellyfin).

@@ -1,7 +1,7 @@
 # ventz - bind
 
-This is a [Docker](/wiki/docker.md) container for a [bind](../bind.md)
-[DNS](../dns.md) resolver.
+This is a [Docker](/wiki/docker.md) container for a [bind](/wiki/bind.md)
+[DNS](/wiki/dns.md) resolver.
 The official container and documentation was made by
 [ventz](https://hub.docker.com/r/ventz/bind).
 

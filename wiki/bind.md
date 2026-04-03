@@ -1,12 +1,11 @@
 # Bind
 
-[Bind](https://www.isc.org/bind/) is an open-source software suite for
-interacting with the [DNS](./dns.md).
+[Bind](https://www.isc.org/bind/) is an open-source software suite for interacting with the
+[DNS](/wiki/dns.md).
 
 ## Setup
 
-The software can be setup via docker with the
-[ventz image](./docker/ventz_-_bind.md).
+The software can be setup via docker with the [ventz image](/wiki/docker/ventz_-_bind.md).
 
 ## Usage
 
@@ -20,8 +19,7 @@ Look into the file `/etc/bind/named.conf.options`.
 Change it to something like the following lines.
 Note that `192.168.178.0/24` is the subnet that is used mainly in this example.
 Only queries from within it will be handled.
-The forwarders `8.8.8.8` and `8.8.4.4` can be changed according to the specific
-needs.
+The forwarders `8.8.8.8` and `8.8.4.4` can be changed according to the specific needs.
 
 ```txt
 acl "trusted" {
@@ -53,8 +51,7 @@ options {
 ### Configure local domains
 
 This section explains how to add local domains for local systems.
-It is explicitly compatible with the
-[previous section](#setup-a-local-dns-server-with-forwarding).
+It is explicitly compatible with the [previous section](#setup-a-local-dns-server-with-forwarding).
 Locate the `named.conf.local` file in the `/etc/bind` directory.
 Add the forward zone first.
 Substitute `<domain>` and `<tld>` to your wishes.
@@ -94,14 +91,13 @@ $TTL 1D
 ```
 
 
-To make the server you operate on the nameserver select a subdomain for it and
-subsitute `<servername>` for it and its [IP address](/wiki/ip_address.md) `<ip of server>`.
+To make the server you operate on the nameserver select a subdomain for it and subsitute
+`<servername>` for it and its [IP address](/wiki/ip_address.md) `<ip of server>`.
 The following uses a filled in example with multiple subdomains.
-It uses CNAME records as a placeholder for the ip.
-In the last section the domain itself `home.server` is mapped to the ip
-`192.168.178.16`.
-This cannot be done with CNAME as `home.server` is already mapped as a
-nameserver and assigning it multiple times is not supported.
+It uses CNAME records as a placeholder for the IP.
+In the last section the domain itself `home.server` is mapped to the IP `192.168.178.16`.
+This cannot be done with CNAME as `home.server` is already mapped as a nameserver and assigning it
+multiple times is not supported.
 
 ```txt
 $TTL 1D
@@ -145,12 +141,11 @@ quentin                              IN A       192.168.178.18
 sheldon                              IN A       192.168.178.19
 ```
 
-More [DNS records](./dns.md#records) can be added.
-Most importantly used and needed for [reverse proxies](./reverse-proxy.md) are
-[A records](./dns.md#a-record) and [CNAME records](./dns.md#cname-record).
+More [DNS records](/wiki/dns.md#records) can be added.
+Most importantly used and needed for [reverse proxies](/wiki/reverse-proxy.md) are
+[A records](/wiki/dns.md#a-record) and [CNAME records](/wiki/dns.md#cname-record).
 
-Then create `/etc/bind/extra-zones/revp.178.168.192` and fill it with the
-following lines.
+Then create `/etc/bind/extra-zones/revp.178.168.192` and fill it with the following lines.
 
 ```txt
 $ORIGIN 178.168.192.in-addr.arpa.
@@ -167,17 +162,16 @@ $TTL 1D
 <last part of ipv4> IN  PTR              <thisserver>.<domain>.<tld>.
 ```
 
-Additionally add all domain names in front of the first `(` that have been
-added in the `zone.<domain>.<tld>` file as an [A record](./dns.md#a-record).
-Note that all these have to be followed by a `.` just like
-`<thisserver>.<domain>.<tld>.` is.
+Additionally add all domain names in front of the first `(` that have been added in the
+`zone.<domain>.<tld>` file as an [A record](/wiki/dns.md#a-record).
+Note that all these have to be followed by a `.` just like `<thisserver>.<domain>.<tld>.` is.
 For all these records add a PTR record too.
 The first part of the PTR line is part of the IP address.
 To get the full address add it to the subnet.
 In this case this server has the IP `192.168.178.15`.
 
-An example of `/etc/bind/extra-zones/revp.178.168.192` that is compatible with
-the previous examples is shown in the following.
+An example of `/etc/bind/extra-zones/revp.178.168.192` that is compatible with the previous
+examples is shown in the following.
 
 ```txt
 $ORIGIN 178.168.192.in-addr.arpa.
@@ -196,5 +190,5 @@ $TTL 1D
 19              IN      PTR             sheldon.home.server.
 ```
 
-According to your IPs and domains you may need to create multiple `revp.` or
-`zone.` files and need to map them back to `named.conf.local`.
+According to your IPs and domains you may need to create multiple `revp.` or `zone.` files and need
+to map them back to `named.conf.local`.

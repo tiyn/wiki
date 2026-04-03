@@ -1,16 +1,15 @@
 # wallabag - wallabag
 
-This is a [Docker](/wiki/docker.md) container for a [wallabag](../wallabag.md)
-server.
-The Server consists of 3 Docker containers, one is the wallabag main server, one
-is a database and one a redis instance.
-In addition to the main container you need to connect a [mariadb container](./mariadb.md)
-and a [redis container](./redis.md) to it.
+This is a [Docker](/wiki/docker.md) container for a [wallabag](/wiki/wallabag.md) server.
+The Server consists of 3 Docker containers, one is the wallabag main server, one is a database and
+one a Redis instance.
+In addition to the main container you need to connect a
+[mariadb container](/wiki/docker/mariadb.md) and a [redis container](/wiki/docker/redis.md) to it.
 
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 

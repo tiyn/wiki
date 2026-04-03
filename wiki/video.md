@@ -35,11 +35,11 @@ If you want to keep your system clean of much data, you can use this kind of set
 There are differences depending on your preffered client interface.
 
 - [Plex](https://www.plex.tv) is a dockerizable media streaming service with web-interface.
-- [Jellyfin](./jellyfin.md) is a foss dockerizable media streaming service with web-interface.
+- [Jellyfin](/wiki/jellyfin.md) is a foss dockerizable media streaming service with web-interface.
 
 For local video files a simple video player can be used.
 
-- [mpv](./mpv.md) is a cross-platform command line video player.
+- [mpv](/wiki/mpv.md) is a cross-platform command line video player.
 
 ## Scan DVDs/Blu-Rays
 
@@ -85,7 +85,7 @@ A guide on how to flash UHD drives (including the BU40N) can be found in the
 ## Naming schemes of movies and TV shows
 
 This section describes how to name and how to place movies and TV shows and
-their extras in the directories correctly to get [jellyfin](./jellyfin.md) and
+their extras in the directories correctly to get [jellyfin](/wiki/jellyfin.md) and
 other software media systems to recognize them.
 
 In
@@ -103,7 +103,7 @@ between multiple files of a movie or episode.
 The easiest way to achieve a seamless movie experience is to concatenate the
 two movie files.
 This can be easily done with
-[ffmpeg](./linux/ffmpeg.md#concatenate-multiple-video-files-with-matching-audio-tracks).
+[ffmpeg](/wiki/linux/ffmpeg.md#concatenate-multiple-video-files-with-matching-audio-tracks).
 
 ### Naming Subtitles of movies or tv shows
 

@@ -1,6 +1,6 @@
 # vectorim - riot-web
 
-This is a [Docker](/wiki/docker.md) container for a [matrix](../matrix.md)
+This is a [Docker](/wiki/docker.md) container for a [matrix](/wiki/matrix.md)
 client.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/vectorim/riot-web).

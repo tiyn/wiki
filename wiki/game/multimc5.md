@@ -1,7 +1,7 @@
 # MultiMC5
 
 [MultiMC5](https://multimc.org) is a custom launcher that allows multiple instances of the
-[game](/wiki/game.md) [Minecraft](./minecraft.md) to be installed at once.
+[game](/wiki/game.md) [Minecraft](/wiki/game/minecraft.md) to be installed at once.
 In recent times there have been problems with the maintainer of MultiMC5. 
 Due to this similar launchers like the [Prism Launcher](https://prismlauncher.org/) have gotten
 popular.
@@ -22,14 +22,12 @@ OptiFine available.
 - If not already done create an instance on MultiMC5
 - Select `Edit Instance`, navigate to `Version` and `Install Fabric`
 - Download the version of
-  [OptiFabric](https://www.curseforge.com/minecraft/mc-mods/optifabric/files)
-  according to your Minecraft version
-- Navigate to `Loader Mods` and press `Add`, then select the downloaded
-  OptiFabric file
-- Download the version of [OptiFine](https://optifine.net/downloads) according
-  to your Minecraft version
-- Navigate to `Loader Mods` and press `Add`, then select the downloaded
-  OptiFine file
+    [OptiFabric](https://www.curseforge.com/minecraft/mc-mods/optifabric/files) according to your
+    Minecraft version
+- Navigate to `Loader Mods` and press `Add`, then select the downloaded OptiFabric file
+- Download the version of [OptiFine](https://optifine.net/downloads) according to your Minecraft
+    version
+- Navigate to `Loader Mods` and press `Add`, then select the downloaded OptiFine file
 
 OptiFine works best on older [Minecraft](/wiki/game/minecraft.md) versions.
 Some people recommend [Sodium](https://modrinth.com/mod/sodium/versions) or other optimization mods

@@ -3,7 +3,7 @@
 [Steam](https://store.steampowered.com/) is a software for digital [game](/wiki/game.md)
 destribution.
 It is developed by [Valve](https://www.valvesoftware.com).
-Steam uses its compatibility layer, [Proton](./proton.md) for running windows
+Steam uses its compatibility layer, [Proton](/wiki/game/proton.md) for running windows
 games on linux based operating systems.
 
 ## Installation
@@ -51,7 +51,7 @@ Icons and Banners can then be changed by opening the menu after selecting a game
 An easier route can be taken by using
 [SGDBoop](https://www.steamgriddb.com/boop).
 To use it, you first need to install it.
-It is available in the [flatpak package manager](../linux/flatpak.md).
+It is available in the [flatpak package manager](/wiki/linux/flatpak.md).
 After that navigate to the
 [SteamGridDB website](https://www.steamgriddb.com/boop) and log in with your
 Steam account.

@@ -1,31 +1,34 @@
-# Owncloud
+# ownCloud
 
 ownCloud is a free client-server cloud-service.
 
 ## Setup
 
 The software can be setup via [Docker](/wiki/docker.md) with the
-[owncloud image](./docker/owncloud.md).
+[ownCloud image](/wiki/docker/owncloud.md).
 
 ## Usage
 
-This section addresses various features of Owncloud.
+This section addresses various features of ownCloud.
 
 ### WebDAV
 
-You can access ownCloud via WebDAV with the link
-`https://<owncloud instance>/remote.php/dav/files/<user>/<path to folder or file>`.
+You can access ownCloud via WebDAV with the following link.
+
+```
+https://<owncloud instance>/remote.php/dav/files/<user>/<path to folder or file>
+```
 
 ## Error handling
 
 ### Problems with a locked file
 
 It is possible that you can't remove or move a locked file.
-If this problem doesn't resolve after a restart you can try to disable locking
-in the owncloud config.
+If this problem doesn't resolve after a restart you can try to disable locking in the ownCloud
+config.
 This is done by adding the line `'filelocking.enabled' => false,` into the file `config/config.php`.
 Then try to resolve the error.
-Afterwards enable locking again by removing the added line.
+Afterward enable locking again by removing the added line.
 
 The reason I choose this process over editing the database file, is ease of use.
-The editing of the database is much more time consuming especially if run with docker.
+The editing of the database is much more time-consuming especially if run with docker.

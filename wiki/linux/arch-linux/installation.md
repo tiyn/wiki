@@ -2,9 +2,9 @@
 
 This guide is based upon a
 [german arch wiki article](https://wiki.archlinux.de/title/Installation_mit_UEFI_und_Verschl%C3%BCsselung).
-For encryption [dm-crypt](../dm-crypt.md) is used.
+For encryption [dm-crypt](/wiki/linux/dm-crypt.md) is used.
 Inside the encrypted partition a logical volume will be created with
-[LVM](../lvm.md).
+[LVM](/wiki/linux/lvm.md).
 
 At the end of this guide a fully functional Arch Linux will be installed.
 
@@ -235,8 +235,8 @@ This can easily be done by using `nmtui`.
 Now you can follow the recommended larbs installation script of this wiki
 (`curl -LO larbs.sh https://raw.githubusercontent.com/tiyn/larbs/master/larbs.sh`)
 this will install a bunch of useful base software including
-[a graphical environment](../x_window_system.md) and
-[a window manager](../suckless.md#programs).
+[a graphical environment](/wiki/linux/x_window_system.md) and
+[a window manager](/wiki/linux/suckless.md).
 You can go on to other guides aswell.
 Especially the
 [Recommended practices](/wiki/linux/arch-linux.md#recommended-practices)
@@ -247,11 +247,11 @@ This is discussed in
 [the package manager entry](/wiki/linux/package_manager/pacman_and_aur.md#error-during-updating-is-marginal-trust).
 
 Additionally if you have a NVidia Graphics Cards you should read
-[the NVidia article](../nvidia.md) too.
+[the NVidia article](/wiki/linux/nvidia.md) too.
 
 If you are interested in automatic decryption of the dm-crypt encrypted
 partition, take a look at the according section in
-[the dm-crypt article](../dm-crypt.md).
+[the dm-crypt article](/wiki/linux/dm-crypt.md).
 
 After installing [xorg windows system](/wiki/linux/x_window_system.md) the language of it will be
 english by default.

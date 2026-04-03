@@ -47,5 +47,5 @@ that can be used.
 
 If you don't need a bloated web-interface a more basic approach is more than enough.
 
-- [git-server-docker](./docker/jkarlos_-_git-server-docker.md) is a pretty
+- [git-server-docker](/wiki/docker/jkarlos_-_git-server-docker.md) is a pretty
   basic docker-container for git.

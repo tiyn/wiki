@@ -1,6 +1,6 @@
 # gramps-project - gramps
 
-This is a [Docker](/wiki/docker.md) container for a [Gramps](../gramps.md)
+This is a [Docker](/wiki/docker.md) container for a [Gramps](/wiki/gramps.md)
 server.
 The Server consists of 2 Docker containers, one is the gramps main server - split into two
 subcontainers - and one a [redis instance](/wiki/docker/redis.md).
