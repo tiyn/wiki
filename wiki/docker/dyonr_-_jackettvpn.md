@@ -9,7 +9,7 @@ The official container and documentation was made by
 
 Create the file `rebuild.sh` and set `<username>` and `<password>` according to
 your openvpn.
-Additionally change the `LAN_NETWORK` if it differs for your local area network.
+Additionally, change the `LAN_NETWORK` if it differs for your local area network.
 Run `./rebuild.sh` afterwards to create the volumes.
 Place the openvpn certificate in the `jacket_config` docker volume inside the
 `openvpn` folder.
@@ -19,18 +19,22 @@ After that rerun `./rebuild.sh` to make update your config.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description            |
 | ------------------------- | --------------- | ---------------------- |
 | `jackett_config`          | `/config`       | storage for configs    |
 | `jackett_blackhole`       | `/blackhole`    | storage for magnets    |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `9117`         | `9117`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

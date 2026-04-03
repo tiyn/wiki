@@ -13,17 +13,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description                              |
 | -------------- | ------------------------ | -------- | ---------------------------------------- |
 | `8000`         | `8000`                   | TCP      | port to proxy the gopher site as http to |
+
 
 ### Additional
 
 There are some special variables to set.
 
+
 | Flag   | Usage                                                         |
 | ------ | ------------------------------------------------------------- |
 | `-uri` | define the gopher site to proxy (just 'domain.tld' is enough) |
+
 
 ### rebuild.sh
 

@@ -72,7 +72,7 @@ In the following example the string `string1` will be substituted by `string2` f
 rename 's/string1/string2/g' file.ext
 ```
 
-Additionally `find` can be used to recursively substitute substrings in all files inside a folder
+Additionally, `find` can be used to recursively substitute substrings in all files inside a folder
 `folder` (including subfolders).
 
 ```sh
@@ -161,7 +161,7 @@ yay -S dash
 sudo ln -sfT /bin/dash /bin/sh
 ```
 
-Afterwards create the file `/usr/share/libalpm/hooks/bash-update.hook` and fill
+Afterward, create the file `/usr/share/libalpm/hooks/bash-update.hook` and fill
 it with the following text.
 
 ```txt
@@ -229,7 +229,7 @@ find <directory> -type f -exec sed -i "s/<query>/<replacement>/g" {} \;
 ANSI-Colors can easily be used in the shell by using the control sequences as described by
 [techstop](https://techstop.github.io/bash-script-colors).
 Each color has an own sequence and can be combined to affect the background.
-Additionally the font can also be changed using these control sequences.
+Additionally, the font can also be changed using these control sequences.
 
 The following tables display these sequences.
 

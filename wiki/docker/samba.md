@@ -14,6 +14,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount    | Description                   |
 | ------------------------- | ------------------ | ----------------------------- |
 | `samba_nas`               | `/nas`             | storage for samba data        |
@@ -23,24 +24,29 @@ Set the following volumes with the -v tag.
 | `samba_etc`               | `/etc`             | etc directory of samba server |
 | `samba_log`               | `/var/log/samba`   | storage for samba logs        |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description    |
 | -------------- | ------------------------ | -------- | -------------- |
 | `139`          | `139`                    | TCP      | Samba internal |
 | `445`          | `445`                    | TCP      | Samba internal |
 
+
 ### Additional
 
 There are some special variables to set.
+
 
 | Flag                                                                      | Usage            |
 | ------------------------------------------------------------------------- | ---------------- |
 | `-u \<username;password\>(;ID;group;GID)`                                 | define user      |
 | `-w \<workgroup\>`                                                        | define workgroup |
 | `-s \<name;path\>(;browse;readonly;guest;users;admins;writelist;comment)` | define shares    |
+
 
 ### rebuild.sh
 

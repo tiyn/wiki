@@ -15,16 +15,19 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name                                      | Usage                                | Default |
 | ----------------------------------------- | ------------------------------------ | ------- |
-| `GRAMPSWEB_TREE`                          | Will create a new tree if not exists | ``      |
-| `GRAMPSWEB_CELERY_CONFIG__broker_url`     | Redis broker URL                     | ``      |
-| `GRAMPSWEB_CELERY_CONFIG__result_backend` | Redis backend URL                    | ``      |
-| `GRAMPSWEB_RATELIMIT_STORAGE_URI`         | Storage URI                          | ``      |
+| `GRAMPSWEB_TREE`                          | Will create a new tree if not exists |       |
+| `GRAMPSWEB_CELERY_CONFIG__broker_url`     | Redis broker URL                     |       |
+| `GRAMPSWEB_CELERY_CONFIG__result_backend` | Redis backend URL                    |       |
+| `GRAMPSWEB_RATELIMIT_STORAGE_URI`         | Storage URI                          |       |
+
 
 ### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
+
 
 | Outside mount/volume name | Container mount          | Description                 |
 | ------------------------- | ------------------------ | --------------------------- |
@@ -37,13 +40,16 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `gramps_media`            | `/app/media`             | storage for media           |
 | `gramps_tmp`              | `/tmp`                   | storage for temporary files |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `5000`         | `80`                     | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

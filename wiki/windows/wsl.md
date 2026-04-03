@@ -34,7 +34,7 @@ This can be done by running the following command.
 wsl.exe -l -o
 ```
 
-Afterwards install the distribution.
+Afterward, install the distribution.
 `<Distribution Name>` is the name of the distribution obtained in the previous stepa.
 
 ```powershell
@@ -54,7 +54,7 @@ For example Ubuntu file system images can be found
 wsl --import <Distribution Name> <Install Location> <Install TarFile>
 ```
 
-Afterwards the default distribution may have to be set.
+Afterward, the default distribution may have to be set.
 Once again `<DistributionName>` is the name of the distribution to make the new default.
 
 ```powershell

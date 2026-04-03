@@ -17,19 +17,23 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `9000`         | `9000`                   | TCP      | WebUI       |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount            | Description            |
 | ------------------------- | -------------------------- | ---------------------- |
 | `assets`                  | `/app/client/dist`         | storage for icons, etc |
 | `config`                  | `/config`                  | configuration data     |
 | `data`                    | `/data`                    | further data storage   |
+
 
 ### rebuild.sh
 

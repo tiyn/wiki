@@ -14,18 +14,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount           | Description                            |
 | ------------------------- | ------------------------- | -------------------------------------- |
 | `/var/run/docker.sock`    | `/var/run/docker.sock`    | connect your running docker containers |
 | `/var/lib/docker/volumes` | `/var/lib/docker/volumes` | connect running docker volumes         |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description          |
 | -------------- | ------------------------ | -------- | -------------------- |
 | `9001`         | `9001`                   | TCP      | Portainer agent port |
+
 
 ### rebuild.sh
 

@@ -31,4 +31,4 @@ When first starting LibreOffice may appear not to start.
 This is because problems with hardware acceleration can occur on some systems.
 It can starting the software in safe mode, navigate to the `Settings` by the `Tools` tab.
 Then select `LibreOffice` and `View` and remove the check in `Use hardware acceleration`.
-Afterwards LibreOffice can be closed and reopened without selecting the safe mode.
+Afterward, LibreOffice can be closed and reopened without selecting the safe mode.

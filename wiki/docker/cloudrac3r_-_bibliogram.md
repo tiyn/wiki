@@ -18,17 +18,21 @@ Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description                         |
 | ------------------------- | --------------- | ----------------------------------- |
 | `db`                      | `/app/db`       | storage for the bibliogram database |
+
 
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `10407`        | `10407`                  | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

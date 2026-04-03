@@ -15,10 +15,10 @@ This section addresses the usage of Gnirehtet.
 ## Setting Up and Running Reverse Tethering
 
 The following command can be used to setup the reverse tethering and also run it.
-For it to work the [Android](/wiki/android.md) device has to enable `USB Debugging` so Gnirehtet can automatically be
-installed (which is internally done using `adb`).
-Additionally `Use USB for` has to be set to `File Transfer` and not to
-`USB Tethering` as this would start the normal tethering process and resolving internet access from
+For it to work the [Android](/wiki/android.md) device has to enable `USB Debugging` so Gnirehtet
+can automatically be installed (which is internally done using `adb`).
+Additionally, `Use USB for` has to be set to `File Transfer` and not to `USB Tethering` as this
+would start the normal tethering process and resolving internet access from
 the [Linux](/wiki/linux.md) system to the Android device and not the other way around.
 
 The initiating of the reverse tethering can be done by using the following command.

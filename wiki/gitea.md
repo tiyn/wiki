@@ -12,7 +12,7 @@ Gitea as a [Git](/wiki/git_%28general%29.md) service consists of a [client](#cli
 
 The software can be setup via [Docker](/wiki/docker.md) with the
 [gitea image](/wiki/docker/gitea_-_gitea.md).
-Additionally to this a client is needed on the system that need access to the
+Additionally, to this a client is needed on the system that need access to the
 server software.
 
 ### Client

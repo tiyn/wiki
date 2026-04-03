@@ -8,11 +8,12 @@ The container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
 Set the following variables with the -e tag.
+
 
 | Name          | Usage                                                          | Default                                      |
 | ------------- | -------------------------------------------------------------- | -------------------------------------------- |
@@ -24,21 +25,26 @@ Set the following variables with the -e tag.
 | `ICON`        | Link the Icon of the Server                                    |                                              |
 | `MOTD`        | Set the Message of the day                                     | "A Paper Minecraft Server powered by Docker" |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description                    |
 | ------------------------- | --------------- | ------------------------------ |
 | `minecraft`               | `/data`         | location for all relevant data |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol  | Description        |
 | -------------- | ------------------------ | --------- | ------------------ |
 | `25565`        | `25565`                  | Minecraft | Port for Minecraft |
+
 
 ### rebuild.sh
 
@@ -74,7 +80,7 @@ For this set the server type by using the `-e TYPE=<type>` flag.
 Most notably this value could be `FABRIC` or `FORGE`.
 After this the mods (as `.jar` files) can be placed in the `mods` directory of the
 [Docker](/wiki/docker.md) volume.
-Afterwards run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded mods.
+Afterward, run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded mods.
 
 #### Installing Datapacks
 

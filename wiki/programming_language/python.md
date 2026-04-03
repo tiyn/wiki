@@ -49,7 +49,7 @@ aswell.
 sudo apt install tk-dev tcl-dev
 ```
 
-Afterwards the python source code can be downloaded.
+Afterward, the python source code can be downloaded.
 
 ```sh
 wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz
@@ -57,7 +57,7 @@ tar -xf Python-3.9.1.tgz
 cd Python-3.9.1
 ```
 
-Afterwards if OpenSSL should be enabled for Python uncomment all the corresponding lines in
+Afterward, if OpenSSL should be enabled for Python uncomment all the corresponding lines in
 `Modules/Setup`.
 This part of the guide is taken from a
 [StackOverflow post by Ironman](https://stackoverflow.com/questions/58309485/modulenotfounderror-no-module-named-ssl).
@@ -70,7 +70,7 @@ make
 sudo make altinstall
 ```
 
-Afterwards you can check if the Pyhton version is installed using the following command.
+Afterward, you can check if the Pyhton version is installed using the following command.
 
 ```sh
 python3.9 --version
@@ -260,12 +260,12 @@ torch.cuda.is_available()
 
 The package for [Hailo chips](/wiki/hailo.md) has to be downloaded from the
 [official website](https://hailo.ai/developer-zone/software-downloads).
-Additionally additional setup may be required as explained in the
-[Hailo article](/wiki/hailo.md#setup)
+Additionally, additional setup may be required as explained in the
+[Hailo article](/wiki/hailo.md#setup).
 
 Hailo chips can be used to run converted [TensorFlow](#tensorflow) models.
 The conversion process is explained in the
-[Hailo article](/wiki/hailo.md#preparing-tensorflow-models-for-the-ai-hat)
+[Hailo article](/wiki/hailo.md#preparing-tensorflow-models-for-the-ai-hat).
 
 To run the inference using Python on ARM boards like the
 [Raspberry Pi AI Hat +](/wiki/linux/raspberry_pi.md#ai-hat)
@@ -282,9 +282,9 @@ Tensorflos is a machine learning resource which is often used for
 
 The basic usage of TensorFlow is described in
 [the official guide](https://www.tensorflow.org/guide/keras/serialization_and_saving).
-Additionally it is noted that the dataset may have to be shuffled manually as described in a
+Additionally, it is noted that the dataset may have to be shuffled manually as described in a
 [comment by Y. Luo on StackOverflow](https://stackoverflow.com/questions/50184144/shuffle-in-the-model-fit-of-keras).
-Finally
+Finally,
 [a Medium blog post](https://medium.com/@danielonugha0/how-to-change-the-learning-rate-of-tensorflow-b5d854819050)
 describes how to easily change the learning rate.
 

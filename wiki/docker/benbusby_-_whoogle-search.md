@@ -18,17 +18,21 @@ Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount  | Description      |
 | ------------------------- | ---------------- | ---------------- |
 | `searx_config`            | `/config`        | configurations   |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `5000`         | `8000`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

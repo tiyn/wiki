@@ -22,6 +22,7 @@ Then run `./rebuild.sh`
 
 Set the following variables with the -e tag.
 
+
 | Name        | Usage           | Default |
 | ----------- | --------------- | ------- |
 | `PUID`      | UserID          |         |
@@ -30,29 +31,36 @@ Set the following variables with the -e tag.
 | `SERVERURL` | URL of server   |         |
 | `PEERS`     | Number of peers |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description             |
 | ------------------------- | --------------- | ----------------------- |
 | `wireguard`               | `/config`       | Configuration files     |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `51820`        | `51820`                  | UDP      | VPN port    |
 
+
 ### Additional
 
 There are some special variables to set.
 
+
 | Flag        | Usage                  |
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
+
 
 ### rebuild.sh
 

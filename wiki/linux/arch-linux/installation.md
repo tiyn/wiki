@@ -87,7 +87,7 @@ For this guide this partition is assumed to be `/dev/sda2`.
 ```sh
 cryptsetup -c aes-xts-plain -s 512 -y -v luksFormat /dev/sda2
 ```
-Afterwards confirm with `YES`.
+Afterward, confirm with `YES`.
 Now you can assign a passphrase.
 The passphrase has to be entered at boot to decrypt the system.
 Recovering of this passphrase is **not** possible.
@@ -125,7 +125,7 @@ Now the created filesystems will be mounted for the installation.
 Now you need a working internet connection.
 If a wireless internet connection is needed start `iwctl`, scan (`station wlan0 scan`) and connect
 to the router (`station wlan0 connect <router ssid>`).
-Afterwards the internet connection will be established.
+Afterward, the internet connection will be established.
 Exit `iwctl`.
 
 - `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager ntp`
@@ -246,7 +246,7 @@ In some cases the Arch keyring needs to be repopulated.
 This is discussed in
 [the package manager entry](/wiki/linux/package_manager/pacman_and_aur.md#error-during-updating-is-marginal-trust).
 
-Additionally if you have a NVidia Graphics Cards you should read
+Additionally, if you have a NVidia Graphics Cards you should read
 [the NVidia article](/wiki/linux/nvidia.md) too.
 
 If you are interested in automatic decryption of the dm-crypt encrypted

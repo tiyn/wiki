@@ -39,102 +39,102 @@ functionality.
 Many of them also feature public decks.
 
 - [Archidekt](https://archidekt.com/) is another popular deck building site.
-  With the option to build commander decks based on a specific commander.
-  It additionally features the display of public decks.
+    With the option to build commander decks based on a specific commander.
+    It additionally, features the display of public decks.
 - [deckbox](https://deckbox.org/) is a very clean deck builder website.
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
 - [Delver Lens](https://www.delverlab.com/) is an [Android](/wiki/android.md) application for
-  scanning cards and displaying its price.
-  Following scanning the cards can be exported to a CSV file.
+    scanning cards and displaying its price.
+    Following scanning the cards can be exported to a CSV file.
 - [Dragon Shield MTG Card Manager](https://mtg.dragonshield.com/) is a collection and deck manager
-  available both as an apple and [Android](/wiki/android.md) app and as a website.
-  It features a card scanner for easy population of the collection
+    available both as an apple and [Android](/wiki/android.md) app and as a website.
+    It features a card scanner for easy population of the collection
 - [MTG Collection Builder](https://mtgcollectionbuilder.com/) is a website to organize and analyze
-  your magic cards.
-  It was specially made for collectors rather than players.
+    your magic cards.
+    It was specially made for collectors rather than players.
 - [MTG Desktop Companion](https://www.mtgcompanion.org/) is a collection manager for MTG that
-  includes prices, stats and a deck builder, aswell as the option to import and export to most of
-  the used MTG deck formats.
-  It is free and open-source.
-  Its source code can be looked at on their
-  [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
+    includes prices, stats and a deck builder, aswell as the option to import and export to most of
+    the used MTG deck formats.
+    It is free and open-source.
+    Its source code can be looked at on their
+    [GitHub Page](https://github.com/nicho92/MtgDesktopCompanion).
 - [Moxfield](https://www.moxfield.com/) is a popular deck building site.
-  It also displays public decks.
-  If a deck is entered into Moxfield tokens that are needed to play the deck can be displayed.
+    It also displays public decks.
+    If a deck is entered into Moxfield tokens that are needed to play the deck can be displayed.
 - [MTG CSV Helper](https://stepkie.github.io/MtgCsvHelper/) is a CSV format conversion tool to
-  convert between the different formats used by collection managers.
+    convert between the different formats used by collection managers.
 
 The second group is about giving resources for building decks.
 This can be done by providing public decks or showing which decks or cards are popular in which
 format.
 
 - [CubeCobra](https://cubecobra.com/explore) is a website that is based around the creation of
-  draft cubes.
-  For booster box alternatives cassete cases can be used.
+    draft cubes.
+    For booster box alternatives cassete cases can be used.
 - [Tapped Out](https://tappedout.net/) is a website that among other things can suggest decks based
-  on owned cards.
+    on owned cards.
 - [MTGGoldFish](https://www.mtggoldfish.com/) is a website for different topics regarding MTG.
-  It features various decks including budget variants of it.
-  Additionally it lists tournaments with decks played which can be a useful resource to understand
-  the metagame.
+    It features various decks including budget variants of it.
+    Additionally, it lists tournaments with decks played which can be a useful resource to
+    understand the metagame.
 
 The following websites provide useful information on cards or rulings of MTG.
 
 - [EDHREC](https://edhrec.com/) is a website that can recommend cards based on an already existing
-  commander or improve existing commander decks.
+    commander or improve existing commander decks.
 - [Hyperlinked Magic](https://yawgatog.com/resources/magic-rules/) is a website that features a
-  hyperlinked HTML-version of MTG rules.
+    hyperlinked HTML-version of MTG rules.
 - [Scryfall](https://scryfall.com/) is a website to search and display Magic cards in specific
-  printings.
-  Scryfall can query advanced patterns using
-  [their specific syntax](https://scryfall.com/docs/syntax).
-  Among others this site can be used to check for cards that create tokens.
-  An example for this is running a search with the term `o:create o:golem` to find cards that
-  create a golem token.
-  For other advan
+    printings.
+    Scryfall can query advanced patterns using
+    [their specific syntax](https://scryfall.com/docs/syntax).
+    Among others this site can be used to check for cards that create tokens.
+    An example for this is running a search with the term `o:create o:golem` to find cards that
+    create a golem token.
+    For other advan
 - [What's in Standard?](https://whatsinstandard.com/) lists the sets that are currently legal in
-  the standard format.
+    the standard format.
 - [Magic Judges](https://chat.magicjudges.org/mtgrules/) is a live chat with judges to clarify the
-  rules.
+    rules.
 
 This group of resources is used to organize and join MTG tabletop, MTGA and MTGO tournaments.
 
 - [Melee](https://melee.gg/) is a website that allows organization and joining of MTG and MTGA
-  tournaments.
+    tournaments.
 - [Magic: The Gathering Companion](https://magic.wizards.com/de/products/companion-app) is a mobile
-  app that is officially made by Wizards.
-  It features a tool to join tabletop tournaments in licensed stores and locations.
+    app that is officially made by Wizards.
+    It features a tool to join tabletop tournaments in licensed stores and locations.
 
 The following sites are focussed on analyzing decks and strategies for MTG Arena.
 
 - [17Lands](https://www.17lands.com/faq) is a website focused on improving the draft of players in
-  MTGA.
+    MTGA.
 - [Untapped.gg](https://mtga.untapped.gg/) is a website and desktop app that analyzes MTGA decks and
-  strategies.
+    strategies.
 
 This group of resources are websites on which MTG cards and supply can be bought.
 
 - [Card Kingdom](https://www.cardkingdom.com/) is a website to shop MTG cards and supply.
-  It ships from the united states of america.
+    It ships from the united states of america.
 - [cardmarket](https://www.cardmarket.com/) is a trading post for tabletop cards based in europe.
 - [TCGPlayer](https://www.tcgplayer.com) is a trading post for tabletop cards that is used
-  world-wide.
+    world-wide.
 
 The following websites can be used to design or obtain images for proxies or print them.
 
 - [Printers Studio](https://www.printerstudio.de/machen/komplett-individualisierbare-spielkarten-geschenke.html)
-  can be used to print custom proxies.
+    can be used to print custom proxies.
 - [Card Conjurer](https://cardconjurer.onrender.com/) is a website to design custom MTG-style
-  cards.
+    cards.
 - [MPC Fill](https://mpcfill.com/) can be used to obtain front and back images for non-custom proxy
-  cards.
+    cards.
 
 The following sites sell MTGO tix and sell or rent cards.
 
 - [Cardhoarder](https://www.cardhoarder.com/) is a MTGO card selling site with renting service.
 - [Goatbots](https://www.goatbots.com) is an MTGO website that sells cards and tix.
 - [Mana Traders](https://www.manatraders.com/) is a renting service for MTGO cards, aswell as a way
-  to buy tix.
+    to buy tix.
 
 Lastly [decklist.org](https://decklist.org/) can be used to neatly print out deck lists.
 

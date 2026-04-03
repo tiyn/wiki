@@ -12,19 +12,23 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name   | Usage   | Default |
 | ------ | ------- | ------- |
 | `PUID` | UserID  |         |
 | `PGID` | GroupID |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description                                     |
 | ------------------------- | --------------- | ----------------------------------------------- |
 | `onedrive_config`         | `/config`       | configuration storage for the server connection |
 | `onedrive_doc`            | `/documents`    | storage for downloaded documents                |
+
 
 ### rebuild.sh
 

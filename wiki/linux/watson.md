@@ -6,7 +6,7 @@
 ## Setup
 
 On most Linux distributions Watson can be installed with the `watson` package.
-Additionally Watson can be installed using Pythons pip package manager.
+Additionally, Watson can be installed using Pythons pip package manager.
 The pip package is called `td-watson`.
 Alternatively it can be installed via [GitHub](https://github.com/TailorDev/Watson).
 
@@ -37,7 +37,7 @@ The tracking of the time can be stopped by running the following command.
 watson stop
 ```
 
-Afterwards the summary of the tracked time can be displayed by running the following command.
+Afterward, the summary of the tracked time can be displayed by running the following command.
 
 ```sh
 watson report
@@ -50,7 +50,7 @@ forgotten at that time.
 For this the following command can be run.
 It works similarly to starting a time frame as explained in the
 [section above](#tracking-time-and-displaying-tracked-time).
-Additionally the start and stop time are specified with the `--from` and `--to` flags.
+Additionally, the start and stop time are specified with the `--from` and `--to` flags.
 
 ```sh
 watson add --from "2018-03-20 12:00:00" --to "2018-03-20 13:00:00" programming +addfeature

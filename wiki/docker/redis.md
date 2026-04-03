@@ -8,7 +8,7 @@ To achieve this in the easiest way use a docker-compose file.
 
 ## Set-Up
 
-The redis Docker container is dependent on another container most of the time. 
+The redis Docker container is dependent on another container most of the time.
 The exact setup will be described in the regarding entry.
 Nevertheless both volumes and networks are listed in the sections below.
 These are needed most often.
@@ -18,9 +18,11 @@ These are needed most often.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount | Description          |
 | ------------------------- | --------------- | -------------------- |
 | `redis`                   | `/data`         | storage for all data |
+
 
 ### Networks
 

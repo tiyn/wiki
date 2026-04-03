@@ -12,7 +12,7 @@ Various ways to set up HandBrake can be found on
 
 On [Windows](/wiki/windows.md) and Mac the program can be started by clicking the icon.
 This way is also possible on [Linux based operating systems](/wiki/linux.md).
-Additionally the command `ghb` can be called in the [Terminal](/wiki/linux/shell.md).
+Additionally, the command `ghb` can be called in the [Terminal](/wiki/linux/shell.md).
 
 ### Presets
 

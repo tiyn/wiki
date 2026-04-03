@@ -15,6 +15,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name        | Usage                          | Default |
 | ----------- | ------------------------------ | ------- |
 | `USER_UID`  | User userid to run gitea       |         |
@@ -25,9 +26,11 @@ docker-compose file.
 | `DB_USER`   | Username for the database      |         |
 | `DB_PASSWD` | Password for the database      |         |
 
+
 ### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
+
 
 | Outside mount/volume name | Container mount    | Description                    |
 | ------------------------- | ------------------ | ------------------------------ |
@@ -35,31 +38,38 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `/etc/timezone`           | `/etc/timezone:ro` | link timezone                  |
 | `/etc/localtime`          | `/etc/localtime`   | link localtime                 |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
+
 
 | Container Port | Recommended outside port | Protocol | Description            |
 | -------------- | ------------------------ | -------- | ---------------------- |
 | `3000`         | `3000`                   | TCP      | WebUI                  |
 | `22`           | `222`                    | TCP      | ssh port of git server |
 
+
 ### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
 
+
 | Name    | Usage                 |
 | ------- | --------------------- |
 | `gitea` | connect db with gitea |
+
 
 ### Dependencies
 
 Set the following dependencies in the `depends_on:` section of the
 docker-compose file.
 
+
 | Name | Usage                |
 | ---- | -------------------- |
 | `db` | Ensure db is running |
+
 
 ### rebuild.sh
 

@@ -16,5 +16,5 @@ Alternatively most [Linux systems](/wiki/linux/package_manager.md) feature a pac
 
 Connect the phone which is to be controlled with the computer via USB.
 Make sure USB debugging is enabled in the phones setting.
-Afterwards start up scrcpy.
+Afterward, start up scrcpy.
 It is possible that debugging has to be confirmed on the phone again after starting the application.

@@ -14,6 +14,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name             | Usage                      | Default |
 | ---------------- | -------------------------- | ------- |
 | `YOURLS_DB_PASS` | database password          |         |
@@ -21,21 +22,26 @@ Set the following variables with the -e tag.
 | `YOURLS_USER`    | username for YOURLS admin  |         |
 | `YOURLS_PASS`    | password for YOURLS admin  |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description          |
 | ------------------------- | --------------- | -------------------- |
 | `yourls`                  | `/var/www/html` | YOURLS specific HTML |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description       |
 | -------------- | ------------------------ | -------- | ----------------- |
 | `80`           | `80`                     | TCP      | dns protocol port |
+
 
 ### rebuild.sh
 

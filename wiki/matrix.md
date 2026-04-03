@@ -23,8 +23,8 @@ jitsi, [a web client using a self-hosted Element server](#element-web-client) an
 
 You will need to create some [DNS](/wiki/dns.md) entries in order for synapse to
 function correctly.
-Additionally you will need 2 subdomains (this guide will assume you use the
-domain `example.com` with the subdomains `matrix` and `synapse`).
+Additionally, you will need 2 subdomains (this guide will assume you use the domain `example.com`
+with the subdomains `matrix` and `synapse`).
 
 Create the following DNS records.
 
@@ -101,7 +101,7 @@ and add the following line either set to `true` or `false`.
 enable_registration: true
 ```
 
-Additionally create the following lines.
+Additionally, create the following lines.
 
 ```
 federation_ip_range_blacklist:
@@ -127,7 +127,7 @@ If this is not the case please check your configuration.
 Create an admin user in the docker containers shell with the command:
 `register_new_matrix_user -c /data/homeserver.yaml https://synapse.example.com`
 
-Finally shut down the container using `docker-compose down` to be able to keep
+Finally, shut down the container using `docker-compose down` to be able to keep
 following the guide (this applies to any following step).
 
 ### Nginx
@@ -413,7 +413,7 @@ Change `matrix.example.com` to match the value of `realm` in `data/matrix/coturn
 Do the same for `turn_shared_secret` with the value of `static-auth-secret` in
 `data/matrix/coturn/turnserver.conf`.
 
-Finally add the following lines in the `service` section to your `docker-compose.yml`.
+Finally, add the following lines in the `service` section to your `docker-compose.yml`.
 
 ```yml
   coturn:
@@ -427,4 +427,4 @@ Finally add the following lines in the `service` section to your `docker-compose
       - "5349:5349"
 ```
 
-Afterwards if not done already restart the Matrix server and all its services.
+Afterward, if not done already restart the Matrix server and all its services.

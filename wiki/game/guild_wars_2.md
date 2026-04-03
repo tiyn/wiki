@@ -26,7 +26,7 @@ The second group provides guides and builds.
 - [Snow Crows](https://snowcrows.com/builds) is a guild that provides guides and builds that are
     especially well suited for instanced PvE content.
 
-Finally the this group provides various guides and gives information on in-game mechanics.
+Finally, the this group provides various guides and gives information on in-game mechanics.
 
 - [\[fast\] Farming Community](https://fast.farming-community.eu/) is a guild that provides many
     useful trackers for items, dailies and more.
@@ -41,7 +41,7 @@ Guild Wars 2 features a large add-on community.
 All add-ons described in this guide will assume
 [gw2-add-on-loader](#gw2-add-on-loader) is already installed.
 It has to be set up first if not already done.
-Additionally this guide assumes the usage of DX11 rendering which is enabled by
+Additionally, this guide assumes the usage of DX11 rendering which is enabled by
 default.
 Many of the following add-ons are on the
 [Approved-Addons list by gw2-addon-loader](https://github.com/gw2-addon-loader/Approved-Addons).

@@ -9,11 +9,11 @@ Notable works of Suckless are the following.
 - [slock](https://tools.suckless.org/slock/) is a screen locker
 - [st](https://st.suckless.org/) is a [terminal](/wiki/linux/system_console.md)
 - [dwl](https://codeberg.org/dwl/dwl) is a window manager similar to dwm that can be used on
-  [Wayland](/wiki/linux/wayland.md) systems.
-  For the IPC-patch [dwlmsg](https://codeberg.org/notchoc/dwlmsg) can also be used.
+    [Wayland](/wiki/linux/wayland.md) systems.
+    For the IPC-patch [dwlmsg](https://codeberg.org/notchoc/dwlmsg) can also be used.
 
-Additionally to this Suckless maintains a list of free and open-source software that is endorsed by
-Suckless.
+Additionally, to this Suckless maintains a list of free and open-source software that is endorsed
+by Suckless.
 This list can be found on [Suckless' Website](https://suckless.org/rocks/).
 
 ## Setup
@@ -28,22 +28,21 @@ Expressions in `<>` may need replacement.
 - Download the default version of the suckless program you want to patch
 - Add and commit all the files in the `base` branch
 - Clean the master branch
-with `make clean & rm -f config.h & git reset --hard origin/base`
+    with `make clean & rm -f config.h & git reset --hard origin/base`
 - Apply patches (this has to be done only once for each branch (except updates))
   - Create and switch to a new branch for the patch with `git branch <feature>`
   - Download the `.diff` file of the according feature into your directory
   - Apply the patch to the current directory with `git apply <feature>.diff`
   - Add and commit all the files in the `<feature>` branch
 - Merge all branches into master branch (sometimes you can skip already merged
-ones)
+    ones)
   - Merge each branch (except the new feature) into master with `git merge <feature>`
     - (maybe you have to manually merge some errors)
 - If you have a `config` branch merge `config` into `master` before adding the
 new `feature`
-- Finally update the `config` branch
+- Finally, update the `config` branch
   - If not created already create a `config` branch from the `base` branch
-  - Get the `config.def.h` of `master` into `config` with
-  `git checkout master config.def.h`
+  - Get the `config.def.h` of `master` into `config` with `git checkout master config.def.h`
 
 ## Troubleshooting
 
@@ -51,12 +50,10 @@ This section addresses various errors that can happen when using suckless progra
 
 ### Suckless Program Crashes Or Struggles With Colored Emojis
 
-Suckless programs  especially `st` and `dmenu` can not display colored
-emojis.
+Suckless programs  especially `st` and `dmenu` can not display colored emojis.
 This is because of problems with libxft.
 libxft is the client side font rendering library to display anti-aliased text.
-To change this [libxft-bgra](https://github.com/uditkarode/libxft-bgra) needs
-to be installed.
+To change this [libxft-bgra](https://github.com/uditkarode/libxft-bgra) needs to be installed.
 This is a patched version especially for running with the suckless programs.
 
 ### Display Manager Problems with Full Screen Windows
@@ -65,6 +62,6 @@ Using `dwm` or its [Wayland](/wiki/linux/wayland.md) counterpart `dwl` there may
 with full screen programs.
 Some of these programs (especially [Steam](/wiki/game/steam.md) [Games](/wiki/game.md)) might
 apparently freeze.
-However, this may be not the case as they may be only displaying a freeze frame.
+However, this may be not the case as they may be only displaying a freeze-frame.
 This can sometimes be fixed by navigating out of the window managers full screen, then making it a
 floating window and then setting it to be full screen again.

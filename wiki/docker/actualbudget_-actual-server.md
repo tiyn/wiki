@@ -15,17 +15,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
 | `5006`         | `5006`                   | TCP       | WebUI         |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description        |
 | ------------------------- | --------------- | ------------------ |
 | `actual`                  | `/data`         | Actual Budget data |
+
 
 ### rebuild.sh
 

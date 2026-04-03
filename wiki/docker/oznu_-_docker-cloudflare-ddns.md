@@ -14,11 +14,13 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Variable name | Description                                            |
 | ------------- | ------------------------------------------------------ |
 | `API_KEY=`    | append your API key that you retrieved from cloudflare |
 | `ZONE=`       | append your domain (for example `main.com`)            |
 | `SUBDOMAIN`   | append your subdomain (for example `dynamic`)          |
+
 
 ### rebuild.sh
 

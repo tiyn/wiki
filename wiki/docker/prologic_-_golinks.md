@@ -14,17 +14,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description                |
 | ------------------------- | --------------- | -------------------------- |
 | `golinks`                 | `/search.db`    | database with all commands |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8000`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

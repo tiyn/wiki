@@ -14,19 +14,23 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `7396`         | `7396`                   | TCP      | WebUI       |
 
+
 ### Additional
 
 There are some special variables to set.
+
 
 | Flag      | Usage                                 |
 | --------- | ------------------------------------- |
 | `--user`  | set your username                     |
 | `--power` | set the default power to fold at home |
 | `--team`  | set your teamid to contribute points  |
+
 
 ### rebuild.sh
 

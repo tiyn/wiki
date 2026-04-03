@@ -15,17 +15,21 @@ After that rerun `./rebuild.sh` to make update your config.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description            |
 | ------------------------- | --------------- | ---------------------- |
 | `homer`                   | `/www/assets`   | storage for icons, etc |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

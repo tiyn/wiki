@@ -19,17 +19,21 @@ Set the variables, volumes and ports according and run the `rebuild.sh`.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount     | Description         |
 | ------------------------- | ------------------- | ------------------- |
 | `synctube`                | `/usr/src/app/user` | Configuration files |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `4200`         | `4200`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

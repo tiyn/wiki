@@ -7,7 +7,7 @@
 
 On [Android](/wiki/android.md) FairEmail is available on [F-Droid](/wiki/android/f-droid.md) in a
 package called [FairEmail](https://f-droid.org/en/packages/eu.faircode.email/).
-Additionally it is available on the[Google Play store](/wiki/android.md#app-store) in a package
+Additionally, it is available on the[Google Play store](/wiki/android.md#app-store) in a package
 called [FairEmail](https://play.google.com/store/apps/details?id=eu.faircode.email&hl=de).
 
 ## Usage
@@ -28,6 +28,6 @@ After this is done outgoing mails can be encrypted by signed or encrypted by sel
 
 Decryption can be done by clicking on the padlock when inside an email that is encrypted.
 
-Additionally in the settings under `Encryption` the signing (`Sign by default`), encryption
+Additionally, in the settings under `Encryption` the signing (`Sign by default`), encryption
 (`Sign and encrypt by default`), decryption (`Auomatically decrypt messages`) and validation
 (`Automatically verify signed messages`) can be set to occurr automatically.

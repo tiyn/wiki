@@ -28,7 +28,7 @@ An example link will look like the following.
 http://192.168.178.66:8080
 ```
 
-Additionally it can be piped into [OBS](/wiki/obs.md) to edit it or into
+Additionally, it can be piped into [OBS](/wiki/obs.md) to edit it or into
 [ffmpeg](/wiki/linux/ffmpeg.md) on [Linux](/wiki/linux.md) systems to create a virtual webcam
 device as explained in the
 [ffmpeg entry](/wiki/linux/ffmpeg.md#create-a-virtual-camera-using-an-ip-video-stream).

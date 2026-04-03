@@ -15,6 +15,8 @@ With `stop.sh` you can stop it.
 
 Set the following variables with the -e tag.
 
+
+
 | Name              | Usage                                       | Default |
 | ----------------- | ------------------------------------------- | ------- |
 | `QUERYPORT`       | port for query mordhau                      |         |
@@ -30,23 +32,28 @@ Set the following variables with the -e tag.
 | `SERVER_PASSWORD` | set a password                              |         |
 | `ADMIN_PASSWORD`  | set an admin password                       |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount        | Description                              |
 | ------------------------- | ---------------------- | ---------------------------------------- |
 | `mordhau`                 | `/serverdata/mordhau`  | storage for mordhau server relevant data |
 | `mordhau_steamcmd`        | `/serverdata/steamcmd` | storage for steam related data           |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------------- |
 | `7777` | `7777` | UDP | mordhau internal |
 | `15000` | `15000` | UDP | mordhau internal |
 | `27015` | `27015` | UDP | mordhau internal |
+
 
 ### start.sh
 

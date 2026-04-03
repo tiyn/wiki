@@ -59,7 +59,7 @@ An explanation of this was given by
 [aergistal on Stack Overflow](https://stackoverflow.com/questions/29082422/ffmpeg-video-compression-specific-file-size).
 This can easily be done with the calculation `bitrate = target size / duration`
 in Bits/Second.
-Afterwards the encoding can be done by using Two-Pass Encoding as explained in
+Afterward, the encoding can be done by using Two-Pass Encoding as explained in
 [a previous section](#two-pass-encoding).
 Note that the bitrate for videos is split amongst a bitrate for video and a
 bitrate for audio.

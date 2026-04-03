@@ -23,6 +23,8 @@ There are different Minecraft Clients available:
 
 ### Usage
 
+This section addresses the usage of Minecraft.
+
 #### Link Minecraft to a Subdomain
 
 To link Minecraft to one of your subdomains you need to add a [DNS](/wiki/dns.md)
@@ -96,23 +98,23 @@ in the corresponding sections.
 The following resources have been used to find and select modifications and resource packs.
 
 - [The UsefulMods list](https://github.com/TheUsefulLists/UsefulMods/blob/main/Performance/Performance121.md)
-  is a list of useful performance mods for the 1.21.x.
-  Newer and older versions could be found in the file browser on the left side of the website.
+    is a list of useful performance mods for the 1.21.x.
+    Newer and older versions could be found in the file browser on the left side of the website.
 - [Vanilla Tweaks](https://vanillatweaks.net/) is a website that provides various resource packs
-  to improve the quality of life in minecraft.
-  Goal of these is a slight change of the vanilla experience.
+    to improve the quality of life in minecraft.
+    Goal of these is a slight change of the vanilla experience.
 
 The first category that will be discussed are the server mods.
 The following changes are recommended to install server-side to improve performance.
 
 - "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk
-  management engine.
+    management engine.
 - "Clumps" is a mod that groups together experience orbs that are close to another.
 - "Get It Together, Drops!" is a mod that groups together items that are close to another.
 - "FerriteCore" is a mod that reduces memory usage.
 - "Krypton" is a mod that optimizes minecrafts networking stack.
 - "Let Me Despawn" is a mod that enables mods with a picked up or equipped item to despawn to
-  reduce entity lag.
+    reduce entity lag.
 - "Lithium" is a mod that introduces various general optimizations.
 - "ModernFix" is a mod that introduces more general optimizations.
 - "Noisium" is a mod that speeds up the world generation function.
@@ -124,49 +126,49 @@ gameplay.
 The following changes are recommended to install on the server for gameplay reasons.
 
 - "Anti Enderman Grief" is a datapack that stops the endermen from picking up and setting down any
-  blocks.
+    blocks.
 - "Audarki Cart Engine (Fast Minecarts)" is a mod that enables the operators of a server to change
-  the minecarts speed.
-  This can be done for different types of minecarts (player, non-player, etc).
+    the minecarts speed.
+    This can be done for different types of minecarts (player, non-player, etc).
 - "Sit!" is a mod that enables players to sit on specific blocks.
-  The key to use can be changed on a per user basis by installing the mod client-side.
+    The key to use can be changed on a per user basis by installing the mod client-side.
 - "Cycle Paintings" is a mod that lets player cycle through the motifs of a painting by
-  right-clicking it with another painting.
+    right-clicking it with another painting.
 - "NetherPortalFix" is a mod that fixes some behaviour for Nether Portals that overlap.
 - "Beautified Chat (Server)" is a mod that changes style and color of the chat.
 - "AfkPlus" is a mod that adds AFK functionality that allows ignoring AFK players in the sleep
-  percentage.
+    percentage.
 - "Scaffolding Drops Nearby" is a mod that makes all scaffolding be dropped on the place of the
-  broken scaffolding.
+    broken scaffolding.
 - "Glowing Eyeblossom" is a mod that makes eyeblossoms glow.
 - "Glowing Torchflower" is a mod that makes torchflowers glow.
 
-Finally for the server-side mods the following ones are focussed on graphical changes.
+Finally, for the server-side mods the following ones are focussed on graphical changes.
 
 - "Skin Shuffle" is a mod that allows players to instantly change the skin they use.
-  Please note that the same mod needs to be installed on the client too.
+    Please note that the same mod needs to be installed on the client too.
 
 The client-side mods are now being discussed.
 The following modifications are recommended client-side performance mods.
 
 - "Concurrent Chunk Management Engine" is a mod that introduces a concurrently working chunk 
-  management engine.
+    management engine.
 - "Dynamic FPS" is a mod that reduces the FPS when the program is running in the background. 
 - "EntityCulling" is a mod that disables the rendering of hidden entities.
 - "FerriteCore" is a mod that reduces memory usage.
 - "ImmediatelyFast" is a mod that optimizes rendering.
 - "Lithium" is a mod that introduces various general optimizations.
 - "Sodium" is a mod that optimizes the rendering engine. This is a common and with newer versions more popular
-  alternative to OptiFine.
+    alternative to OptiFine.
 - "Sodium Extra" is a mod that introduces an extension to Sodiums optimizations.
 - "Reese's Sodium Options" is a (sub-)mod for Sodium that adds functions to the video options like
-  a search bar.
-  A similar mod to this is "Xander's Sodium Options".
+    a search bar.
+    A similar mod to this is "Xander's Sodium Options".
 - "Xander's Sodium Options" is a (sub-)mod  for Sodium that adds functions to the video options
-  like a search bar.
-  Additionally it changes the look of the video options to be more in line with Minecrafts other
-  options.
-  A similar mod to this is "Reese's Sodium Options".
+    like a search bar.
+    Additionally, it changes the look of the video options to be more in line with Minecrafts other
+    options.
+    A similar mod to this is "Reese's Sodium Options".
 - "More Culling" is a mod that introduces more culling.
 
 The following are recommended client-side graphical mods.
@@ -174,104 +176,104 @@ The following are recommended client-side graphical mods.
 - "3d-Skin-Layers" is a mod that makes the outer layers of skins look more 3-dimensional.
 - "Blur+" is a mod that adds blur to the background when opening a chest.
 - "Bobby" is a mod that caches chunks to increase the render distance beyond the maximum server
-  distance of servers.
+    distance of servers.
 - "Chat Heads" is a mod that adds an image of the players head to chat messages.
 - "Dark Loading Screen" is a mod that changes the mojang loading screen into dark mode.
 - "Make Bubbles Pop" is a mod that lets water bubbles - like the ones above soulsand - pop at the
-  surface.
+    surface.
 - "Visuality" is a mod that adds various particles to entities.
 - "Better Hoppers" is a resource pack that adds arrows to hoppers.
 - "Blobs Enchant Icons" is a resource pack that adds small icons to the tooltip of enchanted
-  icons.
+    icons.
 - "Consistent Blank Decorated Pot" from Vanilla Tweaks is a resource pack that fixes the decorated
-  pot skin to use the decoration on all sides.
+    pot skin to use the decoration on all sides.
 - "Consistent Buckets" from Vanilla Tweaks is a resource pack that fixes the bucket icon to be in
-  line for filled and empty buckets.
+    line for filled and empty buckets.
 - "Directional Dispensers" from Vanilla Tweaks is a resource pack that adds arrows to dispensers.
 - "Directional Observers" from Vanilla Tweaks is a resource pack that adds arrows to observers.
 - "Double Slab Fix" from Vanilla Tweaks is a resource pack that fixes the double slabs look to
-  look like two slabs in contrast to a normal block.
+    look like two slabs in contrast to a normal block.
 - "Even Better Enchants" is a resource pack that changes the look of enchanted books to be more
-  unique and easily recognizable.
+    unique and easily recognizable.
 - "Groovy Levers" from Vanilla Tweaks is a resource pack that adds a groove to indicate the state
-  to levers.
+    to levers.
 - "Lower Shield" from Vanilla Tweaks is a resource pack that lowers the shield to increase the
-  players vision.
+    players vision.
 - "Mob Crates" is a resource pack that changes the icon of spawn eggs.
 - "Nautilus 3D" is a resource pack that completely retextures all blocks in the game.
 - "No More Christmas Chests" is a resource pack that disables the christmas chests.
 - "No Java Subtitle" from Vanilla Tweaks is a resource pack that hides the Java Version-Subtitle
-  in the title screen.
+    in the title screen.
 - "Pumpkin or Melon" is a resource pack that makes the stem of melons and pumpkins easily
-  distinguishable.
+    distinguishable.
 - "Redstone Power Levels" from Vanilla Tweaks is a resource pack that displays the level of
-  redstone signal on the dust.
+    redstone signal on the dust.
 - "Rethoughted Infested Stones" is a resource pack that slightly changes the skin of infested
-  stones.
+    stones.
 - "Slightly Improved Font" is a resource pack that makes the font a bit smoother.
 - "Sticky Piston Sides" is a resource pack that makes the slime on sticky pistons visible from the
-  side.
+    side.
 - "Subtle Suspicious Sand and Gravel" is a resource pack that slightly changes the skin of
-  suspicious sand and gravel.
+    suspicious sand and gravel.
 - "White Enchantment Glint" from Vanilla Tweaks is a resource pack that changes the default
-  enchantment glint to a white one.
+    enchantment glint to a white one.
 - "Alternative Bedrock" from Vanilla Tweaks is a resource pack that changes the look of bedrock.
 - "Circular Log Tops" from Vanilla Tweaks is a resource pack that changes the look of logs to be
-  more circular.
+    more circular.
 - "Golden Crown" from Vanilla Tweaks is a resource pack that changes the look of golden helmets to
-  crowns.
+    crowns.
 - "Moss Carpet Overhang" from Vanilla Tweaks is a resource pack that changes the look of moss
-  carpets slightly so that they overhang a bit on the sides.
+    carpets slightly so that they overhang a bit on the sides.
 - "Skin Shuffle" is a mod that allows you to change your skin in-game.
-  Please note that for this mod to work on servers the same mod needs to be installed on the server
-  too, otherwise you will need to log out and reconnect.
+    Please note that for this mod to work on servers the same mod needs to be installed on the server
+    too, otherwise you will need to log out and reconnect.
 - "Visible Powdered Snow" slightly changes the texture of powdered snow to distinguish between it
-  and normal snow.
+    and normal snow.
 - "Variants-CIT" is a mod that allows to change the look of variants of the same item like potions
-  or enchanted books.
-  This mod needs corresponding resource packs that can be found on the mod page to download.
+    or enchanted books.
+    This mod needs corresponding resource packs that can be found on the mod page to download.
 - "3D Crops Revamped" is a resource pack that changes the look of crops to be more 3 dimensional.
-  It is similar to "Florescent" but focusses only on crops.
+    It is similar to "Florescent" but focusses only on crops.
 - "Florescent" is a resource pack that changes the look of flowers, crops and mushrooms to be more
-  3 dimensional.
-  It is similar to "3D Crops Revamped" which only includes crops.
+    3 dimensional.
+    It is similar to "3D Crops Revamped" which only includes crops.
 - "Continuity" is a mod that enables connected textures like glass without borders and more.
 - "Better Statistics Screen" is a mod that changes the look and feel of the statistics screen to
-  make it more intuitive.
+    make it more intuitive.
 - "Remove Reloading Screen" is a mod that removes the loading screen and instead display only the
-  additional loading bar.
+    additional loading bar.
 - "More Heart Types" is a mod that changes the heart style based on the type of damage the player
-  is taking.
+    is taking.
 - "Endless End Rods" from Vanilla Tweaks is a resource pack that removes the base off of end rods.
 - "Brighter Nether" from Vanilla Tweaks is a resource pack that increases the brightness of the
-  nether blocks.
+    nether blocks.
 - "Variated Villagers" from Vanilla Tweaks is a resource pack that changes the skin of villagers
-  depending on the biome.
+    depending on the biome.
 - "Quieter Villagers" from Vanilla Tweaks is a resource pack that sets the volume of villagers
-  much lower.
+    much lower.
 - "Quieter Cows" from Vanilla Tweaks is a resource pack that sets the volume of cows much lower.
 - "Quieter chicken" from Vanilla Tweaks is a resource pack that sets the volume of chicken much
-  lower.
+    lower.
 - "Clear Banner Patterns" from Vanilla Tweaks is a resource pack that changes the appearance of
-  banner patterns to be more clear.
+    banner patterns to be more clear.
 - "Music Disc Redstone Level Preview" from Vanilla Tweaks is a resource pack that displays the
-  redstone level of a music disc in game.
+    redstone level of a music disc in game.
 - "Rename 'Stem' to 'Log'" from Vanilla Tweaks is a resource pack that changes the Nether woods to
-  use 'Stem' instead of 'Log'.
+    use 'Stem' instead of 'Log'.
 - "Icons" is a resource pack that adds icons into the menu and game.
-  Additionally "Icons Advertisement Removal" removes the logo of the "Icons" resource pack.
+    Additionally, "Icons Advertisement Removal" removes the logo of the "Icons" resource pack.
 - "Hoffen's Minimal Armor" is a resource pack that minimizes the look of armor.
 - "Vertical Nuggets" is a resource pack that flips all nuggets to be vertical.
 - "Colorful Canines" is a resource pack that makes dog armor more colorful.
 - "Colorful Sheared Sheep" is a resource pack that makes the color of sheep wool visible even
-  after the shearing.
+    after the shearing.
 - "Real Arrrow Tip" is a resource pack that makes the look of arrows correct ingame.
 
 The following are recommended client-side audio mods.
 
 - "No Cave Ambience" is a resource pack that disables the ambience sounds in caves.
 - "Quieter Dispensers" from Vanilla Tweaks is a resource pack that reduces the volume of
-  dispensers.
+    dispensers.
 - "Quieter Minecarts" from Vanilla Tweaks is a resource pack that reduces the volume of minecarts.
 - "Quieter Pistons" from Vanilla Tweaks is a resource pack that reduces the volume of pistons.
 
@@ -281,37 +283,37 @@ The following are recommended client-side HUD and other UI modifications
 - "BetterF3" is a mod that makes the F3-menu more customizable and more easily readable.
 - "Bundle Inventory" is a mod that improves the usability of bundles.
 - "Durability Tooltip" is a mod that adds a durability number to the tooltip of items.
-  It is similar to "Durability Plus" but doesn't feature color.
+    It is similar to "Durability Plus" but doesn't feature color.
 - "Durability Plus" is a mod that shows the durability as a number.
-  It is similar to "Durability Tooltip" but has color.
+    It is similar to "Durability Tooltip" but has color.
 - "FPS Display" is a mod that displays the FPS on the screen.
-  When using "Sodium" this mod is not needed as it adds the same functionality.
+    When using "Sodium" this mod is not needed as it adds the same functionality.
 - "Inventory Profiles Next" is a mod that adds inventory profiles and allows to lock specific item
-  slots.
-  It also replaces placed blocks in the inventory or replaces used tools.
+    slots.
+    It also replaces placed blocks in the inventory or replaces used tools.
 - "MiniHUD" is a mod that adds the possibility to show various information on screen or render
-  chunks, light levels, etc in game.
+    chunks, light levels, etc in game.
 - "Show Durability" is a mod that shows the durability as a number additionally to the bar.
-  It is similar to "Till It Breaks" but is more lightweight and has less options.
+    It is similar to "Till It Breaks" but is more lightweight and has less options.
 - "Till It Breaks" is a mod that shows the durability as a number.
-  It is similar to "Show Durability" but has more features like color, the displaying of the number
-  of arrows or the option to hide of the durability bar.
+    It is similar to "Show Durability" but has more features like color, the displaying of the number
+    of arrows or the option to hide of the durability bar.
 - "Shulker Box Tooltip" is a mod that more easily shows the contents of a shulker box.
 - "Simple armor hud" is a mod that adds a HUD to show the durability and type of armor that the
-  player wears.
+    player wears.
 - "Status Effect Bars" is a mod that adds status effect bars to the screen.
 - "Better Boss Bars" is a resource pack that improves the look of boss bars.
 - "NH-Just a numbered hotbar" is a resource pack that shows numbers on the hotbar.
 - "Boss Crosshair" is a collection of resource packs that changes the look of the crosshair.
 - "GUI Perfected" is a resource pack that changes the look of the buttons aswell as crafting
-  tables, anvils and more to be more unique.
-  It is similar to "Colorful Containers GUI" but doesn't include chests, etc.
+    tables, anvils and more to be more unique.
+    It is similar to "Colorful Containers GUI" but doesn't include chests, etc.
 - "Colorful Containers GUI" is a resource pack that changes the look of the buttons aswell as crafting
-  tables, anvils and more to be more unique.
-  This also has a dark mode named "Colourful Containers Dark Mode GUI".
-  It is similar to "GUI Perfected" but also includes chests, etc.
+    tables, anvils and more to be more unique.
+    This also has a dark mode named "Colourful Containers Dark Mode GUI".
+    It is similar to "GUI Perfected" but also includes chests, etc.
 - "Scribble" is a mod that makes editing books easier by adding buttons for color, bold font and
-  more.
+    more.
 - "Chat Patches" is a mod that extends the chat history and adds some more tweaks.
 - "Armor Chroma for Fabric" is a resource pack that shows the type of armor in the bar.
 - "Colorful Ping" is a resource pack that shows the ping symbol in color.
@@ -322,7 +324,7 @@ Please note that these can possibly lead to a ban on a server depending on the p
 that server.
 
 - "Bridging Mod" is a mod that allows to place blocks under, next to and above a block despite not
-  seeing this side of the block.
+    seeing this side of the block.
 - "Freecam" is a mod that allows to move the cam freely similar to the spectator mode.
 - "Fullbright" is a mod that increases brightness at night or in caves.
 - "Mob Health Indicators" is a mod that displays the health of mobs above their head.
@@ -330,10 +332,10 @@ that server.
 - "Xaero's Minimap" is a mod that adds a minimap to the screen.
 - "Xaero's World Map" is a mod that adds a map to the game that can be viewed at any time.
 - "Brewing Guide" from Vanilla Tweaks is a resource pack that adds an easy brewing guide to the UI
-  of the brewing stand.
-  It is similar to "GUIdes" but is only made for brewing.
+    of the brewing stand.
+    It is similar to "GUIdes" but is only made for brewing.
 - "GUIdes" is a mod resource similar to "Brewing Guide" that adds guides to many menus like
-  brewing menus and more.
-  It is similar to "Brewing Guid" and "Smelting Guide" but is adds guides for more tools.
+    brewing menus and more.
+    It is similar to "Brewing Guid" and "Smelting Guide" but is adds guides for more tools.
 - "Smelting Guide" is a resource pack that adds a guide to all types of furnaces that shows the
-  usability of items as fuel.
+    usability of items as fuel.

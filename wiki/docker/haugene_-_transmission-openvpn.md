@@ -17,18 +17,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name                | Usage                       | Default |
 | ------------------- | --------------------------- | ------- |
-| `OPENVPN_PROVIDER`  | Provider for OpenVPN        | ` `     |
-| `OPENVPN_USERNAME`  | Username for OpenVPN        | ` `     |
-| `OPENVPN_PASSWORD`  | Password for OpenVPN        | ` `     |
-| `LOCAL_NETWORK`     | Subnet of the local network | ` `     |
-| `CREATE_TUN_DEVICE` | Use a tunnel device         | ` `     |
-| `WEBPROXY_ENABLES`  | Use a webproxy              | ` `     |
+| `OPENVPN_PROVIDER`  | Provider for OpenVPN        |      |
+| `OPENVPN_USERNAME`  | Username for OpenVPN        |      |
+| `OPENVPN_PASSWORD`  | Password for OpenVPN        |      |
+| `LOCAL_NETWORK`     | Subnet of the local network |      |
+| `CREATE_TUN_DEVICE` | Use a tunnel device         |      |
+| `WEBPROXY_ENABLES`  | Use a webproxy              |      |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description             |
 | ------------------------- | --------------- | ----------------------- |
@@ -36,13 +39,16 @@ Set the following volumes with the -v tag.
 | `transmission data`       | `/data`         | Storage for data        |
 | `/etc/localtime`          | `/etc/localtime:ro` | Link to the systemtime  |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `9091`         | `9091`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

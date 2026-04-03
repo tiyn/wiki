@@ -20,31 +20,37 @@ docker run -v openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp:
 docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
 ```
 
-Afterwards run `./rebuild.sh`.
+Afterward, run `./rebuild.sh`.
 
 ### Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description              |
 | ------------------------- | --------------- | ------------------------ |
 | `ovpn`                    | `/etc/openvpn`  | storage for openvpn data |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description  |
 | -------------- | ------------------------ | -------- | ------------ |
 | `1194`         | `1194`                   | UDP      | openvpn port |
+
 
 ### Additional
 
 There are some special variables to set.
 
+
 | Flag        | Usage                  |
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
+
 
 ### rebuild.sh
 

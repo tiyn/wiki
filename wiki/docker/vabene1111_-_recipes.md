@@ -19,18 +19,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8083`         | `8080`                   | TCP      | WebUI       |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount            | Description              |
 | ------------------------- | -------------------------- | ------------------------ |
 | `staticfiles`             | `/opt/recipes/staticfiles` | storage for static files |
 | `mediafiles`              | `/opt/recipes/mediafiles`  | storage for media files  |
+
 
 ### rebuild.sh
 

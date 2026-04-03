@@ -7,7 +7,7 @@ It is available for both [X](/wiki/linux/x_window_system.md) and Wayland.
 ## Setup
 
 On most linux distributions LightDM can be installed with the `lightdm` package.
-Additionally `lightdm-gtk-greeter` and `xorg-server-xephyr` are recommended.
+Additionally, `lightdm-gtk-greeter` and `xorg-server-xephyr` are recommended.
 This setup will work with [LightDM-GTK-Greeter](#lightdm-gtk-greeter) which is the default greeter. 
 If another greeter is to be chosen `lightdm-gtk-greeter` does not have to be installed, but an
 alternative for it.
@@ -37,7 +37,7 @@ lightdm --test-mode --debug
 systemctl start lightdm.service
 ```
 
-Finally the [SystemD](/wiki/linux/systemd.md) lightdm service needs to be enabled and reboot the
+Finally, the [SystemD](/wiki/linux/systemd.md) lightdm service needs to be enabled and reboot the
 system.
 
 ```sh 

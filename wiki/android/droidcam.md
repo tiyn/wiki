@@ -29,6 +29,6 @@ program.
 After pressing `Connect` the link will be established.
 The [video feed](/wiki/webcam.md) can then be used in other programs such as Discord or
 [Matrix](/wiki/matrix.md).
-Additionally it can be piped into [OBS](/wiki/obs.md) to edit it more or create a scene.
+Additionally, it can be piped into [OBS](/wiki/obs.md) to edit it more or create a scene.
 Despite the option the separate app [DroidCam OBS](https://www.dev47apps.com/obs/) is not
 necessarily needed.

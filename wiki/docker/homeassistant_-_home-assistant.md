@@ -14,18 +14,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description                     |
 | ------------------------- | --------------- | ------------------------------- |
 | `homeassistant_data`      | `/config`       | configuration for devices, etc  |
+
 
 ### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name                  | Usage                       | Default                 |
 | --------------------- | --------------------------- | ----------------------- |
-| `TZ`                  | specify the timezone        | ``                      |
+| `TZ`                  | specify the timezone        |                       |
+
 
 ### Additional
 

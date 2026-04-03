@@ -58,7 +58,7 @@ On Ubuntu systems the repository first has to be added by running the following 
 add-apt-repository -y ppa:flacon
 ```
 
-Afterwards `flacon` can be installed like a normal package.
+Afterward, `flacon` can be installed like a normal package.
 
 ## Troubleshooting
 

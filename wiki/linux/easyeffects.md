@@ -43,7 +43,7 @@ Run the following command to edit the configuration file for the newly created E
 systemctl --user edit --force -full easyeffects.service
 ```
 
-Afterward set the contents of this file to the following.
+Afterward, set the contents of this file to the following.
 Due to EasyEffect working together with [Pipewire and Wireplumber](/wiki/linux/pipewire.md) some
 precautions have to be taken to start it before these two.
 

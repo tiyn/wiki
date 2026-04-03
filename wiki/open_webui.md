@@ -8,7 +8,7 @@ allows different workflows and even offline operation.
 The software can be setup via [Docker](/wiki/docker.md) with the
 [open-webui image](/wiki/docker/open-webui_-_open-webui.md).
 
-Additionally a provider for the artificial intelligence is needed.
+Additionally, a provider for the artificial intelligence is needed.
 This can be done by using Ollama which can be setup via docker with the
 [ollama image](/wiki/docker/ollama_-_ollama.md).
 When using this option the address and port for Ollama has to be set in the admin settings of
@@ -32,7 +32,7 @@ list available networks.
 ollama list
 ```
 
-Afterwards a model can be selected and pulled by using the following command. `<model>` is the name
+Afterward, a model can be selected and pulled by using the following command. `<model>` is the name
 of the model obtained in the previous step (for example `deepseek-r1`).
 
 ```sh 

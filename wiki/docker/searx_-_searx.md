@@ -14,18 +14,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount  | Description      |
 | ------------------------- | ---------------- | ---------------- |
 | `searx_etc`               | `/etc/searx`     | storage for etc  |
 | `searx_log`               | `/var/log/uwsgi` | storage for logs |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

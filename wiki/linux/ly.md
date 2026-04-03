@@ -17,7 +17,7 @@ This can be done by using one or both of the following commands.
 systemctl start ly.service
 ```
 
-Finally the [SystemD](/wiki/linux/systemd.md) Ly service needs to be enabled and reboot the
+Finally, the [SystemD](/wiki/linux/systemd.md) Ly service needs to be enabled and reboot the
 system.
 
 ```sh 

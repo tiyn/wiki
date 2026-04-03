@@ -15,17 +15,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount | Description                          |
 | ------------------------- | --------------- | ------------------------------------ |
 | `downloads`               | `/downloads`    | folder to download data to           |
+
 
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8881`         | `8081`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

@@ -21,6 +21,7 @@ Set the variables, volumes and ports according and run the `rebuild.sh`.
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name                   | Usage                                                      | Default |
 | ---------------------- | ---------------------------------------------------------- | ------- |
 | `channel_threads`      | numer of threads to use for refreshing channels            | `1`     |
@@ -38,13 +39,16 @@ docker-compose file.
 | `popular_enabled`      | enable the popular section                                 | `true`  |
 | `registration_enabled` | enable registration for new users                          | `true`  |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `3000`         | `3000`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

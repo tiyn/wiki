@@ -24,18 +24,22 @@ The environment variables are set via the `.env` file and listed in the
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
 | `2283`         | `3001`                   | TCP       | WebUI         |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount       | Description   |
 | ------------------------- | --------------------- | ------------- |
 | `immich_library`          | `/usr/src/app/upload` | Library       |
 | `/etc/timezone`           | `/etc/timezone:ro`    | Timezone      |
+
 
 ### rebuild.sh
 

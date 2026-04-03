@@ -7,7 +7,7 @@
 
 yuzu can be installed on different systems, a list for this can be found on
 the [yuzu website](https://yuzu-emu.org/downloads/#windows).
-Additionally it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
+Additionally, it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
 package is called `org.yuzu_emu.yuzu`.
 
 After installation keys need to be added.

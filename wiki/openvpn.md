@@ -10,7 +10,7 @@ In the following sections the different set ups of OpenVPN usages are described.
 
 The software can be set up via [Docker](/wiki/docker.md) with the
 [kylemanna image](/wiki/docker/kylemanna_-_openvpn.md).
-Additionally to this a client is needed on the system that need access to the
+Additionally, to this a client is needed on the system that need access to the
 server software.
 
 ### Client

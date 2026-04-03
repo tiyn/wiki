@@ -16,15 +16,18 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name   | Usage                        | Default |
 | ------ | ---------------------------- | ------- |
 | `PUID` | Userid to run the container  |         |
 | `PGID` | Groupid to run the container |         |
 | `TZ`   | specify the timezone         |         |
 
+
 ### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
+
 
 | Outside mount/volume name | Container mount | Description                          |
 | ------------------------- | --------------- | ------------------------------------ |
@@ -32,6 +35,7 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `media_movies`            | `/data/movies`  | storage for movies                   |
 | `media_tvshows`           | `/data/tvshows` | storage for tvshows                  |
 | `transcode`               | `/transcode`    | tmp storage to transcode             |
+
 
 Because it is useful to have the possibility to use the `media_movies` and
 `media_tvshows` in multiple containers,
@@ -44,9 +48,11 @@ To use the rebuild the volumes have to exist before creating the container
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8096`         | `8096`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

@@ -18,39 +18,47 @@ Both can be changed in the web interface after setup.
 
 Set the following variables with the -e tag.
 
+
 | Name                | Usage                       | Default |
 | ------------------- | --------------------------- | ------- |
-| `VPN_ENABLE`        | Enable VPN                  | ` `     |
-| `VPN_USERNAME`      | Username for OpenVPN        | ` `     |
-| `VPN_PASSWORD`      | Password for OpenVPN        | ` `     |
-| `LAN_NETWORK`       | Subnet of the local network | ` `     |
+| `VPN_ENABLE`        | Enable VPN                  |      |
+| `VPN_USERNAME`      | Username for OpenVPN        |      |
+| `VPN_PASSWORD`      | Password for OpenVPN        |      |
+| `LAN_NETWORK`       | Subnet of the local network |      |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount     | Description             |
 | ------------------------- | ------------------- | ----------------------- |
 | `qbittorrentvpn_config`   | `/config`           | Configuration files     |
 | `qbittorrentvpn_data`     | `/downloads`        | Storage for data        |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `9091`         | `8080`                   | TCP      | WebUI       |
 
+
 ### Additional
 
 There are some special variables to set.
+
 
 | Flag        | Usage                  |
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
 | `--device`  | connect devices        |
 | `--sysctl`  | configure systemctl    |
+
 
 ### rebuild.sh
 

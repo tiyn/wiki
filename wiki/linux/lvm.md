@@ -57,7 +57,12 @@ To resize the physical volume to the size of the containing volume run:
 
 To increase the size of the logical volume you have to have free space in the according volume
 group.
-You can check that by running: `vgdisplay`.
+You can check that by running the following command.
+
+```sh
+vgdisplay
+```
+
 If you don't have enough space you have to resize the physical volume as described in this article.
 Then run the following command.
 
@@ -90,7 +95,7 @@ If the volume to shrink is the root volume it has to be done offline.
 For that a simple installation stick is enough.
 [The Arch Linux entry](/wiki/linux/arch-linux.md#installation-medium) describes the creation of
 such a boot stick.
-Afterwards the operating system has to be booted from the just created stick or a comparable
+Afterward, the operating system has to be booted from the just created stick or a comparable
 device.
 For non-root volumes this extra step can be skipped.
 
@@ -141,7 +146,7 @@ sudo pvmove <path to physical volume>
 
 `<path to physical volume>` is the physical volume that will get emptied and later removed from the
 logical volume.
-Afterwards the physical volume is emptied and can be removed from the logical volume by running the
+Afterward, the physical volume is emptied and can be removed from the logical volume by running the
 following command.
 
 ```sh
@@ -154,6 +159,6 @@ After this command the physical volume is no longer a part of it.
 If no longer used the empty physical volume can then be removed as described in the
 [according section](#remove-physical-volume).
 
-Afterwards the file system can be matched to the logical volume so it takes up the full new size.
+Afterward, the file system can be matched to the logical volume so it takes up the full new size.
 This is explained in the
 :wq[entry about disk management](/wiki/linux/disk-management.md#growing-a-file-system).

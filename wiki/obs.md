@@ -22,7 +22,7 @@ camera.
 First of all [V4L2](/wiki/linux/v4l2.md) needs to be set up.
 This guide assumes it is set up according to the section in the
 [V4L2 entry](/wiki/linux/v4l2.md#v4l2loopback).
-Afterwards the virtual camera can be started.
+Afterward, the virtual camera can be started.
 
 ### Background Removal
 
@@ -35,7 +35,7 @@ Made by royshil [the GitHub page](https://github.com/royshil/obs-backgroundremov
 various possibilities to install the background removal for OBS on different systems.
 On Linux systems background removal is often contained in a package named `obs-backgroundremoval`
 or similarly.
-Afterwards the background removal can be added as a filter on a input source.
+Afterward, the background removal can be added as a filter on a input source.
 
 ## Troubleshooting
 

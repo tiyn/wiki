@@ -14,6 +14,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name        | Usage            | Default |
 | ----------- | ---------------- | ------- |
 | `PUID`      | UserID           |         |
@@ -21,23 +22,28 @@ Set the following variables with the -e tag.
 | `TZ`        | Timezone         |         |
 | `UMASK_SET` | setting usermask |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Volume-Name        | Container mount | Description                                     |
 | ------------------ | --------------- | ----------------------------------------------- |
 | `syncthing_config` | `/config`       | storage for config and possible downloaded data |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description        |
 | -------------- | ------------------------ | -------- | ------------------ |
 | `8384`         | `8384`                   | TCP      | WebUI              |
 | `22000`        | `22000`                  | TCP      | Syncthing internal |
 | `21027`        | `21027`                  | UDP      | Syncthing internal |
+
 
 ### rebuild.sh
 

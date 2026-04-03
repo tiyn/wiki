@@ -57,13 +57,11 @@ Following is a list of often used formats:
 - dts is a compressed lossy codec usually found in DVDs
 
 Music files can either be encoded lossy or lossless.
-Lossless formats can be converted from and to each other without loosing
-information.
-Lossless formats can also be converted to lossy formats to make the files
-smaller and save space.
+Lossless formats can be converted from and to each other without loosing information.
+Lossless formats can also be converted to lossy formats to make the files smaller and save space.
 Files should not be converted to lossy formats more than once.
-Additionally lossy formats should not be converted to lossless formats as it
-increases the file size without adding any audio information.
+Additionally, lossy formats should not be converted to lossless formats as it increases the file
+size without adding any audio information.
 These not recommended conversions are called bad conversions.
 
 ### Cue Files

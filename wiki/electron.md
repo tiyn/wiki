@@ -29,14 +29,14 @@ For the Gnome Keyring install the [packages](/wiki/linux/package_manager.md) `li
 `gnome-keyring`.
 The name may differ slightly depending on the [package manager](/wiki/linux/package_manager.md)
 used.
-Afterwards make sure to run the service and enable it if not already done.
+Afterward, make sure to run the service and enable it if not already done.
 An example for this is shown in the following command
 
 ```sh 
 eval $(/usr/bin/gnome-keyring-daemon --start)
 ```
 
-Finally the Electron app `<electron-app>` can be started.
+Finally, the Electron app `<electron-app>` can be started.
 For the secure credential storage to be reachable the environment variable `XDG_CURRENT_DESKTOP`
 has to be set.
 Due to this environment variable being possibly relevant for the system-wide settings it is

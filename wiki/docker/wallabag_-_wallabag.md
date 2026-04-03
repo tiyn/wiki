@@ -16,6 +16,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterward.
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name                              | Usage                                    | Default                                  |
 | --------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | `MYSQL_ROOT_PASSWORD`             | Password for the mySQL root user         |                                          |
@@ -33,21 +34,26 @@ docker-compose file.
 | `SYMFONY__ENV__DOMAIN_NAME`       | URL to wallabag instance                 | `https://your-wallabag-url-instance.com` |
 | `SYMFONY__ENV__SERVER_NAME`       | Name for the wallabag server             | `Your wallabag instance`                 |
 
+
 ### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
+
 
 | Outside mount/volume name | Container mount                       | Description                      |
 | ------------------------- | ------------------------------------- | -------------------------------- |
 | `wallabag_wallabag`       | `/var/www/wallabag/web/assets/images` | storage for wallabag config data |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

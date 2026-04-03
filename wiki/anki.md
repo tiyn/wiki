@@ -39,7 +39,7 @@ This guide assumes the default Anki client is used.
 To change this select `Browse` and then navigate to the `Note Type` the deck to add backwards cards
 uses.
 Right click the note type and select `Cards`.
-Afterwards the cards for backwards learning can be added by `Options` and `Add Card Types...`.
+Afterward, the cards for backwards learning can be added by `Options` and `Add Card Types...`.
 You can confirm the fields have been setup correctly by clicking through the card types and
 verifying it.
 

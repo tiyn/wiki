@@ -23,7 +23,7 @@ A distinction can be made between
 #### Server with web interface
 
 Web interfaces for git are quite useful for easily showing code to other people.
-Additionally it is easy to collaborate together.
+Additionally, it is easy to collaborate together.
 
 - [Gitea](gitea.md) is an open-source and selfhosted git instance which can be dockerized.
 - [GitHub](https://github.com) is a popular git server. 

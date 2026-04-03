@@ -59,7 +59,7 @@ It functions similar to the first and uses the following command.
 ssh-copy-id -f -i <path-to-public-key> <host>
 ```
 
-The `-f` flag can alos be omittet to check if the key is already installed.
+The `-f` flag can also be omitted to check if the key is already installed.
 For being very safe is important, a dry run can be performed using the `-n` flag.
 
 ### Mount Directory With SSHFS
@@ -107,15 +107,15 @@ X-forwarding is enabled by editing a line to look like the following.
 ```txt
 X11Forwarding yes
 ```
-
-Make sure to restart the SSH daemon afterwards by running the following command.
+f
+Make sure to restart the SSH daemon afterward by running the following command.
 
 ```sh
 service sshd restart
 ```
 
-Afterwards X-forwarding should be enabled on the server.
-For full functionality install the `x11-apps` package aswell.
+Afterward, X-forwarding should be enabled on the server.
+For full functionality install the `x11-apps` package as well.
 
 #### Enabling X-Forwarding on a Client
 
@@ -148,7 +148,7 @@ A specific port can be tunneled from a remote host to a client via SSH.
 This could be especially useful when coding remotely and wanting to access a database like
 PostgreSQL or other services.
 For the forwarding of a port run the following command.
-`<local address>` (for example `localhost`) and  `<local port>` (for example `63333`) are the
+`<local address>` (for example `localhost`) and `<local port>` (for example `63333`) are the
 target (and most of the time local) address and port to tunnel the service to.
 `<address of server>` (for example `joe@foo.com` or an alias) specifies the address and username of
 the server that hosts the service and `<port of service>` (for example `5432`) describes the port
@@ -166,7 +166,7 @@ the process.
 ps aux | grep "ssh -f -N -L <local port>"
 ```
 
-Afterwards it can be killed by running the follwing command where `<process-id>` is the id of the
+Afterward, it can be killed by running the following command where `<process-id>` is the ID of the
 process found with the previous command.
 
 ```sh
@@ -174,14 +174,14 @@ kill <process-id>
 ```
 
 Files that are based on a remote server can be mounted as described in
-[the corresponding section](#mount-directory-with-sshfs) to setup complete remote development.
+[the corresponding section](#mount-directory-with-sshfs) to set up complete remote development.
 
 ### Specify Key Exchange Algorithms
 
 It can be useful to specify the key exchange algorithms in the OpenSSH config file `~/.ssh/config`.
 Some key exchange algorithms are more secure regarding post-quantum attacks.
 The following configuration prefers and enforces hybrid post-quantum–resistant key exchange
-algorithms (`mlkem768x25519-sha256` and  `sntrup761x25519-sha512`).
+algorithms (`mlkem768x25519-sha256` and `sntrup761x25519-sha512`).
 A modern classical fallback (`curve25519-sha256`) is included for compatibility.
 This can be considered a form on
 [system hardening](/wiki/linux/system-hardening.md#specific-steps-to-harden-a-system).

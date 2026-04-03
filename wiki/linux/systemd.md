@@ -108,7 +108,7 @@ HandleLidSwitchExternalPower=ignore
 HandleLidSwitchDocked=ignore
 ```
 
-Afterwards the logind service has to be restarted
+Afterward, the logind service has to be restarted
 [as described on a later section](#startstopenabledisable-a-service-and-retrieve-its-logs).
 
 ```sh

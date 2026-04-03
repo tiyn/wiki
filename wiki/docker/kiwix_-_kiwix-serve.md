@@ -14,17 +14,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
 | `80`           | `80`                     | TCP       | WebUI         |
+
 
 ## Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description    |
 | ------------------------- | --------------- | -------------- |
 | `kiwix_data`              | `/data`         | Data directory |
+
 
 ## rebuild.sh
 

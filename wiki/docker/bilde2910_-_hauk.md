@@ -5,7 +5,7 @@ This is a docker container for a [Hauk](/wiki/hauk.md).
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Additionally create a `config.php` file based on the
+Additionally, create a `config.php` file based on the
 [config-sample](https://github.com/bilde2910/Hauk/blob/master/backend-php/include/config-sample.php)
 at the location specified in your  `docker-compose.yml` (in this example it's
 `./config/hauk`).
@@ -21,23 +21,27 @@ htpasswd -cBC 10 /etc/hauk/users.htpasswd <first user name>
 htpasswd -BC 10 /etc/hauk/users.htpasswd <other user name>
 ```
 
-Finally run `./rebuild.sh`.
+Finally, run `./rebuild.sh`.
 
 ### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount    | Description                    |
 | ------------------------- | ------------------ | ------------------------------ |
 | `./config/hauk`           | `/etc/hauk`        | config and password location   |
+
 
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description            |
 | -------------- | ------------------------ | -------- | ---------------------- |
 | `80`           | `80`                     | TCP      | Basic service          |
+
 
 ### rebuild.sh
 

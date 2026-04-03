@@ -13,17 +13,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description         |
 | -------------- | ------------------------ | --------- | ------------------- |
 | `11434`        | `11434`                  | TCP       | Communications port |
+
 
 ## Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description   |
 | ------------------------- | --------------- | ------------- |
 | `ollama`                  | `/root/.ollama` | Ollama data |
+
 
 ## rebuild.sh
 

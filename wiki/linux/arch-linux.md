@@ -78,14 +78,14 @@ To access the files of the system an Arch Linux boot stick has to be created as 
 [a previous section](#create-installation-medium).
 After booting into it set your keymap layout using the `loadkeys` setup similar to
 [the installation preparation](/wiki/linux/arch-linux/installation.md#1-preparation).
-Afterwards [mount](/wiki/linux/disk-management.md#mounting) the partition that contains the root
+Afterward, [mount](/wiki/linux/disk-management.md#mounting) the partition that contains the root
 file system to the `/mnt` directory.
 It is possible that LUKS encrypted file systems need to be
 [opened](/wiki/linux/dm-crypt.md#openclose-an-encrypted-volume) and then mounted using the
 `/dev/mapper` symbolic link.
 On some systems there are home or boot file system that have to be mounted on `/mnt/boot` or
 `/mnt/home` after mounting the root file system.
-Afterwards use `arch-chroot /mnt` to get into the not bootable system.
+Afterward, use `arch-chroot /mnt` to get into the not bootable system.
 Now the command line of the system can be accessed for troubleshooting.
 After troubleshooting `exit` the system and [unmount](/wiki/linux/disk-management.md#mounting) all previously
 mounted file systems and try to boot back into the system.
@@ -94,7 +94,7 @@ If the system broke during an update then the easiest way to fix it, is by runni
 command again.
 The used command can be found in `/var/log/pacman.log`.
 Make sure to run exactly this command.
-Afterwards try to reboot into the system.
+Afterward, try to reboot into the system.
 
 Another common source for not bootable systems is
 [the initial ramdisk](#problems-with-the-initial-ramdisk).

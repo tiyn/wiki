@@ -19,13 +19,16 @@ The environment variables are set via the `.env` file and listed in the
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
 | `11111`        | `11111`                  | TCP       | WebUI         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount    | Description         |
 | ------------------------- | ------------------ | ------------------- |
@@ -34,6 +37,7 @@ Set the following volumes with the -v tag.
 | `files_images`            | `/files/images`    | path for files      |
 | `files_imports`           | `/files/imports`   | path for imports    |
 | `/etc/timezone`           | `/etc/timezone:ro` | Timezone            |
+
 
 ### rebuild.sh
 

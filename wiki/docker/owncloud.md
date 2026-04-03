@@ -16,18 +16,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount        | Description                  |
 | ------------------------- | ---------------------- | ---------------------------- |
 | `owncloud`                | `/var/www/html`        | storage for ownCloud plugins |
 | `config`                  | `/var/www/html/config` | storage for ownCloud config  |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

@@ -27,17 +27,21 @@ Updating has to be done manually so nothing breaks.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount | Description                              |
 | ------------------------- | --------------- | ---------------------------------------- |
 | `nextcloud`               | `/var/www/html` | storage for nextcloud plugins and config |
+
 
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

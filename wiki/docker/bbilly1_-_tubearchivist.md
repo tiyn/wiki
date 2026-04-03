@@ -17,24 +17,28 @@ docker-compose file.
 
 The following table lists the environment variables for the image `bbilly1/tubearchivist`.
 
+
 | Name               | Usage                                       | Default |
 | -------------------| ------------------------------------------- | ------- |
-| `ES_URL`           | Network address for elastic search instance | ``      |
-| `REDIS_HOST`       | Redis broker URL                            | ``      |
-| `HOST_UID`         | User ID of Host                             | ``      |
-| `HOST_GID`         | Group ID of Host                            | ``      |
-| `TA_HOST`          | Domain name for TubeArchivist               | ``      |
-| `TA_USERNAME`      | User name for TubeArchivist                 | ``      |
-| `TA_PASSWORD`      | Password for TubeArchivist                  | ``      |
-| `ELASTIC_PASSWORD` | Password for Elasticsearch                  | ``      |
-| `TZ`               | Timezone                                    | ``      |
+| `ES_URL`           | Network address for elastic search instance |       |
+| `REDIS_HOST`       | Redis broker URL                            |       |
+| `HOST_UID`         | User ID of Host                             |       |
+| `HOST_GID`         | Group ID of Host                            |       |
+| `TA_HOST`          | Domain name for TubeArchivist               |       |
+| `TA_USERNAME`      | User name for TubeArchivist                 |       |
+| `TA_PASSWORD`      | Password for TubeArchivist                  |       |
+| `ELASTIC_PASSWORD` | Password for Elasticsearch                  |       |
+| `TZ`               | Timezone                                    |       |
+
 
 The following table lists the environment variables for the image `bbilly1/tubearchivist-es`.
 
+
 | Name               | Usage                                       | Default |
 | -------------------| ------------------------------------------- | ------- |
-| `ELASTIC_PASSWORD` | Password for Elasticsearch                  | ``      |
-| `ES_JAVA_OPTS`     | Additional Java options                     | ``      |
+| `ELASTIC_PASSWORD` | Password for Elasticsearch                  |       |
+| `ES_JAVA_OPTS`     | Additional Java options                     |       |
+
 
 ### Volumes
 
@@ -42,24 +46,30 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 
 The following table lists the environment variables for the image `bbilly1/tubearchivist`.
 
+
 | Outside mount/volume name | Container mount          | Description                 |
 | ------------------------- | ------------------------ | --------------------------- |
 | `media`                   | `/youtube`               | storage for media           |
 | `cache`                   | `/cache`                 | storage for cache           |
 
+
 The following table lists the environment variables for the image `bbilly1/tubearchivist-es`.
+
 
 | Outside mount/volume name | Container mount                 | Description                 |
 | ------------------------- | ------------------------------- | --------------------------- |
 | `es`                      | `/usr/share/elasticsearch/data` | storage for elasticsearch   |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8000`         | `8881`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

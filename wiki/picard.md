@@ -7,10 +7,10 @@ It is able to tag a wide range of [audio codecs](/wiki/audio.md#audio-codecs)
 
 ## Setup
 
-Picard is available on the [official website](https://picard.musicbrainz.org/)
-and [GitHub](https://github.com/metabrainz/picard).
-Additionally for some [Linux distributions](/wiki/linux.md#distributions)
-it is available via a package often called `picard`.
+Picard is available on the [official website](https://picard.musicbrainz.org/) and
+[GitHub](https://github.com/metabrainz/picard).
+Additionally, for some [Linux distributions](/wiki/linux.md#distributions) it is available via a
+package often called `picard`.
 
 Picard can also be virtualized and accessed over [VNC](/wiki/vnc.md) or
 [web browser](/wiki/web_browser.md).
@@ -19,7 +19,7 @@ This can be setup via [docker](/wiki/docker.md) with the
 
 ## Usage
 
-This section addresses various features of picard.
+This section addresses various features of Picard.
 
 ### File naming
 

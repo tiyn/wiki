@@ -24,11 +24,13 @@ For the public IP the command `curl api.ipify.org` can be used.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `3478`         | `3478`                   | TCP/UDP  | TURN/STUN   |
 | `5349`         | `5349`                   | TCP/UDP  | TURN/STUN   |
 | `49152-65535`  | `49152-65535`            | UDP      | TURN/STUN   |
+
 
 ### rebuild.sh
 

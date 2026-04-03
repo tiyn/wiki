@@ -14,37 +14,45 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description              |
 | ------------------------- | --------------- | ------------------------ |
 | `ovpn-proxy`              | `/config`       | storage for openvpn data |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description  |
 | -------------- | ------------------------ | -------- | ------------ |
 | `9050`         | `8080`                   | HTTP     | proxy port   |
+
 
 ### Environment-Variables
 
 Set the following variables with the -e tag.
 
+
 | Name                | Usage                       | Default |
 | ------------------- | --------------------------- | ------- |
-| `LOCAL_NETWORK`     | Set local network subnet    | ` `     |
-| `OPENVPN_USERNAME`  | username for OpenVPN        | ` `     |
-| `OPENVPN_PASSWORD`  | password for OpenVPN        | ` `     |
+| `LOCAL_NETWORK`     | Set local network subnet    |      |
+| `OPENVPN_USERNAME`  | username for OpenVPN        |      |
+| `OPENVPN_PASSWORD`  | password for OpenVPN        |      |
+
 
 ### Additional
 
 There are some special variables to set.
+
 
 | Flag                                       | Usage                  |
 | ----------- | ---------------------- |
 | `--cap-add` | add linux capabilities |
 | `--device`  | connect devices        |
 | `--sysctl`  | configure systemctl    |
+
 
 ### rebuild.sh
 

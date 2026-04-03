@@ -7,19 +7,37 @@ unix and unix-like systems.
 
 The software can be setup via [Docker](/wiki/docker.md) with the
 [linuxserver image](/wiki/docker/linuxserver_-_airsonic.md).
-Additionally to this a client is needed on the system that need access to the server software.
+Additionally, to this a client is needed on the system that need access to the server software.
 
 ### Client
 
 To use CUPS an additional client software is needed.
 
 For Linux computers follow these instructions:
+First install the CUPS-client package (in Arch Linux it is included in `cups`).
+Then edit `/etc/cups/client.conf` and insert the following line.
 
-- Install the CUPS-client package (in Arch Linux it is included in `cups`)
-- Edit `/etc/cups/client.conf` and insert `ServerName <ip to print-server>:631`
-- Restart the CUPS service: `systemctl restart cups`
-- Test connectivity: `lpstat -r`
-- Check the detected printers with: `lpstat -v`
+```txt
+ServerName <ip to print-server>:631
+```
+
+Restart the CUPS service.
+
+```ssh
+systemctl restart cups
+```
+
+Then test the connectivity.
+
+```sh
+lpstat -r`
+```
+
+Finally, check the detected printers with the following command.
+
+```sh
+lpstat -v
+```
 
 ## Usage
 
@@ -43,7 +61,7 @@ This is done by appending it the the mentioned connection string and will look l
 The examples using the Brother printer are taken from a
 [dwaves article](https://dwaves.de/2022/07/13/gnu-linux-debian-11-how-to-setup-brother-ql-600-labelprinter/).
 
-### Custom Formats For Brother Printers 
+### Custom Formats For Brother Printers
 
 This section is based on an entry in the
 [german FAQ on the brother website](https://support.brother.com/g/b/faqend.aspx?c=de&lang=de&prod=lpql1110nwbeuk&faqid=faqp00100409_000).
@@ -58,7 +76,7 @@ package called `brother-ql600`.
 
 To then set up a new custom format run the following command.
 
-```sh 
+```sh
 brpapertoollpr_<printer name in command> -P <printer name in cups> -n <format name> -w <width> -h <height>
 ```
 
@@ -67,23 +85,23 @@ in the previous sentence.
 `<printer name in cups>` and `<format name>` are the name of the printer already set up and given in
 CUPS and the name chosen for the new format.
 And `<width>` and `<height>` are width and height of the new format both given in millimeters.
-A complete command could look something like the following. 
+A complete command could look something like the following.
 
 
-```sh 
+```sh
 brpapertoollpr_ql600 -P Brother_QL-600 -n "62mmx12mm" -w 62 -h 12
 ```
 
 The command to delete a custom format is the following.
 It uses the same variables and names as the command above.
 
-```sh 
+```sh
 brpapertoollpr_ql600 -P <printer name> -d <format name>
 ```
 
 The usage of this command could look similar to the following example.
 
-```sh 
+```sh
 brpapertoollpr_ql600 -P Brother_QL-600 -d "62mmx12mm"
 ```
 

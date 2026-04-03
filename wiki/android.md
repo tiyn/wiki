@@ -14,7 +14,7 @@ A list of open-source software options is also available on Alberto Mosconis
 [Github](/wiki/git_%28general%29.md#server-with-web-interface) repository
 [foss apps](https://github.com/albertomosconi/foss-apps/tree/main).
 
-Additionally open-source apps can be installed from source using
+Additionally, open-source apps can be installed from source using
 [Obtainium](https://github.com/ImranR98/Obtainium).
 
 ### Useful Applications

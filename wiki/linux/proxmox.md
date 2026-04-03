@@ -85,7 +85,7 @@ Sometimes this process asks if the user wants to replace the local configuration
 ones.
 It is generally recommended to select `N` and reject these new configurations.
 
-Finally another reboot is needed and the version number can be
+Finally, another reboot is needed and the version number can be
 [checked again](#retrieve-pve-version) confirming that the major version upgrade was
 successfully performed.
 
@@ -125,7 +125,7 @@ For example if you want to the disk 100 by 100G (100GibiByte):
 qm resize 100 ide0 +100G
 ```
 
-Afterwards the partition of the VM needs to be enlarged.
+Afterward, the partition of the VM needs to be enlarged.
 For that
 [the disk management article](/wiki/linux/disk-management.md#grow-non-lvm-partition)
 can be used for non-LVM paritions.
@@ -140,7 +140,7 @@ First remove `local-lvm` with `lvremove /dev/pve/data`.
 Then remove `local-lvm` in the proxmox gui via `Datacenter/Storage/Remove`.
 Change the `Content` of the remaining storage according to your needs.
 Add the free storage to the remaining storage with `lvresize -rl +100%FREE /dev/pve/root`.
-Finally extend the filesystem `resize2fs /dev/mapper/pve-root`.
+Finally, extend the filesystem `resize2fs /dev/mapper/pve-root`.
 
 ### USB Passthrough
 

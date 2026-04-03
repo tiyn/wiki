@@ -13,25 +13,31 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name           | Usage                   | Default |
 | -------------- | ----------------------- | ------- |
 | `STORAGE_TYPE` | Type to store the datas | `file`  |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description                |
 | ------------------------- | --------------- | -------------------------- |
 | `hastebin`                | `/app/data`     | storage directory for data |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `7777`         | `7777`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

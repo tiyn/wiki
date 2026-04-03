@@ -14,10 +14,9 @@ the help of a plugin.
 
 The software can be setup via [Docker](/wiki/docker.md) with the
 [linuxserver image](/wiki/docker/linuxserver_-_tvheadend.md).
-For different hardware there may be additional run options needed to get
-TVHeadend working properly.
-Additionally a solid [initial configuration](#initial-configuration) is
-recommended.
+For different hardware there may be additional run options needed to get TVHeadend working
+properly.
+Additionally, a solid [initial configuration](#initial-configuration) is recommended.
 This configuration includes the setup of different types of tuners.
 
 ### Fritzbox

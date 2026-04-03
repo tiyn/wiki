@@ -61,7 +61,7 @@ gpg --import-ownertrust ownertrust.txt
 
 Again the first command can be run individually to import single public keys that are not owned.
 
-Afterwards the following commands can be run to set the ultimate trust level to the key pair.
+Afterward, the following commands can be run to set the ultimate trust level to the key pair.
 Caution is advised.
 
 ```sh
@@ -125,9 +125,9 @@ e-mail to.
 gpg --edit-key <key-id>
 ```
 
-Afterwards a console will open.
+Afterward, a console will open.
 Using `adduid` another user can be added by following the on-screen instructions.
-Afterwards `save` will save the progress and exit from the console.
+Afterward, `save` will save the progress and exit from the console.
 
 To delete an existing user and e-mail also open the edit-console.
 Then list the existing users using the command `uid` and select the user id of the key to delete

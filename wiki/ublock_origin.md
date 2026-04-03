@@ -26,5 +26,5 @@ Most of the times this can be fixed easily as explained in a
 [Reddit post by orestaras](https://www.reddit.com/r/firefox/comments/1hipkzh/ublock_origin_no_longer_works_on_youtube).
 Open the dashboard in the extension menu.
 Under the tab `Filter List`, extend `Built-in` and uncheck `uBlock filters - Quick fixes`.
-Afterwards reload the page containing the YouTube video and it should load normally and without
+Afterward, reload the page containing the YouTube video and it should load normally and without
 advertisements.

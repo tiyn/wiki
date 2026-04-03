@@ -19,6 +19,7 @@ the [Traefik wiki entry](/wiki/traefik.md#usage).
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount           | Description                             |
 | ------------------------- | ------------------------- | --------------------------------------- |
 | `/etc/localtime`          | `/etc/localtime:ro`       | get the system time                     |
@@ -27,22 +28,27 @@ Set the following volumes in the `volumes:` section of the docker-compose file.
 | `./data/acme.json`        | `/acme.json`              | place to store certificates for https   |
 | `./data/config`           | `/configurations`         | place for dynamically changable configs |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
+
 
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | http        |
 | `443`          | `443`                    | TCP      | https       |
 
+
 ### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
 
+
 | Name    | Usage                                  |
 | ------- | -------------------------------------- |
 | `proxy` | network to expose http and https ports |
+
 
 ### Labels
 

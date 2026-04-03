@@ -9,7 +9,7 @@ On [Android](/wiki/android.md) /name/ is available on the
 [Google Play store](/wiki/android.md#app-store) in a package called
 [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm).
 
-Additionally the installation of [Tasker Settings](https://github.com/joaomgcd/TaskerSettings) is
+Additionally, the installation of [Tasker Settings](https://github.com/joaomgcd/TaskerSettings) is
 recommended.
 Please note that on the [Github releases page](https://github.com/joaomgcd/TaskerSettings/releases)
 there are different versions to be used with Xiaomi-phones.

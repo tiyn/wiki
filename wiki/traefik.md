@@ -64,8 +64,8 @@ To always append a `www.` to the address the following redirection settings can 
         replacement: "https://www.${1}"
 ```
 
-Additionally follow the setup regarding the service as explained in
-[the general redirection sectino](#redirections-for-docker-service).
+Additionally, follow the setup regarding the service as explained in
+[the general redirection section](#redirections-for-docker-service).
 
 #### Docker Redirection: Removing a `www.`
 
@@ -79,8 +79,8 @@ To always remove a `www.` from the address the following redirection settings ca
         replacement: "https://${1}"
 ```
 
-Additionally follow the setup regarding the service as explained in
-[the general redirection sectino](#redirections-for-docker-service).
+Additionally, follow the setup regarding the service as explained in
+[the general redirection section](#redirections-for-docker-service).
 
 #### Docker Redirection: Redirect a Domain to Another
 
@@ -97,8 +97,8 @@ example `123.xyz.eu`).
         replacement: "https://<domain-2>${1}"
 ```
 
-Additionally follow the setup regarding the service as explained in
-[the general redirection sectino](#redirections-for-docker-service).
+Additionally, follow the setup regarding the service as explained in
+[the general redirection section](#redirections-for-docker-service).
 
 ### Reverse Proxies for Docker Service
 

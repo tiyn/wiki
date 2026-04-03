@@ -30,7 +30,7 @@ For this reason the following command has to be run first.
 apt-mark hold docker-ce docker-ce-cli containerd.io
 ```
 
-Afterward the packages of the current major release version have to be
+Afterward, the packages of the current major release version have to be
 [upgrading](/wiki/linux/package_manager/apt.md#updating-upgrading) using APTs `full-upgrade`
 option.
 Then a reboot is recommended.
@@ -52,7 +52,7 @@ Sometimes this process asks if the user wants to replace the local configuration
 ones.
 It is generally recommended to select `N` and reject these new configurations.
 
-Finally another reboot is needed and the version number can be
+Finally, another reboot is needed and the version number can be
 [checked again](#retrieve-debian-version) confirming that the major version upgrade was
 successfully performed.
 

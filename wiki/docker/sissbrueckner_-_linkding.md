@@ -8,8 +8,8 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
-Afterwards you need to create a user.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
+Afterward, you need to create a user.
 This can be done by running the following line with changed credentials:
 
 ```sh
@@ -22,17 +22,21 @@ You will be asked for a password via the commandline.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount        | Description                 |
 | ------------------------- | ---------------------- | --------------------------- |
 | `linkding`                | `/etc/linkding/data`   | storage for persistent data |
+
 
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `9090`         | `9090`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

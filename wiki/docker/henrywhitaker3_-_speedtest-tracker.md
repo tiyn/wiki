@@ -14,26 +14,32 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name              | Usage                         | Default |
 | ----------------- | ----------------------------- | ------- |
 | `OOKLA_EULA_GDPR` | set to `true` to accept EULA  |         |
 | `AUTH`            | set to `true` to enable login |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description        |
 | ------------------------- | --------------- | ------------------ |
 | `speedtest`               | `/config`       | storage for config |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `8765`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

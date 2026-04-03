@@ -6,12 +6,10 @@ It is used to set up [Wi-Fi](/wiki/linux/hardware_%28linux%29.md#wi-fi).
 
 ## Setup
 
-NetworkManager can be installed with the `networkmanager` package on most linux
-distributions which provides daemon aswell as `nmcli` a command line interface
-and `nmtui` a [terminal](/wiki/linux/system_console.md) user interface for
-configuration.
-Additionally `nm-connection-editor` can be installed for a graphical user
-interface.
+NetworkManager can be installed with the `networkmanager` package on most linux distributions which
+provides daemon aswell as `nmcli` a command line interface and `nmtui` a
+[terminal](/wiki/linux/system_console.md) user interface for configuration.
+Additionally, `nm-connection-editor` can be installed for a graphical user interface.
 
 ## Usage
 
@@ -21,12 +19,12 @@ After installation `networkmanager.service` has to be enabled by the used
 
 ### OpenVPN Integration
 
-NetworkManager needs a plugin to work with openvpn configurations.
+NetworkManager needs a plugin to work with OpenVPN configurations.
 This plugin can be installed with the `networkmanager-openvpn` package.
 
 OpenVPNs `.ovpn` files can then be imported by running
 `nmcli connection import type openvpn file <openvpn-file>`.
-Afterwards they can be modified accordingly.
+Afterward, they can be modified accordingly.
 
 ### Prioritize Connections
 

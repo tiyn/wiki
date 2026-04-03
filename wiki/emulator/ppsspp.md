@@ -7,7 +7,7 @@
 
 PPSSPP can be installed on different systems, a list for this can be found on
 the [PPSSPP website](https://ppsspp.org/downloads.html).
-Additionally it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
+Additionally, it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
 package is called `org.ppsspp.PPSSPP`.
 
 ## Usage

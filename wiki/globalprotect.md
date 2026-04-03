@@ -14,7 +14,7 @@ command is called `gpclient` which can sometimes lead to confusion.
 
 The usage of the GlobalProtect client is pretty simple.
 After starting the program the portal address has to be added and is followed by a login.
-Afterwards the client will connect.
+Afterward, the client will connect.
 
 The standard command to connect to a [VPN](/wiki/vpn.md) server is the following where
 `<vpn-server>` is the domain of the server (for example `vpn.abc.de`).

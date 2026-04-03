@@ -25,7 +25,7 @@ command.
 upower -e
 ```
 
-Afterward different values like the state, voltage, percentage and much other can be displayed.
+Afterward, different values like the state, voltage, percentage and much other can be displayed.
 Additionally, it will show the original capacity (`energy-full-design`) and the current capacity
 (`energy-full`), which can be used to determine the health of the battery.
 The following is an example command where `<battery-name>` is the name of the batter returned from

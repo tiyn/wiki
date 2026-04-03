@@ -31,7 +31,7 @@ make
 cp mpv_thumbnail_script_client_osc.lua mpv_thumbnail_script_server.lua ~/.config/mpv/scripts
 ```
 
-Afterwards create the file `~/.config/mpv/script-opts/mpv_thumbnail_script.conf` with the following
+Afterward, create the file `~/.config/mpv/script-opts/mpv_thumbnail_script.conf` with the following
 text.
 
 ```txt

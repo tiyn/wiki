@@ -12,19 +12,23 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description                |
 | ------------------------- | --------------- | -------------------------- |
 | `tor_var`                 | `/var/lib/tor`  | Location for various files |
 | `tor_etc`                 | `/etc/tor`      | Various other config       |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description          |
 | -------------- | ------------------------ | -------- | -------------------- |
 | `8118`         | `8118`                   | HTTP     | privoxy web proxy    |
 | `9050`         | `9050`                   | SOCKS    | socks protocol proxy |
+
 
 ### rebuild.sh
 

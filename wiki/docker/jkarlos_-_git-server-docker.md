@@ -13,18 +13,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount     | Description               |
 | ------------------------- | ------------------- | ------------------------- |
 | `git-server_repos`        | `/git-server/repos` | storage for git repos     |
 | `git-server_keys`         | `/git-server/keys`  | storage for user ssh keys |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description                           |
 | -------------- | ------------------------ | -------- | ------------------------------------- |
 | `22`           | `2222`                   | TCP      | ssh port for accessing the git server |
+
 
 ### rebuild.sh
 

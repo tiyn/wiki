@@ -13,17 +13,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
 | `11434`        | `8080`                   | TCP       | WebUI         |
+
 
 ## Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount     | Description     |
 | ------------------------- | ------------------- | --------------- |
 | `open-webui`              | `/app/backend/data` | Open WebUI data |
+
 
 ## rebuild.sh
 

@@ -20,18 +20,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
+
 
 ### Environment-variables
 
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name        | Usage                   | Default           |
 | ----------- | ----------------------- | ----------------- |
 | `NODE_ENV`  | Setting the environment | `production`      |
+
 
 ### rebuild.sh
 

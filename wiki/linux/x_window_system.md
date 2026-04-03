@@ -125,7 +125,7 @@ setxkbmap -layout <layout> -option compose:<compose>
 #### Display
 
 This section describes the handling of displays by X.
-Additionally to the guides in this section that are independent of the used graphics unit special
+Additionally, to the guides in this section that are independent of the used graphics unit special
 configuration for [Nvidia](/wiki/linux/nvidia.md) and [Intel](/wiki/linux/intel.md) can be found in
 their respective entries in this wiki.
 
@@ -180,7 +180,7 @@ The DPI number should be adjusted as needed.
 Xft.dpi: 100
 ```
 
-Afterwards `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
+Afterward, `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
 For this to work the following line needs to be added into the `~/.xinitrc` file .
 
 ```sh

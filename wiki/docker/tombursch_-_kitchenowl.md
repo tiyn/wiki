@@ -18,17 +18,21 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `7890`         | `80`                     | TCP      | WebUI       |
+
 
 ### Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount            | Description              |
 | ------------------------- | -------------------------- | ------------------------ |
 | `kitchenowl_data`         | `/data`                    | storage for all data     |
+
 
 ### rebuild.sh
 

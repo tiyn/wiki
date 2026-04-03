@@ -53,7 +53,7 @@ This works like the following assuming the package `v4l2loopback-dmks` needs to 
 sudo downgrade v4l2loopback-dmks
 ```
 
-Afterwards the target version can be selected and the downgrading process will conclude.
+Afterward, the target version can be selected and the downgrading process will conclude.
 After the downgrade of a package you will get asked if you want to
 [ignore future updates](#ignoring-packages).
 
@@ -67,7 +67,7 @@ Using the `makepkg` command it can be installed like the following command shows
 makepkg -sirc
 ```
 
-Afterwards it is installed on the system and can be further managed (especially uninstalled) by the
+Afterward, it is installed on the system and can be further managed (especially uninstalled) by the
 Pacman package manager.
 
 ### Installing an AUR Program with a Specific Version
@@ -77,7 +77,7 @@ For this navigate to the AUR page of the program to install.
 On the right-hand side click on `View Changes` and select the version you want to install in the
 commit list.
 Next to `download` a `.tar.gz` file can be downloaded which includes a `PKGBUILD` file.
-Afterwards it needs to be [uncompressed](/wiki/linux/tar.md#uncompressing-a-tar-archive).
+Afterward, it needs to be [uncompressed](/wiki/linux/tar.md#uncompressing-a-tar-archive).
 
 ### Clear Cache
 

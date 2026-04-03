@@ -22,25 +22,31 @@ Especially set the `<version>` (for example `24.11`) aswell as the `<user>` and 
 
 Set the following variables with the -e tag.
 
+
 | Name           | Usage                                                    | Default |
 | -------------- | -------------------------------------------------------- | ------- |
 | `SYNC_USER1`   | contains the `<user>` and `<password>` of the first user |         |
+
 
 ## Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
 | `27701`        | `8080`                   | TCP       | Default port  |
+
 
 ## Volumes
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description   |
 | ------------------------- | --------------- | ------------- |
 | `akni-sync-server-data`   | `/anki-data`    | Data storage  |
+
 
 ## rebuild.sh
 

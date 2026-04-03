@@ -46,5 +46,5 @@ When the message `Error: Verification failed: (0x1A) Security Violation` is show
 Ventoy stick it can easily be fixed.
 For this press `OK`, then press any key to perform MOK management.
 Select `Enroll key from disk`, `VTOYEFI` and `ENROLL_THIS_KEY_IN_MOKMANAGER.cer`.
-Afterwards select `Continue`, `Yes` and finally reboot by selecting `Reboot`.
+Afterward, select `Continue`, `Yes` and finally reboot by selecting `Reboot`.
 After performing these steps the Ventoy key should work as usual.

@@ -18,26 +18,32 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes with the -v tag.
 
+
 | Outside mount/volume name | Container mount | Description                 |
 | ------------------------- | --------------- | --------------------------- |
 | `radicale_data`           | `/data`         | storage for caldav          |
 | `radicale_config`         | `/config`       | storage for radicale config |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description   |
 | -------------- | ------------------------ | -------- | ------------- |
 | `5232`         | `5232`                   | TCP      | WebUI, caldav |
 
+
 ### Additional
 
 There are some special variables to set.
 
+
 | Flag          | Usage                                                                  |
 | ------------- | ---------------------------------------------------------------------- |
 | `--read-only` | make Radicale read-only, caldav can still be changed and used normally |
+
 
 ### rebuild.sh
 

@@ -5,12 +5,11 @@
 
 ## Setup
 
-For clients that use the [PulseAudio](/wiki/linux/pulseaudio.md) API
-`pipewire-pulse` (on Arch-based distros or according
-packages on other distros) can be installed.
+For clients that use the [PulseAudio](/wiki/linux/pulseaudio.md) API `pipewire-pulse` (on
+Arch-based distros or according packages on other distros) can be installed.
 It will automatically remove unneeded and conflicting PulseAudio packages.
-Additionally `pipewire-alsa` and `pipewire-jack` for JACK and Alsa clients are
-available and recommended to install for full compatibility with most software.
+Additionally, `pipewire-alsa` and `pipewire-jack` for JACK and Alsa clients are available.
+They are recommended to be installed for full compatibility with most software.
 Make sure to restart to be sure everything is running correctly.
 
 ### Configuration
@@ -41,7 +40,7 @@ used as a simple mixer.
 
 ### Routing
 
-This section focusses on graph-based interfaces also called patchbays.
+This section focuses on graph-based interfaces also called patchbays.
 For more advanced routing [qpwgraph](https://github.com/rncbc/qpwgraph) can be used, but the
 GTK-based [Helvum](https://gitlab.freedesktop.org/pipewire/helvum) is also available.
 The third available option is [Patchance](https://github.com/Houston4444/Patchance) - this is the
@@ -88,8 +87,8 @@ pw-loopback -C <id>
 
 ### Virtual Devices
 
-This section focusses on the temporary and permanent creation and removal of virtual devices like
-virtual sinks and sources aswell as coupled nodes like loopbacks.
+This section focuses on the temporary and permanent creation and removal of virtual devices like
+virtual sinks and sources as well as coupled nodes like loopbacks.
 
 Please note that problems may occur if [EasyEffects](/wiki/linux/easyeffects.md) is used in
 combination with virtual devices.

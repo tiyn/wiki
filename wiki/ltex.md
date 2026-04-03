@@ -61,7 +61,7 @@ following command.
 \usepackage[<language>]{babel}
 ```
 
-Additionally the following command can be used to change the language from that place onwards.
+Additionally, the following command can be used to change the language from that place onwards.
 
 ```tex
 \selectlanguage{<language>}
@@ -74,7 +74,7 @@ Using the following command the language can be changed just for the text that i
 \foreignlanguage{<language>}{<text>}
 ```
 
-Finally an otherlanguage environment can be used to achieve the same as shown in the following
+Finally, an otherlanguage environment can be used to achieve the same as shown in the following
 example.
 
 ```tex

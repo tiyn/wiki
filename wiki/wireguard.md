@@ -15,8 +15,7 @@ In the following sections the different set ups of WireGuard usages are describe
 
 The software can be set up via [Docker](/wiki/docker.md) with the
 [linuxserver image](/wiki/docker/linuxserver_-_wireguard.md).
-Additionally to this a [client](#client-wg) is needed on the system that
-accesses the server.
+Additionally, to this a [client](#client-wg) is needed on the system that accesses the server.
 
 ### Client
 
@@ -30,10 +29,8 @@ For most linux distributions there is a package called `wireguard-tools`.
 Wireguard clients connect to servers by using a `.conf` file.
 For mobile devices often times a QR-code can also be used.
 
-In Linux based operating systems the `.conf` can be placed at
-the path `/etc/wireguard/wg0.conf`.
-Afterwards wireguard can be started and stopped by running the following
-commands.
+In Linux based operating systems the `.conf` can be placed at the path `/etc/wireguard/wg0.conf`.
+Afterward, wireguard can be started and stopped by running the following commands.
 
 ```
 wg-quick up wg0

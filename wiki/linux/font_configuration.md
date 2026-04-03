@@ -76,8 +76,8 @@ fontforge arial.ttf
 
 A font can be added to the local users fonts using a `.ttf` file.
 The file has to be copied into the local fonts directory `~/.local/share/fonts`.
-Afterwards the [cache should be reloaded](#reload-the-cache).
-Finally the font can be [found](#list-or-find-font-family).
+Afterward, the [cache should be reloaded](#reload-the-cache).
+Finally, the font can be [found](#list-or-find-font-family).
 
 ### Reload the Cache
 

@@ -7,7 +7,7 @@
 
 Dolphin can be installed on different systems, a list for this can be found on
 the [Dolphin website](https://dolphin-emu.org/download/).
-Additionally it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
+Additionally, it can be installed using [Flatpak](/wiki/linux/flatpak.md) where the
 package is called `org.DolphinEmu.dolphin-emu`.
 
 ## Usage

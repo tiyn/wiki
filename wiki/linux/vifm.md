@@ -118,7 +118,7 @@ main() {
 main "$@"
 ```
 
-Additionally the following lines can be inserted into the configuration of vifm
+Additionally, the following lines can be inserted into the configuration of vifm
 `~/.config/vifm/vifmrc` as needed.
 They provide previews for various possible types of file extensions.
 

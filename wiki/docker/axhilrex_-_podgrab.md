@@ -14,26 +14,32 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name       | Usage                         | Default |
 | ---------- | ----------------------------- | ------- |
 | `PASSWORD` | Password for `podgrab` user   |         |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description             |
 | ------------------------- | --------------- | ----------------------- |
 | `podgrab_config`          | `/config`       | Configuration files     |
 | `media_podcasts`          | `/assets`       | location for podcasts   |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `8080`         | `8080`                   | TCP      | WebUI       |
+
 
 ### rebuild.sh
 

@@ -122,8 +122,7 @@ Lastly the file extension `.srt` is appended.
 The complete subtitle file look like this:
 `movie_(1234)_-_brd_uu.en.forced.srt`.
 
-Additionally to indicate the encoding and source can be indicated before the
-file extension.
+Additionally, to indicate the encoding and source can be indicated before the file extension.
 `brd` for Blu-ray disc, `dvd` for digital versatile disc.
 This is followed by an encoding indicator starting with `u` and followed by
 your own scheme for encodings.

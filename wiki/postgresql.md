@@ -25,13 +25,13 @@ psql -U <user> -d <database>
 ```
 
 Alternatively the previous command can be run without the `-d` flag and the following command can
-be run afterwards to change the current database.
+be run afterward to change the current database.
 
 ```sh
 \c <database>
 ```
 
-Afterwards the following command can be used to show all tables in the database.
+Afterward, the following command can be used to show all tables in the database.
 
 ```sh
 \dt
@@ -55,5 +55,5 @@ Here a `+` can also be appended to gain more information.
 \d+ <table>
 ```
 
-Finally and most importantly classic SQL statements - for example `SELECT`-statements - can be used
-too when being logged in to a database.
+Finally, and most importantly classic SQL statements - for example `SELECT`-statements - can be
+used too when being logged in to a database.

@@ -26,7 +26,6 @@ Paste this in the \*ARR application under
 `Settings`, `Indexers`, `Add`, `Torznab` and `Custom` in the `URL` field.
 Also copy and paste the Jackett API key into the corresponding field in the
 \*ARR application.
-Afterwards check and configure the correct category IDs via the `Categories`
-option.
+Afterward, check and configure the correct category IDs via the `Categories` option.
 The list of supported categories can be found in the Jackett indexer
 configuration (the wrench in the corresponding index list entry).

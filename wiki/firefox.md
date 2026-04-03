@@ -317,7 +317,7 @@ censoring tool set the following config.
 security.family_safety.mode = 0
 ```
 
-Additionally check [the telemetry section](#telemetry) and
+Additionally, check [the telemetry section](#telemetry) and
 [the sponsoring section](#sponsorings).
 
 ## Troubleshooting

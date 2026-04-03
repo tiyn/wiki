@@ -15,6 +15,7 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following variables with the -e tag.
 
+
 | Name             | Usage               | Default |
 | ---------------- | ------------------- | ------- |
 | `USER_ID`        | UserID              | `1000`  |
@@ -22,24 +23,29 @@ Set the following variables with the -e tag.
 | `DISPLAY_WIDTH`  | Width of software   | `1280`  |
 | `DISPLAY_HEIGHT` | Height of software  | `768`   |
 
+
 ### Volumes
 
 Set the following volumes with the -v tag.
+
 
 | Outside mount/volume name | Container mount | Description               |
 | ------------------------- | --------------- | ------------------------- |
 | `config`                  | `/config`       | Configuration files       |
 | `media_music`             | `/storage`      | Location for audio files  |
 
+
 ### Ports
 
 Set the following ports with the -p tag.
+
 
 | Container Port | Recommended outside port | Protocol | Description                |
 | -------------- | ------------------------ | -------- | -------------------------- |
 | `5800`         | `5800`                   | TCP      | WebUI                      |
 | `5900`         | `5900`                   | TCP      | VNC                        |
 | `8000`         | `8000`                   | TCP      | Picard browser integration |
+
 
 ### rebuild.sh
 

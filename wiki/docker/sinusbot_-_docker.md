@@ -31,7 +31,7 @@ networks:
     external: true
 ```
 
-Finally make sure to create the external network `teamspeak` before starting the containers.
+Finally, make sure to create the external network `teamspeak` before starting the containers.
 This can be done by running the following command.
 
 ```sh
@@ -47,31 +47,38 @@ Change the other settings according to your needs and run `./rebuild.sh` afterwa
 Set the following environment-variables in the `environment:` section of the
 docker-compose file.
 
+
 | Name        | Usage                          | Default |
 | ----------- | ------------------------------ | ------- |
 | `UID`       | User userid to run gitea       |         |
 | `GID`       | User groupid to run gitea      |         |
 
+
 ### Volumes
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
+
 
 | Outside mount/volume name | Container mount         | Description                           |
 | ------------------------- | ----------------------- | ------------------------------------- |
 | `sinusbot_scripts`        | `/opt/sinusbot/scripts` | storage for the sinusbot scripts      |
 | `sinusbot_data`           | `/opt/sinusbot/data`    | storage for the most of sinusbot data |
 
+
 ### Ports
 
 Set the following ports in the `ports:` section.
+
 
 | Container Port | Recommended outside port | Protocol | Description            |
 | -------------- | ------------------------ | -------- | ---------------------- |
 | `8087`         | `8087`                   | TCP      | WebUI                  |
 
+
 ### Networks
 
 Set the following networks in the `networks:` section of the docker-compose file.
+
 
 | Name        | Usage                        |
 | ----------- | ---------------------------- |

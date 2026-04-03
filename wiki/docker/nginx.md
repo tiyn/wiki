@@ -15,18 +15,22 @@ Change the settings according to your needs and run `./rebuild.sh` afterwards.
 
 Set the following volumes in the `volumes:` section of the docker-compose file.
 
+
 | Outside mount/volume name | Container mount      | Description                 |
 | ------------------------- | -------------------- | --------------------------- |
 | `nginx`                   | `/etc/nginx/conf.d/` | directory for nginx configs |
+
 
 ### Ports
 
 Set the following ports in the `ports:` section.
 
+
 | Container Port | Recommended outside port | Protocol | Description |
 | -------------- | ------------------------ | -------- | ----------- |
 | `80`           | `80`                     | TCP      | http port   |
 | `443`          | `443`                    | TCP      | https port  |
+
 
 ### rebuild.sh
 
