@@ -2,45 +2,62 @@
 
 [LightDM](https://github.com/canonical/lightdm/) is a lightweight GUI
 [display manager](/wiki/linux/display_managers.md).
-It is available for both [X](/wiki/linux/x_window_system.md) and Wayland.
+It is available for both [X](/wiki/linux/x_window_system.md) and [Wayland](/wiki/linux/wayland.md).
 
 ## Setup
 
-On most linux distributions LightDM can be installed with the `lightdm` package.
+On most [Linux](/wiki/linux.md) distributions LightDM can be installed with the `lightdm` package.
 Additionally, `lightdm-gtk-greeter` and `xorg-server-xephyr` are recommended.
-This setup will work with [LightDM-GTK-Greeter](#lightdm-gtk-greeter) which is the default greeter. 
+This setup will work with [LightDM-GTK-Greeter](#lightdm-gtk-greeter) which is the default greeter.
 If another greeter is to be chosen `lightdm-gtk-greeter` does not have to be installed, but an
 alternative for it.
 For a guide on how to set the greeter navigate to the [greeter section](#greeters).
 This section will also discuss various other greeters like the
 [LightDM-Mini-Greeter](#lightdm-mini-greeter).
 
-This setup needs an `xsession`.
-An alternative to this is using `xinitrc` as an `xsession`.
-The process of this is desribed in the
+A system with [the X window system](/wiki/linux/x_window_system.md) setup needs a `xsession`.
+An alternative to this is using `xinitrc` as a `xsession`.
+The process of this is described in the
 [display manager entry](/wiki/linux/display_managers.md#use-xinitrc-as-xsession).
 Make sure to have a working `xsession` or `xinitrc`.
 If you are not sure about it, use the tests provided in the penultimate step.
 
 Then edit the config file `~/.dmrc` and edit the file to the following contents.
 
-```txt 
+```txt
 [Desktop]
-Session=xinitrc
+Session=default
 ```
 
-Before finishing the setup the functionality should be tested.
-This can be done by using one or both of the following commands. 
+Then create a symbolic link for a default session.
 
-```sh 
+```sh
+ln -s /usr/share/xsessions/xinitrc.desktop /usr/share/xsessions/default.desktop
+```
+
+For a [Wayland](/wiki/linux/wayland.md) do the same for your compositor and replace `<session>`
+with it.
+For example in case the system is set up with [the DWL compositor](/wiki/linux/suckless.md)
+`<session>` has to be removed with `dwl.desktop` and for Sway it will be `sway.desktop`.
+Check which session is created by your compositor.
+
+```sh
+ln -s /usr/share/wayland-sessions/<session> /usr/share/wayland-sessions/default.desktop
+```
+
+
+Before finishing the setup the functionality should be tested.
+This can be done by using one or both of the following commands.
+
+```sh
 lightdm --test-mode --debug
 systemctl start lightdm.service
 ```
 
-Finally, the [SystemD](/wiki/linux/systemd.md) lightdm service needs to be enabled and reboot the
+Finally, the [systemd](/wiki/linux/systemd.md) `lightdm` service needs to be enabled and reboot the
 system.
 
-```sh 
+```sh
 systemctl enable lightdm.service`
 reboot
 ```
@@ -48,13 +65,13 @@ reboot
 ## Greeters
 
 LightDM features the option to choose between many different greeters.
-This section focusses on various greeters.
+This section focuses on various greeters.
 
-The greeter can be set with the option `greeter-session` under the section `[Seat:*]` in the file 
+The greeter can be set with the option `greeter-session` under the section `[Seat:*]` in the file
 `/etc/lightdm/lightdm.conf`.
 This will look similar to the following line.
 
-```txt 
+```txt
 [Seat:*]
 
 greeter-session=lightdm-mini-greeter
@@ -65,9 +82,9 @@ If no `greeter-session` is set the default will fall back to the
 
 ### LightDM-GTK-Greeter
 
-The [LightDM-GTK-Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) is the default greeter 
+The [LightDM-GTK-Greeter](https://github.com/Xubuntu/lightdm-gtk-greeter) is the default greeter
 for LightDM.
-This is the default [greeter](#greeters) of [GTK](/wiki/linux/gtk.md) but others may be chosen.
+This is the default [greeter](#greeters) of [GTK](/wiki/linux/gtk.md), but others may be chosen.
 
 ### LightDM-Mini-Greeter
 
@@ -77,10 +94,9 @@ greeter.
 For the LightDM-Mini-Greeter to work correctly some settings have to be set in the file
 `/etc/lightdm/lightdm-mini-greeter.conf`.
 The following lines show an example of this file.
-The most important changes have been done to set the `user` under `[greeter]` 
+The most important changes have been done to set the `user` under `[greeter]`
 and `background-image` under `[greeter-theme]`.
-The background image path can vary, but lightdm has to be able to access the 
-image.
+The background image path can vary, but LightDM has to be able to access the image.
 
 ```txt
 # LightDM Mini Greeter Configuration
@@ -179,5 +195,5 @@ This section will focus on errors and the fixing of errors of LightDM.
 
 ### Bypass LightDM on Error
 
-If it comes to problems that deny the login it can be useful to switch to another tty.
+If it comes to problems that deny the login it can be useful to switch to another TTY.
 This can be done by hitting the key combination `CTRL+ALT+F2`.

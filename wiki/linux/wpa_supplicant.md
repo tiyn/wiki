@@ -26,7 +26,7 @@ correctly.
 ### Restarting WPA Supplicant
 
 Most of the problems regarding WPA Supplicant can be fixed by restarting the 
-[SystemD](/wiki/linux/systemd.md) service with the following command.
+[systemd](/wiki/linux/systemd.md) service with the following command.
 
 ```sh
 systemctl restart wpa_supplicant

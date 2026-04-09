@@ -209,7 +209,7 @@ AbortOnFail
 
 The following hook will use [reflector](https://xyne.dev/projects/reflector/) to update the pacman
 mirrorlist.
-It will use german mirrors (`-c de`), will list the fastest 15 mirrors (`-n 15`) and only do so if
+It will use German mirrors (`-c de`), will list the fastest 15 mirrors (`-n 15`) and only do so if
 the mirror was online in the last 24 hours (`-a 24`).
 It was found in a
 [reddit post by IBNash](https://www.reddit.com/r/archlinux/comments/dsnu81/hear_ye_archers_share_your_pacman_hooks/)

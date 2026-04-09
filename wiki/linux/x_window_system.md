@@ -1,8 +1,8 @@
 # X Window System
 
-X Window System - also called X and X11 according to the current version - is a protocoll for
-handling the display of the most unix-like operating systems.
-[Xorg](https://www.x.org/wiki/) is the most used implementation of the X protocoll.
+X Window System - also called X and X11 according to the current version - is a protocol for
+handling the display of the most Unix-like operating systems.
+[X.Org](https://www.x.org/wiki/) is the most used implementation of the X protocol.
 It is maintained by the [X.Org Foundation](https://x.org/wiki/).
 
 ## Usage
@@ -26,7 +26,7 @@ The screen can be run by simply running the following command.
 slock
 ```
 
-By default this will not be run automatically when the computer goes into sleep.
+By default, this will not be run automatically when the computer goes into sleep.
 This can be changed by installing and using `xss-lock` like the following example shows.
 
 ```sh
@@ -43,7 +43,7 @@ For this navigate to the [corresponding section](#turning-off-the-screen).
 
 Windows can be killed with the utility `xkill`.
 Depending on the [distribution](/wiki/linux.md#distributions) used it maybe has to be installed.
-It often is bundled in a package named `xorg-xkill`.
+It is often bundled in a package named `xorg-xkill`.
 By running `xkill` the mouse cursor will turn into an x.
 With the mouse the window to close can then be selected.
 
@@ -87,7 +87,7 @@ EndSection
 
 This section describes the handling of keyboards by X.
 
-##### Change Keyboardlayout
+##### Change Keyboard Layout
 
 To temporarily change the layout of the keyboard just run `setxkbmap <your preferred layout>`.
 For a permanent change run `localectl set-x11-keymap <your preferred layout>`.
@@ -107,7 +107,7 @@ layouts.
 
 In many languages there are ligatures (for example `œ`) and diacritics (for example `ç`).
 An easy way to write them is by using the compose button.
-Using the compose button these special symbols can be composed from their parts.
+Using the compose button these special symbols can be composed of their parts.
 The `ç` can be written by chaining compose with `,` and `c`.
 The `œ` can be written by chaining compose with `o` and `e`.
 There are many other diacritics and ligatures that can be written this way.
@@ -115,8 +115,8 @@ There are many other diacritics and ligatures that can be written this way.
 To temporarily set up a compose key the following command can be used.
 It will set the given key `<compose>` (for example the right control key with `rctrl`) to act as
 the compose key when tapped.
-`<layout>` specifies the layout of the keymap (for example german with `de`).
-If it is omitted the english `en` layout will be set.
+`<layout>` specifies the layout of the keymap (for example German with `de`).
+If it is omitted the English `en` layout will be set.
 
 ```sh
 setxkbmap -layout <layout> -option compose:<compose>
@@ -158,7 +158,7 @@ EndSection
 ```
 
 Another option to do this is by using the command `xset`.
-An example for this are the follwing commands which will enable the screensaver to act upon 10
+An example for this are the following commands which will enable the screensaver to act upon 10
 minutes of inactivity.
 
 ```sh
@@ -166,7 +166,7 @@ xset s on
 xset s 600
 ```
 
-For more informations on this visit the
+For more information on this visit the
 [Arch wiki](https://wiki.archlinux.org/title/Session_lock#DPMS).
 
 ##### Adjust DPI and UI Scale
@@ -181,7 +181,7 @@ Xft.dpi: 100
 ```
 
 Afterward, `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
-For this to work the following line needs to be added into the `~/.xinitrc` file .
+For this to work the following line needs to be added into the `~/.xinitrc` file.
 
 ```sh
 [ -f "$HOME/.config/xorg/xpcspec" ] && xrdb -merge "$HOME/.config/xorg/xpcspec"
@@ -205,7 +205,7 @@ As written by
 there are two ways to change this property.
 If the change is only needed temporarily
 `xinput set-prop <id> "libinput Middle Emulation Enabled" <flag>` can be run.
-`<id>` is the identifier of the mouse and <flag> is `0` for disabling and `1` for enabling the
+`<id>` is the identifier of the mouse and `<flag>` is `0` for disabling and `1` for enabling the
 middle mouse button.
 For permanent change of the property a change or addition to
 `/etc/X11/xorg.conf.d/40-libinput.conf` can be made.
@@ -241,7 +241,7 @@ For that search for the package `xdg-desktop-portal` or a similar named one usin
 [package manager](/wiki/linux/package_manager.md).
 If it is installed check if it starts up correctly by using the command
 `systemctl --user status xdg-desktop-portal` as described in the
-[SystemD entry](/wiki/linux/systemd.md#startstopenabledisable-a-service-and-retrieve-its-logs).
+[systemd entry](/wiki/linux/systemd.md#startstopenabledisable-a-service-and-retrieve-its-logs).
 
 A possible error is `cannot open display` as it was described and fixed by rockzombie2 and V1del in
 an [Arch Linux](/wiki/linux/arch-linux.md)
@@ -253,7 +253,7 @@ systemctl --user import-environment DISPLAY XAUTHORITY
 systemctl --user restart xdg-desktop-portal
 ```
 
-If that works make sure the Xorg configs are sourced for users aswell.
+If that works make sure the X configs are sourced for users as well.
 It is possible that the following code block is missing in the local `.xinitrc`.
 This would create similar errors to the ones experienced.
 

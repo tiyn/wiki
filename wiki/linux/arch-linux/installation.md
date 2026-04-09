@@ -1,7 +1,7 @@
 # Arch installation with LUKS encryption and LVM
 
 This guide is based upon a
-[german arch wiki article](https://wiki.archlinux.de/title/Installation_mit_UEFI_und_Verschl%C3%BCsselung).
+[German arch wiki article](https://wiki.archlinux.de/title/Installation_mit_UEFI_und_Verschl%C3%BCsselung).
 For encryption [dm-crypt](/wiki/linux/dm-crypt.md) is used.
 Inside the encrypted partition a logical volume will be created with
 [LVM](/wiki/linux/lvm.md).
@@ -25,9 +25,9 @@ Ahead of the installation an Arch boot-stick has to be created as described in
 After that the USB can be plugged in the system on which Arch should be installed.
 Boot the target system and select `Boot Arch Linux (x86_64)`.
 
-If you need to set the keyboard layout to anything other than english you can
+If you need to set the keyboard layout to anything other than English you can
 temporarily do so by using the `loadkeys` command.
-This has to be followed by your country id (for example a german keyboard layout
+This has to be followed by your country id (for example a German keyboard layout
 would be `de`,`de-latin1` or `de-latin1-nodeadkeys`).
 
 ## 2. Formatting of the target drive
@@ -137,7 +137,7 @@ Exit `iwctl`.
 ## 7. Set Region and Language
 
 - `echo LANG=en\_US.UTF-8 > /etc/locale.conf` - Assign system Language to be
-  english (you can use other languages, look into the `/etc/locale.gen` for a list of all available languages)
+  English (you can use other languages, look into the `/etc/locale.gen` for a list of all available languages)
 - `vim /etc/locale.gen` - Assigning system language by uncomment the lines
   depending on your needs.
   In this example:
@@ -151,7 +151,7 @@ en_US.UTF-8 UTF-8
 - `ln -sf  /usr/share/zoneinfo/Europe/Berlin /etc/localtime` - set your timezone
   (select the first file accordingly to your location)
 - `ntpdate -q 0.de.pool.ntp.org` - sync the time and date with
-  [NTP](/wiki/linux/ntp.md) (note that a german time server is used and
+  [NTP](/wiki/linux/ntp.md) (note that a German time server is used and
   depending on the needs a adjustments should be made)
 
 ## 8. Configure and create kernel-image
@@ -254,8 +254,8 @@ partition, take a look at the according section in
 [the dm-crypt article](/wiki/linux/dm-crypt.md).
 
 After installing [xorg windows system](/wiki/linux/x_window_system.md) the language of it will be
-english by default.
-To change it - in this example to german - run the following command.
+English by default.
+To change it - in this example to German - run the following command.
 
 ```sh
 localectl --no-convert set-x11-keymap de pc105 deadgraveacute

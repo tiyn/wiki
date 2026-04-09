@@ -8,4 +8,4 @@ The init process is given to a init system that manages various services.
 
 The following is a list of available init services.
 
-- [SystemD](/wiki/linux/systemd.md) is most common among linux systems.
+- [systemd](/wiki/linux/systemd.md) is most common among linux systems.

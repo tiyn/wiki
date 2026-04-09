@@ -33,9 +33,9 @@ easyeffects --gapplication-service
 ```
 
 The two former commands will only work if called on each startup.
-The easiest way to do this is by using [SystemD](/wiki/linux/systemd.md).
+The easiest way to do this is by using [systemd](/wiki/linux/systemd.md).
 The following will work analogously to the path explained in
-[the corresponding section of the SystemD entry](/wiki/linux/systemd.md#run-command-on-boot).
+[the corresponding section of the systemd entry](/wiki/linux/systemd.md#run-command-on-boot).
 
 Run the following command to edit the configuration file for the newly created EasyEffect service.
 
@@ -88,8 +88,8 @@ By default, EasyEffects processes all input and output streams.
 This includes [loopback devices](/wiki/linux/pipewire.md#virtual-devices) with which it may lead to
 some problems - for example
 [problems with virtual devices](/wiki/linux/pipewire.md#problems-with-input-an-output-of-loopback-devices).
-It can be disabled and re-enabled in the `Preferences` under `Audio` by deselecting or selecting the
-switches for `Process all output streams` and `Process all input streams`.
+It can be disabled and re-enabled in the `Preferences` under `Audio` by deselecting or selecting
+the switches for `Process all output streams` and `Process all input streams`.
 
 #### Recommended Presets
 
@@ -97,4 +97,4 @@ The following is a list of presets that have been tested and only need slight co
 adjust them to the specific system.
 
 - [tiyns voice input preset](https://github.com/tiyn/dotfiles/blob/master/.config/easyeffects/input/voice.json)
-  is a list of different effects to achieve an enhanced quality of microphone sound for speach.
+  is a list of different effects to achieve an enhanced quality of microphone sound for speech.

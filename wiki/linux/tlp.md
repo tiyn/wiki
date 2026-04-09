@@ -11,19 +11,17 @@ Additionally, the installation of `tlp-rdw` is recommended, which is used to get
 radio devices.
 Afterward, the TLP [service](/wiki/linux/systemd.md#startstopenabledisable-a-service) needs to be
 started and enabled.
-In contrast to other
-[SystemD services](/wiki/linux/systemd.md#startstopenabledisable-a-service) this
-can be done by running `sudo tlp start` and running `systemctl enable tlp.service`.
+In contrast to other [systemd services](/wiki/linux/systemd.md#startstopenabledisable-a-service)
+this can be done by running `sudo tlp start` and running `systemctl enable tlp.service`.
 
 ## Configure Battery Charge Thresholds
 
 There are two battery charge thresholds.
-The first is `START_CHARGE_THRESH` this threshold contains the battery charge
-level below which charging will begin.
+The first is `START_CHARGE_THRESH` this threshold contains the battery charge level below which
+charging will begin.
 `STOP_CHARGE_TRESH` is the second threshold.
 It describes up to which level the battery will be charged.
-Battery charge thresholds are used to limit the charging of the battery to
-extend the battery life.
+Battery charge thresholds are used to limit the charging of the battery to extend the battery life.
 
 Thresholds can be set in the file `/etc/tlp.conf`.
 Search and edit the following lines according to your needs.
@@ -33,4 +31,4 @@ START_CHARGE_THRESH_BAT0=75
 STOP_CHARGE_THRESH_BAT0=80
 ```
 
-This can also be achieved by using [tp-battery-mode](/wiki/linux/battery_saving.md#programs)
+This can also be achieved by using [tp-battery-mode](/wiki/linux/battery_saving.md#programs).

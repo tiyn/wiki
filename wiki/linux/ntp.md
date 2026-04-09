@@ -19,7 +19,7 @@ For one time synchronization of the time and date the `ntpdate` command can be
 used.
 The following command is an example for a one time sync.
 Note that the server has to be changed for different time zones.
-In this case a german time server is used.
+In this case a German time-server is used.
 
 ```sh
 ntpdate ptbtime1.ptb.de

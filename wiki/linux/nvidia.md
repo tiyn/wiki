@@ -37,7 +37,7 @@ and select either `Force Composition Timeline` or
 
 On some operating systems like [Arch Linux](/wiki/linux/arch-linux.md) the newer versions of
 drivers are not compatible with Pascal GPUs anymore as explained in
-[the german Arch forum](https://www.archlinux.de/news/35689-Nvidia-Treiber-ab-Version-590-stellen-den-Support-fuer-Pascal-GPUs-ein).
+[the German Arch forum](https://www.archlinux.de/news/35689-Nvidia-Treiber-ab-Version-590-stellen-den-Support-fuer-Pascal-GPUs-ein).
 This is due to the drop of support for these cards from Nvidias site.
 If Pascal-GPUs are still used some minor changes need to be performed and some packets need to be
 replaced.

@@ -36,13 +36,13 @@ priority, `1` being the next highest and so on.
 
 ## Troubleshooting
 
-This section focusses on the troubleshooting of situations where the system does not connect
+This section focuses on the troubleshooting of situations where the system does not connect
 correctly.
 
 ### Restarting and Reenabling Wi-Fi
 
 A useful chain of commands is the following.
-It will restart the [SystemD](/wiki/linux/systemd.md) service and enable the Wi-Fi device.
+It will restart the [systemd](/wiki/linux/systemd.md) service and enable the Wi-Fi device.
 
 ```sh
 systemctl restart NetworkManager

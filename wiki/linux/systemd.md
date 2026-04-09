@@ -1,6 +1,6 @@
-# SystemD
+# systemd
 
-SystemD is an [init system](/wiki/linux/init.md) for Linux systems.
+systemd is an [init system](/wiki/linux/init.md) for Linux systems.
 It is used for service configuration and startup.
 
 ## Usage
@@ -54,9 +54,9 @@ Logs of the last start of the service can be found by running `systemctl status 
 
 Additionally, the `--user` flag can be set to start the service only for the current user.
 
-### Retrieving the SystemD Logs
+### Retrieving the systemd Logs
 
-SystemD logs can easily be found using the `journalctl` command.
+systemd logs can easily be found using the `journalctl` command.
 One of the most notable usages of the command is for checking the logs of the previous boot.
 This can be achieved by running the following command.
 
@@ -117,7 +117,7 @@ sudo systemctl restart systemd-logind
 
 ## Troubleshooting
 
-This section focusses on errors that correspond to the SystemD software.
+This section focusses on errors that correspond to the systemd software.
 
 ### Timed Out Waiting for Device `/dev/tpmrm0`
 
