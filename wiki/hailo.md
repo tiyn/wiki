@@ -9,7 +9,7 @@ An example for a system that uses it is
 Depending on the system and the type of access various things may have to be setup.
 For Ubuntu systems like the [Raspberry Pi](/wiki/linux/raspberry_pi.md) these are often named
 `hailort-pcie-driver` and `hailort`.
-When using the [Python prorgamming language](/wiki/programming_language/python.md) refer to the
+When using the [Python programming language](/wiki/programming_language/python.md) refer to the
 [Hailo section](/wiki/programming_language/python.md#hailo).
 
 ## Usage
@@ -26,11 +26,11 @@ This section assumes the neural network is using
 
 To convert TensorFlow models first the Hailo 8 Software Suite needs to be downloaded.
 This can be done from the [official website](https://hailo.ai/developer-zone/software-downloads/)
-altough an account is needed for it.
+although, an account is needed for it.
 
 After downloading, extracting and then navigating into the folder a heavily customized
 [Docker](/wiki/docker.md) container can be started by running the following command.
-However it is recommended to slightly modify this file.
+However, it is recommended to slightly modify this file.
 Add a volume that contains the TensorFlow model, that is to be converted, to the environment
 variable `DOCKER_ARGS` which is set in the file `hailo_ai_sw_suite_docker_run.sh`.
 
@@ -41,11 +41,11 @@ variable `DOCKER_ARGS` which is set in the file `hailo_ai_sw_suite_docker_run.sh
 Using the tools which come in this container a `.tf` or `.tflite` model can be converted to the
 `.hef` format.
 At the current time only models using `float32` or `float16` are supported.
-`int8` and  `int32` are not supported.
-Mixed precision models are not supported aswell.
+`int8` and `int32` are not supported.
+Mixed precision models are not supported as well.
 
 For this to work run the following commands inside the Docker container.
-The first command takes the path to the tensorflow model (`<path-to-tf-model>`) and will output a
+The first command takes the path to the TensorFlow model (`<path-to-tf-model>`) and will output a
 `.har` model.
 The second command is optional but recommended and takes the path to this `.har` model
 (`<path-to-har-model`) and returns an optimized `.har` model.
@@ -68,7 +68,7 @@ the input format.
 hailo optimize --calib-set-path <data-set> <path-to-har-model>
 ```
 
-Note that the user in the Docker container usually uses anothr UID and GID.
+Note that the user in the Docker container usually uses another UID and GID.
 To make the volume and files accessible inside the container the IDs of the files in the volume
 should be changed accordingly - for example as shown in the following example.
 `<volume-path>` is the path that points to the volume
@@ -79,7 +79,7 @@ and `<gid>` the GID of the Docker user - which can be found using `id -g` (for e
 chown -R <uid>:<gid> <volume-path>
 ```
 
-After the models have been converted it can be reversed using the systems user UID and GID.
+After the models have been converted it can be reversed using the user UID and GID of the system.
 
 The converted models can than be run using the Python programming language as described in the
 [Python article](/wiki/programming_language/python.md#hailo).
