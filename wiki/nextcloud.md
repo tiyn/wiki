@@ -21,13 +21,13 @@ You can access ownCloud via WebDAV with the link
 
 ### Nesting Nextcloud Data of Multiple Servers
 
-By default it is not possible for one servers files to be saved to the folder structure that is
+By default, it is not possible for one server files to be saved to the folder structure that is
 used for another server or to nest data from two or more servers within each other.
 This however can be conveniently avoided by using symbolic links
 (for example [symbolic links](/wiki/linux/shell.md#symbolic-links-using-ln) in
 [Linux](/wiki/linux.md)), which are not by default synchronized to NextCloud.
 
-## Troubleshooting 
+## Troubleshooting
 
 This section will focus on errors and the fixing of errors of NextCloud.
 
@@ -45,6 +45,6 @@ Simply renaming files and folders to not include colons fixes the problems most 
 ### Problem Uploading Files on Android Clients
 
 When using an [Android](/wiki/android.md) client problems may occur regarding uploading files.
-Most of the time no error messages are given but the error can be caused by a colon (`:`) and be
+Most of the time no error messages are given, but the error can be caused by a colon (`:`) and be
 similar to the [previous section](#error-occurred-while-downloading-files-on-android-clients).
 Simply renaming files and folders to not include colons fixes the problems most of the time.
