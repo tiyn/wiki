@@ -107,7 +107,7 @@ The following sections assumes using a [Linux-based system](/wiki/linux.md) usin
 For this a
 [SSH certificate has to be created](/wiki/linux/openssh.md#generate-new-keys) and
 [added to the authentication agent](/wiki/linux/openssh.md#adding-keys-to-authentication-agent).
-Afterward, it the public SSH key to be added to the git server.
+Afterward it the public SSH key to be added to the git server.
 For GitHub there is
 [a guide on that topic](https://docs.github.com/en/get-started/getting-started-with-git/why-is-git-always-asking-for-my-password).
 
@@ -144,7 +144,7 @@ A more or less complete overview of the options was performed in an
 [delta](https://github.com/dandavison/delta) first needs to be installed.
 Most [package managers](/wiki/linux/package_manager.md) package it in the package `git-delta`.
 
-Afterward, it needs to be enabled.
+Afterward it needs to be enabled.
 To do this globally add the following lines to the configuration file of git, which can be found in
 `~/.gitconfig`.
 Depending on the system settings and preferences the dark-mode (`dark`) and the side-by-side view
@@ -170,7 +170,7 @@ Depending on the system settings and preferences the dark-mode (`dark`) and the 
 `git diff` look.
 It can be installed via most [package managers](/wiki/linux/package_manager.md) using the
 `diff-so-fancy` package.
-Afterward, the following lines need to be run to complete the configuration.
+Afterward the following lines need to be run to complete the configuration.
 
 ```sh
 # switch to diff-so-fancy

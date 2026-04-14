@@ -24,7 +24,7 @@ Desktop and gaming systems will benefit the most.
 
 To setup the zen kernel do the following. Firstly install the packages `linux-zen` and
 `linux-zen-header`.
-Afterward, open the file `boot/loader/entries/arch.conf` and change the following lines. 
+Afterward open the file `boot/loader/entries/arch.conf` and change the following lines. 
 
 ```txt 
 linux /vmlinuz-linux
@@ -40,7 +40,7 @@ initrd /initramfs-linux-zen.img
 
 If you want to switch the backup to Zen too, the backup file in `boot/loader/entries/` has to be
 changed too.
-Afterward, the system should be rebooted for the change to take effect.
+Afterward the system should be rebooted for the change to take effect.
 
 ## Usage 
 
@@ -62,7 +62,7 @@ PRESETS=('default'  'fallback')
 Notice that the options are separated only by a space.
 To just build a fallback image remove `'default'` or vice versa.
 
-Afterward, the initial ramdisk has to be [rebuild](#manually-generate-initial-ramdisk).
+Afterward the initial ramdisk has to be [rebuild](#manually-generate-initial-ramdisk).
 
 ### Manually Generate Initial Ramdisk
 

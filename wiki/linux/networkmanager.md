@@ -24,7 +24,7 @@ This plugin can be installed with the `networkmanager-openvpn` package.
 
 OpenVPNs `.ovpn` files can then be imported by running
 `nmcli connection import type openvpn file <openvpn-file>`.
-Afterward, they can be modified accordingly.
+Afterward they can be modified accordingly.
 
 ### Prioritize Connections
 

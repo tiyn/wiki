@@ -25,7 +25,7 @@ Some installations require the swapping of discs during the installation.
 An easy way around this is to mount the [ISO image](/wiki/linux/iso_image.md#mounting) and copy
 them into another directory.
 This way the files from two discs can be put in one folder.
-Afterward, follow the installation as usual.
+Afterward follow the installation as usual.
 
 If a setup executable is available select `Install a Windows game from media`.
 Then select the setup executable from the mounted path.
@@ -87,7 +87,7 @@ the [documentation of Lutris](https://github.com/lutris/docs/blob/master/Perform
 It is important to install both the 64-bit and the 32-bit version to ensure full functionality.
 Check the package manager of your distribution for packages with the names `gamemode` and
 `lib32-gamemode` or similar names or install it manually via git.
-Afterward, check in Lutris `Preferences` if `Enable Feral GameMode` is checked under the
+Afterward check in Lutris `Preferences` if `Enable Feral GameMode` is checked under the
 `Global options` tab.
 
 Another way to increase the performance is to increase the
@@ -118,7 +118,7 @@ For disabling networking for a command the program
 In Lutris after the installation of firejail right-click the game to disable networking on.
 Select `Configure` and navigate to `System Options`.
 Enable `Advanced` and insert `firejail --net=none --noprofile` into the `command prefix` field.
-Afterward, all networking of the selected game is disabled.
+Afterward all networking of the selected game is disabled.
 
 ### Adding and Removing Runners and Sources
 

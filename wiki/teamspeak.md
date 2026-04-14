@@ -53,7 +53,7 @@ Sound packs can be found on the
 [myTeamSpeak website](https://www.myteamspeak.com/?search=&type=SOUNDPACK).
 They are often available as a `.ts3_soundpack` file.
 This file is similar to a `.zip` archive and can be unpacked the same way.
-Afterward, the folder containing the audio files (`.wav` files) needs to be inserted into the sound
+Afterward the folder containing the audio files (`.wav` files) needs to be inserted into the sound
 folder of TeamSpeak.
 For TeamSpeak3 on [Linux](/wiki/linux.md) systems this folder can be found at
 `/opt/teamspeak3/sound`.

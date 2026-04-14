@@ -133,7 +133,7 @@ In the following it is assumed that the partition to enlarge is `/dev/sda2`
     the partition)
 - `quit` parted
 
-Afterward, the file system needs to be resized as described in the
+Afterward the file system needs to be resized as described in the
 [corresponding section](#growing-a-file-system).
 
 ### Growing a File System
@@ -154,7 +154,7 @@ This can be done using the command `sudo e2fsck -f <path to partition>`.
 `<path to partition>` directs to the volume whose file system should be shrinked - for example
 `/dev/sda1`.
 It has to be the same for the next step as well.
-Afterward, the file system can be shrunken with the command
+Afterward the file system can be shrunken with the command
 `sudo resize2fs <path to partition> <new size of the file system>`.
 `<new size of the file system>` is the size that the file system will be shrunken to in the usual
 notation (for example `12G`).

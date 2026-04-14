@@ -9,7 +9,7 @@ Change the settings according to your needs.
 Create the volume for the configuration files by running the command `docker volume create
 gameyfin_config`.
 Make sure to run the following command on the config volume `chown -R 1000:root gameyfin_config`.
-Afterward, run `./rebuild.sh`.
+Afterward run `./rebuild.sh`.
 
 ### Environment-variables
 

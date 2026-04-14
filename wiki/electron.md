@@ -29,7 +29,7 @@ For the Gnome Keyring install the [packages](/wiki/linux/package_manager.md) `li
 `gnome-keyring`.
 The name may differ slightly depending on the [package manager](/wiki/linux/package_manager.md)
 used.
-Afterward, make sure to run the service and enable it if not already done.
+Afterward make sure to run the service and enable it if not already done.
 An example for this is shown in the following command
 
 ```sh 

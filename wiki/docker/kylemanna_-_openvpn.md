@@ -20,7 +20,7 @@ docker run -v openvpn:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp:
 docker run -v openvpn:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
 ```
 
-Afterward, run `./rebuild.sh`.
+Afterward run `./rebuild.sh`.
 
 ### Volumes
 

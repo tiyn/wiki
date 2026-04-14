@@ -23,7 +23,7 @@ Under preferences set the following URL under `Additional boards manager URLs`.
 
 `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
 
-Afterward, install the board manager `esp32`.
+Afterward install the board manager `esp32`.
 
 ### Flash Firmware on the ESP32 
 
@@ -52,7 +52,7 @@ If it is not in programming mode it will show up as port but will encounter `Wri
 when trying to flash programs or firmware onto it.
 To put the ESP32 in the programming mode press and hold the Boot-Button (usually labeled `B`).
 Then press and release the Reset-Button (usually labeled `R`).
-Afterward, release the Boot-Button.
+Afterward release the Boot-Button.
 The board now should be in programming mode and it should be possible to upload and flash programs
 or firmware onto it.
 This section is based on a Reddit

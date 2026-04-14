@@ -19,7 +19,7 @@ First the devices updatable by fwupd can be checked.
 fwupdmgr get-devices
 ```
 
-Afterward, the latest metadata can be downloaded by the following command.
+Afterward the latest metadata can be downloaded by the following command.
 
 ```sh
 fwupdmgr refresh

@@ -125,7 +125,7 @@ For example if you want to the disk 100 by 100G (100GibiByte):
 qm resize 100 ide0 +100G
 ```
 
-Afterward, the partition of the VM needs to be enlarged.
+Afterward the partition of the VM needs to be enlarged.
 For that
 [the disk management article](/wiki/linux/disk-management.md#grow-non-lvm-partition)
 can be used for non-LVM paritions.

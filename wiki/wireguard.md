@@ -30,7 +30,7 @@ Wireguard clients connect to servers by using a `.conf` file.
 For mobile devices often times a QR-code can also be used.
 
 In Linux based operating systems the `.conf` can be placed at the path `/etc/wireguard/wg0.conf`.
-Afterward, wireguard can be started and stopped by running the following commands.
+Afterward wireguard can be started and stopped by running the following commands.
 
 ```
 wg-quick up wg0

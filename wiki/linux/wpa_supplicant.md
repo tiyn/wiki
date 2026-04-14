@@ -32,6 +32,6 @@ Most of the problems regarding WPA Supplicant can be fixed by restarting the
 systemctl restart wpa_supplicant
 ```
 
-Afterward, if the error still persists - it may be useful to reenable the Wi-Fi device as explained
+Afterward if the error still persists - it may be useful to reenable the Wi-Fi device as explained
 in the
 [section of the NetworkManager entry](/wiki/linux/networkmanager.md#restarting-and-reenabling-wi-fi).

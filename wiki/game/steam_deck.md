@@ -32,7 +32,7 @@ appended to the command used for starting the emulator needed for it.
 This should be made in quotation marks as it could contain characters that need
 to be escaped.
 
-Afterward, the icons and banners of it can be set using
+Afterward the icons and banners of it can be set using
 [SteamGridDB](/wiki/game/steam.md#setting-icons-and-banners-for-games).
 
 ### Plugin Manager Decky
@@ -42,7 +42,7 @@ Some of these options can be accessed by installing
 [the plugin manager Decky](https://github.com/SteamDeckHomebrew/decky-loader).
 To install it download the setup file from the
 [GitHub page](https://github.com/SteamDeckHomebrew/decky-loader) and run it.
-Afterward, the plugin manager will be available after pressing the `...` button on the Deck and
+Afterward the plugin manager will be available after pressing the `...` button on the Deck and
 navigating to the bottom of the menu.
 There plugins can be installed and removed aswell as managed.
 

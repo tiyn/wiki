@@ -52,7 +52,7 @@ nativefier --name Mastodon \
 --single-instance https://mastodon.technology
 ```
 
-Afterward, if a [Linux](/wiki/linux.md)-based system is used the created app can be added to the
+Afterward if a [Linux](/wiki/linux.md)-based system is used the created app can be added to the
 path.
 An example for this is the following command which
 [links](/wiki/linux/shell.md#symbolic-links-using-ln) the applicatoin to a specifically created

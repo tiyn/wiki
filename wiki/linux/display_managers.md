@@ -26,4 +26,4 @@ chmod +x ~/.xinitrc
 ln -s ~/.xsession ~/.xinitrc
 ```
 
-Afterward, the session will start like the `xinitrc`
+Afterward the session will start like the `xinitrc`

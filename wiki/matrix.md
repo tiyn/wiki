@@ -427,4 +427,4 @@ Finally, add the following lines in the `service` section to your `docker-compos
       - "5349:5349"
 ```
 
-Afterward, if not done already restart the Matrix server and all its services.
+Afterward if not done already restart the Matrix server and all its services.
