@@ -38,7 +38,7 @@ Alternatively a recovery key can be used.
 sudo dislocker /dev/sdc1 -p<recovery password> -- /mnt/bitlocker
 ```
 
-Afterward, the `dislocker-file` can be mounted to the `/mnt/windows` directory or another mount
+Afterward the `dislocker-file` can be mounted to the `/mnt/windows` directory or another mount
 point as described in the [NTFS entry](/wiki/linux/ntfs.md#manual-mounting).
 
 ### Automatic Mounting at Boot

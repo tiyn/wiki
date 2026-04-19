@@ -30,7 +30,7 @@ For this reason the following command has to be run first.
 apt-mark hold docker-ce docker-ce-cli containerd.io
 ```
 
-Afterward, the packages of the current major release version have to be
+Afterward the packages of the current major release version have to be
 [upgrading](/wiki/linux/package_manager/apt.md#updating-upgrading) using APTs `full-upgrade`
 option.
 Then a reboot is recommended.

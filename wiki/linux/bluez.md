@@ -9,7 +9,7 @@ This entry features the BlueZ package and all software that is based on it.
 On most [Linux](/wiki/linux.md) distributions BlueZ can be installed with the `bluez` package.
 Additionally, the `bluez-utils` package needs to be installed.
 To load the kernel module `modprobe btusb` needs to be run.
-Afterward, the
+Afterward the
 [service](/wiki/linux/systemd.md#startstopenabledisable-a-service) can be
 started and enabled by running the following commands.
 
@@ -73,6 +73,6 @@ For this run the following command where `<bluetooth-adapter>` is the name of th
 rfkill unblock <bluetooth-adapter>
 ```
 
-Afterward, the adapter will probably be recognized again but a restart of service
+Afterward the adapter will probably be recognized again but a restart of service
 `bluetooth.service` eventually has to be restarted as described in the
 [systemd entry](/wiki/linux/systemd.md#startstopenabledisable-a-service-and-retrieve-its-logs).

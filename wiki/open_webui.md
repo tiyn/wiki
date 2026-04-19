@@ -32,7 +32,7 @@ list available networks.
 ollama list
 ```
 
-Afterward, a model can be selected and pulled by using the following command. `<model>` is the name
+Afterward a model can be selected and pulled by using the following command. `<model>` is the name
 of the model obtained in the previous step (for example `deepseek-r1`).
 
 ```sh 

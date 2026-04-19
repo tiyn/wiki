@@ -37,7 +37,7 @@ The tracking of the time can be stopped by running the following command.
 watson stop
 ```
 
-Afterward, the summary of the tracked time can be displayed by running the following command.
+Afterward the summary of the tracked time can be displayed by running the following command.
 
 ```sh
 watson report

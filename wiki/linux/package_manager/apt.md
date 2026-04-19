@@ -17,7 +17,7 @@ command.
 apt update
 ```
 
-Afterward, there are two possible update types without changing the major release version.
+Afterward there are two possible update types without changing the major release version.
 
 The following command - `upgrade` - updates the packages only if no new or previously removed dependencies are
 needed.

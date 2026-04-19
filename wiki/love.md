@@ -29,7 +29,7 @@ love <game-directory>
 
 For building the game, the game directory has to be compressed first, then compiled and finally the
 permissions has to be changed to make the compiled file runnable.
-Afterward, the game can be compiled using the following command, where `<game-directory>` is the
+Afterward the game can be compiled using the following command, where `<game-directory>` is the
 path to the game directory and `<game-name>` is the name the compiled file should be called.
 
 ```sh
@@ -38,7 +38,7 @@ cat /usr/bin/love <game-name>.love > <game-name>
 chmod a+x <game-name>
 ```
 
-Afterward, the compiled file can simply be run using the usual [Shell](/wiki/linux/shell.md)
+Afterward the compiled file can simply be run using the usual [Shell](/wiki/linux/shell.md)
 command.
 
 ```sh

@@ -31,7 +31,7 @@ be run afterward to change the current database.
 \c <database>
 ```
 
-Afterward, the following command can be used to show all tables in the database.
+Afterward the following command can be used to show all tables in the database.
 
 ```sh
 \dt

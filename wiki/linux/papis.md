@@ -58,7 +58,7 @@ papis add https://arxiv.org/abs/1712.03134
 ```
 
 To remove an entry the following command can be run.
-Afterward, the entry that should be removed can be easily selected via the terminal user interface.
+Afterward the entry that should be removed can be easily selected via the terminal user interface.
 
 ```sh
 papis rm
@@ -112,13 +112,13 @@ inside the folder `tmp-db`.
 papis bibtex read mylib.bib import -a -o tmp-db
 ```
 
-Afterward, the contents of the temporary database should be checked to be correctly imported.
+Afterward the contents of the temporary database should be checked to be correctly imported.
 
 ```sh
 papis -l tmp-db edit
 ```
 
-Afterward, the contents of the temporary library should be moved to the actualy directory where
+Afterward the contents of the temporary library should be moved to the actualy directory where
 papis stores its entries.
 The path for that can be found in the [config file](#configuration).
 

@@ -16,7 +16,7 @@ qt5ct is officially archived and qt6ct is the recommended program to use and wil
 discussed in this article.
 These programs can sometimes be found as [package](/wiki/linux/package_manager.md) of the same
 name.
-Afterward, `qt6ct` can be run to get a graphical user interface to set the theme and icons of Qt
+Afterward `qt6ct` can be run to get a graphical user interface to set the theme and icons of Qt
 applications.
 This will create or edit a configuration file located at `~/.config/qt6ct/qt6ct.conf`.
 To make this config apply for all Qt applications the following line needs to be inserted into the
@@ -26,7 +26,7 @@ To make this config apply for all Qt applications the following line needs to be
 export QT_QPA_PLATFORMTHEME="qt6ct"
 ```
 
-Afterward, `qt6ct` can be used to enable the dark mode or change other configurations.
+Afterward `qt6ct` can be used to enable the dark mode or change other configurations.
 
 #### Achieving a System-Wide Uniform Look
 
@@ -56,5 +56,5 @@ When updating the system it is possible that the theme will not work correctly a
 Often the error `The libqt6ct.so plugin is compiled against incompatible Qt version` is responsible
 for this.
 To fix it most of the time it is enough to recompile the `qt6ct` package.
-Afterward, a reboot might be needed for the theme to be displayed correctly again.
+Afterward a reboot might be needed for the theme to be displayed correctly again.
 

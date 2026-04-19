@@ -21,13 +21,13 @@ various [package managers](/wiki/linux/package_manager/pacman_and_aur.md).
 For Carbon Boogie has to be installed too.
 This is best done by installing a .NET SDK which is often packaged in a package called `dotnet-sdk`
 or a similar named one.
-Afterward, boogie can be installed using the following command.
+Afterward boogie can be installed using the following command.
 
 ```sh
 dotnet tool install -g boogie
 ```
 
-Afterward, the building of Silicon and/or Carbon can follow.
+Afterward the building of Silicon and/or Carbon can follow.
 
 The easiest way to build one or both verifiers locally is creating a `.jar` file via
 [Docker](/wiki/docker.md) using the
@@ -50,14 +50,14 @@ cd /mnt/carbon
 sbt assembly
 ```
 
-Afterward, leave the Docker container.
+Afterward leave the Docker container.
 It is no longer needed.
 
 The `.jar` files are now available in `<path-to-carbon>/target/scala-<version>/carbon.jar` or
 `<path-to-silicon>/target/scala-2.13/silicon.jar` and are ready to be used outside the docker
 container from the host machine.
 
-Afterward, Carbon and/or Silicon are ready to be [used](#usage).
+Afterward Carbon and/or Silicon are ready to be [used](#usage).
 
 ## Usage
 

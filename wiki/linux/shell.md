@@ -161,7 +161,7 @@ yay -S dash
 sudo ln -sfT /bin/dash /bin/sh
 ```
 
-Afterward, create the file `/usr/share/libalpm/hooks/bash-update.hook` and fill
+Afterward create the file `/usr/share/libalpm/hooks/bash-update.hook` and fill
 it with the following text.
 
 ```txt

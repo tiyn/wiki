@@ -35,7 +35,7 @@ In the [TVHeadend entry](/wiki/tvheadend.md) a guide to run an instance is given
 In the admin dashboard install the
 [TVHeadend plugin](https://jellyfin.org/docs/general/server/plugins/tvheadend/)
 and restart the server.
-Afterward, create a user with a username in TVHeadend under
+Afterward create a user with a username in TVHeadend under
 `Go to Configuration > Users > Access Entries > Add`.
 Check the `Change Parameters`
 `Rights`, `Channel number range`, `Channel tags`, `DVR configurations`,
@@ -49,7 +49,7 @@ Select `Basic`, `Advanced` and `HTSP` under `Streaming` and `Basic`, `HTSP` and
 Save the user.
 Create a password via `Configuration > Users > Passwords > Add`.
 Check `Enabled`, select the according `Username` and fill in the `Password`.
-Afterward, save.
+Afterward save.
 
 Now in Jellyfin under `Go to Dashboard > Plugins > TVHeadend > Settings` set
 the `TVHeadend Hostname or IP Address`, the `HTTP Port` and `HTSP Port`, the
@@ -57,7 +57,7 @@ the `TVHeadend Hostname or IP Address`, the `HTTP Port` and `HTSP Port`, the
 
 Finally, run `Refresh Guide Data` under `Dashboard > Live TV > Live TV` to load
 the guide data for the next 7 days aswell as to refresh the TV channels.
-Afterward, the channels [mapped in TVHeadend](/wiki/tvheadend.md#adding-channels)
+Afterward the channels [mapped in TVHeadend](/wiki/tvheadend.md#adding-channels)
 should appear in the `Live TV` Library.
 
 ### Client

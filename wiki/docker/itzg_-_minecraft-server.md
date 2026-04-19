@@ -80,7 +80,7 @@ For this set the server type by using the `-e TYPE=<type>` flag.
 Most notably this value could be `FABRIC` or `FORGE`.
 After this the mods (as `.jar` files) can be placed in the `mods` directory of the
 [Docker](/wiki/docker.md) volume.
-Afterward, run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded mods.
+Afterward run the [`rebuild.sh`](#rebuildsh) to restart the server with loaded mods.
 
 #### Installing Datapacks
 

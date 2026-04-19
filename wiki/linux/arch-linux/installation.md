@@ -87,7 +87,7 @@ For this guide this partition is assumed to be `/dev/sda2`.
 ```sh
 cryptsetup -c aes-xts-plain -s 512 -y -v luksFormat /dev/sda2
 ```
-Afterward, confirm with `YES`.
+Afterward confirm with `YES`.
 Now you can assign a passphrase.
 The passphrase has to be entered at boot to decrypt the system.
 Recovering of this passphrase is **not** possible.
@@ -125,7 +125,7 @@ Now the created filesystems will be mounted for the installation.
 Now you need a working internet connection.
 If a wireless internet connection is needed start `iwctl`, scan (`station wlan0 scan`) and connect
 to the router (`station wlan0 connect <router ssid>`).
-Afterward, the internet connection will be established.
+Afterward the internet connection will be established.
 Exit `iwctl`.
 
 - `pacstrap /mnt base base-devel dosfstools gptfdisk lvm2 linux linux-firmware vim networkmanager ntp`

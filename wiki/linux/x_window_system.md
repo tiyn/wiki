@@ -180,7 +180,7 @@ The DPI number should be adjusted as needed.
 Xft.dpi: 100
 ```
 
-Afterward, `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
+Afterward `~/.config/xorg/xpcspec` needs to be sourced in the `~/.xinitrc` file.
 For this to work the following line needs to be added into the `~/.xinitrc` file.
 
 ```sh

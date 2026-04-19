@@ -9,7 +9,7 @@ The official container and documentation was made by
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.
-Afterward, you need to create a user.
+Afterward you need to create a user.
 This can be done by running the following line with changed credentials:
 
 ```sh

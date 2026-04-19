@@ -45,7 +45,7 @@ First set up Syncthing as described in the
 If a system with only user access - like the [Steam Deck](/wiki/game/steam_deck.md) - is used the
 [user space configuration](/wiki/syncthing.md#user-space-configuration-for-linux)
 is recommended.
-Afterward, move the game saves to the directory set up by Syncthing and create
+Afterward move the game saves to the directory set up by Syncthing and create
 [symbolic links](/wiki/linux/shell.md#symbolic-links-using-ln) to link them back to the original
 place.
 

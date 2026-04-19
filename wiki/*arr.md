@@ -16,7 +16,7 @@ These are [Linuxservers Sonarr image](/wiki/docker/linuxserver_-_sonarr.md),
 ### Initial Configuration
 
 For the initial configuration navigate to `System` and `Status`.
-Afterward, check if there are any messages.
+Afterward check if there are any messages.
 There are probably a few steps that need to be taken to complete the setup.
 Set the `Download Clients` under `Settings`.
 For this an instance of a [BitTorrent Client](/wiki/bittorrent.md#clients) can be used.

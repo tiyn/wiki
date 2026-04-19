@@ -32,5 +32,5 @@ network:
     version: 2
 ```
 
-Afterward, netplan has to be restarted by running `sudo netplan apply`.
+Afterward netplan has to be restarted by running `sudo netplan apply`.
 The addresses then are assigned to the system.

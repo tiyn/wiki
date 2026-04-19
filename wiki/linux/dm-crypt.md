@@ -89,7 +89,7 @@ cryptsetup luksOpen <path to LUKS volume> crypt-volume --key-file=<key file loca
 
 `<path to LUKS device>` is the encrypted device (for example `/dev/sda2`).
 
-Afterward, it can be closed by running `cryptsetup close /dev/mapper/crypt0`.
+Afterward it can be closed by running `cryptsetup close /dev/mapper/crypt0`.
 
 ### Creating/Add a USB Decryption Key
 

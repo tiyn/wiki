@@ -18,7 +18,7 @@ converted to BetterDiscord.
 betterdiscordctl install
 ```
 
-Afterward, BetterDiscord can be kept up to date with the following command.
+Afterward BetterDiscord can be kept up to date with the following command.
 
 ```sh
 betterdiscordctl self-upgrade

@@ -114,7 +114,7 @@ Make sure to restart the SSH daemon afterward by running the following command.
 service sshd restart
 ```
 
-Afterward, X-forwarding should be enabled on the server.
+Afterward X-forwarding should be enabled on the server.
 For full functionality install the `x11-apps` package as well.
 
 #### Enabling X-Forwarding on a Client
@@ -166,7 +166,7 @@ the process.
 ps aux | grep "ssh -f -N -L <local port>"
 ```
 
-Afterward, it can be killed by running the following command where `<process-id>` is the ID of the
+Afterward it can be killed by running the following command where `<process-id>` is the ID of the
 process found with the previous command.
 
 ```sh

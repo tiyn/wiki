@@ -49,7 +49,7 @@ aswell.
 sudo apt install tk-dev tcl-dev
 ```
 
-Afterward, the python source code can be downloaded.
+Afterward the python source code can be downloaded.
 
 ```sh
 wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tgz
@@ -57,7 +57,7 @@ tar -xf Python-3.9.1.tgz
 cd Python-3.9.1
 ```
 
-Afterward, if OpenSSL should be enabled for Python uncomment all the corresponding lines in
+Afterward if OpenSSL should be enabled for Python uncomment all the corresponding lines in
 `Modules/Setup`.
 This part of the guide is taken from a
 [StackOverflow post by Ironman](https://stackoverflow.com/questions/58309485/modulenotfounderror-no-module-named-ssl).
@@ -70,7 +70,7 @@ make
 sudo make altinstall
 ```
 
-Afterward, you can check if the Pyhton version is installed using the following command.
+Afterward you can check if the Pyhton version is installed using the following command.
 
 ```sh
 python3.9 --version
