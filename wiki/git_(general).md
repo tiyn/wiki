@@ -16,36 +16,41 @@ has a [separate article](/wiki/linux/git_%28package%29.md).
 ### Server
 
 The server hosts the data that is needed for the versioning.
-A distinction can be made between
-[GUI-less servers](#server-without-graphical-interface) and
-[servers with a web-GUI](#server-with-web-interface).
+There are many different [server](#server) which also have
+[distinct applications](#distinct-git-server-apps) other than the normal [client](#client).
 
-#### Server with web interface
+#### Server
 
 Web interfaces for git are quite useful for easily showing code to other people.
 Additionally, it is easy to collaborate together.
 
-- [Gitea](gitea.md) is an open-source and selfhosted git instance which can be dockerized.
-- [GitHub](https://github.com) is a popular git server. 
-  It is not selfhosted and owned by microsoft ([cli-tool](https://github.com/github/hub)).
+- [Gitea](gitea.md) is an open-source and self-hosted git instance which can be
+  [dockerized](/wiki/docker/gitea_-_gitea.md).
+  It has a graphical user interface.
+- [GitHub](https://github.com) is a popular git server.
+  It is not self-hosted and owned by Microsoft.
+  It has a graphical user interface.
 - [GitLab](https://gitlab.com) is a self-hostable git instance which also has a default version
   available via their website.
-
-#### Git Apps
-
-Depending on the [specific server](#server-with-web-interface) used there are many different apps
-that can be used.
-
-- For [GitHub](https://github.com) there is app with the same name for
-  [Android](/wiki/android.md) devices and iOS devices.
-- For [Gitea](/wiki/gitea.md) and Forgejo there is an app called [GitNex](https://gitnex.com) which
-  is available for [Android](/wiki/android.md) devices.
-- For [GitLab](https://gitlab.com) there is an app called [LabNex](https://labnex.app) which is
-  available for [Android](/wiki/android.md) devices.
-
-#### Server without graphical interface
-
-If you don't need a bloated web-interface a more basic approach is more than enough.
-
+  It has a graphical user interface.
 - [git-server-docker](/wiki/docker/jkarlos_-_git-server-docker.md) is a pretty
   basic docker-container for git.
+  It does not have a graphical user interface.
+
+If a solution for storing datasets or AI models is needed [KohakuHub](/wiki/kohakuhub.md) is
+available and uses similar techniques of storage and versioning although it is not a Git server.
+
+#### Distinct Git Server Apps
+
+Depending on the [specific server](#server) used there are many different apps
+that can be used.
+The normal git [clients](#client) can be used for all of them.
+
+- [GitHub](https://github.com) features various apps with the same name for
+  [Android](/wiki/android.md) and iOS devices.
+- [hub](https://github.com/github/hub) is an official command-line tool for
+  [GitHub](https://github.com).
+- [GitNex](https://gitnex.com) is an app for [Android](/wiki/android.md) devices which can access
+    [Gitea](/wiki/gitea.md) and Forgejo instances.
+- [LabNex](https://labnex.app) is an app for [Android](/wiki/android.md) devices which can access
+    [GitLab](https://gitlab.com) instances.

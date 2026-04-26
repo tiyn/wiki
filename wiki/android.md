@@ -11,7 +11,7 @@ A free and open-source alternative to it is [F-Droid](/wiki/android/f-droid.md) 
 open-source software.
 
 A list of open-source software options is also available on Alberto Mosconis
-[Github](/wiki/git_%28general%29.md#server-with-web-interface) repository
+[Github](/wiki/git_%28general%29.md#server) repository
 [foss apps](https://github.com/albertomosconi/foss-apps/tree/main).
 
 Additionally, open-source apps can be installed from source using
