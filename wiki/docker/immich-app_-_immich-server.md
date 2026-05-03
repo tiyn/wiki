@@ -27,7 +27,7 @@ Set the following ports in the `ports:` section.
 
 | Container Port | Recommended outside port | Protocol  | Description   |
 | -------------- | ------------------------ | --------- | ------------- |
-| `2283`         | `3001`                   | TCP       | WebUI         |
+| `2283`         | `2283`                   | TCP       | WebUI         |
 
 
 ### Volumes
@@ -62,7 +62,7 @@ DB_DATA_LOCATION=immich_postgres
 # TZ=Etc/UTC
 
 # The Immich version to use. You can pin this to a specific version like "v1.71.0"
-IMMICH_VERSION=release
+IMMICH_VERSION=v2
 
 # Connection secret for postgres. You should change it to a random password
 # Please use only the characters `A-Za-z0-9`, without special characters or spaces
