@@ -7,6 +7,28 @@ language.
 
 You can install python using various ways.
 
+### Installation From Package Managers
+
+Using various [package managers](/wiki/linux/package_manager.md) the current python version can be
+easily installed.
+Additionally an [pyenv](#pyenv-installation), [uv](#uv-installation) or [manual installation](#manual-installation) can be
+done to get a specific older versions for projects.
+
+### uv Installation
+
+[uv](https://docs.astral.sh/uv/) is a python package and project manager.
+It can manage python versions.
+
+Versions can be installed and set for the current directory and subdirectories as shown in the
+following commands where `<python-version>` is the python version.
+
+```sh
+uv python install <python-version>
+uv python pin <python-version>
+```
+
+uv can also be used to manage [virtual environments](#uv-virtual-environments).
+
 ### pyenv Installation
 
 With [pyenv](https://github.com/pyenv/pyenv) you can easily switch between different versions.
@@ -45,7 +67,7 @@ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-
 For Tk programs (like matplotlib) to work correctly the following dependencies need to be installed
 aswell.
 
-```sh 
+```sh
 sudo apt install tk-dev tcl-dev
 ```
 
@@ -116,6 +138,33 @@ To automatically create a `requirements.txt` of your current project, navigate
 to it and run `pipreqs` (install it if not already done).
 
 ### Using Virtual Environments
+
+There are various options to use virtual environments.
+The first and most commonly used option is [venv](#venv-virtual-environments).
+A more modern and arguably better approach is using [uv](#uv-virtual-environments).
+
+#### uv Virtual Environments
+
+Since uv is a project-based tool the following command has to be used to create a project where
+`<path>` is the path to the project directory.
+If it is omitted the project will be created in the current working directory.
+
+```sh 
+uv init <path>
+```
+
+Additionally this command can be expanded with flags.
+To create the most basic form of a project without a `README.md` the `--bare` flag can be used.
+
+To use uv as a virtual environment similar to venv the following command can be invoked inside a
+project directory.
+It will create a `.venv` directory containing the `bin/activate` file.
+
+```sh 
+uv venv
+```
+
+#### venv Virtual Environments
 
 [venv](https://docs.python.org/3/library/venv.html) can be used to create a virtual environment.
 
@@ -217,13 +266,13 @@ For Windows refer to the
 After the systemwide setup the project environment can be setup.
 It is recommended to use [virtual environments](#using-virtual-environments).
 The easiest way to achieve ROCm support is by using [pip](#modules).
-As explained in the 
+As explained in the
 [official PyTorch guide](https://rocm.docs.amd.com/projects/radeon-ryzen/en/latest/docs/install/installrad/native_linux/install-pytorch.html)
 the following example can be used inside the environment to install all needed ROCm packages.
 In this example the version `7.2` is installed.
 Adjustments to the command may have to be done in case another version should be installed.
 
-```sh 
+```sh
 wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/torch-2.9.1%2Brocm7.2.0.lw.git7e1940d4-cp312-cp312-linux_x86_64.whl
 wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/torchvision-0.24.0%2Brocm7.2.0.gitb919bd0c-cp312-cp312-linux_x86_64.whl
 wget https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2/triton-3.5.1%2Brocm7.2.0.gita272dfa8-cp312-cp312-linux_x86_64.whl
@@ -242,7 +291,7 @@ After this installation for some GPUs - especially integrated GPUs like the Rade
 additional step has to be taken.
 In this case the following global shell variable has to be set.
 
-```sh 
+```sh
 export HSA_OVERRIDE_GFX_VERSION=10.3.0
 ```
 
@@ -298,7 +347,7 @@ like the [Hailo chips](/wiki/hailo.md) or the [EPS32S3](/wiki/microcontroller.md
 A simple example for the combination of two models (`model1` and `model2`) into a new model
 (`combined_model`) is the following code.
 
-```sh 
+```sh
 output = model2(model1.output)
 combined_model = tf.keras.models.Model(inputs=model1.input, outputs=output)
 ```
