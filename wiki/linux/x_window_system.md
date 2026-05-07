@@ -103,14 +103,7 @@ setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <la
 Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
 layouts.
 
-##### Write Diacritics and Ligatures
-
-In many languages there are ligatures (for example `œ`) and diacritics (for example `ç`).
-An easy way to write them is by using the compose button.
-Using the compose button these special symbols can be composed of their parts.
-The `ç` can be written by chaining compose with `,` and `c`.
-The `œ` can be written by chaining compose with `o` and `e`.
-There are many other diacritics and ligatures that can be written this way.
+##### Temporarily Set Up a Compose Key
 
 To temporarily set up a compose key the following command can be used.
 It will set the given key `<compose>` (for example the right control key with `rctrl`) to act as
@@ -121,6 +114,33 @@ If it is omitted the English `en` layout will be set.
 ```sh
 setxkbmap -layout <layout> -option compose:<compose>
 ```
+
+##### Write Diacritics and Ligatures
+
+In many languages there are ligatures (for example `œ`) and diacritics (for example `ç`).
+An easy way to write them is by using the compose button.
+Using the compose button these special symbols can be composed of their parts.
+The `ç` can be written by chaining compose with `,` and `c`.
+The `œ` can be written by chaining compose with `o` and `e`.
+There are many other diacritics and ligatures that can be written this way.
+
+There are many other typographic symbols that can be written this way - among them
+[quotation marks](#write-typographic-quotation-marks).
+
+##### Write Typographic Quotation Marks
+
+Many languages use typographic quotation marks instead of plain ASCII quotes (`"`).
+Examples are the German quotation marks (`„` and `“`) and the guillemets (`»` and `«`) which are
+used in the German language as well as French and others.
+An easy way to write them is by using the compose button.
+Using the compose button these quotation marks can be composed of simpler characters.
+The opening German quote `„` can be written by chaining compose with `"` and `,`.
+The closing German quote `“` can be written by chaining compose with `<` and `"`.
+Likewise the guillemets `»` and `«` can be written using compose sequences as well with `<` and `<`
+or `>` and `>`.
+
+There are many other typographic symbols that can be written this way - among them
+[diacritics and ligatures](#write-diacritics-and-ligatures).
 
 #### Display
 
