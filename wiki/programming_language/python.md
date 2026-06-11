@@ -149,7 +149,7 @@ Since uv is a project-based tool the following command has to be used to create 
 `<path>` is the path to the project directory.
 If it is omitted the project will be created in the current working directory.
 
-```sh 
+```sh
 uv init <path>
 ```
 
@@ -160,8 +160,15 @@ To use uv as a virtual environment similar to venv the following command can be 
 project directory.
 It will create a `.venv` directory containing the `bin/activate` file.
 
-```sh 
+```sh
 uv venv
+```
+
+Packages can then be installed using the following command.
+`<package>` is the name of the package to install.
+
+```sh
+uv add <package>
 ```
 
 #### venv Virtual Environments
@@ -216,6 +223,32 @@ If it doesnt work the packages can be installed globally using `pip` together wi
 This flag is to be used with care.
 
 This section addresses various different modules.
+
+### scikit-learn
+
+[scikit-learn](https://scikit-learn.org/stable/index.html) is a free and open-source library that
+provides various machine learning algorithms.
+By default, [scikit-learn](https://scikit-learn.org/stable/index.html) does only utilize the CPU.
+This, however, can be easily changed to also utilize the GPU and speed up calculation as explained
+in the [corresponding section](#run-scikit-learn-algorithms-on-the-gpu)
+
+#### Run scikit-learn Algorithms on the GPU
+
+Using [cuml](https://docs.rapids.ai/api/cuml/latest/) the GPU can be utilized with only two lines
+to add to existing code.
+As explained in the
+[cuml guide on zero code change acceleration](https://docs.rapids.ai/api/cuml/latest/cuml-accel/)
+only the following two lines have to be added to run the scikit-learn algorithms on the GPU.
+Additionally, cuml has to be installed using a [Python package manager](#using-virtual-environments)
+like [uv](#uv-virtual-environments).
+It is important that these lines are put before importing any scikit-learn packages.
+
+```py
+import cuml
+cuml.accel.install()
+```
+
+Afterwards all possible scikit-learn algorithms will run on the GPU instead of the CPU.
 
 ### PyTorch
 
