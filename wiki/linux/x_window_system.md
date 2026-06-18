@@ -103,9 +103,23 @@ setxkbmap -query | grep -q '<layout 1>' && setxkbmap <layout 2> || setxkbmap <la
 Using [SXHKD](/wiki/linux/sxhkd.md) a hotkey can be setup to seamlessly transition between the two
 layouts.
 
-##### Temporarily Set Up a Compose Key
+##### Compose Key
 
-To temporarily set up a compose key the following command can be used.
+Many composable letters such as ligatures, diacritics or typographic quotation marks can be typed
+quickly and effectively with the use of the compose key.
+They can easily be found by searching for them in the following way where `<query-term>` is the
+sign to search for (for example `single quotation mark`).
+
+```sh
+grep -i "<query-term>" /usr/share/X11/locale/en_US.UTF-8/Compose
+```
+
+For diacritics and ligatures check the [following section](#write-diacritics-and-ligatures) and for
+typographic quotation marks [another section exists](#write-typographic-quotation-marks)
+
+###### Temporarily Set Up a Compose Key
+
+To temporarily set up a [compose key](#compose-key) the following command can be used.
 It will set the given key `<compose>` (for example the right control key with `rctrl`) to act as
 the compose key when tapped.
 `<layout>` specifies the layout of the keymap (for example German with `de`).
@@ -118,10 +132,10 @@ setxkbmap -layout <layout> -option compose:<compose>
 ##### Write Diacritics and Ligatures
 
 In many languages there are ligatures (for example `œ`) and diacritics (for example `ç`).
-An easy way to write them is by using the compose button.
+An easy way to write them is by using the [compose key](#compose-key).
 Using the compose button these special symbols can be composed of their parts.
-The `ç` can be written by chaining compose with `,` and `c`.
-The `œ` can be written by chaining compose with `o` and `e`.
+The c-cedilla (`ç`) can be written by chaining compose with `,` and `c`.
+The oe-ligature (`œ`) can be written by chaining compose with `o` and `e`.
 There are many other diacritics and ligatures that can be written this way.
 
 There are many other typographic symbols that can be written this way - among them
@@ -132,12 +146,15 @@ There are many other typographic symbols that can be written this way - among th
 Many languages use typographic quotation marks instead of plain ASCII quotes (`"`).
 Examples are the German quotation marks (`„` and `“`) and the guillemets (`»` and `«`) which are
 used in the German language as well as French and others.
-An easy way to write them is by using the compose button.
+An easy way to write them is by using the [compose key](#compose-key).
 Using the compose button these quotation marks can be composed of simpler characters.
 The opening German quote `„` can be written by chaining compose with `"` and `,`.
 The closing German quote `“` can be written by chaining compose with `<` and `"`.
 Likewise the guillemets `»` and `«` can be written using compose sequences as well with `<` and `<`
 or `>` and `>`.
+
+The left-hand single quotation mark (`‘`) can be written by chaining compose with `<` and `'`.
+The right-hand single quotation (`’`) mark can be written by chaining compose with `>` and `'`.
 
 There are many other typographic symbols that can be written this way - among them
 [diacritics and ligatures](#write-diacritics-and-ligatures).
