@@ -10,6 +10,9 @@ data.
   list of security flaws of your system
 - [arch-audit](https://gitlab.archlinux.org/archlinux/arch-audit) is a tool to find vulnerabilities
   known to the [Arch](/wiki/linux/arch-linux.md) Security Team.
+- [aur-malware-check](https://github.com/lenucksi/aur-malware-check) is a tool to check if the
+  system uses packages from the
+  [AUR](/wiki/linux/package_manager/pacman_and_aur.md#installing-an-aur-program-with-a-specific-version).
 
 ## Specific Steps to Harden a System
 
