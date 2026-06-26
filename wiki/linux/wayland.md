@@ -1,7 +1,15 @@
-# Wayland 
+# Wayland
 
 [Wayland](https://wayland.freedesktop.org/) is a replacement for the
 [X11 window system](/wiki/linux/x_window_system.md).
+
+## Compositors
+
+The following is a list of Wayland compositors.
+
+- [dwl](/wiki/linux/suckless.md) is a compositor which is similar to suckless' X11 window manager
+  called dwm.
+- [mango](https://github.com/mangowm/mango) is a feature-rich Wayland compositor built on dwl.
 
 ## Usage
 
