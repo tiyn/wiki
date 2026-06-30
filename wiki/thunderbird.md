@@ -7,20 +7,54 @@ numerous [email](/wiki/email.md) addresses, calendars, todos and contacts.
 
 The following section addresses different uses and add-ons of Thunderbird.
 
+### Add New Alias/Identity to Existing Account
+
+When using mail aliases most of the time they by default map to the existing mail.
+This way the receiving of messages works by default.
+However, some steps have to be taken for the sending of messages using the alias mail address to
+work.
+Navigate to the `Account Setting` entry of the existing mail address.
+There select `Manage Identities...` and select `Add...`.
+Set `Your Name` and `Email Address` accordingly to the new alias.
+At the `Private Data` section set the existing mail address identity under `Outgoing Server`.
+Then save.
+Afterward, if you intend to use end-to-end encryption select the alias identity entry again and
+select `Edit`.
+Navigate to `End-To-End Encryption` and set the settings according to your wishes.
+For example the OpenPGP key may have to be selected and default settings for signing could be set.
+
 ### Use PGP Key for Encryption, Decryption and Signing
 
 Thunderbird can use [OpenPGP](/wiki/openpgp.md) to sign, encrypt or decrypt mails.
-To add this navigate to the `Account Settings` under `Edit` and then select the mail to add the PGP
-key to and `End-to-End Encryption`.
-There keys can be added by selecting `Add Keys...` and afterwards the private key can be selected
+
+Firstly a key needs to be generated.
+This is explained in the sections on [key generation](/wiki/linux/gpg.md#generating-a-key-pair),
+[key management](/wiki/linux/gpg.md#managing-multiple-users-and-e-mails-of-an-existing-secret-key)
+and [key export](/wiki/linux/gpg.md#backing-up-and-exporting-keys) in the
+[GPG entry](/wiki/linux/gpg.md).
+Other [OpenPGP](/wiki/openpgp.md) implementations can also be used but [GPG](/wiki/linux/gpg.md) is
+the most used one.
+
+To add a key to an existing mail account on Thunderbird, navigate to the `Account Settings` under
+`Edit` and then select the mail to add the PGP key to and `End-to-End Encryption`.
+There keys can be added by selecting `Add Keys...` and afterward the private key can be selected
 for encryption, decryption and signing.
 This however is only possible if the key is issued to the same e-mail it should be added to.
 
 In the `Account Settings` of emails with set up PGP key the default options can be set up.
-Under `Deault settings for sending messages` it can be set to encrypt or not encrypt mails by
+Under `Default settings for sending messages` it can be set to encrypt or not encrypt mails by
 default.
 Emails can also be signed by default if not encrypted (for this select
 `Sign unencrypted messages`).
+
+Finally, the PGP key should be published.
+This can be done via Thunderbirds own `OpenPGP Key Manager` under the `End-To-End Encryption` tab of
+the `Account Settings` of a mail entry.
+Select a OpenPGP key to publish and select `Keyserver` and `Publish`.
+Thunderbird will, by default, publish to [keys.openpgp.org](https://key.openpgp.org) but the
+managing and removal of keys can be more easily be done manually as explained in the
+[OpenPGP entry](/wiki/openpgp.md#publishing-pgp-keys).
+It is generally recommended to also publish the keys this way.
 
 ### Enable Spell Checking of a Specific Language
 

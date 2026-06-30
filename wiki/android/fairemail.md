@@ -23,6 +23,11 @@ There the provider of OpenPGP (`OpenPGP provider`) can be set to OpenKeychain
 (`org.sufficientlysecure.keychain`).
 Using OpenKeychain PGP keys can then be imported and stored.
 
+Please note that keys only need to be imported once.
+If the keys are changed, especially if identities are added or remove, the key inside the
+OpenKeychain app can simply be updated by selecting the update button.
+However, identities need to be removed manually sometimes.
+
 After this is done outgoing mails can be encrypted by signed or encrypted by selecting the
 `Encrypt` selection on the top bar when writing emails.
 
