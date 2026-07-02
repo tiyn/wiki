@@ -11,8 +11,8 @@ You can install python using various ways.
 
 Using various [package managers](/wiki/linux/package_manager.md) the current python version can be
 easily installed.
-Additionally an [pyenv](#pyenv-installation), [uv](#uv-installation) or [manual installation](#manual-installation) can be
-done to get a specific older versions for projects.
+Additionally, a [pyenv](#pyenv-installation), [uv](#uv-installation) or
+[manual installation](#manual-installation) can be done to get a specific older version for projects.
 
 ### uv Installation
 
@@ -153,7 +153,7 @@ If it is omitted the project will be created in the current working directory.
 uv init <path>
 ```
 
-Additionally this command can be expanded with flags.
+Additionally, this command can be expanded with flags.
 To create the most basic form of a project without a `README.md` the `--bare` flag can be used.
 
 To use uv as a virtual environment similar to venv the following command can be invoked inside a
@@ -342,8 +342,7 @@ torch.cuda.is_available()
 
 The package for [Hailo chips](/wiki/hailo.md) has to be downloaded from the
 [official website](https://hailo.ai/developer-zone/software-downloads).
-Additionally, additional setup may be required as explained in the
-[Hailo article](/wiki/hailo.md#setup).
+Additional setup may be required as explained in the [Hailo article](/wiki/hailo.md#setup).
 
 Hailo chips can be used to run converted [TensorFlow](#tensorflow) models.
 The conversion process is explained in the

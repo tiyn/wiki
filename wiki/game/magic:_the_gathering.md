@@ -40,7 +40,7 @@ Many of them also feature public decks.
 
 - [Archidekt](https://archidekt.com/) is another popular deck building site.
     With the option to build commander decks based on a specific commander.
-    It additionally, features the display of public decks.
+    Additionally, it features the display of public decks.
 - [deckbox](https://deckbox.org/) is a very clean deck builder website.
 - [deckstats.net](https://deckstats.net/) gives the option to build and analyze MTG(A) decks.
 - [Delver Lens](https://www.delverlab.com/) is an [Android](/wiki/android.md) application for
@@ -186,7 +186,7 @@ The card has to be efficient mana-wise.
 It should therefore always be compared to other cards that are played similarly.
 For creatures without any bonus attributes it is said that 1 Power and 1 Toughness per Mana is a
 good starting point.
-Additionally cards should fit the strategy and shouldn't be too specific.
+Additionally, cards should fit the strategy and shouldn't be too specific.
 Modal spells (1 card with multiple options) can be useful to be prepared for different
 situations without too specific cards
 They shouldn't be "win-more"-card and play good on their own.
