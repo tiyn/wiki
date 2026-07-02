@@ -1,4 +1,4 @@
-# tetricz - mordhau-server
+# tetricz – mordhau-server
 
 This is a [Docker](/wiki/docker.md) container for a mordhau server.
 The official container and documentation was made by

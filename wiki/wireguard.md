@@ -3,7 +3,7 @@
 [WireGuard](https://www.wireguard.com/) is a free and open-source software that
 implements encrypted VPNs.
 It was designed to be especially fast and secure.
-This section including its subsections - especially the [usage](#usage-wg) is
+This section including its subsections – especially the [usage](#usage-wg) is
 based on an extensive guide on WireGuard by
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-wireguard-on-ubuntu-20-04#step-9-connecting-the-wireguard-peer-to-the-tunnel).
 
@@ -22,7 +22,7 @@ Additionally, to this a [client](#client-wg) is needed on the system that access
 WireGuard clients can be found for many devices.
 For [Android](/wiki/android.md) for example there is
 [Wireguard for Android in the F-Droid store](https://f-droid.org/de/packages/com.wireguard.android/).
-For most linux distributions there is a package called `wireguard-tools`.
+For most [Linux distributions](/wiki/linux.md#distributions) there is a package called `wireguard-tools`.
 
 ## Usage
 
@@ -80,4 +80,4 @@ the system has been updated and the system wasn't restarted causing the same
 problem.
 To fix this `linux` can be reinstalled but a full update of the system is
 recommended.
-Because it changes the kernel the system needs to be restarted afterwards.
+Because it changes the kernel the system needs to be restarted afterward.

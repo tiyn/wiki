@@ -1,7 +1,7 @@
 # PulseAudio
 
 [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio) is a
-[sound server](/wiki/linux/audio.md#sound-server) distributed by the
+[sound server](/wiki/linux/audio_%28linux%29.md#sound-server) distributed by the
 [freedesktop.org](https://www.freedesktop.org/wiki/Software/PulseAudio) project.
 
 ## Usage

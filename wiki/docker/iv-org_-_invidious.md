@@ -1,4 +1,4 @@
-# iv-org - invidious
+# iv-org – invidious
 
 This is a [Docker](/wiki/docker.md) container for [Invidious](/wiki/invidious.md).
 The official container and documentation was made by
@@ -72,7 +72,7 @@ services:
     image: quay.io/invidious/invidious:latest
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      – "3000:3000"
     environment:
       # Please read the following file for a comprehensive list of all available
       # configuration options and their associated syntax:
@@ -101,15 +101,15 @@ services:
       timeout: 5m
       retries: 3
     depends_on:
-      - invidious-db
+      – invidious-db
 
   invidious-db:
     image: docker.io/library/postgres:14
     restart: unless-stopped
     volumes:
-      - postgresdata:/var/lib/postgresql/data
-      - ./config/sql:/config/sql
-      - ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
+      – postgresdata:/var/lib/postgresql/data
+      – ./config/sql:/config/sql
+      – ./docker/init-invidious-db.sh:/docker-entrypoint-initdb.d/init-invidious-db.sh
     environment:
       POSTGRES_DB: invidious
       POSTGRES_USER: kemal

@@ -1,7 +1,8 @@
 # Whisper CLI
 
-[Whisper CLI](https://github.com/vatsalaggarwal/whisper-cli) is a non-real-time offline speech
-transcription software for [Linux](/wiki/linux.md)-based operating systems which uses the
+[Whisper CLI](https://github.com/vatsalaggarwal/whisper-cli) is a non-real-time offline
+[speech](/wiki/audio_%28general%29.md) transcription software for [Linux](/wiki/linux.md)-based
+operating systems which uses the
 [Whisper API](/wiki/speech_recognition_and_synthesis.md#whisper-api).
 
 ## Setup
@@ -29,8 +30,8 @@ This section addresses the usage of Whisper CLI.
 
 ### Basic Usage
 
-Whisper CLI can be used to transcribe an [audio](/wiki/audio.md) file as shown in the following
-command.
+Whisper CLI can be used to transcribe an [audio](/wiki/audio_%28general%29.md) file as shown in the
+following command.
 In this example `<model-path>` is the path to the Whisper model.
 
 ```sh

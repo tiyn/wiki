@@ -1,4 +1,4 @@
-# gitea - gitea
+# gitea – gitea
 
 This is a [Docker](/wiki/docker.md) container for a [Gitea](/wiki/gitea.md).
 The Server consists of 2 Docker containers, one is the gitea main server and one is a database.
@@ -8,7 +8,7 @@ it.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -92,37 +92,37 @@ services:
   server:
     image: gitea/gitea:latest
     environment:
-      - USER_UID=1000
-      - USER_GID=1000
-        - DB_TYPE=mysql
-        - DB_HOST=db:3306
-        - DB_NAME=gitea
-        - DB_USER=gitea
-        - DB_PASSWD=gitea
+      – USER_UID=1000
+      – USER_GID=1000
+        – DB_TYPE=mysql
+        – DB_HOST=db:3306
+        – DB_NAME=gitea
+        – DB_USER=gitea
+        – DB_PASSWD=gitea
     restart: unless-stopped
     networks:
-      - gitea
+      – gitea
     volumes:
-      - data:/data
-      - /etc/timezone:/etc/timezone:ro
-      - /etc/localtime:/etc/localtime:ro
+      – data:/data
+      – /etc/timezone:/etc/timezone:ro
+      – /etc/localtime:/etc/localtime:ro
     ports:
-      - "3000:3000"
-      - "222:22"
+      – "3000:3000"
+      – "222:22"
     depends_on:
-      - db
+      – db
   db:
     image: mysql:5.7
     restart: unless-stopped
     environment:
-      - MYSQL_ROOT_PASSWORD=gitea
-      - MYSQL_USER=gitea
-      - MYSQL_PASSWORD=gitea
-      - MYSQL_DATABASE=gitea
+      – MYSQL_ROOT_PASSWORD=gitea
+      – MYSQL_USER=gitea
+      – MYSQL_PASSWORD=gitea
+      – MYSQL_DATABASE=gitea
     networks:
-      - gitea
+      – gitea
     volumes:
-      - mysql:/var/lib/mysql
+      – mysql:/var/lib/mysql
 
 volumes:
   data:

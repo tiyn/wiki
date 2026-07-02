@@ -1,4 +1,4 @@
-# viperproject - viperserver
+# viperproject – viperserver
 
 This is a [Docker](/wiki/docker.md) container for a [Viper](/wiki/programming_language/viper.md)
 server, which is used for building the Viper verifiers
@@ -9,7 +9,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 Due to this container being used to build the Silicon and Carbon verifiers it is recommended to be
 started in interactive mode as demonstrated in the [rebuild section](#rebuildsh).
 Make sure to substitute `<path-to-carbon>` and `<path-to-silicon>`.

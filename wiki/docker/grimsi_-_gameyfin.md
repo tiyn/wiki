@@ -1,4 +1,4 @@
-# grimsi - gameyfin
+# grimsi – gameyfin
 
 This is a [Docker](/wiki/docker.md) container for a [Gameyfin](/wiki/game/gameyfin.md).
 
@@ -62,15 +62,15 @@ services:
     image: grimsi/gameyfin:latest
     container_name: gameyfin
     environment:
-      - GAMEYFIN_USER=admin
-      - GAMEYFIN_PASSWORD=admin
-      - GAMEYFIN_IGDB_API_CLIENT_ID=id
-      - GAMEYFIN_IGDB_API_CLIENT_SECRET=secret
+      – GAMEYFIN_USER=admin
+      – GAMEYFIN_PASSWORD=admin
+      – GAMEYFIN_IGDB_API_CLIENT_ID=id
+      – GAMEYFIN_IGDB_API_CLIENT_SECRET=secret
     volumes:
-      - media_games:/opt/gameyfin-library
-      - config:/opt/gameyfin-library/.gameyfin
+      – media_games:/opt/gameyfin-library
+      – config:/opt/gameyfin-library/.gameyfin
     ports:
-      - "8093:8080"
+      – "8093:8080"
 
 volumes:
     media_games:

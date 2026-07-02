@@ -1,18 +1,18 @@
 # Git (Client)
 
-This entry deals with the Git client used in
-[Linux-based systems](/wiki/linux.md).
+This entry deals with the Git client used in [Linux-based systems](/wiki/linux.md).
 For a basic overview and the server setup of git see the
 [corresponding entry](/wiki/git_%28general%29.md)
 
 The client is pretty simple to understand.
-With only a handfull of commands you should be able to get your versioning going.
-For servers with web interfaces there are different cli tools to control it
+With only a handful of commands you should be able to get your versioning going.
+For servers with web interfaces there are different CLI tools to control it
 without using a browser.
 
 ## Setup
 
-On most linux distributions Git can be installed with the `git` package.
+On most [Linux distributions](/wiki/linux.md#distributions) Git can be installed with the `git`
+package.
 The package provides a simple command line interface.
 
 An alternative to the classical interface is the [lazygit](https://github.com/jesseduffield/lazygit)
@@ -24,11 +24,11 @@ Though it provides a new user interface it still uses the `git` package as a bas
 This section addresses various use cases of git.
 
 There is also an interactive
-[fixup guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
-Robertson also made guides on [post production](https://github.com/SethRobertson/GitPostProduction)
+[fix-up guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
+Robertson also made guides on [post-production](https://github.com/SethRobertson/GitPostProduction)
 and [best practices](http://sethrobertson.github.io/GitBestPractices).
 
-### Modify a Commit Already Done 
+### Modify a Commit Already Done
 
 In Git it is possible to alter a commit.
 This can be done by using the `--amend` flag in the `commit` option.
@@ -36,7 +36,7 @@ Together with the `--no-edit` flag it will create a new commit that will replace
 the same message and the newly changed files.
 This command will look like the following.
 
-```sh 
+```sh
 git commit --amend --no-edit
 ```
 
@@ -49,17 +49,17 @@ In this case to [push it has to be done forcefully](#force-pushing).
 ### Force Pushing
 
 Force pushing in Git allows you to overwrite the history of a remote branch.
-Using the following command replaces the remote branch with your local state, even if other commits 
+Using the following command replaces the remote branch with your local state, even if other commits
 have been pushed in the meantime, which can in turn permanently remove these commits.
 
 ```sh
 git push --force
 ```
 
-Using the force command with the `--force-with-lease` flag, as shown in the following command, 
+Using the force command with the `--force-with-lease` flag, as shown in the following command,
 performs a safety check before overwriting.
-It only proceeds if the remote branch is still in the expected state and rejects the push 
-otherwise. 
+It only proceeds if the remote branch is still in the expected state and rejects the push
+otherwise.
 Most of the time, especially when using shared branches, this is generally considered the safer and
 preferred option.
 
@@ -67,12 +67,12 @@ preferred option.
 git push --force-with-lease
 ```
 
-### Visualize Commit Graph 
+### Visualize Commit Graph
 
 The commit history of a Git repository can best be visualized using a graph.
 This can be done by using the default `git` command as the following command shows.
 
-```sh 
+```sh
 git log --graph
 ```
 

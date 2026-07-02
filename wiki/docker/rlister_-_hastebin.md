@@ -1,4 +1,4 @@
-# rlister - hastebin
+# rlister – hastebin
 
 This is a [Docker](/wiki/docker.md) container for a hastebin server.
 The official container and documentation was made by
@@ -7,7 +7,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 

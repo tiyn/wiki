@@ -1,4 +1,4 @@
-# vabene1111 - recipes
+# vabene1111 – recipes
 
 This is a [Docker](/wiki/docker.md) container for a [TandoorRecipes](/wiki/tandoor_recipes.md)
 server.
@@ -13,7 +13,7 @@ In addition to the main container you need to connect a
 Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.
 Make sure to set `SECRET_KEY` and `POSTGRES_PASSWORD`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 

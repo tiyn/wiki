@@ -24,7 +24,7 @@ And often appears on more minimal window managers on [Xorg](/wiki/linux/x_window
 If no compatible service is running or detected, apps cannot save credentials.
 
 Using the following steps this issue can be solved.
-Firstly - if not already done - install a secret service.
+Firstly – if not already done – install a secret service.
 For the Gnome Keyring install the [packages](/wiki/linux/package_manager.md) `libsecret` and
 `gnome-keyring`.
 The name may differ slightly depending on the [package manager](/wiki/linux/package_manager.md)

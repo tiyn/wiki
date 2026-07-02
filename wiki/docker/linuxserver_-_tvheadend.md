@@ -1,4 +1,4 @@
-# linuxserver - tvheadend
+# linuxserver – tvheadend
 
 This is a [Docker](/wiki/docker.md) container for a [TVHeadend](/wiki/tvheadend.md)
 server.
@@ -62,12 +62,12 @@ services:
   tvheadend:
     image: lscr.io/linuxserver/tvheadend:latest
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/London
+      – PUID=1000
+      – PGID=1000
+      – TZ=Europe/London
     volumes:
-      - config:/config
-      - tvdvr:/recordings
+      – config:/config
+      – tvdvr:/recordings
     network_mode: "host"
     restart: unless-stopped
 

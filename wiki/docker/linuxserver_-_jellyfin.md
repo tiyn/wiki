@@ -1,4 +1,4 @@
-# linuxserver - jellyfin
+# linuxserver – jellyfin
 
 This is a [Docker](/wiki/docker.md) container for a [jellyfin](/wiki/jellyfin.md)
 server.
@@ -9,7 +9,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -72,16 +72,16 @@ services:
     image: linuxserver/jellyfin
     container_name: jellyfin
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Berlin
+      – PUID=1000
+      – PGID=1000
+      – TZ=Europe/Berlin
     volumes:
-      - config:/config
-      - media_movies:/data/movies
-      - media_tvshows:/data/tvshows
-      - transcode:/transcode
+      – config:/config
+      – media_movies:/data/movies
+      – media_tvshows:/data/tvshows
+      – transcode:/transcode
     ports:
-      - 8096:8096
+      – 8096:8096
     restart: unless-stopped
 
 volumes:

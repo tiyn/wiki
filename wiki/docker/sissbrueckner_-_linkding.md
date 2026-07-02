@@ -1,4 +1,4 @@
-# sissbrueckner - linkding
+# sissbrueckner – linkding
 
 This is a [Docker](/wiki/docker.md) container for a [linkding](/wiki/linkding.md)
 bookmark and archive service.

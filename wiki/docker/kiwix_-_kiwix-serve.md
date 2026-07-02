@@ -1,4 +1,4 @@
-# /maintainer/ - /name/
+# /maintainer/ – /name/
 
 This is a [Docker](/wiki/docker.md) container for a [Kiwix](/wiki/kiwix.md) server.
 The official container and documentation was made by
@@ -8,7 +8,7 @@ The official container and documentation was made by
 
 Create the file `rebuild.sh`.
 Make sure to place the `.zim` files inside the volume.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ## Ports
 

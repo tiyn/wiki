@@ -94,6 +94,16 @@ For this the command will create a file called `lib.bib`.
 papis export --all --format bibtex --out lib.bib
 ```
 
+Additionally, a query – in this case the placeholder `<query>` – can be passed to the export command.
+This can for example be used to export entries that contain a specific tag.
+This way, if papers are tagged based on projects, entries for a given project can easily be
+retrieved.
+The corresponding command will look similar to the following.
+
+```sh
+papis export --all <query> --format bibtex --out lib.bib
+```
+
 ### Clearing the Cache
 
 The cache of Papis can be cleared by running the following command.
@@ -143,12 +153,12 @@ ref-format = {doc[author_list][0][family]}{doc[year]}
 
 Doing this the existing entries, its files, folders and references will not be renamed.
 To achieve a factual renaming of all the entries in a library,
-[export the library](#export-library-to-bibtex-file), remove all entries from within it and then 
+[export the library](#export-library-to-bibtex-file), remove all entries from within it and then
 [import the entries](#import-entries-from-a-bibtex-file) into it again.
 
 ### Adding Files to Existing Entry
 
-To add files - for example PDF files to an existing entry run the following command.
+To add files – for example PDF files – to an existing entry run the following command.
 `<file>` is the path to the (PDF-)file and `<library>` is the name of the library to add to.
 After running the command a [TUI](comm) will open to select the entry to which the file will be
 added.

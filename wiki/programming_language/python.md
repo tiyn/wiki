@@ -212,7 +212,7 @@ directory.
 
 There are various modules and package managers to install these for Python like
 `pip`.
-For this usually a virtual environment is needed - as it is described in
+For this usually a virtual environment is needed – as it is described in
 [the setup section](#setup).
 Alternatively local package manager like the
 [ones of various Linux distributions](/wiki/linux/package_manager.md) can sometimes be used to
@@ -248,7 +248,7 @@ import cuml
 cuml.accel.install()
 ```
 
-Afterwards all possible scikit-learn algorithms will run on the GPU instead of the CPU.
+Afterward all possible scikit-learn algorithms will run on the GPU instead of the CPU.
 
 ### PyTorch
 
@@ -320,7 +320,7 @@ triton-3.5.1+rocm7.2.0.gita272dfa8-cp312-cp312-linux_x86_64.whl
 If old versions of `torch`, `torchvision`, `torchaudio` or `triton` are installed inside the
 environment they may need to be removed.
 
-After this installation for some GPUs - especially integrated GPUs like the Radeon 660M - an
+After this installation for some GPUs – especially integrated GPUs like the Radeon 660M – an
 additional step has to be taken.
 In this case the following global shell variable has to be set.
 

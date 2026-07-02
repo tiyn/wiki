@@ -4,7 +4,7 @@ This article describes the `flac` codec.
 For the linux `flac` package see the
 [flac package entry](/wiki/linux/flac_%28package%29.md).
 
-`flac` - short for Free Lossless Audio Codec - is a [audio](/wiki/audio.md) codec
+`flac` – short for Free Lossless Audio Codec – is a [audio](/wiki/audio_%28general%29.md) codec
 without compression losses.
 
 ## Tagging
@@ -12,7 +12,7 @@ without compression losses.
 The following explains the most general tags in short.
 
 - `title` is the name of the music piece.
-- `artist` is the artist of the song - for classical music it is the composer.
+- `artist` is the artist of the song – for classical music it is the composer.
 - `album` is the name of the album.
 - `tracknumber` is the number of the music piece in the album
 - `date` is the year of publication

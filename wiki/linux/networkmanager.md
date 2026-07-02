@@ -1,14 +1,15 @@
 # NetworkManager
 
-NetworkManager - short NM - is a program to automatically detect and connect to
+NetworkManager – short NM – is a program to automatically detect and connect to
 networks by providing options for various configuration.
 It is used to set up [Wi-Fi](/wiki/linux/hardware_%28linux%29.md#wi-fi).
 
 ## Setup
 
-NetworkManager can be installed with the `networkmanager` package on most linux distributions which
-provides daemon aswell as `nmcli` a command line interface and `nmtui` a
-[terminal](/wiki/linux/system_console.md) user interface for configuration.
+NetworkManager can be installed with the `networkmanager` package on most
+[Linux distributions](/wiki/linux.md#distributions) which provides daemon as well as `nmcli` a
+command line interface and `nmtui` a [terminal](/wiki/linux/system_console.md) user interface for
+configuration.
 Additionally, `nm-connection-editor` can be installed for a graphical user interface.
 
 ## Usage
@@ -49,5 +50,5 @@ systemctl restart NetworkManager
 nmcli radio wifi on
 ```
 
-If the error still persists afterwards it may be useful to also restart WPA Supplicant as explained
+If the error still persists afterward it may be useful to also restart WPA Supplicant as explained
 [in the corresponding section of its entry](/wiki/linux/wpa_supplicant.md#restarting-wpa-supplicant).

@@ -16,7 +16,7 @@ image and `<disk-path>` is the path to the device to flash to (for example `/dev
 dd if=<img-path> of=<disk-path> status=progress
 ```
 
-This however can also be done using the Raspberry Pi imager - which most
+This however can also be done using the Raspberry Pi imager – which most
 [package managers](/wiki/linux/package_manager.md) package under `rpi-mager`.
 It too can also be found on the [official website](https://www.raspberrypi.com/software).
 When using the imager as a non-root user this user may have to be given rights to access disks or

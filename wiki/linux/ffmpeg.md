@@ -10,7 +10,7 @@ This section addresses the usage of FFmpeg.
 ### Convert from format to another
 
 The following line is an example for a conversion of a video and audio capable
-format - in this case `.webm` - to an audio format - in this case `.flac`:
+format – in this case `.webm` – to an audio format – in this case `.flac`:
 `ffmpeg -i audio.webm -c:a flac audio.flac`.
 For audio to audio conversion the following example is used:
 `ffmpeg -i audio.m4a -f flac audio.flac`.
@@ -37,7 +37,7 @@ command accordingly.
 
 ### Two-Pass Encoding
 
-Two pass encoding - as described in the
+Two pass encoding – as described in the
 [official FFmpeg documentation](https://trac.ffmpeg.org/wiki/Encode/H.264#twopass)
 - uses two passes.
 The first pass analyzes the input data and outputs a descriptor file.

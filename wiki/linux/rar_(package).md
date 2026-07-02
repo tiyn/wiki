@@ -1,7 +1,7 @@
 # RAR (package)
 
-RAR is a package available for many Linux distributions that is handling `.rar` archives of the
-[RAR algorithm](/wiki/rar_%28algorithm%29.md).
+RAR is a package available for many [Linux distributions](/wiki/linux.md#distributions) that is
+handling `.rar` archives of the [RAR algorithm](/wiki/rar_%28algorithm%29.md).
 
 ## Setup
 
@@ -10,6 +10,8 @@ package.
 For extraction a separate package is used called `unrar`.
 
 ## Usage
+
+This section addresses the usage of the RAR package.
 
 ### Extracting a `.rar` archive
 

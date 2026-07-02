@@ -1,4 +1,4 @@
-# linuxserver - jellyfin
+# linuxserver – jellyfin
 
 This is a [Docker](/wiki/docker.md) container for a
 [freshrss](https://freshrss.org/) server.
@@ -9,7 +9,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -62,12 +62,12 @@ services:
     image: lscr.io/linuxserver/freshrss:latest
     container_name: freshrss
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
+      – PUID=1000
+      – PGID=1000
+      – TZ=Etc/UTC
     volumes:
-      - /path/to/data:/config
+      – /path/to/data:/config
     ports:
-      - 80:80
+      – 80:80
     restart: unless-stopped
 ```

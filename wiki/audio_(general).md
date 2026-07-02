@@ -90,7 +90,7 @@ A List of Songs can be input and after connecting to Spotify, it will be importe
 
 ### Digital Audio Workstations and Recording Software
 
-Digital Audio Workstations - short DAWs - is an application that can be used to record, edit or
+Digital Audio Workstations – short DAWs – is an application that can be used to record, edit or
 produce audio files.
 
 - [LMMS](https://lmms.io/) is a free and cross-platform DAW that is highly compatible with
@@ -108,8 +108,8 @@ The corresponding client software is handled in the server softwares wiki entry.
     Subsonic is self-hostable.
     Subsonic that can be dockerized and has a web-interface aswell as several
     clients that can be used.
-    There are also the free and open-source implementations - that feature all the
-    same features and using its API - named [Airsonic](/wiki/airsonic.md) (no longer
+    There are also the free and open-source implementations – that feature all the
+    same features and using its API – named [Airsonic](/wiki/airsonic.md) (no longer
     maintained) and its inofficial successor [Airsonic-advanced](/wiki/airsonic.md).
 
 ### Software for Podcasts
@@ -133,7 +133,7 @@ converting and splitting.
 
 [SpotiFLAC](https://github.com/afkarxyz/SpotiFLAC) is a software that is able to download Spotify
 tracks, albums, artists and playlists as `.flac`-files from Tidal, Qobuz, Amazon Music and Deezer.
-An account on any of these services - or any account at all - is not required.
+An account on any of these services – or any account at all – is not required.
 
 ## Digitalizing and Analyzing Physical Mediums
 

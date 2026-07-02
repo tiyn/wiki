@@ -1,4 +1,4 @@
-# actualbudget - actual-server
+# actualbudget – actual-server
 
 This is a [Docker](/wiki/docker.md) container for an actualbudget server.
 The official container and documentation was made by
@@ -9,7 +9,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 
 Create the files `rebuild.sh`, `docker-compose.yml` at the same
 place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 

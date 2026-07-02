@@ -346,5 +346,5 @@ database file with the following command.
 rm -rf /var/lib/pacman/sync/*
 ```
 
-Alternatively - and this is probably a bit safer - the files can be temporarily be moved somewhere
+Alternatively – and this is probably a bit safer – the files can be temporarily be moved somewhere
 else and removed after confirming the error was fixed.

@@ -1,4 +1,4 @@
-# coturn - coturn
+# coturn – coturn
 
 This is a [Docker](/wiki/docker.md) container for a TURN/STUN server.
 A server like this can be used in a [Matrix](/wiki/matrix.md) server configuration.
@@ -10,7 +10,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 
 Create the files `rebuild.sh`, `data/matrix/coturn/turnserver.conf` and `docker-compose.yml` at the
 same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 For the `data/matrix/coturn/turnserver.conf` file change the values for `static-auth-secret`,
 `realm`, `cli-password` and `external-ip`.
 For the passwords [OpenSSL](/wiki/linux/openssl.md#password-generator) can be used to create a
@@ -50,11 +50,11 @@ services:
     image: "instrumentisto/coturn:latest"
     restart: "unless-stopped"
     volumes:
-      - "./data/matrix/coturn/turnserver.conf:/etc/coturn/turnserver.conf"
+      – "./data/matrix/coturn/turnserver.conf:/etc/coturn/turnserver.conf"
     ports:
-      - "49160-49200:49160-49200/udp"
-      - "3478:3478"
-      - "5349:5349"
+      – "49160-49200:49160-49200/udp"
+      – "3478:3478"
+      – "5349:5349"
 ```
 
 ### data/matrix/coturn/turnserver.conf

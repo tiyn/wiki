@@ -1,4 +1,4 @@
-# prologic - golinks
+# prologic – golinks
 
 This is a [Docker](/wiki/docker.md) container for golinks, a web app to create
 bookmarks, commands and aliases.
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 
@@ -49,12 +49,12 @@ services:
     container_name: golinks
     restart: unless-stopped
     command:
-      - "-url=http://search.home.server/search?q=%s"
-      - "-suggest=https://suggestqueries.google.com/complete/search?client=firefox&q=%s"
+      – "-url=http://search.home.server/search?q=%s"
+      – "-suggest=https://suggestqueries.google.com/complete/search?client=firefox&q=%s"
     ports:
-      - "8090:8000"
+      – "8090:8000"
     volumes:
-      - golinks:/search.db
+      – golinks:/search.db
 
 volumes:
   golinks:

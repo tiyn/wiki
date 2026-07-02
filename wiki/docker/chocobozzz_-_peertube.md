@@ -1,4 +1,4 @@
-# chocobozz - peertube
+# chocobozz – peertube
 
 This is a [Docker](/wiki/docker.md) container for a [PeerTube](/wiki/peertube.md) server.
 The official container and documentation was made by
@@ -11,7 +11,7 @@ it.
 
 Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 
@@ -88,30 +88,30 @@ services:
   peertube:
     image: chocobozzz/peertube:production-bullseye
     ports:
-        - "9000:9000"
+        – "9000:9000"
     env_file:
-      - .env
+      – .env
     volumes:
-      - assets:/app/client/dist
-      - data:/data
-      - config:/config
+      – assets:/app/client/dist
+      – data:/data
+      – config:/config
     depends_on:
-      - postgres
-      - redis
+      – postgres
+      – redis
     restart: unless-stopped
 
   postgres:
     image: postgres:13-alpine
     env_file:
-      - .env
+      – .env
     volumes:
-      - db:/var/lib/postgresql/data
+      – db:/var/lib/postgresql/data
     restart: unless-stopped
 
   redis:
     image: redis:6-alpine
     volumes:
-      - redis:/data
+      – redis:/data
     restart: unless-stopped
 
 volumes:

@@ -1,4 +1,4 @@
-# alexjustesen - speedtest-tracker
+# alexjustesen – speedtest-tracker
 
 This is a [Docker](/wiki/docker.md) container for a selfhosted internet speed
 tracker.
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 It is important to set a correct app key as described in
 [the following section](#environment-variables).
 

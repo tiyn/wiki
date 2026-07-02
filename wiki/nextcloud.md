@@ -56,7 +56,7 @@ When the NextCloud client is stuck with in an idle loop that is characterized by
 is an arbitrarily large number of files.
 When checking the logging file in `~/.local/share/Nextcloudoud_sync.log` there won't be any obvious
 error messages.
-In fact there will only be a sync running without it finishing - unless interrupted manually.
+In fact there will only be a sync running without it finishing – unless interrupted manually.
 
 However, this problem can easily be fixed with the following steps.
 First the NextCloud instance which is stuck needs to be stopped.

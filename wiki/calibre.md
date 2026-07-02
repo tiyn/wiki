@@ -10,8 +10,8 @@ This section addresses various features of calibre.
 
 ## Adding a Plugin
 
-A plugin by a third party can be added by selecting a `.zip` archive - usually
-named `<plugin name>_plugin.zip` - under Preferences, Plugins, Load plugin from
+A plugin by a third party can be added by selecting a `.zip` archive – usually
+named `<plugin name>_plugin.zip` – under Preferences, Plugins, Load plugin from
 file.
 
 ## Exporting Books
@@ -57,7 +57,7 @@ Afterward select all books, right-click and select `Edit metadata in bulk`
 under `Edit metadata`.
 Then check the box `update title sort` and press `Ok` to update all sort titles.
 
-This entry is based on two posts on mobileread - one regarding the
+This entry is based on two posts on mobileread – one regarding the
 [sort author name](https://www.mobileread.com/forums/showthread.php?t=314663)
 and the other regarding the
 [sort title](https://www.mobileread.com/forums/showthread.php?t=249870).

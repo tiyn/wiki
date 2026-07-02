@@ -1,6 +1,6 @@
-# Pokemon
+# Pokémon
 
-[Pokemon](https://www.pokemon.com/) is a multi-media franchise owned by Nintendo.
+[Pokémon](https://www.pokemon.com/) is a multi-media franchise owned by Nintendo.
 It consists of video games, animated series, films, a
 [trading card game](/wiki/trading_card_game.md) and more.
 

@@ -1,4 +1,4 @@
-# wabayang - jelu
+# wabayang – jelu
 
 This is a [Docker](/wiki/docker.md) container for a [Jelu](/wiki/jelu.md) server.
 The official container and documentation was made by
@@ -8,7 +8,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -48,13 +48,13 @@ services:
     image: wabayang/jelu
     container_name: jelu
     volumes:
-      - config:/config
-      - database:/database
-      - files_images:/files/images
-      - files_imports:/files/imports
-      - /etc/timezone:/etc/timezone:ro
+      – config:/config
+      – database:/database
+      – files_images:/files/images
+      – files_imports:/files/imports
+      – /etc/timezone:/etc/timezone:ro
     ports:
-      - 11111:11111
+      – 11111:11111
     restart: unless-stopped
 
 volumes:

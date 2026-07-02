@@ -70,10 +70,10 @@ hailo optimize --calib-set-path <data-set> <path-to-har-model>
 
 Note that the user in the Docker container usually uses another UID and GID.
 To make the volume and files accessible inside the container the IDs of the files in the volume
-should be changed accordingly - for example as shown in the following example.
+should be changed accordingly – for example as shown in the following example.
 `<volume-path>` is the path that points to the volume
-`<uid>` is the UID of the Docker user - which can be found using `id -u` (for example `10642`) -
-and `<gid>` the GID of the Docker user - which can be found using `id -g` (for example `10600`).
+`<uid>` is the UID of the Docker user – which can be found using `id -u` (for example `10642`) -
+and `<gid>` the GID of the Docker user – which can be found using `id -g` (for example `10600`).
 
 ```sh
 chown -R <uid>:<gid> <volume-path>

@@ -11,7 +11,7 @@ Docker container.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 It is recommended to use the versionnumber instead of `:latest` for both the MariaDB and the
 NextCloud image like the following example.
 

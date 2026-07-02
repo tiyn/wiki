@@ -5,7 +5,8 @@
 
 ## Setup
 
-On most Linux distributions Watson can be installed with the `watson` package.
+On most [Linux distributions](/wiki/linux.md#distributions) Watson can be installed with the
+`watson` package.
 Additionally, Watson can be installed using Pythons pip package manager.
 The pip package is called `td-watson`.
 Alternatively it can be installed via [GitHub](https://github.com/TailorDev/Watson).
@@ -18,7 +19,7 @@ The following section describes various ways of usage of Watson.
 
 Time can be tracked by running the following command.
 This example tracks time to a project called `world-domination` and uses the tag `cats` and `dogs`.
-Additional tags can be appended or tags can be ommited if not needed.
+Additional tags can be appended or tags can be omitted if not needed.
 This should be adapted to specific needs.
 
 ```sh

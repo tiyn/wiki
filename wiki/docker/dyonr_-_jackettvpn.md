@@ -1,4 +1,4 @@
-# dyonr - jackettvpn
+# dyonr – jackettvpn
 
 This is a [Docker](/wiki/docker.md) container for a [OpenVPN](/wiki/openvpn.md)
 protected [Jackett](/wiki/jackett.md) server.
@@ -10,7 +10,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh` and set `<username>` and `<password>` according to
 your openvpn.
 Additionally, change the `LAN_NETWORK` if it differs for your local area network.
-Run `./rebuild.sh` afterwards to create the volumes.
+Run `./rebuild.sh` afterward to create the volumes.
 Place the openvpn certificate in the `jacket_config` docker volume inside the
 `openvpn` folder.
 After that rerun `./rebuild.sh` to make update your config.

@@ -1,4 +1,4 @@
-# ankitects - anki
+# ankitects – anki
 
 This is a [Docker](/wiki/docker.md) container for a [Anki syncserver](/wiki/anki.md#setup-server).
 The official container is part of the
@@ -15,7 +15,7 @@ Due to the syncserver having to be set up manually first navigate to the
 [Anki syncserver GitHub subpage](/wiki/anki.md#setup-server).
 From there download the `Dockerfile` and the `entrypoints.sh`.
 Then create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 Especially set the `<version>` (for example `24.11`) aswell as the `<user>` and `<password>`.
 
 ## Environment-variables

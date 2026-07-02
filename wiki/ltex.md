@@ -1,7 +1,7 @@
 # LTeX
 
 [LTeX](https://valentjn.github.io/ltex/index.html) is an offline grammar checking tool that can use
-the Language Server Protocol - short LSP.
+the Language Server Protocol – short LSP.
 It is supports various [Markup languages](/wiki/markup_language.md) like
 [LaTeX](/wiki/markup_language.md#latex) and Markdown.
 
@@ -22,7 +22,7 @@ It can however be changed using magic comments as explained in
 
 ### Switching Languages in Markdown
 
-At the start of a file the following lines - called YAML front matter - can be used to change the
+At the start of a file the following lines – called YAML front matter – can be used to change the
 language for the whole file.
 In the following it is changed to german (`de-DE`) but this can be changed.
 

@@ -4,7 +4,7 @@
 
 ## Set up
 
-In the following sections the different set ups of OpenVPN usages are described.
+In the following sections the different set-ups of OpenVPN usages are described.
 
 ### Server
 
@@ -15,14 +15,14 @@ server software.
 
 ### Client
 
-OpenVPN clients can be found for many devices.
+OpenVPN's clients can be found for many devices.
 For [Android](/wiki/android.md) for example there is
 [OpenVPN for Android in the F-Droid store](https://f-droid.org/de/packages/de.blinkt.openvpn/).
-For most linux distributions there is a package called `openvpn`.
+For most [Linux distributions](/wiki/linux.md#distributions) there is a package called `openvpn`.
 
 ### Proxy
 
-For OpenVPN a proxy acts as an intermediary between the system communicating
-with the proxy and the OpenVPN server.
+For OpenVPN a proxy acts as an intermediary between the system communicating with the proxy and the
+OpenVPN server.
 A proxy can be set up via [Docker](/wiki/docker.md) with the
 [jonohill image](/wiki/docker/jonohill_-_docker-openvpn-proxy.md).

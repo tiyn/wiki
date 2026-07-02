@@ -1,4 +1,4 @@
-# massivedecks - client
+# massivedecks – client
 
 This is a [Docker](/wiki/docker.md) container for a [Massive Deecks](/wiki/game/massive_decks.md)
 client.
@@ -14,7 +14,7 @@ needs to be connected.
 Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.
 Make sure to set `POSTGRES_PASSWORD`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 
@@ -57,35 +57,35 @@ services:
     image: "postgres:14"
     restart: unless-stopped
     environment:
-      - POSTGRES_USER=massivedecks
-      - POSTGRES_PASSWORD=<password>
+      – POSTGRES_USER=massivedecks
+      – POSTGRES_PASSWORD=<password>
     networks:
-      - internal
+      – internal
     volumes:
-      - storage-volume:/var/lib/postgresql/data
+      – storage-volume:/var/lib/postgresql/data
 
   server:
     image: "ghcr.io/lattyware/massivedecks/server:latest-release"
     restart: unless-stopped
     environment:
-      - NODE_ENV=production
+      – NODE_ENV=production
     depends_on:
-      - storage
+      – storage
     networks:
-      - internal
+      – internal
     configs:
-      - source: md_server_config
+      – source: md_server_config
         target: /md/config.json5
 
   client:
     image: "ghcr.io/lattyware/massivedecks/client:latest-release"
     restart: unless-stopped
     depends_on:
-      - server
+      – server
     networks:
-      - internal
+      – internal
     ports:
-      - "8080:8080"
+      – "8080:8080"
 
 networks:
   internal:

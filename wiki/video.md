@@ -50,7 +50,7 @@ This way you don't have to search for your discs all the time.
   a disc (Beta key can be found
   [here](https://www.makemkv.com/forum/viewtopic.php?f=5&t=1053)).
   On Linux it is possible that the drive is not detected in MakeMKV.
-  To fix this issue run the following lines and reboot afterwards.
+  To fix this issue run the following lines and reboot afterward.
 
   ```sh
   su

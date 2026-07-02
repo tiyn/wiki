@@ -1,4 +1,4 @@
-# alexta69 - metube
+# alexta69 – metube
 
 This is a [Docker](/wiki/docker.md) container for a [MeTube](/wiki/metube.md)
 server.
@@ -9,7 +9,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 
@@ -49,9 +49,9 @@ services:
     image: alexta69/metube
     restart: unless-stopped
     ports:
-      - "8881:8081"
+      – "8881:8081"
     volumes:
-      - downloads:/downloads
+      – downloads:/downloads
 
 volumes:
     downloads:

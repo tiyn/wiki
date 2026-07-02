@@ -6,7 +6,7 @@ It features compatibility with [GOG](https://www.gog.com/),
 [Humble Bundle](https://humblebundle.com/), [Epic Games](https://www.epicgames.com/),
 [Steam](/wiki/game/steam.md) and many other [Windows](/wiki/windows.md) games via its own installer
 that uses [WINE](/wiki/linux/wine.md).
-Lutris can also use [Proton](/wiki/game/proton.md) - a patched version of WINE developed by
+Lutris can also use [Proton](/wiki/game/proton.md) – a patched version of WINE developed by
 [Valve](https://www.valvesoftware.com/).
 Additionally, to that Lutris supports many different [emulators](/wiki/emulator.md).
 For running both Windows applications aswell as games [Bottles](/wiki/game/bottles.md) can be used.
@@ -108,8 +108,8 @@ After right-clicking a game and selecting `Configure` the `Wine version` can be 
 `Runner options` tab.
 There are many different versions of WINE, WINE-fshack and various [Proton](/wiki/game/proton.md)
 and [Proton GE versions](/wiki/game/proton.md#ge-version) to select.
-Using the default runner of [Bottles](/wiki/game/bottles.md) - called
-[Caffe](/wiki/game/bottles.md#caffe) - is also possible.
+Using the default runner of [Bottles](/wiki/game/bottles.md) – called
+[Caffe](/wiki/game/bottles.md#caffe) – is also possible.
 
 ### Disable Networking for a Game
 

@@ -5,7 +5,7 @@ buttons.
 
 ## DDC
 
-DDC - short for Display Data Channel - is a specific way to control the display.
+DDC – short for Display Data Channel – is a specific way to control the display.
 On [Linux](/wiki/linux.md)-based Systems this can be achieved by using the
 [`ddcutil`](https://github.com/rockowitz/ddcutil) command line interface that can be found in the
 package of the same name.

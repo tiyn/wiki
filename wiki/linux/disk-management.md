@@ -151,7 +151,7 @@ sudo resize2fs <path to partition>
 To shrink a file system the `resize2fs` command will be used aswell as `e2fsck`.
 First the file system needs to be checked for size aswell as data distribution.
 This can be done using the command `sudo e2fsck -f <path to partition>`.
-`<path to partition>` directs to the volume whose file system should be shrinked - for example
+`<path to partition>` directs to the volume whose file system should be shrinked – for example
 `/dev/sda1`.
 It has to be the same for the next step as well.
 Afterward the file system can be shrunken with the command
@@ -178,8 +178,8 @@ The following list shows some options to quickly clean up space.
 
 ## Accessing Disks as User
 
-Sometimes - for example when flashing an SD card for a
-[Raspberry Pi](/wiki/linux/raspberry_pi.md#setup) - it may be useful to do so with your default
+Sometimes – for example when flashing an SD card for a
+[Raspberry Pi](/wiki/linux/raspberry_pi.md#setup) – it may be useful to do so with your default
 user and not using the root user.
 For this to work the user can be added to the `disk` group permanently.
 Please note that this however reduces the systems security.
@@ -199,7 +199,7 @@ Ususally the filesystem will go into read-only mode whe the system is running an
 consistency error.
 To fix it run the following command.
 
-- `sudo fsck -Af -M` - check all filesystems 
+- `sudo fsck -Af -M` – check all filesystems 
     If `fsck` gets stuck after its version banner (for example `fsck from util-linux 2.20.1`) you
     may want to try using the ext4-specific fsck:
 - `fsck.ext4 -f /dev/sda1`

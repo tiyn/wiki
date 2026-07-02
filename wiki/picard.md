@@ -1,8 +1,9 @@
 # Picard
 
 [MusicBrainz Picard](https://picard.musicbrainz.org/) is a free cross-platform
-tagging software for [music or other audio files](/wiki/audio.md).
-It is able to tag a wide range of [audio codecs](/wiki/audio.md#audio-codecs)
+tagging software for [music or other audio files](/wiki/audio_%28general%29.md).
+It is able to tag a wide range of
+[audio codecs](/wiki/audio_%28general%29.md#audio-formats-and-encoding)
 [flac](/wiki/flac_%28codec%29.md) among others.
 
 ## Setup

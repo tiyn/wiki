@@ -1,6 +1,6 @@
 # Neural Network
 
-A neural network - often shortened to NN - is a computational model which is part of so called
+A neural network – often shortened to NN – is a computational model which is part of so called
 artificial intelligence.
 
 ## Useful Tools

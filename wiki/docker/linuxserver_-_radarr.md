@@ -1,4 +1,4 @@
-# linuxserver - radarr
+# linuxserver – radarr
 
 This is a [Docker](/wiki/docker.md) container for a [Radarr](/wiki/*arr.md)
 server.
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 It is recommended to set a download completed folder with the same internal and
 external mounts as your [BitTorent](/wiki/bittorrent.md) client.
 This guide uses the same mounts as used in the
@@ -18,7 +18,7 @@ This namely causes the following line in the
 [`docker-compose.yml`](#docker-composeyml).
 
 ```txt
-      - /var/lib/docker/volumes/transmission_data/_data/completed:/data/completed #optional
+      – /var/lib/docker/volumes/transmission_data/_data/completed:/data/completed #optional
 ```
 
 ### Environment-variables
@@ -73,15 +73,15 @@ services:
     image: lscr.io/linuxserver/radarr:latest
     container_name: radarr
     environment:
-      - PUID=0
-      - PGID=0
-      - TZ=Etc/UTC
+      – PUID=0
+      – PGID=0
+      – TZ=Etc/UTC
     volumes:
-      - config:/config
-      - complete:/movies #optional
-      - /var/lib/docker/volumes/transmission_data/_data/completed:/data/completed #optional
+      – config:/config
+      – complete:/movies #optional
+      – /var/lib/docker/volumes/transmission_data/_data/completed:/data/completed #optional
     ports:
-      - 7878:7878
+      – 7878:7878
     restart: unless-stopped
 
 volumes:

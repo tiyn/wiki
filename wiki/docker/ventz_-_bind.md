@@ -1,4 +1,4 @@
-# ventz - bind
+# ventz – bind
 
 This is a [Docker](/wiki/docker.md) container for a [bind](/wiki/bind.md)
 [DNS](/wiki/dns.md) resolver.
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 

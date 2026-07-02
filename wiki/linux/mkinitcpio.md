@@ -19,7 +19,7 @@ The zen kernel is a collaborative project of kernel hackers to provide the best
 [Linux](/wiki/linux.md) kernel for everyday systems.
 Especially the response time of the system under load
 [is said to be better](https://github.com/zen-kernel/zen-kernel/wiki/Detailed-Feature-List#zen-kernel-improvements).
-This will - for example - make the system less stuttery when something is compiled.
+This will – for example – make the system less stuttery when something is compiled.
 Desktop and gaming systems will benefit the most.
 
 To setup the zen kernel do the following. Firstly install the packages `linux-zen` and

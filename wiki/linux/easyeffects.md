@@ -3,7 +3,7 @@
 [EasyEffects](https://github.com/wwmm/easyeffects) is a free and open-source GUI-software for
 applying sound effects and filters on input and output audio streams.
 EasyEffects uses [Pipewire](/wiki/linux/pipewire.md) as
-[sound server](/wiki/linux/audio.md#sound-server).
+[sound server](/wiki/linux/audio_%28linux%29.md#sound-server).
 
 ## Setup
 
@@ -86,7 +86,7 @@ Presets are saved in the directory `~/.config/easyeffects/input` and
 
 By default, EasyEffects processes all input and output streams.
 This includes [loopback devices](/wiki/linux/pipewire.md#virtual-devices) with which it may lead to
-some problems - for example
+some problems – for example
 [problems with virtual devices](/wiki/linux/pipewire.md#problems-with-input-an-output-of-loopback-devices).
 It can be disabled and re-enabled in the `Preferences` under `Audio` by deselecting or selecting
 the switches for `Process all output streams` and `Process all input streams`.

@@ -24,4 +24,4 @@ This section is based on a
 VIM can hide chunks of text which is called folding.
 The basic usage is as follows.
 `zf` marks a piece of text foldable and immediately folds.
-`zo` opens up a fold - so it unfolds it - and `zc` closes a fold - so it folds.
+`zo` opens up a fold – so it unfolds it – and `zc` closes a fold – so it folds.

@@ -1,7 +1,7 @@
 # Subsonic
 
 [Subsonic](https://www.subsonic.org) is a personal media streamer used for
-[music, podcasts audiobooks](/wiki/audio.md).
+[music, podcasts audiobooks](/wiki/audio_%28general%29.md).
 It is non-free and closed-source.
 There are free and open-source alternatives named [Airsonic](/wiki/airsonic.md) and
 [Airsonic-Advanced](/wiki/airsonic-advanced.md).

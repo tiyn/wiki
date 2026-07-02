@@ -1,4 +1,4 @@
-# linuxserver - airsonic-advanced
+# linuxserver – airsonic-advanced
 
 This is a [Docker](/wiki/docker.md) container for a
 [WireGuard](/wiki/wireguard.md) server.

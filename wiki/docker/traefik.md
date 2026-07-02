@@ -11,7 +11,7 @@ Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 In that folder create the directories `data/config`.
 Place the files `data/traefik.yml` and `data/config/dynamic.yml` in the
 according directories.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 Additional guides on the usage of Traefik for [Docker](/wiki/docker.md) services can be found in
 the [Traefik wiki entry](/wiki/traefik.md#usage).
 

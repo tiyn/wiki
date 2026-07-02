@@ -1,4 +1,4 @@
-# vectorim - riot-web
+# vectorim – riot-web
 
 This is a [Docker](/wiki/docker.md) container for a [matrix](/wiki/matrix.md)
 client.
@@ -9,7 +9,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 
@@ -49,7 +49,7 @@ services:
     image: vectorim/riot-web:latest
     restart: unless-stopped
     volumes:
-      - "./data/matrix/element/config.json:/app/config.json:ro"
+      – "./data/matrix/element/config.json:/app/config.json:ro"
     ports:
-      - 80:80
+      – 80:80
 ```

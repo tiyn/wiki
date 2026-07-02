@@ -80,8 +80,8 @@ suggest the following changes.
 - Alert when clipboard is accessed
 - Enable app pinnig
 
-Another option to add which may not improve security or privacy but improves usability - especially
-if a difficult passphrase is used - is the enabling of "Extend Unlock".
+Another option to add which may not improve security or privacy but improves usability – especially
+if a difficult passphrase is used – is the enabling of "Extend Unlock".
 There "Trusted Devices" can be set or the "On-body Detection" can be enabled.
 
 ### Multi-Factor Authentication
@@ -137,7 +137,7 @@ button.
 Then connect it to a computer via USB.
 The following steps have to take place on a [Windows](/wiki/windows.md) system or an emulation or
 virtualization of it.
-Download and start "Mi Unlock" - it is available on the
+Download and start "Mi Unlock" – it is available on the
 [article mentioned prior in this section](https://new.c.mi.com/global/post/101245).
 Follow the steps of the software, select "Unlock" and confirm it multiple times.
 It is possible that now 72 hours have to pass for the unlocking process to continue.

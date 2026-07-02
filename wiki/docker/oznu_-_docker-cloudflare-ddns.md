@@ -1,4 +1,4 @@
-# oznu - docker-cloudflare-ddns
+# oznu – docker-cloudflare-ddns
 
 This is a [Docker](/wiki/docker.md) container for dynamically updating
 cloudflare dns entries.
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment variables
 

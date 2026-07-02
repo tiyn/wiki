@@ -1,4 +1,4 @@
-# b4bz - homer
+# b4bz – homer
 
 This is a [Docker](/wiki/docker.md) container for a Homer static site.
 The official container and documentation was made by [b4bz](https://hub.docker.com/r/b4bz/homer).
@@ -6,7 +6,7 @@ The official container and documentation was made by [b4bz](https://hub.docker.c
 ## Set-up
 
 Create the file `rebuild.sh`.
-Run `./rebuild.sh` afterwards to create the volumes.
+Run `./rebuild.sh` afterward to create the volumes.
 Place the file `config.yml` in the `homer` docker volume and change it to your
 needs.
 After that rerun `./rebuild.sh` to make update your config.
@@ -59,16 +59,16 @@ message:
   content: "tmp"
 
 links:
-  - name: "tmp"
+  – name: "tmp"
     icon: "tmp"
     url: "tmp"
     target: "_blank"
 
 services:
-  - name: "tmp"
+  – name: "tmp"
     icon: "tmp"
     items:
-      - name: "tmp"
+      – name: "tmp"
         logo: "tmp"
         subtitle: "tmp"
         tag: "tmp"

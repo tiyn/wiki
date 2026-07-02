@@ -1,8 +1,8 @@
 # Magic: The Gathering
 
-[Magic: The Gathering](https://magic.wizards.com) - often shortened to MTG or Magic - is a tabletop
+[Magic: The Gathering](https://magic.wizards.com) – often shortened to MTG or Magic – is a tabletop
 [collectible card game](/wiki/trading_card_game.md).
-MTG is published by [Wizards of the Coast](https://company.wizards.com) - which are commonly
+MTG is published by [Wizards of the Coast](https://company.wizards.com) – which are commonly
 reffered to as Wizards.
 In Magic: The Gathering there are many different formats that are all listed on
 [the official website](https://magic.wizards.com/en/formats).
@@ -13,7 +13,7 @@ MTG is a notoriously complex game and proven to be
 ## Playing Online
 
 There is a fully digital and online version of MTG called
-[Magic: The Gathering Arena](https://magic.wizards.com/mtgarena) - or MTGA for short - that has
+[Magic: The Gathering Arena](https://magic.wizards.com/mtgarena) – or MTGA for short – that has
 nearly the same rules as the tabletop variant.
 Another alternative to playing fully digital is [Magic: The Gathering Online](https://www.mtgo.com).
 This is also known as MTG Online or MTGO.
@@ -251,7 +251,7 @@ Each theory gives a number of categories and a number of cards in that category.
 Those categories of cards are intended to use many cards with similar effects to make the deck more
 robust and redundant to draw similar cards consistently.
 
-The categories are usually a combination of the following ones - though other categories are
+The categories are usually a combination of the following ones – though other categories are
 possible.
 
 - Card Draw

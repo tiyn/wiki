@@ -1,4 +1,4 @@
-# Plymouth 
+# Plymouth
 
 [Plymouth](https://www.freedesktop.org/Software/Plymouth) is a software that provides a better
 graphical boot process.
@@ -6,13 +6,14 @@ It can change the native resolution early in the boot process and display splash
 
 ## Setup
 
-On most linux distributions LightDM can be installed with the `plymouth` package.
+On most [Linux distributions](/wiki/linux.md#distributions) LightDM can be installed with the
+`plymouth` package.
 
 Afterward the kernel options need to be changed.
 On [Arch Linux](/wiki/linux/arch-linux.md) systems this can be done by editing the file located at
 `/boot/loader/entries/arch.conf`.
-In the options line append `quiet` if you want to use the quiet-mode and `splash` if you want to 
-add a splash screen.
+In the options line append `quiet` if you want to use the quiet-mode and `splash` if you want to add
+a splash screen.
 
 If the splash screen option was selected set a default theme.
 A more detailed guide on this is available in [another section](#list-install-and-set-themes).
@@ -37,7 +38,7 @@ mkinitcpio -p linux
 
 ## Usage
 
-This section addresses the location and 
+This section addresses the location and
 
 ### List, Install and Set Themes
 

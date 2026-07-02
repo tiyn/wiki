@@ -1,11 +1,12 @@
 # Dislocker
 
 [Dislocker](https://github.com/Aorimn/dislocker) is a driver to read and write Bitlocker encrypted
-volumes under Linux systems.
+volumes under [Linux](/wiki/linux.md) systems.
 
 ## Setup
 
-On most of the Linux distributions Dislocker is bundled with the `dislocker` package.
+On most of the [Linux distributions](/wiki/linux.md#distributions) Dislocker is bundled with the
+`dislocker` package.
 The installation of the `mbedtls2` package as an open-source TLS library can be of use.
 
 ## Usage
@@ -15,7 +16,7 @@ The installation of the `mbedtls2` package as an open-source TLS library can be 
 For the [mounting](/wiki/linux/disk-management.md#mounting) to work two directories are required.
 One to mount the `dislocker-file` (`/mnt/bitlocker`) and one to mount the
 [windows volume](/wiki/linux/ntfs.md#manual-mounting) (`/mnt/windows`).
-The device which holds the windows partition is assumed to be calles `/dev/sdc1`.
+The device which holds the windows partition is assumed to be called `/dev/sdc1`.
 
 The following command mounts the `dislocker` file to `/mnt/bitlocker`.
 Make sure to replace the password in the following command.
@@ -47,7 +48,7 @@ Using [fstab](/wiki/linux/disk-management.md#mounting) the partition encrypted w
 be automatically mounted.
 The following lines have to be adapted and written into
 [`/etc/fstab`](/wiki/linux/disk-management.md#mounting).
-In this case the intermediary dislocker file `dislocker-file` is mounted to `/mnt/bitlocker`.
+In this case the intermediary Dislocker file `dislocker-file` is mounted to `/mnt/bitlocker`.
 
 ```txt
 UUID=<partition uuid> /mnt/bitlocker fuse.dislocker bekfile=<path to bek-file>,nofail 0 0
@@ -56,4 +57,4 @@ UUID=<partition uuid> /mnt/bitlocker fuse.dislocker bekfile=<path to bek-file>,n
 After that a line to mount the `dislocker-file` as a [NTFS](/wiki/linux/ntfs.md) partition has to
 be added as described in [the NTFS entry](/wiki/linux/ntfs.md#automatic-mounting).
 In this case the specified partition to mount is `/mnt/bitlocker/dislocker-file`.
-The mount point can be chosen according to preference - for example `/mnt/windows`.
+The mount point can be chosen according to preference – for example `/mnt/windows`.

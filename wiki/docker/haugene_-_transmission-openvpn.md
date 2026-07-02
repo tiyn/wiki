@@ -1,4 +1,4 @@
-# haugene - transmission-openvpn
+# haugene – transmission-openvpn
 
 This is a [Docker](/wiki/docker.md) container for a
 [transmission](/wiki/transmission.md) server that is connected to the internet via
@@ -11,7 +11,7 @@ The official container and documentation was made by
 Create the file `rebuild.sh`.
 To see which providers are supported take a look at the
 [official documentation](https://haugene.github.io/docker-transmission-openvpn/supported-providers/).
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 

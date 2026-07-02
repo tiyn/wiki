@@ -55,5 +55,5 @@ Here a `+` can also be appended to gain more information.
 \d+ <table>
 ```
 
-Finally, and most importantly classic SQL statements - for example `SELECT`-statements - can be
+Finally, and most importantly classic SQL statements – for example `SELECT`-statements – can be
 used too when being logged in to a database.

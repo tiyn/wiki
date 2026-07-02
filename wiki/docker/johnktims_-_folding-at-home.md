@@ -1,4 +1,4 @@
-# johnktims - folding-at-home
+# johnktims – folding-at-home
 
 This is a [Docker](/wiki/docker.md) container for
 [Folding@home](https://foldingathome.org/).
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 

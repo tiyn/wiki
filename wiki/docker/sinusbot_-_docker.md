@@ -1,4 +1,4 @@
-# sinusbot - docker
+# sinusbot – docker
 
 This is a [Docker](/wiki/docker.md) container for a [Sinusbot](/wiki/sinusbot.md).
 The Server consists of a single Docker container.
@@ -19,7 +19,7 @@ service.
 networks:
   teamspeak:
     aliases:
-      - ts3.docker.local
+      – ts3.docker.local
 ```
 
 Add the following lines at the end of the `docker-compose.yml` or add it to the definition of
@@ -40,7 +40,7 @@ docker network create teamspeak
 
 The Teamspeak server can then be found by Sinusbot under host `ts3.docker.local` and port `9987`.
 
-Change the other settings according to your needs and run `./rebuild.sh` afterwards.
+Change the other settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -103,13 +103,13 @@ services:
     image: "sinusbot/docker:latest"
     restart: unless-stopped
     environment:
-      - UID=1000
-      - GID=1000
+      – UID=1000
+      – GID=1000
     networks:
-      - teamspeak
+      – teamspeak
     volumes:
-      - sinusbot_scripts:/opt/sinusbot/scripts
-      - sinusbot_data:/opt/sinusbot/data
+      – sinusbot_scripts:/opt/sinusbot/scripts
+      – sinusbot_data:/opt/sinusbot/data
 
 networks:
   teamspeak:

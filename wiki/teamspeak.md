@@ -14,10 +14,12 @@ TeamSpeak consists of two parts: [a client](#client) and [a server](#server).
 
 TeamSpeak3 is available for [Windows](/wiki/windows.md) on the
 [TeamSpeak website](https://www.teamspeak.de/download/).
-On most [Linux](/wiki/linux.md) distributions it can be installed with the `teamspeak3` package.
+On most [Linux distributions](/wiki/linux.md#distributions) it can be installed with the
+`teamspeak3` package.
 TeamSpeak5 is available for Windows on the
 [TeamSpeak website](https://teamspeak.com/de/downloads/#ts5).
-On most Linux distributions it can be installed with the `teamspeak` package.
+On most [Linux distributions](/wiki/linux.md#distributions) it can be installed with the `teamspeak`
+package.
 
 ### Server
 

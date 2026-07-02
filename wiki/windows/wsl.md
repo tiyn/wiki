@@ -1,6 +1,6 @@
 # WSL
 
-[WSL](https://learn.microsoft.com/en-us/windows/wsl/) - short for Windows Subsystem for Linux - is
+[WSL](https://learn.microsoft.com/en-us/windows/wsl/) – short for Windows Subsystem for Linux – is
 a Tool of [Windows](/wiki/windows.md) that allows users and developers to run a
 [Linux](/wiki/linux.md) environment.
 

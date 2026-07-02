@@ -13,10 +13,9 @@ The following section addresses different uses and add-ons of Firefox.
 
 ### Compact Mode
 
-In Firefox compact mode is a configuration to make tabs and navigation elements
-including bookmarks smaller.
-After navigating to `about:config` the configuration can be done at
-`browser.compactmode.show`.
+In Firefox compact mode is a configuration to make tabs and navigation elements including bookmarks
+smaller.
+After navigating to `about:config` the configuration can be done at `browser.compactmode.show`.
 
 ### List of useful Firefox Add-ons
 
@@ -28,38 +27,35 @@ The add-ons are grouped thematically
 
 The following add-ons increase the security or privacy.
 
-- [Chameleon](/wiki/chameleon.md)
-  spoofs your browser profile including user agent and screen size.
-- [ClearURLs](https://addons.mozilla.org/en-GB/firefox/addon/clearurls) removes
-  tracking elements from URLs.
-- [Consent-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic)
-  automatically refuses GDPR consent to a bunch of platforms.
-  An alternative to this is an addon named I don't care about cookies.
+- [Chameleon](/wiki/chameleon.md) spoofs your browser profile including user agent and screen size.
+- [ClearURLs](https://addons.mozilla.org/en-GB/firefox/addon/clearurls) removes tracking elements 
+  from URLs.
+- [Consent-O-Matic](https://addons.mozilla.org/en-GB/firefox/addon/consent-o-matic) automatically 
+  refuses GDPR consent to a bunch of platforms.
+  An alternative to this is an add-on named I don't care about cookies.
 - [Firefox Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers)
   lets you separate cookies in different containers on a per site base.
-  With this add-on a proxy can be selected for each container which enables
-  usage of a [VPN](/wiki/vpn.md) that acts as a Proxy like a
-  [OpenVPN Proxy](/wiki/openvpn.md#proxy).
+  With this add-on a proxy can be selected for each container which enables usage of a 
+  [VPN](/wiki/vpn.md) that acts as a Proxy like a [OpenVPN Proxy](/wiki/openvpn.md#proxy).
 - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
   is an even faster alternative to Consent-O-Matic.
-- [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers)
-  opens tabs and websites, that are not already managed by
-  `Firefox Multi-Account Containers` in a new container.
-- [NoScript](https://addons.mozilla.org/en-GB/firefox/addon/noscript) blocks all
-  javascript so that the parts you need can be reenabled and the rest is not used.
-- [Privacy Badger](https://addons.mozilla.org/en-GB/firefox/addon/privacy-badger17)
-  blocks unwanted invisible trackers.
-- [Privacy Redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/)
-  redirects youtube, instagram, twitter, etc to free alternatives or alternative
-  frontends.
+- [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers) opens 
+  tabs and websites, that are not already managed by `Firefox Multi-Account Containers` in a new 
+  container.
+- [NoScript](https://addons.mozilla.org/en-GB/firefox/addon/noscript) blocks all JavaScript so that 
+  the parts you need can be re-enabled, and the rest is not used.
+- [Privacy Badger](https://addons.mozilla.org/en-GB/firefox/addon/privacy-badger17) blocks unwanted 
+  invisible trackers.
+- [Privacy Redirect](https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/) redirects 
+  YouTube, Instagram, Twitter, etc. to free alternatives or alternative frontends.
 - [SponsorBlock](/wiki/youtube.md#automatically-skip-sponsorships) skips YouTube video sponsors
   automatically, works with [Invidious](/wiki/invidious.md) too.
-- [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is a userscript
-  manager that can be used for the following tasks:
-  - [Bypass YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass)
-  - [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/)
+- [Tampermonkey](https://github.com/Tampermonkey/tampermonkey) is an manager for userscripts that 
+  can be used for the following tasks.
+  – [Bypass YouTubes age restrictions](https://github.com/zerodytrash/Simple-YouTube-Age-Restriction-Bypass)
+  – [Exclude pages from](http://www.jeffersonscher.com/gm/google-hit-hider/) 
     [search results](/wiki/search_engine.md)
-  - [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
+  – [Auto close YouTube ads](https://greasyfork.org/en/scripts/9165-auto-close-youtube-ads)
 - [uBlock Origin](/wiki/ublock_origin.md) is an ad blocker.
 - [User-Agent Switcher and Manager](https://addons.mozilla.org/en-GB/firefox/addon/user-agent-string-switcher)
   spoofs websites that try to gather information about your webbrowser.
@@ -68,11 +64,11 @@ The following add-ons increase the security or privacy.
 
 The following add-ons provide changes to the default style.
 
-- [Dark Reader](https://addons.mozilla.org/en-GB/Firefox/addon/darkreader) creates
-  an automatic dark mode for sites without native dark mode.
-- [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars)
-  hides scrollbars.
-- [Midnight Lizard](https://addons.mozilla.org/de/firefox/addon/midnight-lizard-quantum/) is a
+- [Dark Reader](https://addons.mozilla.org/en-GB/Firefox/addon/darkreader) creates an automatic dark 
+  mode for sites without native dark mode.
+- [hide-scrollbars](https://addons.mozilla.org/en-GB/Firefox/addon/hide-scrollbars) hides 
+  scrollbars.
+- [Midnight Lizard](https://addons.mozilla.org/de/firefox/addon/midnight-lizard-quantum/) is a 
   add-on similar to Dark Reader.
   It is slightly more customizable but has worse default settings.
 
@@ -80,25 +76,26 @@ The following add-ons provide changes to the default style.
 
 The following add-ons add various functions.
 
-- [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your
-  bookmarks across devices (supports Nextcloud and WebDAV (ownCloud, etc)).
-- [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery)
-  is a sidebar with treestyle tabs and bookmarks.
+- [Floccus](https://addons.mozilla.org/en-US/Firefox/addon/floccus/) syncs your bookmarks across 
+  devices (supports Nextcloud and WebDAV (ownCloud, etc.)).
+- [Sidebery](https://addons.mozilla.org/en-GB/Firefox/addon/sidebery) is a sidebar with tree-style 
+  tabs and bookmarks.
 - [Surfingkeys](https://github.com/brookhong/Surfingkeys) introduces keyboard-based navigation.
   It is similar to Vim Vixen, further down this list.
-- [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab)
-  shows tabs like a tree. This is especially useful if many tabs are used.
-- [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables
-  vim movement for Firefox.
+- [Tree Style Tab](https://addons.mozilla.org/en-GB/Firefox/addon/tree-style-tab) shows tabs like a 
+  tree. 
+  This is especially useful if many tabs are used.
+- [Vim Vixen](https://addons.mozilla.org/en-GB/Firefox/addon/vim-vixen) enables vim movement for 
+  Firefox.
   It is similar to Surfingkeys further up this list.
 
 #### Translation Add-ons
 
 The following add-ons provide translation options.
 
-- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations)
-  is an add-on made by Mozilla itself that gives an option for marked text to display its
-  translations quickly from the extension menu but can also translate whole sites.
+- [Firefox Translations](https://addons.mozilla.org/en-US/firefox/addon/firefox-translations) is an 
+  add-on made by Mozilla itself that gives an option for marked text to display its translations 
+  quickly from the extension menu but can also translate whole sites.
 - [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is an add-on
   supporting both DeepL and Google Translate to translate marked text in various different ways that
   can be automatically displayed.
@@ -110,7 +107,7 @@ The following add-ons provide translation options.
 The following add-ons add information to online shops.
 
 - [Fakespot](https://www.fakespot.com/) is an add-on made by Mozilla which displays additional
-  information on online shops, ebay and amazon.
+  information on online shops, eBay and Amazon.
   It can give shops, vendors and products a trust score which can be used as an alternative to
   reviews, which might be fake.
 
@@ -131,19 +128,19 @@ options to toggle between enabled and disabled.
 
 ### Scrolling
 
-On Linux distributions auto scroll is disabled by default.
-This means that you cant click the middle mouse button to use it for scrolling.
+On [Linux distributions](/wiki/linux.md#distributions) auto scroll is disabled by default.
+This means that you can't click the middle mouse button to use it for scrolling.
 To enable it go into the preferences and check `Use autoscrolling`.
 
-### Sponsorings
+### Sponsored Ads
 
-Sponsorings are embedded ads in Firefox.
-After navigating to `about:config` enabling and disabling of sponsorings can be done at
+Sponsored ads are embedded in Firefox.
+After navigating to `about:config` enabling and disabling of sponsored ads can be done at
 `browser.newtabpage.activity-stream.showSponsored`.
 
 ### Gestures
 
-By default gestures are enabled by default.
+By default, gestures are enabled by default.
 This can be annoying especially on laptops when using the touchpad.
 But the gestures can easily be disabled.
 For this go to `about:config` and clear the preferences for `browser.gesture.swipe.left` and
@@ -317,8 +314,8 @@ censoring tool set the following config.
 security.family_safety.mode = 0
 ```
 
-Additionally, check [the telemetry section](#telemetry) and
-[the sponsoring section](#sponsorings).
+Additionally, check [the telemetry section](#telemetry) and 
+[the section regarding sponsored ads](#sponsored-ads).
 
 ## Troubleshooting
 
@@ -330,6 +327,6 @@ It is possible and a known problem on [Linux-based systems](/wiki/linux.md) that
 recognize the system dark mode correctly.
 This can result in a light themed file picker despite all other programs on the system like
 [GTK](/wiki/linux/gtk.md) or [Qt](/wiki/linux/qt.md) using the dark mode already.
-To fix this simply navigate to `about:config` and - if not already existing - create the value for
+To fix this simply navigate to `about:config` and – if not already existing – create the value for
 `ui.systemUsesDarkTheme` and set it to `1`.
 This should immediately and without rebooting switch the file picker to use dark mode.

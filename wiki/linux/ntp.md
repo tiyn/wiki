@@ -1,6 +1,6 @@
 # NTP
 
-[NTP](https://www.rfc-editor.org/rfc/rfc5905) - short for Network Time Protocol
+[NTP](https://www.rfc-editor.org/rfc/rfc5905) – short for Network Time Protocol
 - is the most common method to synchronize the software clock of a
 [Linux](/wiki/linux.md) system.
 
@@ -25,8 +25,8 @@ In this case a German time-server is used.
 ntpdate ptbtime1.ptb.de
 ```
 
-Alternatively the time can be displayed only - without changing the systems
-time - by using the `-q` flag.
+Alternatively the time can be displayed only – without changing the systems
+time – by using the `-q` flag.
 
 ```sh
 ntpdate -q ptbtime1.ptb.de

@@ -4,8 +4,8 @@
 
 ## Setup
 
-On most linux distributions different GTK versions are installed as a dependency of various
-programs that use graphical user interfaces.
+On most [Linux distributions](/wiki/linux.md#distributions) different GTK versions are installed as
+a dependency of various programs that use graphical user interfaces.
 
 ### Configurations
 

@@ -1,4 +1,4 @@
-# cloudrac3r - bibliogram
+# cloudrac3r – bibliogram
 
 This is a [Docker](/wiki/docker.md) container for the alternative Instagram
 frontend [Bibliogram](/wiki/bibliogram.md).
@@ -55,8 +55,8 @@ services:
     build: .
     image: cloudrac3r/bibliogram
     volumes:
-      - db:/app/db
+      – db:/app/db
     ports:
-      - 10407:10407
+      – 10407:10407
     restart: unless-stopped
 ```

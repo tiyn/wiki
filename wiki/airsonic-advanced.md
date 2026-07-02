@@ -2,7 +2,7 @@
 
 [Airsonic-Advanced](https://github.com/airsonic-advanced/airsonic-advanced) is
 a free and open-source personal media streamer used for
-[music, podcasts and audiobooks](/wiki/audio.md).
+[music, podcasts and audiobooks](/wiki/audio_%28general%29.md).
 It is a more modern implementation of [Airsonic](/wiki/airsonic.md) which in turn
 is a fork of [Subsonic](/wiki/subsonic.md).
 

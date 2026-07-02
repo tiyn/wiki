@@ -1,4 +1,4 @@
-# bilde2910 - Hauk
+# bilde2910 – Hauk
 
 This is a docker container for a [Hauk](/wiki/hauk.md).
 
@@ -62,7 +62,7 @@ services:
     image: bilde2910/hauk
     restart: unless-stopped
     volumes:
-      - ./config/hauk:/etc/hauk
+      – ./config/hauk:/etc/hauk
     ports:
-      - "80:80"
+      – "80:80"
 ```

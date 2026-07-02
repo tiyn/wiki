@@ -1,6 +1,6 @@
 # Infrared
 
-Infrared - short IR - is electromagnetic radiation that is used in many technical applications.
+Infrared – short IR – is electromagnetic radiation that is used in many technical applications.
 
 ## Remote Controls
 

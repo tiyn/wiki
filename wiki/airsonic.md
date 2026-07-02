@@ -1,7 +1,7 @@
 # Airsonic
 
 [Airsonic](https://github.com/airsonic/airsonic) is a free and open-source personal media streamer
-used for [music, podcasts and audiobooks](/wiki/audio.md).
+used for [music, podcasts and audiobooks](/wiki/audio_%28general%29.md).
 It is a fork of [Subsonic](/wiki/subsonic.md).
 Airsonic is not maintained anymore and therefore deprecated.
 A more modern implementation of it is [Airsonic-Advanced](/wiki/airsonic-advanced.md).

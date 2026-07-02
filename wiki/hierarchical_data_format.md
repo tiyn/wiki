@@ -1,6 +1,6 @@
 # Hierarchical Data Format
 
-Hierarchical Data Format - or in short HDF - is a file format to organize data in a hierarchical
+Hierarchical Data Format – or in short HDF – is a file format to organize data in a hierarchical
 way.
 
 ## Viewer

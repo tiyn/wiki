@@ -1,6 +1,6 @@
 # GrapheneOS
 
-[GrapheneOS](https://grapheneos.org/) - or short Graphene - is a custom
+[GrapheneOS](https://grapheneos.org/) – or short Graphene – is a custom
 [Android](/wiki/android.md)-ROM and operating system for
 [Smartphones and Tablets](/wiki/smart_device.md#smartphones-and-tablet-computers) with mostly free
 and open-source software.

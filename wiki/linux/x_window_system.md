@@ -1,6 +1,6 @@
 # X Window System
 
-X Window System - also called X and X11 according to the current version - is a protocol for
+X Window System – also called X and X11 according to the current version – is a protocol for
 handling the display of the most Unix-like operating systems.
 [X.Org](https://www.x.org/wiki/) is the most used implementation of the X protocol.
 It is maintained by the [X.Org Foundation](https://x.org/wiki/).
@@ -138,7 +138,7 @@ The c-cedilla (`ç`) can be written by chaining compose with `,` and `c`.
 The oe-ligature (`œ`) can be written by chaining compose with `o` and `e`.
 There are many other diacritics and ligatures that can be written this way.
 
-There are many other typographic symbols that can be written this way - among them
+There are many other typographic symbols that can be written this way – among them
 [quotation marks](#write-typographic-quotation-marks).
 
 ##### Write Typographic Quotation Marks
@@ -156,7 +156,7 @@ or `>` and `>`.
 The left-hand single quotation mark (`‘`) can be written by chaining compose with `<` and `'`.
 The right-hand single quotation (`’`) mark can be written by chaining compose with `>` and `'`.
 
-There are many other typographic symbols that can be written this way - among them
+There are many other typographic symbols that can be written this way – among them
 [diacritics and ligatures](#write-diacritics-and-ligatures).
 
 #### Display

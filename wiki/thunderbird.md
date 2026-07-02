@@ -77,7 +77,7 @@ There select `Enable` for the theme of your choice.
 
 The following is a list of useful extensions for Thunderbird.
 
-- "*cloud - FileLink for Nextcloud and ownCloud" is an extension which allows the easy creation and
+- "*cloud – FileLink for Nextcloud and ownCloud" is an extension which allows the easy creation and
   sharing of file links to a custom [Nextcloud](/wiki/nextcloud.md) or
   [ownCloud](/wiki/owncloud.md) instance.
 - ["CollectAddresses"](#collect-all-addresses-of-mail-account) can be used to save all addresses in
@@ -131,7 +131,7 @@ Using the same key it can also be shown again.
 
 ### Downgrading Profile
 
-Sometimes - mostly for [troubleshooting reasons](#troubleshooting) - it can be useful to downgrade
+Sometimes – mostly for [troubleshooting reasons](#troubleshooting) – it can be useful to downgrade
 Thunderbird (for example using
 [downgrade](/wiki/linux/package_manager/pacman_and_aur.md#downgrading-packages) on
 [Arch Linux](/wiki/linux/arch-linux.md)).

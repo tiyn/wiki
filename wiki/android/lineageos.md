@@ -1,6 +1,6 @@
 # LineageOS
 
-[LineageOS](https://lineageos.org/) - or short Lineage - is a custom
+[LineageOS](https://lineageos.org/) – or short Lineage – is a custom
 [Android](/wiki/android.md)-ROM and operating system for
 [Smartphones and Tablets](/wiki/smart_device.md#smartphones-and-tablet-computers) with mostly free
 and open-source software.

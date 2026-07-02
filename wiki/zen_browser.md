@@ -3,7 +3,7 @@
 [Zen Browser](https://zen-browser.app) is a free and open-source web browser that was split off of
 [Firefox](/wiki/firefox.md) in 2024.
 The settings and usage of this browser is largely the same as Firefox'.
-This article only addresses things that differ from the normal usage - please refer to the
+This article only addresses things that differ from the normal usage – please refer to the
 [Firefox entry](/wiki/firefox.md) for everything else.
 
 ## Usage

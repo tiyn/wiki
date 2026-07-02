@@ -1,4 +1,4 @@
-# dperson - torproxy
+# dperson – torproxy
 
 This is a [Docker](/wiki/docker.md) container for a [Tor](/wiki/tor.md) proxy.
 The container and documentation was made by [dperson](https://hub.docker.com/r/dperson/torproxy).
@@ -6,7 +6,7 @@ The container and documentation was made by [dperson](https://hub.docker.com/r/d
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 

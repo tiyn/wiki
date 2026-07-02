@@ -1,4 +1,4 @@
-# tomsquest - docker-radicale
+# tomsquest – docker-radicale
 
 This is a [Docker](/wiki/docker.md) container for a [Radicale](/wiki/radicale.md) server.
 The official container and documentation was made by
@@ -12,7 +12,7 @@ The last usable tag was used therefore to guarantee best performance for all use
 Create the file `rebuild.sh`.
 Create a volume with the name `radicale_config`.
 Then create the `config` file in the volume `radicale_config`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 
@@ -206,9 +206,9 @@ Steps to create a file with a user and password:
 
 - You will have to install the package which includes `htpasswd`; for debian
   based distributions this is `apt install apache2-utils`
-- `cd /var/lib/docker/volumes/radicale\_data/\_data` - go to the volume
-- `touch ./users` - create a file called users
-- `htpasswd -B ./users username` - add user with name and password to the file
+- `cd /var/lib/docker/volumes/radicale\_data/\_data` – go to the volume
+- `touch ./users` – create a file called users
+- `htpasswd -B ./users username` – add user with name and password to the file
   (change `username` to your desired username)
 
 Now you can go to the exposed port and login with your chosen username and password.

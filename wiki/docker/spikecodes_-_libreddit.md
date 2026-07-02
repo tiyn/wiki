@@ -1,4 +1,4 @@
-# spikecodes - libreddit
+# spikecodes – libreddit
 
 This is a [Docker](/wiki/docker.md) container for the alternative reddit
 frontend [libreddit](/wiki/libreddit.md).
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 

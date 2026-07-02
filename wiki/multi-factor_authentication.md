@@ -1,6 +1,6 @@
 # Multi-Factor Authentication
 
-Multi-factor authentication - most often two-factor authentication or 2FA - is an electronic
+Multi-factor authentication – most often two-factor authentication or 2FA – is an electronic
 authentication method that consists of having additional authentication mechanisms to the standard
 way which is most often a password.
 

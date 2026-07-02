@@ -1,4 +1,4 @@
-# immich-app - immich-server
+# immich-app – immich-server
 
 This is a [Docker](/wiki/docker.md) container for a [immich](/wiki/immich.md) server.
 The official container and documentation was made by
@@ -13,7 +13,7 @@ Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.
 Please note that the `docker-compose.yml` file should be retrieved from the
 [Github releases page](https://github.com/immich-app/immich/releases/)
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 

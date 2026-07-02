@@ -1,6 +1,6 @@
 # Game
 
-A video game - short game - is an electronic game that features interation and input from the user
+A video game – short game – is an electronic game that features interation and input from the user
 to generate a feedback.
 Games can be played on different platforms.
 To create games [game engines](/wiki/game_engine.md) can be used.
@@ -42,7 +42,7 @@ various platforms and operating systems.
 By using [Syncthing](/wiki/syncthing.md) game saves can be synchronized.
 First set up Syncthing as described in the
 [Syncthing entry](/wiki/syncthing.md#setup).
-If a system with only user access - like the [Steam Deck](/wiki/game/steam_deck.md) - is used the
+If a system with only user access – like the [Steam Deck](/wiki/game/steam_deck.md) – is used the
 [user space configuration](/wiki/syncthing.md#user-space-configuration-for-linux)
 is recommended.
 Afterward move the game saves to the directory set up by Syncthing and create

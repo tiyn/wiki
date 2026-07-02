@@ -6,7 +6,8 @@ You can sync it with [vdirsyncer](vdirsyncer.md)
 
 ## Setup
 
-On most linux distributions Khal can be installed with the `khal` package.
+On most [Linux distributions](/wiki/linux.md#distributions) Khal can be installed with the `khal`
+package.
 Alternatively it can be installed via [GitHub](https://github.com/pimutils/khal).
 
 ### Configuration

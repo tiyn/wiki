@@ -1,4 +1,4 @@
-# jonohill - docker-openvpn-proxy
+# jonohill – docker-openvpn-proxy
 
 This is a [Docker](/wiki/docker.md) container for an
 [OpenVPN proxy](/wiki/openvpn.md#proxy).
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-Up
 
 Create the file `rebuild.sh`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 

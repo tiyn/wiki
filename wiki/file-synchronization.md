@@ -6,7 +6,7 @@ There are tools with a main server and there are tools that don't need them.
 
 ## Synchronizing with server
 
-The biggest advantage of having a main server contain your data is that - as
+The biggest advantage of having a main server contain your data is that – as
 long as the server is online -
 you can sync as you please.
 You do not need to care which machines are online to get all the files you need.

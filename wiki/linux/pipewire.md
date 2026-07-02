@@ -1,7 +1,7 @@
 # Pipewire
 
 [Pipewire](https://pipewire.org) is a graph based
-[sound server](/wiki/linux/audio.md#sound-server).
+[sound server](/wiki/linux/audio_%28linux%29.md#sound-server).
 
 ## Setup
 
@@ -43,7 +43,7 @@ used as a simple mixer.
 This section focuses on graph-based interfaces also called patchbays.
 For more advanced routing [qpwgraph](https://github.com/rncbc/qpwgraph) can be used, but the
 GTK-based [Helvum](https://gitlab.freedesktop.org/pipewire/helvum) is also available.
-The third available option is [Patchance](https://github.com/Houston4444/Patchance) - this is the
+The third available option is [Patchance](https://github.com/Houston4444/Patchance) – this is the
 currently recommended software of this wiki.
 
 ### Equalizer, Noise Reduction, etc

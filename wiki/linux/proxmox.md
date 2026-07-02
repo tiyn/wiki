@@ -58,7 +58,7 @@ It is not recommended to continue with errors or without running these checks
 Now APT needs to be assigned new sources.
 This can be done by editing the file `/etc/apt/sources.list` and replacing everything within with
 the new sources.
-For PVE 8 - which corresponds to Debians 12th version called bookworm - this lines to add are the
+For PVE 8 – which corresponds to Debians 12th version called bookworm – this lines to add are the
 following.
 
 ```txt
@@ -197,7 +197,7 @@ After that `reboot` and the internet should be up again.
 
 ### Balooning RAM and Resulting Problems
 
-When using a balooning device for RAM error messages - for example by [Docker](/wiki/docker.md) can
+When using a balooning device for RAM error messages – for example by [Docker](/wiki/docker.md) can
 be hidden.
 It is then more difficult to find the out-of-memory error that makes a program crash.
 Problems with balooning RAM can be found using the following command.

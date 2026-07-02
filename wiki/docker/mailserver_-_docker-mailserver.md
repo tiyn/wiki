@@ -1,4 +1,4 @@
-# mailserver - docker-mailserver
+# mailserver – docker-mailserver
 
 This is a [Docker](/wiki/docker.md) container for a mailserver.
 The official container and documentation was made by
@@ -48,8 +48,8 @@ In this case add the following lines to the file `docker-compose.yml` in the
   whoami:
     image: docker.io/traefik/whoami:latest
     labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.whoami.rule=Host(`<subdomain>.<domain>`)"
+      – "traefik.enable=true"
+      – "traefik.http.routers.whoami.rule=Host(`<subdomain>.<domain>`)"
 ```
 
 ### rebuild.sh

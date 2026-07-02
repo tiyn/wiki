@@ -1,4 +1,4 @@
-# zedeus - nitter
+# zedeus – nitter
 
 This is a [Docker](/wiki/docker.md) container for the alternative Twitter
 frontend [nitter](/wiki/nitter.md).
@@ -9,7 +9,7 @@ The official container and documentation was made by
 
 Create the file `rebuild.sh`, `docker-compose.yml` and `nitter.conf` at the same
 place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 
@@ -50,11 +50,11 @@ services:
     image: zedeus/nitter:latest
     container_name: nitter
     ports:
-      - "8080:8080"
+      – "8080:8080"
     volumes:
-      - ./nitter.conf:/src/nitter.conf:Z,ro
+      – ./nitter.conf:/src/nitter.conf:Z,ro
     depends_on:
-      - nitter-redis
+      – nitter-redis
     restart: unless-stopped
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:8080/Jack/status/20 || exit 1
@@ -64,16 +64,16 @@ services:
     user: "998:998"
     read_only: true
     security_opt:
-      - no-new-privileges:true
+      – no-new-privileges:true
     cap_drop:
-      - ALL
+      – ALL
 
   nitter-redis:
     image: redis:6-alpine
     container_name: nitter-redis
     command: redis-server --save 60 1 --loglevel warning
     volumes:
-      - nitter-redis:/data
+      – nitter-redis:/data
     restart: unless-stopped
     healthcheck:
       test: redis-cli ping
@@ -83,9 +83,9 @@ services:
     user: "999:1000"
     read_only: true
     security_opt:
-      - no-new-privileges:true
+      – no-new-privileges:true
     cap_drop:
-      - ALL
+      – ALL
 
 volumes:
   nitter-redis:

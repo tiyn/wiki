@@ -1,4 +1,4 @@
-# benbusby - whoogle-search
+# benbusby – whoogle-search
 
 This is a [Docker](/wiki/docker.md) container for a [whoogle](/wiki/whoogle.md)
 meta-search machine.
@@ -56,17 +56,17 @@ services:
     restart: unless-stopped
     user: whoogle
     security_opt:
-      - no-new-privileges
+      – no-new-privileges
     cap_drop:
-      - ALL
+      – ALL
     tmpfs:
-      - /config/:size=10M,uid=927,gid=927,mode=1700
-      - /var/lib/tor/:size=15M,uid=927,gid=927,mode=1700
-      - /run/tor/:size=1M,uid=927,gid=927,mode=1700
+      – /config/:size=10M,uid=927,gid=927,mode=1700
+      – /var/lib/tor/:size=15M,uid=927,gid=927,mode=1700
+      – /run/tor/:size=1M,uid=927,gid=927,mode=1700
     volumes:
-        - config:/config
+        – config:/config
     ports:
-      - 8000:5000
+      – 8000:5000
 
 volumes:
     config:

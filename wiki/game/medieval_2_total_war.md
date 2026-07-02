@@ -5,7 +5,7 @@ series.
 
 ## Mods
 
-### Third Age: Total War - Divide and Conquer
+### Third Age: Total War – Divide and Conquer
 
 [Divide and Conquer](https://www.moddb.com/mods/divide-and-conquer) is a submod for the
 [Third Age Total War](https://www.moddb.com/mods/third-age-total-war) mod.

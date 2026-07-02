@@ -1,4 +1,4 @@
-# kylemanna - openvpn
+# kylemanna – openvpn
 
 This is a [Docker](/wiki/docker.md) container for an
 [OpenVPN server](/wiki/openvpn.md).

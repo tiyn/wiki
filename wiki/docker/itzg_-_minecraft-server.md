@@ -1,4 +1,4 @@
-# itzg - minecraft-server
+# itzg – minecraft-server
 
 This is a [Docker](/wiki/docker.md) container for a
 [Minecraft](/wiki/game/minecraft.md) server.

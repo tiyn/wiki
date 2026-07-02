@@ -2,7 +2,7 @@
 
 Audio is an important point in a linux desktop environment
 For non-Linux specific audio software navigate to the corresponding
-[wiki article](/wiki/audio.md).
+[wiki article](/wiki/audio_%28general%29.md).
 
 ## Sound Server
 

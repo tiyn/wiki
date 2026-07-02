@@ -1,4 +1,4 @@
-# rblsb - synctube
+# rblsb – synctube
 
 This is a [Docker](/wiki/docker.md) container for the synchronized video
 platform synctube.

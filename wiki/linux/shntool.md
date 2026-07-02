@@ -1,7 +1,7 @@
 # shntool
 
 [shntool](http://shnutils.freeshell.org/shntool/) is a multi-purpose data processing utility.
-With it audio files of a wide array of codecs - like [flac](/wiki/flac_%28codec%29.md) - can be
+With it audio files of a wide array of codecs – like [flac](/wiki/flac_%28codec%29.md) – can be
 edited.
 
 ## Setup
@@ -19,7 +19,7 @@ Note that some codecs require special setup.
 These codecs are referenced in the end of this section.
 
 The following line of shell command splits an audio file according to a cue file.
-The `-o` tag specifies the output file format - for example `flac`.
+The `-o` tag specifies the output file format – for example `flac`.
 
 ```sh
 cuebreakpoints '<cue file>' | shnsplit -o '<codec>' '<audio file>'

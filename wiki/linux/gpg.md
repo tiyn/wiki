@@ -1,12 +1,13 @@
 # GPG
 
-[GNU Privacy Guard](https://gnupg.org/) - short GnuPG or just GPG - is a free and open-source
+[GNU Privacy Guard](https://gnupg.org/) – short GnuPG or just GPG – is a free and open-source
 implementation of [OpenPGP](/wiki/openpgp.md).
-It is used to savely encrypt and decrypt messages or files using assymetric encryption.
+It is used to safely encrypt and decrypt messages or files using asymmetric encryption.
 
 ## Setup
 
-On most linux distributions GPG can be installed with the `gnupg` package. 
+On most [Linux distributions](/wiki/linux.md#distributions) GPG can be installed with the `gnupg`
+package.
 Sometimes it is also called `gnupg2`.
 
 ## Usage
@@ -72,20 +73,20 @@ Your decision? 5
 
 ### Encrypting Files and Other Messages
 
-A file - in this case named `message.txt` - can be encrypted using the a specific key with the
-following command.
+A file – in this case named `message.txt` – can be encrypted using a specific key with the following
+command.
 Replace `<id>` with the identifier of the key that should encrypt the message.
 
 ```sh
 gpg -e -r <id> message.txt
 ```
 
-This command will create a file with the same name as the input file but with an added `.gpg` - in
+This command will create a file with the same name as the input file but with an added `.gpg` – in
 this case its called `message.txt.gpg`.
 
 ### Decrypt Files and Other Messages
 
-A file - in this case named `message.txt.gpg` - can be decrypted with the following command.
+A file – in this case named `message.txt.gpg` – can be decrypted with the following command.
 
 ```sh
 gpg --decrypt message.txt.gpg
@@ -121,7 +122,7 @@ After generating the key however only a single user is added by default.
 To add another one use the following command where `<key-id>` is the id of the key to add the
 e-mail to.
 
-```sh 
+```sh
 gpg --edit-key <key-id>
 ```
 
@@ -134,7 +135,7 @@ Then list the existing users using the command `uid` and select the user id of t
 with `uid <id>` where `<id>` is the key to delete.
 Then delete it with `deluid` and save with `save`.
 
-## Troubleshooting 
+## Troubleshooting
 
 This section will focus on errors and the fixing of errors of GPG.
 
@@ -145,7 +146,7 @@ This error mostly occurs when updating packages via various
 It can easily be fixed by running the following command.
 Which will (re-)generate the needed files and directories for GPG.
 
-```sh 
+```sh
 dirmngr
 ```
 
@@ -160,6 +161,6 @@ occurs.
 `hkp://pgp.rediris.es` is a key server that can be used but other possibilities are available and
 can and should be used depending on the location.
 
-```sh 
+```sh
 gpg --keyserver hkp://pgp.rediris.es --recv-key <key-id>
 ```

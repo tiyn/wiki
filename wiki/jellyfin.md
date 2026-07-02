@@ -16,7 +16,7 @@ This section addresses various features of Jellyfin.
 ### Live TV and DVR
 
 Jellyfin can connect to live TV with different tuners to display and record TV
-channels - so called DVR - directly via jellyfin.
+channels – so called DVR – directly via jellyfin.
 
 #### Live TV with M3U Tuner
 

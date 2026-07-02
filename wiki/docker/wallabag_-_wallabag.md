@@ -1,4 +1,4 @@
-# wallabag - wallabag
+# wallabag – wallabag
 
 This is a [Docker](/wiki/docker.md) container for a [wallabag](/wiki/wallabag.md) server.
 The Server consists of 3 Docker containers, one is the wallabag main server, one is a database and
@@ -74,34 +74,34 @@ services:
   wallabag:
     image: wallabag/wallabag
     environment:
-      - MYSQL_ROOT_PASSWORD=wallaroot
-      - SYMFONY__ENV__DATABASE_DRIVER=pdo_mysql
-      - SYMFONY__ENV__DATABASE_HOST=db
-      - SYMFONY__ENV__DATABASE_PORT=3306
-      - SYMFONY__ENV__DATABASE_NAME=wallabag
-      - SYMFONY__ENV__DATABASE_USER=wallabag
-      - SYMFONY__ENV__DATABASE_PASSWORD=wallapass
-      - SYMFONY__ENV__DATABASE_CHARSET=utf8mb4
-      - SYMFONY__ENV__MAILER_HOST=127.0.0.1
-      - SYMFONY__ENV__MAILER_USER=~
-      - SYMFONY__ENV__MAILER_PASSWORD=~
-      - SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
-      - SYMFONY__ENV__DOMAIN_NAME=https://<wallabag instance>
-      - SYMFONY__ENV__SERVER_NAME="Your wallabag instance"
+      – MYSQL_ROOT_PASSWORD=wallaroot
+      – SYMFONY__ENV__DATABASE_DRIVER=pdo_mysql
+      – SYMFONY__ENV__DATABASE_HOST=db
+      – SYMFONY__ENV__DATABASE_PORT=3306
+      – SYMFONY__ENV__DATABASE_NAME=wallabag
+      – SYMFONY__ENV__DATABASE_USER=wallabag
+      – SYMFONY__ENV__DATABASE_PASSWORD=wallapass
+      – SYMFONY__ENV__DATABASE_CHARSET=utf8mb4
+      – SYMFONY__ENV__MAILER_HOST=127.0.0.1
+      – SYMFONY__ENV__MAILER_USER=~
+      – SYMFONY__ENV__MAILER_PASSWORD=~
+      – SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
+      – SYMFONY__ENV__DOMAIN_NAME=https://<wallabag instance>
+      – SYMFONY__ENV__SERVER_NAME="Your wallabag instance"
     ports:
-        - "8082:80"
+        – "8082:80"
     volumes:
-      - wallabag_wallabag:/var/www/wallabag/web/assets/images
+      – wallabag_wallabag:/var/www/wallabag/web/assets/images
   db:
     image: mariadb
     environment:
-      - MYSQL_ROOT_PASSWORD=wallaroot
+      – MYSQL_ROOT_PASSWORD=wallaroot
     volumes:
-      - /opt/wallabag/data:/var/lib/mysql
+      – /opt/wallabag/data:/var/lib/mysql
   redis:
     image: redis:alpine
     volumes:
-      - wallabag_redis:/data
+      – wallabag_redis:/data
 
 volumes:
   wallabag_wallabag:

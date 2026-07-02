@@ -6,8 +6,8 @@
 
 On the [Inkscape website](https://inkscape.org/release/) setup files for
 [Windows](/wiki/windows.md), MacOS and [Linux](/wiki/linux.md) can be found.
-On most Linux distributions Inkscape can usually be installed with the corresponding
-[package manager](/wiki/linux/package_manager.md).
+On most [Linux distributions](/wiki/linux.md#distributions) Inkscape can usually be installed with
+the corresponding [package manager](/wiki/linux/package_manager.md).
 
 ## Usage
 

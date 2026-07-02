@@ -1,16 +1,15 @@
 # PlayerCTL
 
-[PlayerCTL](https://github.com/altdesktop/playerctl) is a MPRIS (Media Player
-Remote Interfacing Specification) [media player](/wiki/audio.md#media-software)
-command-line controller for Spotify, [Sonixd](/wiki/subsonic.md#client), MPV and
-many other different media clients aswell as [browser](/wiki/web_browser.md).
+[PlayerCTL](https://github.com/altdesktop/playerctl) is a MPRIS (Media Player Remote Interfacing
+Specification) [media player](/wiki/audio_%28general%29.md#media-software) command-line controller
+for Spotify, [Sonixd](/wiki/subsonic.md#client), MPV and many other different media clients as well
+as [browser](/wiki/web_browser.md).
 
 ## Setup
 
-On most linux distributions PlayerCTL can be installed with the `playerctl`
-package.
-Alternatively it can be installed via
-[GitHub](https://github.com/altdesktop/playerctl).
+On most [Linux distributions](/wiki/linux.md#distributions) PlayerCTL can be installed with the
+`playerctl` package.
+Alternatively it can be installed via [GitHub](https://github.com/altdesktop/playerctl).
 
 ## Usage
 
@@ -31,7 +30,6 @@ playerctl previous
 
 ## Using Hotkeys
 
-Hotkeys can be more accessible than typing the commands to start or stop music
-in the [terminal](/wiki/linux/system_console.md).
-With [SXHKD](/wiki/linux/sxhkd.md#setting-a-hotkey) commands from the CLI can
-be set to a hotkey.
+Hotkeys can be more accessible than typing the commands to start or stop music in the
+[terminal](/wiki/linux/system_console.md).
+With [SXHKD](/wiki/linux/sxhkd.md#setting-a-hotkey) commands from the CLI can be set to a hotkey.

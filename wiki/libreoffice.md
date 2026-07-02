@@ -18,7 +18,7 @@ This section addresses the usage of LibreOffice.
 
 To set the dark mode open `Settings` by the `Tools` tab, select `LibreOffice` and `Appearance` and
 select the correct theme for `LibreOffice Themes`.
-Sometimes - especially on [Linux systems](/wiki/linux.md) using [Wayland](/wiki/linux/wayland.md) -
+Sometimes – especially on [Linux systems](/wiki/linux.md) using [Wayland](/wiki/linux/wayland.md) -
 the automatic recognition may not work and the theme has to be set manually.
 
 ## Troubleshooting 

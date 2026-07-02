@@ -1,4 +1,4 @@
-# matrixdotorg - synapse
+# matrixdotorg – synapse
 
 This is a [Docker](/wiki/docker.md) container for a synapse server using the
 [matrix](/wiki/matrix.md) protocol.
@@ -9,7 +9,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -69,7 +69,7 @@ services:
       GID: "1000"
       TZ: "Europe/London"
     volumes:
-      - synapse:/data
+      – synapse:/data
 
 volumes:
   synapse:

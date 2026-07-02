@@ -5,8 +5,8 @@ NTFS is the proprietary [file system](/wiki/linux/disk-management.md) of
 
 ## Setup
 
-For the usage of NTFS file systems the `ntfs-3g` package - available on most
-distributions - has to be installed.
+For the usage of NTFS file systems the `ntfs-3g` package – available on most
+distributions – has to be installed.
 
 ## Usage
 
@@ -28,7 +28,7 @@ have to be disabled to mount the partition with write access.
 
 ### Automatic Mounting
 
-For the usage of NTFS file systems the `ntfs-3g` package - available on most distributions - has to
+For the usage of NTFS file systems the `ntfs-3g` package – available on most distributions – has to
 be installed.
 To [automount partitions](/wiki/linux/disk-management.md#mounting) with NTFS the following line has
 to be adapted and added to `/etc/fstab`.

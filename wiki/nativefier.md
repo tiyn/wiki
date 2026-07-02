@@ -66,7 +66,7 @@ ln -s mastodon-linux-x64/mastodon ~/.local/bin/links
 
 In a normal [browser](/wiki/web_browser.md) there are buttons to navigate back and forth through
 the history of a tab.
-On Nativefier this can be achieved by pressing the `Alt`-key and selecting `View` and `Back` - or
+On Nativefier this can be achieved by pressing the `Alt`-key and selecting `View` and `Back` – or
 `Forward`.
 This can also be achieved by pressing `Alt`+`Left Arrow` for going back and `Alt`+`Right Arrow` for
 going forwards.

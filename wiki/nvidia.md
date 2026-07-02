@@ -7,7 +7,7 @@ Linux based systems with some special caveats explained in the
 
 ### Screen Capture
 
-Nvidias program with several tools - called GeForce Experience - features
+Nvidias program with several tools – called GeForce Experience – features
 software for hardware-accalerated [screen recordings](/wiki/screen_capture.md).
 This recording software is called Nvidia ShadowPlay.
 Nvidia Experience is currently only available on Windows systems.

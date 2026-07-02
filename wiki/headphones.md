@@ -1,6 +1,6 @@
 # Headphones
 
-Headphones are a pair of drivers that converts electronic signals into [audio](/wiki/audio.md).
+Headphones are a pair of drivers that converts electronic signals into [audio](/wiki/audio_%28general%29.md).
 Headphones are available in different forms: for example headphones and in-ear monitors.
 All types are addressed in this article.
 
@@ -21,7 +21,7 @@ It is called [crinacle's ranking list Headphones](https://crinacle.com/rankings/
 
 Headphones can be modified.
 The most done modifications include detachable cables or a
-[balanced](/wiki/audio.md#balanced-unbalanced-audio) conversion.
+[balanced](/wiki/audio_%28general%29.md#balanced-unbalanced-audio) conversion.
 For every modification that changes the wires on the driver it is important to check the polarity,
 aswell as the left and right side to avoid having to resolder any connection.
 

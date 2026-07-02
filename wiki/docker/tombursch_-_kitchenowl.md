@@ -1,4 +1,4 @@
-# tombursch - kitchenowl
+# tombursch – kitchenowl
 
 This is a [Docker](/wiki/docker.md) container for a [kitchenowl](/wiki/kitchenowl.md)
 server.
@@ -12,7 +12,7 @@ The Server consists of two Docker containers, one is the kitchenowl frontend, an
 Create the files `rebuild.sh` and `docker-compose.yml` at the same
 place.
 Make sure to change `JWT_SECRET_KEY`.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Ports
 
@@ -53,16 +53,16 @@ services:
     image: tombursch/kitchenowl-web:latest
     restart: unless-stopped
     depends_on:
-      - back
+      – back
     ports:
-      - 7890:80
+      – 7890:80
   back:
     image: tombursch/kitchenowl:latest
     restart: unless-stopped
     environment:
-      - JWT_SECRET_KEY=changethis
+      – JWT_SECRET_KEY=changethis
     volumes:
-      - kitchenowl_data:/data
+      – kitchenowl_data:/data
 
 volumes:
   kitchenowl_data:

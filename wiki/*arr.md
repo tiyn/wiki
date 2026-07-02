@@ -4,7 +4,7 @@
 [BitTorrent](/wiki/bittorrent.md) domain.
 These applications include but are not limited to [Sonarr](https://github.com/Sonarr/Sonarr) for
 [TV shows](/wiki/video.md), [Radarr](https://github.com/Radarr/Radarr) for [movies](/wiki/video.md)
-and [Lidarr](https://github.com/Lidarr/Lidarr) for [music](/wiki/audio.md).
+and [Lidarr](https://github.com/Lidarr/Lidarr) for [music](/wiki/audio_%28general%29.md).
 
 ## Setup
 

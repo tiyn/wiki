@@ -1,14 +1,15 @@
 # Cue sheet
 
-A cue sheet is a metadata file containing information for the tracks of a CD or
-a file [ripped](/wiki/audio.md#extract-audio-files-from-cds) from it.
+A cue sheet is a metadata file containing information for the tracks of a CD or a file
+[ripped](/wiki/audio_%28general%29.md#extract-audio-files-from-cds) from it.
 
 ## Example file
 
-To understand the structure of a cue file the following lines show the contents
-of an example cue file. All lines starting with `REM`, `PERFORMER` or `TITLE`
-are optional. The following example is taken from the
-[wikipedia article](https://en.wikipedia.org/wiki/Cue_sheet_(computing)):
+To understand the structure of a cue file the following lines show the contents of an example cue
+file.
+All lines starting with `REM`, `PERFORMER` or `TITLE` are optional.
+The following example is taken from the
+[Wikipedia article on Cue sheets](https://en.wikipedia.org/wiki/Cue_sheet_(computing)).
 
 ```cue
 REM GENRE Electronica

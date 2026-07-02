@@ -1,6 +1,6 @@
 # VNC
 
-VNC - short for Virtual Network Computing - is a software used for sharing the
+VNC – short for Virtual Network Computing – is a software used for sharing the
 desktop of a system.
 It is based on the Remote Frame Buffer protocoll which is also named RFB.
 

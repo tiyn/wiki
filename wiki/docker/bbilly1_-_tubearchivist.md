@@ -1,4 +1,4 @@
-# bbilly1 - tubearchivist
+# bbilly1 – tubearchivist
 
 This is a [Docker](/wiki/docker.md) container for a [TubeArchivist](/wiki/tubearchivist.md)
 server.
@@ -8,7 +8,7 @@ TubeArchivist specific version of Elasticsearch and one a [redis](/wiki/docker/r
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Environment-variables
 
@@ -89,50 +89,50 @@ services:
     restart: unless-stopped
     image: bbilly1/tubearchivist
     ports:
-      - 8881:8000
+      – 8881:8000
     volumes:
-      - media:/youtube
-      - cache:/cache
+      – media:/youtube
+      – cache:/cache
     environment:
-      - ES_URL=http://es:9200     # needs protocol e.g. http and port
-      - REDIS_HOST=redis          # don't add protocol
-      - HOST_UID=1000
-      - HOST_GID=1000
-      - TA_HOST=subdomain.domain.tld        # set your host name
-      - TA_USERNAME=admin                   # your initial TA credentials
-      - TA_PASSWORD=admin                   # your initial TA credentials
-      - ELASTIC_PASSWORD=verysecret         # set password for Elasticsearch
-      - TZ=Europe/Berlin                    # set your time zone
+      – ES_URL=http://es:9200     # needs protocol e.g. http and port
+      – REDIS_HOST=redis          # don't add protocol
+      – HOST_UID=1000
+      – HOST_GID=1000
+      – TA_HOST=subdomain.domain.tld        # set your host name
+      – TA_USERNAME=admin                   # your initial TA credentials
+      – TA_PASSWORD=admin                   # your initial TA credentials
+      – ELASTIC_PASSWORD=verysecret         # set password for Elasticsearch
+      – TZ=Europe/Berlin                    # set your time zone
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 2m
       timeout: 10s
       retries: 3
     depends_on:
-      - es
-      - redis
+      – es
+      – redis
   redis:
     image: redis/redis-stack-server
     restart: unless-stopped
     volumes:
-      - redis:/data
+      – redis:/data
     depends_on:
-      - es
+      – es
   es:
     image: bbilly1/tubearchivist-es         # only for amd64, or use official es 8.9.0
     restart: unless-stopped
     environment:
-      - "ELASTIC_PASSWORD=verysecret"       # matching Elasticsearch password
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-      - "xpack.security.enabled=true"
-      - "discovery.type=single-node"
-      - "path.repo=/usr/share/elasticsearch/data/snapshot"
+      – "ELASTIC_PASSWORD=verysecret"       # matching Elasticsearch password
+      – "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      – "xpack.security.enabled=true"
+      – "discovery.type=single-node"
+      – "path.repo=/usr/share/elasticsearch/data/snapshot"
     ulimits:
       memlock:
         soft: -1
         hard: -1
     volumes:
-      - es:/usr/share/elasticsearch/data    # check for permission error when using bind mount, see readme
+      – es:/usr/share/elasticsearch/data    # check for permission error when using bind mount, see readme
 
 volumes:
   media:

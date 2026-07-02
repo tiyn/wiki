@@ -1,4 +1,4 @@
-# searx - searx
+# searx – searx
 
 This is a [Docker](/wiki/docker.md) container for a [searx](/wiki/searx.md)
 meta-search machine.
@@ -8,7 +8,7 @@ The official container and documentation was made by
 ## Set-up
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
-Change the settings according to your needs and run `./rebuild.sh` afterwards.
+Change the settings according to your needs and run `./rebuild.sh` afterward.
 
 ### Volumes
 
@@ -47,11 +47,11 @@ services:
   searx:
     image: searx/searx
     volumes:
-      - etc:/etc/searx
-      - log:/var/log/uwsgi
+      – etc:/etc/searx
+      – log:/var/log/uwsgi
     restart: unless-stopped
     ports:
-      - 8080:8080
+      – 8080:8080
 
 volumes:
   etc:
