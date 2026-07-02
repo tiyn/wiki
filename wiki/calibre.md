@@ -1,8 +1,18 @@
 # calibre
 
-[calibre](https://calibre-ebook.com/) is a cross-platform, free and open-source
-software suite for [e-book](/wiki/e-book.md) management.
-It supports various formats aswell as conversion between them.
+[calibre](https://calibre-ebook.com/) is a cross-platform, free and open-source software suite for
+[e-book](/wiki/e-book.md) management.
+It supports various formats as well as conversion between them.
+
+## Setup
+
+The web version of calibre can be setup via [Docker](/wiki/docker.md) with the
+[linuxserver image](/wiki/docker/linuxserver_-_calibre-web.md).
+
+Additionally, a desktop version is available for [Windows](/wiki/windows.md), macOS and
+[Linux](/wiki/linux.md) on the [official website](https://calibre-ebook.com/download).
+For many [Linux distributions](/wiki/linux.md#distributions) there is also a package with the
+package `calibre` or a similar name, which contains the desktop version as well.
 
 ## Usage
 
@@ -10,17 +20,15 @@ This section addresses various features of calibre.
 
 ## Adding a Plugin
 
-A plugin by a third party can be added by selecting a `.zip` archive – usually
-named `<plugin name>_plugin.zip` – under Preferences, Plugins, Load plugin from
-file.
+A plugin by a third party can be added by selecting a `.zip` archive – usually named
+`<plugin name>_plugin.zip` – under Preferences, Plugins, Load plugin from file.
 
 ## Exporting Books
 
 Books can be exported by selecting them and pressing `Save to disk`.
 After selecting a path the books will be saved there.
 Preferences for this can be set under `Preferences` and `Saving books to disk`.
-Especially the creation of separate image and metadata files are often of
-interest.
+Especially the creation of separate image and metadata files are often of interest.
 
 The template defines the path structure of the saved books.
 A simple template that will create the following structure is
@@ -39,28 +47,24 @@ All others are used to ensure a lowercase directory and file name without specia
 
 ## Changing the Default Author and Title Sort
 
-Under `Preferences` and `Tweaks` the corresponding settings to change the title
-and author sort name can be found.
+Under `Preferences` and `Tweaks` the corresponding settings to change the title and author sort name
+can be found.
 
 `Author sort name algorithm` defines the author sort name.
-By setting `author_sort_copy_method = 'copy'` the author sort name is the same
-as the author name.
-After this setting has been changed right click `Authors` in the navigation bar
-on the left side and press `Manage Authors`.
+By setting `author_sort_copy_method = 'copy'` the author sort name is the same as the author name.
+After this setting has been changed right click `Authors` in the navigation bar on the left side and
+press `Manage Authors`.
 Then press `Recalculate all author sort values` for the change to take effect.
 
-`Control sorting of titles and series in the library display` defines the sort
-titles.
-Setting `title_series_sorting = 'strictly_alphabetic'` will use the standard
-title and wont make articles of titles suffixes.
-Afterward select all books, right-click and select `Edit metadata in bulk`
-under `Edit metadata`.
+`Control sorting of titles and series in the library display` defines the sort titles.
+Setting `title_series_sorting = 'strictly_alphabetic'` will use the standard title and won't make
+articles of titles suffixes.
+Afterward select all books, right-click and select `Edit metadata in bulk` under `Edit metadata`.
 Then check the box `update title sort` and press `Ok` to update all sort titles.
 
 This entry is based on two posts on mobileread – one regarding the
-[sort author name](https://www.mobileread.com/forums/showthread.php?t=314663)
-and the other regarding the
-[sort title](https://www.mobileread.com/forums/showthread.php?t=249870).
+[sort author name](https://www.mobileread.com/forums/showthread.php?t=314663) and the other
+regarding the [sort title](https://www.mobileread.com/forums/showthread.php?t=249870).
 
 ## Changing the Cover of a Book
 
@@ -86,8 +90,8 @@ Alternatively only specific formats of the books can be send to the device by se
 `Send specific format to` and `Main memory` under the `Send to device` menu.
 If there are books that contain series metadata make sure to disconnect the e-reader once and
 reconnect it.
-Afterward select `Update cached metadata on device` under `Device` to update the metadata
-including the series.
+Afterward select `Update cached metadata on device` under `Device` to update the metadata including
+the series.
 Finally, disconnect the device.
 
 ## KEPUB Format
@@ -96,8 +100,7 @@ The `.kepub` format is a format that is similar to a normal epub but has some pe
 improvements for Kobo devices.
 It is recommended to convert `.mobi` and `.epub` files to a `.kepub` file before
 [transfering it to a Kobo device](#transfer-books-to-a-device).
-For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin) can be
-installed.
+For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin) can be installed.
 Afterward books can be converted the normal way, but now the output format `.kepub` is available.
 Additionally, the `Kobo Touch Extended` plugin is recommended to use since it makes sending books
 to Kobo e-readers easier.
