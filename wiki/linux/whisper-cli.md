@@ -11,6 +11,9 @@ The Whisper CLI program can be installed from source as described
 [on GitHub](https://github.com/vatsalaggarwal/whisper-cli).
 Some [Linux](/wiki/linux.md) [package managers](/wiki/linux/package_manager.md) package Whisper CLI
 in the `whisper.cpp` package.
+Additionally, there may be GPU-specific packages like `whisper.cpp-vulkan` or `whisper.cpp-cuda`
+which are quicker and more effective than the basic package and therefore should be preferred over
+it.
 
 ### Configuration
 
