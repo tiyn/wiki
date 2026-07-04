@@ -36,5 +36,7 @@ An e-reader is a device that is designed for reading digital e-books.
 Some of them also feature [annotation tools](/wiki/note-taking.md).
 
 - [Episteme Reader](https://github.com/Aryan-Raj3112/episteme) is a native
-- [Android](/wiki/android.md) [e-book](/wiki/e-book.md) reader, that is capable of annotations.
-    In contrast to [Saber](/wiki/note-taking.md#software) it is able to handle large PDF-files.
+  [Android](/wiki/android.md) [e-book](/wiki/e-book.md) reader, that is capable of annotations.
+  In contrast to [Saber](/wiki/note-taking.md#software) it is able to handle large PDF-files.
+  Additionally it features the OPDS protocol for catalogs which can, for example, connect to
+  [the OPDS catalog of calibre's web version](/wiki/calibre.md#connect-via-opds).

@@ -18,6 +18,25 @@ package `calibre` or a similar name, which contains the desktop version as well.
 
 This section addresses various features of calibre.
 
+## Connect via OPDS
+
+OPDS is a protocol to share e-books via HTTP(S) and XML.
+For example, it can be used to connect to an e-book reader like [Episteme](/wiki/e-book.md#e-reader)
+on [Android](/wiki/android.md).
+Using this the catalog of calibre's web version can then be browsed directly via
+[Episteme](/wiki/e-book.md#e-reader).
+
+For calibre's web version the url for the OPDS catalog is the following.
+Please note that `<subdomain>`, `<domain>` and `<tld>` can vary.
+Additionally, the subdomain could be omitted or `https://` could be used.
+However, most important is the path `/opds` which leads to the catalog.
+
+```txt
+http://<subdomain>.<domain>.<tld>/opds
+```
+
+The login data for the OPDS catalog is the same as for calibre's web version in general.
+
 ## Adding a Plugin
 
 A plugin by a third party can be added by selecting a `.zip` archive – usually named
