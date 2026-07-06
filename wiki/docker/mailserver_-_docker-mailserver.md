@@ -3,7 +3,7 @@
 This is a [Docker](/wiki/docker.md) container for a mailserver.
 The official container and documentation was made by
 [mailserver](https://hub.docker.com/r/mailserver/docker-mailserver).
-It contains dovecot, antispam, antivirus, ssl, etc.
+It contains dovecot, antispam, antivirus, ssl and many more features.
 
 ## Set-up
 
@@ -25,12 +25,23 @@ Create the file `rebuild.sh`.
 You then need to start the container with the `rebuild.sh` and add email
 accounts using the following command.
 
-`./setup.sh email add <user@domain> (<password>)`
-`./setup.sh alias add postmaster@<domain> <user@domain>`
+```sh
+./setup.sh email add <user@domain> (<password>)
+./setup.sh alias add postmaster@<domain> <user@domain>
+```
 
 And finally generate the DCIM keys and rebuild once again.
 
-`./setup.sh config dkim`
+```
+./setup.sh config dkim
+```
+
+In later steps the following command can be used to generate DKIM configuration for a given domain –
+which in this case is set to the placeholder `<domain>`.
+
+```sh
+docker exec mailserver setup config dkim domain '<domain>'
+```
 
 Finally, if a reverse proxy is used check the
 [traefik entry](/wiki/docker/traefik.md#setup-mailserver) or the [nginx entry](/wiki/nginx.md).
@@ -50,6 +61,19 @@ In this case add the following lines to the file `docker-compose.yml` in the
     labels:
       – "traefik.enable=true"
       – "traefik.http.routers.whoami.rule=Host(`<subdomain>.<domain>`)"
+```
+
+To use the mail server multiple [DNS](/wiki/dns.md) [records](/wiki/dns.md#records) have to be
+created.
+This process is explained in the
+[corresponding section of the email wiki entry](/wiki/email.md#mail-server-records)
+
+For the [DKIM record](/wiki/email.md#dkim-record) the dkim configuration for a given domain has to be 
+retrieved.
+It can be found in the config directory under the following path.
+
+```txt
+config/opendkim/keys/<domain>/mail.txt
 ```
 
 ### rebuild.sh

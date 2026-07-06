@@ -25,6 +25,18 @@ name.        A      IP
 Where `name` is the domain to map the `IP` to and `A` is the constant for
 the type of the record.
 
+### AAAA record
+
+AAAA records are IPv6 address records that map hostnames to an IPv6 address.
+Its basic structure is the following.
+
+```txt
+<name>.        AAAA   <IPv6>
+```
+
+Where `<name>` is the domain to map the IPv6 address – in this case  `<IPv6>` – to and `AAAA` is the
+constant for the type of the record.
+
 ### CNAME record
 
 CNAME (canonical name) records map one domain name to another.
@@ -55,3 +67,50 @@ with the same priority, `port` is the port on that the service can be found and
 
 Note that you need to create an A if you bind a service to a `name` that doesn't
 already have one.
+
+### MX record
+
+Mail Exchange – often shortened to MX – records specify which mail server is responsible for
+receiving emails for a domain.
+Its basic structure is the following.
+
+```txt
+<name>.        MX     <priority> <target>.
+```
+
+Where `<name>` is the domain to receive mail for, `<priority>` is the preference of the mail server
+(lower values are preferred), `<target>` is the hostname of the mail server and `MX` is the constant
+for the type of the record.
+
+The target of an MX record must resolve to an A or AAAA record.
+
+### TXT record
+
+TXT – short for text – records associate arbitrary textual information with a domain.
+Its basic structure is the following.
+
+```txt
+<name>.        TXT    "<text>"
+```
+
+Where `<name>` is the domain to associate the content – in this case `<text>` with and `TXT` is the
+constant for the type of the record.
+
+TXT records are commonly used for domain verification as well as technologies such as
+[SPF](/wiki/email.md#spf-record), [DKIM](/wiki/email.md#dkim-record) and
+[DMARC](/wiki/email.md#dmarc-record).
+
+### PTR record
+
+Pointer – often shortened to PTR – records map an IP address back to a hostname.
+Its basic structure is the following.
+
+```txt
+<ip>.          PTR    <hostname>.
+```
+
+Where `<ip>` is the reverse DNS representation of an IP address, `<hostname>` is the canonical
+hostname and `PTR` is the constant for the type of the record.
+
+PTR records are part of the reverse DNS namespace and are usually managed by the
+owner of the IP address rather than the owner of the domain.
