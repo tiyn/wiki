@@ -12,7 +12,11 @@ Sometimes it is also called `gnupg2`.
 
 ## Usage
 
-This section addresses the usage of the Open GPG.
+This section describes the management of OpenPGP keys using [Gnu Privacy Guard](https://gnupg.org/).
+
+The generated keys can subsequently be used by various applications such as
+[email clients](/wiki/email.md#client), [Git](/wiki/git_%28general%29.md), file encryption tools or
+[package](/wiki/linux/package_manager.md) signing tools.
 
 ### List or Find a Key
 

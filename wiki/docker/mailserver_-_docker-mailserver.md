@@ -1,6 +1,6 @@
 # mailserver – docker-mailserver
 
-This is a [Docker](/wiki/docker.md) container for a mailserver.
+This is a [Docker](/wiki/docker.md) container for a docker-mailserver.
 The official container and documentation was made by
 [mailserver](https://hub.docker.com/r/mailserver/docker-mailserver).
 It contains dovecot, antispam, antivirus, ssl and many more features.
@@ -31,7 +31,7 @@ Create the file `rebuild.sh`.
 You then need to start the container using `rebuild.sh`.
 
 After the container is running create the desired mail accounts where `<user@domain>` is the desired
-email account consisting of its parts and `<password>` is the password.
+[email](/wiki/email.md) account consisting of its parts and `<password>` is the password.
 It is recommended to create a postmaster account aswell.
 It can be either created as a secondary account or just linked to the first account as shown in the
 following lines.
@@ -51,7 +51,7 @@ Finally rebuild the container once again.
 
 The required DNS configuration is explained in the
 [corresponding section of the email wiki entry](/wiki/email.md#mail-server-records).
-This needs to be set up for the email to work properly with most other providers.
+This needs to be set up for the [email](/wiki/email.md) to work properly with most other providers.
 
 For the DKIM record the generated configuration has to be retrieved from the following file.
 
@@ -141,11 +141,18 @@ The required DNS records described in the
 created as previously shown in [the previous section](#initial-configuration).
 
 After that mail addresses for the additional domains can simply be created and used.
-No further setup is needed and emails using the new domains can simply be created.
+No further setup is needed and [emails](/wiki/email.md) using the new domains can simply be created.
 
 ```sh
 ./setup.sh email add <user@domain.tld> (<password>)
 ```
+
+### Optional: Client Setup
+
+After setting up the [Email](/wiki/email.md) server, some [Client](/wiki/email.md#client)
+configurations may be taken.
+Especially recommended is the set-up of
+[end-to-end encryption](/wiki/email.md#end-to-end-encryption).
 
 ### rebuild.sh
 

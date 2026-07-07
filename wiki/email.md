@@ -125,3 +125,20 @@ And even if you have it can be useful to keep your mails synced locally on your 
   It also features, contact, todo and calendar management.
 - [FairEmail](/wiki/android/fairemail.md) is a free and open-source mail client for
   [Android](/wiki/android.md).
+
+## Usage
+
+This section addresses the usage of various Email related topics.
+
+## End-to-End Encryption
+
+Besides transport encryption (TLS), emails can also be protected using end-to-end encryption.
+The two most common standards are [OpenPGP](/wiki/openpgp.md) and S/MIME.
+OpenPGP allows emails to be digitally signed and encrypted.
+Unlike TLS, which only protects the transport between mail servers and clients, OpenPGP protects the
+message itself.
+
+The generation, management and export of OpenPGP keys is described in the
+[GPG entry](/wiki/linux/gpg.md).
+The configuration of specific mail clients is described in the corresponding client entries such as
+[Thunderbird](/wiki/thunderbird.md#use-openpgp-for-encryption-decryption-and-signing).

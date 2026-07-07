@@ -23,17 +23,19 @@ select `Edit`.
 Navigate to `End-To-End Encryption` and set the settings according to your wishes.
 For example the OpenPGP key may have to be selected and default settings for signing could be set.
 
-### Use PGP Key for Encryption, Decryption and Signing
+### End-To-End Encryption Using PGP Key
 
 Thunderbird can use [OpenPGP](/wiki/openpgp.md) to sign, encrypt or decrypt mails.
+This is especially important for [End-to-End encryption](/wiki/email.md#end-to-end-encryption).
 
-Firstly a key needs to be generated.
-This is explained in the sections on [key generation](/wiki/linux/gpg.md#generating-a-key-pair),
+Firstly a key needs to be generated and then exported.
+This is explained in the sections of [GPG](/wiki/linux/gpg.md) on
+[key generation](/wiki/linux/gpg.md#generating-a-key-pair),
 [key management](/wiki/linux/gpg.md#managing-multiple-users-and-e-mails-of-an-existing-secret-key)
 and [key export](/wiki/linux/gpg.md#backing-up-and-exporting-keys) in the
 [GPG entry](/wiki/linux/gpg.md).
 Other [OpenPGP](/wiki/openpgp.md) implementations can also be used but [GPG](/wiki/linux/gpg.md) is
-the most used one.
+by far the most used one.
 
 To add a key to an existing mail account on Thunderbird, navigate to the `Account Settings` under
 `Edit` and then select the mail to add the PGP key to and `End-to-End Encryption`.
