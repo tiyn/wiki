@@ -112,5 +112,7 @@ Its basic structure is the following.
 Where `<ip>` is the reverse DNS representation of an IP address, `<hostname>` is the canonical
 hostname and `PTR` is the constant for the type of the record.
 
-PTR records are part of the reverse DNS namespace and are usually managed by the
-owner of the IP address rather than the owner of the domain.
+PTR records are part of the reverse DNS namespace and are usually managed by the owner of the IP
+address rather than the owner of the domain.
+Therefor, they usually have to be set on the domain management website or (if accessible) directly
+in the DNS server.

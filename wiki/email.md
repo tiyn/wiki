@@ -92,6 +92,8 @@ p=reject
 
 The server's IP address should resolve back to the mail host.
 This is done using a [PTR record](/wiki/dns.md#ptr-record).
+Please note that PTR records can not be set as easily as normal DNS records as explained in 
+[the corresponding section of the DNS entry](/wiki/dns.md#ptr-record).
 
 ```txt
 <server-ip>    PTR    mail.<domain>.
