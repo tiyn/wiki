@@ -25,6 +25,21 @@ An easy way to do the latter one is a validation service.
 One of the most used ones is the
 [Markup Validation Service by W3C](https://validator.w3.org/#validate_by_input).
 
+Due to HTML being famously used for [emails](/wiki/email.md), in
+[email clients](/wiki/email.md#client) there is often an option to export or save mails to them.
+In certain situations it then can be useful to convert them to PDF.
+
+A program, which works well for it, is
+[Weasyprint](https://doc.courtbouillon.org/weasyprint/stable/api_reference.html#command-line-api),
+which being based on [Python](/wiki/programming_language/python.md) is cross-platform and available
+on [Linux](/wiki/linux.md), [Windows](/wiki/windows.md) and macOS.
+The following command is an example conversion where an HTML-file `<html>` is converted to a
+PDF-file `<pdf>`.
+
+```sh
+weasyprint <html> <pdf>
+```
+
 ### XML
 
 XML is a markup language often used together with [RSS Feeds](/wiki/rss.md).

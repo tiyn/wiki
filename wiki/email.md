@@ -92,7 +92,7 @@ p=reject
 
 The server's IP address should resolve back to the mail host.
 This is done using a [PTR record](/wiki/dns.md#ptr-record).
-Please note that PTR records can not be set as easily as normal DNS records as explained in 
+Please note that PTR records can not be set as easily as normal DNS records as explained in
 [the corresponding section of the DNS entry](/wiki/dns.md#ptr-record).
 
 ```txt
@@ -132,7 +132,7 @@ And even if you have it can be useful to keep your mails synced locally on your 
 
 This section addresses the usage of various Email related topics.
 
-## End-to-End Encryption
+### End-to-End Encryption
 
 Besides transport encryption (TLS), emails can also be protected using end-to-end encryption.
 The two most common standards are [OpenPGP](/wiki/openpgp.md) and S/MIME.
