@@ -53,8 +53,10 @@ to [Microsoft Word](/wiki/office_suite.md#programs).
 LaTeX also features many different packages.
 The following list contains some examples of it.
 
-- [ZUGFeRD](https://ctan.org/pkg/zugferd) is a package for creating invoices.
 - [Awesome-CV](https://github.com/posquit0/Awesome-CV) is a package for creating job applications.
+- [lettrine](https://ctan.org/pkg/lettrine) is a package to typeset dropped capitals.
+- [(pgf)ornament](https://ctan.org/pkg/pgfornament) is a package to add various ornaments.
+- [ZUGFeRD](https://ctan.org/pkg/zugferd) is a package for creating invoices.
 
 #### Usage
 
