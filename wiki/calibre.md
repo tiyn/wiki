@@ -18,7 +18,11 @@ package `calibre` or a similar name, which contains the desktop version as well.
 
 This section addresses various features of calibre.
 
-## Connect via OPDS
+### Usage for the Web Version
+
+This section focuses on the basic usage of calibre's web version.
+
+#### Connect via OPDS
 
 OPDS is a protocol to share e-books via HTTP(S) and XML.
 For example, it can be used to connect to an e-book reader like [Episteme](/wiki/e-book.md#e-reader)
@@ -37,12 +41,16 @@ http://<subdomain>.<domain>.<tld>/opds
 
 The login data for the OPDS catalog is the same as for calibre's web version in general.
 
-## Adding a Plugin
+### Usage for the Desktop Version
+
+This section focuses on the basic usage of calibre's desktop version.
+
+#### Adding a Plugin
 
 A plugin by a third party can be added by selecting a `.zip` archive – usually named
 `<plugin name>_plugin.zip` – under Preferences, Plugins, Load plugin from file.
 
-## Exporting Books
+#### Exporting Books
 
 Books can be exported by selecting them and pressing `Save to disk`.
 After selecting a path the books will be saved there.
@@ -64,7 +72,7 @@ In the same view only the boxes `Save cover separately`, `Save metadata in a sep
 `Save data file as well` should be unchecked.
 All others are used to ensure a lowercase directory and file name without special characters.
 
-## Changing the Default Author and Title Sort
+#### Changing the Default Author and Title Sort
 
 Under `Preferences` and `Tweaks` the corresponding settings to change the title and author sort name
 can be found.
@@ -85,7 +93,7 @@ This entry is based on two posts on mobileread – one regarding the
 [sort author name](https://www.mobileread.com/forums/showthread.php?t=314663) and the other
 regarding the [sort title](https://www.mobileread.com/forums/showthread.php?t=249870).
 
-## Changing the Cover of a Book
+#### Changing the Cover of a Book
 
 Changing covers of a book can be done by editing the metadata available via the right-click menu.
 However this is not enough in some cases.
@@ -96,7 +104,7 @@ An alternative to this is the `PDF Cover` Plugin which allows the insertion of t
 other pages without an extra conversion.
 Please note that it prepends the cover and does not delete any pages.
 
-## Transfer Books to a Device
+#### Transfer Books to a Device
 
 To transfer books to a device connect a e-reader to the computer.
 After a while calibre should recognize the device which will be apparent by the appearance of
@@ -113,12 +121,8 @@ Afterward select `Update cached metadata on device` under `Device` to update the
 the series.
 Finally, disconnect the device.
 
-## KEPUB Format
-
-The `.kepub` format is a format that is similar to a normal epub but has some performance
-improvements for Kobo devices.
-It is recommended to convert `.mobi` and `.epub` files to a `.kepub` file before
-[transfering it to a Kobo device](#transfer-books-to-a-device).
+It is recommended to convert `.mobi` and `.epub` files to a `.kepub` file before transfering it to a
+Kobo device.
 For this the Plugin `KePub Output` by Joel Goguen [can be added](#adding-a-plugin) can be installed.
 Afterward books can be converted the normal way, but now the output format `.kepub` is available.
 Additionally, the `Kobo Touch Extended` plugin is recommended to use since it makes sending books
@@ -126,7 +130,7 @@ to Kobo e-readers easier.
 Finally, `KePub Metadata Reader` and `KePub Metadata Reader` make it possible to read and write
 metadata to `.kepub` files which is especially useful.
 
-## Exporting and Importing Settings and Libraries
+#### Exporting and Importing Settings and Libraries
 
 This section explains how to export and import the settings of one calibre instance to another.
 It is based on a
@@ -139,3 +143,19 @@ instructions.
 Please note that the export only works when an empty folder is selected.
 All calibre data will then be exported into the selected directory.
 For the import process the folder that includes the calibre data has to be selected.
+
+## Troubleshooting
+
+This section will focus on errors and the fixing of errors of calibre.
+
+### Troubleshooting for the Web Version
+
+This section focuses on the basic usage of calibre's web version.
+
+#### Problems Logging in With Reverse Proxy
+
+It is [a known problem](https://github.com/janeczku/calibre-web/issues/2916?utm_source=chatgpt.com)
+not being able to login when using a [reverse proxy](/wiki/reverse-proxy.md) like
+[Nginx](/wiki/nginx.md) or [Traefik](/wiki/traefik.md).
+In this case a 504 error will be displayed.
+According to various sources this can be fixed by trying previous sections until it works again.
