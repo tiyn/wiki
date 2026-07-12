@@ -43,6 +43,9 @@ weasyprint <html> <pdf>
 ### XML
 
 XML is a markup language often used together with [RSS Feeds](/wiki/rss.md).
+Many other data formats are also based on XML.
+For example [GPX](/wiki/navigation.md#gpx), a file format for saving routes, points of interests and
+other navigation related things, is based on it.
 
 ### LaTeX
 
