@@ -115,6 +115,31 @@ Afterward the logind service has to be restarted
 sudo systemctl restart systemd-logind
 ```
 
+### Limiting Journal Size
+
+The `journalctl` command stores persistent system logs which can grow significantly over time and
+consume disk space.
+
+To display the current disk usage of the journal, run the following command.
+
+```sh
+journalctl --disk-usage
+```
+
+The journal can then be limited to a maximum size by using the following command and replacing
+`<size>` with the desired limit (e.g. `500M`).
+
+```sh
+sudo journalctl --vacuum-size=<size>
+```
+
+Alternatively, logs older than a specified period can be removed by using the following command and
+replacing `<time>` with the desired retention time (e.g. `7d`).
+
+```sh
+sudo journalctl --vacuum-time=<time>
+```
+
 ## Troubleshooting
 
 This section focusses on errors that correspond to the systemd software.

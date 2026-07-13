@@ -94,6 +94,21 @@ volume belongs to.
 docker inspect <container-name>
 ```
 
+### Remove Unused Data
+
+Over time Docker accumulates unused images, stopped containers, unused networks and build cache.
+These objects continue to consume disk space even though they are no longer needed.
+
+To remove all unused resources, run the following command.
+It removes, stopped containers, unused networks, Unused images, Dangling image layers and unused
+build cache.
+
+```sh
+sudo docker system prune -a
+```
+
+Docker will ask for confirmation before deleting the resources.
+
 ## Troubleshooting
 
 This section will focus on errors and the fixing of errors of docker.

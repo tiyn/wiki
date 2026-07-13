@@ -14,9 +14,14 @@ It features the same syntax.
 
 ## Usage
 
-This section addresses various usages of the arch linux package managers.
+This section addresses various usages of the [Arch Linux](/wiki/linux/arch-linux.md) package
+managers.
 
-### Yay: Remove Make Dependencies 
+### Yay
+
+Commands that are available for Pacman are also available for Yay and some other AUR managers.
+
+#### Remove Make Dependencies
 
 This section is based on a
 [Reddit comment by AnalShart](https://www.reddit.com/r/archlinux/comments/116dd58/is_it_possible_to_default_remove_make).
@@ -24,10 +29,43 @@ The default behavious of Yay is not to remove the make dependencies.
 This can be changed by adding the following lines to the config file `~/.config/yay/config.json` or
 by editing it accordingly.
 
-```json 
+```json
 {
 	"removemake": "yes"
 }
+```
+
+### Installing Packages
+
+This section focuses on the installation of packages.
+Before installing new software it is recommended to synchronize the package databases and update the
+system.
+
+```sh
+pacman -Sy
+```
+
+Afterward, install the desired package by replacing `<package>` with its name.
+
+```sh
+pacman -S <package>
+```
+
+Alternatively both steps can be done simultaneously using the following command.
+
+```sh
+pacman -Sy <package>
+```
+
+### Removing Packages
+
+Packages can be removed together with their dependencies and configuration files if they are no
+longer needed.
+This is the recommended way to remove packages as it also gets rid of dependencies that are no
+longer required by other packages and its configuration files.
+
+```sh
+pacman -Rns <package>
 ```
 
 ### Ignoring Packages
@@ -50,7 +88,7 @@ This program can then easily be used to an AUR package.
 This works like the following assuming the package `v4l2loopback-dmks` needs to be downgraded.
 
 ```sh
-sudo downgrade v4l2loopback-dmks
+downgrade v4l2loopback-dmks
 ```
 
 Afterward the target version can be selected and the downgrading process will conclude.
@@ -78,6 +116,28 @@ On the right-hand side click on `View Changes` and select the version you want t
 commit list.
 Next to `download` a `.tar.gz` file can be downloaded which includes a `PKGBUILD` file.
 Afterward it needs to be [uncompressed](/wiki/linux/tar.md#uncompressing-a-tar-archive).
+
+### List and Remove Orphaned Packages
+
+Packages that were installed automatically as dependencies may remain on the system after the
+package requiring them has been removed.
+These packages are called orphaned packages and can usually be removed safely.
+
+To list all orphaned packages, run the following command.
+
+```sh
+pacman -Qdt
+```
+
+If the command returns one or more packages, they can be removed together with their unused
+configuration files using the following command.
+
+```sh
+pacman -Rns $(pacman -Qdtq)
+```
+
+It is recommended to review the list of orphaned packages before removing them, as some packages may
+still be desired despite no longer being required as a dependency.
 
 ### Clear Cache
 
@@ -333,7 +393,7 @@ To update the package either way the following command can be used.
 `<package name>` should be exchanged for the package that throws the error.
 
 ```sh
-sudo pacman -S --overwrite "*" <package name>
+pacman -S --overwrite "*" <package name>
 ```
 
 ### Error `error: could not open file /var/lib/pacman/sync/core.db: Unrecognized archive format`
@@ -342,7 +402,7 @@ If the error `error: could not open file /var/lib/pacman/sync/core.db: Unrecogni
 or a similar one with another database file is thrown it can mostly be easily fixed by removing the
 database file with the following command.
 
-```txt 
+```txt
 rm -rf /var/lib/pacman/sync/*
 ```
 
