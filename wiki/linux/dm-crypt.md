@@ -12,7 +12,9 @@ To create a encrypted device simply run the following command.
 cryptsetup -c aes-xts-plain -s 512 -y -v luksFormat /dev/sda2
 ```
 
-Where `/dev/sda2` is the device to be created.
+`/dev/sda2` is the device to be created.
+This command will automatically ask for a passowrd and add it as a keyslot to a given volume.
+
 
 ### Create/Add a Key File to an encrypted volume
 
@@ -37,8 +39,8 @@ openssl genrsa -out <path to destination> 4096
 
 The key file will then be saved  to `<path to destination>`.
 
-Finally, the key file can be added to an opened LUKS encrypted volume by running the following
-command.
+Finally, the key file can be added as a keyslot to an opened LUKS encrypted volume by running the
+following command.
 
 ```sh
 cryptsetup luksAddKey <path to LUKS volume> <path to key file>
@@ -191,7 +193,7 @@ If so the encrypted partition should be decrypted automatically.
 ### Automatical Mounting of an Encrypted Volume
 
 For automatic mounting of an encrypted volume a keyfile is needed.
-This will be achieved by entries in the file`/etc/fstab` aswell as the file
+This will be achieved by entries in the file`/etc/fstab` as well as the file
 `/etc/crypttab`.
 First adapt and insert the following lines into `/etc/fstab`:
 
@@ -218,6 +220,8 @@ created in the previous step (for example `/root/key.bin`).
 
 ### Use FIDO2 to Unlock a Volume
 
+This guide will add a FIDO2 stick as a keyslot for a given volume.
+
 To use a FIDO2-Stick on [Linux-based systems](/wiki/linux.md) with
 [DM-Crypt](/wiki/linux/dm-crypt.md) first set up the FIDO2 stick and add it to the encrypted
 volume.
@@ -229,6 +233,12 @@ sudo systemd-cryptenroll --fido2-device=auto /dev/nvme0n1p1
 sudo cryptsetup open --token-only /dev/nvme1n1p2 test
 ```
 
+In the `systemd-cryptenroll` command the flag `--fido2-with-client-pin=no` can be also be set to
+disable the pin.
+Similarly `--fido2-with-user-presence=no` will disable the user showing his presence by pressing the
+button on the FIDO 2 stick and  `--fido2-with-user-verification=no` disables the need for user
+verification.
+
 Next the hooks in the file `/etc/mkinitcpio.conf` need to be changed.
 It is recommended to set up [Plymouth]() so that the login screen is clean.
 Switch `udev` and other `HOOKS` to `systemd`.
@@ -239,7 +249,7 @@ For this switch `udev keymap consolefont encrypt` to `systemd sd-vconsole sd-enc
 Then the file `/boot/loader/entries/arch.conf` and `/boot/loader/entries/arch-fallback.conf` needs
 to be changed.
 For this the following example is given.
-Notice that `cryptdevice=UUID=` is switched to `rd.luks.name=` aswell as various options.
+Notice that `cryptdevice=UUID=` is switched to `rd.luks.name=` as well as various options.
 
 ```txt
 options		cryptdevice=UUID=3c306b1b-49a5-48c1-b93f-a619b96d6855:lvm:allow-discards root=/dev/mapper/main-root resume=/dev/mapper/main-swap rw quiet splash cryptdevice=/dev/usbkey:14848:2048
@@ -256,3 +266,25 @@ Make sure to touch FIDO2-key during boot to make it work.
 sudo mkinitcpio -p linux
 reboot
 ```
+
+### Removing a Keyslot
+
+LUKS supports multiple keyslots, allowing several passwords, key files or hardware tokens to unlock
+the same encrypted volume.
+If a key is no longer needed, the corresponding keyslot can be removed.
+
+To remove a keyslot, replace `<LUKS-device-path>` with the encrypted device (e.g. `/dev/sda2`)
+and `<slot>` with the keyslot number.
+
+```sh
+sudo systemd-cryptenroll <LUKS-device-path> --wipe-slot=<slot>
+```
+
+The available keyslots can be listed beforehand using the following command.
+
+```sh
+sudo systemd-cryptenroll <LUKS-device-path>
+```
+
+Be careful not to remove the last remaining valid keyslot, otherwise the encrypted volume can no
+longer be unlocked.
