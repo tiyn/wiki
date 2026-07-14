@@ -20,5 +20,9 @@ across distributions.
 These formats are not package managers.
 They distribute standalone applications that can run independently of the system package database.
 
-- [AppImage](/wiki/linux/appimage.md)
-- [Flatpak](/wiki/linux/flatpak.md)
+- [AppImage](/wiki/linux/appimage.md) packages applications together with their dependencies in a
+    single executable file.
+- [Flatpak](/wiki/linux/flatpak.md) distributes sandboxed desktop applications across different
+    Linux distributions.
+- [uv](/wiki/programming_language/python/uv.md) manages Python installations, virtual environments,
+    project dependencies and Python-based command-line tools.

@@ -11,23 +11,8 @@ You can install python using various ways.
 
 Using various [package managers](/wiki/linux/package_manager.md) the current python version can be
 easily installed.
-Additionally, a [pyenv](#pyenv-installation), [uv](#uv-installation) or
+Additionally, a [pyenv](#pyenv-installation), [uv](/wiki/programming_language/python/uv.md) or
 [manual installation](#manual-installation) can be done to get a specific older version for projects.
-
-### uv Installation
-
-[uv](https://docs.astral.sh/uv/) is a python package and project manager.
-It can manage python versions.
-
-Versions can be installed and set for the current directory and subdirectories as shown in the
-following commands where `<python-version>` is the python version.
-
-```sh
-uv python install <python-version>
-uv python pin <python-version>
-```
-
-uv can also be used to manage [virtual environments](#uv-virtual-environments).
 
 ### pyenv Installation
 
@@ -141,35 +126,8 @@ to it and run `pipreqs` (install it if not already done).
 
 There are various options to use virtual environments.
 The first and most commonly used option is [venv](#venv-virtual-environments).
-A more modern and arguably better approach is using [uv](#uv-virtual-environments).
-
-#### uv Virtual Environments
-
-Since uv is a project-based tool the following command has to be used to create a project where
-`<path>` is the path to the project directory.
-If it is omitted the project will be created in the current working directory.
-
-```sh
-uv init <path>
-```
-
-Additionally, this command can be expanded with flags.
-To create the most basic form of a project without a `README.md` the `--bare` flag can be used.
-
-To use uv as a virtual environment similar to venv the following command can be invoked inside a
-project directory.
-It will create a `.venv` directory containing the `bin/activate` file.
-
-```sh
-uv venv
-```
-
-Packages can then be installed using the following command.
-`<package>` is the name of the package to install.
-
-```sh
-uv add <package>
-```
+A more modern and arguably better approach is using
+[uv](/wiki/programming_language/python/uv.md#virtual-environments).
 
 #### venv Virtual Environments
 
@@ -218,9 +176,15 @@ Alternatively local package manager like the
 [ones of various Linux distributions](/wiki/linux/package_manager.md) can sometimes be used to
 install packages globally.
 Due to different package versions (especially on rolling release distributions) this can fail.
-If it doesnt work the packages can be installed globally using `pip` together with the
+If it doesn't work the packages can be installed globally using `pip` together with the
 `--break-system-packages` flag.
 This flag is to be used with care.
+
+A generally more favourable approach is to install modules using
+[virtual environments](#using-virtual-environments).
+This, however, is only practical for projects although some virtual environment package managers
+such as [uv](/wiki/programming_language/python/uv.md) can also handle global installation of Python
+pacakges.
 
 This section addresses various different modules.
 
@@ -240,7 +204,7 @@ As explained in the
 [cuml guide on zero code change acceleration](https://docs.rapids.ai/api/cuml/latest/cuml-accel/)
 only the following two lines have to be added to run the scikit-learn algorithms on the GPU.
 Additionally, cuml has to be installed using a [Python package manager](#using-virtual-environments)
-like [uv](#uv-virtual-environments).
+like [uv](/wiki/programming_language/python/uv.md#installing-packages).
 It is important that these lines are put before importing any scikit-learn packages.
 
 ```py
