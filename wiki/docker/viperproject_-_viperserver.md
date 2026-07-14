@@ -6,7 +6,7 @@ server, which is used for building the Viper verifiers
 The official container and documentation was made by
 [viperproject](https://hub.docker.com/r/viperproject/viperserver).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

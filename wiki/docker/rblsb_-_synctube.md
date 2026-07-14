@@ -6,7 +6,7 @@ The official container and documentation was made by
 [rblsb](https://github.com/rblsb/synctube).
 There is no official pre-build on docker-hub.
 
-## Set-up
+## Setup
 
 First of all create a folder for your `rebuild.sh`.
 After that clone synctube from [GitHub](https://github.com/rblsb/synctube) into

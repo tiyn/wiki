@@ -5,7 +5,7 @@ server.
 The official container and documentation was made by
 [homeassistant](https://hub.docker.com/r/homeassistant/home-assistant).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

@@ -6,7 +6,7 @@ one a Redis instance.
 In addition to the main container you need to connect a
 [mariadb container](/wiki/docker/mariadb.md) and a [redis container](/wiki/docker/redis.md) to it.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

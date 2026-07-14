@@ -5,7 +5,7 @@ The official container and documentation was made by
 [traefik](https://hub.docker.com/_/traefik).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 In that folder create the directories `data/config`.

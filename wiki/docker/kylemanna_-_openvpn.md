@@ -5,7 +5,7 @@ This is a [Docker](/wiki/docker.md) container for an
 The official container and documentation was made by
 [kylemanna](https://hub.docker.com/r/kylemanna/openvpn).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs.

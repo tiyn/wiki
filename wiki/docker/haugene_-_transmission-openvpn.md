@@ -6,7 +6,7 @@ an [openVPN tunnel](/wiki/openvpn.md).
 The official container and documentation was made by
 [haugene](https://github.com/haugene/docker-transmission-openvpn).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 To see which providers are supported take a look at the

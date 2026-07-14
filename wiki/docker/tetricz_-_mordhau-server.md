@@ -4,7 +4,7 @@ This is a [Docker](/wiki/docker.md) container for a mordhau server.
 The official container and documentation was made by
 [tetricz](https://hub.docker.com/r/tetricz/mordhau-server).
 
-## Set-up
+## Setup
 
 Create the files `start.sh` and `stop.sh`.
 Change the settings according to your needs and run `./start.sh` to start

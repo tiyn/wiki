@@ -8,7 +8,7 @@ There is no official pre-build on docker-hub.
 In addition to the main container you need to connect a
 [postgres container](/wiki/docker/postgres.md) to it.
 
-## Set-up
+## Setup
 
 First of all create a folder for your `rebuild.sh`.
 After that clone invidious from [GitHub](https://github.com/iv-org/invidious) into a folder within

@@ -4,7 +4,7 @@ This is a [Docker](/wiki/docker.md) container for a [Kiwix](/wiki/kiwix.md) serv
 The official container and documentation was made by
 [kiwix](https://github.com/kiwix/kiwix-tools/pkgs/container/kiwix-serve).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Make sure to place the `.zim` files inside the volume.

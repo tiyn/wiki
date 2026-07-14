@@ -5,7 +5,7 @@ frontend [nitter](/wiki/nitter.md).
 The official container and documentation was made by
 [zedeus](https://github.com/zedeus/nitter).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`, `docker-compose.yml` and `nitter.conf` at the same
 place.

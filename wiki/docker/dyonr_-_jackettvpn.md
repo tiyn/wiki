@@ -5,7 +5,7 @@ protected [Jackett](/wiki/jackett.md) server.
 The official container and documentation was made by
 [dyonr](https://github.com/DyonR/docker-Jackettvpn).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh` and set `<username>` and `<password>` according to
 your openvpn.

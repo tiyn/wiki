@@ -5,9 +5,9 @@ The official container and documentation was made by
 [mailserver](https://hub.docker.com/r/mailserver/docker-mailserver).
 It contains dovecot, antispam, antivirus, ssl and many more features.
 
-## Set-up
+## Setup
 
-This section addresses the set-up of the docker-mailserver [Docker](/wiki/docker.md) container.
+This section addresses the setup of the docker-mailserver [Docker](/wiki/docker.md) container.
 
 ### Download
 
@@ -151,7 +151,7 @@ No further setup is needed and [emails](/wiki/email.md) using the new domains ca
 
 After setting up the [Email](/wiki/email.md) server, some [Client](/wiki/email.md#client)
 configurations may be taken.
-Especially recommended is the set-up of
+Especially recommended is the setup of
 [end-to-end encryption](/wiki/email.md#end-to-end-encryption).
 
 ### rebuild.sh

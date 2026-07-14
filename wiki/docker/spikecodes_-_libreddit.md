@@ -5,7 +5,7 @@ frontend [libreddit](/wiki/libreddit.md).
 The official container and documentation was made by
 [spikecodes](https://github.com/spikecodes/libreddit).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

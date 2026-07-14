@@ -6,7 +6,7 @@ The official container and documentation was made by
 [linuxserver](https://docs.linuxserver.io/images/docker-freshrss).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

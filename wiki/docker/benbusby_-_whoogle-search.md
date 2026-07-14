@@ -5,7 +5,7 @@ meta-search machine.
 The official container and documentation was made by
 [benbusby](https://github.com/benbusby/whoogle-search).
 
-## Set-up
+## Setup
 
 First of all create a folder for your `rebuild.sh`.
 After that clone whoogle from

@@ -8,7 +8,7 @@ The services in this files are explained seperately.
 The main Docker container needs a database in form of a [MariaDB](/wiki/docker/mariadb.md)
 Docker container.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

@@ -2,7 +2,7 @@
 
 This is a docker container for a [Hauk](/wiki/hauk.md).
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Additionally, create a `config.php` file based on the

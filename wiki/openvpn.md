@@ -4,7 +4,7 @@
 
 ## Set up
 
-In the following sections the different set-ups of OpenVPN usages are described.
+In the following sections the different setups of OpenVPN usages are described.
 
 ### Server
 

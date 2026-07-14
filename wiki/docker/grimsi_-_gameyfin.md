@@ -2,7 +2,7 @@
 
 This is a [Docker](/wiki/docker.md) container for a [Gameyfin](/wiki/game/gameyfin.md).
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs.

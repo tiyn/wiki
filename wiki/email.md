@@ -65,7 +65,7 @@ mail._domainkey.<domain>.    TXT    "v=DKIM1; h=sha256; k=rsa; p=<public-key>"
 The key has to be retrieved from the mail server.
 For example for [docker-mailserver](/wiki/docker/mailserver_-_docker-mailserver.md) the process is
 described in the
-[corresponding set-up section](/wiki/docker/mailserver_-_docker-mailserver.md#set-up).
+[corresponding setup section](/wiki/docker/mailserver_-_docker-mailserver.md#setup).
 
 #### DMARC record
 

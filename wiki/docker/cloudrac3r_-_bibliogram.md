@@ -6,7 +6,7 @@ The official container and documentation was made by
 [cloudrac3r](https://github.com/cloudrac3r/bibliogram).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up
+## Setup
 
 First of all create a folder for your `rebuild.sh`.
 After that clone bibliogram from [sr.ht](https://sr.ht/~cadence/bibliogram/) into

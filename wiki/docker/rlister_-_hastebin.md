@@ -4,7 +4,7 @@ This is a [Docker](/wiki/docker.md) container for a hastebin server.
 The official container and documentation was made by
 [rlister](https://hub.docker.com/r/rlister/hastebin).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

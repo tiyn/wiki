@@ -6,7 +6,7 @@ The official container and documentation was made by
 [coturn](https://github.com/coturn/coturn).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh`, `data/matrix/coturn/turnserver.conf` and `docker-compose.yml` at the
 same place.

@@ -5,7 +5,7 @@ server.
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/tvheadend).
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

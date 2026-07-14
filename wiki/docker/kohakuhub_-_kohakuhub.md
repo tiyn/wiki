@@ -6,7 +6,7 @@ The Server consists of multiple Docker containers.
 These are containers for the KohakuHub API and – depending on configuration – MinIO, LakeFS,
 [Postgres](/wiki/docker/postgres.md)
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 The file `docker-compose.yml` is usually created automatically.

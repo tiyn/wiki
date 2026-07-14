@@ -5,7 +5,7 @@ This is a [Docker](/wiki/docker.md) container for
 The official container and documentation was made by
 [johnktims](https://hub.docker.com/r/johnktims/folding-at-home).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

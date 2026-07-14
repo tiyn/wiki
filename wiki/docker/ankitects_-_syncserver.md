@@ -9,7 +9,7 @@ The syncserver can be installed to handle the syncing of data in a self-hosted w
 It is described [on GitHub](https://github.com/ankitects/anki/tree/main/docs/syncserver) and can be
 setup via [Docker](/wiki/docker.md).
 
-## Set-up
+## Setup
 
 Due to the syncserver having to be set up manually first navigate to the
 [Anki syncserver GitHub subpage](/wiki/anki.md#setup-server).

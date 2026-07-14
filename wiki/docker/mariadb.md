@@ -5,7 +5,7 @@ The official container and documentation was made by [mariadb](https://hub.docke
 The Docker container is mainly used in combination with other containers.
 To achieve this in the easiest way use a docker-compose file.
 
-## Set-Up
+## Setup
 
 The mariadb Docker container is dependent on another container most of the time.
 The exact setup will be described in the regarding entry.

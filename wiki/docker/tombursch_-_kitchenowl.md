@@ -7,7 +7,7 @@ The official container and documentation was made by
 This docker-rebuild is made up by a `docker-compose.yml` file.
 The Server consists of two Docker containers, one is the kitchenowl frontend, another is a backend.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same
 place.

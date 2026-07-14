@@ -5,7 +5,7 @@ This is a [Docker](/wiki/docker.md) container for a [bind](/wiki/bind.md)
 The official container and documentation was made by
 [ventz](https://hub.docker.com/r/ventz/bind).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

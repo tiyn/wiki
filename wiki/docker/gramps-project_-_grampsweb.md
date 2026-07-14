@@ -5,7 +5,7 @@ server.
 The Server consists of 2 Docker containers, one is the gramps main server – split into two
 subcontainers – and one a [redis instance](/wiki/docker/redis.md).
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

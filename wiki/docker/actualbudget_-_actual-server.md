@@ -5,7 +5,7 @@ The official container and documentation was made by
 [actualbudget](https://actualbudget.org/docs/install/docker/).
 This docker-rebuild is made up by a `docker-compose.yml` file.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh`, `docker-compose.yml` at the same
 place.

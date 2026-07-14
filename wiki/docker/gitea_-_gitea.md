@@ -5,7 +5,7 @@ The Server consists of 2 Docker containers, one is the gitea main server and one
 In addition to the main container you need to connect a [mySQL container](/wiki/docker/mysql.md) to
 it.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

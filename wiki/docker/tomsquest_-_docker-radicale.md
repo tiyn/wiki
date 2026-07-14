@@ -7,7 +7,7 @@ The official container and documentation was made by
 The `latest` tag at the moment of writing this readme was corrupted.
 The last usable tag was used therefore to guarantee best performance for all users.
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Create a volume with the name `radicale_config`.

@@ -5,7 +5,7 @@ This is a [Docker](/wiki/docker.md) container for a
 The official container and documentation was made by
 [linuxserver](https://hub.docker.com/r/linuxserver/wireguard).
 
-## Set-Up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs.
@@ -101,4 +101,4 @@ certificate.
 ### Add New Client to Existing WireGuard Installation
 
 To add a new client to the existing WireGuard installation increase the number
-of peers or append a peer to the list of peers specified in the [setup section](#set-up) section.
+of peers or append a peer to the list of peers specified in the [setup section](#setup) section.

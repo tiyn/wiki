@@ -6,7 +6,7 @@ an [openVPN tunnel](/wiki/openvpn.md).
 The official container and documentation was made by
 [dyonr](https://github.com/DyonR/docker-qbittorrentvpn).
 
-## Set-up
+## Setup
 
 Create a `rebuild.sh` from the given examples – either for [OpenVPN](#openvpn-rebuildsh) or
 [Wireguard](#wireguard-rebuildsh), depending on the desired VPN protocol.

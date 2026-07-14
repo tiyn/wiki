@@ -8,7 +8,7 @@ This docker-rebuild is made up by a `docker-compose.yml` file.
 In addition to the main container you need to connect a
 [postgres container](/wiki/docker/postgres.md) to it.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh`, `.env` and `docker-compose.yml` at the same
 place.

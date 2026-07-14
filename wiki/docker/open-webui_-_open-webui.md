@@ -4,7 +4,7 @@ This is a [Docker](/wiki/docker.md) container for a Open WebUI server.
 The official container and documentation was made by
 [open-webui](https://github.com/open-webui/open-webui).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

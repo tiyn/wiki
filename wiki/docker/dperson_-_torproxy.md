@@ -3,7 +3,7 @@
 This is a [Docker](/wiki/docker.md) container for a [Tor](/wiki/tor.md) proxy.
 The container and documentation was made by [dperson](https://hub.docker.com/r/dperson/torproxy).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

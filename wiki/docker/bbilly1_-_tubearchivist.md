@@ -5,7 +5,7 @@ server.
 The Server consists of 3 Docker containers, one is the TubeArchivist main server, another is a
 TubeArchivist specific version of Elasticsearch and one a [redis](/wiki/docker/redis.md) instance.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

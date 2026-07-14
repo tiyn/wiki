@@ -5,7 +5,7 @@ This is a [Docker](/wiki/docker.md) container for a
 The official container and documentation was made by
 [linuxserver](https://github.com/linuxserver/docker-airsonic-advanced).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

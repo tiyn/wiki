@@ -4,7 +4,7 @@ This is a [Docker](/wiki/docker.md) container for a todo-manager.
 The official container and documentation was made by
 [prologic](https://hub.docker.com/r/prologic/todo).
 
-## Set-up
+## Setup
 
 Create the file `rebuild.sh`.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

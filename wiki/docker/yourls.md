@@ -5,7 +5,7 @@ The official container and documentation was made by [YOURLS](https://hub.docker
 In addition to the main container you need to connect a [mySQL container](/wiki/docker/mysql.md) to
 it.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 Change the settings according to your needs and run `./rebuild.sh` afterward.

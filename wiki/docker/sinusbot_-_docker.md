@@ -3,7 +3,7 @@
 This is a [Docker](/wiki/docker.md) container for a [Sinusbot](/wiki/sinusbot.md).
 The Server consists of a single Docker container.
 
-## Set-up
+## Setup
 
 Create the files `rebuild.sh` and `docker-compose.yml` at the same place.
 
