@@ -186,6 +186,24 @@ To enable it search and uncomment the following lines in the file `/etc/pacman.c
 Include = /etc/pacman.d/mirrorlist
 ```
 
+### Searching for Packages by File
+
+Sometimes it is useful to determine which package provides a specific file.
+Before searching the file database it has to be synchronized.
+
+```sh
+sudo pacman -Fy
+```
+
+Afterward, search for one or more file names by replacing `<file>` with the desired file.
+
+```sh
+pacman -F <file>
+```
+
+For example, this can be used to determine which package provides a missing binary, library or
+configuration file.
+
 ### Hooks
 
 Hooks are commands that are run before or after installation of one or more packages.
