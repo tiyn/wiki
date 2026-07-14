@@ -8,8 +8,10 @@ This entry also features medicinal image and visual formats such as DICOM.
 ## Viewer
 
 - [sxiv](https://github.com/xyb3rt/sxiv) is an image viewer for [Linux'](/wiki/linux.md)
-  [X window system](/wiki/linux/x_window_system.md).
+    [X window system](/wiki/linux/x_window_system.md).
 - [Weasis](https://github.com/nroduit/Weasis) is a cross-platform DICOM viewer.
+- [imv](https://sr.ht/~exec64/imv/) is an image viewer native to [Linux'](/wiki/linux.md)
+    [Wayland](/wiki/linux/wayland.md).
 
 ## Editors
 

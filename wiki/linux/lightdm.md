@@ -45,6 +45,17 @@ Check which session is created by your compositor.
 ln -s /usr/share/wayland-sessions/<session> /usr/share/wayland-sessions/default.desktop
 ```
 
+However, for Wayland the call for the compositor can also occur in the `.profile` file or another
+file that is called at startup.
+In this case replace the `Exec` line with a dummy.
+This can look similar to the following.
+
+```txt
+Exec=echo "ok"
+```
+
+Alternatively to linking the session to `default.desktop` the `.dmrc` file can also be set to the
+name of the session.
 
 Before finishing the setup the functionality should be tested.
 This can be done by using one or both of the following commands.
