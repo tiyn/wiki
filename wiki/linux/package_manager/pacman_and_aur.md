@@ -2,13 +2,13 @@
 
 In [Arch Linux](/wiki/linux/arch-linux.md) there are 2 main types of
 package managers.
-The first is pacman, the default package manager.
+The first is Pacman, the default package manager.
 
 For the second type there are many different managers to chose from.
 Those managers are handling for the Arch User Repositories (AUR).
 
 In this article yay is used as the go to AUR manager.
-yay is also a wrapper for pacman so yay can be used instead of pacman to
+yay is also a wrapper for Pacman so yay can be used instead of Pacman to
 install and update both AUR and main repository programs.
 It features the same syntax.
 
@@ -203,6 +203,71 @@ pacman -F <file>
 
 For example, this can be used to determine which package provides a missing binary, library or
 configuration file.
+
+### Replacing Globally Installed Python Packages
+
+[Python](/wiki/programming_language/python.md) packages installed using
+[pip](/wiki/programming_language/python/pip.md) are not managed by Pacman or Yay.
+Whenever possible, Python packages should instead be installed using a
+[package manager](/wiki/linux/package_manager.md) and the official repositories or the AUR.
+This allows them to be updated together with the rest of the system and avoids conflicts with the
+system package manager.
+
+However, project-specific dependencies should generally be installed inside
+[virtual environments](/wiki/programming_language/python.md#venv-virtual-environments) instead of
+globally.
+
+To begin replacing globally installed Python packages, first list all explicitly installed Python
+packages.
+
+```sh
+pacman -Qet | grep -E '^(python-|python3-)'
+```
+
+These packages are usually candidates to keep, as they are already managed by the system package
+manager.
+
+Next check for Python packages that exist on the file system but are not owned by Pacman.
+The following command searches the global Python installation for unmanaged packages.
+
+```sh
+find /usr/lib/python*/site-packages -maxdepth 1 \
+| while read package; do
+    pacman -Qo "$package" >/dev/null 2>&1 || echo "$package"
+done
+```
+
+Some manually installed packages may instead reside in `/usr/local`.
+These can be listed using the following command.
+
+```sh
+find /usr/local/lib/python*/site-packages -maxdepth 1
+```
+
+For each package that is unmanaged or managed by another source than Pacman or Yay determine the
+package name.
+Then search whether it is available using Pacman or Yay.
+
+```sh
+pacman -Ss <package>
+yay -Ss <package>
+```
+
+If it is, uninstall the package.
+For this pip could be used like shown in the following command.
+Finally, reinstall the package using the Pacman or Yay.
+
+```sh
+yay -S <package>
+```
+
+Note that the packages may not have the same name.
+Often the package has a prepended `python-` for Pacmand and Yay packages, however, this does not
+have to be the case.
+
+Packages that are not available in either the official repositories or the AUR can still be
+installed using tools such as [pip](/wiki/programming_language/python/pip.md) or
+[uv](/wiki/programming_language/python/uv.md).
 
 ### Hooks
 

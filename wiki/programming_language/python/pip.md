@@ -19,31 +19,24 @@ It is generally recommended to install packages inside a
 Alternatively, project-based package managers such as [uv](/wiki/programming_language/python/uv.md)
 can be used.
 
-On some Linux distributions global installation may require the
+Global installation using pip is not recommended and 
+[system package manager](/wiki/linux/package_manager.md#list-of-package-managers) should be
+preferred.
+When installing globally, however, on some Linux distributions global installation may require the
 `--break-system-packages` flag.
 
 ```sh
 pip install --break-system-packages <package>
 ```
 
-This option should only be used if the package cannot be installed using the
-[system package manager](/wiki/linux/package_manager.md#list-of-package-managers) or inside a
-virtual environment.
 
-### Removing Packages
+### Migrating Global Packages to the System Package Manager
 
-Installed packages can be removed by replacing `<package>` with the package
-name.
+Due to it being more favorable to install global packages using a
+[system package manager](/wiki/linux/package_manager.md) or a
+[Python](/wiki/programming_language/python.md) package manager such as
+[uv](/wiki/programming_language/python/uv.md) which is able to handle global installations, it may
+be useful to migrate to a system package manager.
 
-```sh
-pip uninstall <package>
-```
-
-### Creating a `requirements.txt` File
-
-To automatically create a `requirements.txt` file for the current project,
-navigate to the project directory and run `pipreqs`.
-
-```sh
-pipreqs .
-```
+For [Arch Linux](/wiki/linux/arch-linux.md) systems the process for this is explained in the
+[Pacman and AUR entry](/wiki/linux/package_manager/pacman_and_aur.md).
