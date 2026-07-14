@@ -311,6 +311,12 @@ This section addresses the [TensorFlow module](https://www.tensorflow.org/).
 Tensorflos is a machine learning resource which is often used for
 [neural networks](/wiki/neural_network.md).
 
+Apart from [package managers](/wiki/linux/package_manager.md) and
+[virtual environments](#using-virtual-environments) it can also be set up from source as explained
+on [the official website](https://www.tensorflow.org/install/source).
+This may especially be useful if specific configurations are needed such as vendor specific GPU
+support.
+
 #### Basic Usage of TensorFlow
 
 The basic usage of TensorFlow is described in
