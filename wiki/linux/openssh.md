@@ -176,6 +176,9 @@ kill <process-id>
 Files that are based on a remote server can be mounted as described in
 [the corresponding section](#mount-directory-with-sshfs) to set up complete remote development.
 
+This can also be used for tunneling [VNC](/wiki/vnc.md) which is then called
+[VNC over SSH](/wiki/vnc.md#vnc-over-ssh).
+
 ### Specify Key Exchange Algorithms
 
 It can be useful to specify the key exchange algorithms in the OpenSSH config file `~/.ssh/config`.

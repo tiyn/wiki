@@ -37,6 +37,7 @@ The following add-ons increase the security or privacy.
   lets you separate cookies in different containers on a per site base.
   With this add-on a proxy can be selected for each container which enables usage of a 
   [VPN](/wiki/vpn.md) that acts as a Proxy like a [OpenVPN Proxy](/wiki/openvpn.md#proxy).
+  For this software like [Gluetun](/wiki/gluetun.md) can be used.
 - [I don't care about cookies](https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/)
   is an even faster alternative to Consent-O-Matic.
 - [Temporary Containers](https://addons.mozilla.org/en-GB/firefox/addon/temporary-containers) opens 

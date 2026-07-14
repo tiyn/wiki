@@ -76,8 +76,8 @@ docker run --name qbittorrentvpn \
         -v qbittorrentvpn_data:/downloads \
         -e "VPN_ENABLED=yes" \
         -e "VPN_TYPE=openvpn" \
-        -e "VPN_USERNAME=username" \
-        -e "VPN_PASSWORD=password" \
+        -e "VPN_USERNAME=<username>" \
+        -e "VPN_PASSWORD=<password>" \
         -e "LAN_NETWORK=192.168.0.0/16" \
         --cap-add NET_ADMIN \
         --device /dev/net/tun \

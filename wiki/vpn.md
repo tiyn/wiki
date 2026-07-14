@@ -14,6 +14,10 @@ This section lists various VPN implementations.
 
 - [OpenVPN](/wiki/openvpn.md) is probably the most well known VPN implementation.
 - [WireGuard](/wiki/wireguard.md) is a modern, fast and secure implementation of the VPN protocol.
-  It is free and open-source.
+    It is free and open-source.
 - [Global Protect](/wiki/globalprotect.md) is a proprietary VPN that is mostly used by corporation
-  and learning facilities.
+    and learning facilities.
+- [Gluetun](/wiki/gluetun.md) is a Docker-based VPN client supporting multiple VPN
+    providers and protocols such as WireGuard and OpenVPN.
+    It can be combined with [Firefox'](/wiki/firefox.md) Multi-Account Containers to route only
+    selected browser containers through a VPN while leaving the rest of the traffic unaffected.
