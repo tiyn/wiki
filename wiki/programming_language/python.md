@@ -29,7 +29,8 @@ to your `~/.profile`.
 You can then set and install your preferred version of python globally with
 `pyenv install <version>` and `pyenv global <version>`.
 
-Analog to managing python versions, `pipenv` can manage pip and package versions.
+Analog to managing python versions, `pipenv` can manage
+[pip](/wiki/programming_language/python/uv.md) and package versions.
 A guide and description of the usage can be found on [gioele.io](https://gioele.io/pyenv-pipenv).
 
 ### Manual Installation
@@ -168,25 +169,12 @@ directory.
 
 ## Modules
 
-There are various modules and package managers to install these for Python like
-`pip`.
-For this usually a virtual environment is needed – as it is described in
-[the setup section](#setup).
-Alternatively local package manager like the
-[ones of various Linux distributions](/wiki/linux/package_manager.md) can sometimes be used to
-install packages globally.
-Due to different package versions (especially on rolling release distributions) this can fail.
-If it doesn't work the packages can be installed globally using `pip` together with the
-`--break-system-packages` flag.
-This flag is to be used with care.
+Python modules can be installed using package managers such as
+[pip](/wiki/programming_language/python/pip.md) or [uv](/wiki/programming_language/python/uv.md).
 
-A generally more favourable approach is to install modules using
-[virtual environments](#using-virtual-environments).
-This, however, is only practical for projects although some virtual environment package managers
-such as [uv](/wiki/programming_language/python/uv.md) can also handle global installation of Python
-pacakges.
-
-This section addresses various different modules.
+For most projects it is recommended to use a [virtual environment](#using-virtual-environments).
+For global installation the [system package managers](/wiki/linux/package_manager.md) can be used.
+Alternatively pip and uv can also handle global installation.
 
 ### scikit-learn
 

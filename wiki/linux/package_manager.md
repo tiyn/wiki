@@ -24,5 +24,8 @@ They distribute standalone applications that can run independently of the system
     single executable file.
 - [Flatpak](/wiki/linux/flatpak.md) distributes sandboxed desktop applications across different
     Linux distributions.
-- [uv](/wiki/programming_language/python/uv.md) manages Python installations, virtual environments,
-    project dependencies and Python-based command-line tools.
+- [uv](/wiki/programming_language/python/uv.md) manages Python installations,
+    [virtual environments](/wiki/programming_language/python.md#using-virtual-environments), project
+    dependencies and Python-based command-line tools.
+- [pip](/wiki/programming_language/python/pip.md) manages Python installations and can be used in a
+    virtual environment.
