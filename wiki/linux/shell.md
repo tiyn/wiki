@@ -35,6 +35,44 @@ There are similar repositories and resources for functions that are outside the 
 shells.
 Because of that and their issue regarding compatibility they will not be mentioned here.
 
+### Shebangs
+
+A shebang specifies which interpreter should execute a script.
+It is written as the first line of the file and starts with `#!`.
+
+For example, a [POSIX shell](#unix-shells) script typically begins with the following.
+
+```sh
+#!/bin/sh
+```
+
+A [Bash](#unix-shells) script commonly uses the following line.
+
+```sh
+#!/usr/bin/env bash
+```
+
+Using `/usr/bin/env` causes the interpreter to be resolved through the current `PATH` instead of
+using a fixed path.
+This makes scripts more portable and allows them to use interpreters provided by virtual
+environments—for example
+[Pythons virtual environments](/wiki/programming_language/python.md#using-virtual-environments)—or
+other tools.
+
+To execute a script directly, it first has to be marked as executable.
+
+```sh
+chmod +x <script>
+```
+
+It can then be started directly.
+
+```sh
+./<script>
+```
+
+The operating system will automatically invoke the interpreter specified by the shebang.
+
 ### Symbolic Links using `ln`
 
 `ln` is a command to create links between files and folders.

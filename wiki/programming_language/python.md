@@ -88,6 +88,23 @@ python3.9 --version
 
 This section addresses the usage of Python.
 
+### Executable Python Scripts
+
+Python scripts can be made directly executable without explicitly calling the Python executable
+itself every time.
+For general information about shebangs, executable scripts and the `chmod +x` command, refer to the
+corresponding section in the [Shell article](/wiki/linux/shell.md#shebangs).
+
+For Python it is recommended to use the following shebang.
+
+```py
+#!/usr/bin/env python
+```
+
+Using `/usr/bin/env python` makes the script compatible with
+[virtual environments](#using-virtual-environments), [uv](/wiki/programming_language/python/uv.md)
+projects and other Python environment managers.
+
 ### Convert `.ipynb` Files to `.py` Files and Back
 
 Jupyter notebooks in the `.ipynb` format can easily be converted to normal Python files using

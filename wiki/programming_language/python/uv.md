@@ -8,11 +8,25 @@ dependencies.
 ## Setup
 
 Refer to the [official installation guide](https://docs.astral.sh/uv/getting-started/installation/)
-to install `uv` on your operating system.
+to install uv on your operating system.
 
 ## Usage
 
 This section addresses the usage of uv.
+
+### Executable Scripts
+
+uv fully supports Python scripts that use the standard Python shebang.
+
+```py
+#!/usr/bin/env python
+```
+
+This allows scripts to automatically use the Python interpreter provided by the current uv project
+or [virtual environment](/wiki/programming_language/python.md#using-virtual-environments).
+
+For a general explanation of shebangs and executable scripts, refer to the
+[Shell article](/wiki/linux/shell.md#shebangs).
 
 ### Managing Python Versions
 
