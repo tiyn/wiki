@@ -13,7 +13,7 @@ configuration.
 
 ### Installation
 
-[QMapShack](https://github.com/Maproom/qmapshack) can either be installed from source as described 
+[QMapShack](https://github.com/Maproom/qmapshack) can either be installed from source as described
 on the [official GitHub page](https://github.com/Maproom/qmapshack) or through the
 [package manager](/wiki/linux/package_manager.md) of many Linux distributions where it is often
 packaged under the name `qmapshack`.
@@ -25,7 +25,7 @@ Additionally, it is recommended to configure digital elevation models and a rout
 
 #### Maps
 
-Garmin-compatible [OpenStreetMap](https://www.openstreetmap.org/) vector maps work well with 
+Garmin-compatible [OpenStreetMap](https://www.openstreetmap.org/) vector maps work well with
 [QMapShack](https://github.com/Maproom/qmapshack).
 The maps provided by [Freizeitkarte](https://freizeitkarte-osm.de/) are recommended.
 They can be found on their [website](https://download.freizeitkarte-osm.de/garmin/latest/).
@@ -39,7 +39,7 @@ To do that select `Setup Map Paths` under `File`.
 Digital elevation models are used to display altitude information, elevation profiles and
 ascent/descent statistics.
 SRTM height data can be downloaded from
-[Viewfinder Panoramas](https://www.viewfinderpanoramas.org/) and their 
+[Viewfinder Panoramas](https://www.viewfinderpanoramas.org/) and their
 [interactive map](https://viewfinderpanoramas.org/Coverage%20map%20viewfinderpanoramas_org1.htm).
 
 Extract all the downloaded `.zip` files into a common directory.
@@ -59,7 +59,7 @@ The routing database can be downloaded from [Geofabrik](https://download.geofabr
 Since the creation of the routing is pretty time and memory intensive, it is recommended to download
 only needed regions.
 
-After downloading the desired region configure Routino in the routing settings of QMapShack and 
+After downloading the desired region configure Routino in the routing settings of QMapShack and
 create a database with `Create Routino Database` under `Tool`.
 
 ## Usage
@@ -87,3 +87,14 @@ Projects, routes and tracks can be exported as [GPX](/wiki/navigation.md#gpx).
 Select the corresponding object and export it after right-clicking it as a `.gpx` file.
 The resulting file can be imported into
 [mobile navigation applications](/wiki/navigation.md#mobile-navigation).
+
+### Manual and Automatic Routing
+
+QMapShack supports both automatic and manual route creation.
+These options are dependent on the [routing engine](#routing-engine).
+Automatic routing follows the configured routing engine and can be enabled with `Ctrl+A` or disabled
+by pressing the shortcut again.
+Manual routing places route segments exactly as clicked without automatic path calculation and can
+be toggled with `Ctrl+M`.
+Both modes are independent and can be switched on or off at any time using their respective keyboard
+shortcuts.
