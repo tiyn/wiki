@@ -25,8 +25,22 @@ This section addresses various use cases of git.
 
 There is also an interactive
 [fix-up guide by Seth Robertson](https://sethrobertson.github.io/GitFixUm/fixup.html).
-Robertson also made guides on [post-production](https://github.com/SethRobertson/GitPostProduction)
-and [best practices](http://sethrobertson.github.io/GitBestPractices).
+It can help to find the command needed to correct a specific situation of a git repository.
+Robertson also made guides on
+[post-production](https://sethrobertson.github.io/GitPostProduction/gpp.html) and a guide on
+[best practices](http://sethrobertson.github.io/GitBestPractices).
+
+### Show Commit Information
+
+To explicitly display all informations corresponding to a given commit hash `<hash>` run the
+following command.
+
+```sh
+git show --format=full <hash>
+```
+
+Apart from the diff it will also display the author including their mail, the complete commit hash
+and the whole commit message.
 
 ### Modify a Commit Already Done
 
