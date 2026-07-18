@@ -9,7 +9,7 @@ for [LaTeX](/wiki/markup_language.md#latex) using the BibTeX format.
 Papis can be installed on most [Linux](/wiki/linux.md) distributions by acquiring the `papis`
 package.
 On some distributions there may be problems installing this from the official repository.
-Another option to install papis is to use [pip](/wiki/programming_language/python.md).
+Another option to install Papis is to use [pip](/wiki/programming_language/python.md).
 Alternatively it can be downloaded from [the GitHub page](https://github.com/papis/papis).
 
 ### Configuration
@@ -17,7 +17,7 @@ Alternatively it can be downloaded from [the GitHub page](https://github.com/pap
 To use Papis a config file needs to be created.
 The path of the global config file is `~/.config/papis/config`.
 A minimal config can look like the following.
-Make sure to change the path of the papers directory.
+Make sure to change the path to the directory of the paper.
 
 ```txt
 [papers]
@@ -128,8 +128,8 @@ Afterward the contents of the temporary database should be checked to be correct
 papis -l tmp-db edit
 ```
 
-Afterward the contents of the temporary library should be moved to the actualy directory where
-papis stores its entries.
+Afterward the contents of the temporary library should be moved to the actual directory where Papis
+stores its entries.
 The path for that can be found in the [config file](#configuration).
 
 ```sh
@@ -139,6 +139,13 @@ mv tmp-db/* /path/to/your/library/folder/
 Finally, the cache needs to be cleared
 [as described in the corresponding section](#clearing-the-cache) for Papis to display the new
 entries correctly.
+
+Alternatively the BibTeX file can instantly be imported using the following command where `<file>`
+is a placeholder for the BibTeX file.
+
+```sh
+papis bibtex read <file> import --all
+```
 
 ### Changing the Default Names of the Library
 
