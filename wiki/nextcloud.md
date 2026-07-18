@@ -14,6 +14,45 @@ When using NextCloud with a specific nginx configuration you have to append
 
 This section addresses various features of NextCloud.
 
+### Clean Trash Bin
+
+NextCloud uses a trash bin by default.
+It can reach a quite large size quickly depending on the files that are deleted.
+To completely delete the trash bin for a specific user `<user>` run the following command inside the
+NextCloud console on the host system.
+
+```sh
+php occ trashbin:cleanup <user>
+```
+
+To empty the trash bin of all users run the following command.
+
+```sh
+php occ trashbin:cleanup --all-users
+```
+
+### Configure Trash Bin Retention
+
+The trash bin by default handles the retention of the deleted data automatically.
+This can be changed using the following command where `<value>` is the obligation value.
+
+```sh
+php occ config:system:set trashbin_retention_obligation --value="<value>"
+```
+
+The value `<value>` can be set to define minimum and maximum times to keep the data.
+The following table shows various examples of possible configuration.
+
+
+| Value | Behavior |
+|---|---|
+| `auto` | Automatic retention (default) |
+| `30, auto` | Keep for at least 30 days |
+| `auto, 30` | Delete after no more than 30 days |
+| `30, 60` | Keep for 30–60 days |
+| `disabled` | Disable automatic deletion |
+
+
 ### WebDAV
 
 You can access ownCloud via WebDAV with the link
