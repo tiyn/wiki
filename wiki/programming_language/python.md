@@ -29,8 +29,8 @@ to your `~/.profile`.
 You can then set and install your preferred version of python globally with
 `pyenv install <version>` and `pyenv global <version>`.
 
-Analog to managing python versions, `pipenv` can manage
-[pip](/wiki/programming_language/python/uv.md) and package versions.
+Analog to managing python versions, `pipenv` can manage [pip](#pip) and
+[package versions](#package-management).
 A guide and description of the usage can be found on [gioele.io](https://gioele.io/pyenv-pipenv).
 
 ### Manual Installation
@@ -95,7 +95,7 @@ itself every time.
 For general information about shebangs, executable scripts and the `chmod +x` command, refer to the
 corresponding section in the [Shell article](/wiki/linux/shell.md#shebangs).
 
-For Python it is recommended to use the following shebang.
+For Python, it is recommended to use the following shebang.
 
 ```py
 #!/usr/bin/env python
@@ -150,6 +150,7 @@ A more modern and arguably better approach is using
 #### venv Virtual Environments
 
 [venv](https://docs.python.org/3/library/venv.html) can be used to create a virtual environment.
+It usually uses the standard [pip](#pip) manager for installing libraries.
 
 ```
 python -m venv <project-path>
@@ -183,6 +184,61 @@ ln -s <local-venv> ~/.pyenv/versions/<venv-name>
 
 Using this setup the python version will automatically change when navigating into the project
 directory.
+
+## Package Management
+
+Python packages can be installed using package managers.
+For new projects it is generally recommended to use [uv](#uv), while [pip](#pip) is available by
+default in most Python installations and is supported by virtually all Python projects.
+
+### pip
+
+The `pip` package manager is the standard Python package manager and can be used to install, upgrade
+and remove Python packages.
+It is recommended to use `pip` inside a [virtual environment](#using-virtual-environments).
+
+A package called `<package>` can be installed using
+
+```sh
+pip install <package>
+```
+
+To upgrade an already installed package run
+
+```sh
+pip install --upgrade <package>
+```
+
+Packages can be removed again using
+
+```sh
+pip uninstall <package>
+```
+
+To display all currently installed packages use
+
+```sh
+pip list
+```
+
+### uv
+
+For new projects it is generally recommended to use [uv](/wiki/programming_language/python/uv.md),
+which provides a modern replacement for [pip](#pip), [venv](#venv-virtual-environments) and several
+other Python tools.
+The corresponding article describes installation, virtual environments, dependency management and
+further usage in detail.
+
+## Modules
+
+Python modules can be installed using package managers such as
+[pip](/wiki/programming_language/python/pip.md) or
+[uv](/wiki/programming_language/python/uv.md).
+
+For most projects it is recommended to use a
+[virtual environment](#using-virtual-environments).
+For global installation the
+[system package managers](/wiki/linux/package_manager.md) can be used.
 
 ## Modules
 
@@ -222,10 +278,10 @@ Afterward all possible scikit-learn algorithms will run on the GPU instead of th
 ### PyTorch
 
 This section addresses the [PyTorch module](https://pytorch.org/).
-Pytorch is a machine learning resource which is often used for
+PyTorch is a machine learning resource which is often used for
 [neural networks](/wiki/neural_network.md).
 
-#### Setup Pytorch with CUDA for GPU usage
+#### Setup PyTorch with CUDA for GPU usage
 
 CUDA is also only available for Nvidia GPUs.
 For AMD GPUs refer to [the ROCm section](#setup-pytorch-with-rocm-for-gpu-usage).
@@ -358,3 +414,31 @@ A simple example for the combination of two models (`model1` and `model2`) into 
 output = model2(model1.output)
 combined_model = tf.keras.models.Model(inputs=model1.input, outputs=output)
 ```
+
+### matplotlib
+
+The [matplotlib](https://matplotlib.org/) module is a plotting library for Python.
+
+#### Qt Backend Not Found
+
+When using [Wayland](/wiki/linux/wayland.md), matplotlib may fail with an error similar to the
+following.
+
+```txt
+ImportError: Failed to import any of the following Qt binding modules:
+PyQt6, PySide6, PyQt5, PySide2
+```
+
+This happens because matplotlib uses the Qt backend (`QtAgg`) for displaying interactive windows,
+but no Qt Python bindings are installed.
+
+To fix the issue simply install `PyQt6` inside the current
+[Python environment](#using-virtual-environments).
+This may look like the following example where [uv](/wiki/programming_language/python/uv.md) is
+used but other environments such as [pip](#pip) can also be used.
+
+```sh
+uv add PyQt6
+```
+
+After installing `PyQt6`, interactive matplotlib windows should work correctly under Wayland.
