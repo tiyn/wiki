@@ -14,6 +14,50 @@ to install uv on your operating system.
 
 This section addresses the usage of uv.
 
+
+### Automatically Updating `requirements.txt`
+
+Projects that still require a `requirements.txt` file can regenerate it automatically by using a Git
+`pre-commit` hook.
+The hook is executed before every commit and can export the current project dependencies before the
+changes are committed.
+
+For the export command see the
+[`requirements.txt` export section](#exporting-requirementstxt).
+For a general explanation of Git hooks refer to the
+[Git Hooks section](/wiki/linux/git_%28package%29.md#git-hooks) in the
+[Git package entry](/wiki/linux/git_%28package%29.md).
+
+### Exporting `requirements.txt`
+
+Although `uv` primarily manages dependencies through `pyproject.toml` and `uv.lock`, some tools like
+[pip](/wiki/programming_language/python.md#pip) and other
+[virtual environments](/wiki/programming_language/python.md#using-virtual-environments) still expect
+a `requirements.txt` file.
+
+The recommended way to generate it is by exporting the locked project dependencies.
+
+```sh
+uv export --format requirements-txt -o requirements.txt
+```
+
+This creates a reproducible `requirements.txt` based on the project's lock file.
+
+Alternatively, the packages currently installed in the active virtual environment can be exported.
+
+```sh
+uv pip freeze > requirements.txt
+```
+
+Unlike `uv export`, this command only lists the packages that are currently installed and therefore
+depends on the state of the active environment.
+
+If a `requirements.txt` file should always stay in sync with the project dependencies, it can be
+automatically regenerated using a Git `pre-commit` hook.
+For more information refer to the
+[Git Hooks section](/wiki/linux/git_%28package%29.md#git-hooks) in
+[Linux' entry about Git](/wiki/linux/git_%28package%29.md).
+
 ### Executable Scripts
 
 uv fully supports Python scripts that use the standard Python shebang.

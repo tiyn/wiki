@@ -1,4 +1,4 @@
-# Git (Client)
+# Git (Package)
 
 This entry deals with the Git client used in [Linux-based systems](/wiki/linux.md).
 For a basic overview and the server setup of git see the
@@ -30,9 +30,57 @@ Robertson also made guides on
 [post-production](https://sethrobertson.github.io/GitPostProduction/gpp.html) and a guide on
 [best practices](http://sethrobertson.github.io/GitBestPractices).
 
+### Git Hooks
+
+Git Hooks are scripts that are executed automatically when certain Git events occur.
+They can be used to run checks, format code or generate files before or after operations such as
+commits, merges or pushes.
+
+Hooks are stored in the `.git/hooks` directory of a repository.
+They are local to a repository and are not tracked by Git.
+A hook has to be marked as executable before it is used.
+
+Common hook names are:
+
+* `applypatch-msg`
+* `commit-msg`
+* `fsmonitor-watchman`
+* `post-applypatch`
+* `post-checkout`
+* `post-commit`
+* `post-merge`
+* `post-rewrite`
+* `post-update`
+* `pre-applypatch`
+* `pre-auto-gc`
+* `pre-commit`
+* `pre-merge-commit`
+* `pre-push`
+* `pre-rebase`
+* `pre-receive`
+* `prepare-commit-msg`
+* `push-to-checkout`
+* `sendemail-validate`
+* `update`
+
+The following example prints a short message before every commit.
+The script has to be stored in `.git/hooks/pre-commit` and marked as executable.
+
+```sh
+chmod +x .git/hooks/pre-commit
+```
+
+```sh
+#!/bin/sh
+
+echo "Running pre-commit hook..."
+```
+
+Other hooks function analog.
+
 ### Show Commit Information
 
-To explicitly display all informations corresponding to a given commit hash `<hash>` run the
+To explicitly display all information corresponding to a given commit hash `<hash>` run the
 following command.
 
 ```sh
@@ -55,7 +103,7 @@ git commit --amend --no-edit
 ```
 
 A graphic that visualizes the way amending works was made by
-[jubb0bs in a Stackoverflow comment](https://stackoverflow.com/questions/26050327/how-does-git-commit-amend-work-exactly).
+[jubb0bs in a StackOverflow comment](https://stackoverflow.com/questions/26050327/how-does-git-commit-amend-work-exactly).
 
 After amending a normal `git push` will not work as a commit was removed.
 In this case to [push it has to be done forcefully](#force-pushing).
@@ -113,11 +161,10 @@ git ls-files -v | grep "^S"
 
 Authentication by default is done via a username and a password.
 For some services such as GitHub.
-it is not possible to use password as an authentication method.
+It is not possible to use password as an authentication method.
 The other possibility to authenticate to git is by using [SSH](/wiki/ssh.md).
 
-The following sections assumes using a [Linux-based system](/wiki/linux.md) using
-[OpenSSH](/wiki/linux/openssh.md).
+The following sections assumes [Linux](/wiki/linux.md) is using [OpenSSH](/wiki/linux/openssh.md).
 For this a
 [SSH certificate has to be created](/wiki/linux/openssh.md#generate-new-keys) and
 [added to the authentication agent](/wiki/linux/openssh.md#adding-keys-to-authentication-agent).
@@ -147,7 +194,7 @@ There are different possibilities to improve the diff of git.
 One of them is [diff-so-fancy](#git-diff-diff-so-fancy) which allows word specific `git diff`.
 A second and more modern option is [delta](#git-diff-delta) which additionally allows syntax
 highlighting and a side-by-side view.
-delta also improves the `git blame` command, which is another reason why it is widely more popular
+Delta also improves the `git blame` command, which is another reason why it is widely more popular
 then diff-so-fancy.
 
 A more or less complete overview of the options was performed in an
@@ -180,8 +227,8 @@ Depending on the system settings and preferences the dark-mode (`dark`) and the 
 
 #### `git diff`: diff-so-fancy
 
-[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is a drop in replacement for the default
-`git diff` look.
+The package [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) is a drop-in replacement for
+the default `git diff` look.
 It can be installed via most [package managers](/wiki/linux/package_manager.md) using the
 `diff-so-fancy` package.
 Afterward the following lines need to be run to complete the configuration.
