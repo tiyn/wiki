@@ -159,3 +159,37 @@ not being able to login when using a [reverse proxy](/wiki/reverse-proxy.md) lik
 [Nginx](/wiki/nginx.md) or [Traefik](/wiki/traefik.md).
 In this case a 504 error will be displayed.
 According to various sources this can be fixed by trying previous sections until it works again.
+
+#### `sqlite3.OperationalError: no such column: books.isbn`
+
+When starting calibre's web version a `500 Internal Server Error` may be displayed.
+The logs contain an error similar to the following.
+
+```txt
+sqlite3.OperationalError: no such column: books.isbn
+```
+
+This indicates that the `metadata.db` schema is missing the `isbn` and `flags` columns expected by
+the installed web version.
+
+As a temporary workaround the missing columns can be added manually using the following command.
+The placeholder `<metadata>` is the path to calibre's `metadata.db`.
+
+```sh
+sqlite3 <metadata>
+```
+
+Afterwards run the following [SQL](/wiki/database.md) commands on the database.
+
+```sql
+ALTER TABLE books ADD COLUMN isbn TEXT;
+ALTER TABLE books ADD COLUMN flags INTEGER NOT NULL DEFAULT 0;
+```
+
+After applying the changes restart the service.
+
+The added columns are metadata fields.
+Existing books will keep a `NULL` value for `isbn` and `0` for `flags`.
+This workaround allows the web version to start again, however it is recommended to verify that the 
+library was created with a compatible calibre version and that the correct `metadata.db` is being
+used.
