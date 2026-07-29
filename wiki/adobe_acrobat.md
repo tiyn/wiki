@@ -4,6 +4,14 @@
 [Adobe](https://www.adobe.com/).
 It is free.
 
+## Setup
+
+Adobe Acrobat is available for [Windows](/wiki/windows.md), macOS and [Linux](/wiki/linux.md) on the
+[official website](https://get.adobe.com/reader/).
+For some [Linux distributions](/wiki/linux.md#distributions) — like
+[Arch Linux](/wiki/linux/arch-linux.md) there is also a package called `acroread-dc-wine`, which can
+be used to set up Adobe Acrobat.
+
 ## Usage
 
 This section addresses the usage of Adobe Acrobat.
