@@ -113,6 +113,44 @@ desired package.
 uv add <package>
 ```
 
+### Loading Environment Variables
+
+[`uv run`](https://docs.astral.sh/uv/concepts/configuration-files/#environment-variable-files) can
+load environment variables from dotenv files.
+Use `--env-file` to load a file for one command.
+
+```sh
+uv run --env-file .env.local python <script>.py
+```
+
+Alternatively, set `UV_ENV_FILE` to use the same file for subsequent `uv run` commands in the
+current shell.
+
+```sh
+export UV_ENV_FILE="$PWD/.env.local"
+uv run python <script>.py
+```
+
+For project-local automation, [direnv](https://direnv.net/) can set `UV_ENV_FILE` whenever the
+project directory is entered.
+Create `.envrc` in the project root with the following content.
+
+```sh
+export UV_ENV_FILE="$PWD/.env.local"
+```
+
+Enable the shell hook, then approve the file.
+The example uses Zsh.
+
+```sh
+eval "$(direnv hook zsh)"
+direnv allow
+```
+
+The shell hook should be added to `~/.zshrc` to enable it in new shells.
+`direnv allow` always expects a `.envrc`; it does not load `.env.local` directly.
+Machine-specific dotenv files should usually be added to `.gitignore`.
+
 ### Installing CLI Tools
 
 Besides managing projects and virtual environments, `uv` can also install
