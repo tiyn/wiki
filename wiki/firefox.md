@@ -98,10 +98,10 @@ The following add-ons provide translation options.
   add-on made by Mozilla itself that gives an option for marked text to display its translations 
   quickly from the extension menu but can also translate whole sites.
 - [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate) is an add-on
-  supporting both DeepL and Google Translate to translate marked text in various different ways that
-  can be automatically displayed.
+  supporting both [DeepL](/wiki/deepl.md) and Google Translate to translate marked text in various
+  different ways that can be automatically displayed.
 - [To DeepL translation](https://addons.mozilla.org/en-US/firefox/addon/to-deepl/) gives an option
-  for marked text to display its translation in a pop-up window using DeepL.
+  for marked text to display its translation in a pop-up window using [DeepL](/wiki/deepl.md).
 
 #### Shopping Add-ons
 
