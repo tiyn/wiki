@@ -15,3 +15,9 @@ This section addresses various features of FIDO2.
 
 The usage of a FIDO2-Stick combined with [DM-Crypt](/wiki/linux/dm-crypt.md) is described in the
 [corresponding section of the DM-Crypt entry](/wiki/linux/dm-crypt.md#use-fido2-to-unlock-a-volume).
+
+### Lock a Linux Session on FIDO2 Key Removal
+
+An active Linux session can automatically be locked when a FIDO2 security key is removed.
+The required setup is described in the
+[corresponding systemd section](/wiki/linux/systemd.md#lock-session-when-removing-a-fido2-security-key).

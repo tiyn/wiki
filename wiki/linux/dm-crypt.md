@@ -140,14 +140,14 @@ The first line gives the `serial`, the second the `product`.
 The `product` should match the USB stick.
 
 After this create a file at `/etc/udev/rules.d/50-usbkey.rules` with the
-following content.
+following content to set up a new [UDEV rule](/wiki/linux/systemd.md).
 Assuming the `serial` is `14AB0000000096`.
 
 ```txt
 SUBSYSTEMS=="usb", ATTRS{serial}=="14AB0000000096", KERNEL=="sd*", SYMLINK+="usbkey%n"
 ```
 
-Then reload the udev rules by running the following command.
+Then reload the UDEV rules by running the following command.
 
 ```sh
 udevadm control --reload-rules
@@ -243,7 +243,7 @@ Next the hooks in the file `/etc/mkinitcpio.conf` need to be changed.
 It is recommended to set up [Plymouth]() so that the login screen is clean.
 Switch `udev` and other `HOOKS` to `systemd`.
 
-Next remove the UDEV-rules for usb-decryption in `FILES`.
+Next remove the [UDEV rules](/wiki/linux/systemd.md) for USB decryption in `FILES`.
 For this switch `udev keymap consolefont encrypt` to `systemd sd-vconsole sd-encrypt`.
 
 Then the file `/boot/loader/entries/arch.conf` and `/boot/loader/entries/arch-fallback.conf` needs
@@ -266,6 +266,11 @@ Make sure to touch FIDO2-key during boot to make it work.
 sudo mkinitcpio -p linux
 reboot
 ```
+
+Removing the FIDO2 key after the volume has been unlocked does not close the already opened volume.
+To additionally lock active sessions when the key is removed, the setup described in the
+[corresponding systemd section](/wiki/linux/systemd.md#lock-session-when-removing-a-fido2-security-key)
+can be used.
 
 ### Removing a Keyslot
 
