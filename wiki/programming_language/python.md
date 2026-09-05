@@ -381,7 +381,7 @@ can be referenced.
 ### TensorFlow
 
 This section addresses the [TensorFlow module](https://www.tensorflow.org/).
-Tensorflos is a machine learning resource which is often used for
+TensorFlow is a machine learning resource which is often used for
 [neural networks](/wiki/neural_network.md).
 
 Apart from [package managers](/wiki/linux/package_manager.md) and
@@ -389,6 +389,88 @@ Apart from [package managers](/wiki/linux/package_manager.md) and
 on [the official website](https://www.tensorflow.org/install/source).
 This may especially be useful if specific configurations are needed such as vendor specific GPU
 support.
+
+#### Setup TensorFlow with CUDA in a uv Project
+
+TensorFlow can install its required CUDA user-space libraries as optional dependencies on Linux.
+The NVIDIA driver still has to be installed on the host system.
+
+```sh
+nvidia-smi
+uv add 'tensorflow[and-cuda]'
+```
+
+Verify whether TensorFlow was built with CUDA support and detects the GPU.
+
+```sh
+uv run python -c 'import tensorflow as tf; print("CUDA build:", tf.test.is_built_with_cuda()); print(tf.config.list_physical_devices("GPU"))'
+```
+
+If `CUDA build` is `True` but no GPU is listed and TensorFlow reports that it cannot load GPU
+libraries, the dynamic linker may not find the NVIDIA libraries installed inside the virtual
+environment.
+The following command temporarily adds all library directories from the installed `nvidia-*`
+packages.
+
+```sh
+SITE_PACKAGES=$(uv run python -c 'import site; print(site.getsitepackages()[0])')
+CUDA_LIBS=$(find "$SITE_PACKAGES/nvidia" -type d -name lib -printf '%p:')
+
+LD_LIBRARY_PATH="${CUDA_LIBS}/usr/lib" uv run python -c \
+  'import tensorflow as tf; print(tf.config.list_physical_devices("GPU"))'
+```
+
+If the test succeeds, store the path in a machine-specific dotenv file.
+
+```sh
+printf 'LD_LIBRARY_PATH=%s/usr/lib\n' "$CUDA_LIBS" > .env.cuda
+printf '.env.cuda\n' >> .gitignore
+```
+
+Run the project with the file explicitly.
+
+```sh
+uv run --env-file .env.cuda python <script>.py
+```
+
+To load it automatically, create a `.envrc` file and use
+[direnv](https://direnv.net/).
+
+```sh
+printf 'export UV_ENV_FILE="$PWD/.env.cuda"\n' > .envrc
+eval "$(direnv hook zsh)"
+direnv allow
+```
+
+For more information about dotenv files in uv, refer to the
+[uv environment variable section](/wiki/programming_language/python/uv.md#loading-environment-variables).
+
+Some recent GPUs may require CUDA kernels to be compiled from PTX on the first run because the
+TensorFlow wheel does not yet contain native kernel binaries for their compute capability.
+For example, TensorFlow 2.21 reports this for an RTX 5060 Ti with compute capability `12.0a`.
+According to NVIDIA's
+[explanation of PTX compatibility](https://developer.nvidia.com/blog/understanding-ptx-the-assembly-language-of-cuda-gpu-computing/),
+embedded PTX can be compiled for newer GPU generations at runtime.
+The first start can therefore take considerably longer, while the resulting binary is normally
+cached for subsequent runs.
+
+Make sure the `ptxas` executable installed by the CUDA dependency is available in the virtual
+environment.
+
+```sh
+VENV_DIR=$(uv run python -c 'import sys; print(sys.prefix)')
+PTXAS=$(find "$VENV_DIR" -type f -name ptxas -print -quit)
+ln -sf "$PTXAS" "$VENV_DIR/bin/ptxas"
+```
+
+The library lookup problem is not caused by the GPU being new; it is an environment configuration
+issue.
+The new GPU generation only explains why TensorFlow falls back to PTX JIT compilation after the
+libraries have been found.
+
+Refer to the
+[official TensorFlow installation guide](https://www.tensorflow.org/install/pip) for the current
+CUDA installation and troubleshooting steps.
 
 #### Basic Usage of TensorFlow
 

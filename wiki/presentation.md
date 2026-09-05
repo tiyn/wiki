@@ -24,3 +24,7 @@ The following is a list of these tools.
     Basic guides for this can be found on the pages of
     [toromtomtom](https://www.toromtomtom.com/blog/2021/10/17/pdfpc.html) and
     [Utah university](https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/pdfpc/pdfpc-doc.pdf).
+    Most importantly the tab key opens the overview mode, `p` pauses, `f` freezes, `t` opens 
+    clickable options, `g` opens the option to navigate to a specific page, `h` hides and `b` shows 
+    `a` blank foil. After selecting a rectangular space with the pointer tool, `z` can be pressed to
+    zoom into it.

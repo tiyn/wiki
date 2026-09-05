@@ -154,9 +154,9 @@ This section focuses on the basic usage of calibre's web version.
 
 #### Problems Logging in With Reverse Proxy
 
-It is [a known problem](https://github.com/janeczku/calibre-web/issues/2916?utm_source=chatgpt.com)
-not being able to login when using a [reverse proxy](/wiki/reverse-proxy.md) like
-[Nginx](/wiki/nginx.md) or [Traefik](/wiki/traefik.md).
+It is [a known problem](https://github.com/janeczku/calibre-web/issues/2916) not being able to login
+when using a [reverse proxy](/wiki/reverse-proxy.md) like [Nginx](/wiki/nginx.md) or
+[Traefik](/wiki/traefik.md).
 In this case a 504 error will be displayed.
 According to various sources this can be fixed by trying previous sections until it works again.
 

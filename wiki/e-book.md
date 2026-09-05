@@ -25,18 +25,18 @@ If the software is to be used by you check your local laws first.
 ## Tracking
 
 Many e-book readers include a feature to keep track of read books.
-However they do not track the time that was needed to finish them or the number of e-books read in 
+However they do not track the time that was needed to finish them or the number of e-books read in
 a specific timeframe.
 This can be done by using a special tracker like [Jelu](/wiki/jelu.md) which can be used to keep
 track of e-books and normal books at the same time which is a feature no e-book reader has.
 
-## E-Reader 
+## E-Reader
 
 An e-reader is a device that is designed for reading digital e-books.
 Some of them also feature [annotation tools](/wiki/note-taking.md).
 
-- [Episteme Reader](https://github.com/Aryan-Raj3112/episteme) is a native
-  [Android](/wiki/android.md) [e-book](/wiki/e-book.md) reader, that is capable of annotations.
+- [Episteme Reader](/wiki/android/episteme_reader.md) is a native [Android](/wiki/android.md)
+  e-book reader, that is capable of annotations.
   In contrast to [Saber](/wiki/note-taking.md#software) it is able to handle large PDF-files.
   Additionally it features the OPDS protocol for catalogs which can, for example, connect to
   [the OPDS catalog of calibre's web version](/wiki/calibre.md#connect-via-opds).
