@@ -10,7 +10,8 @@ other authentication mechanisms into services such as `sudo`, `login` and
 
 ## Authenticate `sudo` with a FIDO2 Security Key
 
-This section describes how to configure a FIDO2 security key for authentication when running `sudo`.
+This section describes how to configure a [FIDO2](/wiki/fido2.md) security key for authentication
+when running `sudo`.
 The following guide is based on a
 [YouTube video by pixeledi](https://www.youtube.com/watch?v=e5k1ye-_tNs).
 
@@ -19,7 +20,7 @@ First install the required package [PAM U2F](https://github.com/Yubico/pam-u2f) 
 [Linux distribution](/wiki/linux.md#distributions).
 It is often packaged under the name `pam-u2f`.
 
-Next create an UDEV rule that allows access to the FIDO2 device.
+Next create an [UDEV rule](/wiki/linux/systemd.md) that allows access to the FIDO2 device.
 
 ```sh
 echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="plugdev"' | sudo tee /etc/udev/rules.d/fido2-u2f.rules

@@ -76,7 +76,8 @@ like the RPM for fans.
 This section is based on a
 [Reddit comment by zedbraxmen](https://www.reddit.com/r/thinkpad/comments/wjb8qz/configuring_trackpoint_in_wayland/).
 
-The sensitivity and speed of the classic TrackPoint on ThinkPads can be changed using UDEV rules.
+The sensitivity and speed of the classic TrackPoint on ThinkPads can be changed using
+[UDEV](/wiki/linux/systemd.md) rules.
 The following lines are an example for a potential file `.rules` located at `/etc/udev/rules.d/`.
 It could look something like the following.
 The values for sensitivity and speed could be adjusted.

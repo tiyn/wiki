@@ -115,6 +115,56 @@ Afterward the logind service has to be restarted
 sudo systemctl restart systemd-logind
 ```
 
+### Lock Session when Removing a FIDO2 Security Key
+
+An active session can automatically be locked when a [FIDO2](/wiki/fido2.md) security key is removed
+by using an UDEV rule and `loginctl`.
+
+This guide specifically uses a FIDO2 security key.
+The same general setup, however, can also be used with a regular USB device by adapting the UDEV
+rule to match the corresponding device properties.
+
+First it should be verified that locking the session through systemd works.
+
+```sh
+loginctl lock-sessions
+```
+
+Afterward UDEV events can be monitored while the FIDO2 security key is removed.
+
+```sh
+sudo udevadm monitor --udev --property
+```
+
+In the `remove` event of the `hidraw` device, `ID_VENDOR_ID` and `ID_MODEL_ID` have to be
+identified.
+
+```txt
+SUBSYSTEM=hidraw
+ID_SECURITY_TOKEN=1
+ID_VENDOR_ID=<vendor-id>
+ID_MODEL_ID=<model-id>
+```
+
+Next the file `/etc/udev/rules.d/90-fido2-lock.rules` can be created and the following rule can then
+be added with the previously determined values.
+
+```txt
+ACTION=="remove", SUBSYSTEM=="hidraw", ENV{ID_SECURITY_TOKEN}=="1", ENV{ID_VENDOR_ID}=="<vendor-id>", ENV{ID_MODEL_ID}=="<model-id>", RUN+="/usr/bin/loginctl lock-sessions"
+```
+
+Finally, the UDEV rules have to be reloaded.
+
+```sh
+sudo udevadm control --reload-rules
+```
+
+After reconnecting the FIDO2 security key, the active session should be locked as soon as the key is
+removed.
+
+It is important to note, that removing a FIDO2 key after it has been used to unlock a
+[DM-Crypt](/wiki/linux/dm-crypt.md) volume does not close or re-encrypt the already opened volume.
+
 ### Limiting Journal Size
 
 The `journalctl` command stores persistent system logs which can grow significantly over time and
