@@ -35,9 +35,18 @@ enabled.
 This allows applications using Google Play location APIs to use the GrapheneOS location
 implementation instead.
 
+With location request rerouting enabled, Google Play Services usually does not need the `Location`
+permission for normal application location requests.
+Its location permission can therefore generally be set to `Don't allow`.
+Some Google-specific features, such as certain location-sharing functions, may still require
+Google Play Services to have location access.
+
 If network location is unreliable while Wi-Fi itself is disabled, `Wi-Fi scanning` can optionally
 be enabled.
+If Wi-Fi is already enabled, `Wi-Fi scanning` is generally not required for network-based location.
 From a privacy standpoint it can otherwise remain disabled.
+`Bluetooth scanning` is generally not required for GrapheneOS Network Location and can remain
+disabled unless another feature specifically depends on it.
 
 ### Backup
 
