@@ -24,7 +24,24 @@ A general overview of this was given in a
 Another recommendation on settings for GrapheneOS can be found in
 [a post by ventral digital](https://ventral.digital/posts/2024/12/9/practical-grapheneos-for-the-paranoid/).
 
-#### Location Services
+#### Google Play Services
+
+For normal use of Sandboxed Google Play, Google Play Services does not need the `Phone` or `SMS`
+permissions.
+They can therefore generally be set to `Don't allow`.
+
+These permissions should only be granted when a specific feature requires them.
+For example, RCS with Google Messages may require Google Play Services to have the `Phone`
+permission, while ordinary push notifications and most Google Play APIs do not require either
+`Phone` or `SMS`.
+
+The `Notification` permission is only needed for notifications directly from the Google Play
+Services application.
+
+Location-related permissions and settings for Google Play Services are covered in the
+[Location Services section](#location-services).
+
+##### Location Services
 
 It is recommended to enable `Network location` under `Location` and `Location services` in the
 settings and select `GrapheneOS Apple proxy`.
@@ -38,13 +55,17 @@ implementation instead.
 With location request rerouting enabled, Google Play Services usually does not need the `Location`
 permission for normal application location requests.
 Its location permission can therefore generally be set to `Don't allow`.
-Some Google-specific features, such as certain location-sharing functions, may still require
-Google Play Services to have location access.
+
+Some Google-specific features, such as certain location-sharing functions, may still require Google
+Play Services to have location access.
+
+##### Wi-Fi and Bluetooth Scanning
 
 If network location is unreliable while Wi-Fi itself is disabled, `Wi-Fi scanning` can optionally
 be enabled.
-If Wi-Fi is already enabled, `Wi-Fi scanning` is generally not required for network-based location.
-From a privacy standpoint it can otherwise remain disabled.
+If Wi-Fi is already enabled, `Wi-Fi scanning` is generally not required for network-based location
+and can otherwise remain disabled from a privacy standpoint.
+
 `Bluetooth scanning` is generally not required for GrapheneOS Network Location and can remain
 disabled unless another feature specifically depends on it.
 
