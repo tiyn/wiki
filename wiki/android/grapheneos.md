@@ -2,7 +2,7 @@
 
 [GrapheneOS](https://grapheneos.org/) – or short Graphene – is a custom
 [Android](/wiki/android.md)-ROM and operating system for
-[Smartphones and Tablets](/wiki/smart_device.md#smartphones-and-tablet-computers) with mostly free
+[smartphones and tablets](/wiki/smart_device.md#smartphones-and-tablet-computers) with mostly free
 and open-source software.
 
 ## Compatible Devices and Installation
@@ -18,15 +18,48 @@ This section addresses the usage of GrapheneOS.
 
 ### Configuration
 
-GrapheneOS features various settings and possibilities for configurations.
-A general overview of this was give in a
+GrapheneOS features various settings and possibilities for configuration.
+A general overview of this was given in a
 [Reddit post by Tryptamine9](https://www.reddit.com/r/GrapheneOS/comments/18te8no/my_ride_through_grapheneos_what_works_and_guide/).
-Another recommendation on settings for GrapheneOS can be found in 
+Another recommendation on settings for GrapheneOS can be found in
 [a post by ventral digital](https://ventral.digital/posts/2024/12/9/practical-grapheneos-for-the-paranoid/).
+
+#### Location Services
+
+It is recommended to enable `Network location` under `Location` and `Location services` in the
+settings and select `GrapheneOS Apple proxy`.
+This provides faster network-based location in addition to GPS/GNSS.
+
+When using Sandboxed Google Play, `Reroute location requests to OS APIs` should generally remain
+enabled.
+This allows applications using Google Play location APIs to use the GrapheneOS location
+implementation instead.
+
+If network location is unreliable while Wi-Fi itself is disabled, `Wi-Fi scanning` can optionally
+be enabled.
+From a privacy standpoint it can otherwise remain disabled.
 
 ### Backup
 
 GrapheneOS features a built-in backup utility.
 It can be found in the settings under `System` and `Backup`.
-When enabled a recovery code made up by mutliple words have to be stored to be able to restore the
+When enabled, a recovery code made up of multiple words has to be stored to be able to restore the
 backed up data.
+
+## Troubleshooting
+
+This section will focus on errors and the fixing of errors of GrapheneOS.
+
+### Apps Cannot Determine the Current Location
+
+Some applications may report `No GPS signal` or fail to determine the current location even though
+location works in other applications.
+
+First make sure the location services are configured as described in the
+[Location Services section](#location-services).
+
+Additionally, make sure the application has access to (precise) location in the settigns under
+`Apps`, `<app>`, `Permissions` and `Location`.
+`<app>` is a placeholder for the app name.
+
+Afterward, force stop and restart the affected application.
