@@ -10,12 +10,28 @@ A Text-to-speech (TTS) program is one, that converts an input text to speech.
 
 The following is a list of STT programs.
 
-- [Nerd Dictation](/wiki/linux/nerd-dictation.md) is a real-time offline speech recognition
-    software for [Linux](/wiki/linux.md)-based operating systems which uses the
-    [VOSK API](#vosk-api).
-- [Whisper CLI](/wiki/linux/whisper-cli.md) is a non-real-time offline speech transcription
-    software for [Linux](/wiki/linux.md)-based operating systems which uses the
-    [Whisper API](#whisper-api).
+- [Nerd Dictation](/wiki/linux/nerd-dictation.md) is a real-time offline speech recognition software
+  for [Linux](/wiki/linux.md)-based operating systems which uses the [VOSK API](#vosk-api).
+- [Whisper CLI](/wiki/linux/whisper-cli.md) is a non-real-time offline speech transcription software
+  for [Linux](/wiki/linux.md)-based operating systems which uses the [Whisper API](#whisper-api).
+- **Voxscribe** is an offline voice input method for [Android](/wiki/android.md)
+  [Whisper](#whisper-api) models.
+  It is available thorugh [F-Droid](/wiki/android/f-droid.md)
+  Voxscribe uses a push-to-talk interface, where the microphone button has to be held while
+  speaking.
+- **Whisper+** is an offline voice input method for [Android](/wiki/android.md) based on
+  [Whisper](#whisper-api).
+  It is available thorugh [F-Droid](/wiki/android/f-droid.md)
+  It can be used as an Android input method (IME), for example through the microphone button of
+  another keyboard.
+  After the required models have been downloaded, speech recognition works completely offline.
+  Recordings are limited to 30 seconds. Besides its regular push-to-talk mode, it provides an
+  automatic mode in which recording can be stopped using a button.
+- **Sayboard** is an offline voice input method for [Android](/wiki/android.md) which uses the
+  [VOSK API](#vosk-api).
+  It is available thorugh [F-Droid](/wiki/android/f-droid.md)
+  Since VOSK generally does not include punctuation or capitalization, Sayboard is less suitable
+  when automatically generated punctuation is required.
 
 Some alternatives mostly for Linux systems were listed in a
 [Reddit post by tuananh_org](https://www.reddit.com/r/archlinux/comments/1j77921/speech_to_text_app/).
