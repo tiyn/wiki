@@ -24,6 +24,34 @@ A general overview of this was given in a
 Another recommendation on settings for GrapheneOS can be found in
 [a post by ventral digital](https://ventral.digital/posts/2024/12/9/practical-grapheneos-for-the-paranoid/).
 
+
+#### GNSS Assistance
+
+For a privacy-oriented setup, `Secure User Plane Location (SUPL)` can be disabled in the settings
+under `Location` and `Secure User Plane Location (SUPL)`.
+
+`Predicted Satellite Data Service (PSDS)` should remain enabled under `Location` and
+`Predicted Satellite Data Service (PSDS)` with `GrapheneOS server` selected.
+This keeps satellite assistance data available for faster GNSS fixes without using SUPL.
+
+#### Wi-Fi MAC Randomization
+
+For Wi-Fi networks, `Use per-connection randomized MAC (default)` should generally be used.
+The setting can be found in the settings under `Network & internet`, `Internet`, the respective
+Wi-Fi network, `Privacy`.
+
+This provides a newly randomized MAC address across connections instead of using the device MAC
+address.
+If a specific network does not work reliably with per-connection randomization,
+`Use per-network randomized MAC` can be used for that network instead.
+
+#### Auto Reboot
+
+`Auto reboot` can be found in the settings under `Security & privacy`, `Exploit protection` and
+`Auto reboot`.
+
+The default value of `18 hours` is a reasonable balance between security and usability.
+
 #### Google Play Services
 
 For normal use of Sandboxed Google Play, Google Play Services does not need the `Phone` or `SMS`
