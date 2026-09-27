@@ -84,6 +84,17 @@ Another option to add which may not improve security or privacy but improves usa
 if a difficult passphrase is used – is the enabling of "Extend Unlock".
 There "Trusted Devices" can be set or the "On-body Detection" can be enabled.
 
+### Advertising ID
+
+On Android systems with Google Play Services, a resettable advertising identifier can be provided to
+applications for advertising and attribution purposes.
+If personalized advertising and cross-app advertising attribution are not needed, the advertising ID
+can be deleted in the Google advertising settings.
+After deletion, applications requesting the identifier receive a zeroed value instead.
+The exact path in the settings may vary depending on the Android version and vendor.
+Further information is available in the
+[Google Play documentation](https://support.google.com/googleplay/android-developer/answer/6048248).
+
 ### Multi-Factor Authentication
 
 [Multi-factor authentication](/wiki/multi-factor_authentication.md) can easily be set up on android

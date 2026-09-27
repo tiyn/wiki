@@ -66,6 +66,10 @@ permission, while ordinary push notifications and most Google Play APIs do not r
 The `Notification` permission is only needed for notifications directly from the Google Play
 Services application.
 
+Sandboxed Google Play can also provide the Google advertising identifier.
+If it is not needed, it can be deleted as described in the Android
+[Advertising ID section](/wiki/android.md#advertising-id).
+
 Location-related permissions and settings for Google Play Services are covered in the
 [Location Services section](#location-services).
 
