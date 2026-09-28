@@ -37,6 +37,16 @@ This section addresses various useful applications.
 
 This section addresses the usage of Android.
 
+### Quickly Toggle Grayscale
+
+Android can switch between normal colors and grayscale.
+
+First open `Settings`, navigate to `Accessibility`, `Color and motion` and `Color correction`, then
+select `Grayscale`.
+If you would like to add an extra on-screen button to quickly toggle it, select the corresponding
+option.
+Alternatively the tile `Color correction` can be added in the Quick Settings menu.
+
 ### Installing Apps from Unverified Developers
 
 This section is based on
