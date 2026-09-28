@@ -37,6 +37,30 @@ This section addresses various useful applications.
 
 This section addresses the usage of Android.
 
+### Installing Apps from Unverified Developers
+
+This section is based on
+[an Android Help article](https://support.google.com/android/answer/17588095) and
+[keepandroidopen.com](https://keepandroidopen.org/).
+
+From 2027 onwards a silent update will block the installation of Android apps whose developer is not
+registered with Google on certified Android devices.
+It has to be noted that AOSP-based devices such as [GrapheneOS](/wiki/android/grapheneos.md) are not
+considered certified Android devices and therefore can still install apps from unverified
+developers even after the proposed deadline by Google.
+However, so called advanced users can enable the `Allow apps from unverified developers` setting to
+bypass this restriction.
+
+To enable it first open the settings and enable the developer options by tapping `Build number`
+seven times under `About phone` if they are not already enabled.
+Navigate to `System` and `Developer options`, then enable `Allow apps from unverified developers`.
+After confirming the warnings and authentication the device has to be restarted for a 24-hour
+security delay.
+Then the options `Allow temporarily`, which will allow it for seven days, or `Allow indefinitely`
+will be available at the same place.
+After again confirming warnings apps from unverified developers can be installed by selecting
+`Install anyway` when prompted with a dialogue of this kind.
+
 ### Managing the Data
 
 The data and files stored on Android
