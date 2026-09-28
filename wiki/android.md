@@ -37,6 +37,15 @@ This section addresses various useful applications.
 
 This section addresses the usage of Android.
 
+### Connecting to Wi-Fi via QR Code
+
+On Android, a Wi-Fi network can be added by scanning a QR code containing the network credentials.
+
+Open `Settings`, navigate to `Network & internet` and `Internet`, then scroll to the bottom and
+select `Add network`.
+Tap the QR-code icon next to the network name (`SSID`) field and scan the code.
+The network credentials are then imported and the device can connect to the network.
+
 ### Quickly Toggle Grayscale
 
 Android can switch between normal colors and grayscale.
