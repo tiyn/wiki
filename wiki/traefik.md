@@ -2,6 +2,7 @@
 
 [Traefik](https://github.com/traefik/traefik) is a http reverse proxy with
 a special integration of infrastructure components (e.g. [Docker](/wiki/docker.md)).
+It can be used to route requests to services that are made available over the [web](/wiki/web.md).
 
 ## Setup
 
@@ -120,3 +121,73 @@ ommitted in the `ports:` section if not used directly.
 This ensures access only via https and restricts access via ip and port.
 Change `<service-name>` according to the service you want to publish and `<subdomain>` aswell as
 `<domain>` to the domain you intent to publish the service to.
+
+### Restrict Crawling and Expensive Requests for Docker Service
+
+For public services it can be useful to discourage [indexing](/wiki/web_crawling.md) and to rate
+limit expensive routes.
+These settings are added to the `labels:` section of the proxied Docker service and therefore extend
+the [reverse proxy setup](#reverse-proxies-for-docker-service).
+The Traefik container itself is configured separately as described in the
+[Docker image](/wiki/docker/traefik.md).
+
+#### Prevent Search Engine Indexing
+
+A response header can be added by defining a headers middleware and attaching it to the existing
+secure router.
+
+```yml
+  - "traefik.http.middlewares.<service-name>-noindex.headers.customresponseheaders.X-Robots-Tag=noindex, nofollow, noarchive"
+  - "traefik.http.routers.<service-name>-secure.middlewares=<service-name>-noindex"
+```
+
+This discourages compliant search engines from indexing, following and archiving the service.
+It should be combined with an appropriate [`robots.txt`](/wiki/web_crawling.md#robotstxt) if the
+application supports one.
+This is not an access restriction and can be ignored by crawlers that do not respect these hints.
+
+#### Rate Limit Selected Routes
+
+A second router with a higher priority can be used to apply a stricter rate limit only to selected
+routes while leaving the remaining service on the normal router.
+
+```yml
+  - "traefik.http.routers.<service-name>-limited.entrypoints=websecure"
+  - "traefik.http.routers.<service-name>-limited.rule=Host(`<subdomain>.<domain>`) && PathRegexp(`<path-regex>`)"
+  - "traefik.http.routers.<service-name>-limited.priority=100"
+  - "traefik.http.routers.<service-name>-limited.service=<service-name>"
+  - "traefik.http.middlewares.<service-name>-rate-limit.ratelimit.average=20"
+  - "traefik.http.middlewares.<service-name>-rate-limit.ratelimit.period=1m"
+  - "traefik.http.middlewares.<service-name>-rate-limit.ratelimit.burst=10"
+  - "traefik.http.routers.<service-name>-limited.middlewares=<service-name>-rate-limit,<service-name>-noindex"
+```
+
+The example allows an average of 20 requests per minute with a burst of 10 requests for routes that
+match `<path-regex>`.
+The higher router priority makes sure matching requests use the limited router instead of the normal
+service router.
+
+As an example the following lines show an example [Gitea](/wiki/gitea.md) setup using Traefik.
+Here expensive web code views can be matched separately from normal Git HTTP endpoints.
+The following labels extend the standard Gitea reverse proxy configuration.
+
+```yml
+  - "traefik.http.middlewares.gitea-noindex.headers.customresponseheaders.X-Robots-Tag=noindex, nofollow, noarchive"
+  - "traefik.http.routers.gitea-secure.middlewares=gitea-noindex"
+
+  - "traefik.http.routers.gitea-code.entrypoints=websecure"
+  - "traefik.http.routers.gitea-code.rule=Host(`git.<domain>`) && PathRegexp(`^/[^/]+/[^/]+/(src|commits|blame|compare|tree-view|raw)(/.*)?$`)"
+  - "traefik.http.routers.gitea-code.priority=100"
+  - "traefik.http.routers.gitea-code.service=gitea"
+
+  - "traefik.http.middlewares.gitea-crawl-limit.ratelimit.average=20"
+  - "traefik.http.middlewares.gitea-crawl-limit.ratelimit.period=1m"
+  - "traefik.http.middlewares.gitea-crawl-limit.ratelimit.burst=10"
+  - "traefik.http.routers.gitea-code.middlewares=gitea-crawl-limit,gitea-noindex"
+```
+
+The path expression targets repository web views such as `src`, `commits`, `blame`, `compare`,
+`tree-view` and `raw`.
+Git HTTP endpoints such as `info/refs` and `git-upload-pack` are not matched by this router and
+continue to use the normal Gitea router.
+

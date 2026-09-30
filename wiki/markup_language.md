@@ -18,8 +18,8 @@ This section addresses various markup languages and their usages.
 
 ### HTML
 
-HTML is a markup language that is mostly used in the internet via the hypertext system and accessed
-via [web browsers](/wiki/web_browser.md).
+HTML is a markup language that is mostly used on the [web](/wiki/web.md) and accessed via
+[web browsers](/wiki/web_browser.md).
 For styling HTML accordingly CSS is used most of the time.
 HTML can be quite challenging to write, read and check for validity.
 An easy way to do the latter one is a validation service.

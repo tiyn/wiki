@@ -63,8 +63,11 @@ Set the following labels in the `labels:` section.
   - "traefik.http.routers.traefik-secure.middlewares=user-auth@file"
 ```
 
-The first five lines are for publishing traefik under `traefik.<domain>`.
+The first five lines are for publishing Traefik under `traefik.<domain>`.
 The last line is to add authentication.
+Service-specific `middlewares` such as indexing headers and rate limits are configured on the proxied
+service and are described in the
+[crawling and rate limiting section](/wiki/traefik.md#restrict-crawling-and-expensive-requests-for-docker-service).
 
 ### rebuild.sh
 
