@@ -33,6 +33,8 @@ This section addresses various useful applications.
 - [Fossify](/wiki/android/fossify.md) is a software project that develops a collection of
   open-source apps that among other include apps like [gallery](/wiki/android/fossify_gallery.md),
   calendar, file-manager, phone, messages and more.
+- [Wallet applications](/wiki/android/wallet.md) can be used to store and display tickets, loyalty
+  cards and other digital passes.
 
 ## Usage
 
