@@ -5,7 +5,7 @@ application for transport tickets, discount cards and subscriptions.
 
 fWallet covers parts of the ticket and digital-pass functionality of applications such as
 [Google Wallet](https://wallet.google/) or [Apple Wallet](https://www.apple.com/wallet/).
-It works with Passbook (`.pkpass`) files.
+It works with [PKPass](/wiki/pkpass.md) files.
 It does not provide contactless payment with ordinary debit or credit cards and cannot replace
 issuer-backed digital IDs or digital car, hotel or house keys.
 

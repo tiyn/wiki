@@ -5,7 +5,7 @@
 
 Catima covers the loyalty-card, barcode and parts of the ticket functionality of applications such
 as [Google Wallet](https://wallet.google/) or [Apple Wallet](https://www.apple.com/wallet/).
-It works with Passbook (`.pkpass`) files as used by many event and travel tickets.
+It works with [PKPass](/wiki/pkpass.md) files as used by many event and travel tickets.
 Catima also supports common barcode formats and can import cards from files and other
 card-management applications.
 It does not provide contactless payment with ordinary debit or credit cards and cannot replace

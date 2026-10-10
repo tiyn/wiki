@@ -15,11 +15,11 @@ car, hotel or house keys depend on support by the respective issuer as well as p
 security and integration.
 
 Free and open-source alternatives can therefore mainly replace the handling of barcodes, loyalty
-cards, tickets and Passbook (`.pkpass`) files.
+cards, tickets and [PKPass](/wiki/pkpass.md) files.
 
 - [Catima](/wiki/android/catima.md) is a loyalty card, barcode and ticket manager that works offline
-  and also supports Passbook files (`.pkpass`).
-- [FossWallet](/wiki/android/fosswallet.md) is a wallet that supports Passbook files (`.pkpass`) as
-  well as pass updates and QR-code-based loyalty cards.
+  and also supports PKPass files.
+- [FossWallet](/wiki/android/fosswallet.md) is a wallet that supports PKPass files as well as passes 
+  updates and QR-code-based loyalty cards.
 - [fWallet](/wiki/android/fwallet.md) is a wallet for transport tickets, discount cards and
-  subscriptions which use Passbook files (`.pkpass`).
+  subscriptions which use PKPass files.
