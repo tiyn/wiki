@@ -26,6 +26,14 @@ This section as well as its subsections address all technical things about audio
 cables and devices.
 The most frequently used audio formats are also addressed.
 
+### Microphones
+
+Microphones are used to record audio, such as speech.
+Following is a list of microphones.
+
+- [DJI Mic Mini](/wiki/dji_mic_mini.md) is a wireless microphone system that can be used with
+  [smartphones](/wiki/smart_device.md), cameras and computers.
+
 ### Balanced & Unbalanced Audio
 
 Unbalanced audio uses a wire for the positive signal for audio transmission and one for ground.
