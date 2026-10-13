@@ -10,8 +10,12 @@ and watch history between devices.
 Grayjay is available for [Android](/wiki/android.md), [Linux](/wiki/linux.md), macOS and
 [Windows](/wiki/windows.md) and can be downloaded from the
 [official website](https://grayjay.app/desktop/).
+
 On Linux it is often bundled in a package called `grayjay`.
 It is also available via [Flathub](https://flathub.org/apps/app.grayjay.Grayjay).
+However, Grayjay for LInux is not available for ARM64.
+It can be successfully started nevertheless using software such as [Box64](/wiki/linux/box64.md) on
+Linux.
 
 ## Troubleshooting
 
