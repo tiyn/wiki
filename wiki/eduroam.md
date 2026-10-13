@@ -14,10 +14,12 @@ It supports both username/password authentication and certificate-based authenti
 
 Institutions using DFN easyroam may instead recommend the [easyroam](https://www.easyroam.de/) app,
 which is available on the Google Play Store and uses certificate-based authentication (EAP-TLS).
+Some institutions configure geteduroam to redirect users to the easyroam portal, in which case the
+easyroam app is recommended for automatic setup.
 
 Install the appropriate application, select your institution and follow the setup process.
-Both applications automatically configure the eduroam Wi-Fi connection, including the required
-certificates and authentication settings.
+Both applications can automatically configure the eduroam Wi-Fi connection, including the required
+certificates and authentication settings, when supported by your institution.
 
 Keep the application installed to preserve the managed eduroam configuration.
 
