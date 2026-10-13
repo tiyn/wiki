@@ -18,8 +18,17 @@ This entry also features medicinal image and visual formats such as DICOM.
 Editing images can be done by various image manipulation software.
 
 - [GIMP](/wiki/gimp.md) is a popular cross-platform program for editing pictures.
+- [PhotoCraft](https://getartcraft.com/apps/photocraft) is a free, open-source image editor
+  written in [Rust](/wiki/programming_language/rust.md).
+  Its interface and editing workflow closely resemble Adobe Photoshop.
+- [LightCraft](https://getartcraft.com/apps/lightcraft) is a free, open-source photo library and
+  RAW developer written in [Rust](/wiki/programming_language/rust.md).
+  Its interface and editing workflow closely resemble Adobe Lightroom.
+- [ArtCraft](https://github.com/storytold/artcraft) is an AI-assisted image and video creation tool
+  written in [Rust](/wiki/programming_language/rust.md).
+  Its generative workflows are comparable to Adobe Firefly.
 - [ImageMagick](/wiki/imagemagick.md) is another cross-platform software suite for creating and
-- editing (raster) images.
+  editing (raster) images.
 - [upscayl](https://github.com/upscayl/upscayl) is an upscaler that can be used cross-platform.
 - [Inkscape](/wiki/inkscape.md) is a cross-platform vector graphic editor.
 - [draw.io](/wiki/drawio.md) is a cross-platform program and web application for creating and
