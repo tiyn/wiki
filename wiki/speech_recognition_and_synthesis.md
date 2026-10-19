@@ -14,27 +14,47 @@ The following is a list of STT programs.
   for [Linux](/wiki/linux.md)-based operating systems which uses the [VOSK API](#vosk-api).
 - [Whisper CLI](/wiki/linux/whisper-cli.md) is a non-real-time offline speech transcription software
   for [Linux](/wiki/linux.md)-based operating systems which uses the [Whisper API](#whisper-api).
-- **Voxscribe** is an offline voice input method for [Android](/wiki/android.md)
-  [Whisper](#whisper-api) models.
+- [Voxscribe](https://f-droid.org/packages/org.y20k.voxscribe/) is an offline voice input method for
+  [Android](/wiki/android.md) [Whisper](#whisper-api) models.
   It is available thorugh [F-Droid](/wiki/android/f-droid.md)
   Voxscribe uses a push-to-talk interface, where the microphone button has to be held while
   speaking.
-- **Whisper+** is an offline voice input method for [Android](/wiki/android.md) based on
-  [Whisper](#whisper-api).
+- [Whisper+](https://f-droid.org/en/packages/org.woheller69.whisperplus/) is an offline voice input
+  method for [Android](/wiki/android.md) based on [Whisper](#whisper-api).
   It is available thorugh [F-Droid](/wiki/android/f-droid.md)
   It can be used as an Android input method (IME), for example through the microphone button of
   another keyboard.
   After the required models have been downloaded, speech recognition works completely offline.
   Recordings are limited to 30 seconds. Besides its regular push-to-talk mode, it provides an
   automatic mode in which recording can be stopped using a button.
-- **Sayboard** is an offline voice input method for [Android](/wiki/android.md) which uses the
-  [VOSK API](#vosk-api).
+- [Marmalade STT](https://f-droid.org/packages/app.marmalade.stt/) is an offline speech-to-text
+  application for [Android](/wiki/android.md).
+  It is available through [F-Droid](/wiki/android/f-droid.md).
+  Language support depends on the speech recognition engine but include both German and English and
+  many more.
+  It supports multiple speech recognition engines.
+  Depending on the selected engine and model, punctuation and capitalization can be generated
+  automatically.
+  The accuracy and processing speed depend on the model and device.
+- [Sayboard](https://f-droid.org/en/packages/com.elishaazaria.sayboard/) is an offline voice input
+  method for [Android](/wiki/android.md) which uses the [VOSK API](#vosk-api).
   It is available thorugh [F-Droid](/wiki/android/f-droid.md)
   Since VOSK generally does not include punctuation or capitalization, Sayboard is less suitable
   when automatically generated punctuation is required.
 
 Some alternatives mostly for Linux systems were listed in a
 [Reddit post by tuananh_org](https://www.reddit.com/r/archlinux/comments/1j77921/speech_to_text_app/).
+
+## Text-to-Speech Programs
+
+The following is a list of TTS programs.
+
+- [Marmalade TTS](https://f-droid.org/packages/app.marmalade.tts/) is a text-to-speech application
+  for [Android](/wiki/android.md).
+  It converts written text into spoken audio.
+  Language support, voice quality and offline availability depend on the speech synthesis engine and
+  voices used.
+  Languages may include German, English and many more.
 
 ## Model APIs
 
