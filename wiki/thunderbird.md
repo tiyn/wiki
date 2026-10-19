@@ -68,6 +68,8 @@ After the creation of the file, navigate to `Edit`, `Account Settings`, select t
 enable `Attach the signature from a file instead`.
 Then select the created HTML file.
 
+Check the resulting signature with a test email, since not all email clients support this format.
+
 To remove the automatically inserted `-- ` between the mail text and the signature reference the
 [corresponding section](#disable-automatic-signature-separator).
 
