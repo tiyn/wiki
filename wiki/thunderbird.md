@@ -58,6 +58,12 @@ managing and removal of keys can be more easily be done manually as explained in
 [OpenPGP entry](/wiki/openpgp.md#publishing-pgp-keys).
 It is generally recommended to also publish the keys this way.
 
+### Disable Automatic Signature Separator
+
+By default Thunderbird inserts `-- ` before email signatures.
+To disable it, navigate to `Edit`, `Settings`, `General` and `Config Editor...`.
+There search for `mail.identity.default.suppress_signature_separator` and set it to `true`.
+
 ### Enable Spell Checking of a Specific Language
 
 Spell checking can be changed in the `Settings` from the `Edit` tab.
