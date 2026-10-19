@@ -58,9 +58,22 @@ managing and removal of keys can be more easily be done manually as explained in
 [OpenPGP entry](/wiki/openpgp.md#publishing-pgp-keys).
 It is generally recommended to also publish the keys this way.
 
+### Add an HTML Signature
+
+To use a custom HTML signature create an `.html` file containing the desired signature.
+Images stored locally should be embedded as Base64-encoded data URLs in the HTML, starting with
+something similar to `<img src="data:image/png;base64,`.
+Local file paths for images cannot be accessed and should not be used.
+After the creation of the file, navigate to `Edit`, `Account Settings`, select the email account and
+enable `Attach the signature from a file instead`.
+Then select the created HTML file.
+
+To remove the automatically inserted `-- ` between the mail text and the signature reference the
+[corresponding section](#disable-automatic-signature-separator).
+
 ### Disable Automatic Signature Separator
 
-By default Thunderbird inserts `-- ` before email signatures.
+By default Thunderbird inserts `-- ` before [email signatures](#add-an-html-signature).
 To disable it, navigate to `Edit`, `Settings`, `General` and `Config Editor...`.
 There search for `mail.identity.default.suppress_signature_separator` and set it to `true`.
 
