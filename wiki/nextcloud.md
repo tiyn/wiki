@@ -55,8 +55,12 @@ The following table shows various examples of possible configuration.
 
 ### WebDAV
 
-You can access ownCloud via WebDAV with the link
-`https://<nextcloud instance>/remote.php/dav/files/<user>/<path to folder or file>`.
+By default, Nextcloud also runs a WebDAV server which can be accessed easily using a link of the
+following form.
+
+```txt
+https://<nextcloud instance>/remote.php/dav/files/<user>/<path to folder or file>
+```
 
 ### Nesting Nextcloud Data of Multiple Servers
 
