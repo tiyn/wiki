@@ -7,9 +7,9 @@ devices via WebDAV.
 
 ## Setup
 
-Table Habit is available for [Android](/wiki/android.md) via
-[F-Droid](https://f-droid.org/packages/io.github.friesi23.mhabit/) and for [Linux](/wiki/linux.md)
-via [Flathub](https://flathub.org/apps/io.github.friesi23.mhabit).
+Table Habit is available for [Android](/wiki/android.md) via an [F-Droid](/wiki/android/f-droid.md)
+package called [Table Habit](https://f-droid.org/packages/io.github.friesi23.mhabit/) and for
+[Linux](/wiki/linux.md) via [Flathub](https://flathub.org/apps/io.github.friesi23.mhabit).
 On Linux it can also be
 [built from source](https://github.com/FriesI23/mhabit/wiki/Dev%EA%9E%89-Build-From-Source).
 
