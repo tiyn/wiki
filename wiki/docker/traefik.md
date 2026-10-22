@@ -74,7 +74,7 @@ service and are described in the
 ```sh
 #!/bin/sh
 docker-compose down
-docker pull traefik:v2.4
+docker pull traefik:v3.7
 docker-compose up -d
 ```
 
@@ -85,7 +85,7 @@ version: "3"
 
 services:
   traefik:
-    image: traefik:v2.4
+    image: traefik:v3.7
     container_name: traefik
     restart: unless-stopped
     security_opt:
@@ -118,6 +118,9 @@ networks:
 ### data/traefik.yml
 
 ```yml
+core:
+  defaultRuleSyntax: v2
+
 api:
   dashboard: true
 
