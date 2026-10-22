@@ -51,14 +51,14 @@ There are some special variables to set.
 #/bin/sh
 docker stop radicale
 docker rm radicale
-docker pull tomsquest/docker-radicale:2.1.11.4
+docker pull tomsquest/docker-radicale:latest
 docker run --name radicale \
     --restart unless-stopped \
     --read-only \
     -p 5232:5232 \
     -v radicale_data:/data \
     -v radicale_config:/config \
-    -d tomsquest/docker-radicale:2.1.11.4
+    -d tomsquest/docker-radicale:latest
 ```
 
 ### radicale\_config/\_data/config
