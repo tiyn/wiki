@@ -44,8 +44,8 @@ Set the following volumes with the -v tag.
 ### rebuild.sh
 
 ```sh #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### .env

@@ -39,16 +39,14 @@ Set the following ports with the -p tag.
 ```sh
 #!/bin/sh
 cd whoogle-search
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 cd ..
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2.2"
-
 services:
   whoogle-search:
     image: ${WHOOGLE_IMAGE:-benbusby/whoogle-search}

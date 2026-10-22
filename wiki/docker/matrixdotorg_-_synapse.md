@@ -50,9 +50,9 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull matrixdotorg/synapse:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml

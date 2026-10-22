@@ -37,17 +37,15 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull owncloud
 docker pull mariadb
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3.1"
-
 services:
   owncloud:
     image: owncloud

@@ -47,14 +47,13 @@ Set the following ports with the -p tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3.1"
 services:
   yourls:
     image: yourls

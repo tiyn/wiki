@@ -75,19 +75,13 @@ docker-compose file.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2"
-
-networks:
-  gitea:
-    external: false
-
 services:
   server:
     image: gitea/gitea:latest
@@ -123,6 +117,10 @@ services:
       – gitea
     volumes:
       – mysql:/var/lib/mysql
+
+networks:
+  gitea:
+    external: false
 
 volumes:
   data:

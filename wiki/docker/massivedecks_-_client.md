@@ -41,17 +41,16 @@ docker-compose file.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull postgres:14
 docker pull ghcr.io/lattyware/massivedecks/server:latest-release
 docker pull ghcr.io/lattyware/massivedecks/client:latest-release
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3.3"
 services:
   storage:
     image: "postgres:14"

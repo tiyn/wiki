@@ -41,16 +41,14 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull lscr.io/linuxserver/calibre-web:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
-
 services:
   calibre-web:
     image: lscr.io/linuxserver/calibre-web:latest

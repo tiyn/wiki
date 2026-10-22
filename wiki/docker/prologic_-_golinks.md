@@ -34,15 +34,14 @@ Set the following ports with the -p tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull prologic/golinks:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3.1"
 services:
   golinks:
     image: prologic/golinks:latest

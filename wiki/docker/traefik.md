@@ -73,16 +73,14 @@ service and are described in the
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull traefik:v3.7
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
-
 services:
   traefik:
     image: traefik:v3.7

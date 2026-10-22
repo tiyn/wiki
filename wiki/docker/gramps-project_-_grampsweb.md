@@ -55,17 +55,15 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull ghcr.io/gramps-project/grampsweb:latest
 docker pull redis:alpine
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
-
 services:
   grampsweb: &grampsweb
     image: ghcr.io/gramps-project/grampsweb:latest

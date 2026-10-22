@@ -39,15 +39,14 @@ Set the following ports in the `ports:` section.
 ```sh
 #!/bin/sh
 cd /root/docker/bibliogram/bibliogram
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 cd ..
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
 volumes:
   db:
 services:

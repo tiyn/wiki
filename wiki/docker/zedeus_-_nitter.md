@@ -35,16 +35,14 @@ Set the following ports with the -p tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull awesometechnologies/synapse-admin:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```txt
-version: "3"
-
 services:
   nitter:
     image: zedeus/nitter:latest

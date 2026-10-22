@@ -55,19 +55,17 @@ Set the following ports in the `ports:` section.
 ```sh
 #!/bin/sh
 cd invidious
-docker-compose down
+docker compose down
 docker pull quay.io/invidious/invidious:latest
 docker pull docker.io/library/postgres:14
-docker-compose up -d
+docker compose up -d
 cd ..
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
 services:
-
   invidious:
     image: quay.io/invidious/invidious:latest
     restart: unless-stopped

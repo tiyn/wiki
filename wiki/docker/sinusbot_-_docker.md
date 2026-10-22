@@ -89,15 +89,14 @@ Set the following networks in the `networks:` section of the docker-compose file
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull sinusbot/docker:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3.3"
 services:
   sinusbot:
     image: "sinusbot/docker:latest"

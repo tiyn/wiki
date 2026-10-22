@@ -49,14 +49,13 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
 services:
   gameyfin:
     image: grimsi/gameyfin:latest
