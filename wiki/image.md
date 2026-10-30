@@ -21,6 +21,9 @@ Editing images can be done by various image manipulation software.
 - [PhotoCraft](https://getartcraft.com/apps/photocraft) is a free, open-source image editor
   written in [Rust](/wiki/programming_language/rust.md).
   Its interface and editing workflow closely resemble Adobe Photoshop.
+- [VectorCraft](https://getartcraft.com/apps/vectorcraft) is a free, open-source vector graphics editor
+  written in [Rust](/wiki/programming_language/rust.md).
+  Its interface and editing workflow closely resemble Adobe Illustrator.
 - [LightCraft](https://getartcraft.com/apps/lightcraft) is a free, open-source photo library and
   RAW developer written in [Rust](/wiki/programming_language/rust.md).
   Its interface and editing workflow closely resemble Adobe Lightroom.
