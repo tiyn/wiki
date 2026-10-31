@@ -73,6 +73,18 @@ It can then be started directly.
 
 The operating system will automatically invoke the interpreter specified by the shebang.
 
+### Copying Command Output to Clipboard
+
+The output of a command can be copied to the clipboard using `xclip` on
+[X11](/wiki/linux/x_window_system.md).
+For this, append `| xclip -selection clipboard` to the command.
+The pipe passes the command's standard output to `xclip`, while `-selection clipboard` selects the
+clipboard used for normal copy and paste.
+
+```sh
+<command> | xclip -selection clipboard
+```
+
 ### Symbolic Links using `ln`
 
 `ln` is a command to create links between files and folders.
