@@ -35,6 +35,19 @@ by editing it accordingly.
 }
 ```
 
+### Disabling Debug Packages
+
+By default `makepkg` may create additional debug packages when building AUR packages.
+These are usually not needed for normal usage and can cause file conflicts with other debug
+packages.
+To disable their creation, open `/etc/makepkg.conf` and change `debug` to `!debug` in the `OPTIONS`
+line, leaving the other options unchanged.
+This will look similar to the following.
+
+```txt
+OPTIONS=(... !debug ...)
+```
+
 ### Installing Packages
 
 This section focuses on the installation of packages.
