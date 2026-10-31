@@ -132,6 +132,34 @@ Message`-button and selecting `Hide Local Folders`.
 The order of the folders of an account can be reset by right-clicking the account in the Mail-tab
 and then selecting `Reset Folder Order`.
 
+### Using Unified Folders View
+
+This section is based on a
+[Mozilla Support discussion](https://support.mozilla.org/en-US/questions/1469047).
+
+Thunderbird allows combining standard mail folders such as `Inbox`, `Sent` and `Drafts` across
+multiple accounts while keeping custom folders under their respective mail accounts.
+
+To configure this, navigate to the three dots menu, `Folder Modes` and select `Unified Folders`.
+
+To set up the inboxes correctly, right-click the top-level unified `Inbox` and select `Properties`.
+Click `Choose...` to configure which folders should be included in the unified inbox.
+
+Expand each mail account and select only its actual `Inbox` folder.
+Make sure that custom folders, which should not be included in the inbox folders, are not selected.
+Repeat this for all mail accounts and confirm with `OK`.
+
+If necessary, repeat this procedure for other unified folders, such as `Sent`, `Drafts` or `Trash`,
+selecting only the corresponding standard folders.
+
+This ensures that the unified folders only contain the intended mail folders, while custom folders
+are excluded from the virtual grouping.
+The configuration does not move or delete any messages on the IMAP server.
+
+If the folder structure is still displayed incorrectly, restart Thunderbird.
+Note that the actual hierarchy of custom folders depends on the IMAP server configuration and can be
+inspected by switching to the three dots menu, `Folder Modes`, `All Folders`.
+
 ### Hide/Show Default Address Book
 
 This section is based on a
