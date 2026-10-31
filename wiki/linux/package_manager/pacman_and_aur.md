@@ -409,6 +409,27 @@ Exec = /bin/bash -c "[[ -f \"/proc/modules\" && ! -d \"/usr/lib/modules/$(uname 
 
 This section will focus on errors and the fixing of errors of package managers.
 
+### Error While Building or Updating `lib32-gstreamer`
+
+If building `lib32-gstreamer` fails with `PTP not supported without Rust compiler`, the Rust
+compiler used by `makepkg` may be missing the 32-bit target.
+Install it for the toolchain used during the build (in this example `stable`) and try again.
+
+```sh
+rustup target add --toolchain stable i686-unknown-linux-gnu
+yay -S lib32-gstreamer
+```
+
+If the build succeeds but Pacman reports `breaks dependency 'lib32-gstreamer=...'`, other
+GStreamer packages are still installed at an older version.
+Install the matching packages from the completed build together in a single transaction.
+The following example uses version `1.28.7-1`; adjust it to the version that was built.
+
+```sh
+ls ~/.cache/yay/lib32-gstreamer/*.pkg.tar.zst
+sudo pacman -U ~/.cache/yay/lib32-gstreamer/*-1.28.7-1-x86_64.pkg.tar.zst
+```
+
 ### `/usr/lib/firmware/nvidia/ad104` exists in filesystem linux-firmware-nvidia
 
 This error comes from a decision to split the firmware modules into different parts.
