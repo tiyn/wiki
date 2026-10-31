@@ -35,14 +35,13 @@ Set the following volumes with the -v tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: '3'
 services:
   actual_server:
     image: docker.io/actualbudget/actual-server:latest

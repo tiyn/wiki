@@ -25,15 +25,14 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull awesometechnologies/synapse-admin:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2"
 services:
   synapse-admin:
     image: awesometechnologies/synapse-admin:latest

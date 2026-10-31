@@ -1,6 +1,6 @@
 # Web Browser
 
-A web browser is an application that is used for accessing websites.
+A web browser is an application that is used for accessing websites on the [web](/wiki/web.md).
 Browsers often use [search engines](/wiki/search_engine.md).
 
 ## Setup

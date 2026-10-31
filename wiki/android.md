@@ -30,12 +30,58 @@ This section addresses various useful applications.
   application that allows various small tweaks for the Android user interface.
 - [SimpleMarkdown](https://f-droid.org/packages/com.wbrawner.simplemarkdown.free/) is another text
   editor made for Markdown. It does work a bit better with a [NextCloud](/wiki/nextcloud.md).
-- [Fossify](https://github.com/FossifyOrg) is a suite of open-source apps that among other include
-  apps like calendar, file-manager, phone, messages and more.
+- [Fossify](/wiki/android/fossify.md) is a software project that develops a collection of
+  open-source apps that among other include apps like [gallery](/wiki/android/fossify_gallery.md),
+  calendar, file-manager, phone, messages and more.
+- [Wallet applications](/wiki/android/wallet.md) can be used to store and display tickets, loyalty
+  cards and other digital passes.
 
 ## Usage
 
 This section addresses the usage of Android.
+
+### Connecting to Wi-Fi via QR Code
+
+On Android, a Wi-Fi network can be added by scanning a QR code containing the network credentials.
+
+Open `Settings`, navigate to `Network & internet` and `Internet`, then scroll to the bottom and
+select `Add network`.
+Tap the QR-code icon next to the network name (`SSID`) field and scan the code.
+The network credentials are then imported and the device can connect to the network.
+
+### Quickly Toggle Grayscale
+
+Android can switch between normal colors and grayscale.
+
+First open `Settings`, navigate to `Accessibility`, `Color and motion` and `Color correction`, then
+select `Grayscale`.
+If you would like to add an extra on-screen button to quickly toggle it, select the corresponding
+option.
+Alternatively the tile `Color correction` can be added in the Quick Settings menu.
+
+### Installing Apps from Unverified Developers
+
+This section is based on
+[an Android Help article](https://support.google.com/android/answer/17588095) and
+[keepandroidopen.com](https://keepandroidopen.org/).
+
+From 2027 onwards a silent update will block the installation of Android apps whose developer is not
+registered with Google on certified Android devices.
+It has to be noted that AOSP-based devices such as [GrapheneOS](/wiki/android/grapheneos.md) are not
+considered certified Android devices and therefore can still install apps from unverified
+developers even after the proposed deadline by Google.
+However, so called advanced users can enable the `Allow apps from unverified developers` setting to
+bypass this restriction.
+
+To enable it first open the settings and enable the developer options by tapping `Build number`
+seven times under `About phone` if they are not already enabled.
+Navigate to `System` and `Developer options`, then enable `Allow apps from unverified developers`.
+After confirming the warnings and authentication the device has to be restarted for a 24-hour
+security delay.
+Then the options `Allow temporarily`, which will allow it for seven days, or `Allow indefinitely`
+will be available at the same place.
+After again confirming warnings apps from unverified developers can be installed by selecting
+`Install anyway` when prompted with a dialogue of this kind.
 
 ### Managing the Data
 
@@ -83,6 +129,17 @@ suggest the following changes.
 Another option to add which may not improve security or privacy but improves usability – especially
 if a difficult passphrase is used – is the enabling of "Extend Unlock".
 There "Trusted Devices" can be set or the "On-body Detection" can be enabled.
+
+### Advertising ID
+
+On Android systems with Google Play Services, a resettable advertising identifier can be provided to
+applications for advertising and attribution purposes.
+If personalized advertising and cross-app advertising attribution are not needed, the advertising ID
+can be deleted in the Google advertising settings.
+After deletion, applications requesting the identifier receive a zeroed value instead.
+The exact path in the settings may vary depending on the Android version and vendor.
+Further information is available in the
+[Google Play documentation](https://support.google.com/googleplay/android-developer/answer/6048248).
 
 ### Multi-Factor Authentication
 

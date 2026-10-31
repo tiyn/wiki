@@ -64,6 +64,16 @@ This can be achieved by running the following command.
 journalctl -b-1
 ```
 
+### Synchronize System Time
+
+Automatic time synchronization via [NTP](/wiki/linux/ntp.md) can be enabled using `timedatectl`.
+
+```sh
+sudo timedatectl set-ntp true
+```
+
+The synchronization status can be checked using `timedatectl status`.
+
 ### Change Suspend and Hibernate Behavior
 
 The behavior of suspend and hibernation can be changed in the file `/etc/systemd/sleep.conf`.

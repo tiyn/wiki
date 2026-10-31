@@ -47,8 +47,8 @@ There are no ports, which are exposed by default.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### docker-compose.yml

@@ -48,15 +48,14 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull lscr.io/linuxserver/freshrss:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2.1"
 services:
   freshrss:
     image: lscr.io/linuxserver/freshrss:latest

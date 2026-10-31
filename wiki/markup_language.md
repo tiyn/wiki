@@ -1,15 +1,16 @@
 # Markup Language
 
-A markup Language is way to encode text so that it has great amounts of structure and formatting.
+A markup language is a way to encode text with additional structure and formatting.
 The most common markup languages are [HTML](#html), Markdown, [LaTeX](#latex) and [XML](#xml).
 Markup languages can be used for [note-taking](/wiki/note-taking.md).
-Adding to normal markdown files, there are also `.mdx` files which allows the usage of JavaScripts
-JSX in the markdown content for displaying charts and more.
+In addition to normal Markdown files, `.mdx` files allow the usage of JavaScript JSX inside Markdown
+content.
 
 ## Grammar Checking
 
-An often used grammar and spell checking tool that supports many markup languages is
+An often used grammar and spell checking tool supporting many markup languages is
 [LTeX](/wiki/ltex.md).
+For new setups its actively maintained successor [LTeX+](/wiki/ltex.md) is recommended.
 
 ## Different languages
 
@@ -17,8 +18,8 @@ This section addresses various markup languages and their usages.
 
 ### HTML
 
-HTML is a markup language that is mostly used in the internet via the hypertext system and accessed
-via [web browsers](/wiki/web_browser.md).
+HTML is a markup language that is mostly used on the [web](/wiki/web.md) and accessed via
+[web browsers](/wiki/web_browser.md).
 For styling HTML accordingly CSS is used most of the time.
 HTML can be quite challenging to write, read and check for validity.
 An easy way to do the latter one is a validation service.

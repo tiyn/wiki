@@ -59,17 +59,16 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull wallabag/wallabag:latest
 docker pull mariadb:latest
 docker pull redis:alpine
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: '3'
 services:
   wallabag:
     image: wallabag/wallabag

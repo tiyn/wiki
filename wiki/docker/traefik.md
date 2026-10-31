@@ -63,26 +63,27 @@ Set the following labels in the `labels:` section.
   - "traefik.http.routers.traefik-secure.middlewares=user-auth@file"
 ```
 
-The first five lines are for publishing traefik under `traefik.<domain>`.
+The first five lines are for publishing Traefik under `traefik.<domain>`.
 The last line is to add authentication.
+Service-specific `middlewares` such as indexing headers and rate limits are configured on the proxied
+service and are described in the
+[crawling and rate limiting section](/wiki/traefik.md#restrict-crawling-and-expensive-requests-for-docker-service).
 
 ### rebuild.sh
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker pull traefik:v2.4
-docker-compose up -d
+docker compose down
+docker pull traefik:v3.7
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
-
 services:
   traefik:
-    image: traefik:v2.4
+    image: traefik:v3.7
     container_name: traefik
     restart: unless-stopped
     security_opt:
@@ -115,6 +116,9 @@ networks:
 ### data/traefik.yml
 
 ```yml
+core:
+  defaultRuleSyntax: v2
+
 api:
   dashboard: true
 

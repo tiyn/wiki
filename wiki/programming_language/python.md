@@ -275,6 +275,23 @@ cuml.accel.install()
 
 Afterward all possible scikit-learn algorithms will run on the GPU instead of the CPU.
 
+### NumPy
+
+[NumPy](https://numpy.org/) is a free and open-source library for numerical computing with Python.
+By default, NumPy only utilizes the CPU.
+
+#### Run NumPy Operations on the GPU
+
+Using [CuPy](https://cupy.dev/), NumPy-like operations can be executed on the GPU.
+CuPy provides an API largely compatible with NumPy and can therefore often be used by simply
+replacing the NumPy import.
+
+```py
+import cupy as np
+```
+
+CuPy supports Nvidia GPUs via CUDA and AMD GPUs via ROCm.
+
 ### PyTorch
 
 This section addresses the [PyTorch module](https://pytorch.org/).

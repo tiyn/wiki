@@ -47,21 +47,15 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull nextcloud:latest
 docker pull mariadb:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: '2'
-
-volumes:
-  nextcloud:
-  db:
-
 services:
   db:
     image: mariadb:latest

@@ -39,8 +39,8 @@ Set the following volumes with the -v tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### .env
@@ -81,10 +81,7 @@ PEERTUBE_SMTP_DISABLE_STARTTLS=false
 ### docker-compose.yml
 
 ```yml
-version: "3.3"
-
 services:
-
   peertube:
     image: chocobozzz/peertube:production-bullseye
     ports:

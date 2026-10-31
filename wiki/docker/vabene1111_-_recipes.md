@@ -40,10 +40,10 @@ Set the following volumes with the -v tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull vabene1111/recipes:latest
 docker pull postgres:15-alpine
-docker-compose up -d
+docker compose up -d
 ```
 
 ### .env
@@ -225,7 +225,6 @@ REVERSE_PROXY_AUTH=0
 ### docker-compose.yml
 
 ```yml
-version: "3"
 services:
   web_recipes:
     restart: unless-stopped

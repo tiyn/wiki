@@ -158,7 +158,7 @@ Especially recommended is the setup of
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull mailserver/docker-mailserver:latest
-docker-compose up -d
+docker compose up -d
 ```

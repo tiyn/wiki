@@ -15,6 +15,10 @@ including subscriptions.
   It also features [SponsorBlock](#automatically-skip-sponsorships) by default.
 - [NewPipe](https://github.com/TeamNewPipe/NewPipe) for [Android](/wiki/android.md) phones is an
   application that is available via the [F-Droid Appstore](/wiki/android/f-droid.md).
+- [Grayjay](/wiki/grayjay.md) is a cross-platform video for [Android](/wiki/android.md),
+  [Linux](/wiki/linux.md), macOS and [Windows](/wiki/windows.md) frontend for various platforms like
+  [YouTube](/wiki/youtube.md) that supports peer-to-peer synchronization of subscriptions, playlists
+  and watch history between devices.
 
 ## Downloading YouTube Videos
 

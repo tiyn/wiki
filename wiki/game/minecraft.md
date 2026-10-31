@@ -53,6 +53,17 @@ scoreboard.
 /scoreboard objectives setdisplay list Deaths
 ```
 
+#### Changing the Sleep Percentage
+
+The percentage of online players that need to sleep in order to skip the night can be changed with a
+gamerule.
+For example, the following command sets the minimum amount of players to sleep to skip the night to
+50 percent.
+
+```txt
+/gamerule players_sleeping_percentage 50
+```
+
 #### Updating a Server World to a New Version
 
 An existing Minecraft world of a server can be updated simply by updating the server itself.
@@ -136,8 +147,8 @@ The following changes are recommended to install on the server for gameplay reas
     right-clicking it with another painting.
 - "NetherPortalFix" is a mod that fixes some behaviour for Nether Portals that overlap.
 - "Beautified Chat (Server)" is a mod that changes style and color of the chat.
-- "AfkPlus" is a mod that adds AFK functionality that allows ignoring AFK players in the sleep
-    percentage.
+- "AfkPlus" is a mod that adds AFK functionality that allows ignoring AFK players in the 
+  [sleep percentage](#changing-the-sleep-percentage).
 - "Scaffolding Drops Nearby" is a mod that makes all scaffolding be dropped on the place of the
     broken scaffolding.
 - "Glowing Eyeblossom" is a mod that makes eyeblossoms glow.

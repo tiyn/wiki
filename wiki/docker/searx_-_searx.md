@@ -35,14 +35,13 @@ Set the following ports with the -p tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```sh
-version: "2.1"
 services:
   searx:
     image: searx/searx

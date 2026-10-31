@@ -153,6 +153,9 @@ The closing German quote `“` can be written by chaining compose with `<` and `
 Likewise the guillemets `»` and `«` can be written using compose sequences as well with `<` and `<`
 or `>` and `>`.
 
+The left-hand single guillemet (`‹`) can be written by chaining compose with `.` and `<`.
+The right-hand single guillemet (`›`) can be written by chaining compose with `.` and `>`.
+
 The left-hand single quotation mark (`‘`) can be written by chaining compose with `<` and `'`.
 The right-hand single quotation (`’`) mark can be written by chaining compose with `>` and `'`.
 

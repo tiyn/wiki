@@ -42,7 +42,6 @@ Set the following volumes with the -v tag.
 ### rebuild.sh
 
 ```sh
-version: "2"
 services:
   jelu:
     image: wabayang/jelu
@@ -72,6 +71,6 @@ volumes:
 
 ```yml
 #!/bin/sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```

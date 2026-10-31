@@ -38,16 +38,15 @@ Set the following volumes with the -v tag.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull tombursch/kitchenowl-web:latest
 docker pull tombursch/kitchenowl:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "3"
 services:
   kitchenowl:
     image: tombursch/kitchenowl-web:latest

@@ -30,6 +30,29 @@ Robertson also made guides on
 [post-production](https://sethrobertson.github.io/GitPostProduction/gpp.html) and a guide on
 [best practices](http://sethrobertson.github.io/GitBestPractices).
 
+### Git LFS
+
+[Git LFS](https://git-lfs.com/) (Large File Storage) is a Git extension for tracking large files.
+On most [Linux distributions](/wiki/linux.md#distributions) it is available through the
+`git-lfs` package.
+After installation it can be enabled for the current user with the following command.
+
+```sh
+git lfs install
+```
+
+Repositories using Git LFS can then be cloned normally.
+For an existing repository the LFS files can be downloaded with `git lfs pull`.
+If a clone succeeded but its checkout failed because Git LFS was missing, the checkout can be
+retried after setup from inside the repository.
+
+```sh
+git restore --source=HEAD :/
+git lfs pull
+```
+
+Note that `git restore` discards local changes to tracked files.
+
 ### Git Hooks
 
 Git Hooks are scripts that are executed automatically when certain Git events occur.

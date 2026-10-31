@@ -28,6 +28,12 @@ The following is a list of programs that are deemed useful by this guide.
 
 - [Kdenlive](https://kdenlive.org/) is a is a free and open-source video editing software that is
   available on [Windows](/wiki/windows.md), Mac and [Linux-based Systems](/wiki/linux.md).
+- [FilmCraft](https://getartcraft.com/apps/filmcraft) is a free, open-source video editor written in
+  [Rust](/wiki/programming_language/rust.md).
+  Its timeline-based editing workflow closely resembles Adobe Premiere Pro.
+- [ArtCraft](https://github.com/storytold/artcraft) is an AI-assisted image and video creation tool
+  written in [Rust](/wiki/programming_language/rust.md).
+  Its generative workflows are comparable to Adobe Firefly.
 
 ## Players
 

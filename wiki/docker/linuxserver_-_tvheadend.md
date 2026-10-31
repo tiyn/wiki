@@ -49,15 +49,14 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull lscr.io/linuxserver/tvheadend:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2.1"
 services:
   tvheadend:
     image: lscr.io/linuxserver/tvheadend:latest

@@ -36,15 +36,14 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull coturn/coturn:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2"
 services:
   coturn:
     image: "instrumentisto/coturn:latest"

@@ -14,6 +14,19 @@ called [FairEmail](https://play.google.com/store/apps/details?id=eu.faircode.ema
 
 This section addresses the usage of FairEmail.
 
+### Add HTML Signature
+
+FairEmail supports HTML signatures for individual email identities.
+Navigate to `Settings`, `Manual setup`, `Identities` and select the respective identity.
+There select `Edit signature`.
+To add HTML directly, open the three-dots menu and switch to `HTML mode`.
+Alternatively, use the import button to load an existing `.html` file.
+Images stored locally should be embedded as Base64-encoded data URLs in the HTML, starting with
+something similar to `<img src="data:image/png;base64,`.
+Local file paths for images cannot be accessed and should not be used.
+
+Check the resulting signature with a test email, since not all email clients support this format.
+
 ### Use PGP Key for Encryption, Decryption and Signing
 
 FairEmail can use [OpenPGP](/wiki/openpgp.md) to sign, encrypt or decrypt mails.

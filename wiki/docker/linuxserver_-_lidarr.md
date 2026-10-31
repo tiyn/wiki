@@ -59,15 +59,14 @@ Set the following ports in the `ports:` section.
 
 ```sh
 #!/bin/sh
-docker-compose down
+docker compose down
 docker pull lscr.io/linuxserver/lidarr:latest
-docker-compose up -d
+docker compose up -d
 ```
 
 ### docker-compose.yml
 
 ```yml
-version: "2.1"
 services:
   lidarr:
     image: lscr.io/linuxserver/lidarr:latest

@@ -2,6 +2,8 @@
 
 Docker is a virtualization software that deploys docker containers.
 Due to easy handling and reproducible environments it is a useful tool.
+It is commonly used to deploy applications and services, including services accessible over the
+[web](/wiki/web.md).
 
 ## Setup
 
