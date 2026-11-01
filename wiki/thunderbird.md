@@ -88,6 +88,18 @@ And under `Languages:` various and also multiple languages can be checked.
 To add another language follow the link and navigate to the language to install.
 Then install only dictionary since the language pack is not needed.
 
+### Edit Personal Dictionary
+
+Words added manually to the spell checker are stored in the `Personal Dictionary`.
+To view or remove these words, open a new message and select `Spelling` in the compose window.
+Under `Personal Dictionary` select `Edit...`, choose the word and click `Remove`.
+New words can also be added using `New word` and `Add`.
+
+Alternatively, the words are stored in the `persdict.dat` file in the Thunderbird profile folder.
+The folder can be opened under `Help`, `More Troubleshooting Information`, `Profile Folder` and
+`Open Folder`.
+Close Thunderbird before editing the file with a text editor.
+
 ### Changing the (Dark/Light) Theme
 
 This section is based on a
