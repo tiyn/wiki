@@ -32,6 +32,10 @@ Editing images can be done by various image manipulation software.
   Its generative workflows are comparable to Adobe Firefly.
 - [ImageMagick](/wiki/imagemagick.md) is another cross-platform software suite for creating and
   editing (raster) images.
+- [ScanTailor Advanced](https://github.com/ScanTailor-Advanced/scantailor-advanced) is a free,
+  open-source program for post-processing scanned or photographed book pages.
+  It can split double pages, correct skew and page curvature, and adjust margins.
+  It works on existing image files; scanning and OCR are handled by other software.
 - [upscayl](https://github.com/upscayl/upscayl) is an upscaler that can be used cross-platform.
 - [Inkscape](/wiki/inkscape.md) is a cross-platform vector graphic editor.
 - [draw.io](/wiki/drawio.md) is a cross-platform program and web application for creating and
