@@ -102,6 +102,9 @@ Wayland screen capture can be achieved using
 
 Together these can replace tools such as `maim`.
 
+Additionally, [grimpicker](/wiki/linux/grimpicker.md) can be used to select a color from the
+screen on wlroots-based compositors.
+
 ### Display Configuration
 
 `wlr-randr` can be used instead of `xrandr` for wlroots-based compositors.

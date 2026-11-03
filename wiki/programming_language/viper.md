@@ -62,6 +62,8 @@ Afterward Carbon and/or Silicon are ready to be [used](#usage).
 ## Usage
 
 This section addresses the usage of Viper.
+An introduction to the language and its verification features can be found in the official
+[Guide](https://viper.ethz.ch/tutorial/).
 
 ### Basic Verifier Usage
 

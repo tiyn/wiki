@@ -20,7 +20,7 @@ First you need to install Überzug on your system.
 project is now unmaintained.
 An alternative to using this project is
 [Überzug++](https://github.com/jstkdng/ueberzugpp) that can be used as a drop-in
-alternative.
+alternative and is also described in the [shell entry](/wiki/linux/shell.md#ueberzugpp).
 On [Arch Linux](/wiki/linux/arch-linux.md) it can be installed by the
 [Arch User Repository](/wiki/linux/package_manager/pacman_and_aur.md) package `ueberzugpp`.
 After that you need to add 2 files to your path which can be found on

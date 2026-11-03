@@ -1,5 +1,4 @@
 # Android
-
 [Android](https://www.android.com/) is a mobile operating system based on a modified
 [Linux](/wiki/linux.md) kernel.
 It is designed primarily for mobile devices with touch screens like tablets or smart phones.
@@ -48,6 +47,16 @@ Open `Settings`, navigate to `Network & internet` and `Internet`, then scroll to
 select `Add network`.
 Tap the QR-code icon next to the network name (`SSID`) field and scan the code.
 The network credentials are then imported and the device can connect to the network.
+
+### Physical Keyboard Layout
+
+When connecting an external Bluetooth or USB keyboard, the physical keyboard layout may differ
+from the layout used by the on-screen keyboard.
+The layout can usually be changed in the Android settings under `System`, `Keyboard` and
+`Physical keyboard` by selecting the connected keyboard.
+The exact path depends on the Android version and device.
+If the required layout is not available, additional keyboard layouts may be installed as explained
+in a [StackExchange post](https://android.stackexchange.com/questions/48837/use-bluetooth-keyboard-with-a-different-layout).
 
 ### Quickly Toggle Grayscale
 
@@ -152,6 +161,9 @@ This app is available at [F-Droid](/wiki/android/f-droid.md) as
 [FreeOTP+](https://f-droid.org/de/packages/org.liberty.android.freeotpplus/) and on
 [Google Play Store](#app-store) by the
 [same name](https://f-droid.org/de/packages/org.liberty.android.freeotpplus/).
+
+For compatible [FIDO2 security keys](/wiki/fido2.md) the
+[Token2 Companion App](/wiki/android/token2_companion.md) can be used.
 
 ### Android-based Operating Systems
 

@@ -11,6 +11,11 @@ setups.
 
 This section addresses various features of FIDO2.
 
+### Manage FIDO2 Security Keys on Android
+
+On [Android](/wiki/android.md) compatible FIDO2 security keys can be managed using the
+[Token2 Companion App](/wiki/android/token2_companion.md).
+
 ### Use FIDO2 on Linux with DM-Crypt
 
 The usage of a FIDO2-Stick combined with [DM-Crypt](/wiki/linux/dm-crypt.md) is described in the

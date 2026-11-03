@@ -1,6 +1,6 @@
 # ollama – ollama
 
-This is a [Docker](/wiki/docker.md) container for an ollama server.
+This is a [Docker](/wiki/docker.md) container for an [Ollama](/wiki/ollama.md) server.
 The official container and documentation was made by
 [ollama](https://hub.docker.com/r/ollama/ollama).
 

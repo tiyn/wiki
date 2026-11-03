@@ -23,6 +23,22 @@ The following is a list of Unix shells that are POSIX compliant.
   For basic usage check [bash2zsh](https://www.bash2zsh.com/zsh_refcard/refcard.pdf) or
   [zsh-lovers](https://grml.org/zsh/zsh-lovers.html).
 
+## Shell Programs
+
+The following programs provide additional functionality from the command line.
+
+### grimpicker
+
+[grimpicker](/wiki/linux/grimpicker.md) is a color picker for
+[Wayland](/wiki/linux/wayland.md) compositors.
+
+### ueberzugpp
+
+[Überzug++](https://github.com/jstkdng/ueberzugpp) is a replacement for the unmaintained
+Überzug utility that displays images in terminal windows.
+It supports X11, Wayland and several terminal image protocols and can be used for image previews
+in file managers such as [ViFM](/wiki/linux/vifm.md#image-previews-with-ueberzug).
+
 ## Usage
 
 This section addresses various different functions by and actions that can be
@@ -73,7 +89,7 @@ It can then be started directly.
 
 The operating system will automatically invoke the interpreter specified by the shebang.
 
-### Copying Command Output to Clipboard
+### Copying Command Output to Clipboard 
 
 The output of a command can be copied to the clipboard using `xclip` on
 [X11](/wiki/linux/x_window_system.md).

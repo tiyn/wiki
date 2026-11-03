@@ -9,7 +9,7 @@ The software can be setup via [Docker](/wiki/docker.md) with the
 [open-webui image](/wiki/docker/open-webui_-_open-webui.md).
 
 Additionally, a provider for the artificial intelligence is needed.
-This can be done by using Ollama which can be setup via docker with the
+This can be done by using [Ollama](/wiki/ollama.md) which can be setup via Docker with the
 [ollama image](/wiki/docker/ollama_-_ollama.md).
 When using this option the address and port for Ollama has to be set in the admin settings of
 WebUI.
@@ -25,7 +25,7 @@ This section addresses the usage of the Open WebUI.
 
 Models are not downloaded via the Open Webui directly.
 In fact they are managed by the provider of the AI.
-When using Ollama as described in [the setup section](#setup) the following commands can be used to
+When using [Ollama](/wiki/ollama.md) as described in [the setup section](#setup) the following commands can be used to
 list available networks.
 
 ```sh 

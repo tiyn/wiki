@@ -1,7 +1,7 @@
 # Markup Language
 
 A markup language is a way to encode text with additional structure and formatting.
-The most common markup languages are [HTML](#html), Markdown, [LaTeX](#latex) and [XML](#xml).
+The most common markup languages are [HTML](#html), [Markdown](#markdown), [LaTeX](#latex) and [XML](#xml).
 Markup languages can be used for [note-taking](/wiki/note-taking.md).
 In addition to normal Markdown files, `.mdx` files allow the usage of JavaScript JSX inside Markdown
 content.
@@ -15,6 +15,11 @@ For new setups its actively maintained successor [LTeX+](/wiki/ltex.md) is recom
 ## Different languages
 
 This section addresses various markup languages and their usages.
+
+### Markdown
+
+Markdown is a lightweight markup language commonly used for documentation and
+[note-taking](/wiki/note-taking.md#markdown-note-taking).
 
 ### HTML
 
@@ -53,6 +58,7 @@ other navigation related things, is based on it.
 LaTeX provides a high-level, descriptive markup language.
 It is mostly used in the scientific community but can be used for many things and as an alternative
 to [Microsoft Word](/wiki/office_suite.md#programs).
+It can also be used for [note-taking](/wiki/note-taking.md#latex-note-taking).
 
 LaTeX also features many different packages.
 The following list contains some examples of it.

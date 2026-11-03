@@ -185,6 +185,12 @@ ln -s <local-venv> ~/.pyenv/versions/<venv-name>
 Using this setup the python version will automatically change when navigating into the project
 directory.
 
+### Compiling Python Scripts
+
+[Nuitka](https://github.com/Nuitka/Nuitka) is a Python compiler that can be used to create
+executables from Python scripts.
+It supports standalone applications as well as single-file executables.
+
 ## Package Management
 
 Python packages can be installed using package managers.

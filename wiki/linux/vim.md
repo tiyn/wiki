@@ -1,7 +1,7 @@
 # VIM
 
 [VIM](https://www.vim.org/) is a highly configurable text editor.
-There are various forks off it with the most popular being [Neovim](https://neovim.io/).
+There are various forks off it with the most popular being [Neovim](/wiki/linux/neovim.md).
 This entry only addresses VIM but due to the similarities of the forks it still can be drawn on for
 them.
 Differences of forks to the original VIM will be addressed in specific entries for the forks.
