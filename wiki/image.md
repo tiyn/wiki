@@ -41,6 +41,16 @@ Editing images can be done by various image manipulation software.
 - [draw.io](/wiki/drawio.md) is a cross-platform program and web application for creating and
   editing diagrams.
 
+## Convert Raster Images to SVG
+
+A photographed or scanned drawing (`.png` or `.jpg`) can be converted into an editable, scalable
+vector graphic (`.svg`) by preparing the raster image and tracing it into paths.
+
+Start by [cleaning up the image in GIMP](/wiki/gimp.md#clean-up-photographed-or-scanned-drawings).
+This is particularly useful for faint pencil drawings, uneven lighting or grid paper.
+For clean, high-contrast sources, this preparation may be unnecessary.
+Then [convertt the raster image to SVG in Inkscape](/wiki/inkscape.md#convert-raster-images-to-svg).
+
 ## Management
 
 Digital images can be stored and managed.
