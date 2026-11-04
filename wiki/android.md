@@ -109,6 +109,9 @@ this software/program is called [android-file-transfer](/wiki/linux/android-file
 For further information and a guide on how to mount a Android device correctly navigate to the
 [corresponding section](/wiki/linux/android-file-transfer.md#mounting-and-unmounting-android-device).
 
+As an alternative to a USB connection, [LocalSend](/wiki/localsend.md) transfers files between
+Android and other devices directly over the same local network.
+
 ### Improve Security and Privacy
 
 Security and privacy are important topics, especially so when dealing with mobile phones.

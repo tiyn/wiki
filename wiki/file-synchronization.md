@@ -24,3 +24,9 @@ There is no single server as point of attack with all your data.
 
 - [Syncthing](/wiki/syncthing.md) is a free and open-source peer-to-peer file
     synchronization tool that can be dockerized.
+
+## One-time File Transfer
+
+For transferring files between nearby devices without continuous synchronization,
+[LocalSend](/wiki/localsend.md) provides an open-source, cross-platform solution that works
+over the local network without a central server or an internet connection.
