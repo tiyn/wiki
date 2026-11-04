@@ -11,6 +11,12 @@ setups.
 
 This section addresses various features of FIDO2.
 
+### Use FIDO2 Security Keys on Android
+
+On [Android](/wiki/android.md), [Authnkey](/wiki/android/authnkey.md) helps compatible FIDO2
+security keys work with passkeys over NFC or USB, including PIN verification and stored passkeys.
+It also works without Google Play Services and requires Android 14 or newer.
+
 ### Manage FIDO2 Security Keys on Android
 
 On [Android](/wiki/android.md) compatible FIDO2 security keys can be managed using the
